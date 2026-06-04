@@ -69,7 +69,7 @@ class TemplateUtils {
      * @param string $errorname Error title
      * @param string $description Error description
      */
-    public function renderErrorTemplate(string $errorcode = null, string $errorname = "Error", string $description = null): void {
+    public function renderErrorTemplate(?string $errorcode = null, string $errorname = "Error", ?string $description = null): void {
         $data = [
             "errorcode" => $errorcode,
             "errorname" => $errorname,

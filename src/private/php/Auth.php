@@ -31,7 +31,7 @@ class Auth {
         unset($_SESSION["tsuser"]);
     }
 
-    public static function getTsUsersByIp(string $ip = null): ?array {
+    public static function getTsUsersByIp(?string $ip = null): ?array {
         if ($ip === null) {
             $ip = Utils::getClientIp();
         }
@@ -64,7 +64,7 @@ class Auth {
      * @param $ip string optional, defaults to Utils::getClientIp
      * @return bool true if the cldbid have the same IP address as $ip
      */
-    public static function checkClientIp(int $cldbid, string $ip = null): bool {
+    public static function checkClientIp(int $cldbid, ?string $ip = null): bool {
         if ($ip === null) {
             $ip = Utils::getClientIp();
         }

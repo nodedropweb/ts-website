@@ -3,7 +3,7 @@
         "vendor-dir": "private/vendor"
     },
     "require": {
-        "php": "^8.1",
+        "php": "^8.4",
         "ext-mbstring": "*",
         "ext-json": "*",
         "ext-tokenizer": "*",

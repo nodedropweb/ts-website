@@ -93,7 +93,7 @@ EOD;
         return $this->resultHtml;
     }
 
-    public function getIcon($name, string $tooltip = null, $alt = "Icon"): string {
+    public function getIcon($name, ?string $tooltip = null, $alt = "Icon"): string {
         if (is_string($name)) {
             $path = "{$this->imgPath}/$name";
         } else {
