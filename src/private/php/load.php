@@ -99,15 +99,14 @@ TeamSpeak3::init();
 register_shutdown_function(function () {
     error_reporting(0);
     try {
-        // getExistingTSNodeHost() returns null if no connection was made this request
-        // so we never accidentally open a new connection during shutdown
+        // getExistingTSNodeHost() returns null if no connection was made this request,
+        // avoiding an unwanted new connection being established in the shutdown handler.
         $tsHost = \Wruczek\TSWebsite\Utils\TeamSpeakUtils::i()->getExistingTSNodeHost();
         if ($tsHost !== null) {
-            // Close the raw TCP stream directly — bypasses quit/readLine, no OOM
-            $stream = $tsHost->getAdapter()->getTransport()->getStream();
-            if (is_resource($stream)) {
-                fclose($stream);
-            }
+            // Call disconnect() which sets $stream = null on the transport.
+            // This makes isConnected() return false, so the ServerQuery destructor
+            // skips the QUIT handshake entirely — no readLine, no OOM, no broken-pipe 500.
+            $tsHost->getAdapter()->getTransport()->disconnect();
         }
     } catch (\Throwable $ignored) {}
 });
