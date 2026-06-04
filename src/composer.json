@@ -8,7 +8,7 @@
         "ext-json": "*",
         "ext-tokenizer": "*",
         "ext-ctype": "*",
-        "planetteamspeak/ts3-php-framework": "^1.3.0",
+        "planetteamspeak/ts3-php-framework": "dev-master",
         "latte/latte": "^3.0",
         "wruczek/php-file-cache": "^0",
         "catfan/medoo": "^2.4"
@@ -20,6 +20,12 @@
         "ext-pdo_mysql": "*",
         "ext-pdo_sqlite": "*"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/nodedropweb/ts3phpframework"
+        }
+    ],
     "autoload": {
         "psr-4": {"Wruczek\\TSWebsite\\": "private/php"}
     }

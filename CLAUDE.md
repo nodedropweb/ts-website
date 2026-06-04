@@ -33,7 +33,7 @@ wsl -d drupaltv -u root -- bash -c "rm -f /var/www/ts-website/src/private/cache/
 
 | Paket | Version | Hinweis |
 |-------|---------|---------|
-| `planetteamspeak/ts3-php-framework` | `^1.3.0` | Breaking: Namespace-Änderung von `TeamSpeak3_*` zu `PlanetTeamSpeak\TeamSpeak3Framework\*` |
+| `planetteamspeak/ts3-php-framework` | `dev-master` | Eigener Fork: [nodedropweb/ts3phpframework](https://github.com/nodedropweb/ts3phpframework) mit allen PHP 8.4-Patches. Breaking: Namespace-Änderung von `TeamSpeak3_*` zu `PlanetTeamSpeak\TeamSpeak3Framework\*` |
 | `latte/latte` | `^3.0` | Breaking: `{php}` entfernt, `setTranslator()` → `TranslatorExtension` |
 | `catfan/medoo` | `^2.4` | Breaking: Config-Keys umbenannt (`database_type`→`type`, `server`→`host`, `database_name`→`database`) |
 | `wruczek/php-file-cache` | `^0` | Abandoned, aber funktioniert noch |
@@ -118,22 +118,19 @@ $this->getLatte()->addExtension(new TranslatorExtension(function ($s, ...$args) 
 
 ---
 
-## Vendor-Patches nach composer install neu anwenden
+## Vendor-Patches
 
-Nach jedem `composer install` oder `composer update` müssen die Vendor-Patches manuell neu angewendet werden:
+Alle PHP 8.4-Fixes sind im eigenen Fork [nodedropweb/ts3phpframework](https://github.com/nodedropweb/ts3phpframework) committed.  
+`composer.json` zeigt direkt auf diesen Fork (`dev-master`), daher sind nach `composer install` **keine manuellen Patches mehr nötig**.
+
+Beim ersten `composer install` auf einem neuen Server braucht Composer einen GitHub-Token wegen API Rate Limits:
 
 ```bash
-# 1. OOM-Fix in StringHelper
-wsl -d drupaltv -- bash -c "php /tmp/patch_stringhelper.php"
-
-# 2. Nullable-Fix für alle Framework-Dateien
-wsl -d drupaltv -- bash -c "php /tmp/fix_nullable2.php"
-
-# Permissions danach
-wsl -d drupaltv -u root -- bash -c "chown -R www-data:www-data /var/www/ts-website/src/private/vendor"
+# GitHub-Token aus gh CLI holen und Composer bekannt machen
+composer config -g github-oauth.github.com $(gh auth token)
+# Danach normal installieren
+composer install
 ```
-
-> **TODO:** Langfristig eigenen Fork von `planetteamspeak/ts3-php-framework` anlegen und `composer.json` darauf zeigen lassen, oder `cweagans/composer-patches` einrichten.
 
 ---
 
@@ -176,8 +173,8 @@ wsl -d drupaltv -- bash -c "curl -s http://localhost/api/getstatus.php"
 
 ## Offene TODOs
 
-- [ ] Eigenen Fork von `planetteamspeak/ts3-php-framework` mit allen Patches anlegen
-- [ ] `composer.json` auf eigenen Fork zeigen lassen (dann keine manuellen Vendor-Patches mehr nötig)
+- [x] Eigener Fork angelegt: [nodedropweb/ts3phpframework](https://github.com/nodedropweb/ts3phpframework)
+- [x] `composer.json` zeigt auf den Fork (`dev-master`) — keine manuellen Vendor-Patches mehr nötig
 - [ ] Installer-Step für SQLite reaktivieren (aktuell auskommentiert)
 - [ ] Admin-Panel fehlt komplett (ist upstream auch noch nicht fertig)
 - [ ] PHP 8.5 Kompatibilität testen sobald verfügbar
