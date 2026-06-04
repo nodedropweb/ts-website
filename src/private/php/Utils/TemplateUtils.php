@@ -3,6 +3,7 @@
 namespace Wruczek\TSWebsite\Utils;
 
 use Latte\Engine;
+use Latte\Essential\TranslatorExtension;
 use Latte\Runtime\Html;
 use Wruczek\TSWebsite\AdminStatus;
 use Wruczek\TSWebsite\Config;
@@ -40,10 +41,10 @@ class TemplateUtils {
             return new Html(__get($s, $args));
         });
 
-        // Latte 3: {_"key"} uses setTranslator, not addFilter("translate")
-        $this->getLatte()->setTranslator(function ($s, ...$args) {
-            return new Html(__get($s, $args));
-        });
+        // Latte 3: {_"key"} requires TranslatorExtension
+        $this->getLatte()->addExtension(new TranslatorExtension(function ($s, ...$args) {
+            return __get((string) $s, $args);
+        }));
     }
 
     /**

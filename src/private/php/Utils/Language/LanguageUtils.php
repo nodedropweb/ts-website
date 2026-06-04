@@ -155,7 +155,7 @@ class LanguageUtils {
             $englishname = $lang["englishname"];
             $nativename = $lang["nativename"];
             $langcode = $lang["langcode"];
-            $isdefault = $lang["isdefault"] === "1";
+            $isdefault = (int) $lang["isdefault"] === 1;
 
             $strings = $db->select("translations", [
                 "identifier",
