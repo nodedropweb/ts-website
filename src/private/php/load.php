@@ -93,5 +93,14 @@ date_default_timezone_set(Config::get("timezone"));
 // This makes it possible to cache TS3 library objects
 TeamSpeak3::init();
 
+// Cleanly close the TS3 TCP connection before PHP shutdown to prevent
+// OOM crashes in StringHelper when the destructor drains the socket buffer.
+register_shutdown_function(function () {
+    try {
+        \Wruczek\TSWebsite\Utils\TeamSpeakUtils::i()->reset();
+    } catch (\Throwable $ignored) {}
+    error_reporting(0);
+});
+
 // Sync server icon cache if needed
 ServerIconCache::syncIfNeeded();
