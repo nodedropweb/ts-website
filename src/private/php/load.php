@@ -99,9 +99,11 @@ TeamSpeak3::init();
 register_shutdown_function(function () {
     error_reporting(0);
     try {
-        $tsHost = \Wruczek\TSWebsite\Utils\TeamSpeakUtils::i()->getTSNodeHost();
+        // getExistingTSNodeHost() returns null if no connection was made this request
+        // so we never accidentally open a new connection during shutdown
+        $tsHost = \Wruczek\TSWebsite\Utils\TeamSpeakUtils::i()->getExistingTSNodeHost();
         if ($tsHost !== null) {
-            // Close the underlying TCP stream directly — no quit, no readLine, no OOM
+            // Close the raw TCP stream directly — bypasses quit/readLine, no OOM
             $stream = $tsHost->getAdapter()->getTransport()->getStream();
             if (is_resource($stream)) {
                 fclose($stream);

@@ -33,6 +33,14 @@ class TeamSpeakUtils {
      * data from config database
      * @return TeamSpeak3_Node_Host|null
      */
+    /**
+     * Returns existing TS3 host WITHOUT creating a new connection.
+     * Safe to call from shutdown handlers.
+     */
+    public function getExistingTSNodeHost(): ?TeamSpeak3_Node_Host {
+        return $this->tsNodeHost;
+    }
+
     public function getTSNodeHost(): ?TeamSpeak3_Node_Host {
         if($this->tsNodeHost === null) {
             $hostname = $this->configUtils->getValue("query_hostname");
