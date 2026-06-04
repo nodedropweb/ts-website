@@ -34,7 +34,27 @@ class Config {
             die("Cannot read the db config file! (" . __CONFIG_FILE . ")");
         }
 
-        $this->databaseConfig = $config;
+        $this->databaseConfig = self::migrateMedooConfig($config);
+    }
+
+    /**
+     * Translates Medoo 1.x config keys to Medoo 2.x keys so existing
+     * dbconfig.php files written by the old installer keep working.
+     */
+    private static function migrateMedooConfig(array $config): array {
+        $keyMap = [
+            'database_type' => 'type',
+            'server'        => 'host',
+            'database_name' => 'database',
+            'database_file' => 'database',
+        ];
+        foreach ($keyMap as $old => $new) {
+            if (isset($config[$old]) && !isset($config[$new])) {
+                $config[$new] = $config[$old];
+                unset($config[$old]);
+            }
+        }
+        return $config;
     }
 
     /**
