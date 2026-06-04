@@ -48,8 +48,14 @@ if ($flash): ?>
                 <tr>
                     <td class="text-muted"><?= $news['newsId'] ?></td>
                     <td><?= htmlspecialchars($news['title']) ?></td>
-                    <td><?= date('d.m.Y H:i', is_int($news['added']) ? $news['added'] : strtotime($news['added'])) ?></td>
-                    <td><?= $news['edited'] ? date('d.m.Y H:i', is_int($news['edited']) ? $news['edited'] : strtotime($news['edited'])) : '—' ?></td>
+                    <?php
+                        $addedTs = is_int($news['added']) ? $news['added'] : strtotime($news['added'] ?? '');
+                        $editedTs = $news['edited'] && !str_starts_with((string)$news['edited'], '0000')
+                            ? (is_int($news['edited']) ? $news['edited'] : strtotime($news['edited']))
+                            : false;
+                    ?>
+                    <td><?= $addedTs > 0 ? date('d.m.Y H:i', $addedTs) : '—' ?></td>
+                    <td><?= $editedTs > 0 ? date('d.m.Y H:i', $editedTs) : '—' ?></td>
                     <td class="text-right">
                         <a href="news-edit.php?id=<?= $news['newsId'] ?>" class="btn btn-sm btn-outline-secondary">
                             <i class="fas fa-edit"></i>
