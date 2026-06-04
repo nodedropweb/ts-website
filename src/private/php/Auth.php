@@ -31,6 +31,30 @@ class Auth {
         unset($_SESSION["tsuser"]);
     }
 
+    /**
+     * Returns all IPs that should be considered equivalent to the given browser IP.
+     * In WSL2, a browser on the Windows host appears as 127.0.0.1, while the same
+     * host's TS3 client appears as the WSL2 gateway IP (e.g. 172.17.48.1).
+     * This method resolves that mismatch for local development setups.
+     */
+    private static function resolveEquivalentIps(string $ip): array {
+        $ips = [$ip];
+
+        // If browser appears as localhost, also consider the WSL2 default gateway
+        // (= Windows host IP as seen from inside WSL2) as equivalent.
+        if ($ip === '127.0.0.1' || $ip === '::1') {
+            $gateway = shell_exec("ip route | grep default | awk '{print $3}' | head -1");
+            if ($gateway) {
+                $gateway = trim($gateway);
+                if (filter_var($gateway, FILTER_VALIDATE_IP)) {
+                    $ips[] = $gateway;
+                }
+            }
+        }
+
+        return $ips;
+    }
+
     public static function getTsUsersByIp(?string $ip = null): ?array {
         if ($ip === null) {
             $ip = Utils::getClientIp();
@@ -42,6 +66,7 @@ class Auth {
             return null;
         }
 
+        $equivalentIps = self::resolveEquivalentIps($ip);
         $ret = [];
 
         foreach ($clientList as $client) {
@@ -50,7 +75,7 @@ class Auth {
 
             $clientIp = (string) $client["connection_client_ip"];
 
-            if ($clientIp === $ip) {
+            if (in_array($clientIp, $equivalentIps, true)) {
                 $ret[$client["client_database_id"]] = (string) $client["client_nickname"];
             }
         }
