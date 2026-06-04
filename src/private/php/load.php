@@ -93,13 +93,21 @@ date_default_timezone_set(Config::get("timezone"));
 // This makes it possible to cache TS3 library objects
 TeamSpeak3::init();
 
-// Cleanly close the TS3 TCP connection before PHP shutdown to prevent
-// OOM crashes in StringHelper when the destructor drains the socket buffer.
+// Close the raw TS3 TCP socket before PHP shutdown to prevent OOM crashes
+// in StringHelper when the destructor tries to drain the socket buffer.
+// We bypass the TS3 "quit" handshake entirely by closing the stream directly.
 register_shutdown_function(function () {
-    try {
-        \Wruczek\TSWebsite\Utils\TeamSpeakUtils::i()->reset();
-    } catch (\Throwable $ignored) {}
     error_reporting(0);
+    try {
+        $tsHost = \Wruczek\TSWebsite\Utils\TeamSpeakUtils::i()->getTSNodeHost();
+        if ($tsHost !== null) {
+            // Close the underlying TCP stream directly — no quit, no readLine, no OOM
+            $stream = $tsHost->getAdapter()->getTransport()->getStream();
+            if (is_resource($stream)) {
+                fclose($stream);
+            }
+        }
+    } catch (\Throwable $ignored) {}
 });
 
 // Sync server icon cache if needed
