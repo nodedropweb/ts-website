@@ -181,3 +181,10 @@ wsl -d drupaltv -- bash -c "curl -s http://localhost/api/getstatus.php"
 - [ ] Installer-Step für SQLite reaktivieren (aktuell auskommentiert)
 - [ ] Admin-Panel fehlt komplett (ist upstream auch noch nicht fertig)
 - [ ] PHP 8.5 Kompatibilität testen sobald verfügbar
+
+---
+
+## Versionshinweise
+
+- **TeamSpeak Server 3.13.8** ist die aktuellste verfügbare Version — kein Update nötig/möglich.
+- Der Installer prüft auf Build `>= 1564054246` (= TS3 3.10.0) — das ist korrekt und muss nicht angepasst werden.
