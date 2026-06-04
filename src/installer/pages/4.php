@@ -80,11 +80,28 @@ if (isset($_GET["syncicons"])) {
 
     try {
         ServerIconCache::syncIcons();
-        ApiUtils::jsonSuccess();
+        $response = json_encode(["success" => true]);
     } catch (\Exception $e) {
-        ApiUtils::jsonError($e->getMessage(), $e->getCode());
+        $response = json_encode(["success" => false, "error" => $e->getMessage()]);
     }
 
+    // Reset TS3 connection before output so the TCP destructor
+    // does not crash with OOM during PHP shutdown
+    try {
+        \Wruczek\TSWebsite\Utils\TeamSpeakUtils::i()->reset();
+    } catch (\Throwable $ignored) {}
+
+    // Suppress any further errors (e.g. OOM in TS3 framework shutdown)
+    @ini_set('display_errors', 0);
+    error_reporting(0);
+
+    // The installer wraps pages in ob_start() — discard the buffer and send JSON directly
+    while (ob_get_level()) {
+        ob_end_clean();
+    }
+
+    header('Content-Type: application/json');
+    echo $response;
     exit;
 }
 ?>
