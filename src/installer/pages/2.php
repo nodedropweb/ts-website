@@ -83,13 +83,12 @@ if(!empty($_POST["allow-metrics-checkbox"])) {
 
 <?php
 function checkRequirements() {
-    // PHP version - 7.2.0 min, but older than 8.0
-    // ts3phpframework needs to release a version with https://git.io/JKlRx for PHP 8 support
+    // PHP version - 8.4 minimum
     {
-        $result = (PHP_VERSION_ID < 70200 || PHP_VERSION_ID > 80000) ? 2 : 0;
+        $result = (PHP_VERSION_ID < 80400) ? 2 : 0;
 
         showCheckResult(
-                "PHP 7.2.0 - 7.4",
+                "PHP >= 8.4",
                 $result,
                 "Current PHP version: " . PHP_VERSION
         );
