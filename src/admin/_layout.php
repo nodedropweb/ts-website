@@ -8,9 +8,10 @@ use Wruczek\TSWebsite\Auth;
 
 function adminHeader(string $title, string $activeNav = ''): void {
     $nav = [
-        'news'   => ['href' => 'news.php',   'label' => '<i class="fas fa-newspaper"></i> News'],
-        'faq'    => ['href' => 'faq.php',    'label' => '<i class="fas fa-question-circle"></i> FAQ'],
-        'config' => ['href' => 'config.php', 'label' => '<i class="fas fa-cog"></i> Konfiguration'],
+        'news'     => ['href' => 'news.php',     'label' => '<i class="fas fa-newspaper"></i> News'],
+        'faq'      => ['href' => 'faq.php',      'label' => '<i class="fas fa-question-circle"></i> FAQ'],
+        'assigner' => ['href' => 'assigner.php', 'label' => '<i class="fas fa-gamepad"></i> Assigner'],
+        'config'   => ['href' => 'config.php',   'label' => '<i class="fas fa-cog"></i> Konfiguration'],
     ];
     $version = defined('__TSWEBSITE_VERSION') ? __TSWEBSITE_VERSION : '';
     ?>

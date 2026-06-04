@@ -73,7 +73,22 @@ if ($flash): ?>
                     <span class="config-type-badge config-type-<?= $type ?> ml-1"><?= strtoupper($type) ?></span>
                 </label>
                 <div class="col-sm-8">
-                <?php if ($type === 'bool'): ?>
+                <?php if ($key === 'assignerconfig'): ?>
+                    <a href="assigner.php" class="btn btn-primary btn-sm">
+                        <i class="fas fa-gamepad"></i> Im Assigner-Editor bearbeiten
+                    </a>
+                    <small class="form-text text-muted">Kategorien, Gruppen und Icons visuell konfigurieren.</small>
+                <?php elseif ($key === 'adminstatus_groups'): ?>
+                    <a href="adminstatus.php" class="btn btn-info btn-sm">
+                        <i class="fas fa-users"></i> Admin-Status-Gruppen bearbeiten
+                    </a>
+                    <small class="form-text text-muted">Wähle welche Servergruppen im Admin-Status-Widget erscheinen.</small>
+                <?php elseif ($key === 'admin_cldbids'): ?>
+                    <a href="admins.php" class="btn btn-warning btn-sm">
+                        <i class="fas fa-shield-alt"></i> Admin-Zugänge verwalten
+                    </a>
+                    <small class="form-text text-muted">Wer hat Zugriff auf dieses Admin-Panel?</small>
+                <?php elseif ($type === 'bool'): ?>
                     <div class="custom-control custom-switch mt-2">
                         <input type="checkbox" class="custom-control-input"
                                id="cfg_<?= $key ?>" name="<?= $inputName ?>" value="true"
