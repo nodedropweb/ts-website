@@ -64,15 +64,16 @@ class DefaultNewsStore implements INewsStore {
         return $this->db->count($this->newsTable);
     }
 
-    public function addNews(string $title, string $content, ?int $addDate = null, ?int $editDate = null): int {
-        if ($addDate === null) {
-            $addDate = time();
-        }
+    /** Convert a Unix timestamp int to MySQL TIMESTAMP string */
+    private static function toDatetime(?int $ts): ?string {
+        return $ts !== null ? date('Y-m-d H:i:s', $ts) : null;
+    }
 
+    public function addNews(string $title, string $content, ?int $addDate = null, ?int $editDate = null): int {
         $this->db->insert($this->newsTable, [
-            "title" => $title,
-            "added" => $addDate,
-            "edited" => $editDate,
+            "title"   => $title,
+            "added"   => self::toDatetime($addDate ?? time()),
+            "edited"  => self::toDatetime($editDate),
             "content" => $content,
         ]);
 
@@ -82,10 +83,10 @@ class DefaultNewsStore implements INewsStore {
     public function editNews(int $newsId, ?string $title = null, ?string $content = null, ?int $addDate = null, ?int $editDate = null): bool {
         $data = [];
 
-        if ($title !== null) $data["title"] = $title;
-        if ($content !== null) $data["content"] = $content;
-        if ($addDate !== null) $data["added"] = $addDate;
-        if ($editDate !== null) $data["edited"] = $editDate;
+        if ($title !== null)   $data["title"]   = $title;
+        if ($content !== null) $data["content"]  = $content;
+        if ($addDate !== null) $data["added"]    = self::toDatetime($addDate);
+        if ($editDate !== null) $data["edited"]  = self::toDatetime($editDate);
 
         $update = $this->db->update($this->newsTable, $data, [
             "newsId" => $newsId
