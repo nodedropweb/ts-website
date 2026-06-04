@@ -31,7 +31,9 @@ switch ($action) {
         if (!$id || !$title || !$content) {
             redirect('Ungültige Eingabe.', 'danger');
         }
-        $store->editNews($id, $title, $content, null, time());
+        // Update "added" to now so the frontend shows the correct "last updated" time.
+        // We don't use the "edited" column — the pencil icon is removed from the template.
+        $store->editNews($id, $title, $content, time(), null);
         redirect('News erfolgreich gespeichert.');
         break;
 
