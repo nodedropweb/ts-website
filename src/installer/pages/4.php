@@ -70,6 +70,13 @@ if (!empty($_POST)) {
                     'data-target="#queryperms">here</a> to view required permissions list.';
             }
         }
+
+        // Explicitly destroy TS3 connection objects so the TCP socket
+        // is closed here rather than during PHP shutdown — prevents OOM
+        // in StringHelper when the destructor tries to drain the socket buffer.
+        unset($tsServer, $tsNodeHost);
+        @ini_set('display_errors', 0);
+        error_reporting(0);
     }
 }
 
