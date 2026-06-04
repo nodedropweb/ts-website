@@ -51,5 +51,6 @@ header("Content-Type: application/json");
 echo json_encode($returnJson);
 
 function describeSeconds($seconds) {
-    return TeamSpeak3_Helper_Convert::seconds($seconds, false, "%dd %02dh %02dm");
+    // DateInterval::format() codes: %d=days, %H=hours (zero-padded), %I=minutes (zero-padded)
+    return TeamSpeak3_Helper_Convert::seconds($seconds, false, "%dd %Hh %Im");
 }
