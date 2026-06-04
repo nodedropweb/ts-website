@@ -89,3 +89,6 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Admin Lexical build dependencies (build with: cd ~/ts-lexical-build && esbuild editor.js --bundle ...)
+/home/drupal/ts-lexical-build/node_modules

@@ -1,0 +1,168 @@
+/* TS-Website Admin Panel */
+
+body.admin-body {
+    background: #1a1d23;
+    color: #e0e0e0;
+    min-height: 100vh;
+}
+
+.admin-navbar {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.admin-container {
+    max-width: 1400px;
+}
+
+.admin-page-title {
+    color: #fff;
+    font-weight: 600;
+    border-bottom: 1px solid #2e3340;
+    padding-bottom: .75rem;
+}
+
+/* Cards */
+.card {
+    background: #23263a;
+    border: 1px solid #2e3340;
+    border-radius: 8px;
+}
+
+.card-header {
+    background: #1e2030;
+    border-bottom: 1px solid #2e3340;
+    font-weight: 600;
+}
+
+/* Tables */
+.table {
+    color: #e0e0e0;
+}
+
+.table thead th {
+    border-bottom-color: #2e3340;
+    color: #adb5bd;
+    font-size: .85rem;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}
+
+.table td, .table th {
+    border-top-color: #2e3340;
+    vertical-align: middle;
+}
+
+.table-hover tbody tr:hover {
+    background: #2a2d3e;
+}
+
+/* Forms */
+.form-control, .form-control:focus {
+    background: #1a1d23;
+    border-color: #3a3f50;
+    color: #e0e0e0;
+}
+
+.form-control:focus {
+    border-color: #5b6ee1;
+    box-shadow: 0 0 0 .2rem rgba(91,110,225,.25);
+}
+
+.form-text.text-muted {
+    color: #6c757d !important;
+}
+
+/* Lexical Editor */
+.lexical-toolbar {
+    background: #1e2030;
+    border: 1px solid #3a3f50;
+    border-bottom: none;
+    border-radius: 6px 6px 0 0;
+    padding: .4rem .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .25rem;
+    align-items: center;
+}
+
+.lexical-toolbar .btn {
+    font-size: .8rem;
+    padding: .2rem .5rem;
+    line-height: 1.4;
+    color: #cdd5ef;
+    border-color: #3a3f50;
+}
+
+.lexical-toolbar .btn:hover {
+    background: #2e3340;
+    color: #fff;
+}
+
+.lexical-toolbar .toolbar-sep {
+    width: 1px;
+    height: 20px;
+    background: #3a3f50;
+    margin: 0 .25rem;
+}
+
+.lexical-editor-wrap {
+    border: 1px solid #3a3f50;
+    border-radius: 0 0 6px 6px;
+    background: #1a1d23;
+    min-height: 300px;
+}
+
+.lexical-editor-inner {
+    min-height: 300px;
+    padding: .75rem 1rem;
+    outline: none;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+.lexical-editor-inner:focus {
+    outline: none;
+}
+
+/* Lexical content styles */
+.lx-bold { font-weight: bold; }
+.lx-italic { font-style: italic; }
+.lx-underline { text-decoration: underline; }
+.lx-strikethrough { text-decoration: line-through; }
+.lx-code { font-family: monospace; background: #2e3340; padding: .1em .3em; border-radius: 3px; }
+.lx-h1 { font-size: 1.8em; font-weight: 700; margin: .5em 0; }
+.lx-h2 { font-size: 1.4em; font-weight: 700; margin: .5em 0; }
+.lx-h3 { font-size: 1.2em; font-weight: 700; margin: .5em 0; }
+.lx-ul, .lx-ol { padding-left: 1.5em; }
+.lx-listitem { margin: .25em 0; }
+.lx-link { color: #5b9cf6; text-decoration: underline; cursor: pointer; }
+.lx-quote { border-left: 4px solid #5b6ee1; padding-left: 1em; color: #adb5bd; margin: .5em 0; }
+.lx-paragraph { margin: 0 0 .5em; }
+
+/* Buttons */
+.btn-primary {
+    background: #5b6ee1;
+    border-color: #5b6ee1;
+}
+.btn-primary:hover {
+    background: #4a5dc7;
+    border-color: #4a5dc7;
+}
+
+.btn-danger { background: #c0392b; border-color: #c0392b; }
+
+/* Config table types */
+.config-type-badge {
+    font-size: .7rem;
+    padding: .15em .4em;
+    border-radius: 3px;
+    font-family: monospace;
+    font-weight: 600;
+}
+.config-type-string  { background: #1a4a3a; color: #2ecc71; }
+.config-type-int     { background: #1a2a4a; color: #5b9cf6; }
+.config-type-bool    { background: #3a2a1a; color: #e67e22; }
+.config-type-json    { background: #2a1a4a; color: #9b59b6; }
+
+/* Alerts */
+.alert { border-radius: 6px; }
