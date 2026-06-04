@@ -1,5 +1,6 @@
 <?php
 
+use PlanetTeamSpeak\TeamSpeak3Framework\Helper\Convert as TeamSpeak3_Helper_Convert;
 use Wruczek\TSWebsite\CacheManager;
 use Wruczek\TSWebsite\Config;
 

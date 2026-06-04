@@ -1,5 +1,7 @@
 <?php
 
+use PlanetTeamSpeak\TeamSpeak3Framework\Helper\Convert as TeamSpeak3_Helper_Convert;
+use PlanetTeamSpeak\TeamSpeak3Framework\Helper\StringHelper as TeamSpeak3_Helper_String;
 use Wruczek\TSWebsite\CacheManager;
 
 require_once __DIR__ . "/../private/php/load.php";
