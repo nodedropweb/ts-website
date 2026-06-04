@@ -1,6 +1,8 @@
 <?php
 if(!defined("__TSWEBSITE_VERSION")) die("Direct access not allowed");
 
+use PlanetTeamSpeak\TeamSpeak3Framework\Helper\Convert as TeamSpeak3_Helper_Convert;
+use PlanetTeamSpeak\TeamSpeak3Framework\TeamSpeak3;
 use Wruczek\TSWebsite\Config;
 use Wruczek\TSWebsite\ServerIconCache;
 use Wruczek\TSWebsite\Utils\ApiUtils;
