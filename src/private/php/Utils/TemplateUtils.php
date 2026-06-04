@@ -42,8 +42,9 @@ class TemplateUtils {
         });
 
         // Latte 3: {_"key"} requires TranslatorExtension
+        // Wrap in Html so Latte does not escape translation values that contain HTML
         $this->getLatte()->addExtension(new TranslatorExtension(function ($s, ...$args) {
-            return __get((string) $s, $args);
+            return new Html(__get((string) $s, $args));
         }));
     }
 
