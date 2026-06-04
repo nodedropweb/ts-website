@@ -73,7 +73,13 @@ if ($flash): ?>
                     <span class="config-type-badge config-type-<?= $type ?> ml-1"><?= strtoupper($type) ?></span>
                 </label>
                 <div class="col-sm-8">
-                <?php if ($key === 'assignerconfig'): ?>
+                <?php if (in_array($key, ['assignerconfig', 'assigner_cooldown_seconds', 'assigner_required_sgids'], true)): ?>
+                    <a href="assigner.php" class="btn btn-primary btn-sm">
+                        <i class="fas fa-gamepad"></i> Im Assigner-Editor bearbeiten
+                    </a>
+                    <small class="form-text text-muted">Wird im Assigner-Editor verwaltet.</small>
+                <?php elseif ($key === 'assignerconfig'): // fallthrough guard - never reached
+                ?>
                     <a href="assigner.php" class="btn btn-primary btn-sm">
                         <i class="fas fa-gamepad"></i> Im Assigner-Editor bearbeiten
                     </a>

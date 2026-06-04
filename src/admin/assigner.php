@@ -15,13 +15,25 @@ $flashType = $_GET['type']  ?? 'success';
 $serverGroups = CacheManager::i()->getServerGroupList() ?? [];
 $serverGroups = array_filter($serverGroups, fn($g) => ((int)($g['sgid'] ?? 0)) > 1 && ((int)($g['type'] ?? 0)) !== 0);
 
-// Load current assignerconfig
 $db  = DatabaseUtils::i()->getDb();
+
+// Load current assignerconfig
 $raw = $db->get('config', 'value', ['identifier' => 'assignerconfig']);
 $categories = [];
 if ($raw) {
     $decoded = json_decode($raw, true);
     if (is_array($decoded)) $categories = $decoded;
+}
+
+// Load assigner_cooldown_seconds
+$cooldown = (int)($db->get('config', 'value', ['identifier' => 'assigner_cooldown_seconds']) ?? 0);
+
+// Load assigner_required_sgids
+$rawReq = $db->get('config', 'value', ['identifier' => 'assigner_required_sgids']);
+$requiredSgids = [];
+if ($rawReq) {
+    $dec = json_decode($rawReq, true);
+    if (is_array($dec)) $requiredSgids = array_map('intval', $dec);
 }
 
 // FA icons
@@ -62,6 +74,48 @@ adminHeader('Assigner-Konfiguration', 'assigner');
     Definiere Kategorien für die Gruppen-Zuweisung. Jede Kategorie hat einen Namen, ein Icon, eine maximale Anzahl
     wählbarer Gruppen und die zugehörigen Servergruppen.
 </p>
+
+<!-- Assigner-Einstellungen -->
+<div class="card mb-4">
+    <div class="card-header">Allgemeine Einstellungen</div>
+    <div class="card-body">
+        <div class="form-row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label>Cooldown (Sekunden)
+                        <small class="text-muted d-block">Wie lange muss ein Nutzer warten bevor er die Zuweisung erneut ändern kann. 0 = kein Cooldown.</small>
+                    </label>
+                    <input type="number" class="form-control" id="input-cooldown"
+                           value="<?= $cooldown ?>" min="0">
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="form-group">
+                    <label>Erforderliche Servergruppen
+                        <small class="text-muted d-block">Nur Mitglieder dieser Gruppen können den Assigner nutzen. Leer = alle dürfen.</small>
+                    </label>
+                    <?php if (empty($serverGroups)): ?>
+                        <p class="text-muted small">Keine Servergruppen verfügbar.</p>
+                    <?php else: ?>
+                    <div class="d-flex flex-wrap" style="gap:.5rem">
+                        <?php foreach ($serverGroups as $g): ?>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input req-sgid-checkbox"
+                                   id="req_<?= (int)$g['sgid'] ?>" value="<?= (int)$g['sgid'] ?>"
+                                   <?= in_array((int)$g['sgid'], $requiredSgids, true) ? 'checked' : '' ?>>
+                            <label class="custom-control-label" for="req_<?= (int)$g['sgid'] ?>">
+                                <?= htmlspecialchars((string)$g['name']) ?>
+                                <span class="text-muted small">(#<?= (int)$g['sgid'] ?>)</span>
+                            </label>
+                        </div>
+                        <?php endforeach; ?>
+                    </div>
+                    <?php endif; ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="mb-3 d-flex justify-content-between">
     <button type="button" class="btn btn-primary" id="btn-add-category">
@@ -220,12 +274,17 @@ function doSave() {
         if (name) result.push({name, icon, max, groups});
     });
 
+    const cooldown   = parseInt(document.getElementById('input-cooldown').value) || 0;
+    const reqSgids   = [...document.querySelectorAll('.req-sgid-checkbox:checked')].map(cb => parseInt(cb.value));
+
     fetch('api/config.php', {
         method: 'POST',
         headers: {'Content-Type': 'application/x-www-form-urlencoded'},
         body: new URLSearchParams({
             'csrf-token': CSRF_TOKEN,
-            'config[assignerconfig]': JSON.stringify(result)
+            'config[assignerconfig]':          JSON.stringify(result),
+            'config[assigner_cooldown_seconds]': String(cooldown),
+            'config[assigner_required_sgids]':   JSON.stringify(reqSgids),
         })
     }).then(() => {
         window.location = 'assigner.php?flash=' + encodeURIComponent('Assigner-Konfiguration gespeichert.') + '&type=success';
