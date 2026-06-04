@@ -2,6 +2,7 @@
 
 namespace Wruczek\TSWebsite;
 
+use PlanetTeamSpeak\TeamSpeak3Framework\Exception\TeamSpeak3Exception as TeamSpeak3_Exception;
 use Wruczek\PhpFileCache\PhpFileCache;
 use Wruczek\TSWebsite\Utils\TeamSpeakUtils;
 
@@ -36,7 +37,7 @@ class AdminStatus {
                     }
 
                     return $clients;
-                } catch (\TeamSpeak3_Exception $e) {
+                } catch (TeamSpeak3_Exception $e) {
                     TeamSpeakUtils::i()->addExceptionToExceptionsList($e);
                 }
             }

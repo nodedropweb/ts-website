@@ -19,11 +19,11 @@ if (!empty($_POST)) {
 
     if (!empty($dbhostname) && !empty($dbusername) && !empty($dbname)) {
         $dbconfig = [
-            "database_type" => "mysql",
-            "server" => $dbhostname,
+            "type" => "mysql",
+            "host" => $dbhostname,
             "username" => $dbusername,
             "password" => $dbpassword,
-            "database_name" => $dbname,
+            "database" => $dbname,
             "prefix" => $dbprefix,
             "port" => 3306,
             "charset" => "utf8mb4"

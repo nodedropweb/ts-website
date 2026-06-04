@@ -2,6 +2,7 @@
 
 namespace Wruczek\TSWebsite;
 
+use PlanetTeamSpeak\TeamSpeak3Framework\Exception\TeamSpeak3Exception as TeamSpeak3_Exception;
 use Wruczek\PhpFileCache\PhpFileCache;
 use Wruczek\TSWebsite\Utils\SingletonTait;
 use Wruczek\TSWebsite\Utils\TeamSpeakUtils;
@@ -42,7 +43,7 @@ class CacheManager {
             if(TeamSpeakUtils::i()->checkTSConnection()) {
                 try {
                     return TeamSpeakUtils::i()->getTSNodeServer()->getInfo();
-                } catch (\TeamSpeak3_Exception $e) {
+                } catch (TeamSpeak3_Exception $e) {
                     TeamSpeakUtils::i()->addExceptionToExceptionsList($e);
                 }
             }
@@ -64,7 +65,7 @@ class CacheManager {
             if(TeamSpeakUtils::i()->checkTSConnection()) {
                 try {
                     return TeamSpeakUtils::i()->getTSNodeServer()->banList();
-                } catch (\TeamSpeak3_Exception $e) {
+                } catch (TeamSpeak3_Exception $e) {
                     if ($e->getCode() === 1281) { // database empty result set
                         return [];
                     }
@@ -90,7 +91,7 @@ class CacheManager {
             if(TeamSpeakUtils::i()->checkTSConnection()) {
                 try {
                     return $this->tsNodeObjectToArray(TeamSpeakUtils::i()->getTSNodeServer()->clientList());
-                } catch (\TeamSpeak3_Exception $e) {
+                } catch (TeamSpeak3_Exception $e) {
                     TeamSpeakUtils::i()->addExceptionToExceptionsList($e);
                 }
             }
@@ -128,7 +129,7 @@ class CacheManager {
             if(TeamSpeakUtils::i()->checkTSConnection()) {
                 try {
                     return $this->tsNodeObjectToArray(TeamSpeakUtils::i()->getTSNodeServer()->channelList());
-                } catch (\TeamSpeak3_Exception $e) {
+                } catch (TeamSpeak3_Exception $e) {
                     TeamSpeakUtils::i()->addExceptionToExceptionsList($e);
                 }
             }
@@ -150,7 +151,7 @@ class CacheManager {
             if(TeamSpeakUtils::i()->checkTSConnection()) {
                 try {
                     return $this->tsNodeObjectToArray(TeamSpeakUtils::i()->getTSNodeServer()->serverGroupList());
-                } catch (\TeamSpeak3_Exception $e) {
+                } catch (TeamSpeak3_Exception $e) {
                     TeamSpeakUtils::i()->addExceptionToExceptionsList($e);
                 }
             }
@@ -172,7 +173,7 @@ class CacheManager {
             if(TeamSpeakUtils::i()->checkTSConnection()) {
                 try {
                     return $this->tsNodeObjectToArray(TeamSpeakUtils::i()->getTSNodeServer()->channelGroupList());
-                } catch (\TeamSpeak3_Exception $e) {
+                } catch (TeamSpeak3_Exception $e) {
                     TeamSpeakUtils::i()->addExceptionToExceptionsList($e);
                 }
             }

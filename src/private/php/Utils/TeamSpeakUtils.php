@@ -2,6 +2,12 @@
 
 namespace Wruczek\TSWebsite\Utils;
 
+use PlanetTeamSpeak\TeamSpeak3Framework\Exception\ServerQueryException as TeamSpeak3_Adapter_ServerQuery_Exception;
+use PlanetTeamSpeak\TeamSpeak3Framework\Exception\TeamSpeak3Exception as TeamSpeak3_Exception;
+use PlanetTeamSpeak\TeamSpeak3Framework\Helper\StringHelper as TeamSpeak3_Helper_String;
+use PlanetTeamSpeak\TeamSpeak3Framework\Node\Host as TeamSpeak3_Node_Host;
+use PlanetTeamSpeak\TeamSpeak3Framework\Node\Server as TeamSpeak3_Node_Server;
+use PlanetTeamSpeak\TeamSpeak3Framework\TeamSpeak3;
 use Wruczek\TSWebsite\Config;
 
 /**
@@ -25,9 +31,9 @@ class TeamSpeakUtils {
     /**
      * Returns TeamSpeak3_Node_Host object created using
      * data from config database
-     * @return \TeamSpeak3_Node_Host|null
+     * @return TeamSpeak3_Node_Host|null
      */
-    public function getTSNodeHost(): ?\TeamSpeak3_Node_Host {
+    public function getTSNodeHost(): ?TeamSpeak3_Node_Host {
         if($this->tsNodeHost === null) {
             $hostname = $this->configUtils->getValue("query_hostname");
             $queryport = $this->configUtils->getValue("query_port");
@@ -35,7 +41,7 @@ class TeamSpeakUtils {
             $password = $this->configUtils->getValue("query_password");
 
             try {
-                $tsNodeHost = \TeamSpeak3::factory("serverquery://$hostname:$queryport/?timeout=3");
+                $tsNodeHost = TeamSpeak3::factory("serverquery://$hostname:$queryport/?timeout=3");
                 $tsNodeHost->login($username, $password);
                 $this->tsNodeHost = $tsNodeHost;
             } catch (\Exception $e) {
@@ -49,9 +55,9 @@ class TeamSpeakUtils {
     /**
      * Returns TeamSpeak3_Node_Server object created
      * using getTSNodeHost() method.
-     * @return \TeamSpeak3_Node_Server|null
+     * @return TeamSpeak3_Node_Server|null
      */
-    public function getTSNodeServer(): ?\TeamSpeak3_Node_Server {
+    public function getTSNodeServer(): ?TeamSpeak3_Node_Server {
         // Don't continue if TSNodeHost is NULL (not working / not initialised)
         if($this->tsNodeServer === null && $this->getTSNodeHost()) {
             $port = $this->configUtils->getValue("tsserver_port");
@@ -69,7 +75,7 @@ class TeamSpeakUtils {
                         try {
                             $this->tsNodeServer->selfUpdate(["client_nickname" => $newNickname]);
                             break; // success - we have set the nickname
-                        } catch (\TeamSpeak3_Exception $e) {
+                        } catch (TeamSpeak3_Exception $e) {
                             // error nickname in use
                             if ($e->getCode() === 513) {
                                 // add something random to the name and try again
@@ -95,12 +101,12 @@ class TeamSpeakUtils {
      * @param string $filename
      * @param int $cid Channel Id (defaults to 0 - server)
      * @param string $cpw Channel password (defaults to empty)
-     * @return \TeamSpeak3_Helper_String
-     * @throws \TeamSpeak3_Adapter_ServerQuery_Exception|\TeamSpeak3_Exception
+     * @return TeamSpeak3_Helper_String
+     * @throws TeamSpeak3_Adapter_ServerQuery_Exception|TeamSpeak3_Exception
      */
-    public function ftDownloadFile(string $filename, int $cid = 0, string $cpw = ""): \TeamSpeak3_Helper_String {
+    public function ftDownloadFile(string $filename, int $cid = 0, string $cpw = ""): TeamSpeak3_Helper_String {
         if (!$this->checkTSConnection()) {
-            throw new \TeamSpeak3_Exception("Cannot connect to the TeamSpeak server");
+            throw new TeamSpeak3_Exception("Cannot connect to the TeamSpeak server");
         }
 
         $dl = $this->getTSNodeServer()->transferInitDownload(mt_rand(0x0000, 0xFFFF), $cid, $filename, $cpw);
@@ -108,7 +114,7 @@ class TeamSpeakUtils {
         // wrap host in brackets if it contains a colon (is a IPv6)
         $host = (false !== strpos($dl["host"], ":") ? "[" . $dl["host"] . "]" : $dl["host"]);
 
-        $filetransfer = \TeamSpeak3::factory("filetransfer://$host:" . $dl["port"]);
+        $filetransfer = TeamSpeak3::factory("filetransfer://$host:" . $dl["port"]);
 
         return $filetransfer->download($dl["ftkey"], $dl["size"]);
     }

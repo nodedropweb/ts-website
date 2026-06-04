@@ -2,6 +2,8 @@
 
 namespace Wruczek\TSWebsite;
 
+use PlanetTeamSpeak\TeamSpeak3Framework\Exception\ServerQueryException as TeamSpeak3_Adapter_ServerQuery_Exception;
+use PlanetTeamSpeak\TeamSpeak3Framework\Exception\TeamSpeak3Exception as TeamSpeak3_Exception;
 use Wruczek\PhpFileCache\PhpFileCache;
 use Wruczek\TSWebsite\Utils\Language\LanguageUtils;
 use Wruczek\TSWebsite\Utils\TeamSpeakUtils;
@@ -82,7 +84,7 @@ class Auth {
      * @param $poke bool|null true = poke user, false = send a message, null = default value from config
      * @return string|null|false Returns code as string on success, null when
      *         client cannot be found and false when other error occurs.
-     * @throws \TeamSpeak3_Adapter_ServerQuery_Exception
+     * @throws TeamSpeak3_Adapter_ServerQuery_Exception
      */
     public static function generateConfirmationCode(int $cldbid, ?bool $poke = null) {
         if ($poke === null) {
@@ -103,7 +105,7 @@ class Auth {
 
                 self::saveConfirmationCode($cldbid, $code);
                 return $code;
-            } catch (\TeamSpeak3_Adapter_ServerQuery_Exception $e) {
+            } catch (TeamSpeak3_Adapter_ServerQuery_Exception $e) {
                 if ($e->getCode() === 512) {
                     return null;
                 }
@@ -215,7 +217,7 @@ class Auth {
      * @param $cacheTime int for how long we should cache the IDs?
      * @return array array with server group IDs of the user as ints
      * @throws UserNotAuthenticatedException if user is not logged in
-     * @throws \TeamSpeak3_Exception when we cannot get data from the TS server
+     * @throws TeamSpeak3_Exception when we cannot get data from the TS server
      */
     public static function getUserServerGroupIds(int $cacheTime = 60): array {
         if (!self::isLoggedIn()) {
@@ -239,14 +241,14 @@ class Auth {
         // If we end up here, it means we need to refresh the cache
 
         if (!TeamSpeakUtils::i()->checkTSConnection()) {
-            throw new \TeamSpeak3_Exception("Cannot connect to the TeamSpeak server");
+            throw new TeamSpeak3_Exception("Cannot connect to the TeamSpeak server");
         }
 
         try {
             $tsServer = TeamSpeakUtils::i()->getTSNodeServer();
             // Get all user groups from TS server
             $serverGroups = $tsServer->clientGetServerGroupsByDbid(self::getCldbid());
-        } catch (\TeamSpeak3_Exception $e) {
+        } catch (TeamSpeak3_Exception $e) {
             TeamSpeakUtils::i()->addExceptionToExceptionsList($e);
             throw $e;
         }
@@ -271,7 +273,7 @@ class Auth {
      * @param int $cacheTime value passed to getUserServerGroupIds()
      * @return array array with user server groups
      * @throws UserNotAuthenticatedException if user is not logged in
-     * @throws \TeamSpeak3_Exception when we cannot get data from the TS server
+     * @throws TeamSpeak3_Exception when we cannot get data from the TS server
      */
     public static function getUserServerGroups(int $cacheTime = 60): array {
         $serverGroupIds = self::getUserServerGroupIds($cacheTime);

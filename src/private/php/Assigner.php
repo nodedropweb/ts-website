@@ -2,6 +2,7 @@
 
 namespace Wruczek\TSWebsite;
 
+use PlanetTeamSpeak\TeamSpeak3Framework\Exception\TeamSpeak3Exception as TeamSpeak3_Exception;
 use Wruczek\PhpFileCache\PhpFileCache;
 use Wruczek\TSWebsite\Utils\TeamSpeakUtils;
 
@@ -68,7 +69,7 @@ class Assigner {
      *             2 - group assigner is not configured, stopping
      *             3 - reached category group limit
      * @throws UserNotAuthenticatedException
-     * @throws \TeamSpeak3_Exception
+     * @throws TeamSpeak3_Exception
      */
     public static function changeGroups(array $newGroups): int {
         $assignerConfig = self::getAssignerConfig();
@@ -122,13 +123,13 @@ class Assigner {
         foreach ($groupsToAdd as $sgid) {
             try {
                 $tsServer->serverGroupClientAdd($sgid, Auth::getCldbid());
-            } catch (\TeamSpeak3_Exception $e) {} // TODO log it to the admin panel?
+            } catch (TeamSpeak3_Exception $e) {} // TODO log it to the admin panel?
         }
 
         foreach ($groupsToRemove as $sgid) {
             try {
                 $tsServer->serverGroupClientDel($sgid, Auth::getCldbid());
-            } catch (\TeamSpeak3_Exception $e) {} // TODO log it to the admin panel?
+            } catch (TeamSpeak3_Exception $e) {} // TODO log it to the admin panel?
         }
 
         return 0;

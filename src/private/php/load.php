@@ -1,5 +1,6 @@
 <?php
 
+use PlanetTeamSpeak\TeamSpeak3Framework\TeamSpeak3;
 use Wruczek\TSWebsite\Config;
 use Wruczek\TSWebsite\ServerIconCache;
 use Wruczek\TSWebsite\Utils\CsrfUtils;

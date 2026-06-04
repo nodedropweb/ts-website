@@ -2,6 +2,8 @@
 
 namespace Wruczek\TSWebsite;
 
+use PlanetTeamSpeak\TeamSpeak3Framework\Exception\ServerQueryException as TeamSpeak3_Adapter_ServerQuery_Exception;
+use PlanetTeamSpeak\TeamSpeak3Framework\Helper\StringHelper as TeamSpeak3_Helper_String;
 use Wruczek\PhpFileCache\PhpFileCache;
 use Wruczek\TSWebsite\Utils\TeamSpeakUtils;
 
@@ -98,14 +100,14 @@ class ServerIconCache {
         return ($iconId < 0) ? (2 ** 32) - ($iconId * -1) : $iconId;
     }
 
-    public static function downloadIcon($iconId): \TeamSpeak3_Helper_String {
+    public static function downloadIcon($iconId): TeamSpeak3_Helper_String {
         return TeamSpeakUtils::i()->ftDownloadFile("/icon_$iconId");
     }
 
     public static function ftDownloadIconList(): array {
         try {
             return TeamSpeakUtils::i()->getTSNodeServer()->channelFileList(0, "", "/icons/");
-        } catch (\TeamSpeak3_Adapter_ServerQuery_Exception $e) {
+        } catch (TeamSpeak3_Adapter_ServerQuery_Exception $e) {
             if ($e->getCode() === 1281) { // database empty result set
                 return [];
             }

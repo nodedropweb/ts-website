@@ -2,7 +2,7 @@
 
 namespace Wruczek\TSWebsite;
 
-use TeamSpeak3;
+use PlanetTeamSpeak\TeamSpeak3Framework\TeamSpeak3;
 use Wruczek\TSWebsite\Utils\Utils;
 
 class ViewerRenderer {

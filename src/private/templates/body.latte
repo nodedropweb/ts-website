@@ -1,10 +1,8 @@
-{php
-$utils = Wruczek\TSWebsite\Utils\Utils::class;
-$tplutils = Wruczek\TSWebsite\Utils\TemplateUtils::i();
-$auth = Wruczek\TSWebsite\Auth::class;
-$userlangcode = $userLanguage->getLanguageCode();
-$navActiveIndex = isset($navActiveIndex) ? (int) $navActiveIndex : 0;
-}<!DOCTYPE html>
+{var $utils = Wruczek\TSWebsite\Utils\Utils::class}
+{var $tplutils = Wruczek\TSWebsite\Utils\TemplateUtils::i()}
+{var $auth = Wruczek\TSWebsite\Auth::class}
+{var $userlangcode = $userLanguage->getLanguageCode()}
+{var $navActiveIndex = isset($navActiveIndex) ? (int) $navActiveIndex : 0}<!DOCTYPE html>
 <html n:attr="lang => $userlangcode">
 <head>
     <meta charset="utf-8">
@@ -213,7 +211,7 @@ $navActiveIndex = isset($navActiveIndex) ? (int) $navActiveIndex : 0;
 
 <!--
     TS-website {\__TSWEBSITE_VERSION} ({\__TSWEBSITE_COMMIT}) by Wruczek
-    Generated in {@$tplutils::getRenderTime()} s
+    Generated in {$tplutils::getRenderTime()|noescape} s
     MySQL queries: {$sqlCount}
 -->
 

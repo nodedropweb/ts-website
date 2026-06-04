@@ -39,6 +39,11 @@ class TemplateUtils {
         $this->getLatte()->addFilter("translate", function ($s, ...$args) {
             return new Html(__get($s, $args));
         });
+
+        // Latte 3: {_"key"} uses setTranslator, not addFilter("translate")
+        $this->getLatte()->setTranslator(function ($s, ...$args) {
+            return new Html(__get($s, $args));
+        });
     }
 
     /**

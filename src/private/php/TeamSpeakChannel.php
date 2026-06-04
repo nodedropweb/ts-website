@@ -2,8 +2,8 @@
 
 namespace Wruczek\TSWebsite;
 
-use TeamSpeak3;
-use TeamSpeak3_Helper_String;
+use PlanetTeamSpeak\TeamSpeak3Framework\Helper\StringHelper as TeamSpeak3_Helper_String;
+use PlanetTeamSpeak\TeamSpeak3Framework\TeamSpeak3;
 
 /**
  * Class TeamSpeakChannel
