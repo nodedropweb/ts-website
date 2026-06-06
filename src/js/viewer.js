@@ -29,85 +29,80 @@ function refreshViewer() {
     })
 }
 
+// Re-binds all interactive viewer handlers after the container HTML is replaced.
+// Called once on page load (DOMContentLoaded) and after every AJAX refresh.
+function updateHooks() {
+    var container = $(".viewer-container")
+
+    // show-empty-channels toggle
+    container.find("[data-emptychannels]").off("click").on("click", function (e) {
+        var el = $(this)
+        var show = el.data("emptychannels") === "show"
+        container.find("[data-emptychannels]").show()
+        el.hide()
+        var emptyChannels = container.find(".not-occupied")
+        show ? emptyChannels.show() : emptyChannels.hide()
+    })
+
+    // ENTER key on focused channel
+    container.find("[data-channelid]").off("keypress").on("keypress", function (e) {
+        if (e.which === 13) {
+            $(this).click()
+        }
+    })
+
+    // Click to connect to channel
+    container.find("[data-channelid]").off("click").on("click", function (e) {
+        if ($(this).parent(".channel-container").hasClass("is-spacer")) {
+            return
+        }
+        if (!confirm(VIEWER_LANG.connection_alert)) {
+            return
+        }
+        var cid = $(this).data("channelid")
+        window.location = "ts3server://" + TS3_DISPLAY_IP + "/?cid=" + cid
+    })
+
+    // Hover / focus for client popovers
+    container.find(".client-container").off("mouseenter mouseleave focusin focusout")
+        .hover(function () {
+            showPopover($(this).find(".client-name"))
+        }, function () {
+            $(this).find(".client-name").popover("hide")
+        })
+        .on("focusin focusout", function (e) {
+            if (e.type === "focusin") {
+                showPopover($(this).find(".client-name"))
+            } else {
+                $(this).find(".client-name").popover("hide")
+            }
+        })
+
+    // Initialise popovers on client names
+    container.find(".client-container .client-name").popover({
+        title: VIEWER_LANG.client_info,
+        content: function () {
+            return '<div class="status-loader position-relative p-3"><div class="loader"></div></div>'
+        },
+        html: true,
+        template: '<div class="popover" role="tooltip"><h3 class="popover-header"></h3><div class="popover-body"></div></div>',
+        placement: "bottom",
+        trigger: "manual"
+    })
+}
+
 // show the viewer tip if no cookie present
 if (!Cookies.get("tswebsite_viewertip_hide")) {
     var alert = $("#server-viewer-tip")
     alert.show()
 
-    // preserve alert dismiss with a cookie
     alert.find(".close").click(function (e) {
         e.preventDefault()
         Cookies.set("tswebsite_viewertip_hide", true, {expires: 365});
     })
 }
 
-// The show-empty-channels button
-$("[data-emptychannels]").click(function (e) {
-    var el = $(this)
-    var show = el.data("emptychannels") === "show"
-    $("[data-emptychannels]").show()
-    el.hide()
-
-    var emptyChannels = $(".viewer-container .not-occupied")
-    show ? emptyChannels.show() : emptyChannels.hide()
-})
-
-// Press ENTER to connect to a focused channel
-$("[data-channelid]").keypress(function (e) {
-    if (e.which === 13) {
-        $(this).click()
-    }
-})
-
-// Click to connect to the channel
-$("[data-channelid]").click(function (e) {
-    if ($(this).parent(".channel-container").hasClass("is-spacer")) {
-        return // dont connect when clicking on a spacer
-    }
-
-    if (!confirm(VIEWER_LANG.connection_alert)) {
-        return
-    }
-
-    var cid = $(this).data("channelid")
-
-    window.location = "ts3server://" + TS3_DISPLAY_IP + "/?cid=" + cid
-})
-
-// START Code for showing the customised popover when you hover over the client
-// Mouse in / out
-$(".viewer-container .client-container").hover(function () {
-    showPopover($(this).find(".client-name"))
-}, function () {
-    $(this).find(".client-name").popover("hide")
-})
-
-// Keyboard focus (TAB)
-$(".viewer-container .client-container").on("focusin focusout", function (e) {
-    if (e.type === "focusin") {
-        showPopover($(this).find(".client-name"))
-    } else {
-        $(this).find(".client-name").popover("hide")
-    }
-})
-// END
-
-// Popover code, to be shown at the bottom of .client-name
-$(".viewer-container .client-container .client-name").popover({
-    title: VIEWER_LANG.client_info,
-    content: function () {
-        var el = $(this)
-
-        return '<div class="status-loader position-relative p-3">' +
-            '<div class="loader"></div>' +
-            '</div>'
-    },
-    html: true,
-    template: '<div class="popover" role="tooltip"><h3 class="popover-header"></h3><div class="popover-body"></div></div>',
-    placement: "bottom",
-    trigger: "manual"
-})
-
+// Popover helper
 function showPopover(el) {
     el.popover("show")
 
@@ -119,7 +114,6 @@ function showPopover(el) {
 
     var popoverDebounceMs = 250
 
-    // Debounce the hovers
     setTimeout(function () {
         var popoverId = el.attr("aria-describedby")
 
@@ -143,11 +137,9 @@ function showPopover(el) {
                 var describeTimestamp = function (timestamp, skipSuffix) {
                     if (skipSuffix === undefined)
                         skipSuffix = true
-
                     return dayjs.unix(timestamp).fromNow(skipSuffix)
                 }
 
-                var time = result.timenow
                 var data = result.data
                 var title = escapeHtml(data.client_nickname)
 
@@ -155,32 +147,24 @@ function showPopover(el) {
                 var onlineTimestamp = data.client_lastconnected
                 var createdTimestamp = data.client_created
 
-                var clientInfo = []
-
-                clientInfo.push([VIEWER_LANG.last_active, describeSeconds(idleSeconds)])
-                clientInfo.push([VIEWER_LANG.online_time, describeTimestamp(onlineTimestamp)])
-                clientInfo.push([VIEWER_LANG.first_joined, describeTimestamp(createdTimestamp, false)])
+                var clientInfo = [
+                    [VIEWER_LANG.last_active,  describeSeconds(idleSeconds)],
+                    [VIEWER_LANG.online_time,   describeTimestamp(onlineTimestamp)],
+                    [VIEWER_LANG.first_joined,  describeTimestamp(createdTimestamp, false)]
+                ]
 
                 var body = '<table>'
-
                 clientInfo.forEach(function (entry) {
-                    var description = entry[0]
-                    var value = entry[1]
-
-                    body += '<tr>'
-                    body += '<td><b>' + description + '&nbsp;</b></td>'
-                    body += '<td>' + value + '</td>'
-                    body += '</tr>'
+                    body += '<tr><td><b>' + entry[0] + '&nbsp;</b></td><td>' + entry[1] + '</td></tr>'
                 })
-
                 body += '</table>'
 
                 updatePopover(popoverId, title, body)
             },
-            error: function (result) {
+            error: function () {
                 updatePopover(popoverId, "Ajax error", VIEWER_LANG.viewer_error)
             },
-            complete: function (result) {
+            complete: function () {
                 el.popover("update")
             }
         })
@@ -188,11 +172,13 @@ function showPopover(el) {
 }
 
 function updatePopover(id, header, body) {
-    if (!id) {
-        return
-    }
-
+    if (!id) return
     var popover = $("#" + id)
     popover.find(".popover-header").html(header)
     popover.find(".popover-body").html(body)
 }
+
+// Initial hook binding after DOM is ready
+$(function () {
+    updateHooks()
+})
