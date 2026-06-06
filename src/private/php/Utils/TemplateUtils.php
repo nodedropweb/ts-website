@@ -123,11 +123,19 @@ class TemplateUtils {
             $data["sqlCount"] = @$dbutils->getDb()->query("SHOW SESSION STATUS LIKE 'Questions'")->fetchColumn(1);
 
             if (Config::get("adminstatus_enabled")) {
+                $decodeJson = static function (mixed $v): array {
+                    if (is_array($v)) return $v;
+                    if (is_string($v) && $v !== '') {
+                        $d = json_decode($v, true);
+                        return is_array($d) ? $d : [];
+                    }
+                    return [];
+                };
                 $data["adminStatus"] = AdminStatus::i()->getStatus(
-                    Config::get("adminstatus_groups"),
+                    $decodeJson(Config::get("adminstatus_groups")),
                     Config::get("adminstatus_mode"),
-                    Config::get("adminstatus_hideoffline"),
-                    Config::get("adminstatus_ignoredusers")
+                    (bool) Config::get("adminstatus_hideoffline"),
+                    $decodeJson(Config::get("adminstatus_ignoredusers"))
                 );
             }
         }

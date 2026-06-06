@@ -110,7 +110,7 @@
 
 {* STATUS_STYLE_LIST_ONLINE_FIRST *}
 {if $format === 4}
-    <div class="admin-status admin-status-list">
+    <div class="admin-status admin-status-list" n:attr="data-hidebydefault => $defaultHide ? 'true' : 'false'">
         {if !$data}
             <div class="text-center">
                 <span class="badge badge-info error-badge">
