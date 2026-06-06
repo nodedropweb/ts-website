@@ -36,8 +36,10 @@ const ADMIN_LANG_NAMES = [
     'ar'    => 'العربية',
 ];
 
-function __a(string $msgid, array $args = []): string {
-    return I18n::t($msgid, 'admin', $args);
+if (!function_exists('__a')) {
+    function __a(string $msgid, array $args = []): string {
+        return I18n::t($msgid, 'admin', $args);
+    }
 }
 
 function adminHeader(string $title, string $activeNav = ''): void {
