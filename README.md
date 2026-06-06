@@ -25,6 +25,7 @@
    - 4.6 [Logging In](#46-logging-in)
    - 4.7 [Changing the Language](#47-changing-the-language)
    - 4.8 [Switching the Theme](#48-switching-the-theme)
+   - 4.9 [Embedded Media & Privacy](#49-embedded-media--privacy)
 5. [The Admin Panel](#5-the-admin-panel)
    - 5.1 [Accessing the Admin Panel](#51-accessing-the-admin-panel)
    - 5.2 [News](#52-news)
@@ -333,6 +334,38 @@ ts-website ships with **six visual themes** that any visitor can switch between 
 | **Acrylic Forest** | Frosted glass — cool green/emerald tint |
 
 The four **Acrylic** themes use a photographic background image (random landscape from [picsum.photos](https://picsum.photos)) with a semi-transparent blur on all panels. If a server admin has uploaded a custom background image for a theme (see [Section 5.8](#58-theme-background-images)), that image is used instead of the Picsum fallback.
+
+---
+
+### 4.9 Embedded Media & Privacy
+
+ts-website uses **[Klaro](https://github.com/kiprotect/klaro)** as a privacy-friendly consent manager for embedded third-party media. This affects content that admins place in the Rules page, FAQ answers, or News posts — for example a YouTube tutorial or a Vimeo clip.
+
+#### What visitors see
+
+The first time a page with an embedded video is loaded, a small notice bar appears at the bottom of the screen:
+
+> *"This page embeds external media (YouTube, Vimeo). Please agree so embedded content can be loaded."*
+
+Visitors can:
+- **Accept all** — video embeds load immediately and the choice is saved for 365 days
+- **Let me choose** — opens a settings panel where YouTube and Vimeo can be toggled independently
+- **Decline** — embeds remain blocked; a placeholder is shown in their place
+
+The consent preference is stored in a cookie called `tswebsite_klaro`. Once accepted, videos play normally on any page — no second prompt.
+
+#### How it works technically
+
+When a page is rendered, the server rewrites any `<iframe src="https://www.youtube.com/...">` or `<iframe src="https://vimeo.com/...">` in user-generated content to use `data-src` instead of `src`. The browser therefore never contacts YouTube or Vimeo until the visitor explicitly gives consent. Klaro then swaps `data-src` back to `src` client-side when permission is granted.
+
+All Klaro files (`klaro.js`, `klaro.min.css`) are served locally from `lib/klaro/0.7/` — no external CDN requests are made.
+
+#### Supported services
+
+| Service | Matched URLs |
+|---------|-------------|
+| YouTube | `youtube.com`, `youtube-nocookie.com`, `youtu.be` |
+| Vimeo | `vimeo.com`, `player.vimeo.com` |
 
 ---
 
