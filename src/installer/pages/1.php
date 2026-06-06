@@ -23,9 +23,8 @@
                     <li class="mb-2"><strong>tsw.phar CLI tool</strong> &mdash; install, update and maintain the site from the command line (English &amp; German)</li>
                     <li class="mb-2"><strong>PHP 8.4 compatible</strong> &mdash; fully modernized codebase</li>
                     <li class="mb-2"><strong>Local asset hosting</strong> &mdash; all CSS &amp; JS libraries served locally, no external CDN (GDPR compliant)</li>
-                    <li class="mb-2"><strong>Automatic Channel Viewer refresh</strong> &mdash; no more F5 needed</li>
                 </ul>
-                <p class="text-muted small mb-0">You can select your language using the dropdown in the top-right corner after closing this dialog.</p>
+                <p class="text-muted small mb-0">You can select your language using the dropdown in the navigation bar after closing this dialog.</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-primary" data-dismiss="modal">Let's go!</button>
