@@ -1,0 +1,349 @@
+# TS-Website frontend translations — Chinese
+# Domain: frontend
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh-cn\n"
+
+msgid "ASSIGNER_NO_REQUIRED_GROUPS"
+msgstr "目前没有已分配组，您无法使用组分配器！"
+
+msgid "DATE_FORMAT"
+msgstr "d.m.Y"
+
+msgid "TIME_FORMAT"
+msgstr "H:i"
+
+msgid "BANS_HEADER_TARGET"
+msgstr "封禁"
+
+msgid "AUTHORS"
+msgstr "ZeusGamingPlay<zeusgamingplay@126.com>"
+
+msgid "COOKIEALERT_MESSAGE"
+msgstr "<b>不想反复重新登录吗？</b> &#x1F36A; 我们使用Cookies 来改善本站的用户体验！ <a href=\"https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer\" target=\"_blank\">了解更多</a>"
+
+msgid "COOKIEALERT_AGREE"
+msgstr "我同意"
+
+msgid "OUTDATED_DATA"
+msgstr "<b>警告！</b> 本页面部分功能当前可能无法正常运作，部分信息可能并非实时更新，该部分数据来自 {0}."
+
+msgid "SHOW_PROBLEMS"
+msgstr "显示问题"
+
+msgid "PROBLEMS_DESCRIPTION"
+msgstr "在连接到 Teamspeak 服务器时遭遇问题"
+
+msgid "NO_JAVASCRIPT_ENABLED"
+msgstr "此网站无法在脱离 <a href=\"https://www.enable-javascript.com/\" target=\"_blank\">JavaScript </a>的情况下使用."
+
+msgid "CANNOT_GET_DATA"
+msgstr "无法获取 \"{0}\"的数据! 请向网站管理员反馈这个问题."
+
+msgid "NO_REASON_SET"
+msgstr "<b>返回内容为空</b>"
+
+msgid "BANS_HEADER_REASON"
+msgstr "原因"
+
+msgid "BANS_HEADER_INVOKER"
+msgstr "由该管理员封禁"
+
+msgid "BANS_HEADER_BANDATE"
+msgstr "封禁日期"
+
+msgid "BANS_HEADER_EXPIRES"
+msgstr "起迄日期"
+
+msgid "DATATABLES_LANGUAGE_NAME"
+msgstr "Chinese"
+
+msgid "BANS_NEVEREXPIRES"
+msgstr "从不"
+
+msgid "STATUS_ADDRESS"
+msgstr "地址:"
+
+msgid "STATUS_CLIENTS_ONLINE"
+msgstr "在线:"
+
+msgid "STATUS_RESERVED_SLOTS"
+msgstr "{0} 保留位"
+
+msgid "STATUS_TOP_ONLINE"
+msgstr "最常在线:"
+
+msgid "STATUS_TOP_ONLINE_DESC"
+msgstr "收录于 {0}"
+
+msgid "STATUS_UPTIME"
+msgstr "在线时长:"
+
+msgid "STATUS_VERSION"
+msgstr "版本:"
+
+msgid "STATUS_VERSION_DESC"
+msgstr "{0} on {1}"
+
+msgid "STATUS_PING"
+msgstr "平均延迟:"
+
+msgid "STATUS_PACKETLOSS"
+msgstr "平均丢包率:"
+
+msgid "STATUS_ERROR"
+msgstr "无法取得服务器状态"
+
+msgid "STATUS_PANEL_TITLE"
+msgstr "服务器状态"
+
+msgid "DAYJS_LANG"
+msgstr "zh-cn"
+
+msgid "LOGIN_CONFIRMATION_CODE"
+msgstr "您好，请查收您的登录验证码: [b]{0}[/b]"
+
+msgid "UNSUPPORTED_BROWSER"
+msgstr "您当前使用的浏览器不受支持!请使用最新版本的谷歌,火狐,Safari或Edge浏览器进行访问!"
+
+msgid "DATATABLES_PLACEHOLDER_SEARCH"
+msgstr "搜索..."
+
+msgid "WEBSITE_TITLE"
+msgstr " | TS-website 简体中文"
+
+msgid "ADMIN_STATUS_ONLINE"
+msgstr "在线"
+
+msgid "ADMIN_STATUS_AWAY"
+msgstr "不在电脑边"
+
+msgid "ADMIN_STATUS_OFFLINE"
+msgstr "离线"
+
+msgid "ADMIN_STATUS_EMPTY_GROUP"
+msgstr "无更多信息"
+
+msgid "ADMIN_STATUS_EMPTY_STATUS"
+msgstr "管理员状态为空"
+
+msgid "ASSIGNER_PANEL_TITLE"
+msgstr "组分配器"
+
+msgid "ASSIGNER_TITLE"
+msgstr "组分配器"
+
+msgid "BANS_EMPTY"
+msgstr "黑名单为空"
+
+msgid "BANS_TITLE"
+msgstr "黑名单"
+
+msgid "BANS_PANEL_TITLE"
+msgstr "黑名单"
+
+msgid "BANS_BANNED_ALERT_TITLE"
+msgstr "您的IP已被 {0} 封禁"
+
+msgid "BANS_BANNED_ALERT_REASON"
+msgstr "原因: {0}"
+
+msgid "BANS_VIEW_MORE_TIP"
+msgstr "点击某一行来显示某次封禁的详细信息"
+
+msgid "RULES_TITLE"
+msgstr "规则"
+
+msgid "RULES_PANEL_TITLE"
+msgstr "规则"
+
+msgid "FAQ_COPY_LINK"
+msgstr "将链接复制到该回复"
+
+msgid "FAQ_PANEL_TITLE"
+msgstr "常见问题"
+
+msgid "FAQ_TITLE"
+msgstr "常见问题"
+
+msgid "FAQ_COPY_LINK_SUCCESS"
+msgstr "已复制到剪贴板!"
+
+msgid "FAQ_COPY_LINK_ERROR"
+msgstr "错误!"
+
+msgid "HOME_TITLE"
+msgstr "最新资讯"
+
+msgid "HOME_PANEL_TITLE"
+msgstr "最新资讯"
+
+msgid "HOME_EMPTY"
+msgstr "当前没有最新资讯"
+
+msgid "HOME_INVALID_PAGE"
+msgstr "无效的页数"
+
+msgid "HOME_PREVIOUS_NEWS"
+msgstr "上一页"
+
+msgid "HOME_NEXT_NEWS"
+msgstr "下一页"
+
+msgid "ADMIN_STATUS_PANEL_TITLE"
+msgstr "管理员状态"
+
+msgid "ADMIN_STATUS_HIDE_OFFLINE_TIP"
+msgstr "隐藏离线管理员"
+
+msgid "ADMIN_STATUS_SHOW_OFFLINE_TIP"
+msgstr "显示离线管理员"
+
+msgid "ADMIN_STATUS_ERROR"
+msgstr "管理员状态错误"
+
+msgid "NAV_TOGGLE"
+msgstr "展开导航"
+
+msgid "NAV_VIEWER"
+msgstr "检索器"
+
+msgid "NAV_ASSIGNER"
+msgstr "分配器"
+
+msgid "NAV_BANS"
+msgstr "封禁"
+
+msgid "NAV_RULES"
+msgstr "规则"
+
+msgid "NAV_FAQ"
+msgstr "常见问题"
+
+msgid "NAV_ACCOUNT_LOGIN"
+msgstr "登录"
+
+msgid "NAV_ACCOUNT_LOGOUT"
+msgstr "登出"
+
+msgid "VIEWER_TITLE"
+msgstr "服务器检索器"
+
+msgid "VIEWER_PANEL_TITLE"
+msgstr "服务器检索器"
+
+msgid "VIEWER_SHOW_EMPTY"
+msgstr "显示无人频道"
+
+msgid "VIEWER_HIDE_EMPTY"
+msgstr "隐藏无人频道"
+
+msgid "VIEWER_TIP_ALERT"
+msgstr "点击某个频道加入,将光标停留在某用户上来显示该用户概要"
+
+msgid "ARIA_CLOSE"
+msgstr "关闭"
+
+msgid "VIEWER_ERROR"
+msgstr "检索器错误"
+
+msgid "VIEWER_CONNECTION_CONFIRMATION"
+msgstr "你想要连接到这个频道吗?"
+
+msgid "VIEWER_CLIENT_LASTACTIVE"
+msgstr "最后活跃时间:"
+
+msgid "VIEWER_CLIENT_ONLINE"
+msgstr "在线时长:"
+
+msgid "VIEWER_CLIENT_JOINED"
+msgstr "首次加入时间:"
+
+msgid "VIEWER_CLIENT_TITLE"
+msgstr "用户信息:"
+
+msgid "VIEWER_SERVER_ICON"
+msgstr "服务器图标"
+
+msgid "VIEWER_DEFAULT_CHANNEL"
+msgstr "默认频道"
+
+msgid "VIEWER_CHANNEL_UNSUB1"
+msgstr ", 已取消订阅"
+
+msgid "VIEWER_CHANNEL_OCCUPIED"
+msgstr "满员"
+
+msgid "VIEWER_CHANNEL_PASSWORD"
+msgstr "密码验证"
+
+msgid "VIEWER_CHANNEL_UNSUB2"
+msgstr "取消订阅"
+
+msgid "VIEWER_CHANNEL_ICON"
+msgstr "频道图标"
+
+msgid "VIEWER_CHANNEL_MODERATED"
+msgstr "主席模式"
+
+msgid "VIEWER_CHANNEL_MUSIC_CODED"
+msgstr "音乐编码"
+
+msgid "VIEWER_CLIENT_AWAY"
+msgstr "不在电脑边"
+
+msgid "VIEWER_CLIENT_OUTPUT_DISABLED"
+msgstr "关闭声音"
+
+msgid "VIEWER_CLIENT_OUTPUT_MUTED"
+msgstr "静音模式"
+
+msgid "VIEWER_CLIENT_MIC_DISABLED"
+msgstr "麦克风已禁用"
+
+msgid "VIEWER_CLIENT_MIC_MUTED"
+msgstr "已静音"
+
+msgid "VIEWER_CLIENT_COMMANDER"
+msgstr "频道管理员"
+
+msgid "VIEWER_CLIENT_ICON"
+msgstr "客户图标"
+
+msgid "VIEWER_CLIENT_PRIORITY_SPEAKER"
+msgstr "高优先级发言者"
+
+msgid "VIEWER_CLIENT_TALK_POWER_GRANTED"
+msgstr "已赋予发言权"
+
+msgid "VIEWER_CLIENT_TALK_POWER_INSUFFICIENT"
+msgstr "权限不足,无法发言"
+
+msgid "ASSIGNER_NOT_LOGGED_IN"
+msgstr "登录以使用组检索器"
+
+msgid "ASSIGNER_LOGIN_BUTTON"
+msgstr "登录"
+
+msgid "ASSIGNER_SAVE_BUTTON"
+msgstr "保存"
+
+msgid "ASSIGNER_INVALID_GROUPS"
+msgstr "无效的组设置"
+
+msgid "ASSIGNER_NOT_CONFIGURED"
+msgstr "组检索器尚未被网站管理员配置,故当前不可用"
+
+msgid "ASSIGNER_SAVE_SUCCESS"
+msgstr "您的组已被更新"
+
+msgid "ASSIGNER_SAVE_ERROR"
+msgstr "组变更过程中产生错误"
+
+msgid "ASSIGNER_SAVE_NO_CHANGE"
+msgstr "没有进行改动，维持原设定。"
+
+msgid "IMPRINT_TITLE"
+msgstr "版权信息"

@@ -1,0 +1,599 @@
+# TS-Website admin translations -- nl
+# Domain: admin
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
+
+msgid "ADMIN_NAV_BRAND"
+msgstr "TS-Website Admin"
+
+msgid "ADMIN_NAV_NEWS"
+msgstr "Nieuws"
+
+msgid "ADMIN_NAV_FAQ"
+msgstr "FAQ"
+
+msgid "ADMIN_NAV_RULES"
+msgstr "Regels"
+
+msgid "ADMIN_NAV_ASSIGNER"
+msgstr "Assigner"
+
+msgid "ADMIN_NAV_CONFIG"
+msgstr "Configuratie"
+
+msgid "ADMIN_NAV_GOTO_WEBSITE"
+msgstr "Naar de website"
+
+msgid "ADMIN_BTN_SAVE"
+msgstr "Opslaan"
+
+msgid "ADMIN_BTN_SAVE_ALL"
+msgstr "Alle instellingen opslaan"
+
+msgid "ADMIN_BTN_BACK"
+msgstr "Terug"
+
+msgid "ADMIN_BTN_BACK_TO_CONFIG"
+msgstr "Terug naar configuratie"
+
+msgid "ADMIN_BTN_CANCEL"
+msgstr "Annuleren"
+
+msgid "ADMIN_BTN_ADD"
+msgstr "Toevoegen"
+
+msgid "ADMIN_BTN_REMOVE"
+msgstr "Verwijderen"
+
+msgid "ADMIN_ENABLED"
+msgstr "Ingeschakeld"
+
+msgid "ADMIN_TABLE_ID"
+msgstr "ID"
+
+msgid "ADMIN_TABLE_TITLE"
+msgstr "Titel"
+
+msgid "ADMIN_TABLE_CREATED"
+msgstr "Aangemaakt"
+
+msgid "ADMIN_TABLE_EDITED"
+msgstr "Bewerkt"
+
+msgid "ADMIN_TABLE_QUESTION"
+msgstr "Vraag"
+
+msgid "ADMIN_TABLE_LAST_MODIFIED"
+msgstr "Laatst gewijzigd"
+
+msgid "ADMIN_TABLE_ACTIONS"
+msgstr "Acties"
+
+msgid "ADMIN_NO_GROUPS_AVAILABLE"
+msgstr "Geen servergroepen beschikbaar."
+
+msgid "ADMIN_403_TITLE"
+msgstr "Toegang geweigerd — Admin"
+
+msgid "ADMIN_403_TEXT"
+msgstr "Geen toegang. Je bent niet geregistreerd als beheerder."
+
+msgid "ADMIN_403_HINT"
+msgstr "Log eerst in op de hoofdwebsite met TeamSpeak, vraag dan een admin om je cldbid toe te voegen aan admin_cldbids."
+
+msgid "ADMIN_403_BTN"
+msgstr "Naar hoofdwebsite"
+
+msgid "ADMIN_SETUP_TITLE"
+msgstr "Beheerderspanel — Eerste instelling"
+
+msgid "ADMIN_SETUP_NO_ADMIN"
+msgstr "Nog geen beheerder geregistreerd. Voer je cldbid in om toegang te krijgen tot het beheerderspanel."
+
+msgid "ADMIN_SETUP_CLDBID_LABEL"
+msgstr "Jouw cldbid"
+
+msgid "ADMIN_SETUP_CLDBID_HINT"
+msgstr "Zichtbaar na TS3-login op de hoofdpagina, of kies uit de lijst hieronder."
+
+msgid "ADMIN_SETUP_ONLINE_LABEL"
+msgstr "Momenteel online"
+
+msgid "ADMIN_SETUP_BTN_REGISTER"
+msgstr "Registreren als eerste beheerder"
+
+msgid "ADMIN_SETUP_BTN_GOTO"
+msgstr "Naar beheerderspanel"
+
+msgid "ADMIN_SETUP_SUCCESS"
+msgstr "cldbid {0} geregistreerd als eerste beheerder. Deze pagina is nu vergrendeld."
+
+msgid "ADMIN_SETUP_ERR_INVALID"
+msgstr "Voer een geldig cldbid in (positief geheel getal)."
+
+msgid "ADMIN_NEWS_TITLE"
+msgstr "Nieuws"
+
+msgid "ADMIN_NEWS_NEW_BTN"
+msgstr "Nieuw artikel"
+
+msgid "ADMIN_NEWS_EMPTY"
+msgstr "Geen nieuws beschikbaar."
+
+msgid "ADMIN_NEWS_CONFIRM_DELETE"
+msgstr "Dit artikel verwijderen?"
+
+msgid "ADMIN_NEWS_EDIT_TITLE"
+msgstr "Nieuws bewerken"
+
+msgid "ADMIN_NEWS_NEW_TITLE"
+msgstr "Nieuw artikel"
+
+msgid "ADMIN_NEWS_FORM_TITLE"
+msgstr "Titel"
+
+msgid "ADMIN_NEWS_FORM_CONTENT"
+msgstr "Inhoud"
+
+msgid "ADMIN_FAQ_TITLE"
+msgstr "FAQ"
+
+msgid "ADMIN_FAQ_NEW_BTN"
+msgstr "Nieuwe FAQ-invoer"
+
+msgid "ADMIN_FAQ_EMPTY"
+msgstr "Geen FAQ-invoeren beschikbaar."
+
+msgid "ADMIN_FAQ_CONFIRM_DELETE"
+msgstr "Deze FAQ-invoer verwijderen?"
+
+msgid "ADMIN_FAQ_EDIT_TITLE"
+msgstr "FAQ-invoer bewerken"
+
+msgid "ADMIN_FAQ_NEW_TITLE"
+msgstr "Nieuwe FAQ-invoer"
+
+msgid "ADMIN_FAQ_FORM_QUESTION"
+msgstr "Vraag"
+
+msgid "ADMIN_FAQ_FORM_ANSWER"
+msgstr "Antwoord"
+
+msgid "ADMIN_RULES_TITLE"
+msgstr "Serverregels"
+
+msgid "ADMIN_RULES_FORM_CONTENT"
+msgstr "Inhoud"
+
+msgid "ADMIN_IMPRINT_TITLE"
+msgstr "Impressum"
+
+msgid "ADMIN_ASSIGNER_TITLE"
+msgstr "Assigner-configuratie"
+
+msgid "ADMIN_ASSIGNER_NO_GROUPS_WARNING"
+msgstr "Geen servergroepen gevonden. Zorg ervoor dat de TS3-server verbonden is."
+
+msgid "ADMIN_ASSIGNER_DESCRIPTION"
+msgstr "Definieer categorieën voor groepstoewijzing. Elke categorie heeft een naam, pictogram, maximaal selecteerbare groepen en bijbehorende servergroepen."
+
+msgid "ADMIN_ASSIGNER_GENERAL"
+msgstr "Algemene instellingen"
+
+msgid "ADMIN_ASSIGNER_COOLDOWN_LABEL"
+msgstr "Cooldown (seconden)"
+
+msgid "ADMIN_ASSIGNER_COOLDOWN_HINT"
+msgstr "Hoe lang een gebruiker moet wachten voor hij zijn groepstoewijzing opnieuw kan wijzigen. 0 = geen wachttijd."
+
+msgid "ADMIN_ASSIGNER_REQUIRED_GROUPS_LABEL"
+msgstr "Vereiste servergroepen"
+
+msgid "ADMIN_ASSIGNER_REQUIRED_GROUPS_HINT"
+msgstr "Alleen leden van deze groepen kunnen de Assigner gebruiken. Leeg = iedereen."
+
+msgid "ADMIN_ASSIGNER_ADD_CATEGORY"
+msgstr "Categorie toevoegen"
+
+msgid "ADMIN_ASSIGNER_SAVED"
+msgstr "Assigner-configuratie opgeslagen."
+
+msgid "ADMIN_ASSIGNER_JS_MOVE_UP"
+msgstr "Omhoog"
+
+msgid "ADMIN_ASSIGNER_JS_MOVE_DOWN"
+msgstr "Omlaag"
+
+msgid "ADMIN_ASSIGNER_JS_NEW_CATEGORY"
+msgstr "Nieuwe categorie"
+
+msgid "ADMIN_ASSIGNER_JS_NAME_LABEL"
+msgstr "Naam"
+
+msgid "ADMIN_ASSIGNER_JS_NAME_PLACEHOLDER"
+msgstr "bijv. Land, Spel, Hobby"
+
+msgid "ADMIN_ASSIGNER_JS_MAX_LABEL"
+msgstr "Max. selectie"
+
+msgid "ADMIN_ASSIGNER_JS_ICON_LABEL"
+msgstr "Pictogram"
+
+msgid "ADMIN_ASSIGNER_JS_GROUPS_LABEL"
+msgstr "Servergroepen in deze categorie"
+
+msgid "ADMIN_ASSIGNER_JS_NO_GROUPS"
+msgstr "Geen servergroepen beschikbaar."
+
+msgid "ADMIN_ASSIGNER_JS_SAVE_ERROR"
+msgstr "Fout bij opslaan."
+
+msgid "ADMIN_CONFIG_TITLE"
+msgstr "Configuratie"
+
+msgid "ADMIN_CONFIG_SECTION_ADMINSTATUS"
+msgstr "Admin-statuswidget"
+
+msgid "ADMIN_CONFIG_SECTION_ASSIGNER"
+msgstr "Groepstoewijzing"
+
+msgid "ADMIN_CONFIG_SECTION_CACHE"
+msgstr "Cachetijden"
+
+msgid "ADMIN_CONFIG_SECTION_GENERAL"
+msgstr "Algemeen"
+
+msgid "ADMIN_CONFIG_SECTION_IMPRINT"
+msgstr "Impressum"
+
+msgid "ADMIN_CONFIG_SECTION_ONLINERECORD"
+msgstr "Online record"
+
+msgid "ADMIN_CONFIG_SECTION_VIEWER"
+msgstr "Kanaalweergave"
+
+msgid "ADMIN_CONFIG_SECTION_QUERY"
+msgstr "TeamSpeak Query"
+
+msgid "ADMIN_CONFIG_SECTION_ADMIN"
+msgstr "Beheerderspanel"
+
+msgid "ADMIN_CONFIG_BTN_ADMINSTATUS"
+msgstr "Admin-statuswidget configureren"
+
+msgid "ADMIN_CONFIG_BTN_ASSIGNER"
+msgstr "Groepstoewijzing configureren"
+
+msgid "ADMIN_CONFIG_BTN_CACHE"
+msgstr "Cachetijden configureren"
+
+msgid "ADMIN_CONFIG_BTN_GENERAL"
+msgstr "Algemene instellingen bewerken"
+
+msgid "ADMIN_CONFIG_BTN_IMPRINT"
+msgstr "Impressum bewerken"
+
+msgid "ADMIN_CONFIG_BTN_ONLINERECORD"
+msgstr "Online record bewerken"
+
+msgid "ADMIN_CONFIG_BTN_VIEWER"
+msgstr "Kanaalweergave configureren"
+
+msgid "ADMIN_CONFIG_BTN_QUERY"
+msgstr "TeamSpeak-verbinding configureren"
+
+msgid "ADMIN_CONFIG_BTN_ADMINS"
+msgstr "Beheerderstoegang beheren"
+
+msgid "ADMIN_CONFIG_EDIT_IN_ASSIGNER"
+msgstr "Bewerken in Assigner-editor"
+
+msgid "ADMIN_CONFIG_MANAGED_IN_ASSIGNER"
+msgstr "Beheerd in de Assigner-editor."
+
+msgid "ADMIN_CONFIG_WHO_HAS_ACCESS"
+msgstr "Wie heeft toegang tot dit beheerderspanel?"
+
+msgid "ADMIN_GENERAL_TITLE"
+msgstr "Algemene instellingen"
+
+msgid "ADMIN_GENERAL_FIELD_WEBSITE_TITLE_LABEL"
+msgstr "TS-servernaam (weergave)"
+
+msgid "ADMIN_GENERAL_FIELD_WEBSITE_TITLE_HINT"
+msgstr "Vervangt het IP-adres in de zijbalk en het inlogvenster. Ook weergegeven in de browsertab en voettekst. Leeg = IP wordt weergegeven."
+
+msgid "ADMIN_GENERAL_FIELD_NAV_BRAND_LABEL"
+msgstr "Websitetitel (Navbar)"
+
+msgid "ADMIN_GENERAL_FIELD_NAV_BRAND_HINT"
+msgstr "Tekst van het logo linksboven in de navigatie."
+
+msgid "ADMIN_GENERAL_FIELD_BASEURL_LABEL"
+msgstr "Basis-URL"
+
+msgid "ADMIN_GENERAL_FIELD_BASEURL_HINT"
+msgstr "Volledige URL van de website, bijv. https://example.com"
+
+msgid "ADMIN_GENERAL_FIELD_LOGINPOKE_LABEL"
+msgstr "Inloggen: Poke client"
+
+msgid "ADMIN_GENERAL_FIELD_LOGINPOKE_HINT"
+msgstr "Stuur een poke naar de TS-client bij inlogpogingen"
+
+msgid "ADMIN_GENERAL_FIELD_TIMEZONE_LABEL"
+msgstr "Tijdzone"
+
+msgid "ADMIN_GENERAL_FIELD_TIMEZONE_HINT"
+msgstr "PHP-tijdzone, bijv. Europe/Amsterdam"
+
+msgid "ADMIN_GENERAL_FIELD_CLOUDFLARE_LABEL"
+msgstr "Cloudflare actief"
+
+msgid "ADMIN_GENERAL_FIELD_CLOUDFLARE_HINT"
+msgstr "Inschakelen als de website achter Cloudflare staat"
+
+msgid "ADMIN_GENERAL_SAVED"
+msgstr "Instellingen opgeslagen."
+
+msgid "ADMIN_ADMINS_TITLE"
+msgstr "Beheerderstoegang"
+
+msgid "ADMIN_ADMINS_CURRENT"
+msgstr "Huidige beheerders"
+
+msgid "ADMIN_ADMINS_TABLE_CLDBID"
+msgstr "Client-database-ID"
+
+msgid "ADMIN_ADMINS_TABLE_ACTION"
+msgstr "Actie"
+
+msgid "ADMIN_ADMINS_YOU_BADGE"
+msgstr "Jij"
+
+msgid "ADMIN_ADMINS_CONFIRM_REMOVE"
+msgstr "Beheerder verwijderen?"
+
+msgid "ADMIN_ADMINS_CANNOT_REMOVE_SELF"
+msgstr "Je kunt jezelf niet verwijderen."
+
+msgid "ADMIN_ADMINS_ADD_TITLE"
+msgstr "Beheerder toevoegen"
+
+msgid "ADMIN_ADMINS_CLDBID_LABEL"
+msgstr "Client-database-ID"
+
+msgid "ADMIN_ADMINS_ONLINE_LABEL"
+msgstr "Momenteel online (selecteer uit lijst)"
+
+msgid "ADMIN_ADMINS_ADDED"
+msgstr "Beheerder toegevoegd."
+
+msgid "ADMIN_ADMINS_REMOVED"
+msgstr "Beheerder verwijderd."
+
+msgid "ADMIN_ADMINSTATUS_TITLE"
+msgstr "Admin-statuswidget"
+
+msgid "ADMIN_ADMINSTATUS_SECTION_GENERAL"
+msgstr "Algemeen"
+
+msgid "ADMIN_ADMINSTATUS_WIDGET_ENABLED_LABEL"
+msgstr "Widget ingeschakeld"
+
+msgid "ADMIN_ADMINSTATUS_HIDE_OFFLINE_LABEL"
+msgstr "Offline-gebruikers verbergen"
+
+msgid "ADMIN_ADMINSTATUS_HIDE_OFFLINE_HINT"
+msgstr "Offline-gebruikers worden volledig onderdrukt."
+
+msgid "ADMIN_ADMINSTATUS_OFFLINE_COLLAPSED_LABEL"
+msgstr "Offline standaard ingeklapt"
+
+msgid "ADMIN_ADMINSTATUS_OFFLINE_COLLAPSED_HINT"
+msgstr "Offline-vermeldingen in de widget zijn alleen zichtbaar na klikken."
+
+msgid "ADMIN_ADMINSTATUS_DISPLAY_MODE_LABEL"
+msgstr "Weergavemodus"
+
+msgid "ADMIN_ADMINSTATUS_MODE_1"
+msgstr "Gegroepeerd"
+
+msgid "ADMIN_ADMINSTATUS_MODE_2"
+msgstr "Gegroepeerd (lege groepen verbergen)"
+
+msgid "ADMIN_ADMINSTATUS_MODE_3"
+msgstr "Lijst"
+
+msgid "ADMIN_ADMINSTATUS_MODE_4"
+msgstr "Lijst (online eerst)"
+
+msgid "ADMIN_ADMINSTATUS_SECTION_GROUPS"
+msgstr "Weer te geven servergroepen"
+
+msgid "ADMIN_ADMINSTATUS_NO_GROUPS"
+msgstr "Geen servergroepen beschikbaar — controleer TS-verbinding."
+
+msgid "ADMIN_ADMINSTATUS_SECTION_IGNORED"
+msgstr "Genegeerde gebruikers"
+
+msgid "ADMIN_ADMINSTATUS_IGNORED_HINT"
+msgstr "Gebruikers uit de geselecteerde groepen. Aangevinkte verschijnen niet in de widget."
+
+msgid "ADMIN_ADMINSTATUS_NO_GROUPS_SELECTED"
+msgstr "Selecteer eerst servergroepen en sla op."
+
+msgid "ADMIN_ADMINSTATUS_NO_CACHE"
+msgstr "Nog geen cache — wacht even en herlaad de pagina."
+
+msgid "ADMIN_ADMINSTATUS_CURRENTLY_IGNORED"
+msgstr "Momenteel genegeerde DBID's:"
+
+msgid "ADMIN_ADMINSTATUS_SAVED"
+msgstr "Admin-status opgeslagen."
+
+msgid "ADMIN_CACHE_TITLE"
+msgstr "Cachetijden"
+
+msgid "ADMIN_CACHE_HINT"
+msgstr "Alle waarden in seconden. Lager = actuelere gegevens, maar hogere belasting op de TS-server."
+
+msgid "ADMIN_CACHE_SERVERINFO_LABEL"
+msgstr "Server-info"
+
+msgid "ADMIN_CACHE_SERVERINFO_HINT"
+msgstr "Algemene TS-serverinformatie (naam, slots, ...)"
+
+msgid "ADMIN_CACHE_CLIENTLIST_LABEL"
+msgstr "Clientlijst"
+
+msgid "ADMIN_CACHE_CLIENTLIST_HINT"
+msgstr "Online spelerslijst — houd kort zodat de loginstatus actueel blijft"
+
+msgid "ADMIN_CACHE_CHANNELLIST_LABEL"
+msgstr "Kanaallijst"
+
+msgid "ADMIN_CACHE_CHANNELLIST_HINT"
+msgstr "Kanaalweergave"
+
+msgid "ADMIN_CACHE_SERVERGROUPS_LABEL"
+msgstr "Servergroepen"
+
+msgid "ADMIN_CACHE_SERVERGROUPS_HINT"
+msgstr "Lijst van alle servergroepen"
+
+msgid "ADMIN_CACHE_CHANNELGROUPS_LABEL"
+msgstr "Kanaalgroepen"
+
+msgid "ADMIN_CACHE_CHANNELGROUPS_HINT"
+msgstr "Lijst van alle kanaalgroepen"
+
+msgid "ADMIN_CACHE_BANLIST_LABEL"
+msgstr "Banlijst"
+
+msgid "ADMIN_CACHE_BANLIST_HINT"
+msgstr "Gebande gebruikers"
+
+msgid "ADMIN_CACHE_ADMINSTATUS_LABEL"
+msgstr "Admin-status"
+
+msgid "ADMIN_CACHE_ADMINSTATUS_HINT"
+msgstr "Leden van de admin-groepen voor de statuswidget"
+
+msgid "ADMIN_CACHE_SERVERICONS_LABEL"
+msgstr "Serverpictogrammen"
+
+msgid "ADMIN_CACHE_SERVERICONS_HINT"
+msgstr "Pictogramgegevens van de TS-server"
+
+msgid "ADMIN_CACHE_LANGUAGES_LABEL"
+msgstr "Talen"
+
+msgid "ADMIN_CACHE_LANGUAGES_HINT"
+msgstr "Taalbestanden uit de database"
+
+msgid "ADMIN_CACHE_LOGINCODE_LABEL"
+msgstr "Inlogcode"
+
+msgid "ADMIN_CACHE_LOGINCODE_HINT"
+msgstr "Tijdelijke inlogcodes"
+
+msgid "ADMIN_CACHE_SAVED"
+msgstr "Cachetijden opgeslagen."
+
+msgid "ADMIN_ONLINERECORD_TITLE"
+msgstr "Online record"
+
+msgid "ADMIN_ONLINERECORD_VALUE_LABEL"
+msgstr "Record (aantal spelers)"
+
+msgid "ADMIN_ONLINERECORD_DATE_LABEL"
+msgstr "Datum en tijd"
+
+msgid "ADMIN_ONLINERECORD_DATE_HINT"
+msgstr "Automatisch overschreven wanneer een nieuw record wordt bereikt."
+
+msgid "ADMIN_ONLINERECORD_SAVED"
+msgstr "Online record opgeslagen."
+
+msgid "ADMIN_VIEWER_TITLE"
+msgstr "Kanaalweergave"
+
+msgid "ADMIN_VIEWER_SECTION"
+msgstr "Verborgen kanalen"
+
+msgid "ADMIN_VIEWER_HINT"
+msgstr "Aangevinkt = kanaal verborgen op de website. Wachtwoordbeveiligde kanalen verdwijnen automatisch."
+
+msgid "ADMIN_VIEWER_NO_CHANNELS"
+msgstr "Geen kanalen beschikbaar — controleer TS-verbinding."
+
+msgid "ADMIN_VIEWER_HIDDEN_BADGE"
+msgstr "verborgen"
+
+msgid "ADMIN_VIEWER_SAVED"
+msgstr "Kanaalweergave opgeslagen."
+
+msgid "ADMIN_QUERY_TITLE"
+msgstr "TeamSpeak-verbinding"
+
+msgid "ADMIN_QUERY_WARNING_TITLE"
+msgstr "Waarschuwing"
+
+msgid "ADMIN_QUERY_WARNING_TEXT"
+msgstr "Wil je echt deze instellingen bewerken? Als je niet weet wat je doet, kun je de verbinding met de TeamSpeak-server verstoren."
+
+msgid "ADMIN_QUERY_WARNING_CONFIRM"
+msgstr "Ja, ik weet wat ik doe"
+
+msgid "ADMIN_QUERY_SECTION"
+msgstr "TeamSpeak-verbindingsinstellingen"
+
+msgid "ADMIN_QUERY_HOSTNAME_LABEL"
+msgstr "Serveradres"
+
+msgid "ADMIN_QUERY_HOSTNAME_HINT"
+msgstr "IP of hostnaam van de TeamSpeak-server (bijv. 127.0.0.1)"
+
+msgid "ADMIN_QUERY_PORT_LABEL"
+msgstr "ServerQuery-poort"
+
+msgid "ADMIN_QUERY_PORT_HINT"
+msgstr "Standaard: 10011"
+
+msgid "ADMIN_QUERY_USERNAME_LABEL"
+msgstr "ServerQuery-gebruikersnaam"
+
+msgid "ADMIN_QUERY_USERNAME_HINT"
+msgstr "Het query-account aangemaakt voor de website"
+
+msgid "ADMIN_QUERY_PASSWORD_LABEL"
+msgstr "ServerQuery-wachtwoord"
+
+msgid "ADMIN_QUERY_PASSWORD_HINT"
+msgstr "Wachtwoord van het query-account"
+
+msgid "ADMIN_QUERY_NICKNAME_LABEL"
+msgstr "Weergavenaam in Query"
+
+msgid "ADMIN_QUERY_NICKNAME_HINT"
+msgstr "Naam weergegeven wanneer de website inlogt op de query"
+
+msgid "ADMIN_QUERY_DISPLAYIP_LABEL"
+msgstr "Openbaar server-IP"
+
+msgid "ADMIN_QUERY_DISPLAYIP_HINT"
+msgstr "IP gebruikt als ts3server://-link in de kanaalweergave"
+
+msgid "ADMIN_QUERY_VOICEPORT_LABEL"
+msgstr "TeamSpeak Voice-poort"
+
+msgid "ADMIN_QUERY_VOICEPORT_HINT"
+msgstr "Poort waarmee clients verbinding maken (standaard: 9987)"
+
+msgid "ADMIN_QUERY_SAVED"
+msgstr "Verbindingsinstellingen opgeslagen."
+

@@ -166,3 +166,51 @@ body.admin-body {
 
 /* Alerts */
 .alert { border-radius: 6px; }
+
+/* __ Navbar language switcher __________________________________________ */
+.admin-lang-btn {
+    background-color: transparent;
+    border-color: rgba(255,255,255,.25);
+    color: rgba(255,255,255,.75);
+    font-size: .8rem;
+    padding: .25rem .65rem;
+    margin-right: .5rem;
+}
+.admin-lang-btn:hover,
+.admin-lang-btn:focus,
+.admin-lang-btn.show {
+    background-color: rgba(255,255,255,.1);
+    border-color: rgba(255,255,255,.5);
+    color: #fff;
+    box-shadow: none;
+}
+.admin-navbar .dropdown-menu,
+body .admin-navbar .dropdown-menu {
+    background-color: #1e2127 !important;
+    border: 1px solid #30363d !important;
+    border-radius: 6px;
+    min-width: 13rem;
+    padding: .25rem 0;
+    box-shadow: 0 8px 24px rgba(0,0,0,.5);
+}
+.admin-navbar .dropdown-item,
+body .admin-navbar .dropdown-item {
+    color: #c9d1d9 !important;
+    background-color: transparent;
+    font-size: .85rem;
+    padding: .35rem 1rem;
+}
+.admin-navbar .dropdown-item:hover,
+.admin-navbar .dropdown-item:focus,
+body .admin-navbar .dropdown-item:hover,
+body .admin-navbar .dropdown-item:focus {
+    background-color: #30363d !important;
+    color: #e6edf3 !important;
+}
+.admin-navbar .dropdown-item.active,
+.admin-navbar .dropdown-item:active,
+body .admin-navbar .dropdown-item.active,
+body .admin-navbar .dropdown-item:active {
+    background-color: #1f6feb !important;
+    color: #fff !important;
+}

@@ -1,0 +1,352 @@
+# TS-Website frontend translations — Dutch
+# Domain: frontend
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
+
+msgid "ASSIGNER_NO_REQUIRED_GROUPS"
+msgstr "Je hebt geen van de vereiste groepen. Je kan niet de groep toewijzer gebruiken,"
+
+msgid "DATE_FORMAT"
+msgstr "d.m.Y"
+
+msgid "TIME_FORMAT"
+msgstr "H:i"
+
+msgid "BANS_HEADER_TARGET"
+msgstr "Ban"
+
+msgid "AUTHORS"
+msgstr "toster234 <contact@toster.dev>\nT.S."
+
+msgid "COOKIEALERT_MESSAGE"
+msgstr "<b>Houd je van cookies?</b> &#x1F36A; We gebruiken cookies om de hoogste kwaliteit van de services te garanderen. <a href=\"https://support.mozilla.org/nl/products/firefox/protect-your-privacy/cookies\" target=\"_blank\">Meer informatie</a>"
+
+msgid "COOKIEALERT_AGREE"
+msgstr "Ik ben het ermee eens"
+
+msgid "OUTDATED_DATA"
+msgstr "<b>Uitkijken!</b> Sommige gegevens kunnen nu niet worden verkregen. Het laat verouderde gegevens zien {0}"
+
+msgid "SHOW_PROBLEMS"
+msgstr "Toon problemen"
+
+msgid "PROBLEMS_DESCRIPTION"
+msgstr "Problemen ondervonden tijdens het verbinden met de TeamSpeak Server"
+
+msgid "NO_JAVASCRIPT_ENABLED"
+msgstr "Deze pagina zal niet werken zonder <a href=\"https://www.enable-javascript.com/nl/\" target=\"_blank\">JavaScript ingeschakeld</a>."
+
+msgid "CANNOT_GET_DATA"
+msgstr "Ik kan geen informatie downloaden over \"{0}\"! Neem contact op met de eigenaar van de site."
+
+msgid "NO_REASON_SET"
+msgstr "<b>(Geen reden aangegeven)</b>"
+
+msgid "BANS_HEADER_REASON"
+msgstr "Reden"
+
+msgid "BANS_HEADER_INVOKER"
+msgstr "Gebanned door"
+
+msgid "BANS_HEADER_BANDATE"
+msgstr "Ban datum"
+
+msgid "BANS_HEADER_EXPIRES"
+msgstr "Vervalt"
+
+msgid "DATATABLES_LANGUAGE_NAME"
+msgstr "Dutch"
+
+msgid "BANS_NEVEREXPIRES"
+msgstr "Nooit"
+
+msgid "STATUS_ADDRESS"
+msgstr "Adres:"
+
+msgid "STATUS_CLIENTS_ONLINE"
+msgstr "Online:"
+
+msgid "STATUS_RESERVED_SLOTS"
+msgstr "{0} gereserveerde slots"
+
+msgid "STATUS_TOP_ONLINE"
+msgstr "Meest online:"
+
+msgid "STATUS_TOP_ONLINE_DESC"
+msgstr "Verkregen op {0}"
+
+msgid "STATUS_UPTIME"
+msgstr "Tijd online:"
+
+msgid "STATUS_VERSION"
+msgstr "Versie"
+
+msgid "STATUS_VERSION_DESC"
+msgstr "{0} op {1}"
+
+msgid "STATUS_PING"
+msgstr "Gem. ping:"
+
+msgid "STATUS_PACKETLOSS"
+msgstr "Gem. pakketverlies:"
+
+msgid "STATUS_ERROR"
+msgstr "Fout bij laden van serverstatus"
+
+msgid "STATUS_PANEL_TITLE"
+msgstr "Server status"
+
+msgid "DAYJS_LANG"
+msgstr "nl"
+
+msgid "LOGIN_CONFIRMATION_CODE"
+msgstr "Hallo, hier is uw inlogbevestigingscode: [b]{0}[/b]"
+
+msgid "UNSUPPORTED_BROWSER"
+msgstr "Uw browser wordt niet ondersteund. Installeer de nieuwste versie van Chrome, Firefox, Safari of Edge om deze site te gebruiken."
+
+msgid "DATATABLES_PLACEHOLDER_SEARCH"
+msgstr "Zoeken..."
+
+msgid "WEBSITE_TITLE"
+msgstr " | TS-website Nederlandse Taal"
+
+msgid "ADMIN_STATUS_ONLINE"
+msgstr "Online"
+
+msgid "ADMIN_STATUS_AWAY"
+msgstr "Afwezig"
+
+msgid "ADMIN_STATUS_OFFLINE"
+msgstr "Offline"
+
+msgid "ADMIN_STATUS_EMPTY_GROUP"
+msgstr "Niets te tonen"
+
+msgid "ADMIN_STATUS_EMPTY_STATUS"
+msgstr "Administratiestatus is leeg"
+
+msgid "ASSIGNER_PANEL_TITLE"
+msgstr "Groepstoewijzer"
+
+msgid "ASSIGNER_TITLE"
+msgstr "Groepstoewijzer"
+
+msgid "BANS_EMPTY"
+msgstr "Banlijst is leeg"
+
+msgid "BANS_TITLE"
+msgstr "Banlijst"
+
+msgid "BANS_PANEL_TITLE"
+msgstr "Banlijst"
+
+msgid "BANS_BANNED_ALERT_TITLE"
+msgstr "Uw IP is gebanned door {0}"
+
+msgid "BANS_BANNED_ALERT_REASON"
+msgstr "Reden: {0}"
+
+msgid "BANS_VIEW_MORE_TIP"
+msgstr "Klik op een rij om meer informatie over een ban te bekijken"
+
+msgid "RULES_TITLE"
+msgstr "Reglement"
+
+msgid "RULES_PANEL_TITLE"
+msgstr "Reglement"
+
+msgid "FAQ_COPY_LINK"
+msgstr "Kopieer de link naar dit antwoord"
+
+msgid "FAQ_PANEL_TITLE"
+msgstr "FAQ"
+
+msgid "FAQ_TITLE"
+msgstr "FAQ"
+
+msgid "FAQ_COPY_LINK_SUCCESS"
+msgstr "Gekopieerd!"
+
+msgid "FAQ_COPY_LINK_ERROR"
+msgstr "Fout!"
+
+msgid "HOME_TITLE"
+msgstr "Nieuws"
+
+msgid "HOME_PANEL_TITLE"
+msgstr "Nieuws"
+
+msgid "HOME_EMPTY"
+msgstr "Geen nieuws beschikbaar op dit moment"
+
+msgid "HOME_INVALID_PAGE"
+msgstr "Ongeldig paginanummer"
+
+msgid "HOME_NEWS_EDITED"
+msgstr "Laatst bewerkt: {0}"
+
+msgid "HOME_PREVIOUS_NEWS"
+msgstr "Vorige"
+
+msgid "HOME_NEXT_NEWS"
+msgstr "Volgende"
+
+msgid "ADMIN_STATUS_PANEL_TITLE"
+msgstr "Administratieve status"
+
+msgid "ADMIN_STATUS_HIDE_OFFLINE_TIP"
+msgstr "Verberg offline beheerders"
+
+msgid "ADMIN_STATUS_SHOW_OFFLINE_TIP"
+msgstr "Toon offline beheerders"
+
+msgid "ADMIN_STATUS_ERROR"
+msgstr "Beheerder status fout"
+
+msgid "NAV_TOGGLE"
+msgstr "Navigatie (in/uit)schakelen"
+
+msgid "NAV_VIEWER"
+msgstr "Bekijker"
+
+msgid "NAV_ASSIGNER"
+msgstr "Toewijzer"
+
+msgid "NAV_BANS"
+msgstr "Bans"
+
+msgid "NAV_RULES"
+msgstr "Regels"
+
+msgid "NAV_FAQ"
+msgstr "FAQ"
+
+msgid "NAV_ACCOUNT_LOGIN"
+msgstr "Inloggen"
+
+msgid "NAV_ACCOUNT_LOGOUT"
+msgstr "Uitloggen"
+
+msgid "VIEWER_TITLE"
+msgstr "Server bekijker"
+
+msgid "VIEWER_PANEL_TITLE"
+msgstr "Server bekijker"
+
+msgid "VIEWER_SHOW_EMPTY"
+msgstr "Toon lege kanalen"
+
+msgid "VIEWER_HIDE_EMPTY"
+msgstr "Verberg lege kanalen"
+
+msgid "VIEWER_TIP_ALERT"
+msgstr "Klik op een kanaal om het toe te treden. Zweef over een gebruiker om hun informatie te bekijken."
+
+msgid "ARIA_CLOSE"
+msgstr "Sluit"
+
+msgid "VIEWER_ERROR"
+msgstr "Bekijker fout"
+
+msgid "VIEWER_CONNECTION_CONFIRMATION"
+msgstr "Wil je verbinding maken met dit kanaal?"
+
+msgid "VIEWER_CLIENT_LASTACTIVE"
+msgstr "Laatst actief:"
+
+msgid "VIEWER_CLIENT_ONLINE"
+msgstr "Online tijd:"
+
+msgid "VIEWER_CLIENT_JOINED"
+msgstr "Geregistreerd op:"
+
+msgid "VIEWER_CLIENT_TITLE"
+msgstr "Cliënt informatie"
+
+msgid "VIEWER_SERVER_ICON"
+msgstr "Server icoon"
+
+msgid "VIEWER_DEFAULT_CHANNEL"
+msgstr "Standaard kanaal"
+
+msgid "VIEWER_CHANNEL_UNSUB1"
+msgstr ", afgemeld"
+
+msgid "VIEWER_CHANNEL_OCCUPIED"
+msgstr "Volledig bezet"
+
+msgid "VIEWER_CHANNEL_PASSWORD"
+msgstr "Beveiligd met een wachtwoord"
+
+msgid "VIEWER_CHANNEL_UNSUB2"
+msgstr "Afgemeld"
+
+msgid "VIEWER_CHANNEL_ICON"
+msgstr "Kanaal icoon"
+
+msgid "VIEWER_CHANNEL_MODERATED"
+msgstr "Gemodereerd"
+
+msgid "VIEWER_CHANNEL_MUSIC_CODED"
+msgstr "Muziek codec"
+
+msgid "VIEWER_CLIENT_AWAY"
+msgstr "Afwezig"
+
+msgid "VIEWER_CLIENT_OUTPUT_DISABLED"
+msgstr "Geluid uitgeschakeld"
+
+msgid "VIEWER_CLIENT_OUTPUT_MUTED"
+msgstr "Geluid gedempt"
+
+msgid "VIEWER_CLIENT_MIC_DISABLED"
+msgstr "Microfoon uitgeschakeld"
+
+msgid "VIEWER_CLIENT_MIC_MUTED"
+msgstr "Microfoon gedempt"
+
+msgid "VIEWER_CLIENT_COMMANDER"
+msgstr "Kanaal commandant"
+
+msgid "VIEWER_CLIENT_ICON"
+msgstr "Cliënt icoon"
+
+msgid "VIEWER_CLIENT_PRIORITY_SPEAKER"
+msgstr "Prioriteitspreker"
+
+msgid "VIEWER_CLIENT_TALK_POWER_GRANTED"
+msgstr "Spreekkracht toegekend"
+
+msgid "VIEWER_CLIENT_TALK_POWER_INSUFFICIENT"
+msgstr "Onvoldoende spreekkracht"
+
+msgid "ASSIGNER_NOT_LOGGED_IN"
+msgstr "Log in voor het gebruiken van de groeptoewijzer"
+
+msgid "ASSIGNER_LOGIN_BUTTON"
+msgstr "Inloggen"
+
+msgid "ASSIGNER_SAVE_BUTTON"
+msgstr "Opslaan"
+
+msgid "ASSIGNER_INVALID_GROUPS"
+msgstr "Ongeldige groepsinstellingen"
+
+msgid "ASSIGNER_NOT_CONFIGURED"
+msgstr "Groepstoewijzer is niet geconfigureerd door de website administrator."
+
+msgid "ASSIGNER_SAVE_SUCCESS"
+msgstr "Je groepen zijn bijgewerkt"
+
+msgid "ASSIGNER_SAVE_ERROR"
+msgstr "Groepsveranderingsfout"
+
+msgid "ASSIGNER_SAVE_NO_CHANGE"
+msgstr "Er zijn geen wijzigingen aangebracht"
+
+msgid "IMPRINT_TITLE"
+msgstr "Impressum"

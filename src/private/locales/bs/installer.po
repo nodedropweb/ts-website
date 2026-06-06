@@ -1,0 +1,133 @@
+# TS-Website installer translations — bs
+# Domain: installer
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: bs\n"
+
+msgid "INSTALLER_NAV_BRAND"
+msgstr "TS-Website Instalacijski program"
+
+msgid "INSTALLER_STEP_WELCOME"
+msgstr "Dobrodošli"
+
+msgid "INSTALLER_STEP_REQUIREMENTS"
+msgstr "Zahtjevi"
+
+msgid "INSTALLER_STEP_DATABASE"
+msgstr "Baza podataka"
+
+msgid "INSTALLER_STEP_TEAMSPEAK"
+msgstr "TeamSpeak"
+
+msgid "INSTALLER_STEP_SECURITY"
+msgstr "Sigurnost"
+
+msgid "INSTALLER_STEP_CONFIGURATION"
+msgstr "Konfiguracija"
+
+msgid "INSTALLER_STEP_DONE"
+msgstr "Gotovo"
+
+msgid "INSTALLER_WELCOME_TITLE"
+msgstr "Dobrodošli u TS-website instalacijski program!"
+
+msgid "INSTALLER_WELCOME_DESCRIPTION"
+msgstr "Ovaj čarobnjak će vas provesti kroz proces instalacije TS-website."
+
+msgid "INSTALLER_WELCOME_NO_JS"
+msgstr "Molimo omogućite Javascript prije nastavka!"
+
+msgid "INSTALLER_WELCOME_READY"
+msgstr "Idite na sljedeći korak kada budete spremni!"
+
+msgid "INSTALLER_BTN_START"
+msgstr "Počni"
+
+msgid "INSTALLER_BTN_RECHECK"
+msgstr "Provjeri ponovo"
+
+msgid "INSTALLER_BTN_NEXT"
+msgstr "Sljedeće"
+
+msgid "INSTALLER_BTN_BACK"
+msgstr "Nazad"
+
+msgid "INSTALLER_BTN_SUBMIT"
+msgstr "Pošalji"
+
+msgid "INSTALLER_DB_TITLE"
+msgstr "Detalji baze podataka"
+
+msgid "INSTALLER_DB_USE_MYSQL"
+msgstr "Koristi MySQL / MariaDB"
+
+msgid "INSTALLER_DB_USE_SQLITE"
+msgstr "Koristi SQLite bazu podataka"
+
+msgid "INSTALLER_DB_HOSTNAME"
+msgstr "Hostname"
+
+msgid "INSTALLER_DB_USERNAME"
+msgstr "Korisničko ime"
+
+msgid "INSTALLER_DB_PASSWORD"
+msgstr "Lozinka"
+
+msgid "INSTALLER_DB_NAME"
+msgstr "Naziv baze podataka"
+
+msgid "INSTALLER_DB_ERR_FILL_IN"
+msgstr "Molimo unesite detalje baze podataka"
+
+msgid "INSTALLER_TS_TITLE"
+msgstr "Query detalji"
+
+msgid "INSTALLER_TS_QUERYPORT"
+msgstr "ServerQuery port"
+
+msgid "INSTALLER_TS_VOICEPORT"
+msgstr "Glasovni port"
+
+msgid "INSTALLER_TS_QUERYUSERNAME"
+msgstr "Query korisničko ime"
+
+msgid "INSTALLER_TS_QUERYPASSWORD"
+msgstr "Query lozinka"
+
+msgid "INSTALLER_TS_DISPLAYIP"
+msgstr "Prikazana adresa"
+
+msgid "INSTALLER_TS_CACHING_ICONS"
+msgstr "Keširanje ikona sa TS3 servera, molimo sačekajte..."
+
+msgid "INSTALLER_TS_ERR_CANNOT_GET_INFO"
+msgstr "Nije moguće dohvatiti informacije o serveru"
+
+msgid "INSTALLER_SEC_TITLE"
+msgstr "Sigurnost: direktorij private/"
+
+msgid "INSTALLER_SEC_DIR_PROTECTED"
+msgstr "Direktorij je zaštićen"
+
+msgid "INSTALLER_SEC_DIR_NOT_PROTECTED"
+msgstr "Direktorij NIJE zaštićen"
+
+msgid "INSTALLER_CONFIG_TITLE"
+msgstr "Konfigurirajte vaš sajt"
+
+msgid "INSTALLER_CONFIG_SITE_NAME_LABEL"
+msgstr "Naziv / naslov sajta"
+
+msgid "INSTALLER_CONFIG_TIMEZONE_LABEL"
+msgstr "Odaberite vremensku zonu"
+
+msgid "INSTALLER_DONE_TITLE"
+msgstr "TS-website {0} je uspješno instaliran! 👍"
+
+msgid "INSTALLER_DONE_WHATNOW"
+msgstr "Šta sada?"
+
+msgid "INSTALLER_DONE_VISIT_TITLE"
+msgstr "Posjetite vaš novi sajt"

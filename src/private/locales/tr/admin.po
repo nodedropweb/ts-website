@@ -1,0 +1,599 @@
+# TS-Website admin translations -- tr
+# Domain: admin
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: tr\n"
+
+msgid "ADMIN_NAV_BRAND"
+msgstr "TS-Website Admin"
+
+msgid "ADMIN_NAV_NEWS"
+msgstr "Haberler"
+
+msgid "ADMIN_NAV_FAQ"
+msgstr "SSS"
+
+msgid "ADMIN_NAV_RULES"
+msgstr "Kurallar"
+
+msgid "ADMIN_NAV_ASSIGNER"
+msgstr "Assigner"
+
+msgid "ADMIN_NAV_CONFIG"
+msgstr "Yapılandırma"
+
+msgid "ADMIN_NAV_GOTO_WEBSITE"
+msgstr "Siteye git"
+
+msgid "ADMIN_BTN_SAVE"
+msgstr "Kaydet"
+
+msgid "ADMIN_BTN_SAVE_ALL"
+msgstr "Tüm ayarları kaydet"
+
+msgid "ADMIN_BTN_BACK"
+msgstr "Geri"
+
+msgid "ADMIN_BTN_BACK_TO_CONFIG"
+msgstr "Yapılandırmaya geri dön"
+
+msgid "ADMIN_BTN_CANCEL"
+msgstr "İptal"
+
+msgid "ADMIN_BTN_ADD"
+msgstr "Ekle"
+
+msgid "ADMIN_BTN_REMOVE"
+msgstr "Kaldır"
+
+msgid "ADMIN_ENABLED"
+msgstr "Etkin"
+
+msgid "ADMIN_TABLE_ID"
+msgstr "ID"
+
+msgid "ADMIN_TABLE_TITLE"
+msgstr "Başlık"
+
+msgid "ADMIN_TABLE_CREATED"
+msgstr "Oluşturuldu"
+
+msgid "ADMIN_TABLE_EDITED"
+msgstr "Düzenlendi"
+
+msgid "ADMIN_TABLE_QUESTION"
+msgstr "Soru"
+
+msgid "ADMIN_TABLE_LAST_MODIFIED"
+msgstr "Son değiştirme"
+
+msgid "ADMIN_TABLE_ACTIONS"
+msgstr "İşlemler"
+
+msgid "ADMIN_NO_GROUPS_AVAILABLE"
+msgstr "Kullanılabilir sunucu grubu yok."
+
+msgid "ADMIN_403_TITLE"
+msgstr "Erişim Reddedildi — Admin"
+
+msgid "ADMIN_403_TEXT"
+msgstr "Erişim yok. Yönetici olarak kayıtlı değilsiniz."
+
+msgid "ADMIN_403_HINT"
+msgstr "Lütfen önce TeamSpeak ile ana siteye giriş yapın, ardından bir yöneticiden cldbid nizi admin_cldbids e eklemesini isteyin."
+
+msgid "ADMIN_403_BTN"
+msgstr "Ana siteye git"
+
+msgid "ADMIN_SETUP_TITLE"
+msgstr "Admin Paneli — İlk Kurulum"
+
+msgid "ADMIN_SETUP_NO_ADMIN"
+msgstr "Henüz kayıtlı yönetici yok. Admin paneline erişmek için cldbid nizi girin."
+
+msgid "ADMIN_SETUP_CLDBID_LABEL"
+msgstr "Cldbid niz"
+
+msgid "ADMIN_SETUP_CLDBID_HINT"
+msgstr "Ana sayfada TS3 girişinden sonra görünür veya aşağıdaki listeden seçin."
+
+msgid "ADMIN_SETUP_ONLINE_LABEL"
+msgstr "Şu anda çevrimiçi"
+
+msgid "ADMIN_SETUP_BTN_REGISTER"
+msgstr "İlk yönetici olarak kayıt ol"
+
+msgid "ADMIN_SETUP_BTN_GOTO"
+msgstr "Admin paneline git"
+
+msgid "ADMIN_SETUP_SUCCESS"
+msgstr "cldbid {0} ilk yönetici olarak kaydedildi. Bu sayfa şimdi kilitli."
+
+msgid "ADMIN_SETUP_ERR_INVALID"
+msgstr "Lütfen geçerli bir cldbid girin (pozitif tam sayı)."
+
+msgid "ADMIN_NEWS_TITLE"
+msgstr "Haberler"
+
+msgid "ADMIN_NEWS_NEW_BTN"
+msgstr "Yeni makale"
+
+msgid "ADMIN_NEWS_EMPTY"
+msgstr "Kullanılabilir haber yok."
+
+msgid "ADMIN_NEWS_CONFIRM_DELETE"
+msgstr "Bu makale silinsin mi?"
+
+msgid "ADMIN_NEWS_EDIT_TITLE"
+msgstr "Haberi düzenle"
+
+msgid "ADMIN_NEWS_NEW_TITLE"
+msgstr "Yeni makale"
+
+msgid "ADMIN_NEWS_FORM_TITLE"
+msgstr "Başlık"
+
+msgid "ADMIN_NEWS_FORM_CONTENT"
+msgstr "İçerik"
+
+msgid "ADMIN_FAQ_TITLE"
+msgstr "SSS"
+
+msgid "ADMIN_FAQ_NEW_BTN"
+msgstr "Yeni SSS girişi"
+
+msgid "ADMIN_FAQ_EMPTY"
+msgstr "SSS girişi yok."
+
+msgid "ADMIN_FAQ_CONFIRM_DELETE"
+msgstr "Bu SSS girişi silinsin mi?"
+
+msgid "ADMIN_FAQ_EDIT_TITLE"
+msgstr "SSS girişini düzenle"
+
+msgid "ADMIN_FAQ_NEW_TITLE"
+msgstr "Yeni SSS girişi"
+
+msgid "ADMIN_FAQ_FORM_QUESTION"
+msgstr "Soru"
+
+msgid "ADMIN_FAQ_FORM_ANSWER"
+msgstr "Cevap"
+
+msgid "ADMIN_RULES_TITLE"
+msgstr "Sunucu kuralları"
+
+msgid "ADMIN_RULES_FORM_CONTENT"
+msgstr "İçerik"
+
+msgid "ADMIN_IMPRINT_TITLE"
+msgstr "Künye"
+
+msgid "ADMIN_ASSIGNER_TITLE"
+msgstr "Assigner yapılandırması"
+
+msgid "ADMIN_ASSIGNER_NO_GROUPS_WARNING"
+msgstr "Sunucu grubu bulunamadı. TS3 sunucusunun bağlı olduğundan emin olun."
+
+msgid "ADMIN_ASSIGNER_DESCRIPTION"
+msgstr "Grup atama kategorilerini tanımlayın. Her kategorinin adı, simgesi, max seçilebilir grubu ve karşılık gelen sunucu grupları vardır."
+
+msgid "ADMIN_ASSIGNER_GENERAL"
+msgstr "Genel ayarlar"
+
+msgid "ADMIN_ASSIGNER_COOLDOWN_LABEL"
+msgstr "Bekleme süresi (saniye)"
+
+msgid "ADMIN_ASSIGNER_COOLDOWN_HINT"
+msgstr "Kullanıcının grubunu tekrar değiştirmeden önce beklemesi gereken süre. 0 = bekleme yok."
+
+msgid "ADMIN_ASSIGNER_REQUIRED_GROUPS_LABEL"
+msgstr "Gerekli sunucu grupları"
+
+msgid "ADMIN_ASSIGNER_REQUIRED_GROUPS_HINT"
+msgstr "Yalnızca bu grupların üyeleri Assigner kullanabilir. Boş = herkes."
+
+msgid "ADMIN_ASSIGNER_ADD_CATEGORY"
+msgstr "Kategori ekle"
+
+msgid "ADMIN_ASSIGNER_SAVED"
+msgstr "Assigner yapılandırması kaydedildi."
+
+msgid "ADMIN_ASSIGNER_JS_MOVE_UP"
+msgstr "Yukarı taşı"
+
+msgid "ADMIN_ASSIGNER_JS_MOVE_DOWN"
+msgstr "Aşağı taşı"
+
+msgid "ADMIN_ASSIGNER_JS_NEW_CATEGORY"
+msgstr "Yeni kategori"
+
+msgid "ADMIN_ASSIGNER_JS_NAME_LABEL"
+msgstr "Ad"
+
+msgid "ADMIN_ASSIGNER_JS_NAME_PLACEHOLDER"
+msgstr "ör. Ülke, Oyun, Hobi"
+
+msgid "ADMIN_ASSIGNER_JS_MAX_LABEL"
+msgstr "Maks. seçim"
+
+msgid "ADMIN_ASSIGNER_JS_ICON_LABEL"
+msgstr "Simge"
+
+msgid "ADMIN_ASSIGNER_JS_GROUPS_LABEL"
+msgstr "Bu kategorideki sunucu grupları"
+
+msgid "ADMIN_ASSIGNER_JS_NO_GROUPS"
+msgstr "Kullanılabilir sunucu grubu yok."
+
+msgid "ADMIN_ASSIGNER_JS_SAVE_ERROR"
+msgstr "Kaydetme hatası."
+
+msgid "ADMIN_CONFIG_TITLE"
+msgstr "Yapılandırma"
+
+msgid "ADMIN_CONFIG_SECTION_ADMINSTATUS"
+msgstr "Admin durum widget i"
+
+msgid "ADMIN_CONFIG_SECTION_ASSIGNER"
+msgstr "Grup ataması"
+
+msgid "ADMIN_CONFIG_SECTION_CACHE"
+msgstr "Önbellek süreleri"
+
+msgid "ADMIN_CONFIG_SECTION_GENERAL"
+msgstr "Genel"
+
+msgid "ADMIN_CONFIG_SECTION_IMPRINT"
+msgstr "Künye"
+
+msgid "ADMIN_CONFIG_SECTION_ONLINERECORD"
+msgstr "Çevrimiçi rekoru"
+
+msgid "ADMIN_CONFIG_SECTION_VIEWER"
+msgstr "Kanal görüntüleyici"
+
+msgid "ADMIN_CONFIG_SECTION_QUERY"
+msgstr "TeamSpeak Query"
+
+msgid "ADMIN_CONFIG_SECTION_ADMIN"
+msgstr "Admin paneli"
+
+msgid "ADMIN_CONFIG_BTN_ADMINSTATUS"
+msgstr "Admin durum widget ini yapılandır"
+
+msgid "ADMIN_CONFIG_BTN_ASSIGNER"
+msgstr "Grup atamasını yapılandır"
+
+msgid "ADMIN_CONFIG_BTN_CACHE"
+msgstr "Önbellek sürelerini yapılandır"
+
+msgid "ADMIN_CONFIG_BTN_GENERAL"
+msgstr "Genel ayarları düzenle"
+
+msgid "ADMIN_CONFIG_BTN_IMPRINT"
+msgstr "Künyeyi düzenle"
+
+msgid "ADMIN_CONFIG_BTN_ONLINERECORD"
+msgstr "Çevrimiçi rekoru düzenle"
+
+msgid "ADMIN_CONFIG_BTN_VIEWER"
+msgstr "Kanal görüntüleyiciyi yapılandır"
+
+msgid "ADMIN_CONFIG_BTN_QUERY"
+msgstr "TeamSpeak bağlantısını yapılandır"
+
+msgid "ADMIN_CONFIG_BTN_ADMINS"
+msgstr "Yönetici erişimini yönet"
+
+msgid "ADMIN_CONFIG_EDIT_IN_ASSIGNER"
+msgstr "Assigner editöründe düzenle"
+
+msgid "ADMIN_CONFIG_MANAGED_IN_ASSIGNER"
+msgstr "Assigner editöründe yönetilir."
+
+msgid "ADMIN_CONFIG_WHO_HAS_ACCESS"
+msgstr "Bu admin paneline kim erişebilir?"
+
+msgid "ADMIN_GENERAL_TITLE"
+msgstr "Genel ayarlar"
+
+msgid "ADMIN_GENERAL_FIELD_WEBSITE_TITLE_LABEL"
+msgstr "TS sunucu adı (görüntüleme)"
+
+msgid "ADMIN_GENERAL_FIELD_WEBSITE_TITLE_HINT"
+msgstr "Yan paneldeki ve giriş iletişim kutusundaki IP adresini geçersiz kılar. Boş = IP gösterilir."
+
+msgid "ADMIN_GENERAL_FIELD_NAV_BRAND_LABEL"
+msgstr "Site başlığı (Navbar)"
+
+msgid "ADMIN_GENERAL_FIELD_NAV_BRAND_HINT"
+msgstr "Navigasyonun sol üst köşesindeki logonun metni."
+
+msgid "ADMIN_GENERAL_FIELD_BASEURL_LABEL"
+msgstr "Temel URL"
+
+msgid "ADMIN_GENERAL_FIELD_BASEURL_HINT"
+msgstr "Sitenin tam URL si, ör. https://example.com"
+
+msgid "ADMIN_GENERAL_FIELD_LOGINPOKE_LABEL"
+msgstr "Giriş: İstemciye poke at"
+
+msgid "ADMIN_GENERAL_FIELD_LOGINPOKE_HINT"
+msgstr "Giriş denemesi sırasında TS istemcisine poke gönder"
+
+msgid "ADMIN_GENERAL_FIELD_TIMEZONE_LABEL"
+msgstr "Saat dilimi"
+
+msgid "ADMIN_GENERAL_FIELD_TIMEZONE_HINT"
+msgstr "PHP saat dilimi, ör. Europe/Istanbul"
+
+msgid "ADMIN_GENERAL_FIELD_CLOUDFLARE_LABEL"
+msgstr "Cloudflare etkin"
+
+msgid "ADMIN_GENERAL_FIELD_CLOUDFLARE_HINT"
+msgstr "Site Cloudflare nin arkasındaysa etkinleştir"
+
+msgid "ADMIN_GENERAL_SAVED"
+msgstr "Ayarlar kaydedildi."
+
+msgid "ADMIN_ADMINS_TITLE"
+msgstr "Yönetici erişimi"
+
+msgid "ADMIN_ADMINS_CURRENT"
+msgstr "Mevcut yöneticiler"
+
+msgid "ADMIN_ADMINS_TABLE_CLDBID"
+msgstr "İstemci veritabanı ID"
+
+msgid "ADMIN_ADMINS_TABLE_ACTION"
+msgstr "İşlem"
+
+msgid "ADMIN_ADMINS_YOU_BADGE"
+msgstr "Sen"
+
+msgid "ADMIN_ADMINS_CONFIRM_REMOVE"
+msgstr "Yönetici kaldırılsın mı?"
+
+msgid "ADMIN_ADMINS_CANNOT_REMOVE_SELF"
+msgstr "Kendinizi kaldıramazsınız."
+
+msgid "ADMIN_ADMINS_ADD_TITLE"
+msgstr "Yönetici ekle"
+
+msgid "ADMIN_ADMINS_CLDBID_LABEL"
+msgstr "İstemci veritabanı ID"
+
+msgid "ADMIN_ADMINS_ONLINE_LABEL"
+msgstr "Şu anda çevrimiçi (listeden seçin)"
+
+msgid "ADMIN_ADMINS_ADDED"
+msgstr "Yönetici eklendi."
+
+msgid "ADMIN_ADMINS_REMOVED"
+msgstr "Yönetici kaldırıldı."
+
+msgid "ADMIN_ADMINSTATUS_TITLE"
+msgstr "Admin durum widget i"
+
+msgid "ADMIN_ADMINSTATUS_SECTION_GENERAL"
+msgstr "Genel"
+
+msgid "ADMIN_ADMINSTATUS_WIDGET_ENABLED_LABEL"
+msgstr "Widget etkin"
+
+msgid "ADMIN_ADMINSTATUS_HIDE_OFFLINE_LABEL"
+msgstr "Çevrimdışı kullanıcıları gizle"
+
+msgid "ADMIN_ADMINSTATUS_HIDE_OFFLINE_HINT"
+msgstr "Çevrimdışı kullanıcılar tamamen gizlenir."
+
+msgid "ADMIN_ADMINSTATUS_OFFLINE_COLLAPSED_LABEL"
+msgstr "Çevrimdışı varsayılan olarak daraltılmış"
+
+msgid "ADMIN_ADMINSTATUS_OFFLINE_COLLAPSED_HINT"
+msgstr "Widget taki çevrimdışı girişler yalnızca tıklandıktan sonra görünür."
+
+msgid "ADMIN_ADMINSTATUS_DISPLAY_MODE_LABEL"
+msgstr "Görüntüleme modu"
+
+msgid "ADMIN_ADMINSTATUS_MODE_1"
+msgstr "Gruplandırılmış"
+
+msgid "ADMIN_ADMINSTATUS_MODE_2"
+msgstr "Gruplandırılmış (boş grupları gizle)"
+
+msgid "ADMIN_ADMINSTATUS_MODE_3"
+msgstr "Liste"
+
+msgid "ADMIN_ADMINSTATUS_MODE_4"
+msgstr "Liste (çevrimiçi önce)"
+
+msgid "ADMIN_ADMINSTATUS_SECTION_GROUPS"
+msgstr "Görüntülenecek sunucu grupları"
+
+msgid "ADMIN_ADMINSTATUS_NO_GROUPS"
+msgstr "Kullanılabilir sunucu grubu yok — TS bağlantısını kontrol edin."
+
+msgid "ADMIN_ADMINSTATUS_SECTION_IGNORED"
+msgstr "Yoksayılan kullanıcılar"
+
+msgid "ADMIN_ADMINSTATUS_IGNORED_HINT"
+msgstr "Seçili grupların kullanıcıları. İşaretliler widget ta görünmez."
+
+msgid "ADMIN_ADMINSTATUS_NO_GROUPS_SELECTED"
+msgstr "Önce sunucu gruplarını seçin ve kaydedin."
+
+msgid "ADMIN_ADMINSTATUS_NO_CACHE"
+msgstr "Henüz önbellek yok — bir dakika bekleyip sayfayı yenileyin."
+
+msgid "ADMIN_ADMINSTATUS_CURRENTLY_IGNORED"
+msgstr "Şu anda yoksayılan DBID ler:"
+
+msgid "ADMIN_ADMINSTATUS_SAVED"
+msgstr "Admin durumu kaydedildi."
+
+msgid "ADMIN_CACHE_TITLE"
+msgstr "Önbellek süreleri"
+
+msgid "ADMIN_CACHE_HINT"
+msgstr "Tüm değerler saniye cinsinden. Daha düşük = daha güncel veri, TS sunucusunda daha yüksek yük."
+
+msgid "ADMIN_CACHE_SERVERINFO_LABEL"
+msgstr "Sunucu bilgisi"
+
+msgid "ADMIN_CACHE_SERVERINFO_HINT"
+msgstr "Genel TS sunucu bilgileri (ad, slotlar, ...)"
+
+msgid "ADMIN_CACHE_CLIENTLIST_LABEL"
+msgstr "İstemci listesi"
+
+msgid "ADMIN_CACHE_CLIENTLIST_HINT"
+msgstr "Çevrimiçi oyuncu listesi — giriş durumunu güncel tutmak için kısa tutun"
+
+msgid "ADMIN_CACHE_CHANNELLIST_LABEL"
+msgstr "Kanal listesi"
+
+msgid "ADMIN_CACHE_CHANNELLIST_HINT"
+msgstr "Kanal görüntüleyici"
+
+msgid "ADMIN_CACHE_SERVERGROUPS_LABEL"
+msgstr "Sunucu grupları"
+
+msgid "ADMIN_CACHE_SERVERGROUPS_HINT"
+msgstr "Tüm sunucu gruplarının listesi"
+
+msgid "ADMIN_CACHE_CHANNELGROUPS_LABEL"
+msgstr "Kanal grupları"
+
+msgid "ADMIN_CACHE_CHANNELGROUPS_HINT"
+msgstr "Tüm kanal gruplarının listesi"
+
+msgid "ADMIN_CACHE_BANLIST_LABEL"
+msgstr "Ban listesi"
+
+msgid "ADMIN_CACHE_BANLIST_HINT"
+msgstr "Yasaklı kullanıcılar"
+
+msgid "ADMIN_CACHE_ADMINSTATUS_LABEL"
+msgstr "Admin durumu"
+
+msgid "ADMIN_CACHE_ADMINSTATUS_HINT"
+msgstr "Durum widget i için admin gruplarının üyeleri"
+
+msgid "ADMIN_CACHE_SERVERICONS_LABEL"
+msgstr "Sunucu simgeleri"
+
+msgid "ADMIN_CACHE_SERVERICONS_HINT"
+msgstr "TS sunucusundan simge verileri"
+
+msgid "ADMIN_CACHE_LANGUAGES_LABEL"
+msgstr "Diller"
+
+msgid "ADMIN_CACHE_LANGUAGES_HINT"
+msgstr "Veritabanından dil dosyaları"
+
+msgid "ADMIN_CACHE_LOGINCODE_LABEL"
+msgstr "Giriş kodu"
+
+msgid "ADMIN_CACHE_LOGINCODE_HINT"
+msgstr "Geçici giriş kodları"
+
+msgid "ADMIN_CACHE_SAVED"
+msgstr "Önbellek süreleri kaydedildi."
+
+msgid "ADMIN_ONLINERECORD_TITLE"
+msgstr "Çevrimiçi rekoru"
+
+msgid "ADMIN_ONLINERECORD_VALUE_LABEL"
+msgstr "Rekoru (oyuncu sayısı)"
+
+msgid "ADMIN_ONLINERECORD_DATE_LABEL"
+msgstr "Tarih ve saat"
+
+msgid "ADMIN_ONLINERECORD_DATE_HINT"
+msgstr "Yeni bir rekor kırıldığında otomatik olarak üzerine yazılır."
+
+msgid "ADMIN_ONLINERECORD_SAVED"
+msgstr "Çevrimiçi rekoru kaydedildi."
+
+msgid "ADMIN_VIEWER_TITLE"
+msgstr "Kanal görüntüleyici"
+
+msgid "ADMIN_VIEWER_SECTION"
+msgstr "Gizli kanallar"
+
+msgid "ADMIN_VIEWER_HINT"
+msgstr "İşaretli = kanal sitede gizli. Şifre korumalı kanallar otomatik olarak kaybolur."
+
+msgid "ADMIN_VIEWER_NO_CHANNELS"
+msgstr "Kullanılabilir kanal yok — TS bağlantısını kontrol edin."
+
+msgid "ADMIN_VIEWER_HIDDEN_BADGE"
+msgstr "gizli"
+
+msgid "ADMIN_VIEWER_SAVED"
+msgstr "Kanal görüntüleyici kaydedildi."
+
+msgid "ADMIN_QUERY_TITLE"
+msgstr "TeamSpeak bağlantısı"
+
+msgid "ADMIN_QUERY_WARNING_TITLE"
+msgstr "Uyarı"
+
+msgid "ADMIN_QUERY_WARNING_TEXT"
+msgstr "Bu ayarları gerçekten düzenlemek istiyor musunuz? Ne yaptığınızı bilmiyorsanız TeamSpeak sunucusuna bağlantıyı bozabilirsiniz."
+
+msgid "ADMIN_QUERY_WARNING_CONFIRM"
+msgstr "Evet, ne yaptığımı biliyorum"
+
+msgid "ADMIN_QUERY_SECTION"
+msgstr "TeamSpeak bağlantı ayarları"
+
+msgid "ADMIN_QUERY_HOSTNAME_LABEL"
+msgstr "Sunucu adresi"
+
+msgid "ADMIN_QUERY_HOSTNAME_HINT"
+msgstr "TeamSpeak sunucusunun IP si veya host adı (ör. 127.0.0.1)"
+
+msgid "ADMIN_QUERY_PORT_LABEL"
+msgstr "ServerQuery portu"
+
+msgid "ADMIN_QUERY_PORT_HINT"
+msgstr "Varsayılan: 10011"
+
+msgid "ADMIN_QUERY_USERNAME_LABEL"
+msgstr "ServerQuery kullanıcı adı"
+
+msgid "ADMIN_QUERY_USERNAME_HINT"
+msgstr "Site için oluşturulan query hesabı"
+
+msgid "ADMIN_QUERY_PASSWORD_LABEL"
+msgstr "ServerQuery şifresi"
+
+msgid "ADMIN_QUERY_PASSWORD_HINT"
+msgstr "Query hesabının şifresi"
+
+msgid "ADMIN_QUERY_NICKNAME_LABEL"
+msgstr "Query de görünen ad"
+
+msgid "ADMIN_QUERY_NICKNAME_HINT"
+msgstr "Sitenin query ye giriş yaptığında görünen ad"
+
+msgid "ADMIN_QUERY_DISPLAYIP_LABEL"
+msgstr "Genel sunucu IP si"
+
+msgid "ADMIN_QUERY_DISPLAYIP_HINT"
+msgstr "Kanal görüntüleyicide ts3server:// bağlantısı olarak kullanılan IP"
+
+msgid "ADMIN_QUERY_VOICEPORT_LABEL"
+msgstr "TeamSpeak ses portu"
+
+msgid "ADMIN_QUERY_VOICEPORT_HINT"
+msgstr "İstemcilerin bağlandığı port (varsayılan: 9987)"
+
+msgid "ADMIN_QUERY_SAVED"
+msgstr "Bağlantı ayarları kaydedildi."
+

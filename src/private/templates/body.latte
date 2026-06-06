@@ -16,13 +16,13 @@
     <title>{$title} | {$config["website_title"]}</title>
 
     <!-- Bootstrap 4.6.0 -->
-    {$tplutils::includeStylesheet("{cdnjs}/twitter-bootstrap/4.6.0/css/bootstrap.min.css", "sha256-T/zFmO5s/0aSwc6ics2KLxlfbewyRz6UNw1s3Ppf5gE=")}
+    {$tplutils::includeStylesheet("{cdnjs}/bootstrap/4.6.0/css/bootstrap.min.css", true)}
 
     <!-- FontAwesome CSS 5.15.3 -->
-    {$tplutils::includeStylesheet("{cdnjs}/font-awesome/5.15.3/css/all.min.css", "sha256-2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y=")}
+    {$tplutils::includeStylesheet("{cdnjs}/font-awesome/5.15.3/css/all.min.css", true)}
 
     <!-- DataTables 1.10.21 -->
-    {$tplutils::includeStylesheet("{cdnjs}/datatables/1.10.21/css/dataTables.bootstrap4.min.css", "sha256-ugpqzk9NhK3S2sVpMgSrIin1AzsJMlqUIMOCXyzPaL8=")}
+    {$tplutils::includeStylesheet("{cdnjs}/datatables/1.10.21/css/dataTables.bootstrap4.min.css", true)}
 
     <!-- Internal scripts -->
     {$tplutils::includeStylesheet("css/flags/famfamfam-flags.min.css", true)}
@@ -152,7 +152,7 @@
         &copy; {$config["website_title"]} {date("Y")}
 
         {if $config["imprint_enabled"]}
-            &mdash; <a href="{$config["imprint_url"]}">imprint</a>
+            &mdash; <a href="{$config["imprint_url"]}">{_'IMPRINT_TITLE'}</a>
         {/if}
     </div>
     <div class="ml-auto footer-copyright">
@@ -174,33 +174,33 @@
 </script>
 
 <!-- jQuery 3.6.0 -->
-{$tplutils::includeScript("{cdnjs}/jquery/3.6.0/jquery.min.js", "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=")}
+{$tplutils::includeScript("{cdnjs}/jquery/3.6.0/jquery.min.js", true)}
 
 <!-- Bootstrap 4.6.0 (bundle - includes Popper.js) -->
-{$tplutils::includeScript("{cdnjs}/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js", "sha256-sCElQ8xaSgoxwbWp0eiXMmGZIRa0z94+ffzzO06BqXs=")}
+{$tplutils::includeScript("{cdnjs}/bootstrap/4.6.0/js/bootstrap.bundle.min.js", true)}
 
 <!-- JS-Cookie 2.2.1 -->
-{$tplutils::includeScript("{cdnjs}/js-cookie/2.2.1/js.cookie.min.js", "sha256-oE03O+I6Pzff4fiMqwEGHbdfcW7a3GRRxlL+U49L5sA=")}
+{$tplutils::includeScript("{cdnjs}/js-cookie/2.2.1/js.cookie.min.js", true)}
 
 <!-- day.js 1.10.4 -->
-{$tplutils::includeScript("{cdnjs}/dayjs/1.10.4/dayjs.min.js", "sha256-NTsR4SOm3YHfJrmrmvBtEYqfQ6jQ5yvEKMhgQe3DIl0=")}
-{$tplutils::includeScript("{cdnjs}/dayjs/1.10.4/plugin/localizedFormat.min.js", "sha256-lT2SyoTnTiTm9q25nSMjZFGoltUUrKgr1KEI8lIUszE=")}
-{$tplutils::includeScript("{cdnjs}/dayjs/1.10.4/plugin/relativeTime.min.js", "sha256-Cto+wNkJbN1edfnamCQc/qvvQ5OUDOBzibYzJrJ8ElQ=")}
+{$tplutils::includeScript("{cdnjs}/dayjs/1.10.4/dayjs.min.js", true)}
+{$tplutils::includeScript("{cdnjs}/dayjs/1.10.4/plugin/localizedFormat.min.js", true)}
+{$tplutils::includeScript("{cdnjs}/dayjs/1.10.4/plugin/relativeTime.min.js", true)}
 
 {var $dayjslang = __get("DAYJS_LANG", [], true)}
 {if $dayjslang !== null && $dayjslang !== "en"}
-    {$tplutils::includeScript("{cdnjs}/dayjs/1.10.4/locale/$dayjslang.min.js")}
+    {$tplutils::includeScript("{cdnjs}/dayjs/1.10.4/locale/$dayjslang.min.js", true)}
     <script>
         dayjs.locale({$dayjslang} || navigator.languages || navigator.language)
     </script>
 {/if}
 
 <!-- DataTables 1.10.21 + Support for Bootstrap 4 -->
-{$tplutils::includeScript("{cdnjs}/datatables/1.10.21/js/jquery.dataTables.min.js", "sha256-/7zo27Ll/hVKhCsE+y8m2SS5bhFPEQFheTCL87HuumA=")}
-{$tplutils::includeScript("{cdnjs}/datatables/1.10.21/js/dataTables.bootstrap4.min.js", "sha256-1bbr2U4VkmmTxaxcHlFp9rgBhLrwQTP2rl8/jlivGb0=")}
+{$tplutils::includeScript("{cdnjs}/datatables/1.10.21/js/jquery.dataTables.min.js", true)}
+{$tplutils::includeScript("{cdnjs}/datatables/1.10.21/js/dataTables.bootstrap4.min.js", true)}
 
 <!-- DataTables responsive plugin -->
-{$tplutils::includeScript("{cdnjs}/datatables-responsive/2.2.7/dataTables.responsive.min.js", "sha256-lNhDn9rWCvb7iB+apRL+bi4SsUrHKLopvY8lE5nscyI=")}
+{$tplutils::includeScript("{cdnjs}/datatables-responsive/2.2.7/dataTables.responsive.min.js", true)}
 
 <!-- script.js -->
 {$tplutils::includeScript("js/script.js", true)}

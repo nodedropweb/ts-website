@@ -1,0 +1,599 @@
+# TS-Website admin translations -- el
+# Domain: admin
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: el\n"
+
+msgid "ADMIN_NAV_BRAND"
+msgstr "TS-Website Admin"
+
+msgid "ADMIN_NAV_NEWS"
+msgstr "Νέα"
+
+msgid "ADMIN_NAV_FAQ"
+msgstr "FAQ"
+
+msgid "ADMIN_NAV_RULES"
+msgstr "Κανόνες"
+
+msgid "ADMIN_NAV_ASSIGNER"
+msgstr "Assigner"
+
+msgid "ADMIN_NAV_CONFIG"
+msgstr "Ρυθμίσεις"
+
+msgid "ADMIN_NAV_GOTO_WEBSITE"
+msgstr "Μετάβαση στον ιστότοπο"
+
+msgid "ADMIN_BTN_SAVE"
+msgstr "Αποθήκευση"
+
+msgid "ADMIN_BTN_SAVE_ALL"
+msgstr "Αποθήκευση όλων των ρυθμίσεων"
+
+msgid "ADMIN_BTN_BACK"
+msgstr "Πίσω"
+
+msgid "ADMIN_BTN_BACK_TO_CONFIG"
+msgstr "Πίσω στις ρυθμίσεις"
+
+msgid "ADMIN_BTN_CANCEL"
+msgstr "Ακύρωση"
+
+msgid "ADMIN_BTN_ADD"
+msgstr "Προσθήκη"
+
+msgid "ADMIN_BTN_REMOVE"
+msgstr "Αφαίρεση"
+
+msgid "ADMIN_ENABLED"
+msgstr "Ενεργό"
+
+msgid "ADMIN_TABLE_ID"
+msgstr "ID"
+
+msgid "ADMIN_TABLE_TITLE"
+msgstr "Τίτλος"
+
+msgid "ADMIN_TABLE_CREATED"
+msgstr "Δημιουργήθηκε"
+
+msgid "ADMIN_TABLE_EDITED"
+msgstr "Επεξεργάστηκε"
+
+msgid "ADMIN_TABLE_QUESTION"
+msgstr "Ερώτηση"
+
+msgid "ADMIN_TABLE_LAST_MODIFIED"
+msgstr "Τελευταία τροποποίηση"
+
+msgid "ADMIN_TABLE_ACTIONS"
+msgstr "Ενέργειες"
+
+msgid "ADMIN_NO_GROUPS_AVAILABLE"
+msgstr "Δεν υπάρχουν διαθέσιμες ομάδες διακομιστή."
+
+msgid "ADMIN_403_TITLE"
+msgstr "Πρόσβαση απορρίφθηκε — Admin"
+
+msgid "ADMIN_403_TEXT"
+msgstr "Δεν υπάρχει πρόσβαση. Δεν έχετε καταχωρηθεί ως διαχειριστής."
+
+msgid "ADMIN_403_HINT"
+msgstr "Παρακαλώ συνδεθείτε πρώτα στην κύρια σελίδα μέσω TeamSpeak και ζητήστε από έναν διαχειριστή να προσθέσει το cldbid σας στο admin_cldbids."
+
+msgid "ADMIN_403_BTN"
+msgstr "Μετάβαση στην κύρια σελίδα"
+
+msgid "ADMIN_SETUP_TITLE"
+msgstr "Πίνακας διαχείρισης — Αρχική εγκατάσταση"
+
+msgid "ADMIN_SETUP_NO_ADMIN"
+msgstr "Δεν έχει καταχωρηθεί κανένας διαχειριστής ακόμη. Εισαγάγετε το cldbid σας για πρόσβαση στον πίνακα διαχείρισης."
+
+msgid "ADMIN_SETUP_CLDBID_LABEL"
+msgstr "Το cldbid σας"
+
+msgid "ADMIN_SETUP_CLDBID_HINT"
+msgstr "Εμφανίζεται μετά τη σύνδεση TS3 στην αρχική σελίδα ή επιλέξτε από τη λίστα παρακάτω."
+
+msgid "ADMIN_SETUP_ONLINE_LABEL"
+msgstr "Αυτή τη στιγμή online"
+
+msgid "ADMIN_SETUP_BTN_REGISTER"
+msgstr "Εγγραφή ως πρώτος διαχειριστής"
+
+msgid "ADMIN_SETUP_BTN_GOTO"
+msgstr "Μετάβαση στον πίνακα διαχείρισης"
+
+msgid "ADMIN_SETUP_SUCCESS"
+msgstr "Το cldbid {0} καταχωρήθηκε ως πρώτος διαχειριστής. Αυτή η σελίδα είναι τώρα κλειδωμένη."
+
+msgid "ADMIN_SETUP_ERR_INVALID"
+msgstr "Παρακαλώ εισαγάγετε έγκυρο cldbid (θετικός ακέραιος αριθμός)."
+
+msgid "ADMIN_NEWS_TITLE"
+msgstr "Νέα"
+
+msgid "ADMIN_NEWS_NEW_BTN"
+msgstr "Νέο άρθρο"
+
+msgid "ADMIN_NEWS_EMPTY"
+msgstr "Δεν υπάρχουν διαθέσιμα νέα."
+
+msgid "ADMIN_NEWS_CONFIRM_DELETE"
+msgstr "Διαγραφή αυτού του άρθρου;"
+
+msgid "ADMIN_NEWS_EDIT_TITLE"
+msgstr "Επεξεργασία νέου"
+
+msgid "ADMIN_NEWS_NEW_TITLE"
+msgstr "Νέο άρθρο"
+
+msgid "ADMIN_NEWS_FORM_TITLE"
+msgstr "Τίτλος"
+
+msgid "ADMIN_NEWS_FORM_CONTENT"
+msgstr "Περιεχόμενο"
+
+msgid "ADMIN_FAQ_TITLE"
+msgstr "FAQ"
+
+msgid "ADMIN_FAQ_NEW_BTN"
+msgstr "Νέα καταχώρηση FAQ"
+
+msgid "ADMIN_FAQ_EMPTY"
+msgstr "Δεν υπάρχουν καταχωρήσεις FAQ."
+
+msgid "ADMIN_FAQ_CONFIRM_DELETE"
+msgstr "Διαγραφή αυτής της καταχώρησης FAQ;"
+
+msgid "ADMIN_FAQ_EDIT_TITLE"
+msgstr "Επεξεργασία καταχώρησης FAQ"
+
+msgid "ADMIN_FAQ_NEW_TITLE"
+msgstr "Νέα καταχώρηση FAQ"
+
+msgid "ADMIN_FAQ_FORM_QUESTION"
+msgstr "Ερώτηση"
+
+msgid "ADMIN_FAQ_FORM_ANSWER"
+msgstr "Απάντηση"
+
+msgid "ADMIN_RULES_TITLE"
+msgstr "Κανόνες διακομιστή"
+
+msgid "ADMIN_RULES_FORM_CONTENT"
+msgstr "Περιεχόμενο"
+
+msgid "ADMIN_IMPRINT_TITLE"
+msgstr "Αποτύπωμα"
+
+msgid "ADMIN_ASSIGNER_TITLE"
+msgstr "Ρύθμιση Assigner"
+
+msgid "ADMIN_ASSIGNER_NO_GROUPS_WARNING"
+msgstr "Δεν βρέθηκαν ομάδες διακομιστή. Βεβαιωθείτε ότι ο διακομιστής TS3 είναι συνδεδεμένος."
+
+msgid "ADMIN_ASSIGNER_DESCRIPTION"
+msgstr "Ορίστε κατηγορίες ανάθεσης ομάδων. Κάθε κατηγορία έχει όνομα, εικονίδιο, μέγιστο επιλέξιμων ομάδων και αντίστοιχες ομάδες διακομιστή."
+
+msgid "ADMIN_ASSIGNER_GENERAL"
+msgstr "Γενικές ρυθμίσεις"
+
+msgid "ADMIN_ASSIGNER_COOLDOWN_LABEL"
+msgstr "Χρόνος αναμονής (δευτερόλεπτα)"
+
+msgid "ADMIN_ASSIGNER_COOLDOWN_HINT"
+msgstr "Χρόνος που πρέπει να περιμένει ο χρήστης πριν αλλάξει ξανά ομάδα. 0 = χωρίς αναμονή."
+
+msgid "ADMIN_ASSIGNER_REQUIRED_GROUPS_LABEL"
+msgstr "Υποχρεωτικές ομάδες διακομιστή"
+
+msgid "ADMIN_ASSIGNER_REQUIRED_GROUPS_HINT"
+msgstr "Μόνο μέλη αυτών των ομάδων μπορούν να χρησιμοποιήσουν το Assigner. Κενό = όλοι."
+
+msgid "ADMIN_ASSIGNER_ADD_CATEGORY"
+msgstr "Προσθήκη κατηγορίας"
+
+msgid "ADMIN_ASSIGNER_SAVED"
+msgstr "Η ρύθμιση Assigner αποθηκεύτηκε."
+
+msgid "ADMIN_ASSIGNER_JS_MOVE_UP"
+msgstr "Μετακίνηση προς τα πάνω"
+
+msgid "ADMIN_ASSIGNER_JS_MOVE_DOWN"
+msgstr "Μετακίνηση προς τα κάτω"
+
+msgid "ADMIN_ASSIGNER_JS_NEW_CATEGORY"
+msgstr "Νέα κατηγορία"
+
+msgid "ADMIN_ASSIGNER_JS_NAME_LABEL"
+msgstr "Όνομα"
+
+msgid "ADMIN_ASSIGNER_JS_NAME_PLACEHOLDER"
+msgstr "π.χ. Χώρα, Παιχνίδι, Χόμπι"
+
+msgid "ADMIN_ASSIGNER_JS_MAX_LABEL"
+msgstr "Μέγιστη επιλογή"
+
+msgid "ADMIN_ASSIGNER_JS_ICON_LABEL"
+msgstr "Εικονίδιο"
+
+msgid "ADMIN_ASSIGNER_JS_GROUPS_LABEL"
+msgstr "Ομάδες διακομιστή σε αυτήν την κατηγορία"
+
+msgid "ADMIN_ASSIGNER_JS_NO_GROUPS"
+msgstr "Δεν υπάρχουν διαθέσιμες ομάδες διακομιστή."
+
+msgid "ADMIN_ASSIGNER_JS_SAVE_ERROR"
+msgstr "Σφάλμα αποθήκευσης."
+
+msgid "ADMIN_CONFIG_TITLE"
+msgstr "Ρυθμίσεις"
+
+msgid "ADMIN_CONFIG_SECTION_ADMINSTATUS"
+msgstr "Widget κατάστασης διαχειριστή"
+
+msgid "ADMIN_CONFIG_SECTION_ASSIGNER"
+msgstr "Ανάθεση ομάδων"
+
+msgid "ADMIN_CONFIG_SECTION_CACHE"
+msgstr "Χρόνοι cache"
+
+msgid "ADMIN_CONFIG_SECTION_GENERAL"
+msgstr "Γενικά"
+
+msgid "ADMIN_CONFIG_SECTION_IMPRINT"
+msgstr "Αποτύπωμα"
+
+msgid "ADMIN_CONFIG_SECTION_ONLINERECORD"
+msgstr "Ρεκόρ online"
+
+msgid "ADMIN_CONFIG_SECTION_VIEWER"
+msgstr "Προβολέας καναλιών"
+
+msgid "ADMIN_CONFIG_SECTION_QUERY"
+msgstr "TeamSpeak Query"
+
+msgid "ADMIN_CONFIG_SECTION_ADMIN"
+msgstr "Πίνακας διαχείρισης"
+
+msgid "ADMIN_CONFIG_BTN_ADMINSTATUS"
+msgstr "Ρύθμιση widget κατάστασης διαχειριστή"
+
+msgid "ADMIN_CONFIG_BTN_ASSIGNER"
+msgstr "Ρύθμιση ανάθεσης ομάδων"
+
+msgid "ADMIN_CONFIG_BTN_CACHE"
+msgstr "Ρύθμιση χρόνων cache"
+
+msgid "ADMIN_CONFIG_BTN_GENERAL"
+msgstr "Επεξεργασία γενικών ρυθμίσεων"
+
+msgid "ADMIN_CONFIG_BTN_IMPRINT"
+msgstr "Επεξεργασία αποτυπώματος"
+
+msgid "ADMIN_CONFIG_BTN_ONLINERECORD"
+msgstr "Επεξεργασία ρεκόρ online"
+
+msgid "ADMIN_CONFIG_BTN_VIEWER"
+msgstr "Ρύθμιση προβολέα καναλιών"
+
+msgid "ADMIN_CONFIG_BTN_QUERY"
+msgstr "Ρύθμιση σύνδεσης TeamSpeak"
+
+msgid "ADMIN_CONFIG_BTN_ADMINS"
+msgstr "Διαχείριση πρόσβασης διαχειριστών"
+
+msgid "ADMIN_CONFIG_EDIT_IN_ASSIGNER"
+msgstr "Επεξεργασία στο πρόγραμμα επεξεργασίας Assigner"
+
+msgid "ADMIN_CONFIG_MANAGED_IN_ASSIGNER"
+msgstr "Διαχειρίζεται στο πρόγραμμα επεξεργασίας Assigner."
+
+msgid "ADMIN_CONFIG_WHO_HAS_ACCESS"
+msgstr "Ποιος έχει πρόσβαση σε αυτόν τον πίνακα διαχείρισης;"
+
+msgid "ADMIN_GENERAL_TITLE"
+msgstr "Γενικές ρυθμίσεις"
+
+msgid "ADMIN_GENERAL_FIELD_WEBSITE_TITLE_LABEL"
+msgstr "Όνομα διακομιστή TS (εμφάνιση)"
+
+msgid "ADMIN_GENERAL_FIELD_WEBSITE_TITLE_HINT"
+msgstr "Αντικαθιστά τη διεύθυνση IP στο πλαϊνό πλαίσιο και στο παράθυρο σύνδεσης. Κενό = εμφανίζεται IP."
+
+msgid "ADMIN_GENERAL_FIELD_NAV_BRAND_LABEL"
+msgstr "Τίτλος ιστότοπου (Navbar)"
+
+msgid "ADMIN_GENERAL_FIELD_NAV_BRAND_HINT"
+msgstr "Κείμενο λογοτύπου στην επάνω αριστερή γωνία της πλοήγησης."
+
+msgid "ADMIN_GENERAL_FIELD_BASEURL_LABEL"
+msgstr "Βασικό URL"
+
+msgid "ADMIN_GENERAL_FIELD_BASEURL_HINT"
+msgstr "Το πλήρες URL του ιστότοπου, π.χ. https://example.com"
+
+msgid "ADMIN_GENERAL_FIELD_LOGINPOKE_LABEL"
+msgstr "Σύνδεση: Poke πελάτη"
+
+msgid "ADMIN_GENERAL_FIELD_LOGINPOKE_HINT"
+msgstr "Αποστολή poke στον πελάτη TS κατά την προσπάθεια σύνδεσης"
+
+msgid "ADMIN_GENERAL_FIELD_TIMEZONE_LABEL"
+msgstr "Ζώνη ώρας"
+
+msgid "ADMIN_GENERAL_FIELD_TIMEZONE_HINT"
+msgstr "Ζώνη ώρας PHP, π.χ. Europe/Athens"
+
+msgid "ADMIN_GENERAL_FIELD_CLOUDFLARE_LABEL"
+msgstr "Cloudflare ενεργό"
+
+msgid "ADMIN_GENERAL_FIELD_CLOUDFLARE_HINT"
+msgstr "Ενεργοποιήστε εάν ο ιστότοπος βρίσκεται πίσω από το Cloudflare"
+
+msgid "ADMIN_GENERAL_SAVED"
+msgstr "Οι ρυθμίσεις αποθηκεύτηκαν."
+
+msgid "ADMIN_ADMINS_TITLE"
+msgstr "Πρόσβαση διαχειριστών"
+
+msgid "ADMIN_ADMINS_CURRENT"
+msgstr "Τρέχοντες διαχειριστές"
+
+msgid "ADMIN_ADMINS_TABLE_CLDBID"
+msgstr "ID βάσης δεδομένων πελάτη"
+
+msgid "ADMIN_ADMINS_TABLE_ACTION"
+msgstr "Ενέργεια"
+
+msgid "ADMIN_ADMINS_YOU_BADGE"
+msgstr "Εσείς"
+
+msgid "ADMIN_ADMINS_CONFIRM_REMOVE"
+msgstr "Αφαίρεση διαχειριστή;"
+
+msgid "ADMIN_ADMINS_CANNOT_REMOVE_SELF"
+msgstr "Δεν μπορείτε να αφαιρέσετε τον εαυτό σας."
+
+msgid "ADMIN_ADMINS_ADD_TITLE"
+msgstr "Προσθήκη διαχειριστή"
+
+msgid "ADMIN_ADMINS_CLDBID_LABEL"
+msgstr "ID βάσης δεδομένων πελάτη"
+
+msgid "ADMIN_ADMINS_ONLINE_LABEL"
+msgstr "Αυτή τη στιγμή online (επιλέξτε από τη λίστα)"
+
+msgid "ADMIN_ADMINS_ADDED"
+msgstr "Ο διαχειριστής προστέθηκε."
+
+msgid "ADMIN_ADMINS_REMOVED"
+msgstr "Ο διαχειριστής αφαιρέθηκε."
+
+msgid "ADMIN_ADMINSTATUS_TITLE"
+msgstr "Widget κατάστασης διαχειριστή"
+
+msgid "ADMIN_ADMINSTATUS_SECTION_GENERAL"
+msgstr "Γενικά"
+
+msgid "ADMIN_ADMINSTATUS_WIDGET_ENABLED_LABEL"
+msgstr "Widget ενεργό"
+
+msgid "ADMIN_ADMINSTATUS_HIDE_OFFLINE_LABEL"
+msgstr "Απόκρυψη χρηστών εκτός σύνδεσης"
+
+msgid "ADMIN_ADMINSTATUS_HIDE_OFFLINE_HINT"
+msgstr "Οι χρήστες εκτός σύνδεσης αποκρύπτονται πλήρως."
+
+msgid "ADMIN_ADMINSTATUS_OFFLINE_COLLAPSED_LABEL"
+msgstr "Εκτός σύνδεσης σε συμπτυγμένη κατάσταση από προεπιλογή"
+
+msgid "ADMIN_ADMINSTATUS_OFFLINE_COLLAPSED_HINT"
+msgstr "Οι καταχωρήσεις εκτός σύνδεσης στο widget εμφανίζονται μόνο μετά από κλικ."
+
+msgid "ADMIN_ADMINSTATUS_DISPLAY_MODE_LABEL"
+msgstr "Λειτουργία εμφάνισης"
+
+msgid "ADMIN_ADMINSTATUS_MODE_1"
+msgstr "Ομαδοποιημένα"
+
+msgid "ADMIN_ADMINSTATUS_MODE_2"
+msgstr "Ομαδοποιημένα (απόκρυψη κενών ομάδων)"
+
+msgid "ADMIN_ADMINSTATUS_MODE_3"
+msgstr "Λίστα"
+
+msgid "ADMIN_ADMINSTATUS_MODE_4"
+msgstr "Λίστα (online πρώτα)"
+
+msgid "ADMIN_ADMINSTATUS_SECTION_GROUPS"
+msgstr "Ομάδες διακομιστή για εμφάνιση"
+
+msgid "ADMIN_ADMINSTATUS_NO_GROUPS"
+msgstr "Δεν υπάρχουν διαθέσιμες ομάδες διακομιστή — ελέγξτε τη σύνδεση TS."
+
+msgid "ADMIN_ADMINSTATUS_SECTION_IGNORED"
+msgstr "Αγνοημένοι χρήστες"
+
+msgid "ADMIN_ADMINSTATUS_IGNORED_HINT"
+msgstr "Χρήστες επιλεγμένων ομάδων. Επισημασμένοι δεν εμφανίζονται στο widget."
+
+msgid "ADMIN_ADMINSTATUS_NO_GROUPS_SELECTED"
+msgstr "Πρώτα επιλέξτε και αποθηκεύστε ομάδες διακομιστή."
+
+msgid "ADMIN_ADMINSTATUS_NO_CACHE"
+msgstr "Δεν υπάρχει ακόμη cache — περιμένετε ένα λεπτό και ανανεώστε τη σελίδα."
+
+msgid "ADMIN_ADMINSTATUS_CURRENTLY_IGNORED"
+msgstr "Τρέχοντα αγνοημένα DBID:"
+
+msgid "ADMIN_ADMINSTATUS_SAVED"
+msgstr "Η κατάσταση διαχειριστή αποθηκεύτηκε."
+
+msgid "ADMIN_CACHE_TITLE"
+msgstr "Χρόνοι cache"
+
+msgid "ADMIN_CACHE_HINT"
+msgstr "Όλες οι τιμές σε δευτερόλεπτα. Χαμηλότερο = πιο ενημερωμένα δεδομένα, υψηλότερο φορτίο στον διακομιστή TS."
+
+msgid "ADMIN_CACHE_SERVERINFO_LABEL"
+msgstr "Πληροφορίες διακομιστή"
+
+msgid "ADMIN_CACHE_SERVERINFO_HINT"
+msgstr "Γενικές πληροφορίες διακομιστή TS (όνομα, θέσεις, ...)"
+
+msgid "ADMIN_CACHE_CLIENTLIST_LABEL"
+msgstr "Λίστα πελατών"
+
+msgid "ADMIN_CACHE_CLIENTLIST_HINT"
+msgstr "Λίστα online παικτών — διατηρήστε χαμηλή για ενημερωμένη κατάσταση σύνδεσης"
+
+msgid "ADMIN_CACHE_CHANNELLIST_LABEL"
+msgstr "Λίστα καναλιών"
+
+msgid "ADMIN_CACHE_CHANNELLIST_HINT"
+msgstr "Προβολέας καναλιών"
+
+msgid "ADMIN_CACHE_SERVERGROUPS_LABEL"
+msgstr "Ομάδες διακομιστή"
+
+msgid "ADMIN_CACHE_SERVERGROUPS_HINT"
+msgstr "Λίστα όλων των ομάδων διακομιστή"
+
+msgid "ADMIN_CACHE_CHANNELGROUPS_LABEL"
+msgstr "Ομάδες καναλιών"
+
+msgid "ADMIN_CACHE_CHANNELGROUPS_HINT"
+msgstr "Λίστα όλων των ομάδων καναλιών"
+
+msgid "ADMIN_CACHE_BANLIST_LABEL"
+msgstr "Λίστα ban"
+
+msgid "ADMIN_CACHE_BANLIST_HINT"
+msgstr "Αποκλεισμένοι χρήστες"
+
+msgid "ADMIN_CACHE_ADMINSTATUS_LABEL"
+msgstr "Κατάσταση διαχειριστή"
+
+msgid "ADMIN_CACHE_ADMINSTATUS_HINT"
+msgstr "Μέλη ομάδων διαχειριστή για το widget κατάστασης"
+
+msgid "ADMIN_CACHE_SERVERICONS_LABEL"
+msgstr "Εικονίδια διακομιστή"
+
+msgid "ADMIN_CACHE_SERVERICONS_HINT"
+msgstr "Δεδομένα εικονιδίων από τον διακομιστή TS"
+
+msgid "ADMIN_CACHE_LANGUAGES_LABEL"
+msgstr "Γλώσσες"
+
+msgid "ADMIN_CACHE_LANGUAGES_HINT"
+msgstr "Αρχεία γλωσσών από τη βάση δεδομένων"
+
+msgid "ADMIN_CACHE_LOGINCODE_LABEL"
+msgstr "Κωδικός σύνδεσης"
+
+msgid "ADMIN_CACHE_LOGINCODE_HINT"
+msgstr "Προσωρινοί κωδικοί σύνδεσης"
+
+msgid "ADMIN_CACHE_SAVED"
+msgstr "Οι χρόνοι cache αποθηκεύτηκαν."
+
+msgid "ADMIN_ONLINERECORD_TITLE"
+msgstr "Ρεκόρ online"
+
+msgid "ADMIN_ONLINERECORD_VALUE_LABEL"
+msgstr "Ρεκόρ (αριθμός παικτών)"
+
+msgid "ADMIN_ONLINERECORD_DATE_LABEL"
+msgstr "Ημερομηνία και ώρα"
+
+msgid "ADMIN_ONLINERECORD_DATE_HINT"
+msgstr "Αντικαθίσταται αυτόματα όταν σπάσει νέο ρεκόρ."
+
+msgid "ADMIN_ONLINERECORD_SAVED"
+msgstr "Το ρεκόρ online αποθηκεύτηκε."
+
+msgid "ADMIN_VIEWER_TITLE"
+msgstr "Προβολέας καναλιών"
+
+msgid "ADMIN_VIEWER_SECTION"
+msgstr "Κρυφά κανάλια"
+
+msgid "ADMIN_VIEWER_HINT"
+msgstr "Επισημασμένο = το κανάλι είναι κρυφό στον ιστότοπο. Τα κανάλια με κωδικό πρόσβασης εξαφανίζονται αυτόματα."
+
+msgid "ADMIN_VIEWER_NO_CHANNELS"
+msgstr "Δεν υπάρχουν διαθέσιμα κανάλια — ελέγξτε τη σύνδεση TS."
+
+msgid "ADMIN_VIEWER_HIDDEN_BADGE"
+msgstr "κρυφό"
+
+msgid "ADMIN_VIEWER_SAVED"
+msgstr "Ο προβολέας καναλιών αποθηκεύτηκε."
+
+msgid "ADMIN_QUERY_TITLE"
+msgstr "Σύνδεση TeamSpeak"
+
+msgid "ADMIN_QUERY_WARNING_TITLE"
+msgstr "Προειδοποίηση"
+
+msgid "ADMIN_QUERY_WARNING_TEXT"
+msgstr "Θέλετε πραγματικά να επεξεργαστείτε αυτές τις ρυθμίσεις; Μπορείτε να διακόψετε τη σύνδεση με τον διακομιστή TeamSpeak αν δεν ξέρετε τι κάνετε."
+
+msgid "ADMIN_QUERY_WARNING_CONFIRM"
+msgstr "Ναι, ξέρω τι κάνω"
+
+msgid "ADMIN_QUERY_SECTION"
+msgstr "Ρυθμίσεις σύνδεσης TeamSpeak"
+
+msgid "ADMIN_QUERY_HOSTNAME_LABEL"
+msgstr "Διεύθυνση διακομιστή"
+
+msgid "ADMIN_QUERY_HOSTNAME_HINT"
+msgstr "IP ή hostname του διακομιστή TeamSpeak (π.χ. 127.0.0.1)"
+
+msgid "ADMIN_QUERY_PORT_LABEL"
+msgstr "Θύρα ServerQuery"
+
+msgid "ADMIN_QUERY_PORT_HINT"
+msgstr "Προεπιλογή: 10011"
+
+msgid "ADMIN_QUERY_USERNAME_LABEL"
+msgstr "Όνομα χρήστη ServerQuery"
+
+msgid "ADMIN_QUERY_USERNAME_HINT"
+msgstr "Λογαριασμός query που δημιουργήθηκε για τον ιστότοπο"
+
+msgid "ADMIN_QUERY_PASSWORD_LABEL"
+msgstr "Κωδικός πρόσβασης ServerQuery"
+
+msgid "ADMIN_QUERY_PASSWORD_HINT"
+msgstr "Κωδικός πρόσβασης του λογαριασμού query"
+
+msgid "ADMIN_QUERY_NICKNAME_LABEL"
+msgstr "Εμφανιζόμενο όνομα στο Query"
+
+msgid "ADMIN_QUERY_NICKNAME_HINT"
+msgstr "Όνομα που εμφανίζεται όταν ο ιστότοπος συνδέεται στο query"
+
+msgid "ADMIN_QUERY_DISPLAYIP_LABEL"
+msgstr "Δημόσια IP διακομιστή"
+
+msgid "ADMIN_QUERY_DISPLAYIP_HINT"
+msgstr "IP που χρησιμοποιείται ως σύνδεσμος ts3server:// στον προβολέα καναλιών"
+
+msgid "ADMIN_QUERY_VOICEPORT_LABEL"
+msgstr "Θύρα φωνής TeamSpeak"
+
+msgid "ADMIN_QUERY_VOICEPORT_HINT"
+msgstr "Η θύρα στην οποία συνδέονται οι πελάτες (προεπιλογή: 9987)"
+
+msgid "ADMIN_QUERY_SAVED"
+msgstr "Οι ρυθμίσεις σύνδεσης αποθηκεύτηκαν."
+

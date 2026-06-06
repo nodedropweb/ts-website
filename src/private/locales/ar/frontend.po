@@ -1,0 +1,349 @@
+# TS-Website frontend translations — Arabic
+# Domain: frontend
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ar\n"
+
+msgid "ASSIGNER_NO_REQUIRED_GROUPS"
+msgstr "لا تملك أيّاً من الرتب المطلوبة. لا يمكنك استعمال صفحة الرتب."
+
+msgid "DATE_FORMAT"
+msgstr "d.m.Y"
+
+msgid "TIME_FORMAT"
+msgstr "H:i"
+
+msgid "BANS_HEADER_TARGET"
+msgstr "حظر"
+
+msgid "AUTHORS"
+msgstr "HoRiiZeN <info@cenka.xyz>"
+
+msgid "COOKIEALERT_MESSAGE"
+msgstr "<b>هل تحب الكوكيز?</b> &#x1F36A; نستخدم الكوكيز لنضمن حصولك على أفضل تجربة في موقعنا. <a href=\"https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer\" target=\"_blank\">إعرف المزيد</a>"
+
+msgid "COOKIEALERT_AGREE"
+msgstr "أنا موافق"
+
+msgid "OUTDATED_DATA"
+msgstr "<b>تحذير!</b> لا يمكن الحصول على بعض المعلومات. عرض معلومات قديمة من  {0}."
+
+msgid "SHOW_PROBLEMS"
+msgstr "عرض المشاكل"
+
+msgid "PROBLEMS_DESCRIPTION"
+msgstr "حدثت مشاكل أثناء الاتصال بسيرفر TeamSpeak"
+
+msgid "NO_JAVASCRIPT_ENABLED"
+msgstr "هذا الموقع لن يعمل بدون <a href=\"https://www.enable-javascript.com/\" target=\"_blank\">تفعيل جافا سكريبت</a>."
+
+msgid "CANNOT_GET_DATA"
+msgstr "تعذر الحصول على المعلومات لصالح \"{0}\"!  المرجو مراسلة المسؤول عل الموقع."
+
+msgid "NO_REASON_SET"
+msgstr "<b>(السبب غير محدد)</b>"
+
+msgid "BANS_HEADER_REASON"
+msgstr "السبب"
+
+msgid "BANS_HEADER_INVOKER"
+msgstr "محظور من قبل"
+
+msgid "BANS_HEADER_BANDATE"
+msgstr "تاريخ الحظر"
+
+msgid "BANS_HEADER_EXPIRES"
+msgstr "ينتهي"
+
+msgid "DATATABLES_LANGUAGE_NAME"
+msgstr "Arabic"
+
+msgid "BANS_NEVEREXPIRES"
+msgstr "أبدا"
+
+msgid "STATUS_ADDRESS"
+msgstr "العنوان:"
+
+msgid "STATUS_CLIENTS_ONLINE"
+msgstr "متصل:"
+
+msgid "STATUS_RESERVED_SLOTS"
+msgstr "{0} مقاعد محجوزة "
+
+msgid "STATUS_TOP_ONLINE"
+msgstr "أقصى المتصلين"
+
+msgid "STATUS_TOP_ONLINE_DESC"
+msgstr " تحققت في {0}"
+
+msgid "STATUS_UPTIME"
+msgstr "مدة التشغيل:"
+
+msgid "STATUS_VERSION"
+msgstr "النسخة:"
+
+msgid "STATUS_VERSION_DESC"
+msgstr "{0} على {1}"
+
+msgid "STATUS_PING"
+msgstr "معدل البينغ"
+
+msgid "STATUS_PACKETLOSS"
+msgstr "معدل الحزم المفقودة:"
+
+msgid "STATUS_ERROR"
+msgstr "لا يمكن استرداد حالة السيرفر"
+
+msgid "STATUS_PANEL_TITLE"
+msgstr "حالة السيرفر"
+
+msgid "DAYJS_LANG"
+msgstr "ar-ma"
+
+msgid "LOGIN_CONFIRMATION_CODE"
+msgstr "مرحباً، إليك رمز التأكيد لتسجيل الدخول: [b]{0}[/b]"
+
+msgid "UNSUPPORTED_BROWSER"
+msgstr "متصفحك غير مدعوم. يرجى التبديل إلى أحدث إصدار من Chrome أو Firefox أو Safari أو Edge لاستخدام هذا الموقع."
+
+msgid "DATATABLES_PLACEHOLDER_SEARCH"
+msgstr "إبحث..."
+
+msgid "WEBSITE_TITLE"
+msgstr "اللغة العربية TS-website |"
+
+msgid "ADMIN_STATUS_ONLINE"
+msgstr "متصل"
+
+msgid "ADMIN_STATUS_AWAY"
+msgstr "بعيد"
+
+msgid "ADMIN_STATUS_OFFLINE"
+msgstr "غير متصل"
+
+msgid "ADMIN_STATUS_EMPTY_GROUP"
+msgstr "لا شيء لإظهاره"
+
+msgid "ADMIN_STATUS_EMPTY_STATUS"
+msgstr "حالة الأدمن فارغة"
+
+msgid "ASSIGNER_PANEL_TITLE"
+msgstr "صفحة الرتب"
+
+msgid "ASSIGNER_TITLE"
+msgstr "صفحة الرتب"
+
+msgid "BANS_EMPTY"
+msgstr "قائمة الحظر فارغة"
+
+msgid "BANS_TITLE"
+msgstr "قائمة الحظر"
+
+msgid "BANS_PANEL_TITLE"
+msgstr "قائمة الحظر"
+
+msgid "BANS_BANNED_ALERT_TITLE"
+msgstr "تم حظر عنوان IP الخاص بك بواسطة {0}"
+
+msgid "BANS_BANNED_ALERT_REASON"
+msgstr "السبب: {0}"
+
+msgid "BANS_VIEW_MORE_TIP"
+msgstr "انقر فوق أحد الصفوف لعرض مزيد من التفاصيل حول الحظر"
+
+msgid "RULES_TITLE"
+msgstr "القوانين"
+
+msgid "RULES_PANEL_TITLE"
+msgstr "القوانين"
+
+msgid "FAQ_COPY_LINK"
+msgstr "نسخ الرابط لتلك الإجابة"
+
+msgid "FAQ_PANEL_TITLE"
+msgstr "التعليمات"
+
+msgid "FAQ_TITLE"
+msgstr "أسئلة متكررة"
+
+msgid "FAQ_COPY_LINK_SUCCESS"
+msgstr "تم النسخ!"
+
+msgid "FAQ_COPY_LINK_ERROR"
+msgstr "خطأ"
+
+msgid "HOME_TITLE"
+msgstr "الأخبار"
+
+msgid "HOME_PANEL_TITLE"
+msgstr "الأخبار"
+
+msgid "HOME_EMPTY"
+msgstr "لا توجد أخبار متاحة في هذه اللحظة"
+
+msgid "HOME_INVALID_PAGE"
+msgstr "رقم الصفحة خاطئ"
+
+msgid "HOME_PREVIOUS_NEWS"
+msgstr "السابق"
+
+msgid "HOME_NEXT_NEWS"
+msgstr "التالي"
+
+msgid "ADMIN_STATUS_PANEL_TITLE"
+msgstr "حالة المدير"
+
+msgid "ADMIN_STATUS_HIDE_OFFLINE_TIP"
+msgstr "إخفاء الأدمنز الغير متصلين"
+
+msgid "ADMIN_STATUS_SHOW_OFFLINE_TIP"
+msgstr "إظهار الأدمنز الغير متصلين"
+
+msgid "ADMIN_STATUS_ERROR"
+msgstr "خطأ في حالة الأدمن"
+
+msgid "NAV_TOGGLE"
+msgstr "تبديل التنقل"
+
+msgid "NAV_VIEWER"
+msgstr "المستعرض"
+
+msgid "NAV_ASSIGNER"
+msgstr "مانح"
+
+msgid "NAV_BANS"
+msgstr "قائمة الحظر"
+
+msgid "NAV_RULES"
+msgstr "القوانين"
+
+msgid "NAV_FAQ"
+msgstr "الأسئلة المتكررة"
+
+msgid "NAV_ACCOUNT_LOGIN"
+msgstr "تسجيل دخول"
+
+msgid "NAV_ACCOUNT_LOGOUT"
+msgstr "تسجيل الخروج"
+
+msgid "VIEWER_TITLE"
+msgstr "مشاهدة السيرفر"
+
+msgid "VIEWER_PANEL_TITLE"
+msgstr "مشاهدة السيرفر"
+
+msgid "VIEWER_SHOW_EMPTY"
+msgstr "إظهار القنوات الفارغة"
+
+msgid "VIEWER_HIDE_EMPTY"
+msgstr "إخفاء القنوات الفارغة"
+
+msgid "VIEWER_TIP_ALERT"
+msgstr "انقر على قناة للانضمام إليها. مرر مؤشر الماوس فوق المستخدم للتحقق من معلوماته"
+
+msgid "ARIA_CLOSE"
+msgstr "إغلاق"
+
+msgid "VIEWER_ERROR"
+msgstr "خطأ في المشاهد"
+
+msgid "VIEWER_CONNECTION_CONFIRMATION"
+msgstr "هل تريد الإتصال إلى هذه القناة؟"
+
+msgid "VIEWER_CLIENT_LASTACTIVE"
+msgstr "أخر نشاط:"
+
+msgid "VIEWER_CLIENT_ONLINE"
+msgstr "مدة الإتصال:"
+
+msgid "VIEWER_CLIENT_JOINED"
+msgstr "أول دخول:"
+
+msgid "VIEWER_CLIENT_TITLE"
+msgstr "معلومات المستخدم:"
+
+msgid "VIEWER_SERVER_ICON"
+msgstr "أيقونة السيرفر:"
+
+msgid "VIEWER_DEFAULT_CHANNEL"
+msgstr "القناة الإفتراضية"
+
+msgid "VIEWER_CHANNEL_UNSUB1"
+msgstr ", غير مشترك"
+
+msgid "VIEWER_CHANNEL_OCCUPIED"
+msgstr "مشغول بالكامل"
+
+msgid "VIEWER_CHANNEL_PASSWORD"
+msgstr "محمي بكلمة السر"
+
+msgid "VIEWER_CHANNEL_UNSUB2"
+msgstr "غير مشترك"
+
+msgid "VIEWER_CHANNEL_ICON"
+msgstr "أيقونة القناة"
+
+msgid "VIEWER_CHANNEL_MODERATED"
+msgstr "خاضعة للإشراف"
+
+msgid "VIEWER_CHANNEL_MUSIC_CODED"
+msgstr "كوديك موسيقي"
+
+msgid "VIEWER_CLIENT_AWAY"
+msgstr "بعيد"
+
+msgid "VIEWER_CLIENT_OUTPUT_DISABLED"
+msgstr "الصوت معطل"
+
+msgid "VIEWER_CLIENT_OUTPUT_MUTED"
+msgstr "أصم"
+
+msgid "VIEWER_CLIENT_MIC_DISABLED"
+msgstr "المايكروفون معطل"
+
+msgid "VIEWER_CLIENT_MIC_MUTED"
+msgstr "مكتوم"
+
+msgid "VIEWER_CLIENT_COMMANDER"
+msgstr "قائد القناة"
+
+msgid "VIEWER_CLIENT_ICON"
+msgstr "أيقونة المستخدم"
+
+msgid "VIEWER_CLIENT_PRIORITY_SPEAKER"
+msgstr "المتحدث ذو الأولوية"
+
+msgid "VIEWER_CLIENT_TALK_POWER_GRANTED"
+msgstr "تم منح سلطة التكلم"
+
+msgid "VIEWER_CLIENT_TALK_POWER_INSUFFICIENT"
+msgstr "سلطة الكلام غير كافية"
+
+msgid "ASSIGNER_NOT_LOGGED_IN"
+msgstr "يجب عليك تسجيل الدخول أولاً قبل الدخول إلى صفحة الرتب"
+
+msgid "ASSIGNER_LOGIN_BUTTON"
+msgstr "تسجيل دخول"
+
+msgid "ASSIGNER_SAVE_BUTTON"
+msgstr "حفظ"
+
+msgid "ASSIGNER_INVALID_GROUPS"
+msgstr "خطأ في إعدادات الرتب"
+
+msgid "ASSIGNER_NOT_CONFIGURED"
+msgstr "لم يتم ضبط صفحة الرتب من قبل مسؤول الموقع"
+
+msgid "ASSIGNER_SAVE_SUCCESS"
+msgstr "تم تحديث رتبك بنجاح"
+
+msgid "ASSIGNER_SAVE_ERROR"
+msgstr "خطأ في تغيير الرتبة"
+
+msgid "ASSIGNER_SAVE_NO_CHANGE"
+msgstr "لم يتم إجراء أي تغييرات"
+
+msgid "IMPRINT_TITLE"
+msgstr "معلومات الناشر"

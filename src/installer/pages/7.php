@@ -70,21 +70,21 @@ if(!empty($_COOKIE["tsw_allow_metrics"])) {
     $response = file_get_contents($url, false, $context);
 
     if ($response !== "ok") {
-        echo "Error sending metrics :(";
+        echo __t('INSTALLER_DONE_METRICS_ERROR');
     }
 }
 ?>
 <div class="card">
     <div class="card-body">
-        <h3 class="card-title text-center">TS-website <?= __TSWEBSITE_VERSION ?> has been successfully installed! &#x1F44D;</h3>
+        <h3 class="card-title text-center"><?= __t('INSTALLER_DONE_TITLE', [__TSWEBSITE_VERSION]) ?></h3>
 
         <p class="text-center">
-            If you wish, you can remove the <code>installer</code> directory.
+            <?= __t('INSTALLER_DONE_REMOVE_DIR') ?>
         </p>
 
         <br>
 
-        <h1 class="card-title text-center mb-4">What now?</h1>
+        <h1 class="card-title text-center mb-4"><?= htmlspecialchars(__t('INSTALLER_DONE_WHATNOW')) ?></h1>
 
         <div class="col-lg-11" style="left: 4.166666666%">
             <div class="row whatnow-row">
@@ -92,14 +92,14 @@ if(!empty($_COOKIE["tsw_allow_metrics"])) {
                     <i class="fab fa-paypal whatnow-icon fa-fw" style="color: #003087"></i>
                 </div>
                 <div class="col-lg-10">
-                    <h1><a href="#" onclick="alert('If you\'d like to donate, send me a message via Telegram or email. Thanks!')" target="_blank">Donate</a></h1>
-                    <h3>to keep this project alive</h3>
+                    <h1><a href="#" onclick="alert('If you\'d like to donate, send me a message via Telegram or email. Thanks!')" target="_blank"><?= htmlspecialchars(__t('INSTALLER_DONE_DONATE_TITLE')) ?></a></h1>
+                    <h3><?= htmlspecialchars(__t('INSTALLER_DONE_DONATE_SUB')) ?></h3>
                 </div>
             </div>
             <div class="row whatnow-row">
                 <div class="col-lg-10 text-right">
-                    <h1><a href="https://t.me/tswebsite" target="_blank">Join</a> <small>our telegram group</small></h1>
-                    <h3>news, announcements and support</h3>
+                    <h1><a href="https://t.me/tswebsite" target="_blank"><?= htmlspecialchars(__t('INSTALLER_DONE_TELEGRAM_TITLE')) ?></a></h1>
+                    <h3><?= htmlspecialchars(__t('INSTALLER_DONE_TELEGRAM_SUB')) ?></h3>
                 </div>
                 <div class="col-lg-2">
                     <i class="fab fa-telegram-plane whatnow-icon fa-fw" style="color: #0088cc"></i>
@@ -110,14 +110,13 @@ if(!empty($_COOKIE["tsw_allow_metrics"])) {
                     <i class="fa fa-eye whatnow-icon fa-fw" style="color: #fbb034"></i>
                 </div>
                 <div class="col-lg-10">
-                    <h1><a href="../">Visit</a> <small>your new website</small></h1>
-<!--                    <h3>or login to your <a href="../admin">Admin Panel</a></h3>-->
+                    <h1><a href="../"><?= htmlspecialchars(__t('INSTALLER_DONE_VISIT_TITLE')) ?></a></h1>
                 </div>
             </div>
             <div class="row whatnow-row">
                 <div class="col-lg-10 text-right">
-                    <h1>Spread <small>the message</small></h1>
-                    <h3>Let others know about this project</h3>
+                    <h1><?= htmlspecialchars(__t('INSTALLER_DONE_SPREAD_TITLE')) ?></h1>
+                    <h3><?= htmlspecialchars(__t('INSTALLER_DONE_SPREAD_SUB')) ?></h3>
                 </div>
                 <div class="col-lg-2">
                     <i class="fa fa-heart whatnow-icon fa-fw" style="color: #ff4d4d"></i>

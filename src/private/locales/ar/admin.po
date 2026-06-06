@@ -1,0 +1,599 @@
+# TS-Website admin translations -- ar
+# Domain: admin
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ar\n"
+
+msgid "ADMIN_NAV_BRAND"
+msgstr "TS-Website الإدارة"
+
+msgid "ADMIN_NAV_NEWS"
+msgstr "الأخبار"
+
+msgid "ADMIN_NAV_FAQ"
+msgstr "الأسئلة الشائعة"
+
+msgid "ADMIN_NAV_RULES"
+msgstr "القواعد"
+
+msgid "ADMIN_NAV_ASSIGNER"
+msgstr "المُعيِّن"
+
+msgid "ADMIN_NAV_CONFIG"
+msgstr "الإعدادات"
+
+msgid "ADMIN_NAV_GOTO_WEBSITE"
+msgstr "الذهاب إلى الموقع"
+
+msgid "ADMIN_BTN_SAVE"
+msgstr "حفظ"
+
+msgid "ADMIN_BTN_SAVE_ALL"
+msgstr "حفظ جميع الإعدادات"
+
+msgid "ADMIN_BTN_BACK"
+msgstr "رجوع"
+
+msgid "ADMIN_BTN_BACK_TO_CONFIG"
+msgstr "الرجوع إلى الإعدادات"
+
+msgid "ADMIN_BTN_CANCEL"
+msgstr "إلغاء"
+
+msgid "ADMIN_BTN_ADD"
+msgstr "إضافة"
+
+msgid "ADMIN_BTN_REMOVE"
+msgstr "حذف"
+
+msgid "ADMIN_ENABLED"
+msgstr "مفعّل"
+
+msgid "ADMIN_TABLE_ID"
+msgstr "المعرف"
+
+msgid "ADMIN_TABLE_TITLE"
+msgstr "العنوان"
+
+msgid "ADMIN_TABLE_CREATED"
+msgstr "تاريخ الإنشاء"
+
+msgid "ADMIN_TABLE_EDITED"
+msgstr "تاريخ التعديل"
+
+msgid "ADMIN_TABLE_QUESTION"
+msgstr "السؤال"
+
+msgid "ADMIN_TABLE_LAST_MODIFIED"
+msgstr "آخر تعديل"
+
+msgid "ADMIN_TABLE_ACTIONS"
+msgstr "الإجراءات"
+
+msgid "ADMIN_NO_GROUPS_AVAILABLE"
+msgstr "لا توجد مجموعات خادم متاحة."
+
+msgid "ADMIN_403_TITLE"
+msgstr "تم رفض الوصول — المشرف"
+
+msgid "ADMIN_403_TEXT"
+msgstr "لا يوجد وصول. أنت غير مسجل كمشرف."
+
+msgid "ADMIN_403_HINT"
+msgstr "يرجى تسجيل الدخول أولاً إلى الصفحة الرئيسية عبر TeamSpeak، ثم اطلب من مشرف إضافة cldbid الخاص بك إلى admin_cldbids."
+
+msgid "ADMIN_403_BTN"
+msgstr "الذهاب إلى الصفحة الرئيسية"
+
+msgid "ADMIN_SETUP_TITLE"
+msgstr "لوحة المشرف — الإعداد الأولي"
+
+msgid "ADMIN_SETUP_NO_ADMIN"
+msgstr "لم يتم تسجيل أي مشرف بعد. أدخل cldbid الخاص بك للوصول إلى لوحة المشرف."
+
+msgid "ADMIN_SETUP_CLDBID_LABEL"
+msgstr "cldbid الخاص بك"
+
+msgid "ADMIN_SETUP_CLDBID_HINT"
+msgstr "يظهر بعد تسجيل الدخول عبر TS3 في الصفحة الرئيسية أو اختر من القائمة أدناه."
+
+msgid "ADMIN_SETUP_ONLINE_LABEL"
+msgstr "متصل الآن"
+
+msgid "ADMIN_SETUP_BTN_REGISTER"
+msgstr "التسجيل كأول مشرف"
+
+msgid "ADMIN_SETUP_BTN_GOTO"
+msgstr "الذهاب إلى لوحة المشرف"
+
+msgid "ADMIN_SETUP_SUCCESS"
+msgstr "تم تسجيل cldbid {0} كأول مشرف. هذه الصفحة مقفلة الآن."
+
+msgid "ADMIN_SETUP_ERR_INVALID"
+msgstr "يرجى إدخال cldbid صحيح (عدد صحيح موجب)."
+
+msgid "ADMIN_NEWS_TITLE"
+msgstr "الأخبار"
+
+msgid "ADMIN_NEWS_NEW_BTN"
+msgstr "مقالة جديدة"
+
+msgid "ADMIN_NEWS_EMPTY"
+msgstr "لا توجد أخبار متاحة."
+
+msgid "ADMIN_NEWS_CONFIRM_DELETE"
+msgstr "حذف هذه المقالة؟"
+
+msgid "ADMIN_NEWS_EDIT_TITLE"
+msgstr "تعديل الخبر"
+
+msgid "ADMIN_NEWS_NEW_TITLE"
+msgstr "مقالة جديدة"
+
+msgid "ADMIN_NEWS_FORM_TITLE"
+msgstr "العنوان"
+
+msgid "ADMIN_NEWS_FORM_CONTENT"
+msgstr "المحتوى"
+
+msgid "ADMIN_FAQ_TITLE"
+msgstr "الأسئلة الشائعة"
+
+msgid "ADMIN_FAQ_NEW_BTN"
+msgstr "إدخال جديد في الأسئلة الشائعة"
+
+msgid "ADMIN_FAQ_EMPTY"
+msgstr "لا توجد إدخالات في الأسئلة الشائعة."
+
+msgid "ADMIN_FAQ_CONFIRM_DELETE"
+msgstr "حذف هذا الإدخال من الأسئلة الشائعة؟"
+
+msgid "ADMIN_FAQ_EDIT_TITLE"
+msgstr "تعديل إدخال الأسئلة الشائعة"
+
+msgid "ADMIN_FAQ_NEW_TITLE"
+msgstr "إدخال جديد في الأسئلة الشائعة"
+
+msgid "ADMIN_FAQ_FORM_QUESTION"
+msgstr "السؤال"
+
+msgid "ADMIN_FAQ_FORM_ANSWER"
+msgstr "الإجابة"
+
+msgid "ADMIN_RULES_TITLE"
+msgstr "قواعد الخادم"
+
+msgid "ADMIN_RULES_FORM_CONTENT"
+msgstr "المحتوى"
+
+msgid "ADMIN_IMPRINT_TITLE"
+msgstr "معلومات الناشر"
+
+msgid "ADMIN_ASSIGNER_TITLE"
+msgstr "إعداد المُعيِّن"
+
+msgid "ADMIN_ASSIGNER_NO_GROUPS_WARNING"
+msgstr "لم يتم العثور على مجموعات خادم. تأكد من اتصال خادم TS3."
+
+msgid "ADMIN_ASSIGNER_DESCRIPTION"
+msgstr "حدد فئات تعيين المجموعات. كل فئة لها اسم وأيقونة وحد أقصى للمجموعات القابلة للاختيار ومجموعات الخادم المقابلة."
+
+msgid "ADMIN_ASSIGNER_GENERAL"
+msgstr "الإعدادات العامة"
+
+msgid "ADMIN_ASSIGNER_COOLDOWN_LABEL"
+msgstr "وقت التهدئة (ثانية)"
+
+msgid "ADMIN_ASSIGNER_COOLDOWN_HINT"
+msgstr "الوقت الذي يجب على المستخدم الانتظار فيه قبل تغيير المجموعة مرة أخرى. 0 = لا انتظار."
+
+msgid "ADMIN_ASSIGNER_REQUIRED_GROUPS_LABEL"
+msgstr "مجموعات الخادم المطلوبة"
+
+msgid "ADMIN_ASSIGNER_REQUIRED_GROUPS_HINT"
+msgstr "فقط أعضاء هذه المجموعات يمكنهم استخدام المُعيِّن. فارغ = الجميع."
+
+msgid "ADMIN_ASSIGNER_ADD_CATEGORY"
+msgstr "إضافة فئة"
+
+msgid "ADMIN_ASSIGNER_SAVED"
+msgstr "تم حفظ إعداد المُعيِّن."
+
+msgid "ADMIN_ASSIGNER_JS_MOVE_UP"
+msgstr "تحريك لأعلى"
+
+msgid "ADMIN_ASSIGNER_JS_MOVE_DOWN"
+msgstr "تحريك لأسفل"
+
+msgid "ADMIN_ASSIGNER_JS_NEW_CATEGORY"
+msgstr "فئة جديدة"
+
+msgid "ADMIN_ASSIGNER_JS_NAME_LABEL"
+msgstr "الاسم"
+
+msgid "ADMIN_ASSIGNER_JS_NAME_PLACEHOLDER"
+msgstr "مثلاً: الدولة، اللعبة، الهواية"
+
+msgid "ADMIN_ASSIGNER_JS_MAX_LABEL"
+msgstr "الحد الأقصى للاختيار"
+
+msgid "ADMIN_ASSIGNER_JS_ICON_LABEL"
+msgstr "الأيقونة"
+
+msgid "ADMIN_ASSIGNER_JS_GROUPS_LABEL"
+msgstr "مجموعات الخادم في هذه الفئة"
+
+msgid "ADMIN_ASSIGNER_JS_NO_GROUPS"
+msgstr "لا توجد مجموعات خادم متاحة."
+
+msgid "ADMIN_ASSIGNER_JS_SAVE_ERROR"
+msgstr "خطأ في الحفظ."
+
+msgid "ADMIN_CONFIG_TITLE"
+msgstr "الإعدادات"
+
+msgid "ADMIN_CONFIG_SECTION_ADMINSTATUS"
+msgstr "ودجت حالة المشرف"
+
+msgid "ADMIN_CONFIG_SECTION_ASSIGNER"
+msgstr "تعيين المجموعات"
+
+msgid "ADMIN_CONFIG_SECTION_CACHE"
+msgstr "أوقات التخزين المؤقت"
+
+msgid "ADMIN_CONFIG_SECTION_GENERAL"
+msgstr "عام"
+
+msgid "ADMIN_CONFIG_SECTION_IMPRINT"
+msgstr "معلومات الناشر"
+
+msgid "ADMIN_CONFIG_SECTION_ONLINERECORD"
+msgstr "رقم قياسي للاتصال"
+
+msgid "ADMIN_CONFIG_SECTION_VIEWER"
+msgstr "عارض القنوات"
+
+msgid "ADMIN_CONFIG_SECTION_QUERY"
+msgstr "TeamSpeak Query"
+
+msgid "ADMIN_CONFIG_SECTION_ADMIN"
+msgstr "لوحة المشرف"
+
+msgid "ADMIN_CONFIG_BTN_ADMINSTATUS"
+msgstr "إعداد ودجت حالة المشرف"
+
+msgid "ADMIN_CONFIG_BTN_ASSIGNER"
+msgstr "إعداد تعيين المجموعات"
+
+msgid "ADMIN_CONFIG_BTN_CACHE"
+msgstr "إعداد أوقات التخزين المؤقت"
+
+msgid "ADMIN_CONFIG_BTN_GENERAL"
+msgstr "تعديل الإعدادات العامة"
+
+msgid "ADMIN_CONFIG_BTN_IMPRINT"
+msgstr "تعديل معلومات الناشر"
+
+msgid "ADMIN_CONFIG_BTN_ONLINERECORD"
+msgstr "تعديل الرقم القياسي للاتصال"
+
+msgid "ADMIN_CONFIG_BTN_VIEWER"
+msgstr "إعداد عارض القنوات"
+
+msgid "ADMIN_CONFIG_BTN_QUERY"
+msgstr "إعداد اتصال TeamSpeak"
+
+msgid "ADMIN_CONFIG_BTN_ADMINS"
+msgstr "إدارة صلاحيات المشرفين"
+
+msgid "ADMIN_CONFIG_EDIT_IN_ASSIGNER"
+msgstr "تعديل في محرر المُعيِّن"
+
+msgid "ADMIN_CONFIG_MANAGED_IN_ASSIGNER"
+msgstr "تُدار في محرر المُعيِّن."
+
+msgid "ADMIN_CONFIG_WHO_HAS_ACCESS"
+msgstr "من يملك صلاحية الوصول إلى لوحة المشرف هذه؟"
+
+msgid "ADMIN_GENERAL_TITLE"
+msgstr "الإعدادات العامة"
+
+msgid "ADMIN_GENERAL_FIELD_WEBSITE_TITLE_LABEL"
+msgstr "اسم خادم TS (العرض)"
+
+msgid "ADMIN_GENERAL_FIELD_WEBSITE_TITLE_HINT"
+msgstr "يُستبدل بعنوان IP في الشريط الجانبي وصندوق تسجيل الدخول. فارغ = يُعرض IP."
+
+msgid "ADMIN_GENERAL_FIELD_NAV_BRAND_LABEL"
+msgstr "عنوان الموقع (شريط التنقل)"
+
+msgid "ADMIN_GENERAL_FIELD_NAV_BRAND_HINT"
+msgstr "نص الشعار في الزاوية العلوية اليسرى من التنقل."
+
+msgid "ADMIN_GENERAL_FIELD_BASEURL_LABEL"
+msgstr "الرابط الأساسي"
+
+msgid "ADMIN_GENERAL_FIELD_BASEURL_HINT"
+msgstr "الرابط الكامل للموقع، مثلاً https://example.com"
+
+msgid "ADMIN_GENERAL_FIELD_LOGINPOKE_LABEL"
+msgstr "تسجيل الدخول: إرسال Poke للعميل"
+
+msgid "ADMIN_GENERAL_FIELD_LOGINPOKE_HINT"
+msgstr "إرسال poke لعميل TS عند محاولة تسجيل الدخول"
+
+msgid "ADMIN_GENERAL_FIELD_TIMEZONE_LABEL"
+msgstr "المنطقة الزمنية"
+
+msgid "ADMIN_GENERAL_FIELD_TIMEZONE_HINT"
+msgstr "المنطقة الزمنية لـ PHP، مثلاً Asia/Riyadh"
+
+msgid "ADMIN_GENERAL_FIELD_CLOUDFLARE_LABEL"
+msgstr "تفعيل Cloudflare"
+
+msgid "ADMIN_GENERAL_FIELD_CLOUDFLARE_HINT"
+msgstr "فعّل إذا كان الموقع خلف Cloudflare"
+
+msgid "ADMIN_GENERAL_SAVED"
+msgstr "تم حفظ الإعدادات."
+
+msgid "ADMIN_ADMINS_TITLE"
+msgstr "صلاحيات المشرفين"
+
+msgid "ADMIN_ADMINS_CURRENT"
+msgstr "المشرفون الحاليون"
+
+msgid "ADMIN_ADMINS_TABLE_CLDBID"
+msgstr "معرف قاعدة بيانات العميل"
+
+msgid "ADMIN_ADMINS_TABLE_ACTION"
+msgstr "الإجراء"
+
+msgid "ADMIN_ADMINS_YOU_BADGE"
+msgstr "أنت"
+
+msgid "ADMIN_ADMINS_CONFIRM_REMOVE"
+msgstr "حذف المشرف؟"
+
+msgid "ADMIN_ADMINS_CANNOT_REMOVE_SELF"
+msgstr "لا يمكنك حذف نفسك."
+
+msgid "ADMIN_ADMINS_ADD_TITLE"
+msgstr "إضافة مشرف"
+
+msgid "ADMIN_ADMINS_CLDBID_LABEL"
+msgstr "معرف قاعدة بيانات العميل"
+
+msgid "ADMIN_ADMINS_ONLINE_LABEL"
+msgstr "متصل الآن (اختر من القائمة)"
+
+msgid "ADMIN_ADMINS_ADDED"
+msgstr "تمت إضافة المشرف."
+
+msgid "ADMIN_ADMINS_REMOVED"
+msgstr "تم حذف المشرف."
+
+msgid "ADMIN_ADMINSTATUS_TITLE"
+msgstr "ودجت حالة المشرف"
+
+msgid "ADMIN_ADMINSTATUS_SECTION_GENERAL"
+msgstr "عام"
+
+msgid "ADMIN_ADMINSTATUS_WIDGET_ENABLED_LABEL"
+msgstr "الودجت مفعّل"
+
+msgid "ADMIN_ADMINSTATUS_HIDE_OFFLINE_LABEL"
+msgstr "إخفاء المستخدمين غير المتصلين"
+
+msgid "ADMIN_ADMINSTATUS_HIDE_OFFLINE_HINT"
+msgstr "يتم إخفاء المستخدمين غير المتصلين بالكامل."
+
+msgid "ADMIN_ADMINSTATUS_OFFLINE_COLLAPSED_LABEL"
+msgstr "غير المتصلين مطوي افتراضياً"
+
+msgid "ADMIN_ADMINSTATUS_OFFLINE_COLLAPSED_HINT"
+msgstr "تظهر إدخالات غير المتصلين في الودجت فقط بعد النقر."
+
+msgid "ADMIN_ADMINSTATUS_DISPLAY_MODE_LABEL"
+msgstr "وضع العرض"
+
+msgid "ADMIN_ADMINSTATUS_MODE_1"
+msgstr "مجمّع"
+
+msgid "ADMIN_ADMINSTATUS_MODE_2"
+msgstr "مجمّع (إخفاء المجموعات الفارغة)"
+
+msgid "ADMIN_ADMINSTATUS_MODE_3"
+msgstr "قائمة"
+
+msgid "ADMIN_ADMINSTATUS_MODE_4"
+msgstr "قائمة (المتصلون أولاً)"
+
+msgid "ADMIN_ADMINSTATUS_SECTION_GROUPS"
+msgstr "مجموعات الخادم للعرض"
+
+msgid "ADMIN_ADMINSTATUS_NO_GROUPS"
+msgstr "لا توجد مجموعات خادم متاحة — تحقق من اتصال TS."
+
+msgid "ADMIN_ADMINSTATUS_SECTION_IGNORED"
+msgstr "المستخدمون المُجاهَلون"
+
+msgid "ADMIN_ADMINSTATUS_IGNORED_HINT"
+msgstr "مستخدمو المجموعات المحددة. المحددون لن يظهروا في الودجت."
+
+msgid "ADMIN_ADMINSTATUS_NO_GROUPS_SELECTED"
+msgstr "اختر مجموعات الخادم أولاً واحفظها."
+
+msgid "ADMIN_ADMINSTATUS_NO_CACHE"
+msgstr "لا يوجد تخزين مؤقت بعد — انتظر دقيقة وأعد تحميل الصفحة."
+
+msgid "ADMIN_ADMINSTATUS_CURRENTLY_IGNORED"
+msgstr "معرفات DBID المُجاهَلة حالياً:"
+
+msgid "ADMIN_ADMINSTATUS_SAVED"
+msgstr "تم حفظ حالة المشرف."
+
+msgid "ADMIN_CACHE_TITLE"
+msgstr "أوقات التخزين المؤقت"
+
+msgid "ADMIN_CACHE_HINT"
+msgstr "جميع القيم بالثواني. أقل = بيانات أحدث، حمل أكبر على خادم TS."
+
+msgid "ADMIN_CACHE_SERVERINFO_LABEL"
+msgstr "معلومات الخادم"
+
+msgid "ADMIN_CACHE_SERVERINFO_HINT"
+msgstr "معلومات عامة عن خادم TS (الاسم والفتحات وغيرها)"
+
+msgid "ADMIN_CACHE_CLIENTLIST_LABEL"
+msgstr "قائمة العملاء"
+
+msgid "ADMIN_CACHE_CLIENTLIST_HINT"
+msgstr "قائمة اللاعبين المتصلين — احتفظ بها منخفضة لحالة تسجيل دخول محدّثة"
+
+msgid "ADMIN_CACHE_CHANNELLIST_LABEL"
+msgstr "قائمة القنوات"
+
+msgid "ADMIN_CACHE_CHANNELLIST_HINT"
+msgstr "عارض القنوات"
+
+msgid "ADMIN_CACHE_SERVERGROUPS_LABEL"
+msgstr "مجموعات الخادم"
+
+msgid "ADMIN_CACHE_SERVERGROUPS_HINT"
+msgstr "قائمة بجميع مجموعات الخادم"
+
+msgid "ADMIN_CACHE_CHANNELGROUPS_LABEL"
+msgstr "مجموعات القنوات"
+
+msgid "ADMIN_CACHE_CHANNELGROUPS_HINT"
+msgstr "قائمة بجميع مجموعات القنوات"
+
+msgid "ADMIN_CACHE_BANLIST_LABEL"
+msgstr "قائمة الحظر"
+
+msgid "ADMIN_CACHE_BANLIST_HINT"
+msgstr "المستخدمون المحظورون"
+
+msgid "ADMIN_CACHE_ADMINSTATUS_LABEL"
+msgstr "حالة المشرف"
+
+msgid "ADMIN_CACHE_ADMINSTATUS_HINT"
+msgstr "أعضاء مجموعات المشرفين لودجت الحالة"
+
+msgid "ADMIN_CACHE_SERVERICONS_LABEL"
+msgstr "أيقونات الخادم"
+
+msgid "ADMIN_CACHE_SERVERICONS_HINT"
+msgstr "بيانات الأيقونات من خادم TS"
+
+msgid "ADMIN_CACHE_LANGUAGES_LABEL"
+msgstr "اللغات"
+
+msgid "ADMIN_CACHE_LANGUAGES_HINT"
+msgstr "ملفات اللغات من قاعدة البيانات"
+
+msgid "ADMIN_CACHE_LOGINCODE_LABEL"
+msgstr "رمز تسجيل الدخول"
+
+msgid "ADMIN_CACHE_LOGINCODE_HINT"
+msgstr "رموز تسجيل دخول مؤقتة"
+
+msgid "ADMIN_CACHE_SAVED"
+msgstr "تم حفظ أوقات التخزين المؤقت."
+
+msgid "ADMIN_ONLINERECORD_TITLE"
+msgstr "رقم قياسي للاتصال"
+
+msgid "ADMIN_ONLINERECORD_VALUE_LABEL"
+msgstr "الرقم القياسي (عدد اللاعبين)"
+
+msgid "ADMIN_ONLINERECORD_DATE_LABEL"
+msgstr "التاريخ والوقت"
+
+msgid "ADMIN_ONLINERECORD_DATE_HINT"
+msgstr "يُستبدل تلقائياً عند تحقيق رقم قياسي جديد."
+
+msgid "ADMIN_ONLINERECORD_SAVED"
+msgstr "تم حفظ الرقم القياسي للاتصال."
+
+msgid "ADMIN_VIEWER_TITLE"
+msgstr "عارض القنوات"
+
+msgid "ADMIN_VIEWER_SECTION"
+msgstr "القنوات المخفية"
+
+msgid "ADMIN_VIEWER_HINT"
+msgstr "محدد = القناة مخفية في الموقع. القنوات المحمية بكلمة مرور تختفي تلقائياً."
+
+msgid "ADMIN_VIEWER_NO_CHANNELS"
+msgstr "لا توجد قنوات متاحة — تحقق من اتصال TS."
+
+msgid "ADMIN_VIEWER_HIDDEN_BADGE"
+msgstr "مخفي"
+
+msgid "ADMIN_VIEWER_SAVED"
+msgstr "تم حفظ عارض القنوات."
+
+msgid "ADMIN_QUERY_TITLE"
+msgstr "اتصال TeamSpeak"
+
+msgid "ADMIN_QUERY_WARNING_TITLE"
+msgstr "تحذير"
+
+msgid "ADMIN_QUERY_WARNING_TEXT"
+msgstr "هل تريد فعلاً تعديل هذه الإعدادات؟ إذا كنت لا تعرف ما تفعله، قد تقطع الاتصال بخادم TeamSpeak."
+
+msgid "ADMIN_QUERY_WARNING_CONFIRM"
+msgstr "نعم، أعرف ما أفعله"
+
+msgid "ADMIN_QUERY_SECTION"
+msgstr "إعدادات اتصال TeamSpeak"
+
+msgid "ADMIN_QUERY_HOSTNAME_LABEL"
+msgstr "عنوان الخادم"
+
+msgid "ADMIN_QUERY_HOSTNAME_HINT"
+msgstr "عنوان IP أو اسم المضيف لخادم TeamSpeak (مثلاً 127.0.0.1)"
+
+msgid "ADMIN_QUERY_PORT_LABEL"
+msgstr "منفذ ServerQuery"
+
+msgid "ADMIN_QUERY_PORT_HINT"
+msgstr "الافتراضي: 10011"
+
+msgid "ADMIN_QUERY_USERNAME_LABEL"
+msgstr "اسم مستخدم ServerQuery"
+
+msgid "ADMIN_QUERY_USERNAME_HINT"
+msgstr "حساب query الذي تم إنشاؤه للموقع"
+
+msgid "ADMIN_QUERY_PASSWORD_LABEL"
+msgstr "كلمة مرور ServerQuery"
+
+msgid "ADMIN_QUERY_PASSWORD_HINT"
+msgstr "كلمة مرور حساب query"
+
+msgid "ADMIN_QUERY_NICKNAME_LABEL"
+msgstr "الاسم المعروض في Query"
+
+msgid "ADMIN_QUERY_NICKNAME_HINT"
+msgstr "الاسم الذي يظهر عند تسجيل دخول الموقع إلى query"
+
+msgid "ADMIN_QUERY_DISPLAYIP_LABEL"
+msgstr "IP الخادم العام"
+
+msgid "ADMIN_QUERY_DISPLAYIP_HINT"
+msgstr "IP المستخدم كرابط ts3server:// في عارض القنوات"
+
+msgid "ADMIN_QUERY_VOICEPORT_LABEL"
+msgstr "منفذ الصوت في TeamSpeak"
+
+msgid "ADMIN_QUERY_VOICEPORT_HINT"
+msgstr "المنفذ الذي يتصل به العملاء (الافتراضي: 9987)"
+
+msgid "ADMIN_QUERY_SAVED"
+msgstr "تم حفظ إعدادات الاتصال."
+

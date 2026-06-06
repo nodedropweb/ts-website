@@ -53,7 +53,7 @@ $faIcons = [
     'fas fa-dog'          => 'Hund',          'fas fa-cross'        => 'Kreuz',
 ];
 
-adminHeader('Assigner-Konfiguration', 'assigner');
+adminHeader(__a('ADMIN_ASSIGNER_TITLE'), 'assigner');
 ?>
 
 <?php if ($flash): ?>
@@ -66,24 +66,20 @@ adminHeader('Assigner-Konfiguration', 'assigner');
 <?php if (empty($serverGroups)): ?>
 <div class="alert alert-warning">
     <i class="fas fa-exclamation-triangle"></i>
-    Keine Servergruppen gefunden. Stelle sicher, dass der TS3-Server verbunden ist und Servergruppen existieren.
+    <?= htmlspecialchars(__a('ADMIN_ASSIGNER_NO_GROUPS_WARNING')) ?>
 </div>
 <?php endif; ?>
 
-<p class="text-muted">
-    Definiere Kategorien für die Gruppen-Zuweisung. Jede Kategorie hat einen Namen, ein Icon, eine maximale Anzahl
-    wählbarer Gruppen und die zugehörigen Servergruppen.
-</p>
+<p class="text-muted"><?= htmlspecialchars(__a('ADMIN_ASSIGNER_DESCRIPTION')) ?></p>
 
-<!-- Assigner-Einstellungen -->
 <div class="card mb-4">
-    <div class="card-header">Allgemeine Einstellungen</div>
+    <div class="card-header"><?= htmlspecialchars(__a('ADMIN_ASSIGNER_GENERAL')) ?></div>
     <div class="card-body">
         <div class="form-row">
             <div class="col-md-4">
                 <div class="form-group">
-                    <label>Cooldown (Sekunden)
-                        <small class="text-muted d-block">Wie lange muss ein Nutzer warten bevor er die Zuweisung erneut ändern kann. 0 = kein Cooldown.</small>
+                    <label><?= htmlspecialchars(__a('ADMIN_ASSIGNER_COOLDOWN_LABEL')) ?>
+                        <small class="text-muted d-block"><?= htmlspecialchars(__a('ADMIN_ASSIGNER_COOLDOWN_HINT')) ?></small>
                     </label>
                     <input type="number" class="form-control" id="input-cooldown"
                            value="<?= $cooldown ?>" min="0">
@@ -91,11 +87,11 @@ adminHeader('Assigner-Konfiguration', 'assigner');
             </div>
             <div class="col-md-8">
                 <div class="form-group">
-                    <label>Erforderliche Servergruppen
-                        <small class="text-muted d-block">Nur Mitglieder dieser Gruppen können den Assigner nutzen. Leer = alle dürfen.</small>
+                    <label><?= htmlspecialchars(__a('ADMIN_ASSIGNER_REQUIRED_GROUPS_LABEL')) ?>
+                        <small class="text-muted d-block"><?= htmlspecialchars(__a('ADMIN_ASSIGNER_REQUIRED_GROUPS_HINT')) ?></small>
                     </label>
                     <?php if (empty($serverGroups)): ?>
-                        <p class="text-muted small">Keine Servergruppen verfügbar.</p>
+                        <p class="text-muted small"><?= htmlspecialchars(__a('ADMIN_ASSIGNER_JS_NO_GROUPS')) ?></p>
                     <?php else: ?>
                     <div class="d-flex flex-wrap" style="gap:.5rem">
                         <?php foreach ($serverGroups as $g): ?>
@@ -119,10 +115,10 @@ adminHeader('Assigner-Konfiguration', 'assigner');
 
 <div class="mb-3 d-flex justify-content-between">
     <button type="button" class="btn btn-primary" id="btn-add-category">
-        <i class="fas fa-plus"></i> Kategorie hinzufügen
+        <i class="fas fa-plus"></i> <?= htmlspecialchars(__a('ADMIN_ASSIGNER_ADD_CATEGORY')) ?>
     </button>
     <button type="button" class="btn btn-success" id="btn-save">
-        <i class="fas fa-save"></i> Speichern
+        <i class="fas fa-save"></i> <?= htmlspecialchars(__a('ADMIN_BTN_SAVE')) ?>
     </button>
 </div>
 
@@ -130,7 +126,7 @@ adminHeader('Assigner-Konfiguration', 'assigner');
 
 <div class="text-right mt-3">
     <button type="button" class="btn btn-success btn-lg" id="btn-save-bottom">
-        <i class="fas fa-save"></i> Speichern
+        <i class="fas fa-save"></i> <?= htmlspecialchars(__a('ADMIN_BTN_SAVE')) ?>
     </button>
 </div>
 
@@ -143,6 +139,20 @@ const ALL_SERVER_GROUPS = <?= json_encode(array_values(array_map(fn($g) => [
 const FA_ICONS = <?= json_encode($faIcons, JSON_UNESCAPED_UNICODE) ?>;
 const CSRF_TOKEN = <?= json_encode(CsrfUtils::getToken()) ?>;
 const INITIAL_CATEGORIES = <?= json_encode($categories, JSON_UNESCAPED_UNICODE) ?>;
+
+const I18N = {
+    moveUp:        <?= json_encode(__a('ADMIN_ASSIGNER_JS_MOVE_UP')) ?>,
+    moveDown:      <?= json_encode(__a('ADMIN_ASSIGNER_JS_MOVE_DOWN')) ?>,
+    newCategory:   <?= json_encode(__a('ADMIN_ASSIGNER_JS_NEW_CATEGORY')) ?>,
+    namePlaceholder: <?= json_encode(__a('ADMIN_ASSIGNER_JS_NAME_PLACEHOLDER')) ?>,
+    nameLabel:     <?= json_encode(__a('ADMIN_ASSIGNER_JS_NAME_LABEL')) ?>,
+    maxLabel:      <?= json_encode(__a('ADMIN_ASSIGNER_JS_MAX_LABEL')) ?>,
+    iconLabel:     <?= json_encode(__a('ADMIN_ASSIGNER_JS_ICON_LABEL')) ?>,
+    groupsLabel:   <?= json_encode(__a('ADMIN_ASSIGNER_JS_GROUPS_LABEL')) ?>,
+    noGroups:      <?= json_encode(__a('ADMIN_ASSIGNER_JS_NO_GROUPS')) ?>,
+    saveError:     <?= json_encode(__a('ADMIN_ASSIGNER_JS_SAVE_ERROR')) ?>,
+    saved:         <?= json_encode(__a('ADMIN_ASSIGNER_SAVED')) ?>,
+};
 
 // Render icon picker HTML
 function renderIconPicker(selectedIcon) {
@@ -160,7 +170,7 @@ function renderIconPicker(selectedIcon) {
 // Render group checkboxes
 function renderGroupCheckboxes(selectedGroups, idx) {
     if (ALL_SERVER_GROUPS.length === 0) {
-        return '<p class="text-muted small">Keine Servergruppen verfügbar.</p>';
+        return '<p class="text-muted small">' + I18N.noGroups + '</p>';
     }
     let html = '<div class="group-list row">';
     for (const g of ALL_SERVER_GROUPS) {
@@ -192,31 +202,31 @@ function buildCard(cat, idx) {
         <div class="card-header d-flex justify-content-between align-items-center">
             <div class="d-flex align-items-center">
                 <i class="${icon} mr-2 cat-icon-preview" style="font-size:1.2rem"></i>
-                <strong class="cat-name-preview">${name || 'Neue Kategorie'}</strong>
+                <strong class="cat-name-preview">${name || I18N.newCategory}</strong>
             </div>
             <div>
-                <button type="button" class="btn btn-sm btn-outline-secondary btn-up" title="Hoch"><i class="fas fa-arrow-up"></i></button>
-                <button type="button" class="btn btn-sm btn-outline-secondary btn-down" title="Runter"><i class="fas fa-arrow-down"></i></button>
+                <button type="button" class="btn btn-sm btn-outline-secondary btn-up" title="${I18N.moveUp}"><i class="fas fa-arrow-up"></i></button>
+                <button type="button" class="btn btn-sm btn-outline-secondary btn-down" title="${I18N.moveDown}"><i class="fas fa-arrow-down"></i></button>
                 <button type="button" class="btn btn-sm btn-outline-danger btn-remove"><i class="fas fa-trash"></i></button>
             </div>
         </div>
         <div class="card-body">
             <div class="form-row mb-3">
                 <div class="col-md-5">
-                    <label>Name</label>
-                    <input type="text" class="form-control cat-name" value="${name}" placeholder="z.B. Land, Spiel, Hobby">
+                    <label>${I18N.nameLabel}</label>
+                    <input type="text" class="form-control cat-name" value="${name}" placeholder="${I18N.namePlaceholder}">
                 </div>
                 <div class="col-md-2">
-                    <label>Max. Auswahl</label>
+                    <label>${I18N.maxLabel}</label>
                     <input type="number" class="form-control cat-max" value="${max}" min="1" max="50">
                 </div>
                 <div class="col-md-5">
-                    <label>Icon <span class="cat-icon-display text-muted small">(${icon})</span></label>
+                    <label>${I18N.iconLabel} <span class="cat-icon-display text-muted small">(${icon})</span></label>
                     <input type="hidden" class="cat-icon-value" value="${icon}">
                     ${renderIconPicker(icon)}
                 </div>
             </div>
-            <label>Servergruppen in dieser Kategorie</label>
+            <label>${I18N.groupsLabel}</label>
             ${renderGroupCheckboxes(groups, idx)}
         </div>`;
 
@@ -234,7 +244,7 @@ function buildCard(cat, idx) {
     const nameInput   = div.querySelector('.cat-name');
     const namePreview = div.querySelector('.cat-name-preview');
     nameInput.addEventListener('input', () => {
-        namePreview.textContent = nameInput.value || 'Neue Kategorie';
+        namePreview.textContent = nameInput.value || I18N.newCategory;
     });
 
     div.querySelectorAll('.icon-pick-btn').forEach(btn => {
@@ -287,8 +297,8 @@ function doSave() {
             'config[assigner_required_sgids]':   JSON.stringify(reqSgids),
         })
     }).then(() => {
-        window.location = 'assigner.php?flash=' + encodeURIComponent('Assigner-Konfiguration gespeichert.') + '&type=success';
-    }).catch(() => alert('Fehler beim Speichern.'));
+        window.location = 'assigner.php?flash=' + encodeURIComponent(I18N.saved) + '&type=success';
+    }).catch(() => alert(I18N.saveError));
 }
 
 document.getElementById('btn-save').addEventListener('click', doSave);

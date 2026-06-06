@@ -1,0 +1,599 @@
+# TS-Website admin translations -- bg
+# Domain: admin
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: bg\n"
+
+msgid "ADMIN_NAV_BRAND"
+msgstr "TS-Website Admin"
+
+msgid "ADMIN_NAV_NEWS"
+msgstr "Новини"
+
+msgid "ADMIN_NAV_FAQ"
+msgstr "FAQ"
+
+msgid "ADMIN_NAV_RULES"
+msgstr "Правила"
+
+msgid "ADMIN_NAV_ASSIGNER"
+msgstr "Assigner"
+
+msgid "ADMIN_NAV_CONFIG"
+msgstr "Конфигурация"
+
+msgid "ADMIN_NAV_GOTO_WEBSITE"
+msgstr "Към уебсайта"
+
+msgid "ADMIN_BTN_SAVE"
+msgstr "Запази"
+
+msgid "ADMIN_BTN_SAVE_ALL"
+msgstr "Запази всички настройки"
+
+msgid "ADMIN_BTN_BACK"
+msgstr "Назад"
+
+msgid "ADMIN_BTN_BACK_TO_CONFIG"
+msgstr "Назад към конфигурацията"
+
+msgid "ADMIN_BTN_CANCEL"
+msgstr "Отказ"
+
+msgid "ADMIN_BTN_ADD"
+msgstr "Добави"
+
+msgid "ADMIN_BTN_REMOVE"
+msgstr "Премахни"
+
+msgid "ADMIN_ENABLED"
+msgstr "Активно"
+
+msgid "ADMIN_TABLE_ID"
+msgstr "ID"
+
+msgid "ADMIN_TABLE_TITLE"
+msgstr "Заглавие"
+
+msgid "ADMIN_TABLE_CREATED"
+msgstr "Създадено"
+
+msgid "ADMIN_TABLE_EDITED"
+msgstr "Редактирано"
+
+msgid "ADMIN_TABLE_QUESTION"
+msgstr "Въпрос"
+
+msgid "ADMIN_TABLE_LAST_MODIFIED"
+msgstr "Последна промяна"
+
+msgid "ADMIN_TABLE_ACTIONS"
+msgstr "Действия"
+
+msgid "ADMIN_NO_GROUPS_AVAILABLE"
+msgstr "Няма налични сървърни групи."
+
+msgid "ADMIN_403_TITLE"
+msgstr "Достъпът е отказан — Admin"
+
+msgid "ADMIN_403_TEXT"
+msgstr "Няма достъп. Не сте регистриран като администратор."
+
+msgid "ADMIN_403_HINT"
+msgstr "Моля, първо влезте в главната страница чрез TeamSpeak, след което помолете администратор да добави вашия cldbid в admin_cldbids."
+
+msgid "ADMIN_403_BTN"
+msgstr "Към главната страница"
+
+msgid "ADMIN_SETUP_TITLE"
+msgstr "Административен панел — Първоначална настройка"
+
+msgid "ADMIN_SETUP_NO_ADMIN"
+msgstr "Все още няма регистрирани администратори. Въведете своя cldbid за достъп до административния панел."
+
+msgid "ADMIN_SETUP_CLDBID_LABEL"
+msgstr "Вашият cldbid"
+
+msgid "ADMIN_SETUP_CLDBID_HINT"
+msgstr "Показва се след влизане с TS3 на началната страница или изберете от списъка по-долу."
+
+msgid "ADMIN_SETUP_ONLINE_LABEL"
+msgstr "В момента онлайн"
+
+msgid "ADMIN_SETUP_BTN_REGISTER"
+msgstr "Регистрирай се като първи администратор"
+
+msgid "ADMIN_SETUP_BTN_GOTO"
+msgstr "Към административния панел"
+
+msgid "ADMIN_SETUP_SUCCESS"
+msgstr "cldbid {0} е регистриран като първи администратор. Тази страница вече е заключена."
+
+msgid "ADMIN_SETUP_ERR_INVALID"
+msgstr "Моля, въведете валиден cldbid (положително цяло число)."
+
+msgid "ADMIN_NEWS_TITLE"
+msgstr "Новини"
+
+msgid "ADMIN_NEWS_NEW_BTN"
+msgstr "Нова статия"
+
+msgid "ADMIN_NEWS_EMPTY"
+msgstr "Няма налични новини."
+
+msgid "ADMIN_NEWS_CONFIRM_DELETE"
+msgstr "Изтриване на тази статия?"
+
+msgid "ADMIN_NEWS_EDIT_TITLE"
+msgstr "Редактиране на новина"
+
+msgid "ADMIN_NEWS_NEW_TITLE"
+msgstr "Нова статия"
+
+msgid "ADMIN_NEWS_FORM_TITLE"
+msgstr "Заглавие"
+
+msgid "ADMIN_NEWS_FORM_CONTENT"
+msgstr "Съдържание"
+
+msgid "ADMIN_FAQ_TITLE"
+msgstr "FAQ"
+
+msgid "ADMIN_FAQ_NEW_BTN"
+msgstr "Нов FAQ запис"
+
+msgid "ADMIN_FAQ_EMPTY"
+msgstr "Няма FAQ записи."
+
+msgid "ADMIN_FAQ_CONFIRM_DELETE"
+msgstr "Изтриване на този FAQ запис?"
+
+msgid "ADMIN_FAQ_EDIT_TITLE"
+msgstr "Редактиране на FAQ запис"
+
+msgid "ADMIN_FAQ_NEW_TITLE"
+msgstr "Нов FAQ запис"
+
+msgid "ADMIN_FAQ_FORM_QUESTION"
+msgstr "Въпрос"
+
+msgid "ADMIN_FAQ_FORM_ANSWER"
+msgstr "Отговор"
+
+msgid "ADMIN_RULES_TITLE"
+msgstr "Правила на сървъра"
+
+msgid "ADMIN_RULES_FORM_CONTENT"
+msgstr "Съдържание"
+
+msgid "ADMIN_IMPRINT_TITLE"
+msgstr "Импресум"
+
+msgid "ADMIN_ASSIGNER_TITLE"
+msgstr "Конфигурация на Assigner"
+
+msgid "ADMIN_ASSIGNER_NO_GROUPS_WARNING"
+msgstr "Не са намерени сървърни групи. Уверете се, че сървърът TS3 е свързан."
+
+msgid "ADMIN_ASSIGNER_DESCRIPTION"
+msgstr "Дефинирайте категории за присвояване на групи. Всяка категория има име, икона, максимален брой избираеми групи и съответни сървърни групи."
+
+msgid "ADMIN_ASSIGNER_GENERAL"
+msgstr "Общи настройки"
+
+msgid "ADMIN_ASSIGNER_COOLDOWN_LABEL"
+msgstr "Време за изчакване (секунди)"
+
+msgid "ADMIN_ASSIGNER_COOLDOWN_HINT"
+msgstr "Времето, което потребителят трябва да изчака преди да смени групата отново. 0 = без изчакване."
+
+msgid "ADMIN_ASSIGNER_REQUIRED_GROUPS_LABEL"
+msgstr "Задължителни сървърни групи"
+
+msgid "ADMIN_ASSIGNER_REQUIRED_GROUPS_HINT"
+msgstr "Само членове на тези групи могат да използват Assigner. Празно = всички."
+
+msgid "ADMIN_ASSIGNER_ADD_CATEGORY"
+msgstr "Добави категория"
+
+msgid "ADMIN_ASSIGNER_SAVED"
+msgstr "Конфигурацията на Assigner е запазена."
+
+msgid "ADMIN_ASSIGNER_JS_MOVE_UP"
+msgstr "Премести нагоре"
+
+msgid "ADMIN_ASSIGNER_JS_MOVE_DOWN"
+msgstr "Премести надолу"
+
+msgid "ADMIN_ASSIGNER_JS_NEW_CATEGORY"
+msgstr "Нова категория"
+
+msgid "ADMIN_ASSIGNER_JS_NAME_LABEL"
+msgstr "Име"
+
+msgid "ADMIN_ASSIGNER_JS_NAME_PLACEHOLDER"
+msgstr "напр. Държава, Игра, Хоби"
+
+msgid "ADMIN_ASSIGNER_JS_MAX_LABEL"
+msgstr "Макс. избор"
+
+msgid "ADMIN_ASSIGNER_JS_ICON_LABEL"
+msgstr "Икона"
+
+msgid "ADMIN_ASSIGNER_JS_GROUPS_LABEL"
+msgstr "Сървърни групи в тази категория"
+
+msgid "ADMIN_ASSIGNER_JS_NO_GROUPS"
+msgstr "Няма налични сървърни групи."
+
+msgid "ADMIN_ASSIGNER_JS_SAVE_ERROR"
+msgstr "Грешка при запазване."
+
+msgid "ADMIN_CONFIG_TITLE"
+msgstr "Конфигурация"
+
+msgid "ADMIN_CONFIG_SECTION_ADMINSTATUS"
+msgstr "Уиджет за статус на администратора"
+
+msgid "ADMIN_CONFIG_SECTION_ASSIGNER"
+msgstr "Присвояване на групи"
+
+msgid "ADMIN_CONFIG_SECTION_CACHE"
+msgstr "Времена на кеша"
+
+msgid "ADMIN_CONFIG_SECTION_GENERAL"
+msgstr "Общо"
+
+msgid "ADMIN_CONFIG_SECTION_IMPRINT"
+msgstr "Импресум"
+
+msgid "ADMIN_CONFIG_SECTION_ONLINERECORD"
+msgstr "Рекорд онлайн"
+
+msgid "ADMIN_CONFIG_SECTION_VIEWER"
+msgstr "Преглед на канали"
+
+msgid "ADMIN_CONFIG_SECTION_QUERY"
+msgstr "TeamSpeak Query"
+
+msgid "ADMIN_CONFIG_SECTION_ADMIN"
+msgstr "Административен панел"
+
+msgid "ADMIN_CONFIG_BTN_ADMINSTATUS"
+msgstr "Конфигурирай уиджет за статус на администратора"
+
+msgid "ADMIN_CONFIG_BTN_ASSIGNER"
+msgstr "Конфигурирай присвояване на групи"
+
+msgid "ADMIN_CONFIG_BTN_CACHE"
+msgstr "Конфигурирай времена на кеша"
+
+msgid "ADMIN_CONFIG_BTN_GENERAL"
+msgstr "Редактирай общи настройки"
+
+msgid "ADMIN_CONFIG_BTN_IMPRINT"
+msgstr "Редактирай импресума"
+
+msgid "ADMIN_CONFIG_BTN_ONLINERECORD"
+msgstr "Редактирай рекорд онлайн"
+
+msgid "ADMIN_CONFIG_BTN_VIEWER"
+msgstr "Конфигурирай преглед на канали"
+
+msgid "ADMIN_CONFIG_BTN_QUERY"
+msgstr "Конфигурирай TeamSpeak връзка"
+
+msgid "ADMIN_CONFIG_BTN_ADMINS"
+msgstr "Управлявай достъпа на администраторите"
+
+msgid "ADMIN_CONFIG_EDIT_IN_ASSIGNER"
+msgstr "Редактирай в редактора на Assigner"
+
+msgid "ADMIN_CONFIG_MANAGED_IN_ASSIGNER"
+msgstr "Управлява се в редактора на Assigner."
+
+msgid "ADMIN_CONFIG_WHO_HAS_ACCESS"
+msgstr "Кой има достъп до този административен панел?"
+
+msgid "ADMIN_GENERAL_TITLE"
+msgstr "Общи настройки"
+
+msgid "ADMIN_GENERAL_FIELD_WEBSITE_TITLE_LABEL"
+msgstr "Име на TS сървъра (показване)"
+
+msgid "ADMIN_GENERAL_FIELD_WEBSITE_TITLE_HINT"
+msgstr "Замества IP адреса в страничния панел и диалога за вход. Празно = показва се IP."
+
+msgid "ADMIN_GENERAL_FIELD_NAV_BRAND_LABEL"
+msgstr "Заглавие на сайта (Navbar)"
+
+msgid "ADMIN_GENERAL_FIELD_NAV_BRAND_HINT"
+msgstr "Текст на логото в горния ляв ъгъл на навигацията."
+
+msgid "ADMIN_GENERAL_FIELD_BASEURL_LABEL"
+msgstr "Базов URL"
+
+msgid "ADMIN_GENERAL_FIELD_BASEURL_HINT"
+msgstr "Пълният URL на сайта, напр. https://example.com"
+
+msgid "ADMIN_GENERAL_FIELD_LOGINPOKE_LABEL"
+msgstr "Вход: Poke на клиента"
+
+msgid "ADMIN_GENERAL_FIELD_LOGINPOKE_HINT"
+msgstr "Изпращане на poke до TS клиента при опит за вход"
+
+msgid "ADMIN_GENERAL_FIELD_TIMEZONE_LABEL"
+msgstr "Часова зона"
+
+msgid "ADMIN_GENERAL_FIELD_TIMEZONE_HINT"
+msgstr "PHP часова зона, напр. Europe/Sofia"
+
+msgid "ADMIN_GENERAL_FIELD_CLOUDFLARE_LABEL"
+msgstr "Cloudflare активирано"
+
+msgid "ADMIN_GENERAL_FIELD_CLOUDFLARE_HINT"
+msgstr "Активирайте ако сайтът е зад Cloudflare"
+
+msgid "ADMIN_GENERAL_SAVED"
+msgstr "Настройките са запазени."
+
+msgid "ADMIN_ADMINS_TITLE"
+msgstr "Достъп на администраторите"
+
+msgid "ADMIN_ADMINS_CURRENT"
+msgstr "Текущи администратори"
+
+msgid "ADMIN_ADMINS_TABLE_CLDBID"
+msgstr "ID на базата данни на клиента"
+
+msgid "ADMIN_ADMINS_TABLE_ACTION"
+msgstr "Действие"
+
+msgid "ADMIN_ADMINS_YOU_BADGE"
+msgstr "Вие"
+
+msgid "ADMIN_ADMINS_CONFIRM_REMOVE"
+msgstr "Премахване на администратора?"
+
+msgid "ADMIN_ADMINS_CANNOT_REMOVE_SELF"
+msgstr "Не можете да премахнете себе си."
+
+msgid "ADMIN_ADMINS_ADD_TITLE"
+msgstr "Добавяне на администратор"
+
+msgid "ADMIN_ADMINS_CLDBID_LABEL"
+msgstr "ID на базата данни на клиента"
+
+msgid "ADMIN_ADMINS_ONLINE_LABEL"
+msgstr "В момента онлайн (изберете от списъка)"
+
+msgid "ADMIN_ADMINS_ADDED"
+msgstr "Администраторът е добавен."
+
+msgid "ADMIN_ADMINS_REMOVED"
+msgstr "Администраторът е премахнат."
+
+msgid "ADMIN_ADMINSTATUS_TITLE"
+msgstr "Уиджет за статус на администратора"
+
+msgid "ADMIN_ADMINSTATUS_SECTION_GENERAL"
+msgstr "Общо"
+
+msgid "ADMIN_ADMINSTATUS_WIDGET_ENABLED_LABEL"
+msgstr "Уиджетът е активен"
+
+msgid "ADMIN_ADMINSTATUS_HIDE_OFFLINE_LABEL"
+msgstr "Скриване на офлайн потребители"
+
+msgid "ADMIN_ADMINSTATUS_HIDE_OFFLINE_HINT"
+msgstr "Офлайн потребителите са напълно скрити."
+
+msgid "ADMIN_ADMINSTATUS_OFFLINE_COLLAPSED_LABEL"
+msgstr "Офлайн свит по подразбиране"
+
+msgid "ADMIN_ADMINSTATUS_OFFLINE_COLLAPSED_HINT"
+msgstr "Офлайн записите в уиджета се показват само след натискане."
+
+msgid "ADMIN_ADMINSTATUS_DISPLAY_MODE_LABEL"
+msgstr "Режим на показване"
+
+msgid "ADMIN_ADMINSTATUS_MODE_1"
+msgstr "Групирано"
+
+msgid "ADMIN_ADMINSTATUS_MODE_2"
+msgstr "Групирано (скрий празни групи)"
+
+msgid "ADMIN_ADMINSTATUS_MODE_3"
+msgstr "Списък"
+
+msgid "ADMIN_ADMINSTATUS_MODE_4"
+msgstr "Списък (онлайн първо)"
+
+msgid "ADMIN_ADMINSTATUS_SECTION_GROUPS"
+msgstr "Сървърни групи за показване"
+
+msgid "ADMIN_ADMINSTATUS_NO_GROUPS"
+msgstr "Няма налични сървърни групи — проверете TS връзката."
+
+msgid "ADMIN_ADMINSTATUS_SECTION_IGNORED"
+msgstr "Игнорирани потребители"
+
+msgid "ADMIN_ADMINSTATUS_IGNORED_HINT"
+msgstr "Потребители на избраните групи. Отбелязаните не се показват в уиджета."
+
+msgid "ADMIN_ADMINSTATUS_NO_GROUPS_SELECTED"
+msgstr "Първо изберете и запазете сървърни групи."
+
+msgid "ADMIN_ADMINSTATUS_NO_CACHE"
+msgstr "Все още няма кеш — изчакайте минута и презаредете страницата."
+
+msgid "ADMIN_ADMINSTATUS_CURRENTLY_IGNORED"
+msgstr "Текущо игнорирани DBID:"
+
+msgid "ADMIN_ADMINSTATUS_SAVED"
+msgstr "Статусът на администратора е запазен."
+
+msgid "ADMIN_CACHE_TITLE"
+msgstr "Времена на кеша"
+
+msgid "ADMIN_CACHE_HINT"
+msgstr "Всички стойности в секунди. По-ниско = по-актуални данни, по-голямо натоварване на TS сървъра."
+
+msgid "ADMIN_CACHE_SERVERINFO_LABEL"
+msgstr "Информация за сървъра"
+
+msgid "ADMIN_CACHE_SERVERINFO_HINT"
+msgstr "Обща информация за TS сървъра (име, слотове, ...)"
+
+msgid "ADMIN_CACHE_CLIENTLIST_LABEL"
+msgstr "Списък с клиенти"
+
+msgid "ADMIN_CACHE_CLIENTLIST_HINT"
+msgstr "Списък с онлайн играчи — поддържайте ниско за актуален статус на вход"
+
+msgid "ADMIN_CACHE_CHANNELLIST_LABEL"
+msgstr "Списък с канали"
+
+msgid "ADMIN_CACHE_CHANNELLIST_HINT"
+msgstr "Преглед на канали"
+
+msgid "ADMIN_CACHE_SERVERGROUPS_LABEL"
+msgstr "Сървърни групи"
+
+msgid "ADMIN_CACHE_SERVERGROUPS_HINT"
+msgstr "Списък с всички сървърни групи"
+
+msgid "ADMIN_CACHE_CHANNELGROUPS_LABEL"
+msgstr "Групи на канали"
+
+msgid "ADMIN_CACHE_CHANNELGROUPS_HINT"
+msgstr "Списък с всички групи на канали"
+
+msgid "ADMIN_CACHE_BANLIST_LABEL"
+msgstr "Списък с бановете"
+
+msgid "ADMIN_CACHE_BANLIST_HINT"
+msgstr "Блокирани потребители"
+
+msgid "ADMIN_CACHE_ADMINSTATUS_LABEL"
+msgstr "Статус на администратора"
+
+msgid "ADMIN_CACHE_ADMINSTATUS_HINT"
+msgstr "Членове на администраторски групи за уиджета за статус"
+
+msgid "ADMIN_CACHE_SERVERICONS_LABEL"
+msgstr "Икони на сървъра"
+
+msgid "ADMIN_CACHE_SERVERICONS_HINT"
+msgstr "Данни за иконите от TS сървъра"
+
+msgid "ADMIN_CACHE_LANGUAGES_LABEL"
+msgstr "Езици"
+
+msgid "ADMIN_CACHE_LANGUAGES_HINT"
+msgstr "Езикови файлове от базата данни"
+
+msgid "ADMIN_CACHE_LOGINCODE_LABEL"
+msgstr "Код за вход"
+
+msgid "ADMIN_CACHE_LOGINCODE_HINT"
+msgstr "Временни кодове за вход"
+
+msgid "ADMIN_CACHE_SAVED"
+msgstr "Времената на кеша са запазени."
+
+msgid "ADMIN_ONLINERECORD_TITLE"
+msgstr "Рекорд онлайн"
+
+msgid "ADMIN_ONLINERECORD_VALUE_LABEL"
+msgstr "Рекорд (брой играчи)"
+
+msgid "ADMIN_ONLINERECORD_DATE_LABEL"
+msgstr "Дата и час"
+
+msgid "ADMIN_ONLINERECORD_DATE_HINT"
+msgstr "Автоматично се презаписва при поставяне на нов рекорд."
+
+msgid "ADMIN_ONLINERECORD_SAVED"
+msgstr "Рекордът онлайн е запазен."
+
+msgid "ADMIN_VIEWER_TITLE"
+msgstr "Преглед на канали"
+
+msgid "ADMIN_VIEWER_SECTION"
+msgstr "Скрити канали"
+
+msgid "ADMIN_VIEWER_HINT"
+msgstr "Отбелязано = каналът е скрит на сайта. Защитените с парола канали изчезват автоматично."
+
+msgid "ADMIN_VIEWER_NO_CHANNELS"
+msgstr "Няма налични канали — проверете TS връзката."
+
+msgid "ADMIN_VIEWER_HIDDEN_BADGE"
+msgstr "скрит"
+
+msgid "ADMIN_VIEWER_SAVED"
+msgstr "Прегледът на канали е запазен."
+
+msgid "ADMIN_QUERY_TITLE"
+msgstr "TeamSpeak връзка"
+
+msgid "ADMIN_QUERY_WARNING_TITLE"
+msgstr "Предупреждение"
+
+msgid "ADMIN_QUERY_WARNING_TEXT"
+msgstr "Наистина ли искате да редактирате тези настройки? Ако не знаете какво правите, може да прекъснете връзката с TeamSpeak сървъра."
+
+msgid "ADMIN_QUERY_WARNING_CONFIRM"
+msgstr "Да, знам какво правя"
+
+msgid "ADMIN_QUERY_SECTION"
+msgstr "Настройки за TeamSpeak връзка"
+
+msgid "ADMIN_QUERY_HOSTNAME_LABEL"
+msgstr "Адрес на сървъра"
+
+msgid "ADMIN_QUERY_HOSTNAME_HINT"
+msgstr "IP или hostname на TeamSpeak сървъра (напр. 127.0.0.1)"
+
+msgid "ADMIN_QUERY_PORT_LABEL"
+msgstr "Порт ServerQuery"
+
+msgid "ADMIN_QUERY_PORT_HINT"
+msgstr "По подразбиране: 10011"
+
+msgid "ADMIN_QUERY_USERNAME_LABEL"
+msgstr "Потребителско име ServerQuery"
+
+msgid "ADMIN_QUERY_USERNAME_HINT"
+msgstr "Query акаунт, създаден за сайта"
+
+msgid "ADMIN_QUERY_PASSWORD_LABEL"
+msgstr "Парола ServerQuery"
+
+msgid "ADMIN_QUERY_PASSWORD_HINT"
+msgstr "Парола на query акаунта"
+
+msgid "ADMIN_QUERY_NICKNAME_LABEL"
+msgstr "Показвано име в Query"
+
+msgid "ADMIN_QUERY_NICKNAME_HINT"
+msgstr "Името, което се показва, когато сайтът влезе в query"
+
+msgid "ADMIN_QUERY_DISPLAYIP_LABEL"
+msgstr "Публичен IP на сървъра"
+
+msgid "ADMIN_QUERY_DISPLAYIP_HINT"
+msgstr "IP, използван като ts3server:// линк в прегледа на канали"
+
+msgid "ADMIN_QUERY_VOICEPORT_LABEL"
+msgstr "Гласов порт на TeamSpeak"
+
+msgid "ADMIN_QUERY_VOICEPORT_HINT"
+msgstr "Портът, към който се свързват клиентите (по подразбиране: 9987)"
+
+msgid "ADMIN_QUERY_SAVED"
+msgstr "Настройките за връзка са запазени."
+

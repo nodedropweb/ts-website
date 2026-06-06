@@ -82,22 +82,52 @@ EOD;
             $suffixIcons
         );
 
-        foreach ($this->channelList as $channel) {
-            // Start rendering the top channels, they are gonna
-            // render all the children recursively
-            if ($channel["pid"] === 0) {
-                $this->renderChannel(new TeamSpeakChannel($channel));
-            }
+        foreach ($this->sortByChannelOrder($this->channelList, 0) as $channel) {
+            $this->renderChannel(new TeamSpeakChannel($channel));
         }
 
         return $this->resultHtml;
+    }
+
+    /**
+     * Returns channels with the given parent ID, sorted by channel_order (TS3 linked-list).
+     * channel_order=0 means "first child"; otherwise it's the ID of the preceding sibling.
+     */
+    private function sortByChannelOrder(array $allChannels, int $parentId): array {
+        // Collect siblings (same parent)
+        $siblings = [];
+        foreach ($allChannels as $cid => $ch) {
+            if ((int)(string)$ch['pid'] === $parentId) {
+                $siblings[(int)(string)$cid] = $ch;
+            }
+        }
+        if (empty($siblings)) return [];
+
+        // Follow the linked list: start with channel_order=0, then find successor
+        $ordered = [];
+        $prevId  = 0;
+        $max     = count($siblings) + 1;
+        while (count($ordered) < count($siblings) && $max-- > 0) {
+            foreach ($siblings as $cid => $ch) {
+                if ((int)(string)$ch['channel_order'] === $prevId && !isset($ordered[$cid])) {
+                    $ordered[$cid] = $ch;
+                    $prevId = $cid;
+                    break;
+                }
+            }
+        }
+        // Append any remaining (safety net for broken order chains)
+        foreach ($siblings as $cid => $ch) {
+            if (!isset($ordered[$cid])) $ordered[$cid] = $ch;
+        }
+        return $ordered;
     }
 
     public function getIcon($name, ?string $tooltip = null, $alt = "Icon"): string {
         if (is_string($name)) {
             $path = "{$this->imgPath}/$name";
         } else {
-            $path = "api/geticon.php?iconid=" . (int) $name;
+            $path = "api/geticon.php?iconid=" . (int)(string) $name;
         }
 
         $ttip = $tooltip ? ' data-toggle="tooltip" title="' . Utils::escape($tooltip) . '"' : "";
@@ -105,10 +135,15 @@ EOD;
     }
 
     public function renderChannel(TeamSpeakChannel $channel): void {
+        // Completely excluded via admin config → skip entirely
+        if (in_array($channel->getId(), $this->hiddenChannelIds, true)) {
+            return;
+        }
+
         $hasParent = $channel->getParentId();
 
-        $isHidden = in_array($channel->getId(), $this->hiddenChannelIds, true) ||
-                    $channel->getInfo()["channel_needed_subscribe_power"] >= 75;
+        // Hidden due to subscribe power → show with locked icon, no members
+        $isHidden = (int)(string)$channel->getInfo()["channel_needed_subscribe_power"] >= 75;
 
         $channelDisplayName = $channel->getDisplayName();
         $channelClasses = $hasParent ? "has-parent" : "no-parent";

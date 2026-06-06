@@ -1,0 +1,346 @@
+# TS-Website frontend translations — Turkish
+# Domain: frontend
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: tr\n"
+
+msgid "DATE_FORMAT"
+msgstr "d.m.Y"
+
+msgid "TIME_FORMAT"
+msgstr "H:i"
+
+msgid "BANS_HEADER_TARGET"
+msgstr "Yasak"
+
+msgid "AUTHORS"
+msgstr "Uldin <muratbeylbyprof@gmail.com>"
+
+msgid "COOKIEALERT_MESSAGE"
+msgstr "<b>Çerezleri sever misin?</b> &#x1F36A; Web sitemizde en iyi deneyimi yaşamanızı sağlamak için çerezleri kullanıyoruz. <a href=\"https://support.mozilla.org/tr/kb/cerezler-web-sitelerinin-bilgisayarinizda-depoladi\" target=\"_blank\">Daha fazla bilgi edinin</a>"
+
+msgid "COOKIEALERT_AGREE"
+msgstr "Kabul ediyorum"
+
+msgid "OUTDATED_DATA"
+msgstr "<b>Uyarı!</b> Bazı bilgiler şimdi alınamıyor. {0} 'daki güncel olmayan veriler gösteriliyor."
+
+msgid "SHOW_PROBLEMS"
+msgstr "Sorunları göster"
+
+msgid "PROBLEMS_DESCRIPTION"
+msgstr "TeamSpeak sunucusuna bağlanırken karşılaşılan sorunlar"
+
+msgid "NO_JAVASCRIPT_ENABLED"
+msgstr "Bu web sitesi<a href=\"https://www.enable-javascript.com/tr/\" target=\"_blank\">JavaScript etkinleştirilmiş</a> olmadan çalışmaz"
+
+msgid "CANNOT_GET_DATA"
+msgstr "\"{0}\" için veri alınamıyor! Yönetici ile iletişime geçmeyi deneyiniz."
+
+msgid "NO_REASON_SET"
+msgstr "<b>(Sebep belirtilmemiş)</b>"
+
+msgid "BANS_HEADER_REASON"
+msgstr "Sebep"
+
+msgid "BANS_HEADER_INVOKER"
+msgstr "Yetkili"
+
+msgid "BANS_HEADER_BANDATE"
+msgstr "Yasaklanma tarihi"
+
+msgid "BANS_HEADER_EXPIRES"
+msgstr "Bitiş Tarihi"
+
+msgid "DATATABLES_LANGUAGE_NAME"
+msgstr "Turkish"
+
+msgid "BANS_NEVEREXPIRES"
+msgstr "Belirsiz"
+
+msgid "STATUS_ADDRESS"
+msgstr "Adres:"
+
+msgid "STATUS_CLIENTS_ONLINE"
+msgstr "Aktif:"
+
+msgid "STATUS_RESERVED_SLOTS"
+msgstr "{0} ayrılmış kullanıcı"
+
+msgid "STATUS_TOP_ONLINE"
+msgstr "Rekor Aktiflik"
+
+msgid "STATUS_TOP_ONLINE_DESC"
+msgstr "{0} tarihinde ulaşıldı"
+
+msgid "STATUS_UPTIME"
+msgstr "Güncelleme:"
+
+msgid "STATUS_VERSION"
+msgstr "Versiyon:"
+
+msgid "STATUS_VERSION_DESC"
+msgstr "{0} ve {1}"
+
+msgid "STATUS_PING"
+msgstr "Ort. ping:"
+
+msgid "STATUS_PACKETLOSS"
+msgstr "Ort. paket kaybı:"
+
+msgid "STATUS_ERROR"
+msgstr "Sunucu durumu alınamıyor"
+
+msgid "STATUS_PANEL_TITLE"
+msgstr "Sunucu durumu"
+
+msgid "DAYJS_LANG"
+msgstr "tr"
+
+msgid "LOGIN_CONFIRMATION_CODE"
+msgstr "Merhaba, giriş yapmak için onay kodunuz: [b][color=red]{0}"
+
+msgid "UNSUPPORTED_BROWSER"
+msgstr "Tarayıcınız desteklenmiyor. Bu web sitesini kullanmak için lütfen Chrome, Firefox, Safari veya Edge’in en son sürümüne geçin."
+
+msgid "DATATABLES_PLACEHOLDER_SEARCH"
+msgstr "Arama.."
+
+msgid "WEBSITE_TITLE"
+msgstr " | TS-website Türkce dili"
+
+msgid "ADMIN_STATUS_ONLINE"
+msgstr "Aktif"
+
+msgid "ADMIN_STATUS_AWAY"
+msgstr "Uzakta"
+
+msgid "ADMIN_STATUS_OFFLINE"
+msgstr "Çevrimdışı"
+
+msgid "ADMIN_STATUS_EMPTY_GROUP"
+msgstr "Gösterecek bir şey yok"
+
+msgid "ADMIN_STATUS_EMPTY_STATUS"
+msgstr "Yönetici durumu boş"
+
+msgid "ASSIGNER_PANEL_TITLE"
+msgstr "Yetki görevlisi"
+
+msgid "ASSIGNER_TITLE"
+msgstr "Yetki görevlisi"
+
+msgid "BANS_EMPTY"
+msgstr "Yasaklanmış kullanıcı yok!"
+
+msgid "BANS_TITLE"
+msgstr "Ban Listesi"
+
+msgid "BANS_PANEL_TITLE"
+msgstr "Ban Listesi"
+
+msgid "BANS_BANNED_ALERT_TITLE"
+msgstr "IP'niz {0} tarafından yasaklandı"
+
+msgid "BANS_BANNED_ALERT_REASON"
+msgstr "Sebep: {0}"
+
+msgid "BANS_VIEW_MORE_TIP"
+msgstr "Yasak hakkında daha fazla ayrıntı görüntülemek için bir satıra tıklayın"
+
+msgid "RULES_TITLE"
+msgstr "Kurallar"
+
+msgid "RULES_PANEL_TITLE"
+msgstr "Kurallar"
+
+msgid "FAQ_COPY_LINK"
+msgstr "Bu cevabın bağlantısını kopyala"
+
+msgid "FAQ_PANEL_TITLE"
+msgstr "S.S.S"
+
+msgid "FAQ_TITLE"
+msgstr "S.S.S"
+
+msgid "FAQ_COPY_LINK_SUCCESS"
+msgstr "Kopyalandı!"
+
+msgid "FAQ_COPY_LINK_ERROR"
+msgstr "Hata!"
+
+msgid "HOME_TITLE"
+msgstr "Haberler"
+
+msgid "HOME_PANEL_TITLE"
+msgstr "Haberler"
+
+msgid "HOME_EMPTY"
+msgstr "Şu an hiç haber yok"
+
+msgid "HOME_INVALID_PAGE"
+msgstr "Geçersiz sayfa numarası"
+
+msgid "HOME_PREVIOUS_NEWS"
+msgstr "Önceki"
+
+msgid "HOME_NEXT_NEWS"
+msgstr "Sonraki"
+
+msgid "ADMIN_STATUS_PANEL_TITLE"
+msgstr "Yönetici durumu"
+
+msgid "ADMIN_STATUS_HIDE_OFFLINE_TIP"
+msgstr "Çevrimdışı yöneticileri gizle"
+
+msgid "ADMIN_STATUS_SHOW_OFFLINE_TIP"
+msgstr "Çevrimdışı yöneticileri göster"
+
+msgid "ADMIN_STATUS_ERROR"
+msgstr "Yönetici durumu hatası"
+
+msgid "NAV_TOGGLE"
+msgstr "Gezinmeyi değiştir"
+
+msgid "NAV_VIEWER"
+msgstr "Görüntüle"
+
+msgid "NAV_ASSIGNER"
+msgstr "Yetki"
+
+msgid "NAV_BANS"
+msgstr "Ban listesi"
+
+msgid "NAV_RULES"
+msgstr "Kurallar"
+
+msgid "NAV_FAQ"
+msgstr "S.S.S"
+
+msgid "NAV_ACCOUNT_LOGIN"
+msgstr "Giriş yap"
+
+msgid "NAV_ACCOUNT_LOGOUT"
+msgstr "Çıkış yap"
+
+msgid "VIEWER_TITLE"
+msgstr "Sunucuyu görüntüle"
+
+msgid "VIEWER_PANEL_TITLE"
+msgstr "Sunucuyu görüntüle"
+
+msgid "VIEWER_SHOW_EMPTY"
+msgstr "Boş kanalları göster"
+
+msgid "VIEWER_HIDE_EMPTY"
+msgstr "Boş kanalları gizle"
+
+msgid "VIEWER_TIP_ALERT"
+msgstr "Katılmak için bir kanala tıklayın. Bilgilerini kontrol etmek için bir kullanıcının üzerine gelin"
+
+msgid "ARIA_CLOSE"
+msgstr "Kapat"
+
+msgid "VIEWER_ERROR"
+msgstr "Sunucu Görüntülenemiyor!"
+
+msgid "VIEWER_CONNECTION_CONFIRMATION"
+msgstr "Bu kanala bağlanmak ister misiniz?"
+
+msgid "VIEWER_CLIENT_LASTACTIVE"
+msgstr "Son İşlem:"
+
+msgid "VIEWER_CLIENT_ONLINE"
+msgstr "Aktiflik Süresi:"
+
+msgid "VIEWER_CLIENT_JOINED"
+msgstr "İlk giriş:"
+
+msgid "VIEWER_CLIENT_TITLE"
+msgstr "Kullanıcı bilgileri"
+
+msgid "VIEWER_SERVER_ICON"
+msgstr "Sunucu ikonu"
+
+msgid "VIEWER_DEFAULT_CHANNEL"
+msgstr "Standart kanal"
+
+msgid "VIEWER_CHANNEL_UNSUB1"
+msgstr ", aboneliği iptal et"
+
+msgid "VIEWER_CHANNEL_OCCUPIED"
+msgstr "Tamamen meşgul"
+
+msgid "VIEWER_CHANNEL_PASSWORD"
+msgstr "Şifreli Kanal"
+
+msgid "VIEWER_CHANNEL_UNSUB2"
+msgstr "Abonelikten Çık"
+
+msgid "VIEWER_CHANNEL_ICON"
+msgstr "Kanal ikonu"
+
+msgid "VIEWER_CHANNEL_MODERATED"
+msgstr "Modereatör düzenlemesi"
+
+msgid "VIEWER_CHANNEL_MUSIC_CODED"
+msgstr "Yüksek Kalite Ses"
+
+msgid "VIEWER_CLIENT_AWAY"
+msgstr "Uzakta"
+
+msgid "VIEWER_CLIENT_OUTPUT_DISABLED"
+msgstr "Ses devre dışı"
+
+msgid "VIEWER_CLIENT_OUTPUT_MUTED"
+msgstr "Ses Kapalı"
+
+msgid "VIEWER_CLIENT_MIC_DISABLED"
+msgstr "Mikrofon devre dışı"
+
+msgid "VIEWER_CLIENT_MIC_MUTED"
+msgstr "Mikrofon kapalı"
+
+msgid "VIEWER_CLIENT_COMMANDER"
+msgstr "Kanal Komutanı"
+
+msgid "VIEWER_CLIENT_ICON"
+msgstr "Kullanıcı ikonu"
+
+msgid "VIEWER_CLIENT_PRIORITY_SPEAKER"
+msgstr "Öncelikli konuşmacı"
+
+msgid "VIEWER_CLIENT_TALK_POWER_GRANTED"
+msgstr "Konuşma gücü verildi"
+
+msgid "VIEWER_CLIENT_TALK_POWER_INSUFFICIENT"
+msgstr "Yetersiz konuşma gücü"
+
+msgid "ASSIGNER_NOT_LOGGED_IN"
+msgstr "Yetki almak için önce giriş yapınız!"
+
+msgid "ASSIGNER_LOGIN_BUTTON"
+msgstr "Giriş yap"
+
+msgid "ASSIGNER_SAVE_BUTTON"
+msgstr "Kaydet"
+
+msgid "ASSIGNER_INVALID_GROUPS"
+msgstr "Geçersiz grup ayarları"
+
+msgid "ASSIGNER_NOT_CONFIGURED"
+msgstr "Yetki sistemi yönetici tarafından tanımlanmamıştır."
+
+msgid "ASSIGNER_SAVE_SUCCESS"
+msgstr "Yetkileriniz güncellendi"
+
+msgid "ASSIGNER_SAVE_ERROR"
+msgstr "Yetki değişikliği hatası"
+
+msgid "ASSIGNER_SAVE_NO_CHANGE"
+msgstr "Hiçbir değişiklik yapılmadı"
+
+msgid "IMPRINT_TITLE"
+msgstr "Künye"

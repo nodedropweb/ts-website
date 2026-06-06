@@ -1,0 +1,349 @@
+# TS-Website frontend translations — Norwegian (Bokmål)
+# Domain: frontend
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nb\n"
+
+msgid "ASSIGNER_NO_REQUIRED_GROUPS"
+msgstr "Du har ikke noen av de nødvendige gruppene. Du kan ikke bruke gruppen tildeler."
+
+msgid "DATE_FORMAT"
+msgstr "d.m.Y"
+
+msgid "TIME_FORMAT"
+msgstr "H:i"
+
+msgid "BANS_HEADER_TARGET"
+msgstr "Forbud"
+
+msgid "AUTHORS"
+msgstr "Patryk Gawin <allthebest.pl@gmail.com>"
+
+msgid "COOKIEALERT_MESSAGE"
+msgstr "<b>Liker du informasjonskapsel?</b> &#x1F36A; Vi bruker informasjonskapsler for å sikre at du får den beste opplevelsen på nettstedet vårt. <a href=\"https://support.mozilla.org/no/kb/infokapsler-informasjon-nettsteder-lagrer-p%C3%A5-datamaskinen-din\" target=\"_blank\">Les mer</a>"
+
+msgid "COOKIEALERT_AGREE"
+msgstr "Jeg godkjenner"
+
+msgid "OUTDATED_DATA"
+msgstr "<b>OBS!</b> Noe informasjon kan ikke fås nå. Viser utdaterte data fra {0}."
+
+msgid "SHOW_PROBLEMS"
+msgstr "Vis problemer"
+
+msgid "PROBLEMS_DESCRIPTION"
+msgstr "Problemer som oppstår mens du kobler til Teamspeak-serveren"
+
+msgid "NO_JAVASCRIPT_ENABLED"
+msgstr "Dette nettstedet fungerer ikke uten  <a href=\"https://www.enable-javascript.com/\" target=\"_blank\">JavaScript aktivert</a>."
+
+msgid "CANNOT_GET_DATA"
+msgstr "Kan ikke få data for \"{0}\"! Ta kontakt med eieren av nettstedet."
+
+msgid "NO_REASON_SET"
+msgstr "<b>(ingen grunn valgt)</b>"
+
+msgid "BANS_HEADER_REASON"
+msgstr "Grunn"
+
+msgid "BANS_HEADER_INVOKER"
+msgstr "Forbudt av"
+
+msgid "BANS_HEADER_BANDATE"
+msgstr "Forbudsdato"
+
+msgid "BANS_HEADER_EXPIRES"
+msgstr "Utløper"
+
+msgid "DATATABLES_LANGUAGE_NAME"
+msgstr "Norwegian-Bokmal"
+
+msgid "BANS_NEVEREXPIRES"
+msgstr "Aldri"
+
+msgid "STATUS_ADDRESS"
+msgstr "Address:"
+
+msgid "STATUS_CLIENTS_ONLINE"
+msgstr "Online:"
+
+msgid "STATUS_RESERVED_SLOTS"
+msgstr "{0}  reserverte spor"
+
+msgid "STATUS_TOP_ONLINE"
+msgstr "Mest online:"
+
+msgid "STATUS_TOP_ONLINE_DESC"
+msgstr "Anskaffet på {0}"
+
+msgid "STATUS_UPTIME"
+msgstr "Oppetid:"
+
+msgid "STATUS_VERSION"
+msgstr "Versjon:"
+
+msgid "STATUS_VERSION_DESC"
+msgstr "{0} av {1}"
+
+msgid "STATUS_PING"
+msgstr "Gjn. ping:"
+
+msgid "STATUS_PACKETLOSS"
+msgstr "Gjn. pakketap:"
+
+msgid "STATUS_ERROR"
+msgstr "Kan ikke hente serverstatus"
+
+msgid "STATUS_PANEL_TITLE"
+msgstr "Serverstatus"
+
+msgid "DAYJS_LANG"
+msgstr "nb"
+
+msgid "LOGIN_CONFIRMATION_CODE"
+msgstr "Hei, her er bekreftelseskoden din for å logge inn: [b]{0}[/b]"
+
+msgid "UNSUPPORTED_BROWSER"
+msgstr "Nettleseren din støttes ikke. Bytt til den nyeste versjonen av Chrome, Firefox, Safari eller Edge for å bruke dette nettstedet."
+
+msgid "DATATABLES_PLACEHOLDER_SEARCH"
+msgstr "Søk..."
+
+msgid "WEBSITE_TITLE"
+msgstr " | TS-website Norsk språk"
+
+msgid "ADMIN_STATUS_ONLINE"
+msgstr "Online"
+
+msgid "ADMIN_STATUS_AWAY"
+msgstr "Borte"
+
+msgid "ADMIN_STATUS_OFFLINE"
+msgstr "Frakoblet"
+
+msgid "ADMIN_STATUS_EMPTY_GROUP"
+msgstr "Ingenting å vise"
+
+msgid "ADMIN_STATUS_EMPTY_STATUS"
+msgstr "Admin status er tom"
+
+msgid "ASSIGNER_PANEL_TITLE"
+msgstr "Gruppen tildeler"
+
+msgid "ASSIGNER_TITLE"
+msgstr "Gruppen tildeler"
+
+msgid "BANS_EMPTY"
+msgstr "Banliste er tom"
+
+msgid "BANS_TITLE"
+msgstr "Banlist"
+
+msgid "BANS_PANEL_TITLE"
+msgstr "Banlist"
+
+msgid "BANS_BANNED_ALERT_TITLE"
+msgstr "IP -en din er forbudt av {0}"
+
+msgid "BANS_BANNED_ALERT_REASON"
+msgstr "Årsak: {0}"
+
+msgid "BANS_VIEW_MORE_TIP"
+msgstr "Klikk på en rad for å se flere detaljer om forbud"
+
+msgid "RULES_TITLE"
+msgstr "Regler"
+
+msgid "RULES_PANEL_TITLE"
+msgstr "Regler"
+
+msgid "FAQ_COPY_LINK"
+msgstr "Kopier lenke til det svaret"
+
+msgid "FAQ_PANEL_TITLE"
+msgstr "FAQ"
+
+msgid "FAQ_TITLE"
+msgstr "FAQ"
+
+msgid "FAQ_COPY_LINK_SUCCESS"
+msgstr "Kopiert!"
+
+msgid "FAQ_COPY_LINK_ERROR"
+msgstr "Feil!"
+
+msgid "HOME_TITLE"
+msgstr "Nyheter"
+
+msgid "HOME_PANEL_TITLE"
+msgstr "Nyheter"
+
+msgid "HOME_EMPTY"
+msgstr "Beklager, ingen nyheter tilgjengelig for øyeblikket"
+
+msgid "HOME_INVALID_PAGE"
+msgstr "Ugyldig sidetall"
+
+msgid "HOME_PREVIOUS_NEWS"
+msgstr "Forrige"
+
+msgid "HOME_NEXT_NEWS"
+msgstr "Neste"
+
+msgid "ADMIN_STATUS_PANEL_TITLE"
+msgstr "Admin status"
+
+msgid "ADMIN_STATUS_HIDE_OFFLINE_TIP"
+msgstr "Skjul frakoblet administratorer"
+
+msgid "ADMIN_STATUS_SHOW_OFFLINE_TIP"
+msgstr "Vis frakoblet administratorer"
+
+msgid "ADMIN_STATUS_ERROR"
+msgstr "Admin status feil"
+
+msgid "NAV_TOGGLE"
+msgstr "Velg navigasjon"
+
+msgid "NAV_VIEWER"
+msgstr "Visningsprogram"
+
+msgid "NAV_ASSIGNER"
+msgstr "Tildeler"
+
+msgid "NAV_BANS"
+msgstr "Forbud"
+
+msgid "NAV_RULES"
+msgstr "Regler"
+
+msgid "NAV_FAQ"
+msgstr "FAQ"
+
+msgid "NAV_ACCOUNT_LOGIN"
+msgstr "Logg inn"
+
+msgid "NAV_ACCOUNT_LOGOUT"
+msgstr "Logg ut"
+
+msgid "VIEWER_TITLE"
+msgstr "Servervisning"
+
+msgid "VIEWER_PANEL_TITLE"
+msgstr "Servervisning"
+
+msgid "VIEWER_SHOW_EMPTY"
+msgstr "Viser tom kanaler"
+
+msgid "VIEWER_HIDE_EMPTY"
+msgstr "Skjul tom kanaler"
+
+msgid "VIEWER_TIP_ALERT"
+msgstr "Klikk på en kanal for å bli med i den. Hold over en bruker for å sjekke informasjonen deres"
+
+msgid "ARIA_CLOSE"
+msgstr "Lukk"
+
+msgid "VIEWER_ERROR"
+msgstr "Visning feil"
+
+msgid "VIEWER_CONNECTION_CONFIRMATION"
+msgstr "Vil du koble til denne kanalen?"
+
+msgid "VIEWER_CLIENT_LASTACTIVE"
+msgstr "Siste aktiv:"
+
+msgid "VIEWER_CLIENT_ONLINE"
+msgstr "Oppetid"
+
+msgid "VIEWER_CLIENT_JOINED"
+msgstr "Først ble med:"
+
+msgid "VIEWER_CLIENT_TITLE"
+msgstr "Klientinformasjon"
+
+msgid "VIEWER_SERVER_ICON"
+msgstr "Server ikon"
+
+msgid "VIEWER_DEFAULT_CHANNEL"
+msgstr "Standardkanal"
+
+msgid "VIEWER_CHANNEL_UNSUB1"
+msgstr ", meldt ut"
+
+msgid "VIEWER_CHANNEL_OCCUPIED"
+msgstr "Fullt okkupert"
+
+msgid "VIEWER_CHANNEL_PASSWORD"
+msgstr "Passordbeskyttet"
+
+msgid "VIEWER_CHANNEL_UNSUB2"
+msgstr "Meldt ut"
+
+msgid "VIEWER_CHANNEL_ICON"
+msgstr "Kanal ikon"
+
+msgid "VIEWER_CHANNEL_MODERATED"
+msgstr "Moderert"
+
+msgid "VIEWER_CHANNEL_MUSIC_CODED"
+msgstr "Musikkkodek"
+
+msgid "VIEWER_CLIENT_AWAY"
+msgstr "Borte"
+
+msgid "VIEWER_CLIENT_OUTPUT_DISABLED"
+msgstr "Lyd deaktivert"
+
+msgid "VIEWER_CLIENT_OUTPUT_MUTED"
+msgstr "Døved"
+
+msgid "VIEWER_CLIENT_MIC_DISABLED"
+msgstr "Mikrofon deaktivert"
+
+msgid "VIEWER_CLIENT_MIC_MUTED"
+msgstr "Dempet"
+
+msgid "VIEWER_CLIENT_COMMANDER"
+msgstr "Kanalsjef"
+
+msgid "VIEWER_CLIENT_ICON"
+msgstr "Klient ikon"
+
+msgid "VIEWER_CLIENT_PRIORITY_SPEAKER"
+msgstr "Prioritert taler"
+
+msgid "VIEWER_CLIENT_TALK_POWER_GRANTED"
+msgstr "Talk makt gitt"
+
+msgid "VIEWER_CLIENT_TALK_POWER_INSUFFICIENT"
+msgstr "Insuffisient snakke makt"
+
+msgid "ASSIGNER_NOT_LOGGED_IN"
+msgstr "Logg inn før du bruker grupper tildeler"
+
+msgid "ASSIGNER_LOGIN_BUTTON"
+msgstr "Logg inn"
+
+msgid "ASSIGNER_SAVE_BUTTON"
+msgstr "Lagre"
+
+msgid "ASSIGNER_INVALID_GROUPS"
+msgstr "Ugyldige gruppeinnstillinger"
+
+msgid "ASSIGNER_NOT_CONFIGURED"
+msgstr "Grupper tildeler er ikke konfigurert av nettstedsadministratoren"
+
+msgid "ASSIGNER_SAVE_SUCCESS"
+msgstr "Gruppene dine er oppdatert"
+
+msgid "ASSIGNER_SAVE_ERROR"
+msgstr "Gruppeendringsfeil"
+
+msgid "ASSIGNER_SAVE_NO_CHANGE"
+msgstr "Ingen endringer er gjort"
+
+msgid "IMPRINT_TITLE"
+msgstr "Impressum"

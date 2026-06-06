@@ -1,0 +1,22 @@
+# TS-Website frontend translations — English (US)
+# Domain: frontend
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en-us\n"
+
+msgid "LOGIN_CONFIRMATION_CODE"
+msgstr "Hello, your login confirmation code is: [b]{0}[/b]"
+
+msgid "DAYJS_LANG"
+msgstr "en"
+
+msgid "DATE_FORMAT"
+msgstr "m.d.Y"
+
+msgid "TIME_FORMAT"
+msgstr "g:i A"
+
+msgid "IMPRINT_TITLE"
+msgstr "Imprint"

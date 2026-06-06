@@ -1,0 +1,169 @@
+# TS-Website installer translations — cs
+# Domain: installer
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: cs\n"
+
+msgid "INSTALLER_NAV_BRAND"
+msgstr "Instalátor TS-Website"
+
+msgid "INSTALLER_STEP_WELCOME"
+msgstr "Vítejte"
+
+msgid "INSTALLER_STEP_REQUIREMENTS"
+msgstr "Požadavky"
+
+msgid "INSTALLER_STEP_DATABASE"
+msgstr "Databáze"
+
+msgid "INSTALLER_STEP_TEAMSPEAK"
+msgstr "TeamSpeak"
+
+msgid "INSTALLER_STEP_SECURITY"
+msgstr "Zabezpečení"
+
+msgid "INSTALLER_STEP_CONFIGURATION"
+msgstr "Konfigurace"
+
+msgid "INSTALLER_STEP_DONE"
+msgstr "Hotovo"
+
+msgid "INSTALLER_WELCOME_TITLE"
+msgstr "Vítejte v instalátoru TS-website!"
+
+msgid "INSTALLER_WELCOME_DESCRIPTION"
+msgstr "Tento průvodce vás provede procesem instalace TS-website."
+
+msgid "INSTALLER_WELCOME_NO_JS"
+msgstr "Před pokračováním povolte Javascript!"
+
+msgid "INSTALLER_WELCOME_READY"
+msgstr "Přejděte na další krok, až budete připraveni!"
+
+msgid "INSTALLER_WELCOME_METRICS_CHECKBOX"
+msgstr "Odeslat jednorázové statistiky pro zlepšení TS-website"
+
+msgid "INSTALLER_BTN_START"
+msgstr "Spustit"
+
+msgid "INSTALLER_REQ_TITLE"
+msgstr "Kontrola požadavků"
+
+msgid "INSTALLER_REQ_SHOW_DETAILS"
+msgstr "Zobrazit podrobnosti"
+
+msgid "INSTALLER_REQ_SUCCESS"
+msgstr "<strong>Úspěch!</strong> Můžete spustit TS-website!"
+
+msgid "INSTALLER_BTN_RECHECK"
+msgstr "Znovu zkontrolovat"
+
+msgid "INSTALLER_BTN_NEXT"
+msgstr "Další"
+
+msgid "INSTALLER_BTN_BACK"
+msgstr "Zpět"
+
+msgid "INSTALLER_BTN_SUBMIT"
+msgstr "Odeslat"
+
+msgid "INSTALLER_DB_TITLE"
+msgstr "Podrobnosti databáze"
+
+msgid "INSTALLER_DB_USE_MYSQL"
+msgstr "Použít MySQL / MariaDB"
+
+msgid "INSTALLER_DB_USE_SQLITE"
+msgstr "Použít SQLite databázi"
+
+msgid "INSTALLER_DB_HOSTNAME"
+msgstr "Hostname"
+
+msgid "INSTALLER_DB_HOSTNAME_TIP"
+msgstr "Pro localhost použijte '127.0.0.1'"
+
+msgid "INSTALLER_DB_USERNAME"
+msgstr "Uživatelské jméno"
+
+msgid "INSTALLER_DB_PASSWORD"
+msgstr "Heslo"
+
+msgid "INSTALLER_DB_NAME"
+msgstr "Název databáze"
+
+msgid "INSTALLER_DB_PREFIX"
+msgstr "Prefix tabulek (volitelné)"
+
+msgid "INSTALLER_DB_PREFIX_TIP"
+msgstr "Výchozí hodnota je 'tsw_'"
+
+msgid "INSTALLER_DB_ERR_FILL_IN"
+msgstr "Vyplňte prosím podrobnosti databáze"
+
+msgid "INSTALLER_TS_TITLE"
+msgstr "Podrobnosti Query"
+
+msgid "INSTALLER_TS_HOSTNAME"
+msgstr "Hostname"
+
+msgid "INSTALLER_TS_QUERYPORT"
+msgstr "Port ServerQuery"
+
+msgid "INSTALLER_TS_VOICEPORT"
+msgstr "Hlasový port"
+
+msgid "INSTALLER_TS_QUERYUSERNAME"
+msgstr "Uživatelské jméno Query"
+
+msgid "INSTALLER_TS_QUERYPASSWORD"
+msgstr "Heslo Query"
+
+msgid "INSTALLER_TS_DISPLAYIP"
+msgstr "Zobrazená adresa"
+
+msgid "INSTALLER_TS_CACHING_ICONS"
+msgstr "Ukládání ikon ze serveru TS3 do mezipaměti, čekejte prosím..."
+
+msgid "INSTALLER_TS_ERR_CANNOT_GET_INFO"
+msgstr "Nelze získat informace o serveru"
+
+msgid "INSTALLER_SEC_TITLE"
+msgstr "Zabezpečení: adresář private/"
+
+msgid "INSTALLER_SEC_DIR_PROTECTED"
+msgstr "Adresář je chráněn"
+
+msgid "INSTALLER_SEC_DIR_NOT_PROTECTED"
+msgstr "Adresář NENÍ chráněn"
+
+msgid "INSTALLER_SEC_HTACCESS_PRESENT"
+msgstr ".htaccess přítomen"
+
+msgid "INSTALLER_SEC_HTACCESS_MISSING"
+msgstr ".htaccess chybí"
+
+msgid "INSTALLER_CONFIG_TITLE"
+msgstr "Nakonfigurujte svůj web"
+
+msgid "INSTALLER_CONFIG_SITE_NAME_LABEL"
+msgstr "Název / titulek webu"
+
+msgid "INSTALLER_CONFIG_TIMEZONE_LABEL"
+msgstr "Zvolte časové pásmo"
+
+msgid "INSTALLER_CONFIG_CLOUDFLARE_LABEL"
+msgstr "Používám Cloudflare"
+
+msgid "INSTALLER_DONE_TITLE"
+msgstr "TS-website {0} byl úspěšně nainstalován! 👍"
+
+msgid "INSTALLER_DONE_REMOVE_DIR"
+msgstr "Pokud chcete, můžete odstranit adresář <code>installer</code>."
+
+msgid "INSTALLER_DONE_WHATNOW"
+msgstr "Co teď?"
+
+msgid "INSTALLER_DONE_VISIT_TITLE"
+msgstr "Navštivte svůj nový web"

@@ -115,26 +115,45 @@ if (isset($_GET["syncicons"])) {
 
 <!-- Modal -->
 <div class="modal fade" id="queryperms" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Query permissions required by TS-website</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <h5 class="modal-title"><?= htmlspecialchars(__t('INSTALLER_TS_QUERYPERMS_TITLE')) ?></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="<?= htmlspecialchars(__t('ARIA_CLOSE')) ?>"  >
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body">
-                <ul>
-                    <?php
-                    if(!empty($GLOBALS["__REQUIRED_QUERY_PERMS"])) {
-                        foreach ($GLOBALS["__REQUIRED_QUERY_PERMS"] as $perm) {
-                            echo "<li><code>" . htmlspecialchars($perm) . "</code></li>";
-                        }
-                    } else {
-                        echo "Error! <code>\$GLOBALS[\"__REQUIRED_QUERY_PERMS\"]</code> is not defined!";
-                    }
-                    ?>
-                </ul>
+            <div class="modal-body p-0">
+                <?php
+                $perms = [
+                    'b_serverinstance_info_view'              => 'Establish connection to the server',
+                    'b_virtualserver_select'                  => 'Select virtual server',
+                    'b_virtualserver_info_view'               => 'Read server info (name, slots, …) — Channel Viewer & Status Widget',
+                    'b_virtualserver_channel_list'            => 'Fetch channel list — Channel Viewer',
+                    'b_virtualserver_client_list'             => 'Fetch online clients — Channel Viewer & Login system',
+                    'b_virtualserver_servergroup_list'        => 'List server groups — Admin Status Widget & Group Assigner',
+                    'b_virtualserver_channelgroup_list'       => 'List channel groups — Channel Viewer',
+                    'b_virtualserver_servergroup_client_list' => 'Fetch server group members — Admin Status Widget',
+                    'b_client_info_view'                      => 'Read client details — Channel Viewer popover',
+                    'b_virtualserver_ban_list'                => 'Fetch ban list — Admin Panel',
+                ];
+                ?>
+                <table class="table table-sm mb-0">
+                    <thead>
+                        <tr>
+                            <th class="pl-3" style="width:50%">Permission</th>
+                            <th>Purpose</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <?php foreach ($perms as $perm => $desc): ?>
+                        <tr>
+                            <td class="pl-3"><code><?= htmlspecialchars($perm) ?></code></td>
+                            <td class="text-muted small"><?= htmlspecialchars($desc) ?></td>
+                        </tr>
+                    <?php endforeach; ?>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
@@ -156,7 +175,7 @@ if (isset($_GET["syncicons"])) {
                 <div class="spinner-border spinner-border-sm mr-2" role="status">
                     <span class="sr-only">Loading...</span>
                 </div>
-                Caching icons from the TS3 server, please wait...
+                <?= htmlspecialchars(__t('INSTALLER_TS_CACHING_ICONS')) ?>
             </div>
         </div>
     </div>
@@ -165,62 +184,64 @@ if (isset($_GET["syncicons"])) {
     <div class="card">
 
         <div class="card-body">
-            <h4 class="card-title text-center">Query details</h4>
+            <h4 class="card-title text-center"><?= htmlspecialchars(__t('INSTALLER_TS_TITLE')) ?></h4>
 
             <div class="row justify-content-md-center">
                 <form id="tsform" class="col-md-4" method="post" action="<?= "?step=$stepNumber" ?>">
 
                     <div class="alert alert-info">
-                        If the TS3 server is not hosted locally, and you have access to the TS3
-                        server files, then make sure to edit the <code>query_ip_allowlist.txt</code> file and
-                        add the IP of the machine/VPS hosting TS&#8209;website to it, then restart the TS3 server.
-                        Otherwise, TS&#8209;website might get rate-limited by the TS3 server and periodically stop working.
+                        <?= __t('INSTALLER_TS_ALLOWLIST_HINT') ?>
                     </div>
 
                     <div class="input-group mb-2">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fa fa-link fa-fw"></i></span>
                         </div>
-                        <input class="form-control" name="queryhostname" placeholder="Hostname" required autofocus autocomplete="off">
+                        <input class="form-control" name="queryhostname" placeholder="<?= htmlspecialchars(__t('INSTALLER_TS_HOSTNAME')) ?>" required autofocus autocomplete="off">
                         <div class="input-group-append">
-                            <span class="input-group-text" data-toggle="tooltip" title="Your TeamSpeak IP address (without port).<br>Use '127.0.0.1' for localhost">
+                            <span class="input-group-text" data-toggle="tooltip" title="<?= htmlspecialchars(__t('INSTALLER_TS_HOSTNAME_TIP')) ?>">
                                 <i class="fa fa-question-circle fa-fw"></i>
                             </span>
                         </div>
                     </div>
 
                     <p class="text-muted text-center" style="font-size: 100%">
-                        Use <code>127.0.0.1</code> as the hostname if TS-website and the
-                        TS3 server are on the same machine/VPS.
+                        <?= __t('INSTALLER_TS_LOCALHOST_HINT') ?>
                     </p>
 
-                    <div class="row">
-                        <div class="col input-group mb-2">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fa fa-signal fa-fw"></i></span>
-                            </div>
-                            <input type="number" class="form-control" name="queryport" placeholder="Query port" required autocomplete="off">
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-signal fa-fw"></i></span>
                         </div>
-
-                        <div class="col input-group mb-2">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fa fa-signal fa-fw"></i></span>
-                            </div>
-                            <input type="number" class="form-control" name="queryserverport" placeholder="Server port" required autocomplete="off">
+                        <input type="number" class="form-control" name="queryport"
+                               placeholder="<?= htmlspecialchars(__t('INSTALLER_TS_QUERYPORT')) ?>" value="10011" required autocomplete="off">
+                        <div class="input-group-append">
+                            <span class="input-group-text" data-toggle="tooltip" title="<?= htmlspecialchars(__t('INSTALLER_TS_QUERYPORT_TIP')) ?>">
+                                <i class="fa fa-question-circle fa-fw"></i>
+                            </span>
                         </div>
                     </div>
 
-                    <p class="text-muted text-center" style="font-size: 100%">
-                        Default query port: 10011, default server port: 9987.
-                    </p>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-signal fa-fw"></i></span>
+                        </div>
+                        <input type="number" class="form-control" name="queryserverport"
+                               placeholder="<?= htmlspecialchars(__t('INSTALLER_TS_VOICEPORT')) ?>" value="9987" required autocomplete="off">
+                        <div class="input-group-append">
+                            <span class="input-group-text" data-toggle="tooltip" title="<?= htmlspecialchars(__t('INSTALLER_TS_VOICEPORT_TIP')) ?>">
+                                <i class="fa fa-question-circle fa-fw"></i>
+                            </span>
+                        </div>
+                    </div>
 
                     <div class="input-group mb-2">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fa fa-user fa-fw"></i></span>
                         </div>
-                        <input class="form-control" name="queryusername" placeholder="Query username" required autocomplete="off">
+                        <input class="form-control" name="queryusername" placeholder="<?= htmlspecialchars(__t('INSTALLER_TS_QUERYUSERNAME')) ?>" required autocomplete="off">
                         <div class="input-group-append">
-                            <span class="input-group-text" data-toggle="tooltip" title="Its recommended to create special user account instead of serveradmin">
+                            <span class="input-group-text" data-toggle="tooltip" title="<?= htmlspecialchars(__t('INSTALLER_TS_QUERYUSERNAME_TIP')) ?>">
                                 <i class="fa fa-exclamation-triangle color-danger fa-fw"></i>
                             </span>
                         </div>
@@ -230,24 +251,24 @@ if (isset($_GET["syncicons"])) {
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fa fa-lock fa-fw"></i></span>
                         </div>
-                        <input type="password" class="form-control" name="querypassword" placeholder="Query password" required autocomplete="off">
+                        <input type="password" class="form-control" name="querypassword" placeholder="<?= htmlspecialchars(__t('INSTALLER_TS_QUERYPASSWORD')) ?>" required autocomplete="off">
                     </div>
 
                     <div class="input-group mb-2">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fa fa-font fa-fw"></i></span>
                         </div>
-                        <input class="form-control" name="querydisplayip" placeholder="Displayed address" required autocomplete="off">
+                        <input class="form-control" name="querydisplayip" placeholder="<?= htmlspecialchars(__t('INSTALLER_TS_DISPLAYIP')) ?>" required autocomplete="off">
                         <div class="input-group-append">
                             <span class="input-group-text" data-toggle="tooltip"
-                                  title="Friendly server address displayed to end users.<br>For example 'myserver.com' or 'ts.myclan.net'">
+                                  title="<?= htmlspecialchars(__t('INSTALLER_TS_DISPLAYIP_TIP')) ?>">
                                 <i class="fa fa-question-circle fa-fw"></i>
                             </span>
                         </div>
                     </div>
 
                     <a href="#" data-toggle="modal" data-target="#queryperms" class="text-center">
-                        <p>Query permissions required by TS-website</p>
+                        <p><?= htmlspecialchars(__t('INSTALLER_TS_QUERYPERMS_LINK')) ?></p>
                     </a>
 
                     <button id="submitform" type="submit" style="display: none"></button>
@@ -257,7 +278,7 @@ if (isset($_GET["syncicons"])) {
 
         <div class="card-footer text-right">
             <a href="#" id="submitformalt" class="btn btn-primary float-right">
-                Submit <i class="fas fa-chevron-right"></i>
+                <?= htmlspecialchars(__t('INSTALLER_BTN_SUBMIT')) ?> <i class="fas fa-chevron-right"></i>
             </a>
         </div>
     </div>

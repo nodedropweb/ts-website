@@ -1,0 +1,169 @@
+# TS-Website installer translations — da
+# Domain: installer
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: da\n"
+
+msgid "INSTALLER_NAV_BRAND"
+msgstr "TS-Website Installationsprogram"
+
+msgid "INSTALLER_STEP_WELCOME"
+msgstr "Velkommen"
+
+msgid "INSTALLER_STEP_REQUIREMENTS"
+msgstr "Krav"
+
+msgid "INSTALLER_STEP_DATABASE"
+msgstr "Database"
+
+msgid "INSTALLER_STEP_TEAMSPEAK"
+msgstr "TeamSpeak"
+
+msgid "INSTALLER_STEP_SECURITY"
+msgstr "Sikkerhed"
+
+msgid "INSTALLER_STEP_CONFIGURATION"
+msgstr "Konfiguration"
+
+msgid "INSTALLER_STEP_DONE"
+msgstr "Færdig"
+
+msgid "INSTALLER_WELCOME_TITLE"
+msgstr "Velkommen til TS-website installationsprogrammet!"
+
+msgid "INSTALLER_WELCOME_DESCRIPTION"
+msgstr "Denne guide fører dig gennem installationsprocessen for TS-website."
+
+msgid "INSTALLER_WELCOME_NO_JS"
+msgstr "Aktivér venligst Javascript inden du fortsætter!"
+
+msgid "INSTALLER_WELCOME_READY"
+msgstr "Gå til næste trin, når du er klar!"
+
+msgid "INSTALLER_WELCOME_METRICS_CHECKBOX"
+msgstr "Send engangsstatistik for at hjælpe med at forbedre TS-website"
+
+msgid "INSTALLER_BTN_START"
+msgstr "Start"
+
+msgid "INSTALLER_REQ_TITLE"
+msgstr "Kravkontrol"
+
+msgid "INSTALLER_REQ_SHOW_DETAILS"
+msgstr "Vis detaljer"
+
+msgid "INSTALLER_REQ_SUCCESS"
+msgstr "<strong>Succes!</strong> Du kan køre TS-website!"
+
+msgid "INSTALLER_BTN_RECHECK"
+msgstr "Kontrollér igen"
+
+msgid "INSTALLER_BTN_NEXT"
+msgstr "Næste"
+
+msgid "INSTALLER_BTN_BACK"
+msgstr "Tilbage"
+
+msgid "INSTALLER_BTN_SUBMIT"
+msgstr "Send"
+
+msgid "INSTALLER_DB_TITLE"
+msgstr "Databasedetaljer"
+
+msgid "INSTALLER_DB_USE_MYSQL"
+msgstr "Brug MySQL / MariaDB"
+
+msgid "INSTALLER_DB_USE_SQLITE"
+msgstr "Brug SQLite-database"
+
+msgid "INSTALLER_DB_HOSTNAME"
+msgstr "Værtsnavn"
+
+msgid "INSTALLER_DB_HOSTNAME_TIP"
+msgstr "Brug '127.0.0.1' til localhost"
+
+msgid "INSTALLER_DB_USERNAME"
+msgstr "Brugernavn"
+
+msgid "INSTALLER_DB_PASSWORD"
+msgstr "Adgangskode"
+
+msgid "INSTALLER_DB_NAME"
+msgstr "Databasenavn"
+
+msgid "INSTALLER_DB_PREFIX"
+msgstr "Tabelpræfiks (valgfrit)"
+
+msgid "INSTALLER_DB_PREFIX_TIP"
+msgstr "Standard: 'tsw_'"
+
+msgid "INSTALLER_DB_ERR_FILL_IN"
+msgstr "Udfyld venligst databasedetaljer"
+
+msgid "INSTALLER_TS_TITLE"
+msgstr "Query-detaljer"
+
+msgid "INSTALLER_TS_HOSTNAME"
+msgstr "Værtsnavn"
+
+msgid "INSTALLER_TS_QUERYPORT"
+msgstr "ServerQuery-port"
+
+msgid "INSTALLER_TS_VOICEPORT"
+msgstr "Stemmeport"
+
+msgid "INSTALLER_TS_QUERYUSERNAME"
+msgstr "Query-brugernavn"
+
+msgid "INSTALLER_TS_QUERYPASSWORD"
+msgstr "Query-adgangskode"
+
+msgid "INSTALLER_TS_DISPLAYIP"
+msgstr "Vist adresse"
+
+msgid "INSTALLER_TS_CACHING_ICONS"
+msgstr "Cacher ikoner fra TS3-serveren, vent venligst..."
+
+msgid "INSTALLER_TS_ERR_CANNOT_GET_INFO"
+msgstr "Kan ikke hente serveroplysninger"
+
+msgid "INSTALLER_SEC_TITLE"
+msgstr "Sikkerhed: mappen private/"
+
+msgid "INSTALLER_SEC_DIR_PROTECTED"
+msgstr "Mappen er beskyttet"
+
+msgid "INSTALLER_SEC_DIR_NOT_PROTECTED"
+msgstr "Mappen er IKKE beskyttet"
+
+msgid "INSTALLER_SEC_HTACCESS_PRESENT"
+msgstr ".htaccess til stede"
+
+msgid "INSTALLER_SEC_HTACCESS_MISSING"
+msgstr ".htaccess mangler"
+
+msgid "INSTALLER_CONFIG_TITLE"
+msgstr "Konfigurér dit websted"
+
+msgid "INSTALLER_CONFIG_SITE_NAME_LABEL"
+msgstr "Webstedsnavn / titel"
+
+msgid "INSTALLER_CONFIG_TIMEZONE_LABEL"
+msgstr "Vælg din tidszone"
+
+msgid "INSTALLER_CONFIG_CLOUDFLARE_LABEL"
+msgstr "Jeg bruger Cloudflare"
+
+msgid "INSTALLER_DONE_TITLE"
+msgstr "TS-website {0} er installeret! 👍"
+
+msgid "INSTALLER_DONE_REMOVE_DIR"
+msgstr "Du kan fjerne mappen <code>installer</code>."
+
+msgid "INSTALLER_DONE_WHATNOW"
+msgstr "Hvad nu?"
+
+msgid "INSTALLER_DONE_VISIT_TITLE"
+msgstr "Besøg dit nye websted"

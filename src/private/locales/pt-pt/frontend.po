@@ -1,0 +1,283 @@
+# TS-Website frontend translations — Portuguese (Portugal)
+# Domain: frontend
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pt-pt\n"
+
+msgid "ASSIGNER_NO_REQUIRED_GROUPS"
+msgstr "Tu não tens nenhum dos grupos necessários. Não podes usar o atribuidor de grupos."
+
+msgid "DATE_FORMAT"
+msgstr "d.m.Y"
+
+msgid "TIME_FORMAT"
+msgstr "H:i"
+
+msgid "BANS_HEADER_TARGET"
+msgstr "Banir"
+
+msgid "AUTHORS"
+msgstr "MiguelNdeCarvalho"
+
+msgid "COOKIEALERT_MESSAGE"
+msgstr "<b>Gostas de cookies?</b> &#x1F36A; Nós usamos cookies para termos a certeza que vais ter a melhor experiência no nosso site. <a href=\"https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer\" target=\"_blank\">Saber mais</a>"
+
+msgid "COOKIEALERT_AGREE"
+msgstr "Eu concordo"
+
+msgid "OUTDATED_DATA"
+msgstr "<b>Aviso!</b> Alguma informação não pode ser obtida. Mostrando informação desatualizada de {0}."
+
+msgid "SHOW_PROBLEMS"
+msgstr "Mostrar problemas"
+
+msgid "PROBLEMS_DESCRIPTION"
+msgstr "Problema encontrado ao conectar ao servidor de TeamSpeak"
+
+msgid "NO_JAVASCRIPT_ENABLED"
+msgstr "O site não irá funcionar sem o <a href=\"https://www.enable-javascript.com/\" target=\"_blank\">JavaScript ativo</a>."
+
+msgid "CANNOT_GET_DATA"
+msgstr "Não foi possível obter data para \"{0}\"! Por favor, contacta o dono do website."
+
+msgid "NO_REASON_SET"
+msgstr "<b>(nenhuma razão definida)</b>"
+
+msgid "BANS_HEADER_REASON"
+msgstr "Razão"
+
+msgid "BANS_HEADER_INVOKER"
+msgstr "Banido por"
+
+msgid "BANS_HEADER_BANDATE"
+msgstr "Data do ban"
+
+msgid "BANS_HEADER_EXPIRES"
+msgstr "Expira"
+
+msgid "DATATABLES_LANGUAGE_NAME"
+msgstr "Portuguese"
+
+msgid "BANS_NEVEREXPIRES"
+msgstr "Nunca"
+
+msgid "STATUS_ADDRESS"
+msgstr "Endereço:"
+
+msgid "STATUS_CLIENTS_ONLINE"
+msgstr "Online:"
+
+msgid "STATUS_RESERVED_SLOTS"
+msgstr "{0} slots reservados"
+
+msgid "STATUS_TOP_ONLINE"
+msgstr "Mais tempo online:"
+
+msgid "STATUS_TOP_ONLINE_DESC"
+msgstr "Alcançado em {0}"
+
+msgid "STATUS_UPTIME"
+msgstr "Uptime:"
+
+msgid "STATUS_VERSION"
+msgstr "Versão:"
+
+msgid "STATUS_PING"
+msgstr "Ping médio:"
+
+msgid "STATUS_PACKETLOSS"
+msgstr "Perda média de pacotes:"
+
+msgid "STATUS_ERROR"
+msgstr "Não é possível recuperar o status do servidor"
+
+msgid "STATUS_PANEL_TITLE"
+msgstr "Status do servidor"
+
+msgid "DAYJS_LANG"
+msgstr "pt"
+
+msgid "LOGIN_CONFIRMATION_CODE"
+msgstr "Olá, aqui está o teu código de confirmação para login: [b]{0}[/b]"
+
+msgid "UNSUPPORTED_BROWSER"
+msgstr "O teu navegador não é suportado. Usa a ultima versão do teu navegador (Firefox, Chrome, Edge, Opera ou Edge)."
+
+msgid "DATATABLES_PLACEHOLDER_SEARCH"
+msgstr "Pesquisar..."
+
+msgid "WEBSITE_TITLE"
+msgstr " | TS-website Língua Inglesa"
+
+msgid "ADMIN_STATUS_ONLINE"
+msgstr "Online"
+
+msgid "ADMIN_STATUS_AWAY"
+msgstr "Ausente"
+
+msgid "ADMIN_STATUS_OFFLINE"
+msgstr "Offline"
+
+msgid "ADMIN_STATUS_EMPTY_GROUP"
+msgstr "Nada a mostrar"
+
+msgid "ADMIN_STATUS_EMPTY_STATUS"
+msgstr "O estado de adminis está vazio"
+
+msgid "ASSIGNER_PANEL_TITLE"
+msgstr "Atribuidor do grupo"
+
+msgid "ASSIGNER_TITLE"
+msgstr "Atribuidor do grupo"
+
+msgid "BANS_BANNED_ALERT_TITLE"
+msgstr "O teu IP foi banido por {0}"
+
+msgid "BANS_BANNED_ALERT_REASON"
+msgstr "Razão: {0}"
+
+msgid "BANS_VIEW_MORE_TIP"
+msgstr "Clique numa linha para ver mais detalhes sobre o ban"
+
+msgid "RULES_TITLE"
+msgstr "Regras"
+
+msgid "RULES_PANEL_TITLE"
+msgstr "Regras"
+
+msgid "FAQ_COPY_LINK"
+msgstr "Copiar link para essa resposta"
+
+msgid "HOME_TITLE"
+msgstr "Notícias"
+
+msgid "HOME_PANEL_TITLE"
+msgstr "Notícias"
+
+msgid "HOME_INVALID_PAGE"
+msgstr "Número de página inválida"
+
+msgid "HOME_PREVIOUS_NEWS"
+msgstr "Anterior"
+
+msgid "HOME_NEXT_NEWS"
+msgstr "Próximo"
+
+msgid "ADMIN_STATUS_PANEL_TITLE"
+msgstr "Status de admins"
+
+msgid "ADMIN_STATUS_HIDE_OFFLINE_TIP"
+msgstr "Ocultar admins offline"
+
+msgid "ADMIN_STATUS_SHOW_OFFLINE_TIP"
+msgstr "Mostrar admins offline"
+
+msgid "ADMIN_STATUS_ERROR"
+msgstr "Erro de status de admins"
+
+msgid "NAV_TOGGLE"
+msgstr "Alternar a navegação"
+
+msgid "NAV_VIEWER"
+msgstr "Visualizador"
+
+msgid "NAV_ASSIGNER"
+msgstr "Atribuidor"
+
+msgid "NAV_BANS"
+msgstr "Bans"
+
+msgid "NAV_RULES"
+msgstr "Regras"
+
+msgid "NAV_FAQ"
+msgstr "FAQ"
+
+msgid "NAV_ACCOUNT_LOGIN"
+msgstr "Entrar"
+
+msgid "NAV_ACCOUNT_LOGOUT"
+msgstr "Sair"
+
+msgid "VIEWER_TITLE"
+msgstr "Visualizador do servidor"
+
+msgid "VIEWER_PANEL_TITLE"
+msgstr "Visualizador do servidor"
+
+msgid "VIEWER_SHOW_EMPTY"
+msgstr "Mostrar canais vazios"
+
+msgid "VIEWER_HIDE_EMPTY"
+msgstr "Esconder canais vazios"
+
+msgid "VIEWER_TIP_ALERT"
+msgstr "Clique num canal para se juntar a ele. Passe o cursor sobre um usuário para verificar as suas informações"
+
+msgid "ARIA_CLOSE"
+msgstr "Fechar"
+
+msgid "VIEWER_ERROR"
+msgstr "Erro do visualizador"
+
+msgid "VIEWER_CONNECTION_CONFIRMATION"
+msgstr "Quer conectar-se a este canal?"
+
+msgid "VIEWER_CLIENT_LASTACTIVE"
+msgstr "Último ativo:"
+
+msgid "VIEWER_CLIENT_ONLINE"
+msgstr "Tempo online:"
+
+msgid "VIEWER_CLIENT_JOINED"
+msgstr "Primeiro juntou-se:"
+
+msgid "VIEWER_CLIENT_TITLE"
+msgstr "Informação do cliente"
+
+msgid "VIEWER_SERVER_ICON"
+msgstr "Ícone do servidor"
+
+msgid "VIEWER_DEFAULT_CHANNEL"
+msgstr "Canal predefinido"
+
+msgid "VIEWER_CHANNEL_UNSUB1"
+msgstr ", não inscrito"
+
+msgid "VIEWER_CHANNEL_OCCUPIED"
+msgstr "Totalmente ocupado"
+
+msgid "VIEWER_CHANNEL_PASSWORD"
+msgstr "Protegido por palavra-passe"
+
+msgid "VIEWER_CHANNEL_UNSUB2"
+msgstr "Não subscrito"
+
+msgid "VIEWER_CHANNEL_ICON"
+msgstr "Ícone do canal"
+
+msgid "VIEWER_CHANNEL_MODERATED"
+msgstr "Moderado"
+
+msgid "VIEWER_CHANNEL_MUSIC_CODED"
+msgstr "Codec de música"
+
+msgid "VIEWER_CLIENT_AWAY"
+msgstr "Ausente"
+
+msgid "VIEWER_CLIENT_OUTPUT_DISABLED"
+msgstr "Som desativado"
+
+msgid "VIEWER_CLIENT_OUTPUT_MUTED"
+msgstr "Som desativado"
+
+msgid "VIEWER_CLIENT_MIC_DISABLED"
+msgstr "Microfone desativado"
+
+msgid "VIEWER_CLIENT_MIC_MUTED"
+msgstr "Silenciado"
+
+msgid "IMPRINT_TITLE"
+msgstr "Aviso legal"

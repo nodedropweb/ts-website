@@ -1,0 +1,599 @@
+# TS-Website admin translations -- pt-pt
+# Domain: admin
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pt-pt\n"
+
+msgid "ADMIN_NAV_BRAND"
+msgstr "TS-Website Admin"
+
+msgid "ADMIN_NAV_NEWS"
+msgstr "Notícias"
+
+msgid "ADMIN_NAV_FAQ"
+msgstr "FAQ"
+
+msgid "ADMIN_NAV_RULES"
+msgstr "Regras"
+
+msgid "ADMIN_NAV_ASSIGNER"
+msgstr "Assigner"
+
+msgid "ADMIN_NAV_CONFIG"
+msgstr "Configuração"
+
+msgid "ADMIN_NAV_GOTO_WEBSITE"
+msgstr "Ir ao site"
+
+msgid "ADMIN_BTN_SAVE"
+msgstr "Guardar"
+
+msgid "ADMIN_BTN_SAVE_ALL"
+msgstr "Guardar todas as definições"
+
+msgid "ADMIN_BTN_BACK"
+msgstr "Voltar"
+
+msgid "ADMIN_BTN_BACK_TO_CONFIG"
+msgstr "Voltar à configuração"
+
+msgid "ADMIN_BTN_CANCEL"
+msgstr "Cancelar"
+
+msgid "ADMIN_BTN_ADD"
+msgstr "Adicionar"
+
+msgid "ADMIN_BTN_REMOVE"
+msgstr "Remover"
+
+msgid "ADMIN_ENABLED"
+msgstr "Ativado"
+
+msgid "ADMIN_TABLE_ID"
+msgstr "ID"
+
+msgid "ADMIN_TABLE_TITLE"
+msgstr "Título"
+
+msgid "ADMIN_TABLE_CREATED"
+msgstr "Criado"
+
+msgid "ADMIN_TABLE_EDITED"
+msgstr "Editado"
+
+msgid "ADMIN_TABLE_QUESTION"
+msgstr "Pergunta"
+
+msgid "ADMIN_TABLE_LAST_MODIFIED"
+msgstr "Última modificação"
+
+msgid "ADMIN_TABLE_ACTIONS"
+msgstr "Ações"
+
+msgid "ADMIN_NO_GROUPS_AVAILABLE"
+msgstr "Nenhum grupo de servidor disponível."
+
+msgid "ADMIN_403_TITLE"
+msgstr "Acesso Negado — Admin"
+
+msgid "ADMIN_403_TEXT"
+msgstr "Sem acesso. Você não está registrado como administrador."
+
+msgid "ADMIN_403_HINT"
+msgstr "Faça login no site principal com o TeamSpeak e peça a um admin para adicionar seu cldbid em admin_cldbids."
+
+msgid "ADMIN_403_BTN"
+msgstr "Ir ao site principal"
+
+msgid "ADMIN_SETUP_TITLE"
+msgstr "Painel Admin — Configuração inicial"
+
+msgid "ADMIN_SETUP_NO_ADMIN"
+msgstr "Nenhum administrador registrado. Insira seu cldbid para acessar o painel de administração."
+
+msgid "ADMIN_SETUP_CLDBID_LABEL"
+msgstr "Seu cldbid"
+
+msgid "ADMIN_SETUP_CLDBID_HINT"
+msgstr "Visível após login TS3 na página principal, ou escolha da lista abaixo."
+
+msgid "ADMIN_SETUP_ONLINE_LABEL"
+msgstr "Atualmente online"
+
+msgid "ADMIN_SETUP_BTN_REGISTER"
+msgstr "Registrar como primeiro administrador"
+
+msgid "ADMIN_SETUP_BTN_GOTO"
+msgstr "Ir ao painel de administração"
+
+msgid "ADMIN_SETUP_SUCCESS"
+msgstr "cldbid {0} registrado como primeiro administrador. Esta página está agora bloqueada."
+
+msgid "ADMIN_SETUP_ERR_INVALID"
+msgstr "Insira um cldbid válido (número inteiro positivo)."
+
+msgid "ADMIN_NEWS_TITLE"
+msgstr "Notícias"
+
+msgid "ADMIN_NEWS_NEW_BTN"
+msgstr "Novo artigo"
+
+msgid "ADMIN_NEWS_EMPTY"
+msgstr "Nenhuma notícia disponível."
+
+msgid "ADMIN_NEWS_CONFIRM_DELETE"
+msgstr "Excluir este artigo?"
+
+msgid "ADMIN_NEWS_EDIT_TITLE"
+msgstr "Editar notícia"
+
+msgid "ADMIN_NEWS_NEW_TITLE"
+msgstr "Novo artigo"
+
+msgid "ADMIN_NEWS_FORM_TITLE"
+msgstr "Título"
+
+msgid "ADMIN_NEWS_FORM_CONTENT"
+msgstr "Conteúdo"
+
+msgid "ADMIN_FAQ_TITLE"
+msgstr "FAQ"
+
+msgid "ADMIN_FAQ_NEW_BTN"
+msgstr "Nova entrada FAQ"
+
+msgid "ADMIN_FAQ_EMPTY"
+msgstr "Nenhuma entrada FAQ disponível."
+
+msgid "ADMIN_FAQ_CONFIRM_DELETE"
+msgstr "Excluir esta entrada FAQ?"
+
+msgid "ADMIN_FAQ_EDIT_TITLE"
+msgstr "Editar entrada FAQ"
+
+msgid "ADMIN_FAQ_NEW_TITLE"
+msgstr "Nova entrada FAQ"
+
+msgid "ADMIN_FAQ_FORM_QUESTION"
+msgstr "Pergunta"
+
+msgid "ADMIN_FAQ_FORM_ANSWER"
+msgstr "Resposta"
+
+msgid "ADMIN_RULES_TITLE"
+msgstr "Regras do servidor"
+
+msgid "ADMIN_RULES_FORM_CONTENT"
+msgstr "Conteúdo"
+
+msgid "ADMIN_IMPRINT_TITLE"
+msgstr "Aviso legal"
+
+msgid "ADMIN_ASSIGNER_TITLE"
+msgstr "Configuração do Assigner"
+
+msgid "ADMIN_ASSIGNER_NO_GROUPS_WARNING"
+msgstr "Nenhum grupo de servidor encontrado. Verifique se o servidor TS3 está conectado."
+
+msgid "ADMIN_ASSIGNER_DESCRIPTION"
+msgstr "Defina categorias para atribuição de grupos. Cada categoria tem nome, ícone, máximo de grupos e grupos de servidor correspondentes."
+
+msgid "ADMIN_ASSIGNER_GENERAL"
+msgstr "Configurações gerais"
+
+msgid "ADMIN_ASSIGNER_COOLDOWN_LABEL"
+msgstr "Tempo de espera (segundos)"
+
+msgid "ADMIN_ASSIGNER_COOLDOWN_HINT"
+msgstr "Quanto tempo o usuário deve aguardar antes de mudar seu grupo novamente. 0 = sem espera."
+
+msgid "ADMIN_ASSIGNER_REQUIRED_GROUPS_LABEL"
+msgstr "Grupos de servidor necessários"
+
+msgid "ADMIN_ASSIGNER_REQUIRED_GROUPS_HINT"
+msgstr "Apenas membros desses grupos podem usar o Assigner. Vazio = todos."
+
+msgid "ADMIN_ASSIGNER_ADD_CATEGORY"
+msgstr "Adicionar categoria"
+
+msgid "ADMIN_ASSIGNER_SAVED"
+msgstr "Configuração do Assigner salva."
+
+msgid "ADMIN_ASSIGNER_JS_MOVE_UP"
+msgstr "Mover para cima"
+
+msgid "ADMIN_ASSIGNER_JS_MOVE_DOWN"
+msgstr "Mover para baixo"
+
+msgid "ADMIN_ASSIGNER_JS_NEW_CATEGORY"
+msgstr "Nova categoria"
+
+msgid "ADMIN_ASSIGNER_JS_NAME_LABEL"
+msgstr "Nome"
+
+msgid "ADMIN_ASSIGNER_JS_NAME_PLACEHOLDER"
+msgstr "ex. País, Jogo, Hobby"
+
+msgid "ADMIN_ASSIGNER_JS_MAX_LABEL"
+msgstr "Sel. máx."
+
+msgid "ADMIN_ASSIGNER_JS_ICON_LABEL"
+msgstr "Ícone"
+
+msgid "ADMIN_ASSIGNER_JS_GROUPS_LABEL"
+msgstr "Grupos de servidor nesta categoria"
+
+msgid "ADMIN_ASSIGNER_JS_NO_GROUPS"
+msgstr "Nenhum grupo de servidor disponível."
+
+msgid "ADMIN_ASSIGNER_JS_SAVE_ERROR"
+msgstr "Erro ao salvar."
+
+msgid "ADMIN_CONFIG_TITLE"
+msgstr "Configuração"
+
+msgid "ADMIN_CONFIG_SECTION_ADMINSTATUS"
+msgstr "Widget de status admin"
+
+msgid "ADMIN_CONFIG_SECTION_ASSIGNER"
+msgstr "Atribuição de grupos"
+
+msgid "ADMIN_CONFIG_SECTION_CACHE"
+msgstr "Tempos de cache"
+
+msgid "ADMIN_CONFIG_SECTION_GENERAL"
+msgstr "Geral"
+
+msgid "ADMIN_CONFIG_SECTION_IMPRINT"
+msgstr "Aviso legal"
+
+msgid "ADMIN_CONFIG_SECTION_ONLINERECORD"
+msgstr "Recorde online"
+
+msgid "ADMIN_CONFIG_SECTION_VIEWER"
+msgstr "Visualizador de canais"
+
+msgid "ADMIN_CONFIG_SECTION_QUERY"
+msgstr "TeamSpeak Query"
+
+msgid "ADMIN_CONFIG_SECTION_ADMIN"
+msgstr "Painel de administração"
+
+msgid "ADMIN_CONFIG_BTN_ADMINSTATUS"
+msgstr "Configurar widget de status"
+
+msgid "ADMIN_CONFIG_BTN_ASSIGNER"
+msgstr "Configurar atribuição de grupos"
+
+msgid "ADMIN_CONFIG_BTN_CACHE"
+msgstr "Configurar tempos de cache"
+
+msgid "ADMIN_CONFIG_BTN_GENERAL"
+msgstr "Editar configurações gerais"
+
+msgid "ADMIN_CONFIG_BTN_IMPRINT"
+msgstr "Editar aviso legal"
+
+msgid "ADMIN_CONFIG_BTN_ONLINERECORD"
+msgstr "Editar recorde online"
+
+msgid "ADMIN_CONFIG_BTN_VIEWER"
+msgstr "Configurar visualizador de canais"
+
+msgid "ADMIN_CONFIG_BTN_QUERY"
+msgstr "Configurar conexão TeamSpeak"
+
+msgid "ADMIN_CONFIG_BTN_ADMINS"
+msgstr "Gerenciar acesso de administradores"
+
+msgid "ADMIN_CONFIG_EDIT_IN_ASSIGNER"
+msgstr "Editar no editor Assigner"
+
+msgid "ADMIN_CONFIG_MANAGED_IN_ASSIGNER"
+msgstr "Gerenciado no editor Assigner."
+
+msgid "ADMIN_CONFIG_WHO_HAS_ACCESS"
+msgstr "Quem tem acesso a este painel de administração?"
+
+msgid "ADMIN_GENERAL_TITLE"
+msgstr "Configurações gerais"
+
+msgid "ADMIN_GENERAL_FIELD_WEBSITE_TITLE_LABEL"
+msgstr "Nome do servidor TS (exibição)"
+
+msgid "ADMIN_GENERAL_FIELD_WEBSITE_TITLE_HINT"
+msgstr "Substitui o endereço IP na barra lateral e no diálogo de login. Também exibido na aba do navegador e rodapé. Vazio = IP é exibido."
+
+msgid "ADMIN_GENERAL_FIELD_NAV_BRAND_LABEL"
+msgstr "Título do site (Navbar)"
+
+msgid "ADMIN_GENERAL_FIELD_NAV_BRAND_HINT"
+msgstr "Texto do logotipo no canto superior esquerdo da navegação."
+
+msgid "ADMIN_GENERAL_FIELD_BASEURL_LABEL"
+msgstr "URL base"
+
+msgid "ADMIN_GENERAL_FIELD_BASEURL_HINT"
+msgstr "URL completa do site, ex. https://example.com"
+
+msgid "ADMIN_GENERAL_FIELD_LOGINPOKE_LABEL"
+msgstr "Login: Poke no cliente"
+
+msgid "ADMIN_GENERAL_FIELD_LOGINPOKE_HINT"
+msgstr "Enviar poke ao cliente TS durante tentativa de login"
+
+msgid "ADMIN_GENERAL_FIELD_TIMEZONE_LABEL"
+msgstr "Fuso horário"
+
+msgid "ADMIN_GENERAL_FIELD_TIMEZONE_HINT"
+msgstr "Fuso horário PHP, ex. Europe/Lisbon"
+
+msgid "ADMIN_GENERAL_FIELD_CLOUDFLARE_LABEL"
+msgstr "Cloudflare ativo"
+
+msgid "ADMIN_GENERAL_FIELD_CLOUDFLARE_HINT"
+msgstr "Ativar se o site estiver atrás do Cloudflare"
+
+msgid "ADMIN_GENERAL_SAVED"
+msgstr "Definições guardadas."
+
+msgid "ADMIN_ADMINS_TITLE"
+msgstr "Acesso de administrador"
+
+msgid "ADMIN_ADMINS_CURRENT"
+msgstr "Administradores atuais"
+
+msgid "ADMIN_ADMINS_TABLE_CLDBID"
+msgstr "ID do banco de dados do cliente"
+
+msgid "ADMIN_ADMINS_TABLE_ACTION"
+msgstr "Ação"
+
+msgid "ADMIN_ADMINS_YOU_BADGE"
+msgstr "Você"
+
+msgid "ADMIN_ADMINS_CONFIRM_REMOVE"
+msgstr "Remover administrador?"
+
+msgid "ADMIN_ADMINS_CANNOT_REMOVE_SELF"
+msgstr "Você não pode se remover."
+
+msgid "ADMIN_ADMINS_ADD_TITLE"
+msgstr "Adicionar administrador"
+
+msgid "ADMIN_ADMINS_CLDBID_LABEL"
+msgstr "ID do banco de dados do cliente"
+
+msgid "ADMIN_ADMINS_ONLINE_LABEL"
+msgstr "Atualmente online (selecione da lista)"
+
+msgid "ADMIN_ADMINS_ADDED"
+msgstr "Administrador adicionado."
+
+msgid "ADMIN_ADMINS_REMOVED"
+msgstr "Administrador removido."
+
+msgid "ADMIN_ADMINSTATUS_TITLE"
+msgstr "Widget de status admin"
+
+msgid "ADMIN_ADMINSTATUS_SECTION_GENERAL"
+msgstr "Geral"
+
+msgid "ADMIN_ADMINSTATUS_WIDGET_ENABLED_LABEL"
+msgstr "Widget ativado"
+
+msgid "ADMIN_ADMINSTATUS_HIDE_OFFLINE_LABEL"
+msgstr "Ocultar usuários offline"
+
+msgid "ADMIN_ADMINSTATUS_HIDE_OFFLINE_HINT"
+msgstr "Usuários offline são completamente suprimidos."
+
+msgid "ADMIN_ADMINSTATUS_OFFLINE_COLLAPSED_LABEL"
+msgstr "Offline recolhido por padrão"
+
+msgid "ADMIN_ADMINSTATUS_OFFLINE_COLLAPSED_HINT"
+msgstr "Entradas offline no widget só visíveis após clicar."
+
+msgid "ADMIN_ADMINSTATUS_DISPLAY_MODE_LABEL"
+msgstr "Modo de exibição"
+
+msgid "ADMIN_ADMINSTATUS_MODE_1"
+msgstr "Agrupado"
+
+msgid "ADMIN_ADMINSTATUS_MODE_2"
+msgstr "Agrupado (ocultar grupos vazios)"
+
+msgid "ADMIN_ADMINSTATUS_MODE_3"
+msgstr "Lista"
+
+msgid "ADMIN_ADMINSTATUS_MODE_4"
+msgstr "Lista (online primeiro)"
+
+msgid "ADMIN_ADMINSTATUS_SECTION_GROUPS"
+msgstr "Grupos de servidor a exibir"
+
+msgid "ADMIN_ADMINSTATUS_NO_GROUPS"
+msgstr "Nenhum grupo de servidor disponível — verifique a conexão TS."
+
+msgid "ADMIN_ADMINSTATUS_SECTION_IGNORED"
+msgstr "Usuários ignorados"
+
+msgid "ADMIN_ADMINSTATUS_IGNORED_HINT"
+msgstr "Usuários dos grupos selecionados. Marcados não aparecerão no widget."
+
+msgid "ADMIN_ADMINSTATUS_NO_GROUPS_SELECTED"
+msgstr "Primeiro selecione grupos de servidor e salve."
+
+msgid "ADMIN_ADMINSTATUS_NO_CACHE"
+msgstr "Ainda sem cache — aguarde um momento e recarregue a página."
+
+msgid "ADMIN_ADMINSTATUS_CURRENTLY_IGNORED"
+msgstr "DBIDs atualmente ignorados:"
+
+msgid "ADMIN_ADMINSTATUS_SAVED"
+msgstr "Status admin salvo."
+
+msgid "ADMIN_CACHE_TITLE"
+msgstr "Tempos de cache"
+
+msgid "ADMIN_CACHE_HINT"
+msgstr "Todos os valores em segundos. Menor = dados mais atuais, mas maior carga no servidor TS."
+
+msgid "ADMIN_CACHE_SERVERINFO_LABEL"
+msgstr "Info do servidor"
+
+msgid "ADMIN_CACHE_SERVERINFO_HINT"
+msgstr "Informações gerais do servidor TS (nome, slots, ...)"
+
+msgid "ADMIN_CACHE_CLIENTLIST_LABEL"
+msgstr "Lista de clientes"
+
+msgid "ADMIN_CACHE_CLIENTLIST_HINT"
+msgstr "Lista de jogadores online — mantenha curta para status de login atualizado"
+
+msgid "ADMIN_CACHE_CHANNELLIST_LABEL"
+msgstr "Lista de canais"
+
+msgid "ADMIN_CACHE_CHANNELLIST_HINT"
+msgstr "Visualizador de canais"
+
+msgid "ADMIN_CACHE_SERVERGROUPS_LABEL"
+msgstr "Grupos de servidor"
+
+msgid "ADMIN_CACHE_SERVERGROUPS_HINT"
+msgstr "Lista de todos os grupos de servidor"
+
+msgid "ADMIN_CACHE_CHANNELGROUPS_LABEL"
+msgstr "Grupos de canais"
+
+msgid "ADMIN_CACHE_CHANNELGROUPS_HINT"
+msgstr "Lista de todos os grupos de canais"
+
+msgid "ADMIN_CACHE_BANLIST_LABEL"
+msgstr "Lista de bans"
+
+msgid "ADMIN_CACHE_BANLIST_HINT"
+msgstr "Usuários banidos"
+
+msgid "ADMIN_CACHE_ADMINSTATUS_LABEL"
+msgstr "Status admin"
+
+msgid "ADMIN_CACHE_ADMINSTATUS_HINT"
+msgstr "Membros dos grupos admin para o widget de status"
+
+msgid "ADMIN_CACHE_SERVERICONS_LABEL"
+msgstr "Ícones do servidor"
+
+msgid "ADMIN_CACHE_SERVERICONS_HINT"
+msgstr "Dados de ícones do servidor TS"
+
+msgid "ADMIN_CACHE_LANGUAGES_LABEL"
+msgstr "Idiomas"
+
+msgid "ADMIN_CACHE_LANGUAGES_HINT"
+msgstr "Arquivos de idioma do banco de dados"
+
+msgid "ADMIN_CACHE_LOGINCODE_LABEL"
+msgstr "Código de login"
+
+msgid "ADMIN_CACHE_LOGINCODE_HINT"
+msgstr "Códigos de login temporários"
+
+msgid "ADMIN_CACHE_SAVED"
+msgstr "Tempos de cache guardados."
+
+msgid "ADMIN_ONLINERECORD_TITLE"
+msgstr "Recorde online"
+
+msgid "ADMIN_ONLINERECORD_VALUE_LABEL"
+msgstr "Recorde (contagem de jogadores)"
+
+msgid "ADMIN_ONLINERECORD_DATE_LABEL"
+msgstr "Data e hora"
+
+msgid "ADMIN_ONLINERECORD_DATE_HINT"
+msgstr "Automaticamente sobrescrito quando um novo recorde é atingido."
+
+msgid "ADMIN_ONLINERECORD_SAVED"
+msgstr "Recorde online guardado."
+
+msgid "ADMIN_VIEWER_TITLE"
+msgstr "Visualizador de canais"
+
+msgid "ADMIN_VIEWER_SECTION"
+msgstr "Canais ocultos"
+
+msgid "ADMIN_VIEWER_HINT"
+msgstr "Marcado = canal oculto no site. Canais com senha desaparecem automaticamente."
+
+msgid "ADMIN_VIEWER_NO_CHANNELS"
+msgstr "Nenhum canal disponível — verifique a conexão TS."
+
+msgid "ADMIN_VIEWER_HIDDEN_BADGE"
+msgstr "oculto"
+
+msgid "ADMIN_VIEWER_SAVED"
+msgstr "Visualizador de canais guardado."
+
+msgid "ADMIN_QUERY_TITLE"
+msgstr "Conexão TeamSpeak"
+
+msgid "ADMIN_QUERY_WARNING_TITLE"
+msgstr "Aviso"
+
+msgid "ADMIN_QUERY_WARNING_TEXT"
+msgstr "Realmente deseja editar essas configurações? Se não souber o que está fazendo, pode interromper a conexão com o servidor TeamSpeak."
+
+msgid "ADMIN_QUERY_WARNING_CONFIRM"
+msgstr "Sim, sei o que estou fazendo"
+
+msgid "ADMIN_QUERY_SECTION"
+msgstr "Configurações de conexão TeamSpeak"
+
+msgid "ADMIN_QUERY_HOSTNAME_LABEL"
+msgstr "Endereço do servidor"
+
+msgid "ADMIN_QUERY_HOSTNAME_HINT"
+msgstr "IP ou hostname do servidor TeamSpeak (ex. 127.0.0.1)"
+
+msgid "ADMIN_QUERY_PORT_LABEL"
+msgstr "Porta ServerQuery"
+
+msgid "ADMIN_QUERY_PORT_HINT"
+msgstr "Padrão: 10011"
+
+msgid "ADMIN_QUERY_USERNAME_LABEL"
+msgstr "Usuário ServerQuery"
+
+msgid "ADMIN_QUERY_USERNAME_HINT"
+msgstr "A conta query criada para o site"
+
+msgid "ADMIN_QUERY_PASSWORD_LABEL"
+msgstr "Senha ServerQuery"
+
+msgid "ADMIN_QUERY_PASSWORD_HINT"
+msgstr "Senha da conta query"
+
+msgid "ADMIN_QUERY_NICKNAME_LABEL"
+msgstr "Nome exibido no Query"
+
+msgid "ADMIN_QUERY_NICKNAME_HINT"
+msgstr "Nome exibido quando o site faz login no query"
+
+msgid "ADMIN_QUERY_DISPLAYIP_LABEL"
+msgstr "IP público do servidor"
+
+msgid "ADMIN_QUERY_DISPLAYIP_HINT"
+msgstr "IP usado como link ts3server:// no visualizador de canais"
+
+msgid "ADMIN_QUERY_VOICEPORT_LABEL"
+msgstr "Porta de voz TeamSpeak"
+
+msgid "ADMIN_QUERY_VOICEPORT_HINT"
+msgstr "Porta à qual os clientes se conectam (padrão: 9987)"
+
+msgid "ADMIN_QUERY_SAVED"
+msgstr "Definições de ligação guardadas."
+

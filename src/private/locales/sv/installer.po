@@ -1,0 +1,169 @@
+# TS-Website installer translations — sv
+# Domain: installer
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+
+msgid "INSTALLER_NAV_BRAND"
+msgstr "TS-Website Installationsprogram"
+
+msgid "INSTALLER_STEP_WELCOME"
+msgstr "Välkommen"
+
+msgid "INSTALLER_STEP_REQUIREMENTS"
+msgstr "Krav"
+
+msgid "INSTALLER_STEP_DATABASE"
+msgstr "Databas"
+
+msgid "INSTALLER_STEP_TEAMSPEAK"
+msgstr "TeamSpeak"
+
+msgid "INSTALLER_STEP_SECURITY"
+msgstr "Säkerhet"
+
+msgid "INSTALLER_STEP_CONFIGURATION"
+msgstr "Konfiguration"
+
+msgid "INSTALLER_STEP_DONE"
+msgstr "Klart"
+
+msgid "INSTALLER_WELCOME_TITLE"
+msgstr "Välkommen till TS-website Installationsprogrammet!"
+
+msgid "INSTALLER_WELCOME_DESCRIPTION"
+msgstr "Denna guide hjälper dig genom installationsprocessen för TS-website."
+
+msgid "INSTALLER_WELCOME_NO_JS"
+msgstr "Aktivera Javascript innan du fortsätter!"
+
+msgid "INSTALLER_WELCOME_READY"
+msgstr "Gå till nästa steg när du är redo!"
+
+msgid "INSTALLER_WELCOME_METRICS_CHECKBOX"
+msgstr "Skicka engångsstatistik för att förbättra TS-website"
+
+msgid "INSTALLER_BTN_START"
+msgstr "Starta"
+
+msgid "INSTALLER_REQ_TITLE"
+msgstr "Kravkontroll"
+
+msgid "INSTALLER_REQ_SHOW_DETAILS"
+msgstr "Visa detaljer"
+
+msgid "INSTALLER_REQ_SUCCESS"
+msgstr "<strong>Framgång!</strong> Du kan köra TS-website!"
+
+msgid "INSTALLER_BTN_RECHECK"
+msgstr "Kontrollera igen"
+
+msgid "INSTALLER_BTN_NEXT"
+msgstr "Nästa"
+
+msgid "INSTALLER_BTN_BACK"
+msgstr "Tillbaka"
+
+msgid "INSTALLER_BTN_SUBMIT"
+msgstr "Skicka"
+
+msgid "INSTALLER_DB_TITLE"
+msgstr "Databasuppgifter"
+
+msgid "INSTALLER_DB_USE_MYSQL"
+msgstr "Använd MySQL / MariaDB"
+
+msgid "INSTALLER_DB_USE_SQLITE"
+msgstr "Använd SQLite-databas"
+
+msgid "INSTALLER_DB_HOSTNAME"
+msgstr "Värdnamn"
+
+msgid "INSTALLER_DB_HOSTNAME_TIP"
+msgstr "Använd '127.0.0.1' för localhost"
+
+msgid "INSTALLER_DB_USERNAME"
+msgstr "Användarnamn"
+
+msgid "INSTALLER_DB_PASSWORD"
+msgstr "Lösenord"
+
+msgid "INSTALLER_DB_NAME"
+msgstr "Databasnamn"
+
+msgid "INSTALLER_DB_PREFIX"
+msgstr "Tabellprefix (valfritt)"
+
+msgid "INSTALLER_DB_PREFIX_TIP"
+msgstr "Standard: 'tsw_'"
+
+msgid "INSTALLER_DB_ERR_FILL_IN"
+msgstr "Fyll i databasuppgifterna"
+
+msgid "INSTALLER_TS_TITLE"
+msgstr "Query-uppgifter"
+
+msgid "INSTALLER_TS_HOSTNAME"
+msgstr "Värdnamn"
+
+msgid "INSTALLER_TS_QUERYPORT"
+msgstr "ServerQuery-port"
+
+msgid "INSTALLER_TS_VOICEPORT"
+msgstr "Röstport"
+
+msgid "INSTALLER_TS_QUERYUSERNAME"
+msgstr "Query-användarnamn"
+
+msgid "INSTALLER_TS_QUERYPASSWORD"
+msgstr "Query-lösenord"
+
+msgid "INSTALLER_TS_DISPLAYIP"
+msgstr "Visad adress"
+
+msgid "INSTALLER_TS_CACHING_ICONS"
+msgstr "Cachar ikoner från TS3-servern, vänta..."
+
+msgid "INSTALLER_TS_ERR_CANNOT_GET_INFO"
+msgstr "Kan inte hämta serverinformation"
+
+msgid "INSTALLER_SEC_TITLE"
+msgstr "Säkerhet: katalogen private/"
+
+msgid "INSTALLER_SEC_DIR_PROTECTED"
+msgstr "Katalogen är skyddad"
+
+msgid "INSTALLER_SEC_DIR_NOT_PROTECTED"
+msgstr "Katalogen är INTE skyddad"
+
+msgid "INSTALLER_SEC_HTACCESS_PRESENT"
+msgstr ".htaccess finns"
+
+msgid "INSTALLER_SEC_HTACCESS_MISSING"
+msgstr ".htaccess saknas"
+
+msgid "INSTALLER_CONFIG_TITLE"
+msgstr "Konfigurera din webbplats"
+
+msgid "INSTALLER_CONFIG_SITE_NAME_LABEL"
+msgstr "Webbplatsnamn / titel"
+
+msgid "INSTALLER_CONFIG_TIMEZONE_LABEL"
+msgstr "Välj din tidszon"
+
+msgid "INSTALLER_CONFIG_CLOUDFLARE_LABEL"
+msgstr "Jag använder Cloudflare"
+
+msgid "INSTALLER_DONE_TITLE"
+msgstr "TS-website {0} har installerats! 👍"
+
+msgid "INSTALLER_DONE_REMOVE_DIR"
+msgstr "Du kan ta bort katalogen <code>installer</code>."
+
+msgid "INSTALLER_DONE_WHATNOW"
+msgstr "Vad nu?"
+
+msgid "INSTALLER_DONE_VISIT_TITLE"
+msgstr "Besök din nya webbplats"

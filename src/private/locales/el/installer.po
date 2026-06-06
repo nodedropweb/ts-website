@@ -1,0 +1,133 @@
+# TS-Website installer translations — el
+# Domain: installer
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: el\n"
+
+msgid "INSTALLER_NAV_BRAND"
+msgstr "Εγκατάσταση TS-Website"
+
+msgid "INSTALLER_STEP_WELCOME"
+msgstr "Καλωσόρισμα"
+
+msgid "INSTALLER_STEP_REQUIREMENTS"
+msgstr "Απαιτήσεις"
+
+msgid "INSTALLER_STEP_DATABASE"
+msgstr "Βάση δεδομένων"
+
+msgid "INSTALLER_STEP_TEAMSPEAK"
+msgstr "TeamSpeak"
+
+msgid "INSTALLER_STEP_SECURITY"
+msgstr "Ασφάλεια"
+
+msgid "INSTALLER_STEP_CONFIGURATION"
+msgstr "Διαμόρφωση"
+
+msgid "INSTALLER_STEP_DONE"
+msgstr "Ολοκληρώθηκε"
+
+msgid "INSTALLER_WELCOME_TITLE"
+msgstr "Καλωσήρθατε στο πρόγραμμα εγκατάστασης TS-website!"
+
+msgid "INSTALLER_WELCOME_DESCRIPTION"
+msgstr "Αυτός ο οδηγός θα σας καθοδηγήσει στη διαδικασία εγκατάστασης του TS-website."
+
+msgid "INSTALLER_WELCOME_NO_JS"
+msgstr "Παρακαλώ ενεργοποιήστε το Javascript πριν συνεχίσετε!"
+
+msgid "INSTALLER_WELCOME_READY"
+msgstr "Προχωρήστε στο επόμενο βήμα όταν είστε έτοιμοι!"
+
+msgid "INSTALLER_BTN_START"
+msgstr "Έναρξη"
+
+msgid "INSTALLER_BTN_RECHECK"
+msgstr "Επανέλεγχος"
+
+msgid "INSTALLER_BTN_NEXT"
+msgstr "Επόμενο"
+
+msgid "INSTALLER_BTN_BACK"
+msgstr "Πίσω"
+
+msgid "INSTALLER_BTN_SUBMIT"
+msgstr "Υποβολή"
+
+msgid "INSTALLER_DB_TITLE"
+msgstr "Στοιχεία βάσης δεδομένων"
+
+msgid "INSTALLER_DB_USE_MYSQL"
+msgstr "Χρήση MySQL / MariaDB"
+
+msgid "INSTALLER_DB_USE_SQLITE"
+msgstr "Χρήση βάσης δεδομένων SQLite"
+
+msgid "INSTALLER_DB_HOSTNAME"
+msgstr "Hostname"
+
+msgid "INSTALLER_DB_USERNAME"
+msgstr "Όνομα χρήστη"
+
+msgid "INSTALLER_DB_PASSWORD"
+msgstr "Κωδικός"
+
+msgid "INSTALLER_DB_NAME"
+msgstr "Όνομα βάσης δεδομένων"
+
+msgid "INSTALLER_DB_ERR_FILL_IN"
+msgstr "Παρακαλώ συμπληρώστε τα στοιχεία βάσης δεδομένων"
+
+msgid "INSTALLER_TS_TITLE"
+msgstr "Στοιχεία Query"
+
+msgid "INSTALLER_TS_QUERYPORT"
+msgstr "Θύρα ServerQuery"
+
+msgid "INSTALLER_TS_VOICEPORT"
+msgstr "Θύρα φωνής"
+
+msgid "INSTALLER_TS_QUERYUSERNAME"
+msgstr "Χρήστης Query"
+
+msgid "INSTALLER_TS_QUERYPASSWORD"
+msgstr "Κωδικός Query"
+
+msgid "INSTALLER_TS_DISPLAYIP"
+msgstr "Εμφανιζόμενη διεύθυνση"
+
+msgid "INSTALLER_TS_CACHING_ICONS"
+msgstr "Αποθήκευση εικονιδίων από τον TS3 server, παρακαλώ περιμένετε..."
+
+msgid "INSTALLER_TS_ERR_CANNOT_GET_INFO"
+msgstr "Αδυναμία ανάκτησης πληροφοριών διακομιστή"
+
+msgid "INSTALLER_SEC_TITLE"
+msgstr "Ασφάλεια: κατάλογος private/"
+
+msgid "INSTALLER_SEC_DIR_PROTECTED"
+msgstr "Ο κατάλογος είναι προστατευμένος"
+
+msgid "INSTALLER_SEC_DIR_NOT_PROTECTED"
+msgstr "Ο κατάλογος ΔΕΝ είναι προστατευμένος"
+
+msgid "INSTALLER_CONFIG_TITLE"
+msgstr "Διαμόρφωση του ιστότοπού σας"
+
+msgid "INSTALLER_CONFIG_SITE_NAME_LABEL"
+msgstr "Όνομα / τίτλος ιστότοπου"
+
+msgid "INSTALLER_CONFIG_TIMEZONE_LABEL"
+msgstr "Επιλέξτε ζώνη ώρας"
+
+msgid "INSTALLER_DONE_TITLE"
+msgstr "Το TS-website {0} εγκαταστάθηκε επιτυχώς! 👍"
+
+msgid "INSTALLER_DONE_WHATNOW"
+msgstr "Τι τώρα;"
+
+msgid "INSTALLER_DONE_VISIT_TITLE"
+msgstr "Επισκεφθείτε τον νέο σας ιστότοπο"

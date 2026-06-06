@@ -1,103 +1,200 @@
+/* TS-Website Installer — matches admin panel design */
+
 body {
-    margin-bottom: 40px;
+    background-color: #1a1d23;
+    color: #c9d1d9;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding-bottom: 3rem;
 }
 
-h4 {
-    margin-bottom: 2rem !important;
+/* ── Navbar ─────────────────────────────────────────────────────────── */
+.installer-navbar {
+    background-color: #111317 !important;
+    border-bottom: 1px solid #30363d;
+    padding: .6rem 1.5rem;
+}
+.installer-navbar .navbar-brand {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #e6edf3 !important;
+}
+.installer-navbar .navbar-brand i { color: #58a6ff; }
+
+/* ── Step indicator ─────────────────────────────────────────────────── */
+.installer-steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .25rem;
+    padding: 1.25rem 0 .5rem;
+}
+.installer-step {
+    display: flex;
+    align-items: center;
+    font-size: .8rem;
+    color: #8b949e;
+}
+.installer-step .step-badge {
+    width: 26px; height: 26px;
+    border-radius: 50%;
+    border: 2px solid #30363d;
+    background: #1a1d23;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: .75rem;
+    margin-right: .35rem;
+    color: #8b949e;
+    flex-shrink: 0;
+}
+.installer-step.active .step-badge {
+    background: #1f6feb;
+    border-color: #1f6feb;
+    color: #fff;
+}
+.installer-step.active { color: #e6edf3; font-weight: 600; }
+.installer-step.done .step-badge {
+    background: #238636;
+    border-color: #238636;
+    color: #fff;
+}
+.installer-step.done { color: #8b949e; }
+.installer-step-sep {
+    width: 24px; height: 2px;
+    background: #30363d;
+    margin: 0 .15rem;
+    flex-shrink: 0;
 }
 
-.nav-wizard {
-    display: inline-block;
-    margin-bottom: 40px;
+/* ── Container ──────────────────────────────────────────────────────── */
+.installer-container {
+    max-width: 760px;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
 }
 
-.nav-wizard > li {
-    display: block;
+/* ── Cards ──────────────────────────────────────────────────────────── */
+.card {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+}
+.card-header {
+    background-color: #1c2128;
+    border-bottom: 1px solid #30363d;
+    font-weight: 600;
+    color: #e6edf3;
+    padding: .75rem 1.25rem;
+}
+.card-body { color: #c9d1d9; }
+.card-footer {
+    background-color: #1c2128;
+    border-top: 1px solid #30363d;
+}
+.card-title { color: #e6edf3; }
+
+/* ── Forms ──────────────────────────────────────────────────────────── */
+.form-control {
+    background-color: #0d1117;
+    border: 1px solid #30363d;
+    color: #c9d1d9;
+}
+.form-control:focus {
+    background-color: #0d1117;
+    border-color: #1f6feb;
+    color: #e6edf3;
+    box-shadow: 0 0 0 3px rgba(31,111,235,.25);
+}
+.form-control::placeholder { color: #484f58; }
+.input-group-text {
+    background-color: #1c2128;
+    border: 1px solid #30363d;
+    color: #8b949e;
 }
 
-.nav-wizard > li > a {
-    display: block;
-    padding: 10px 15px;
-    cursor: default;
-    text-decoration: none !important;
+/* ── Alerts ─────────────────────────────────────────────────────────── */
+.alert-info    { background: #1c3a5c; border-color: #1f6feb; color: #c9d1d9; }
+.alert-success { background: #12261e; border-color: #238636; color: #c9d1d9; }
+.alert-danger  { background: #2d1217; border-color: #f85149; color: #c9d1d9; }
+.alert-warning { background: #2d1f07; border-color: #d29922; color: #c9d1d9; }
+.alert-dark    { background: #1c2128; border-color: #30363d; color: #c9d1d9; }
+.alert-primary { background: #1c3a5c; border-color: #1f6feb; color: #c9d1d9; }
+
+/* ── Buttons ────────────────────────────────────────────────────────── */
+.btn-primary   { background-color: #1f6feb; border-color: #1f6feb; color: #fff; }
+.btn-primary:hover { background-color: #388bfd; border-color: #388bfd; }
+.btn-secondary { background-color: #21262d; border-color: #30363d; color: #c9d1d9; }
+.btn-secondary:hover { background-color: #30363d; }
+.btn-warning   { background-color: #d29922; border-color: #d29922; color: #fff; }
+.btn-success   { background-color: #238636; border-color: #238636; color: #fff; }
+.btn-danger    { background-color: #b91c1c; border-color: #b91c1c; color: #fff; }
+.btn.disabled, .btn:disabled { opacity: .5; }
+
+/* ── Tables ─────────────────────────────────────────────────────────── */
+.table { color: #c9d1d9; }
+.table thead th { border-bottom: 2px solid #30363d; color: #8b949e; font-size: .8rem; text-transform: uppercase; }
+.table td, .table th { border-top: 1px solid #21262d; }
+.requirements-check-table { display: inline-block; width: auto; text-align: initial; }
+
+/* ── Misc ───────────────────────────────────────────────────────────── */
+.text-muted    { color: #8b949e !important; }
+code           { background: #1c2128; border: 1px solid #30363d; border-radius: 4px; padding: 1px 5px; color: #58a6ff; font-size: .88em; }
+.modal-content { background-color: #161b22; border: 1px solid #30363d; color: #c9d1d9; }
+.modal-header  { border-bottom: 1px solid #30363d; }
+.modal-footer  { border-top: 1px solid #30363d; }
+.close         { color: #8b949e; text-shadow: none; }
+
+.color-success { color: #3fb950; }
+.color-warning { color: #d29922; }
+.color-danger  { color: #f85149; }
+
+.whatnow-row { margin-bottom: 2rem; }
+.whatnow-row h1, .whatnow-row h3 { margin: 0; color: #e6edf3; }
+.whatnow-icon { font-size: 4rem; }
+
+.custom-control-label { color: #c9d1d9; }
+.custom-control-label::before { background-color: #0d1117; border-color: #30363d; }
+select.form-control option { background-color: #161b22; color: #c9d1d9; }
+.spinner-border { color: #1f6feb; }
+
+.tooltip-inner { max-width: 300px; background-color: #1c2128; border: 1px solid #30363d; }
+.bs-tooltip-right .arrow::before { border-right-color: #30363d; }
+
+/* __ Navbar language switcher __________________________________________ */
+.installer-navbar .dropdown > .btn {
+    background-color: #21262d;
+    border-color: #30363d;
+    color: #c9d1d9;
+    font-size: .8rem;
+    padding: .25rem .65rem;
 }
-
-.btn {
-    font-family: Helvetica, Arial, sans-serif;
-    line-height: 12px;
+.installer-navbar .dropdown > .btn:hover,
+.installer-navbar .dropdown > .btn:focus,
+.installer-navbar .dropdown.show > .btn {
+    background-color: #30363d;
+    border-color: #484f58;
+    color: #e6edf3;
+    box-shadow: none;
 }
-
-p, label {
-    font-size: 115%;
+.installer-navbar .dropdown-menu {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    min-width: 13rem;
+    padding: .25rem 0;
+    box-shadow: 0 8px 24px rgba(0,0,0,.5);
 }
-
-.license {
-    margin: 1rem auto;
-    display: inline-block;
-    max-height: 400px;
-    text-align: initial;
+.installer-navbar .dropdown-item {
+    color: #c9d1d9;
+    font-size: .85rem;
+    padding: .35rem 1rem;
 }
-
-.license-container {
-    text-align: center;
+.installer-navbar .dropdown-item:hover,
+.installer-navbar .dropdown-item:focus {
+    background-color: #21262d;
+    color: #e6edf3;
 }
-
-.fa-larger {
-    font-size: 1.5em;
-}
-
-.fa-chevron-left {
-    margin-right: 3px;
-}
-
-.fa-chevron-right, .fa-sync {
-    margin-left: 3px;
-}
-
-.requirements-check-table {
-    display: inline-block;
-    width: auto;
-    text-align: initial
-}
-
-.color-success {
-    color: #28B62C;
-}
-
-.color-warning {
-    color: #FF851B;
-}
-
-.color-danger {
-    color: #FF4136;
-}
-
-.whatnow-row {
-    margin-bottom: 30px;
-}
-
-.whatnow-row h1, .whatnow-row h3 {
-    margin: 0;
-}
-
-.whatnow-icon {
-    font-size: 5rem;
-}
-
-.tooltip-inner {
-    max-width: 300px;
-}
-
-@media (max-width: 1200px) {
-    .nav-wizard > li:not(:first-child) > a:before {
-        border: 0;
-    }
-
-    .nav-wizard {
-        width: 100%;
-    }
-
-    .nav-wizard > li {
-        float: none;
-    }
+.installer-navbar .dropdown-item.active,
+.installer-navbar .dropdown-item:active {
+    background-color: #1f6feb;
+    color: #fff;
 }

@@ -31,7 +31,7 @@
                 <!-- Not connected to the server message -->
                 <div class="not-connected text-center" style="display: none">
                     <h3>Not connected</h3>
-                    <p>Connect to <a href="ts3server://{$config["query_displayip"]|escapeUrl}">{$config["query_displayip"]}</a> and wait ±30 seconds.<br>The website will auto-refresh.</p>
+                    <p>Connect to <a href="ts3server://{$config["query_displayip"]|escapeUrl}">{$config["website_title"] ?: $config["query_displayip"]}</a> and wait ±30 seconds.<br>The website will auto-refresh.</p>
                     <a href="ts3server://{$config["query_displayip"]|escapeUrl}" class="btn btn-primary">
                         <i class="fas fa-sign-in-alt"></i>Connect
                     </a>

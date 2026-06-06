@@ -2,6 +2,7 @@
 
 use PlanetTeamSpeak\TeamSpeak3Framework\TeamSpeak3;
 use Wruczek\TSWebsite\Config;
+use Wruczek\TSWebsite\I18n;
 use Wruczek\TSWebsite\ServerIconCache;
 use Wruczek\TSWebsite\Utils\CsrfUtils;
 use Wruczek\TSWebsite\Utils\Language\LanguageUtils;
@@ -41,6 +42,10 @@ if(!file_exists(__INSTALLER_LOCK_FILE)) {
 }
 
 require_once __PRIVATE_DIR . "/vendor/autoload.php";
+require_once __DIR__ . "/I18n.php";
+
+// Detect locale from cookie / Accept-Language header
+I18n::detectLocale();
 
 // Check CSRF token if needed and validate it
 if (!defined("DISABLE_CSRF_CHECK") &&
@@ -74,20 +79,17 @@ if (!defined("DISABLE_CSRF_CHECK") &&
      * Shortcut to translate and return the result
      */
     function __get(string $identifier, $args = [], bool $nullOnError = false) {
-        try {
-            return LanguageUtils::i()->translate($identifier, $args);
-        } catch (\Exception $e) {
-            if ($nullOnError) {
-                return null;
-            } else {
-                return "(unknown translation for " . Utils::escape($identifier) . ")";
-            }
+        $args = is_array($args) ? $args : [$args];
+        $result = I18n::t($identifier, 'frontend', $args);
+        if ($result === $identifier && $nullOnError) {
+            return null;
         }
+        return $result;
     }
 }
 
 // Set timezone
-date_default_timezone_set(Config::get("timezone"));
+date_default_timezone_set(Config::get("timezone") ?: "UTC");
 
 // Init TS3 library
 // This makes it possible to cache TS3 library objects

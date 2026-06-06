@@ -1,0 +1,599 @@
+# TS-Website admin translations -- cs
+# Domain: admin
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: cs\n"
+
+msgid "ADMIN_NAV_BRAND"
+msgstr "TS-Website Admin"
+
+msgid "ADMIN_NAV_NEWS"
+msgstr "Novinky"
+
+msgid "ADMIN_NAV_FAQ"
+msgstr "FAQ"
+
+msgid "ADMIN_NAV_RULES"
+msgstr "Pravidla"
+
+msgid "ADMIN_NAV_ASSIGNER"
+msgstr "Assigner"
+
+msgid "ADMIN_NAV_CONFIG"
+msgstr "Konfigurace"
+
+msgid "ADMIN_NAV_GOTO_WEBSITE"
+msgstr "Přejít na web"
+
+msgid "ADMIN_BTN_SAVE"
+msgstr "Uložit"
+
+msgid "ADMIN_BTN_SAVE_ALL"
+msgstr "Uložit všechna nastavení"
+
+msgid "ADMIN_BTN_BACK"
+msgstr "Zpět"
+
+msgid "ADMIN_BTN_BACK_TO_CONFIG"
+msgstr "Zpět na konfiguraci"
+
+msgid "ADMIN_BTN_CANCEL"
+msgstr "Zrušit"
+
+msgid "ADMIN_BTN_ADD"
+msgstr "Přidat"
+
+msgid "ADMIN_BTN_REMOVE"
+msgstr "Odebrat"
+
+msgid "ADMIN_ENABLED"
+msgstr "Povoleno"
+
+msgid "ADMIN_TABLE_ID"
+msgstr "ID"
+
+msgid "ADMIN_TABLE_TITLE"
+msgstr "Nadpis"
+
+msgid "ADMIN_TABLE_CREATED"
+msgstr "Vytvořeno"
+
+msgid "ADMIN_TABLE_EDITED"
+msgstr "Upraveno"
+
+msgid "ADMIN_TABLE_QUESTION"
+msgstr "Otázka"
+
+msgid "ADMIN_TABLE_LAST_MODIFIED"
+msgstr "Naposledy upraveno"
+
+msgid "ADMIN_TABLE_ACTIONS"
+msgstr "Akce"
+
+msgid "ADMIN_NO_GROUPS_AVAILABLE"
+msgstr "Žádné serverové skupiny nejsou k dispozici."
+
+msgid "ADMIN_403_TITLE"
+msgstr "Přístup odepřen — Admin"
+
+msgid "ADMIN_403_TEXT"
+msgstr "Bez přístupu. Nejste zaregistrován jako správce."
+
+msgid "ADMIN_403_HINT"
+msgstr "Nejprve se přihlaste na hlavním webu přes TeamSpeak, pak požádejte admina, aby přidal vaše cldbid do admin_cldbids."
+
+msgid "ADMIN_403_BTN"
+msgstr "Přejít na hlavní stránku"
+
+msgid "ADMIN_SETUP_TITLE"
+msgstr "Admin panel — Počáteční nastavení"
+
+msgid "ADMIN_SETUP_NO_ADMIN"
+msgstr "Žádný správce ještě není zaregistrován. Zadejte své cldbid pro přístup k admin panelu."
+
+msgid "ADMIN_SETUP_CLDBID_LABEL"
+msgstr "Vaše cldbid"
+
+msgid "ADMIN_SETUP_CLDBID_HINT"
+msgstr "Viditelné po přihlášení přes TS3 na hlavní stránce nebo vyberte ze seznamu níže."
+
+msgid "ADMIN_SETUP_ONLINE_LABEL"
+msgstr "Momentálně online"
+
+msgid "ADMIN_SETUP_BTN_REGISTER"
+msgstr "Zaregistrovat se jako první správce"
+
+msgid "ADMIN_SETUP_BTN_GOTO"
+msgstr "Přejít do admin panelu"
+
+msgid "ADMIN_SETUP_SUCCESS"
+msgstr "cldbid {0} zaregistrováno jako první správce. Tato stránka je nyní uzamčena."
+
+msgid "ADMIN_SETUP_ERR_INVALID"
+msgstr "Zadejte platné cldbid (kladné celé číslo)."
+
+msgid "ADMIN_NEWS_TITLE"
+msgstr "Novinky"
+
+msgid "ADMIN_NEWS_NEW_BTN"
+msgstr "Nový článek"
+
+msgid "ADMIN_NEWS_EMPTY"
+msgstr "Žádné novinky k dispozici."
+
+msgid "ADMIN_NEWS_CONFIRM_DELETE"
+msgstr "Smazat tento článek?"
+
+msgid "ADMIN_NEWS_EDIT_TITLE"
+msgstr "Upravit novinku"
+
+msgid "ADMIN_NEWS_NEW_TITLE"
+msgstr "Nový článek"
+
+msgid "ADMIN_NEWS_FORM_TITLE"
+msgstr "Nadpis"
+
+msgid "ADMIN_NEWS_FORM_CONTENT"
+msgstr "Obsah"
+
+msgid "ADMIN_FAQ_TITLE"
+msgstr "FAQ"
+
+msgid "ADMIN_FAQ_NEW_BTN"
+msgstr "Nová položka FAQ"
+
+msgid "ADMIN_FAQ_EMPTY"
+msgstr "Žádné položky FAQ."
+
+msgid "ADMIN_FAQ_CONFIRM_DELETE"
+msgstr "Smazat tuto položku FAQ?"
+
+msgid "ADMIN_FAQ_EDIT_TITLE"
+msgstr "Upravit položku FAQ"
+
+msgid "ADMIN_FAQ_NEW_TITLE"
+msgstr "Nová položka FAQ"
+
+msgid "ADMIN_FAQ_FORM_QUESTION"
+msgstr "Otázka"
+
+msgid "ADMIN_FAQ_FORM_ANSWER"
+msgstr "Odpověď"
+
+msgid "ADMIN_RULES_TITLE"
+msgstr "Pravidla serveru"
+
+msgid "ADMIN_RULES_FORM_CONTENT"
+msgstr "Obsah"
+
+msgid "ADMIN_IMPRINT_TITLE"
+msgstr "Tiráž"
+
+msgid "ADMIN_ASSIGNER_TITLE"
+msgstr "Konfigurace Assigneru"
+
+msgid "ADMIN_ASSIGNER_NO_GROUPS_WARNING"
+msgstr "Nebyly nalezeny žádné serverové skupiny. Ujistěte se, že server TS3 je připojen."
+
+msgid "ADMIN_ASSIGNER_DESCRIPTION"
+msgstr "Definujte kategorie pro přiřazení skupin. Každá kategorie má název, ikonu, maximální počet skupin a odpovídající serverové skupiny."
+
+msgid "ADMIN_ASSIGNER_GENERAL"
+msgstr "Obecná nastavení"
+
+msgid "ADMIN_ASSIGNER_COOLDOWN_LABEL"
+msgstr "Cooldown (sekundy)"
+
+msgid "ADMIN_ASSIGNER_COOLDOWN_HINT"
+msgstr "Jak dlouho musí uživatel čekat před další změnou skupiny. 0 = bez čekání."
+
+msgid "ADMIN_ASSIGNER_REQUIRED_GROUPS_LABEL"
+msgstr "Požadované serverové skupiny"
+
+msgid "ADMIN_ASSIGNER_REQUIRED_GROUPS_HINT"
+msgstr "Assigner mohou používat pouze členové těchto skupin. Prázdné = všichni."
+
+msgid "ADMIN_ASSIGNER_ADD_CATEGORY"
+msgstr "Přidat kategorii"
+
+msgid "ADMIN_ASSIGNER_SAVED"
+msgstr "Konfigurace Assigneru uložena."
+
+msgid "ADMIN_ASSIGNER_JS_MOVE_UP"
+msgstr "Přesunout nahoru"
+
+msgid "ADMIN_ASSIGNER_JS_MOVE_DOWN"
+msgstr "Přesunout dolů"
+
+msgid "ADMIN_ASSIGNER_JS_NEW_CATEGORY"
+msgstr "Nová kategorie"
+
+msgid "ADMIN_ASSIGNER_JS_NAME_LABEL"
+msgstr "Název"
+
+msgid "ADMIN_ASSIGNER_JS_NAME_PLACEHOLDER"
+msgstr "např. Země, Hra, Koníček"
+
+msgid "ADMIN_ASSIGNER_JS_MAX_LABEL"
+msgstr "Max. výběr"
+
+msgid "ADMIN_ASSIGNER_JS_ICON_LABEL"
+msgstr "Ikona"
+
+msgid "ADMIN_ASSIGNER_JS_GROUPS_LABEL"
+msgstr "Serverové skupiny v této kategorii"
+
+msgid "ADMIN_ASSIGNER_JS_NO_GROUPS"
+msgstr "Žádné serverové skupiny k dispozici."
+
+msgid "ADMIN_ASSIGNER_JS_SAVE_ERROR"
+msgstr "Chyba při ukládání."
+
+msgid "ADMIN_CONFIG_TITLE"
+msgstr "Konfigurace"
+
+msgid "ADMIN_CONFIG_SECTION_ADMINSTATUS"
+msgstr "Widget stavu adminů"
+
+msgid "ADMIN_CONFIG_SECTION_ASSIGNER"
+msgstr "Přiřazení skupin"
+
+msgid "ADMIN_CONFIG_SECTION_CACHE"
+msgstr "Časy cache"
+
+msgid "ADMIN_CONFIG_SECTION_GENERAL"
+msgstr "Obecné"
+
+msgid "ADMIN_CONFIG_SECTION_IMPRINT"
+msgstr "Tiráž"
+
+msgid "ADMIN_CONFIG_SECTION_ONLINERECORD"
+msgstr "Online rekord"
+
+msgid "ADMIN_CONFIG_SECTION_VIEWER"
+msgstr "Prohlížeč kanálů"
+
+msgid "ADMIN_CONFIG_SECTION_QUERY"
+msgstr "TeamSpeak Query"
+
+msgid "ADMIN_CONFIG_SECTION_ADMIN"
+msgstr "Admin panel"
+
+msgid "ADMIN_CONFIG_BTN_ADMINSTATUS"
+msgstr "Konfigurovat widget stavu"
+
+msgid "ADMIN_CONFIG_BTN_ASSIGNER"
+msgstr "Konfigurovat přiřazení skupin"
+
+msgid "ADMIN_CONFIG_BTN_CACHE"
+msgstr "Konfigurovat časy cache"
+
+msgid "ADMIN_CONFIG_BTN_GENERAL"
+msgstr "Upravit obecná nastavení"
+
+msgid "ADMIN_CONFIG_BTN_IMPRINT"
+msgstr "Upravit tiráž"
+
+msgid "ADMIN_CONFIG_BTN_ONLINERECORD"
+msgstr "Upravit online rekord"
+
+msgid "ADMIN_CONFIG_BTN_VIEWER"
+msgstr "Konfigurovat prohlížeč kanálů"
+
+msgid "ADMIN_CONFIG_BTN_QUERY"
+msgstr "Konfigurovat připojení TeamSpeak"
+
+msgid "ADMIN_CONFIG_BTN_ADMINS"
+msgstr "Spravovat přístup adminů"
+
+msgid "ADMIN_CONFIG_EDIT_IN_ASSIGNER"
+msgstr "Upravit v editoru Assigneru"
+
+msgid "ADMIN_CONFIG_MANAGED_IN_ASSIGNER"
+msgstr "Spravováno v editoru Assigneru."
+
+msgid "ADMIN_CONFIG_WHO_HAS_ACCESS"
+msgstr "Kdo má přístup k tomuto admin panelu?"
+
+msgid "ADMIN_GENERAL_TITLE"
+msgstr "Obecná nastavení"
+
+msgid "ADMIN_GENERAL_FIELD_WEBSITE_TITLE_LABEL"
+msgstr "Název serveru TS (zobrazení)"
+
+msgid "ADMIN_GENERAL_FIELD_WEBSITE_TITLE_HINT"
+msgstr "Přepíše IP adresu na bočním panelu a v přihlašovacím dialogu. Zobrazeno také v záložce prohlížeče a zápatí. Prázdné = zobrazí se IP."
+
+msgid "ADMIN_GENERAL_FIELD_NAV_BRAND_LABEL"
+msgstr "Název webu (Navbar)"
+
+msgid "ADMIN_GENERAL_FIELD_NAV_BRAND_HINT"
+msgstr "Text loga vlevo nahoře v navigaci."
+
+msgid "ADMIN_GENERAL_FIELD_BASEURL_LABEL"
+msgstr "Základní URL"
+
+msgid "ADMIN_GENERAL_FIELD_BASEURL_HINT"
+msgstr "Úplná URL webu, např. https://example.com"
+
+msgid "ADMIN_GENERAL_FIELD_LOGINPOKE_LABEL"
+msgstr "Přihlášení: Poke klienta"
+
+msgid "ADMIN_GENERAL_FIELD_LOGINPOKE_HINT"
+msgstr "Odeslat poke klientovi TS při pokusu o přihlášení"
+
+msgid "ADMIN_GENERAL_FIELD_TIMEZONE_LABEL"
+msgstr "Časové pásmo"
+
+msgid "ADMIN_GENERAL_FIELD_TIMEZONE_HINT"
+msgstr "PHP časové pásmo, např. Europe/Prague"
+
+msgid "ADMIN_GENERAL_FIELD_CLOUDFLARE_LABEL"
+msgstr "Cloudflare aktivní"
+
+msgid "ADMIN_GENERAL_FIELD_CLOUDFLARE_HINT"
+msgstr "Aktivovat, pokud web je za Cloudflare"
+
+msgid "ADMIN_GENERAL_SAVED"
+msgstr "Nastavení uložena."
+
+msgid "ADMIN_ADMINS_TITLE"
+msgstr "Přístup adminů"
+
+msgid "ADMIN_ADMINS_CURRENT"
+msgstr "Aktuální admini"
+
+msgid "ADMIN_ADMINS_TABLE_CLDBID"
+msgstr "ID databáze klienta"
+
+msgid "ADMIN_ADMINS_TABLE_ACTION"
+msgstr "Akce"
+
+msgid "ADMIN_ADMINS_YOU_BADGE"
+msgstr "Vy"
+
+msgid "ADMIN_ADMINS_CONFIRM_REMOVE"
+msgstr "Odebrat admina?"
+
+msgid "ADMIN_ADMINS_CANNOT_REMOVE_SELF"
+msgstr "Nemůžete odebrat sami sebe."
+
+msgid "ADMIN_ADMINS_ADD_TITLE"
+msgstr "Přidat admina"
+
+msgid "ADMIN_ADMINS_CLDBID_LABEL"
+msgstr "ID databáze klienta"
+
+msgid "ADMIN_ADMINS_ONLINE_LABEL"
+msgstr "Momentálně online (vyberte ze seznamu)"
+
+msgid "ADMIN_ADMINS_ADDED"
+msgstr "Admin přidán."
+
+msgid "ADMIN_ADMINS_REMOVED"
+msgstr "Admin odebrán."
+
+msgid "ADMIN_ADMINSTATUS_TITLE"
+msgstr "Widget stavu adminů"
+
+msgid "ADMIN_ADMINSTATUS_SECTION_GENERAL"
+msgstr "Obecné"
+
+msgid "ADMIN_ADMINSTATUS_WIDGET_ENABLED_LABEL"
+msgstr "Widget povolen"
+
+msgid "ADMIN_ADMINSTATUS_HIDE_OFFLINE_LABEL"
+msgstr "Skrýt offline uživatele"
+
+msgid "ADMIN_ADMINSTATUS_HIDE_OFFLINE_HINT"
+msgstr "Offline uživatelé jsou zcela skryti."
+
+msgid "ADMIN_ADMINSTATUS_OFFLINE_COLLAPSED_LABEL"
+msgstr "Offline výchozně sbaleno"
+
+msgid "ADMIN_ADMINSTATUS_OFFLINE_COLLAPSED_HINT"
+msgstr "Offline záznamy ve widgetu jsou viditelné až po kliknutí."
+
+msgid "ADMIN_ADMINSTATUS_DISPLAY_MODE_LABEL"
+msgstr "Režim zobrazení"
+
+msgid "ADMIN_ADMINSTATUS_MODE_1"
+msgstr "Seskupeno"
+
+msgid "ADMIN_ADMINSTATUS_MODE_2"
+msgstr "Seskupeno (skrýt prázdné skupiny)"
+
+msgid "ADMIN_ADMINSTATUS_MODE_3"
+msgstr "Seznam"
+
+msgid "ADMIN_ADMINSTATUS_MODE_4"
+msgstr "Seznam (online nejdříve)"
+
+msgid "ADMIN_ADMINSTATUS_SECTION_GROUPS"
+msgstr "Serverové skupiny k zobrazení"
+
+msgid "ADMIN_ADMINSTATUS_NO_GROUPS"
+msgstr "Žádné serverové skupiny — zkontrolujte připojení TS."
+
+msgid "ADMIN_ADMINSTATUS_SECTION_IGNORED"
+msgstr "Ignorovaní uživatelé"
+
+msgid "ADMIN_ADMINSTATUS_IGNORED_HINT"
+msgstr "Uživatelé z vybraných skupin. Zaškrtnutí se neobjeví ve widgetu."
+
+msgid "ADMIN_ADMINSTATUS_NO_GROUPS_SELECTED"
+msgstr "Nejprve vyberte serverové skupiny a uložte."
+
+msgid "ADMIN_ADMINSTATUS_NO_CACHE"
+msgstr "Zatím žádná cache — chvíli počkejte a načtěte stránku znovu."
+
+msgid "ADMIN_ADMINSTATUS_CURRENTLY_IGNORED"
+msgstr "Aktuálně ignorovaná DBID:"
+
+msgid "ADMIN_ADMINSTATUS_SAVED"
+msgstr "Stav adminů uložen."
+
+msgid "ADMIN_CACHE_TITLE"
+msgstr "Časy cache"
+
+msgid "ADMIN_CACHE_HINT"
+msgstr "Všechny hodnoty v sekundách. Nižší = aktuálnější data, ale vyšší zátěž serveru TS."
+
+msgid "ADMIN_CACHE_SERVERINFO_LABEL"
+msgstr "Info serveru"
+
+msgid "ADMIN_CACHE_SERVERINFO_HINT"
+msgstr "Obecné informace o serveru TS (název, sloty, ...)"
+
+msgid "ADMIN_CACHE_CLIENTLIST_LABEL"
+msgstr "Seznam klientů"
+
+msgid "ADMIN_CACHE_CLIENTLIST_HINT"
+msgstr "Seznam hráčů online — udržujte krátké pro aktuální stav přihlášení"
+
+msgid "ADMIN_CACHE_CHANNELLIST_LABEL"
+msgstr "Seznam kanálů"
+
+msgid "ADMIN_CACHE_CHANNELLIST_HINT"
+msgstr "Prohlížeč kanálů"
+
+msgid "ADMIN_CACHE_SERVERGROUPS_LABEL"
+msgstr "Serverové skupiny"
+
+msgid "ADMIN_CACHE_SERVERGROUPS_HINT"
+msgstr "Seznam všech serverových skupin"
+
+msgid "ADMIN_CACHE_CHANNELGROUPS_LABEL"
+msgstr "Skupiny kanálů"
+
+msgid "ADMIN_CACHE_CHANNELGROUPS_HINT"
+msgstr "Seznam všech skupin kanálů"
+
+msgid "ADMIN_CACHE_BANLIST_LABEL"
+msgstr "Seznam banů"
+
+msgid "ADMIN_CACHE_BANLIST_HINT"
+msgstr "Zabanovaní uživatelé"
+
+msgid "ADMIN_CACHE_ADMINSTATUS_LABEL"
+msgstr "Stav adminů"
+
+msgid "ADMIN_CACHE_ADMINSTATUS_HINT"
+msgstr "Členové admin skupin pro widget stavu"
+
+msgid "ADMIN_CACHE_SERVERICONS_LABEL"
+msgstr "Ikony serveru"
+
+msgid "ADMIN_CACHE_SERVERICONS_HINT"
+msgstr "Data ikon ze serveru TS"
+
+msgid "ADMIN_CACHE_LANGUAGES_LABEL"
+msgstr "Jazyky"
+
+msgid "ADMIN_CACHE_LANGUAGES_HINT"
+msgstr "Jazykové soubory z databáze"
+
+msgid "ADMIN_CACHE_LOGINCODE_LABEL"
+msgstr "Přihlašovací kód"
+
+msgid "ADMIN_CACHE_LOGINCODE_HINT"
+msgstr "Dočasné přihlašovací kódy"
+
+msgid "ADMIN_CACHE_SAVED"
+msgstr "Časy cache uloženy."
+
+msgid "ADMIN_ONLINERECORD_TITLE"
+msgstr "Online rekord"
+
+msgid "ADMIN_ONLINERECORD_VALUE_LABEL"
+msgstr "Rekord (počet hráčů)"
+
+msgid "ADMIN_ONLINERECORD_DATE_LABEL"
+msgstr "Datum a čas"
+
+msgid "ADMIN_ONLINERECORD_DATE_HINT"
+msgstr "Automaticky přepsáno při dosažení nového rekordu."
+
+msgid "ADMIN_ONLINERECORD_SAVED"
+msgstr "Online rekord uložen."
+
+msgid "ADMIN_VIEWER_TITLE"
+msgstr "Prohlížeč kanálů"
+
+msgid "ADMIN_VIEWER_SECTION"
+msgstr "Skryté kanály"
+
+msgid "ADMIN_VIEWER_HINT"
+msgstr "Zaškrtnuto = kanál je skrytý na webu. Kanály chráněné heslem mizí automaticky."
+
+msgid "ADMIN_VIEWER_NO_CHANNELS"
+msgstr "Žádné kanály — zkontrolujte připojení TS."
+
+msgid "ADMIN_VIEWER_HIDDEN_BADGE"
+msgstr "skrytý"
+
+msgid "ADMIN_VIEWER_SAVED"
+msgstr "Prohlížeč kanálů uložen."
+
+msgid "ADMIN_QUERY_TITLE"
+msgstr "Připojení TeamSpeak"
+
+msgid "ADMIN_QUERY_WARNING_TITLE"
+msgstr "Varování"
+
+msgid "ADMIN_QUERY_WARNING_TEXT"
+msgstr "Opravdu chcete upravit tato nastavení? Pokud nevíte, co děláte, můžete přerušit připojení k serveru TeamSpeak."
+
+msgid "ADMIN_QUERY_WARNING_CONFIRM"
+msgstr "Ano, vím, co dělám"
+
+msgid "ADMIN_QUERY_SECTION"
+msgstr "Nastavení připojení TeamSpeak"
+
+msgid "ADMIN_QUERY_HOSTNAME_LABEL"
+msgstr "Adresa serveru"
+
+msgid "ADMIN_QUERY_HOSTNAME_HINT"
+msgstr "IP nebo hostname serveru TeamSpeak (např. 127.0.0.1)"
+
+msgid "ADMIN_QUERY_PORT_LABEL"
+msgstr "Port ServerQuery"
+
+msgid "ADMIN_QUERY_PORT_HINT"
+msgstr "Výchozí: 10011"
+
+msgid "ADMIN_QUERY_USERNAME_LABEL"
+msgstr "Uživatelské jméno ServerQuery"
+
+msgid "ADMIN_QUERY_USERNAME_HINT"
+msgstr "Query účet vytvořený pro web"
+
+msgid "ADMIN_QUERY_PASSWORD_LABEL"
+msgstr "Heslo ServerQuery"
+
+msgid "ADMIN_QUERY_PASSWORD_HINT"
+msgstr "Heslo query účtu"
+
+msgid "ADMIN_QUERY_NICKNAME_LABEL"
+msgstr "Zobrazované jméno v Query"
+
+msgid "ADMIN_QUERY_NICKNAME_HINT"
+msgstr "Jméno zobrazené při přihlášení webu do query"
+
+msgid "ADMIN_QUERY_DISPLAYIP_LABEL"
+msgstr "Veřejná IP serveru"
+
+msgid "ADMIN_QUERY_DISPLAYIP_HINT"
+msgstr "IP použitá jako odkaz ts3server:// v prohlížeči kanálů"
+
+msgid "ADMIN_QUERY_VOICEPORT_LABEL"
+msgstr "Hlasový port TeamSpeak"
+
+msgid "ADMIN_QUERY_VOICEPORT_HINT"
+msgstr "Port, ke kterému se klienti připojují (výchozí: 9987)"
+
+msgid "ADMIN_QUERY_SAVED"
+msgstr "Nastavení připojení uloženo."
+

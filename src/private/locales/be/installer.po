@@ -1,0 +1,136 @@
+# TS-Website installer translations — be
+# Domain: installer
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: be\n"
+
+msgid "INSTALLER_NAV_BRAND"
+msgstr "Усталёўшчык TS-Website"
+
+msgid "INSTALLER_STEP_WELCOME"
+msgstr "Вітанне"
+
+msgid "INSTALLER_STEP_REQUIREMENTS"
+msgstr "Патрабаванні"
+
+msgid "INSTALLER_STEP_DATABASE"
+msgstr "База дадзеных"
+
+msgid "INSTALLER_STEP_TEAMSPEAK"
+msgstr "TeamSpeak"
+
+msgid "INSTALLER_STEP_SECURITY"
+msgstr "Бяспека"
+
+msgid "INSTALLER_STEP_CONFIGURATION"
+msgstr "Канфігурацыя"
+
+msgid "INSTALLER_STEP_DONE"
+msgstr "Гатова"
+
+msgid "INSTALLER_WELCOME_TITLE"
+msgstr "Вітаем у ўсталёўшчыку TS-website!"
+
+msgid "INSTALLER_WELCOME_DESCRIPTION"
+msgstr "Гэты майстар правядзе вас праз працэс усталёўкі TS-website."
+
+msgid "INSTALLER_WELCOME_NO_JS"
+msgstr "Калі ласка, уключыце Javascript перад працягам!"
+
+msgid "INSTALLER_WELCOME_READY"
+msgstr "Перайдзіце да наступнага кроку, калі будзеце гатовы!"
+
+msgid "INSTALLER_BTN_START"
+msgstr "Пачаць"
+
+msgid "INSTALLER_BTN_RECHECK"
+msgstr "Праверыць зноў"
+
+msgid "INSTALLER_BTN_NEXT"
+msgstr "Далей"
+
+msgid "INSTALLER_BTN_BACK"
+msgstr "Назад"
+
+msgid "INSTALLER_BTN_SUBMIT"
+msgstr "Адправіць"
+
+msgid "INSTALLER_DB_TITLE"
+msgstr "Налады базы дадзеных"
+
+msgid "INSTALLER_DB_USE_MYSQL"
+msgstr "Выкарыстоўваць MySQL / MariaDB"
+
+msgid "INSTALLER_DB_USE_SQLITE"
+msgstr "Выкарыстоўваць SQLite"
+
+msgid "INSTALLER_DB_HOSTNAME"
+msgstr "Хост"
+
+msgid "INSTALLER_DB_USERNAME"
+msgstr "Імя карыстальніка"
+
+msgid "INSTALLER_DB_PASSWORD"
+msgstr "Пароль"
+
+msgid "INSTALLER_DB_NAME"
+msgstr "Назва базы дадзеных"
+
+msgid "INSTALLER_DB_ERR_FILL_IN"
+msgstr "Калі ласка, запоўніце налады базы дадзеных"
+
+msgid "INSTALLER_TS_TITLE"
+msgstr "Налады Query"
+
+msgid "INSTALLER_TS_HOSTNAME"
+msgstr "Хост"
+
+msgid "INSTALLER_TS_QUERYPORT"
+msgstr "Порт ServerQuery"
+
+msgid "INSTALLER_TS_VOICEPORT"
+msgstr "Голасавы порт"
+
+msgid "INSTALLER_TS_QUERYUSERNAME"
+msgstr "Імя карыстальніка Query"
+
+msgid "INSTALLER_TS_QUERYPASSWORD"
+msgstr "Пароль Query"
+
+msgid "INSTALLER_TS_DISPLAYIP"
+msgstr "Адлюстраваны адрас"
+
+msgid "INSTALLER_TS_CACHING_ICONS"
+msgstr "Кэшаванне іконак з сервера TS3, пачакайце..."
+
+msgid "INSTALLER_TS_ERR_CANNOT_GET_INFO"
+msgstr "Немагчыма атрымаць інфармацыю аб серверы"
+
+msgid "INSTALLER_SEC_TITLE"
+msgstr "Бяспека: тэчка private/"
+
+msgid "INSTALLER_SEC_DIR_PROTECTED"
+msgstr "Тэчка абаронена"
+
+msgid "INSTALLER_SEC_DIR_NOT_PROTECTED"
+msgstr "Тэчка НЕ абаронена"
+
+msgid "INSTALLER_CONFIG_TITLE"
+msgstr "Наладзьце свой сайт"
+
+msgid "INSTALLER_CONFIG_SITE_NAME_LABEL"
+msgstr "Назва / загаловак сайта"
+
+msgid "INSTALLER_CONFIG_TIMEZONE_LABEL"
+msgstr "Абярыце часавы пояс"
+
+msgid "INSTALLER_DONE_TITLE"
+msgstr "TS-website {0} паспяхова ўсталяваны! 👍"
+
+msgid "INSTALLER_DONE_WHATNOW"
+msgstr "Што далей?"
+
+msgid "INSTALLER_DONE_VISIT_TITLE"
+msgstr "Наведайце свой новы сайт"

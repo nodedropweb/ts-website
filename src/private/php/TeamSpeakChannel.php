@@ -51,7 +51,7 @@ class TeamSpeakChannel {
     }
 
     public function getId(): int {
-        return (int) $this->info["cid"];
+        return (int)(string) $this->info["cid"];
     }
 
     public function getName(): string {
@@ -73,7 +73,7 @@ class TeamSpeakChannel {
     }
 
     public function getParentId(): int {
-        return (int) $this->info["pid"];
+        return (int)(string) $this->info["pid"];
     }
 
     public function isOccupied(bool $checkChildrens = false, bool $includeQuery = false): bool {
@@ -93,7 +93,7 @@ class TeamSpeakChannel {
         // But its much faster to return on the first instance then to
         // count up all users and then compare their number.
         foreach ($this->getClientList() as $client) {
-            if (!$client["client_type"] && $client["cid"] === $this->getId()) {
+            if (!(int)(string)$client["client_type"] && (int)(string)$client["cid"] === $this->getId()) {
                 return true;
             }
         }
@@ -102,20 +102,20 @@ class TeamSpeakChannel {
     }
 
     public function hasPassword(): bool {
-        return $this->info["channel_flag_password"] === 1;
+        return (int)(string)$this->info["channel_flag_password"] === 1;
     }
 
     public function getTotalClients(): int {
-        return (int) $this->info["total_clients"];
+        return (int)(string) $this->info["total_clients"];
     }
 
     public function isFullyOccupied(): bool {
-        return $this->info["channel_maxclients"] !== -1 &&
-                $this->info["channel_maxclients"] <= $this->info["total_clients"];
+        return (int)(string)$this->info["channel_maxclients"] !== -1 &&
+                (int)(string)$this->info["channel_maxclients"] <= (int)(string)$this->info["total_clients"];
     }
 
     public function isDefaultChannel(): bool {
-        return $this->info["channel_flag_default"] === 1;
+        return (int)(string)$this->info["channel_flag_default"] === 1;
     }
 
     public function isTopChannel(): bool {
@@ -123,7 +123,7 @@ class TeamSpeakChannel {
     }
 
     public function getParentChannels(int $max = -1): array {
-        $pid = (int) $this->info["pid"];
+        $pid = (int)(string) $this->info["pid"];
         $parents = [];
 
         while ($pid !== 0 && ($max < 0 || count($parents) < $max)) {
@@ -141,16 +141,40 @@ class TeamSpeakChannel {
     }
 
     public function getChildChannels(bool $resursive = false): array {
-        $childList = [];
+        $allChannels = $this->getChannelList();
+        $parentId    = $this->getId();
 
-        foreach ($this->getChannelList() as $channel) {
-            if ($channel["pid"] === $this->getId()) {
-                $childChannel = new TeamSpeakChannel($channel);
-                $childList[$childChannel->getId()] = $childChannel;
+        // Collect direct children
+        $siblings = [];
+        foreach ($allChannels as $cid => $ch) {
+            if ((int)(string)$ch['pid'] === $parentId) {
+                $siblings[(int)(string)$cid] = $ch;
+            }
+        }
 
-                if ($resursive) {
-                    $childList += $childChannel->getChildChannels(true);
+        // Sort by channel_order linked list
+        $ordered = [];
+        $prevId  = 0;
+        $max     = count($siblings) + 1;
+        while (count($ordered) < count($siblings) && $max-- > 0) {
+            foreach ($siblings as $cid => $ch) {
+                if ((int)(string)$ch['channel_order'] === $prevId && !isset($ordered[$cid])) {
+                    $ordered[$cid] = $ch;
+                    $prevId = $cid;
+                    break;
                 }
+            }
+        }
+        foreach ($siblings as $cid => $ch) {
+            if (!isset($ordered[$cid])) $ordered[$cid] = $ch;
+        }
+
+        $childList = [];
+        foreach ($ordered as $cid => $ch) {
+            $childChannel = new TeamSpeakChannel($ch);
+            $childList[$childChannel->getId()] = $childChannel;
+            if ($resursive) {
+                $childList += $childChannel->getChildChannels(true);
             }
         }
 
@@ -166,7 +190,7 @@ class TeamSpeakChannel {
         $clientList = [];
 
         foreach ($this->getClientList() as $client) {
-            if ($client["cid"] === $this->getId() && ($includeQuery || !$client["client_type"])) {
+            if ((int)(string)$client["cid"] === $this->getId() && ($includeQuery || !(int)(string)$client["client_type"])) {
                 $clientList[$client["clid"]] = $client;
             }
         }

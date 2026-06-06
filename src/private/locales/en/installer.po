@@ -1,0 +1,347 @@
+# TS-Website installer translations — English
+# Domain: installer
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+
+# ── Step navigation labels ───────────────────────────────────────────────────
+
+msgid "INSTALLER_NAV_BRAND"
+msgstr "TS-Website Installer"
+
+msgid "INSTALLER_STEP_WELCOME"
+msgstr "Welcome"
+
+msgid "INSTALLER_STEP_REQUIREMENTS"
+msgstr "Requirements"
+
+msgid "INSTALLER_STEP_DATABASE"
+msgstr "Database"
+
+msgid "INSTALLER_STEP_TEAMSPEAK"
+msgstr "TeamSpeak"
+
+msgid "INSTALLER_STEP_SECURITY"
+msgstr "Security"
+
+msgid "INSTALLER_STEP_CONFIGURATION"
+msgstr "Configuration"
+
+msgid "INSTALLER_STEP_DONE"
+msgstr "Done"
+
+# ── Page 1 — Welcome ─────────────────────────────────────────────────────────
+
+msgid "INSTALLER_WELCOME_MODAL_TITLE"
+msgstr "Welcome to TS-Website 3.0!"
+
+msgid "INSTALLER_WELCOME_MODAL_INTRO"
+msgstr "This version includes a fully featured <b>Admin Panel</b>, PHP 8.4 compatibility and numerous improvements over version 2."
+
+msgid "INSTALLER_WELCOME_MODAL_NEW_IN"
+msgstr "<b>New in 3.0:</b>"
+
+msgid "INSTALLER_WELCOME_MODAL_FEATURE_ADMIN"
+msgstr "<b>Admin Panel</b> — News, FAQ, Rules, Imprint, Configuration"
+
+msgid "INSTALLER_WELCOME_MODAL_FEATURE_EDITOR"
+msgstr "<b>Lexical Rich Text Editor</b> — for News, FAQ, Rules and Imprint"
+
+msgid "INSTALLER_WELCOME_MODAL_FEATURE_PHP"
+msgstr "<b>PHP 8.4 compatible</b> — fully modernized"
+
+msgid "INSTALLER_WELCOME_MODAL_FEATURE_VIEWER"
+msgstr "<b>Automatic Channel Viewer refresh</b> — no more F5 needed"
+
+msgid "INSTALLER_WELCOME_MODAL_BTN_GO"
+msgstr "Let's go"
+
+msgid "INSTALLER_METRICS_MODAL_TITLE"
+msgstr "Metrics sent by TS-website"
+
+msgid "INSTALLER_METRICS_MODAL_P1"
+msgstr "You may allow TS-website to send one-time metrics during the installation process. The data sent contains only publicly known information, no private info is sent. The collected data will be used only to learn more about our users and improve TS-website. We will never sell or share it to 3rd-parties."
+
+msgid "INSTALLER_METRICS_MODAL_P2"
+msgstr "The data sent will be indexed with the sending server's IP address, to prevent abuse."
+
+msgid "INSTALLER_METRICS_MODAL_P3"
+msgstr "You can check all of the data sent by looking at the source code: <code>installer/pages/7.php</code>"
+
+msgid "INSTALLER_METRICS_MODAL_DATA_TITLE"
+msgstr "<b>Data sent by TS-website:</b>"
+
+msgid "INSTALLER_METRICS_MODAL_DATA_VERSION"
+msgstr "Version of TS-website and PHP"
+
+msgid "INSTALLER_METRICS_MODAL_DATA_EXTENSIONS"
+msgstr "List of loaded PHP extension names"
+
+msgid "INSTALLER_METRICS_MODAL_DATA_SERVER"
+msgstr "Server identification string (contains mainly web server name and version)"
+
+msgid "INSTALLER_METRICS_MODAL_DATA_OS"
+msgstr "Basic OS info (type, version, architecture)"
+
+msgid "INSTALLER_METRICS_MODAL_DATA_TS"
+msgstr "TeamSpeak server info (version, build number, host OS name, slot count, are you using serveradmin for query)"
+
+msgid "INSTALLER_METRICS_MODAL_BTN_CLOSE"
+msgstr "Close"
+
+msgid "INSTALLER_WELCOME_ALREADY_INSTALLED"
+msgstr "dbconfig.php file found! TS-website might have already been installed. If you proceed, you will lose data!"
+
+msgid "INSTALLER_WELCOME_TITLE"
+msgstr "Welcome to TS-website Installer!"
+
+msgid "INSTALLER_WELCOME_DESCRIPTION"
+msgstr "This wizard will guide you through the installation process of TS-website."
+
+msgid "INSTALLER_WELCOME_NO_JS"
+msgstr "Please enable Javascript before continuing!"
+
+msgid "INSTALLER_WELCOME_WIKI_HINT"
+msgstr "If you encounter any problems please make sure you check the <a href=\"https://github.com/Wruczek/ts-website/wiki\" target=\"_blank\">wiki</a>."
+
+msgid "INSTALLER_WELCOME_READY"
+msgstr "Go to the next step whenever you are ready!"
+
+msgid "INSTALLER_WELCOME_METRICS_CHECKBOX"
+msgstr "Send one-time statistics to help improve TS-website"
+
+msgid "INSTALLER_WELCOME_METRICS_LEARN_MORE"
+msgstr "(learn more)"
+
+msgid "INSTALLER_WELCOME_LICENSE_CHECKBOX"
+msgstr "I read and accept the <a href=\"https://github.com/nodedropweb/ts-website/blob/2.0/LICENSE.txt\" target=\"_blank\">license</a>"
+
+msgid "INSTALLER_BTN_START"
+msgstr "Start"
+
+# ── Page 2 — Requirements ────────────────────────────────────────────────────
+
+msgid "INSTALLER_REQ_TITLE"
+msgstr "Requirements check"
+
+msgid "INSTALLER_REQ_FILE_PERM_ERROR"
+msgstr "Looks like you have failed file permission checks. Try running: <code>sudo chown -R www-data:www-data \"{0}\"</code>"
+
+msgid "INSTALLER_REQ_SHOW_DETAILS"
+msgstr "Show details"
+
+msgid "INSTALLER_REQ_CANNOT_INSTALL"
+msgstr "<strong>Oh snap!</strong> Looks like your current web server configuration does not allow running TS-website. Please fix the above problems and try again. If you have any problems, please check the <a href=\"https://github.com/Wruczek/ts-website/wiki\" target=\"_blank\">wiki</a> and follow the installation guide."
+
+msgid "INSTALLER_REQ_SUCCESS"
+msgstr "<strong>Success!</strong> Looks like you can run TS-website!"
+
+msgid "INSTALLER_BTN_RECHECK"
+msgstr "Re-check"
+
+msgid "INSTALLER_BTN_NEXT"
+msgstr "Next"
+
+msgid "INSTALLER_BTN_BACK"
+msgstr "Back"
+
+msgid "INSTALLER_BTN_SUBMIT"
+msgstr "Submit"
+
+# ── Page 3 — Database ────────────────────────────────────────────────────────
+
+msgid "INSTALLER_DB_TITLE"
+msgstr "Database details"
+
+msgid "INSTALLER_DB_USE_MYSQL"
+msgstr "Use MySQL / MariaDB"
+
+msgid "INSTALLER_DB_USE_SQLITE"
+msgstr "Use SQLite database"
+
+msgid "INSTALLER_DB_HOSTNAME"
+msgstr "Hostname"
+
+msgid "INSTALLER_DB_HOSTNAME_TIP"
+msgstr "Use '127.0.0.1' for localhost"
+
+msgid "INSTALLER_DB_USERNAME"
+msgstr "Username"
+
+msgid "INSTALLER_DB_USERNAME_TIP"
+msgstr "It's recommended to create a separate user account instead of using root"
+
+msgid "INSTALLER_DB_PASSWORD"
+msgstr "Password"
+
+msgid "INSTALLER_DB_NAME"
+msgstr "Database name"
+
+msgid "INSTALLER_DB_PREFIX"
+msgstr "Table prefix (optional)"
+
+msgid "INSTALLER_DB_PREFIX_TIP"
+msgstr "Defaults to 'tsw_'"
+
+msgid "INSTALLER_DB_ERR_FILL_IN"
+msgstr "Please fill in your database details"
+
+# ── Page 4 — TeamSpeak ───────────────────────────────────────────────────────
+
+msgid "INSTALLER_TS_TITLE"
+msgstr "Query details"
+
+msgid "INSTALLER_TS_QUERYPERMS_TITLE"
+msgstr "Required Query Permissions"
+
+msgid "INSTALLER_TS_ALLOWLIST_HINT"
+msgstr "If the TS3 server is not hosted locally, and you have access to the TS3 server files, then make sure to edit the <code>query_ip_allowlist.txt</code> file and add the IP of the machine/VPS hosting TS&#8209;website to it, then restart the TS3 server. Otherwise, TS&#8209;website might get rate-limited by the TS3 server and periodically stop working."
+
+msgid "INSTALLER_TS_HOSTNAME"
+msgstr "Hostname"
+
+msgid "INSTALLER_TS_HOSTNAME_TIP"
+msgstr "Your TeamSpeak IP address (without port).<br>Use '127.0.0.1' for localhost"
+
+msgid "INSTALLER_TS_LOCALHOST_HINT"
+msgstr "Use <code>127.0.0.1</code> as the hostname if TS-website and the TS3 server are on the same machine/VPS."
+
+msgid "INSTALLER_TS_QUERYPORT"
+msgstr "ServerQuery port"
+
+msgid "INSTALLER_TS_QUERYPORT_TIP"
+msgstr "ServerQuery interface port. Default: 10011"
+
+msgid "INSTALLER_TS_VOICEPORT"
+msgstr "Voice port"
+
+msgid "INSTALLER_TS_VOICEPORT_TIP"
+msgstr "Port clients connect to. Default: 9987"
+
+msgid "INSTALLER_TS_QUERYUSERNAME"
+msgstr "Query username"
+
+msgid "INSTALLER_TS_QUERYUSERNAME_TIP"
+msgstr "It's recommended to create a special user account instead of serveradmin"
+
+msgid "INSTALLER_TS_QUERYPASSWORD"
+msgstr "Query password"
+
+msgid "INSTALLER_TS_DISPLAYIP"
+msgstr "Displayed address"
+
+msgid "INSTALLER_TS_DISPLAYIP_TIP"
+msgstr "Friendly server address displayed to end users.<br>For example 'myserver.com' or 'ts.myclan.net'"
+
+msgid "INSTALLER_TS_QUERYPERMS_LINK"
+msgstr "Query permissions required by TS-website"
+
+msgid "INSTALLER_TS_CACHING_ICONS"
+msgstr "Caching icons from the TS3 server, please wait..."
+
+msgid "INSTALLER_TS_ERR_CANNOT_GET_INFO"
+msgstr "Cannot retrieve server information"
+
+msgid "INSTALLER_TS_ERR_VERSION"
+msgstr "Your TeamSpeak server version is not supported.<br>Current version: {0} (build {1})<br>Supported versions: 3.10.0 (build 1564054246) and newer"
+
+# ── Page 5 — Security ────────────────────────────────────────────────────────
+
+msgid "INSTALLER_SEC_TITLE"
+msgstr "Security: private/ directory"
+
+msgid "INSTALLER_SEC_AUTOCONFIGURED"
+msgstr "<b><i class=\"fas fa-check-circle\"></i> Automatically configured:</b>"
+
+msgid "INSTALLER_SEC_ACTION_REQUIRED"
+msgstr "<b><i class=\"fas fa-exclamation-triangle\"></i> Action required:</b>"
+
+msgid "INSTALLER_SEC_DIR_PROTECTED"
+msgstr "Directory is protected"
+
+msgid "INSTALLER_SEC_DIR_NOT_PROTECTED"
+msgstr "Directory is NOT protected"
+
+msgid "INSTALLER_SEC_DIR_TEST_FAILED"
+msgstr "HTTP test not possible"
+
+msgid "INSTALLER_SEC_HTACCESS_PRESENT"
+msgstr ".htaccess present"
+
+msgid "INSTALLER_SEC_HTACCESS_MISSING"
+msgstr ".htaccess missing"
+
+msgid "INSTALLER_SEC_WARN_NO_HTTP"
+msgstr "<b>Note:</b> The automatic test could not establish an HTTP connection (e.g. in WSL/Docker environments). Please manually verify that <code>{0}</code> returns a <b>403 error</b>. If it does not, the <a href=\"https://github.com/Wruczek/ts-website/wiki/%5BEN%5D-Securing-private-directory\" target=\"_blank\">Wiki</a> has a guide for Apache, Nginx and IIS."
+
+msgid "INSTALLER_SEC_ERR_EXPOSED"
+msgstr "<b>The private/ directory is publicly accessible!</b><br>Make sure your web server respects <code>.htaccess</code> files (<code>AllowOverride All</code> in Apache) or protect the directory directly in the web server configuration."
+
+msgid "INSTALLER_SEC_WIKI_GUIDE"
+msgstr "Wiki guide"
+
+msgid "INSTALLER_SEC_INFO"
+msgstr "The <code>private/</code> directory contains database credentials and PHP code that must never be directly accessible via the browser."
+
+# ── Page 6 — Configuration ───────────────────────────────────────────────────
+
+msgid "INSTALLER_CONFIG_TITLE"
+msgstr "Configure your site"
+
+msgid "INSTALLER_CONFIG_ALMOST_DONE"
+msgstr "<b>Almost done!</b> Here you can adjust some basic settings of ts-website. Don't worry, you will be able to change them in the admin panel after installation."
+
+msgid "INSTALLER_CONFIG_BASE_URL_LABEL"
+msgstr "Base URL of ts-website. No trailing slash!"
+
+msgid "INSTALLER_CONFIG_SITE_NAME_LABEL"
+msgstr "Website name / title"
+
+msgid "INSTALLER_CONFIG_TIMEZONE_LABEL"
+msgstr "Choose your time zone"
+
+msgid "INSTALLER_CONFIG_TIMEZONE_PLACEHOLDER"
+msgstr "Choose your time zone"
+
+msgid "INSTALLER_CONFIG_CLOUDFLARE_LABEL"
+msgstr "I am using Cloudflare"
+
+msgid "INSTALLER_CONFIG_CLOUDFLARE_HINT"
+msgstr "This will change the way ts-website detects user IP address"
+
+# ── Page 7 — Done ────────────────────────────────────────────────────────────
+
+msgid "INSTALLER_DONE_TITLE"
+msgstr "TS-website {0} has been successfully installed! \xF0\x9F\x91\x8D"
+
+msgid "INSTALLER_DONE_REMOVE_DIR"
+msgstr "If you wish, you can remove the <code>installer</code> directory."
+
+msgid "INSTALLER_DONE_WHATNOW"
+msgstr "What now?"
+
+msgid "INSTALLER_DONE_DONATE_TITLE"
+msgstr "Donate"
+
+msgid "INSTALLER_DONE_DONATE_SUB"
+msgstr "to keep this project alive"
+
+msgid "INSTALLER_DONE_TELEGRAM_TITLE"
+msgstr "Join our telegram group"
+
+msgid "INSTALLER_DONE_TELEGRAM_SUB"
+msgstr "news, announcements and support"
+
+msgid "INSTALLER_DONE_VISIT_TITLE"
+msgstr "Visit your new website"
+
+msgid "INSTALLER_DONE_SPREAD_TITLE"
+msgstr "Spread the message"
+
+msgid "INSTALLER_DONE_SPREAD_SUB"
+msgstr "Let others know about this project"
+
+msgid "INSTALLER_DONE_METRICS_ERROR"
+msgstr "Error sending metrics :("

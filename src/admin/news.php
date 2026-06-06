@@ -11,7 +11,7 @@ $store = new DefaultNewsStore();
 $flash = $_GET['flash'] ?? null;
 $flashType = $_GET['type'] ?? 'success';
 
-adminHeader('News', 'news');
+adminHeader(__a('ADMIN_NEWS_TITLE'), 'news');
 
 if ($flash): ?>
 <div class="alert alert-<?= htmlspecialchars($flashType) ?> alert-dismissible fade show">
@@ -22,7 +22,7 @@ if ($flash): ?>
 
 <div class="mb-3">
     <a href="news-edit.php" class="btn btn-primary">
-        <i class="fas fa-plus"></i> Neue News
+        <i class="fas fa-plus"></i> <?= htmlspecialchars(__a('ADMIN_NEWS_NEW_BTN')) ?>
     </a>
 </div>
 
@@ -31,18 +31,18 @@ if ($flash): ?>
         <table class="table table-hover mb-0">
             <thead>
                 <tr>
-                    <th>ID</th>
-                    <th>Titel</th>
-                    <th>Erstellt</th>
-                    <th>Bearbeitet</th>
-                    <th class="text-right">Aktionen</th>
+                    <th><?= htmlspecialchars(__a('ADMIN_TABLE_ID')) ?></th>
+                    <th><?= htmlspecialchars(__a('ADMIN_TABLE_TITLE')) ?></th>
+                    <th><?= htmlspecialchars(__a('ADMIN_TABLE_CREATED')) ?></th>
+                    <th><?= htmlspecialchars(__a('ADMIN_TABLE_EDITED')) ?></th>
+                    <th class="text-right"><?= htmlspecialchars(__a('ADMIN_TABLE_ACTIONS')) ?></th>
                 </tr>
             </thead>
             <tbody>
             <?php
             $newsList = $store->getNewsList(100);
             if (empty($newsList)): ?>
-                <tr><td colspan="5" class="text-center text-muted py-4">Keine News vorhanden.</td></tr>
+                <tr><td colspan="5" class="text-center text-muted py-4"><?= htmlspecialchars(__a('ADMIN_NEWS_EMPTY')) ?></td></tr>
             <?php else:
                 foreach ($newsList as $news): ?>
                 <tr>
@@ -61,7 +61,7 @@ if ($flash): ?>
                             <i class="fas fa-edit"></i>
                         </a>
                         <form method="post" action="api/news.php" style="display:inline"
-                              onsubmit="return confirm('News wirklich löschen?')">
+                              onsubmit="return confirm(<?= json_encode(__a('ADMIN_NEWS_CONFIRM_DELETE')) ?>)">
                             <input type="hidden" name="action" value="delete">
                             <input type="hidden" name="id" value="<?= $news['newsId'] ?>">
                             <input type="hidden" name="csrf-token" value="<?= htmlspecialchars(CsrfUtils::getToken()) ?>">

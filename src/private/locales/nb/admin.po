@@ -1,0 +1,599 @@
+# TS-Website admin translations -- nb
+# Domain: admin
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nb\n"
+
+msgid "ADMIN_NAV_BRAND"
+msgstr "TS-Website Admin"
+
+msgid "ADMIN_NAV_NEWS"
+msgstr "Nyheter"
+
+msgid "ADMIN_NAV_FAQ"
+msgstr "FAQ"
+
+msgid "ADMIN_NAV_RULES"
+msgstr "Regler"
+
+msgid "ADMIN_NAV_ASSIGNER"
+msgstr "Assigner"
+
+msgid "ADMIN_NAV_CONFIG"
+msgstr "Konfigurasjon"
+
+msgid "ADMIN_NAV_GOTO_WEBSITE"
+msgstr "Gå til nettstedet"
+
+msgid "ADMIN_BTN_SAVE"
+msgstr "Lagre"
+
+msgid "ADMIN_BTN_SAVE_ALL"
+msgstr "Lagre alle innstillinger"
+
+msgid "ADMIN_BTN_BACK"
+msgstr "Tilbake"
+
+msgid "ADMIN_BTN_BACK_TO_CONFIG"
+msgstr "Tilbake til konfigurasjon"
+
+msgid "ADMIN_BTN_CANCEL"
+msgstr "Avbryt"
+
+msgid "ADMIN_BTN_ADD"
+msgstr "Legg til"
+
+msgid "ADMIN_BTN_REMOVE"
+msgstr "Fjern"
+
+msgid "ADMIN_ENABLED"
+msgstr "Aktivert"
+
+msgid "ADMIN_TABLE_ID"
+msgstr "ID"
+
+msgid "ADMIN_TABLE_TITLE"
+msgstr "Tittel"
+
+msgid "ADMIN_TABLE_CREATED"
+msgstr "Opprettet"
+
+msgid "ADMIN_TABLE_EDITED"
+msgstr "Redigert"
+
+msgid "ADMIN_TABLE_QUESTION"
+msgstr "Spørsmål"
+
+msgid "ADMIN_TABLE_LAST_MODIFIED"
+msgstr "Sist endret"
+
+msgid "ADMIN_TABLE_ACTIONS"
+msgstr "Handlinger"
+
+msgid "ADMIN_NO_GROUPS_AVAILABLE"
+msgstr "Ingen servergrupper tilgjengelig."
+
+msgid "ADMIN_403_TITLE"
+msgstr "Tilgang nektet — Admin"
+
+msgid "ADMIN_403_TEXT"
+msgstr "Ingen tilgang. Du er ikke registrert som administrator."
+
+msgid "ADMIN_403_HINT"
+msgstr "Logg inn på hovedsiden med TeamSpeak og be en administrator legge til ditt cldbid i admin_cldbids."
+
+msgid "ADMIN_403_BTN"
+msgstr "Gå til hovedsiden"
+
+msgid "ADMIN_SETUP_TITLE"
+msgstr "Admin-panel — Første oppsett"
+
+msgid "ADMIN_SETUP_NO_ADMIN"
+msgstr "Ingen administratorer registrert ennå. Skriv inn ditt cldbid for å få tilgang til admin-panelet."
+
+msgid "ADMIN_SETUP_CLDBID_LABEL"
+msgstr "Ditt cldbid"
+
+msgid "ADMIN_SETUP_CLDBID_HINT"
+msgstr "Vises etter TS3-innlogging på startsiden, eller velg fra listen nedenfor."
+
+msgid "ADMIN_SETUP_ONLINE_LABEL"
+msgstr "Nå online"
+
+msgid "ADMIN_SETUP_BTN_REGISTER"
+msgstr "Registrer som første administrator"
+
+msgid "ADMIN_SETUP_BTN_GOTO"
+msgstr "Gå til admin-panelet"
+
+msgid "ADMIN_SETUP_SUCCESS"
+msgstr "cldbid {0} ble registrert som første administrator. Denne siden er nå låst."
+
+msgid "ADMIN_SETUP_ERR_INVALID"
+msgstr "Angi et gyldig cldbid (positivt heltall)."
+
+msgid "ADMIN_NEWS_TITLE"
+msgstr "Nyheter"
+
+msgid "ADMIN_NEWS_NEW_BTN"
+msgstr "Ny artikkel"
+
+msgid "ADMIN_NEWS_EMPTY"
+msgstr "Ingen nyheter tilgjengelig."
+
+msgid "ADMIN_NEWS_CONFIRM_DELETE"
+msgstr "Slett denne artikkelen?"
+
+msgid "ADMIN_NEWS_EDIT_TITLE"
+msgstr "Rediger nyhet"
+
+msgid "ADMIN_NEWS_NEW_TITLE"
+msgstr "Ny artikkel"
+
+msgid "ADMIN_NEWS_FORM_TITLE"
+msgstr "Tittel"
+
+msgid "ADMIN_NEWS_FORM_CONTENT"
+msgstr "Innhold"
+
+msgid "ADMIN_FAQ_TITLE"
+msgstr "FAQ"
+
+msgid "ADMIN_FAQ_NEW_BTN"
+msgstr "Ny FAQ-oppføring"
+
+msgid "ADMIN_FAQ_EMPTY"
+msgstr "Ingen FAQ-oppføringer."
+
+msgid "ADMIN_FAQ_CONFIRM_DELETE"
+msgstr "Slett denne FAQ-oppføringen?"
+
+msgid "ADMIN_FAQ_EDIT_TITLE"
+msgstr "Rediger FAQ-oppføring"
+
+msgid "ADMIN_FAQ_NEW_TITLE"
+msgstr "Ny FAQ-oppføring"
+
+msgid "ADMIN_FAQ_FORM_QUESTION"
+msgstr "Spørsmål"
+
+msgid "ADMIN_FAQ_FORM_ANSWER"
+msgstr "Svar"
+
+msgid "ADMIN_RULES_TITLE"
+msgstr "Serverregler"
+
+msgid "ADMIN_RULES_FORM_CONTENT"
+msgstr "Innhold"
+
+msgid "ADMIN_IMPRINT_TITLE"
+msgstr "Impressum"
+
+msgid "ADMIN_ASSIGNER_TITLE"
+msgstr "Assigner-konfigurasjon"
+
+msgid "ADMIN_ASSIGNER_NO_GROUPS_WARNING"
+msgstr "Ingen servergrupper funnet. Kontroller at TS3-serveren er tilkoblet."
+
+msgid "ADMIN_ASSIGNER_DESCRIPTION"
+msgstr "Definer gruppefordellingskategorier. Hver kategori har et navn, et ikon, maks valgbare grupper og tilhørende servergrupper."
+
+msgid "ADMIN_ASSIGNER_GENERAL"
+msgstr "Generelle innstillinger"
+
+msgid "ADMIN_ASSIGNER_COOLDOWN_LABEL"
+msgstr "Nedkjølingstid (sekunder)"
+
+msgid "ADMIN_ASSIGNER_COOLDOWN_HINT"
+msgstr "Tid brukeren må vente før de kan bytte gruppe igjen. 0 = ingen ventetid."
+
+msgid "ADMIN_ASSIGNER_REQUIRED_GROUPS_LABEL"
+msgstr "Obligatoriske servergrupper"
+
+msgid "ADMIN_ASSIGNER_REQUIRED_GROUPS_HINT"
+msgstr "Kun medlemmer av disse gruppene kan bruke Assigner. Tom = alle."
+
+msgid "ADMIN_ASSIGNER_ADD_CATEGORY"
+msgstr "Legg til kategori"
+
+msgid "ADMIN_ASSIGNER_SAVED"
+msgstr "Assigner-konfigurasjon lagret."
+
+msgid "ADMIN_ASSIGNER_JS_MOVE_UP"
+msgstr "Flytt opp"
+
+msgid "ADMIN_ASSIGNER_JS_MOVE_DOWN"
+msgstr "Flytt ned"
+
+msgid "ADMIN_ASSIGNER_JS_NEW_CATEGORY"
+msgstr "Ny kategori"
+
+msgid "ADMIN_ASSIGNER_JS_NAME_LABEL"
+msgstr "Navn"
+
+msgid "ADMIN_ASSIGNER_JS_NAME_PLACEHOLDER"
+msgstr "f.eks. Land, Spill, Hobby"
+
+msgid "ADMIN_ASSIGNER_JS_MAX_LABEL"
+msgstr "Maks valg"
+
+msgid "ADMIN_ASSIGNER_JS_ICON_LABEL"
+msgstr "Ikon"
+
+msgid "ADMIN_ASSIGNER_JS_GROUPS_LABEL"
+msgstr "Servergrupper i denne kategorien"
+
+msgid "ADMIN_ASSIGNER_JS_NO_GROUPS"
+msgstr "Ingen servergrupper tilgjengelig."
+
+msgid "ADMIN_ASSIGNER_JS_SAVE_ERROR"
+msgstr "Feil ved lagring."
+
+msgid "ADMIN_CONFIG_TITLE"
+msgstr "Konfigurasjon"
+
+msgid "ADMIN_CONFIG_SECTION_ADMINSTATUS"
+msgstr "Admin-statuswidget"
+
+msgid "ADMIN_CONFIG_SECTION_ASSIGNER"
+msgstr "Gruppefordeling"
+
+msgid "ADMIN_CONFIG_SECTION_CACHE"
+msgstr "Hurtigbuffertider"
+
+msgid "ADMIN_CONFIG_SECTION_GENERAL"
+msgstr "Generelt"
+
+msgid "ADMIN_CONFIG_SECTION_IMPRINT"
+msgstr "Impressum"
+
+msgid "ADMIN_CONFIG_SECTION_ONLINERECORD"
+msgstr "Online-rekord"
+
+msgid "ADMIN_CONFIG_SECTION_VIEWER"
+msgstr "Kanaloversikt"
+
+msgid "ADMIN_CONFIG_SECTION_QUERY"
+msgstr "TeamSpeak Query"
+
+msgid "ADMIN_CONFIG_SECTION_ADMIN"
+msgstr "Admin-panel"
+
+msgid "ADMIN_CONFIG_BTN_ADMINSTATUS"
+msgstr "Konfigurer admin-statuswidget"
+
+msgid "ADMIN_CONFIG_BTN_ASSIGNER"
+msgstr "Konfigurer gruppefordeling"
+
+msgid "ADMIN_CONFIG_BTN_CACHE"
+msgstr "Konfigurer hurtigbuffertider"
+
+msgid "ADMIN_CONFIG_BTN_GENERAL"
+msgstr "Rediger generelle innstillinger"
+
+msgid "ADMIN_CONFIG_BTN_IMPRINT"
+msgstr "Rediger impressum"
+
+msgid "ADMIN_CONFIG_BTN_ONLINERECORD"
+msgstr "Rediger online-rekord"
+
+msgid "ADMIN_CONFIG_BTN_VIEWER"
+msgstr "Konfigurer kanaloversikt"
+
+msgid "ADMIN_CONFIG_BTN_QUERY"
+msgstr "Konfigurer TeamSpeak-tilkobling"
+
+msgid "ADMIN_CONFIG_BTN_ADMINS"
+msgstr "Administrer administratortilgang"
+
+msgid "ADMIN_CONFIG_EDIT_IN_ASSIGNER"
+msgstr "Rediger i Assigner-editor"
+
+msgid "ADMIN_CONFIG_MANAGED_IN_ASSIGNER"
+msgstr "Administreres i Assigner-editor."
+
+msgid "ADMIN_CONFIG_WHO_HAS_ACCESS"
+msgstr "Hvem har tilgang til dette admin-panelet?"
+
+msgid "ADMIN_GENERAL_TITLE"
+msgstr "Generelle innstillinger"
+
+msgid "ADMIN_GENERAL_FIELD_WEBSITE_TITLE_LABEL"
+msgstr "TS-servernavn (visning)"
+
+msgid "ADMIN_GENERAL_FIELD_WEBSITE_TITLE_HINT"
+msgstr "Overstyrer IP-adressen i sidepanelet og innloggingsdialogen. Tom = IP vises."
+
+msgid "ADMIN_GENERAL_FIELD_NAV_BRAND_LABEL"
+msgstr "Nettstedstittel (Navbar)"
+
+msgid "ADMIN_GENERAL_FIELD_NAV_BRAND_HINT"
+msgstr "Tekst for logoen øverst til venstre i navigasjonen."
+
+msgid "ADMIN_GENERAL_FIELD_BASEURL_LABEL"
+msgstr "Basis-URL"
+
+msgid "ADMIN_GENERAL_FIELD_BASEURL_HINT"
+msgstr "Nettstedets fullstendige URL, f.eks. https://example.com"
+
+msgid "ADMIN_GENERAL_FIELD_LOGINPOKE_LABEL"
+msgstr "Innlogging: Poke klient"
+
+msgid "ADMIN_GENERAL_FIELD_LOGINPOKE_HINT"
+msgstr "Send poke til TS-klienten ved innloggingsforsøk"
+
+msgid "ADMIN_GENERAL_FIELD_TIMEZONE_LABEL"
+msgstr "Tidssone"
+
+msgid "ADMIN_GENERAL_FIELD_TIMEZONE_HINT"
+msgstr "PHP-tidssone, f.eks. Europe/Oslo"
+
+msgid "ADMIN_GENERAL_FIELD_CLOUDFLARE_LABEL"
+msgstr "Cloudflare aktivert"
+
+msgid "ADMIN_GENERAL_FIELD_CLOUDFLARE_HINT"
+msgstr "Aktiver hvis nettstedet er bak Cloudflare"
+
+msgid "ADMIN_GENERAL_SAVED"
+msgstr "Innstillinger lagret."
+
+msgid "ADMIN_ADMINS_TITLE"
+msgstr "Administratortilgang"
+
+msgid "ADMIN_ADMINS_CURRENT"
+msgstr "Nåværende administratorer"
+
+msgid "ADMIN_ADMINS_TABLE_CLDBID"
+msgstr "Klientdatabase-ID"
+
+msgid "ADMIN_ADMINS_TABLE_ACTION"
+msgstr "Handling"
+
+msgid "ADMIN_ADMINS_YOU_BADGE"
+msgstr "Deg"
+
+msgid "ADMIN_ADMINS_CONFIRM_REMOVE"
+msgstr "Fjern administrator?"
+
+msgid "ADMIN_ADMINS_CANNOT_REMOVE_SELF"
+msgstr "Du kan ikke fjerne deg selv."
+
+msgid "ADMIN_ADMINS_ADD_TITLE"
+msgstr "Legg til administrator"
+
+msgid "ADMIN_ADMINS_CLDBID_LABEL"
+msgstr "Klientdatabase-ID"
+
+msgid "ADMIN_ADMINS_ONLINE_LABEL"
+msgstr "Nå online (velg fra listen)"
+
+msgid "ADMIN_ADMINS_ADDED"
+msgstr "Administrator lagt til."
+
+msgid "ADMIN_ADMINS_REMOVED"
+msgstr "Administrator fjernet."
+
+msgid "ADMIN_ADMINSTATUS_TITLE"
+msgstr "Admin-statuswidget"
+
+msgid "ADMIN_ADMINSTATUS_SECTION_GENERAL"
+msgstr "Generelt"
+
+msgid "ADMIN_ADMINSTATUS_WIDGET_ENABLED_LABEL"
+msgstr "Widget aktivert"
+
+msgid "ADMIN_ADMINSTATUS_HIDE_OFFLINE_LABEL"
+msgstr "Skjul offline-brukere"
+
+msgid "ADMIN_ADMINSTATUS_HIDE_OFFLINE_HINT"
+msgstr "Offline-brukere skjules helt."
+
+msgid "ADMIN_ADMINSTATUS_OFFLINE_COLLAPSED_LABEL"
+msgstr "Offline sammenfoldet som standard"
+
+msgid "ADMIN_ADMINSTATUS_OFFLINE_COLLAPSED_HINT"
+msgstr "Offline-oppføringer i widgeten vises bare etter klikk."
+
+msgid "ADMIN_ADMINSTATUS_DISPLAY_MODE_LABEL"
+msgstr "Visningsmodus"
+
+msgid "ADMIN_ADMINSTATUS_MODE_1"
+msgstr "Gruppert"
+
+msgid "ADMIN_ADMINSTATUS_MODE_2"
+msgstr "Gruppert (skjul tomme grupper)"
+
+msgid "ADMIN_ADMINSTATUS_MODE_3"
+msgstr "Liste"
+
+msgid "ADMIN_ADMINSTATUS_MODE_4"
+msgstr "Liste (online først)"
+
+msgid "ADMIN_ADMINSTATUS_SECTION_GROUPS"
+msgstr "Servergrupper som skal vises"
+
+msgid "ADMIN_ADMINSTATUS_NO_GROUPS"
+msgstr "Ingen servergrupper tilgjengelig — sjekk TS-tilkoblingen."
+
+msgid "ADMIN_ADMINSTATUS_SECTION_IGNORED"
+msgstr "Ignorerte brukere"
+
+msgid "ADMIN_ADMINSTATUS_IGNORED_HINT"
+msgstr "Brukere i valgte grupper. Merkede vises ikke i widgeten."
+
+msgid "ADMIN_ADMINSTATUS_NO_GROUPS_SELECTED"
+msgstr "Velg og lagre servergrupper først."
+
+msgid "ADMIN_ADMINSTATUS_NO_CACHE"
+msgstr "Ingen hurtigbuffer ennå — vent et minutt og last inn siden på nytt."
+
+msgid "ADMIN_ADMINSTATUS_CURRENTLY_IGNORED"
+msgstr "Nåværende ignorerte DBID-er:"
+
+msgid "ADMIN_ADMINSTATUS_SAVED"
+msgstr "Admin-status lagret."
+
+msgid "ADMIN_CACHE_TITLE"
+msgstr "Hurtigbuffertider"
+
+msgid "ADMIN_CACHE_HINT"
+msgstr "Alle verdier i sekunder. Lavere = mer oppdaterte data, høyere belastning på TS-serveren."
+
+msgid "ADMIN_CACHE_SERVERINFO_LABEL"
+msgstr "Serverinformasjon"
+
+msgid "ADMIN_CACHE_SERVERINFO_HINT"
+msgstr "Generell TS-serverinformasjon (navn, plasser, ...)"
+
+msgid "ADMIN_CACHE_CLIENTLIST_LABEL"
+msgstr "Klientliste"
+
+msgid "ADMIN_CACHE_CLIENTLIST_HINT"
+msgstr "Liste over online-spillere — hold lav for oppdatert innloggingsstatus"
+
+msgid "ADMIN_CACHE_CHANNELLIST_LABEL"
+msgstr "Kanalliste"
+
+msgid "ADMIN_CACHE_CHANNELLIST_HINT"
+msgstr "Kanaloversikt"
+
+msgid "ADMIN_CACHE_SERVERGROUPS_LABEL"
+msgstr "Servergrupper"
+
+msgid "ADMIN_CACHE_SERVERGROUPS_HINT"
+msgstr "Liste over alle servergrupper"
+
+msgid "ADMIN_CACHE_CHANNELGROUPS_LABEL"
+msgstr "Kanalgrupper"
+
+msgid "ADMIN_CACHE_CHANNELGROUPS_HINT"
+msgstr "Liste over alle kanalgrupper"
+
+msgid "ADMIN_CACHE_BANLIST_LABEL"
+msgstr "Bannliste"
+
+msgid "ADMIN_CACHE_BANLIST_HINT"
+msgstr "Utestengte brukere"
+
+msgid "ADMIN_CACHE_ADMINSTATUS_LABEL"
+msgstr "Admin-status"
+
+msgid "ADMIN_CACHE_ADMINSTATUS_HINT"
+msgstr "Medlemmer av admingrupper for statuswidgeten"
+
+msgid "ADMIN_CACHE_SERVERICONS_LABEL"
+msgstr "Serverikoner"
+
+msgid "ADMIN_CACHE_SERVERICONS_HINT"
+msgstr "Ikondata fra TS-servern"
+
+msgid "ADMIN_CACHE_LANGUAGES_LABEL"
+msgstr "Språk"
+
+msgid "ADMIN_CACHE_LANGUAGES_HINT"
+msgstr "Språkfiler fra databasen"
+
+msgid "ADMIN_CACHE_LOGINCODE_LABEL"
+msgstr "Innloggingskode"
+
+msgid "ADMIN_CACHE_LOGINCODE_HINT"
+msgstr "Midlertidige innloggingskoder"
+
+msgid "ADMIN_CACHE_SAVED"
+msgstr "Hurtigbuffertider lagret."
+
+msgid "ADMIN_ONLINERECORD_TITLE"
+msgstr "Online-rekord"
+
+msgid "ADMIN_ONLINERECORD_VALUE_LABEL"
+msgstr "Rekord (antall spillere)"
+
+msgid "ADMIN_ONLINERECORD_DATE_LABEL"
+msgstr "Dato og tid"
+
+msgid "ADMIN_ONLINERECORD_DATE_HINT"
+msgstr "Overskrives automatisk når en ny rekord settes."
+
+msgid "ADMIN_ONLINERECORD_SAVED"
+msgstr "Online-rekord lagret."
+
+msgid "ADMIN_VIEWER_TITLE"
+msgstr "Kanaloversikt"
+
+msgid "ADMIN_VIEWER_SECTION"
+msgstr "Skjulte kanaler"
+
+msgid "ADMIN_VIEWER_HINT"
+msgstr "Merket = kanalen er skjult på nettstedet. Passordbeskyttede kanaler forsvinner automatisk."
+
+msgid "ADMIN_VIEWER_NO_CHANNELS"
+msgstr "Ingen kanaler tilgjengelig — sjekk TS-tilkoblingen."
+
+msgid "ADMIN_VIEWER_HIDDEN_BADGE"
+msgstr "skjult"
+
+msgid "ADMIN_VIEWER_SAVED"
+msgstr "Kanaloversikt lagret."
+
+msgid "ADMIN_QUERY_TITLE"
+msgstr "TeamSpeak-tilkobling"
+
+msgid "ADMIN_QUERY_WARNING_TITLE"
+msgstr "Advarsel"
+
+msgid "ADMIN_QUERY_WARNING_TEXT"
+msgstr "Vil du virkelig redigere disse innstillingene? Du kan bryte tilkoblingen til TeamSpeak-servern hvis du ikke vet hva du gjør."
+
+msgid "ADMIN_QUERY_WARNING_CONFIRM"
+msgstr "Ja, jeg vet hva jeg gjør"
+
+msgid "ADMIN_QUERY_SECTION"
+msgstr "TeamSpeak-tilkoblingsinnstillinger"
+
+msgid "ADMIN_QUERY_HOSTNAME_LABEL"
+msgstr "Serveradresse"
+
+msgid "ADMIN_QUERY_HOSTNAME_HINT"
+msgstr "IP eller vertsnavn for TeamSpeak-servern (f.eks. 127.0.0.1)"
+
+msgid "ADMIN_QUERY_PORT_LABEL"
+msgstr "ServerQuery-port"
+
+msgid "ADMIN_QUERY_PORT_HINT"
+msgstr "Standard: 10011"
+
+msgid "ADMIN_QUERY_USERNAME_LABEL"
+msgstr "ServerQuery-brukernavn"
+
+msgid "ADMIN_QUERY_USERNAME_HINT"
+msgstr "Query-konto opprettet for nettstedet"
+
+msgid "ADMIN_QUERY_PASSWORD_LABEL"
+msgstr "ServerQuery-passord"
+
+msgid "ADMIN_QUERY_PASSWORD_HINT"
+msgstr "Passord for query-kontoen"
+
+msgid "ADMIN_QUERY_NICKNAME_LABEL"
+msgstr "Visningsnavn i Query"
+
+msgid "ADMIN_QUERY_NICKNAME_HINT"
+msgstr "Navn som vises når nettstedet logger inn på query"
+
+msgid "ADMIN_QUERY_DISPLAYIP_LABEL"
+msgstr "Offentlig server-IP"
+
+msgid "ADMIN_QUERY_DISPLAYIP_HINT"
+msgstr "IP som brukes som ts3server://-lenke i kanaloversikten"
+
+msgid "ADMIN_QUERY_VOICEPORT_LABEL"
+msgstr "TeamSpeak stemmeport"
+
+msgid "ADMIN_QUERY_VOICEPORT_HINT"
+msgstr "Porten klienter kobler til (standard: 9987)"
+
+msgid "ADMIN_QUERY_SAVED"
+msgstr "Tilkoblingsinnstillinger lagret."
+

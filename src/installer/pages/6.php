@@ -47,42 +47,40 @@ $displayip = Config::get("query_displayip"); // set initial website name to the 
 <div class="card">
 
     <div class="card-body">
-        <h4 class="card-title text-center">Configure your site</h4>
+        <h4 class="card-title text-center"><?= htmlspecialchars(__t('INSTALLER_CONFIG_TITLE')) ?></h4>
 
         <div class="row justify-content-md-center">
             <form id="configureform" class="col-md-5" method="post" action="<?= "?step=$stepNumber" ?>">
 
                 <div class="alert alert-info mb-4">
-                    <b>Almost done!</b> Here you can adjust some basic settings of ts-website.
-                    Don't worry, you will be able to change them in the admin panel after installation.
+                    <?= __t('INSTALLER_CONFIG_ALMOST_DONE') ?>
                 </div>
 
                 <div class="form-group mb-4">
-                    <label for="base-url">Base URL of ts-website. No trailing slash!</label>
+                    <label for="base-url"><?= htmlspecialchars(__t('INSTALLER_CONFIG_BASE_URL_LABEL')) ?></label>
                     <input class="form-control"
                            id="base-url"
                            name="base-url"
-                           placeholder="Base URL of ts-website. No trailing slash!"
+                           placeholder="<?= htmlspecialchars(__t('INSTALLER_CONFIG_BASE_URL_LABEL')) ?>"
                            value="<?= htmlspecialchars($defaultBase) ?>"
                            required autofocus autocomplete="off">
                 </div>
 
                 <div class="form-group mb-4">
-                    <label for="website-name">Website name / title</label>
+                    <label for="website-name"><?= htmlspecialchars(__t('INSTALLER_CONFIG_SITE_NAME_LABEL')) ?></label>
                     <input class="form-control"
                            id="website-name"
                            name="website-name"
-                           placeholder="Website name / title"
+                           placeholder="<?= htmlspecialchars(__t('INSTALLER_CONFIG_SITE_NAME_LABEL')) ?>"
                            value="<?= htmlspecialchars($displayip) ?>"
                            required autocomplete="off">
                 </div>
 
                 <div class="form-group mb-4">
-                    <label for="timezone">Choose your time zone</label>
+                    <label for="timezone"><?= htmlspecialchars(__t('INSTALLER_CONFIG_TIMEZONE_LABEL')) ?></label>
                     <select class="form-control" name="timezone" id="timezone" required>
-                        <!-- Set this as selected if there is no default timezone -->
                         <option <?= empty($defaultTimezone) ? "selected" : "" ?> disabled value="">
-                            Choose your time zone
+                            <?= htmlspecialchars(__t('INSTALLER_CONFIG_TIMEZONE_PLACEHOLDER')) ?>
                         </option>
 
                         <?php foreach (timezone_identifiers_list() as $timezone) {
@@ -101,10 +99,10 @@ $displayip = Config::get("query_displayip"); // set initial website name to the 
                         <input type="checkbox" class="custom-control-input" id="using-cloudflare" name="using-cloudflare"
                             <?= isset($_SERVER["HTTP_CF_CONNECTING_IP"]) ? "checked" : "" ?>>
                         <label class="custom-control-label" for="using-cloudflare">
-                            I am using Cloudflare
+                            <?= htmlspecialchars(__t('INSTALLER_CONFIG_CLOUDFLARE_LABEL')) ?>
                         </label>
                     </div>
-                    <p><small>This will change the way ts-website detects user IP address</small></p>
+                    <p><small><?= htmlspecialchars(__t('INSTALLER_CONFIG_CLOUDFLARE_HINT')) ?></small></p>
                 </div>
 
                 <button id="submitform" type="submit" style="display: none"></button>
@@ -114,7 +112,7 @@ $displayip = Config::get("query_displayip"); // set initial website name to the 
 
     <div class="card-footer text-right">
         <a href="#" id="submitformalt" class="btn btn-primary float-right">
-            Submit <i class="fas fa-chevron-right"></i>
+            <?= htmlspecialchars(__t('INSTALLER_BTN_SUBMIT')) ?> <i class="fas fa-chevron-right"></i>
         </a>
     </div>
 </div>

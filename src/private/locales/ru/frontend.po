@@ -1,0 +1,346 @@
+# TS-Website frontend translations — Russian
+# Domain: frontend
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+
+msgid "DATE_FORMAT"
+msgstr "d.m.Y"
+
+msgid "TIME_FORMAT"
+msgstr "H:i"
+
+msgid "BANS_HEADER_TARGET"
+msgstr "Бан"
+
+msgid "AUTHORS"
+msgstr "kidi <admin@goodgame.by>"
+
+msgid "COOKIEALERT_MESSAGE"
+msgstr "<b>Вам нравятся куки?</b>&#x1F36A; Мы используем куки что бы обеспечить наилучший опыт на нашем вебсайте. <a href=\"https://support.mozilla.org/ru/kb/kuki-informaciya-kotoruyu-veb-sajty-hranyat-na-vas\" target=\"_blank\">Узнать больше</a>"
+
+msgid "COOKIEALERT_AGREE"
+msgstr "Я согласен"
+
+msgid "OUTDATED_DATA"
+msgstr "<b>Внимание!</b> Не удалось получить актуальную информацию с сервера. Отображается информация {0}"
+
+msgid "SHOW_PROBLEMS"
+msgstr "Показать проблемы"
+
+msgid "PROBLEMS_DESCRIPTION"
+msgstr "При подключении к серверу TeamSpeak произошли ошибки"
+
+msgid "NO_JAVASCRIPT_ENABLED"
+msgstr "Данный сайт не будет работать при отключенном <a href=\"https://www.enable-javascript.com/\" target=\"_blank\">JavaScript</a>"
+
+msgid "CANNOT_GET_DATA"
+msgstr "Не удалось получить данные для модуля \"{0}\"! Пожалуйста свяжитесь с владельцем сайта."
+
+msgid "NO_REASON_SET"
+msgstr "<b>(причина не указана)</b>"
+
+msgid "BANS_HEADER_REASON"
+msgstr "Причина"
+
+msgid "BANS_HEADER_INVOKER"
+msgstr "Забанил"
+
+msgid "BANS_HEADER_BANDATE"
+msgstr "Бан создан"
+
+msgid "BANS_HEADER_EXPIRES"
+msgstr "Истекает"
+
+msgid "DATATABLES_LANGUAGE_NAME"
+msgstr "Russian"
+
+msgid "BANS_NEVEREXPIRES"
+msgstr "Никогда"
+
+msgid "STATUS_ADDRESS"
+msgstr "Адрес:"
+
+msgid "STATUS_CLIENTS_ONLINE"
+msgstr "Онлайн:"
+
+msgid "STATUS_RESERVED_SLOTS"
+msgstr "{0} зарезервировано"
+
+msgid "STATUS_TOP_ONLINE"
+msgstr "Макс. онлайн:"
+
+msgid "STATUS_TOP_ONLINE_DESC"
+msgstr "Достигнут {0}"
+
+msgid "STATUS_UPTIME"
+msgstr "Аптайм:"
+
+msgid "STATUS_VERSION"
+msgstr "Версия:"
+
+msgid "STATUS_VERSION_DESC"
+msgstr "{0} на {1}"
+
+msgid "STATUS_PING"
+msgstr "Средн. пинг:"
+
+msgid "STATUS_PACKETLOSS"
+msgstr "Потери пакетов:"
+
+msgid "STATUS_ERROR"
+msgstr "Невозможно получить статус сервера"
+
+msgid "STATUS_PANEL_TITLE"
+msgstr "Статус сервера"
+
+msgid "DAYJS_LANG"
+msgstr "ru"
+
+msgid "LOGIN_CONFIRMATION_CODE"
+msgstr "Приветствуем! Ваш код подтверждения для авторизации: [b]{0}[/b]"
+
+msgid "UNSUPPORTED_BROWSER"
+msgstr "Ваш браузер не поддерживается. Пожалуйста, установите Chrome, Firefox, Safari или Edge."
+
+msgid "DATATABLES_PLACEHOLDER_SEARCH"
+msgstr "Поиск..."
+
+msgid "WEBSITE_TITLE"
+msgstr " | Русский язык TS-website"
+
+msgid "ADMIN_STATUS_ONLINE"
+msgstr "Онлайн"
+
+msgid "ADMIN_STATUS_AWAY"
+msgstr "Отошёл"
+
+msgid "ADMIN_STATUS_OFFLINE"
+msgstr "Оффлайн"
+
+msgid "ADMIN_STATUS_EMPTY_GROUP"
+msgstr "Нечего показывать"
+
+msgid "ADMIN_STATUS_EMPTY_STATUS"
+msgstr "Статус администратора пуст"
+
+msgid "ASSIGNER_PANEL_TITLE"
+msgstr "Группы"
+
+msgid "ASSIGNER_TITLE"
+msgstr "Менеджер групп"
+
+msgid "BANS_EMPTY"
+msgstr "Список банов пуст"
+
+msgid "BANS_TITLE"
+msgstr "Баны"
+
+msgid "BANS_PANEL_TITLE"
+msgstr "Баны"
+
+msgid "BANS_BANNED_ALERT_TITLE"
+msgstr "Ваш IP забанен администратором {0}"
+
+msgid "BANS_BANNED_ALERT_REASON"
+msgstr "Причина: {0}"
+
+msgid "BANS_VIEW_MORE_TIP"
+msgstr "Нажмите на строку для отображения деталей о бане"
+
+msgid "RULES_TITLE"
+msgstr "Правила"
+
+msgid "RULES_PANEL_TITLE"
+msgstr "Правила"
+
+msgid "FAQ_COPY_LINK"
+msgstr "Скопировать ссылку на этот ответ"
+
+msgid "FAQ_PANEL_TITLE"
+msgstr "FAQ"
+
+msgid "FAQ_TITLE"
+msgstr "FAQ"
+
+msgid "FAQ_COPY_LINK_SUCCESS"
+msgstr "Скопировано!"
+
+msgid "FAQ_COPY_LINK_ERROR"
+msgstr "Ошибка!"
+
+msgid "HOME_TITLE"
+msgstr "Новости"
+
+msgid "HOME_PANEL_TITLE"
+msgstr "Новости"
+
+msgid "HOME_EMPTY"
+msgstr "На данный момент нет новостей"
+
+msgid "HOME_INVALID_PAGE"
+msgstr "Неверный номер страницы"
+
+msgid "HOME_PREVIOUS_NEWS"
+msgstr "Назад"
+
+msgid "HOME_NEXT_NEWS"
+msgstr "Вперёд"
+
+msgid "ADMIN_STATUS_PANEL_TITLE"
+msgstr "Статус администрации"
+
+msgid "ADMIN_STATUS_HIDE_OFFLINE_TIP"
+msgstr "Скрыть отключенных администраторов"
+
+msgid "ADMIN_STATUS_SHOW_OFFLINE_TIP"
+msgstr "Показать отключенных администраторов"
+
+msgid "ADMIN_STATUS_ERROR"
+msgstr "Ошибка статуса администратора"
+
+msgid "NAV_TOGGLE"
+msgstr "Переключить навигацию"
+
+msgid "NAV_VIEWER"
+msgstr "Обзор"
+
+msgid "NAV_ASSIGNER"
+msgstr "Группы"
+
+msgid "NAV_BANS"
+msgstr "Список банов"
+
+msgid "NAV_RULES"
+msgstr "Правила"
+
+msgid "NAV_FAQ"
+msgstr "FAQ"
+
+msgid "NAV_ACCOUNT_LOGIN"
+msgstr "Войти"
+
+msgid "NAV_ACCOUNT_LOGOUT"
+msgstr "Выйти"
+
+msgid "VIEWER_TITLE"
+msgstr "Обзор сервера"
+
+msgid "VIEWER_PANEL_TITLE"
+msgstr "Обзор сервера"
+
+msgid "VIEWER_SHOW_EMPTY"
+msgstr "Показать пустые каналы"
+
+msgid "VIEWER_HIDE_EMPTY"
+msgstr "Скрыть пустые каналы"
+
+msgid "VIEWER_TIP_ALERT"
+msgstr "Для входа в канал нажмите на него. Наведите курсор над пользователем для отображения информации"
+
+msgid "ARIA_CLOSE"
+msgstr "Закрыть"
+
+msgid "VIEWER_ERROR"
+msgstr "Ошибка при обзоре сервера"
+
+msgid "VIEWER_CONNECTION_CONFIRMATION"
+msgstr "Вы хотите войти в этот канал?"
+
+msgid "VIEWER_CLIENT_LASTACTIVE"
+msgstr "Был активен:"
+
+msgid "VIEWER_CLIENT_ONLINE"
+msgstr "Время онлайн:"
+
+msgid "VIEWER_CLIENT_JOINED"
+msgstr "Первое подключение:"
+
+msgid "VIEWER_CLIENT_TITLE"
+msgstr "Информация о клиенте"
+
+msgid "VIEWER_SERVER_ICON"
+msgstr "Иконка сервера"
+
+msgid "VIEWER_DEFAULT_CHANNEL"
+msgstr "Стандартный канал"
+
+msgid "VIEWER_CHANNEL_UNSUB1"
+msgstr ", не подписан"
+
+msgid "VIEWER_CHANNEL_OCCUPIED"
+msgstr "Заполнен"
+
+msgid "VIEWER_CHANNEL_PASSWORD"
+msgstr "Защищен паролем"
+
+msgid "VIEWER_CHANNEL_UNSUB2"
+msgstr "Не подписан"
+
+msgid "VIEWER_CHANNEL_ICON"
+msgstr "Иконка канала"
+
+msgid "VIEWER_CHANNEL_MODERATED"
+msgstr "Модерируемый"
+
+msgid "VIEWER_CHANNEL_MUSIC_CODED"
+msgstr "Opus для музыки"
+
+msgid "VIEWER_CLIENT_AWAY"
+msgstr "Отошёл"
+
+msgid "VIEWER_CLIENT_OUTPUT_DISABLED"
+msgstr "Звук отключён"
+
+msgid "VIEWER_CLIENT_OUTPUT_MUTED"
+msgstr "Приглушен"
+
+msgid "VIEWER_CLIENT_MIC_DISABLED"
+msgstr "Микрофон отключён"
+
+msgid "VIEWER_CLIENT_MIC_MUTED"
+msgstr "Заглушен"
+
+msgid "VIEWER_CLIENT_COMMANDER"
+msgstr "Командир канала"
+
+msgid "VIEWER_CLIENT_ICON"
+msgstr "Иконка клиента"
+
+msgid "VIEWER_CLIENT_PRIORITY_SPEAKER"
+msgstr "Приоритет голоса"
+
+msgid "VIEWER_CLIENT_TALK_POWER_GRANTED"
+msgstr "Право голоса получено"
+
+msgid "VIEWER_CLIENT_TALK_POWER_INSUFFICIENT"
+msgstr "Недостаточно прав голоса"
+
+msgid "ASSIGNER_NOT_LOGGED_IN"
+msgstr "Авторизуйтесь перед использованием менеджера групп"
+
+msgid "ASSIGNER_LOGIN_BUTTON"
+msgstr "Войти"
+
+msgid "ASSIGNER_SAVE_BUTTON"
+msgstr "Сохранить"
+
+msgid "ASSIGNER_INVALID_GROUPS"
+msgstr "Неверные настройки групп"
+
+msgid "ASSIGNER_NOT_CONFIGURED"
+msgstr "Менеджер групп не был настроен администратором сайта"
+
+msgid "ASSIGNER_SAVE_SUCCESS"
+msgstr "Ваши группы были обновлены"
+
+msgid "ASSIGNER_SAVE_ERROR"
+msgstr "Ошибка при изменении группы"
+
+msgid "ASSIGNER_SAVE_NO_CHANGE"
+msgstr "Изменения не были сохранены"
+
+msgid "IMPRINT_TITLE"
+msgstr "Импринт"

@@ -137,16 +137,16 @@ EOT;
 <div class="card">
 
     <div class="card-body">
-        <h3 class="card-title text-center">Database details</h3>
+        <h3 class="card-title text-center"><?= htmlspecialchars(__t('INSTALLER_DB_TITLE')) ?></h3>
 
         <div class="text-center mb-3">
             <div class="custom-control custom-radio">
                 <input type="radio" id="use-mysql-db" name="dbselection" class="custom-control-input" checked>
-                <label class="custom-control-label" for="use-mysql-db">Use MySQL / MariaDB</label>
+                <label class="custom-control-label" for="use-mysql-db"><?= htmlspecialchars(__t('INSTALLER_DB_USE_MYSQL')) ?></label>
             </div>
             <div class="custom-control custom-radio">
                 <input type="radio" id="use-sqlite-db" name="dbselection" class="custom-control-input" disabled>
-                <label class="custom-control-label" for="use-sqlite-db">Use SQLite database</label>
+                <label class="custom-control-label" for="use-sqlite-db"><?= htmlspecialchars(__t('INSTALLER_DB_USE_SQLITE')) ?></label>
             </div>
         </div>
 
@@ -157,9 +157,9 @@ EOT;
                     <div class="input-group-prepend">
                         <span class="input-group-text"><i class="fa fa-link fa-fw"></i></span>
                     </div>
-                    <input class="form-control" name="dbhostname" placeholder="Hostname" required autofocus autocomplete="off">
+                    <input class="form-control" name="dbhostname" placeholder="<?= htmlspecialchars(__t('INSTALLER_DB_HOSTNAME')) ?>" required autofocus autocomplete="off">
                     <div class="input-group-append">
-                        <span class="input-group-text" data-toggle="tooltip" title="Use '127.0.0.1' for localhost">
+                        <span class="input-group-text" data-toggle="tooltip" title="<?= htmlspecialchars(__t('INSTALLER_DB_HOSTNAME_TIP')) ?>">
                             <i class="fa fa-question-circle fa-fw"></i>
                         </span>
                     </div>
@@ -169,9 +169,9 @@ EOT;
                     <div class="input-group-prepend">
                         <span class="input-group-text"><i class="fa fa-user fa-fw"></i></span>
                     </div>
-                    <input class="form-control" name="dbusername" placeholder="Username" required autocomplete="off">
+                    <input class="form-control" name="dbusername" placeholder="<?= htmlspecialchars(__t('INSTALLER_DB_USERNAME')) ?>" required autocomplete="off">
                     <div class="input-group-append">
-                        <span class="input-group-text" data-toggle="tooltip" title="Its recommended to create seperate user account instead of using root">
+                        <span class="input-group-text" data-toggle="tooltip" title="<?= htmlspecialchars(__t('INSTALLER_DB_USERNAME_TIP')) ?>">
                             <i class="fa fa-exclamation-triangle color-danger fa-fw"></i>
                         </span>
                     </div>
@@ -181,23 +181,23 @@ EOT;
                     <div class="input-group-prepend">
                         <span class="input-group-text"><i class="fa fa-lock fa-fw"></i></span>
                     </div>
-                    <input type="password" class="form-control" name="dbpassword" placeholder="Password" autocomplete="off">
+                    <input type="password" class="form-control" name="dbpassword" placeholder="<?= htmlspecialchars(__t('INSTALLER_DB_PASSWORD')) ?>" autocomplete="off">
                 </div>
 
                 <div class="input-group mb-2">
                     <div class="input-group-prepend">
                         <span class="input-group-text"><i class="fa fa-database fa-fw"></i></span>
                     </div>
-                    <input class="form-control" name="dbname" placeholder="Database name" required autocomplete="off">
+                    <input class="form-control" name="dbname" placeholder="<?= htmlspecialchars(__t('INSTALLER_DB_NAME')) ?>" required autocomplete="off">
                 </div>
 
                 <div class="input-group mb-2">
                     <div class="input-group-prepend">
                         <span class="input-group-text"><i class="fa fa-font fa-fw"></i></span>
                     </div>
-                    <input class="form-control" name="dbprefix" placeholder="Table prefix (optional)" autocomplete="off">
+                    <input class="form-control" name="dbprefix" placeholder="<?= htmlspecialchars(__t('INSTALLER_DB_PREFIX')) ?>" autocomplete="off">
                     <div class="input-group-append">
-                        <span class="input-group-text" data-toggle="tooltip" title="Defaults to 'tsw_'">
+                        <span class="input-group-text" data-toggle="tooltip" title="<?= htmlspecialchars(__t('INSTALLER_DB_PREFIX_TIP')) ?>">
                             <i class="fa fa-question-circle fa-fw"></i>
                         </span>
                     </div>
@@ -210,10 +210,10 @@ EOT;
 
     <div class="card-footer text-right">
         <a href="?step=<?= $stepNumber - 1 ?>" class="btn btn-primary float-left">
-            <i class="fas fa-chevron-left"></i> Back
+            <i class="fas fa-chevron-left"></i> <?= htmlspecialchars(__t('INSTALLER_BTN_BACK')) ?>
         </a>
         <a href="#" id="submitformalt" class="btn btn-primary float-right">
-            Submit <i class="fas fa-chevron-right"></i>
+            <?= htmlspecialchars(__t('INSTALLER_BTN_SUBMIT')) ?> <i class="fas fa-chevron-right"></i>
         </a>
     </div>
 </div>

@@ -1,0 +1,340 @@
+# TS-Website frontend translations — Swedish
+# Domain: frontend
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+
+msgid "ASSIGNER_NO_REQUIRED_GROUPS"
+msgstr "Du har inte någon av de obligatoriska grupperna. Du kan inte använda grupptilldelaren."
+
+msgid "DATE_FORMAT"
+msgstr "d.m.Y"
+
+msgid "TIME_FORMAT"
+msgstr "H:i"
+
+msgid "BANS_HEADER_TARGET"
+msgstr "Förbud"
+
+msgid "COOKIEALERT_AGREE"
+msgstr "jag håller med"
+
+msgid "OUTDATED_DATA"
+msgstr "<b>Varning!</b> Viss information kan inte erhållas nu. Visar inaktuell data från {0}."
+
+msgid "SHOW_PROBLEMS"
+msgstr "Visa problem"
+
+msgid "PROBLEMS_DESCRIPTION"
+msgstr "Problem som uppstod vid anslutning till TeamSpeak-servern"
+
+msgid "NO_JAVASCRIPT_ENABLED"
+msgstr "Den här webbplatsen fungerar inte utan <a href=\"https://www.enable-javascript.com/\" target=\"_blank\">JavaScript aktiverat</a>."
+
+msgid "CANNOT_GET_DATA"
+msgstr "Kan inte hämta data för \"{0}\"! Kontakta webbplatsägaren."
+
+msgid "NO_REASON_SET"
+msgstr "<b>(ingen anledning angiven)</b>"
+
+msgid "BANS_HEADER_REASON"
+msgstr "Anledning"
+
+msgid "BANS_HEADER_INVOKER"
+msgstr "Banad av"
+
+msgid "BANS_HEADER_BANDATE"
+msgstr "Förbudsdatum"
+
+msgid "BANS_HEADER_EXPIRES"
+msgstr "löper ut"
+
+msgid "DATATABLES_LANGUAGE_NAME"
+msgstr "Swedish"
+
+msgid "BANS_NEVEREXPIRES"
+msgstr "Aldrig"
+
+msgid "STATUS_ADDRESS"
+msgstr "Address:"
+
+msgid "STATUS_CLIENTS_ONLINE"
+msgstr "Online:"
+
+msgid "STATUS_RESERVED_SLOTS"
+msgstr "{0} reserverade platser"
+
+msgid "STATUS_TOP_ONLINE"
+msgstr "Mest online:"
+
+msgid "STATUS_TOP_ONLINE_DESC"
+msgstr "Uppnåddes den {0}"
+
+msgid "STATUS_UPTIME"
+msgstr "Upptid:"
+
+msgid "STATUS_VERSION"
+msgstr "Version:"
+
+msgid "STATUS_VERSION_DESC"
+msgstr "{0} den {1}"
+
+msgid "STATUS_PING"
+msgstr "Genomsnittlig pinga:"
+
+msgid "STATUS_PACKETLOSS"
+msgstr "Genomsnittlig paketförlust:"
+
+msgid "STATUS_ERROR"
+msgstr "Cannot retrieve server status"
+
+msgid "STATUS_PANEL_TITLE"
+msgstr "Serverstatus"
+
+msgid "DAYJS_LANG"
+msgstr "sv"
+
+msgid "LOGIN_CONFIRMATION_CODE"
+msgstr "Hej, här är din bekräftelsekod för att logga in: [b]{0}[/b]"
+
+msgid "UNSUPPORTED_BROWSER"
+msgstr "Din webbläsare stöds inte. Byt till den senaste versionen av Chrome, Firefox, Safari eller Edge för att använda den här webbplatsen."
+
+msgid "DATATABLES_PLACEHOLDER_SEARCH"
+msgstr "Sök..."
+
+msgid "WEBSITE_TITLE"
+msgstr " | TS-website svenska språket"
+
+msgid "ADMIN_STATUS_ONLINE"
+msgstr "Online"
+
+msgid "ADMIN_STATUS_AWAY"
+msgstr "Bort"
+
+msgid "ADMIN_STATUS_OFFLINE"
+msgstr "inte online"
+
+msgid "ADMIN_STATUS_EMPTY_GROUP"
+msgstr "Inget att visa"
+
+msgid "ADMIN_STATUS_EMPTY_STATUS"
+msgstr "Adminstatus är tom"
+
+msgid "ASSIGNER_PANEL_TITLE"
+msgstr "Grupp tilldelare"
+
+msgid "ASSIGNER_TITLE"
+msgstr "Grupp tilldelare"
+
+msgid "BANS_EMPTY"
+msgstr "Banlistan är tom"
+
+msgid "BANS_TITLE"
+msgstr "Banlist"
+
+msgid "BANS_PANEL_TITLE"
+msgstr "Banlist"
+
+msgid "BANS_BANNED_ALERT_TITLE"
+msgstr "Din IP har förbjudits av {0}"
+
+msgid "BANS_BANNED_ALERT_REASON"
+msgstr "Orsak: {0}"
+
+msgid "BANS_VIEW_MORE_TIP"
+msgstr "Klicka på en rad för att se mer information om ett förbud"
+
+msgid "RULES_TITLE"
+msgstr "Regler"
+
+msgid "RULES_PANEL_TITLE"
+msgstr "regel"
+
+msgid "FAQ_COPY_LINK"
+msgstr "Kopiera länken till det svaret"
+
+msgid "FAQ_PANEL_TITLE"
+msgstr "FAQ"
+
+msgid "FAQ_TITLE"
+msgstr "FAQ"
+
+msgid "FAQ_COPY_LINK_SUCCESS"
+msgstr "Kopierade!"
+
+msgid "FAQ_COPY_LINK_ERROR"
+msgstr "Fel!"
+
+msgid "HOME_TITLE"
+msgstr "Nyheter"
+
+msgid "HOME_PANEL_TITLE"
+msgstr "Nyheter"
+
+msgid "HOME_EMPTY"
+msgstr "Inga nyheter tillgängliga just nu"
+
+msgid "HOME_INVALID_PAGE"
+msgstr "Ogiltigt sid nummer"
+
+msgid "HOME_PREVIOUS_NEWS"
+msgstr "Tidigare"
+
+msgid "HOME_NEXT_NEWS"
+msgstr "Nästa"
+
+msgid "ADMIN_STATUS_PANEL_TITLE"
+msgstr "Admin status"
+
+msgid "ADMIN_STATUS_HIDE_OFFLINE_TIP"
+msgstr "Dölj offline administratörer"
+
+msgid "ADMIN_STATUS_SHOW_OFFLINE_TIP"
+msgstr "Visa offline administratörer"
+
+msgid "ADMIN_STATUS_ERROR"
+msgstr "Admin status fel"
+
+msgid "NAV_TOGGLE"
+msgstr "Växla navigering"
+
+msgid "NAV_VIEWER"
+msgstr "Visare"
+
+msgid "NAV_ASSIGNER"
+msgstr "Upplåtare"
+
+msgid "NAV_BANS"
+msgstr "Förbud"
+
+msgid "NAV_RULES"
+msgstr "regel"
+
+msgid "NAV_FAQ"
+msgstr "FAQ"
+
+msgid "NAV_ACCOUNT_LOGIN"
+msgstr "Logga in"
+
+msgid "NAV_ACCOUNT_LOGOUT"
+msgstr "Logga ut"
+
+msgid "VIEWER_TITLE"
+msgstr "Server visare"
+
+msgid "VIEWER_PANEL_TITLE"
+msgstr "Server visare"
+
+msgid "VIEWER_SHOW_EMPTY"
+msgstr "Visa tomma kanaler"
+
+msgid "VIEWER_HIDE_EMPTY"
+msgstr "Dölj tomma kanaler"
+
+msgid "VIEWER_TIP_ALERT"
+msgstr "Klicka på en kanal för att gå med i den. Håll muspekaren över en användare för att kontrollera deras information"
+
+msgid "ARIA_CLOSE"
+msgstr "Stänga"
+
+msgid "VIEWER_ERROR"
+msgstr "Visar fel"
+
+msgid "VIEWER_CONNECTION_CONFIRMATION"
+msgstr "Vill du ansluta till den här kanalen?"
+
+msgid "VIEWER_CLIENT_LASTACTIVE"
+msgstr "Senast aktiv:"
+
+msgid "VIEWER_CLIENT_ONLINE"
+msgstr "Online tid:"
+
+msgid "VIEWER_CLIENT_JOINED"
+msgstr "Anslöt sig först:"
+
+msgid "VIEWER_CLIENT_TITLE"
+msgstr "Kund information"
+
+msgid "VIEWER_SERVER_ICON"
+msgstr "Server ikon"
+
+msgid "VIEWER_DEFAULT_CHANNEL"
+msgstr "Standard kanal"
+
+msgid "VIEWER_CHANNEL_UNSUB1"
+msgstr ", avslutad prenumeration"
+
+msgid "VIEWER_CHANNEL_PASSWORD"
+msgstr "Lösenord skyddat"
+
+msgid "VIEWER_CHANNEL_UNSUB2"
+msgstr "Avslutad prenumeration"
+
+msgid "VIEWER_CHANNEL_ICON"
+msgstr "Kanal ikon"
+
+msgid "VIEWER_CHANNEL_MODERATED"
+msgstr "Modererad"
+
+msgid "VIEWER_CHANNEL_MUSIC_CODED"
+msgstr "Musik codec"
+
+msgid "VIEWER_CLIENT_AWAY"
+msgstr "Bort"
+
+msgid "VIEWER_CLIENT_OUTPUT_DISABLED"
+msgstr "Ljud inaktiverat"
+
+msgid "VIEWER_CLIENT_OUTPUT_MUTED"
+msgstr "Dövad"
+
+msgid "VIEWER_CLIENT_MIC_DISABLED"
+msgstr "Mikrofon inaktiverad"
+
+msgid "VIEWER_CLIENT_MIC_MUTED"
+msgstr "Dämpad"
+
+msgid "VIEWER_CLIENT_COMMANDER"
+msgstr "Kanal befälhavare"
+
+msgid "VIEWER_CLIENT_ICON"
+msgstr "Klient ikon"
+
+msgid "VIEWER_CLIENT_PRIORITY_SPEAKER"
+msgstr "Prioriterad talare"
+
+msgid "VIEWER_CLIENT_TALK_POWER_GRANTED"
+msgstr "Prata kraft beviljad"
+
+msgid "VIEWER_CLIENT_TALK_POWER_INSUFFICIENT"
+msgstr "Otillräcklig Prata kraft"
+
+msgid "ASSIGNER_NOT_LOGGED_IN"
+msgstr "Logga in innan du använder grupp överlåtare"
+
+msgid "ASSIGNER_LOGIN_BUTTON"
+msgstr "Logga in"
+
+msgid "ASSIGNER_SAVE_BUTTON"
+msgstr "Spara"
+
+msgid "ASSIGNER_INVALID_GROUPS"
+msgstr "Ogiltig grupp inställningar"
+
+msgid "ASSIGNER_NOT_CONFIGURED"
+msgstr "grupp överlåtare är inte konfigurerad av webbplats administratören"
+
+msgid "ASSIGNER_SAVE_SUCCESS"
+msgstr "Din grupp har uppdaterats"
+
+msgid "ASSIGNER_SAVE_ERROR"
+msgstr "grupp ändra fel"
+
+msgid "ASSIGNER_SAVE_NO_CHANGE"
+msgstr "Inga ändringar har gjorts"
+
+msgid "IMPRINT_TITLE"
+msgstr "Impressum"

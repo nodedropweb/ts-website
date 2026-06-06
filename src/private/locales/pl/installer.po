@@ -1,0 +1,238 @@
+# TS-Website installer translations — pl
+# Domain: installer
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pl\n"
+
+msgid "INSTALLER_NAV_BRAND"
+msgstr "Instalator TS-Website"
+
+msgid "INSTALLER_STEP_WELCOME"
+msgstr "Witaj"
+
+msgid "INSTALLER_STEP_REQUIREMENTS"
+msgstr "Wymagania"
+
+msgid "INSTALLER_STEP_DATABASE"
+msgstr "Baza danych"
+
+msgid "INSTALLER_STEP_TEAMSPEAK"
+msgstr "TeamSpeak"
+
+msgid "INSTALLER_STEP_SECURITY"
+msgstr "Bezpieczeństwo"
+
+msgid "INSTALLER_STEP_CONFIGURATION"
+msgstr "Konfiguracja"
+
+msgid "INSTALLER_STEP_DONE"
+msgstr "Gotowe"
+
+msgid "INSTALLER_WELCOME_MODAL_TITLE"
+msgstr "Witaj w TS-Website 3.0!"
+
+msgid "INSTALLER_WELCOME_MODAL_INTRO"
+msgstr "Ta wersja zawiera w pełni funkcjonalny <b>Panel Admina</b>, zgodność z PHP 8.4 i wiele ulepszeń w stosunku do wersji 2."
+
+msgid "INSTALLER_WELCOME_MODAL_NEW_IN"
+msgstr "<b>Nowości w 3.0:</b>"
+
+msgid "INSTALLER_WELCOME_MODAL_FEATURE_ADMIN"
+msgstr "<b>Panel Admina</b> — Aktualności, FAQ, Regulamin, Impressum, Konfiguracja"
+
+msgid "INSTALLER_WELCOME_MODAL_FEATURE_EDITOR"
+msgstr "<b>Edytor Rich Text Lexical</b> — dla Aktualności, FAQ, Regulaminu i Impressum"
+
+msgid "INSTALLER_WELCOME_MODAL_FEATURE_PHP"
+msgstr "<b>Zgodny z PHP 8.4</b> — w pełni zmodernizowany"
+
+msgid "INSTALLER_WELCOME_MODAL_FEATURE_VIEWER"
+msgstr "<b>Automatyczne odświeżanie Channel Viewera</b> — nie trzeba już naciskać F5"
+
+msgid "INSTALLER_WELCOME_MODAL_BTN_GO"
+msgstr "Zaczynamy"
+
+msgid "INSTALLER_WELCOME_ALREADY_INSTALLED"
+msgstr "Znaleziono plik dbconfig.php! TS-website może być już zainstalowany. Kontynuowanie spowoduje utratę danych!"
+
+msgid "INSTALLER_WELCOME_TITLE"
+msgstr "Witaj w instalatorze TS-website!"
+
+msgid "INSTALLER_WELCOME_DESCRIPTION"
+msgstr "Ten kreator przeprowadzi Cię przez proces instalacji TS-website."
+
+msgid "INSTALLER_WELCOME_NO_JS"
+msgstr "Proszę włącz JavaScript przed kontynuowaniem!"
+
+msgid "INSTALLER_WELCOME_WIKI_HINT"
+msgstr "W razie problemów sprawdź <a href=\\"https://github.com/Wruczek/ts-website/wiki\\" target=\\"_blank\\">wiki</a>."
+
+msgid "INSTALLER_WELCOME_READY"
+msgstr "Przejdź do następnego kroku, gdy będziesz gotowy!"
+
+msgid "INSTALLER_WELCOME_METRICS_CHECKBOX"
+msgstr "Wyślij jednorazowe statystyki, aby pomóc ulepszyć TS-website"
+
+msgid "INSTALLER_WELCOME_METRICS_LEARN_MORE"
+msgstr "(dowiedz się więcej)"
+
+msgid "INSTALLER_WELCOME_LICENSE_CHECKBOX"
+msgstr "Przeczytałem(-am) i akceptuję <a href=\\"https://github.com/nodedropweb/ts-website/blob/2.0/LICENSE.txt\\" target=\\"_blank\\">licencję</a>"
+
+msgid "INSTALLER_BTN_START"
+msgstr "Start"
+
+msgid "INSTALLER_REQ_TITLE"
+msgstr "Sprawdzanie wymagań"
+
+msgid "INSTALLER_REQ_FILE_PERM_ERROR"
+msgstr "Sprawdzanie uprawnień do pliku nie powiodło się. Spróbuj: <code>sudo chown -R www-data:www-data \\"{0}\\"</code>"
+
+msgid "INSTALLER_REQ_SHOW_DETAILS"
+msgstr "Pokaż szczegóły"
+
+msgid "INSTALLER_REQ_CANNOT_INSTALL"
+msgstr "<strong>Ups!</strong> Twoja konfiguracja serwera nie pozwala na uruchomienie TS-website. Napraw powyższe problemy i spróbuj ponownie."
+
+msgid "INSTALLER_REQ_SUCCESS"
+msgstr "<strong>Sukces!</strong> Możesz uruchomić TS-website!"
+
+msgid "INSTALLER_BTN_RECHECK"
+msgstr "Sprawdź ponownie"
+
+msgid "INSTALLER_BTN_NEXT"
+msgstr "Dalej"
+
+msgid "INSTALLER_BTN_BACK"
+msgstr "Wstecz"
+
+msgid "INSTALLER_BTN_SUBMIT"
+msgstr "Wyślij"
+
+msgid "INSTALLER_DB_TITLE"
+msgstr "Szczegóły bazy danych"
+
+msgid "INSTALLER_DB_USE_MYSQL"
+msgstr "Użyj MySQL / MariaDB"
+
+msgid "INSTALLER_DB_USE_SQLITE"
+msgstr "Użyj bazy danych SQLite"
+
+msgid "INSTALLER_DB_HOSTNAME"
+msgstr "Hostname"
+
+msgid "INSTALLER_DB_HOSTNAME_TIP"
+msgstr "Użyj '127.0.0.1' dla localhost"
+
+msgid "INSTALLER_DB_USERNAME"
+msgstr "Nazwa użytkownika"
+
+msgid "INSTALLER_DB_USERNAME_TIP"
+msgstr "Zaleca się utworzenie oddzielnego konta zamiast root"
+
+msgid "INSTALLER_DB_PASSWORD"
+msgstr "Hasło"
+
+msgid "INSTALLER_DB_NAME"
+msgstr "Nazwa bazy danych"
+
+msgid "INSTALLER_DB_PREFIX"
+msgstr "Prefiks tabel (opcjonalnie)"
+
+msgid "INSTALLER_DB_PREFIX_TIP"
+msgstr "Domyślnie 'tsw_'"
+
+msgid "INSTALLER_DB_ERR_FILL_IN"
+msgstr "Proszę wypełnij dane bazy danych"
+
+msgid "INSTALLER_TS_TITLE"
+msgstr "Szczegóły Query"
+
+msgid "INSTALLER_TS_HOSTNAME"
+msgstr "Hostname"
+
+msgid "INSTALLER_TS_HOSTNAME_TIP"
+msgstr "Twój adres IP TeamSpeak (bez portu).<br>Użyj \\"127.0.0.1\\" dla localhost"
+
+msgid "INSTALLER_TS_QUERYPORT"
+msgstr "Port ServerQuery"
+
+msgid "INSTALLER_TS_QUERYPORT_TIP"
+msgstr "Port interfejsu ServerQuery. Domyślnie: 10011"
+
+msgid "INSTALLER_TS_VOICEPORT"
+msgstr "Port głosowy"
+
+msgid "INSTALLER_TS_VOICEPORT_TIP"
+msgstr "Port, z którym łączą się klienci. Domyślnie: 9987"
+
+msgid "INSTALLER_TS_QUERYUSERNAME"
+msgstr "Nazwa użytkownika Query"
+
+msgid "INSTALLER_TS_QUERYPASSWORD"
+msgstr "Hasło Query"
+
+msgid "INSTALLER_TS_DISPLAYIP"
+msgstr "Wyświetlany adres"
+
+msgid "INSTALLER_TS_DISPLAYIP_TIP"
+msgstr "Przyjazny adres serwera dla użytkowników."
+
+msgid "INSTALLER_TS_CACHING_ICONS"
+msgstr "Pobieranie ikon z serwera TS3, proszę czekać..."
+
+msgid "INSTALLER_TS_ERR_CANNOT_GET_INFO"
+msgstr "Nie można pobrać informacji o serwerze"
+
+msgid "INSTALLER_SEC_TITLE"
+msgstr "Bezpieczeństwo: katalog private/"
+
+msgid "INSTALLER_SEC_DIR_PROTECTED"
+msgstr "Katalog jest chroniony"
+
+msgid "INSTALLER_SEC_DIR_NOT_PROTECTED"
+msgstr "Katalog NIE jest chroniony"
+
+msgid "INSTALLER_SEC_HTACCESS_PRESENT"
+msgstr ".htaccess obecny"
+
+msgid "INSTALLER_SEC_HTACCESS_MISSING"
+msgstr "Brak .htaccess"
+
+msgid "INSTALLER_SEC_WIKI_GUIDE"
+msgstr "Przewodnik Wiki"
+
+msgid "INSTALLER_CONFIG_TITLE"
+msgstr "Skonfiguruj swoją stronę"
+
+msgid "INSTALLER_CONFIG_BASE_URL_LABEL"
+msgstr "Bazowy URL ts-website. Bez końcowego ukośnika!"
+
+msgid "INSTALLER_CONFIG_SITE_NAME_LABEL"
+msgstr "Nazwa / tytuł strony"
+
+msgid "INSTALLER_CONFIG_TIMEZONE_LABEL"
+msgstr "Wybierz strefę czasową"
+
+msgid "INSTALLER_CONFIG_TIMEZONE_PLACEHOLDER"
+msgstr "Wybierz strefę czasową"
+
+msgid "INSTALLER_CONFIG_CLOUDFLARE_LABEL"
+msgstr "Używam Cloudflare"
+
+msgid "INSTALLER_DONE_TITLE"
+msgstr "TS-website {0} został pomyślnie zainstalowany! 👍"
+
+msgid "INSTALLER_DONE_REMOVE_DIR"
+msgstr "Możesz usunąć katalog <code>installer</code>."
+
+msgid "INSTALLER_DONE_WHATNOW"
+msgstr "Co teraz?"
+
+msgid "INSTALLER_DONE_VISIT_TITLE"
+msgstr "Odwiedź swoją nową stronę"
+
+msgid "INSTALLER_DONE_SPREAD_TITLE"
+msgstr "Rozpowszechnij informację"

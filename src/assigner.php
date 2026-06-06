@@ -8,7 +8,7 @@ use Wruczek\TSWebsite\Utils\TemplateUtils;
 require_once __DIR__ . "/private/php/load.php";
 
 if (!TeamSpeakUtils::i()->checkTSConnection()) {
-    TemplateUtils::i()->renderTemplate("assigner");
+    TemplateUtils::i()->renderTemplate("assigner", ["isLoggedIn" => Auth::isLoggedIn()]);
     exit;
 }
 

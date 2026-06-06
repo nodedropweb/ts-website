@@ -1,0 +1,374 @@
+# TS-Website frontend translations — English
+# Domain: frontend
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+
+# ── Navigation ──────────────────────────────────────────────────────────────
+
+msgid "NAV_TOGGLE"
+msgstr "Toggle navigation"
+
+msgid "NAV_VIEWER"
+msgstr "Viewer"
+
+msgid "NAV_ASSIGNER"
+msgstr "Assigner"
+
+msgid "NAV_BANS"
+msgstr "Bans"
+
+msgid "NAV_RULES"
+msgstr "Rules"
+
+msgid "NAV_FAQ"
+msgstr "FAQ"
+
+msgid "LOGIN_CONFIRMATION_CODE"
+msgstr "Hello, your login confirmation code is: [b]{0}[/b]"
+
+msgid "NAV_ACCOUNT_LOGIN"
+msgstr "Login"
+
+msgid "NAV_ACCOUNT_LOGOUT"
+msgstr "Logout"
+
+# ── Global ───────────────────────────────────────────────────────────────────
+
+msgid "ARIA_CLOSE"
+msgstr "Close"
+
+msgid "WEBSITE_TITLE"
+msgstr " | TS-website"
+
+msgid "DAYJS_LANG"
+msgstr "en-gb"
+
+msgid "DATE_FORMAT"
+msgstr "d.m.Y"
+
+msgid "TIME_FORMAT"
+msgstr "H:i"
+
+msgid "DATATABLES_LANGUAGE_NAME"
+msgstr "English"
+
+msgid "DATATABLES_PLACEHOLDER_SEARCH"
+msgstr "Search..."
+
+msgid "NO_JAVASCRIPT_ENABLED"
+msgstr "This website will not work without <a href=\"https://www.enable-javascript.com/\" target=\"_blank\">JavaScript enabled</a>."
+
+msgid "UNSUPPORTED_BROWSER"
+msgstr "Your browser is not supported. Please switch to the latest version of Chrome, Firefox, Safari or Edge to use this website."
+
+msgid "CANNOT_GET_DATA"
+msgstr "Cannot get data for \"{0}\"! Please contact website owner."
+
+msgid "OUTDATED_DATA"
+msgstr "<b>Warning!</b> Some information cannot be obtained now. Showing outdated data from {0}."
+
+msgid "SHOW_PROBLEMS"
+msgstr "Show problems"
+
+msgid "PROBLEMS_DESCRIPTION"
+msgstr "Problems encountered while connecting to the TeamSpeak server"
+
+# ── Cookie alert ─────────────────────────────────────────────────────────────
+
+msgid "COOKIEALERT_MESSAGE"
+msgstr "<b>Do you like cookies?</b> &#x1F36A; We use cookies to ensure you get the best experience on our website. <a href=\"http://cookiesandyou.com/\" target=\"_blank\">Learn more</a>"
+
+msgid "COOKIEALERT_AGREE"
+msgstr "I agree"
+
+# ── Server status ────────────────────────────────────────────────────────────
+
+msgid "STATUS_PANEL_TITLE"
+msgstr "Server status"
+
+msgid "STATUS_ADDRESS"
+msgstr "Address:"
+
+msgid "STATUS_CLIENTS_ONLINE"
+msgstr "Online:"
+
+msgid "STATUS_RESERVED_SLOTS"
+msgstr "{0} reserved slots"
+
+msgid "STATUS_TOP_ONLINE"
+msgstr "Most online:"
+
+msgid "STATUS_TOP_ONLINE_DESC"
+msgstr "Achieved on {0}"
+
+msgid "STATUS_UPTIME"
+msgstr "Uptime:"
+
+msgid "STATUS_VERSION"
+msgstr "Version:"
+
+msgid "STATUS_VERSION_DESC"
+msgstr "{0} on {1}"
+
+msgid "STATUS_PING"
+msgstr "Avg. ping:"
+
+msgid "STATUS_PACKETLOSS"
+msgstr "Avg. packet loss:"
+
+msgid "STATUS_ERROR"
+msgstr "Cannot retrieve server status"
+
+# ── Admin status ─────────────────────────────────────────────────────────────
+
+msgid "ADMIN_STATUS_PANEL_TITLE"
+msgstr "Admin status"
+
+msgid "ADMIN_STATUS_ONLINE"
+msgstr "Online"
+
+msgid "ADMIN_STATUS_AWAY"
+msgstr "Away"
+
+msgid "ADMIN_STATUS_OFFLINE"
+msgstr "Offline"
+
+msgid "ADMIN_STATUS_EMPTY_GROUP"
+msgstr "Nothing to show"
+
+msgid "ADMIN_STATUS_EMPTY_STATUS"
+msgstr "Admin status is empty"
+
+msgid "ADMIN_STATUS_HIDE_OFFLINE_TIP"
+msgstr "Hide offline admins"
+
+msgid "ADMIN_STATUS_SHOW_OFFLINE_TIP"
+msgstr "Show offline admins"
+
+msgid "ADMIN_STATUS_ERROR"
+msgstr "Admin status error"
+
+# ── Group assigner ───────────────────────────────────────────────────────────
+
+msgid "ASSIGNER_PANEL_TITLE"
+msgstr "Group assigner"
+
+msgid "ASSIGNER_TITLE"
+msgstr "Group assigner"
+
+msgid "ASSIGNER_NOT_CONFIGURED"
+msgstr "Group assigner is not configured by the website administrator"
+
+msgid "ASSIGNER_NOT_LOGGED_IN"
+msgstr "Log in before using group assigner"
+
+msgid "ASSIGNER_LOGIN_BUTTON"
+msgstr "Login"
+
+msgid "ASSIGNER_SAVE_BUTTON"
+msgstr "Save"
+
+msgid "ASSIGNER_SAVE_SUCCESS"
+msgstr "Your groups have been updated"
+
+msgid "ASSIGNER_SAVE_NO_CHANGE"
+msgstr "No changes has been made"
+
+msgid "ASSIGNER_SAVE_ERROR"
+msgstr "Group change error"
+
+msgid "ASSIGNER_NO_REQUIRED_GROUPS"
+msgstr "You don't have any of the required groups"
+
+msgid "ASSIGNER_INVALID_GROUPS"
+msgstr "Invalid group settings"
+
+msgid "ASSIGNER_COOLDOWN_MESSAGE"
+msgstr "Please wait {0} to be able to change your groups again."
+
+# ── Banlist ──────────────────────────────────────────────────────────────────
+
+msgid "BANS_PANEL_TITLE"
+msgstr "Banlist"
+
+msgid "BANS_TITLE"
+msgstr "Banlist"
+
+msgid "BANS_EMPTY"
+msgstr "Banlist is empty"
+
+msgid "BANS_HEADER_TARGET"
+msgstr "Ban"
+
+msgid "BANS_HEADER_REASON"
+msgstr "Reason"
+
+msgid "BANS_HEADER_INVOKER"
+msgstr "Banned by"
+
+msgid "BANS_HEADER_BANDATE"
+msgstr "Ban date"
+
+msgid "BANS_HEADER_EXPIRES"
+msgstr "Expires"
+
+msgid "BANS_NEVEREXPIRES"
+msgstr "Never"
+
+msgid "BANS_BANNED_ALERT_TITLE"
+msgstr "Your IP has been banned by {0}"
+
+msgid "BANS_BANNED_ALERT_REASON"
+msgstr "Reason: {0}"
+
+msgid "BANS_VIEW_MORE_TIP"
+msgstr "Click on a row to view more details about a ban"
+
+msgid "NO_REASON_SET"
+msgstr "<b>(no reason set)</b>"
+
+# ── Rules ────────────────────────────────────────────────────────────────────
+
+msgid "RULES_PANEL_TITLE"
+msgstr "Rules"
+
+msgid "RULES_TITLE"
+msgstr "Rules"
+
+# ── FAQ ──────────────────────────────────────────────────────────────────────
+
+msgid "FAQ_PANEL_TITLE"
+msgstr "FAQ"
+
+msgid "FAQ_TITLE"
+msgstr "FAQ"
+
+msgid "FAQ_COPY_LINK"
+msgstr "Copy link to that answer"
+
+msgid "FAQ_COPY_LINK_SUCCESS"
+msgstr "Copied!"
+
+msgid "FAQ_COPY_LINK_ERROR"
+msgstr "Error!"
+
+# ── News ─────────────────────────────────────────────────────────────────────
+
+msgid "HOME_PANEL_TITLE"
+msgstr "News"
+
+msgid "HOME_TITLE"
+msgstr "News"
+
+msgid "HOME_EMPTY"
+msgstr "No news available at this moment"
+
+msgid "HOME_INVALID_PAGE"
+msgstr "Invalid page number"
+
+msgid "HOME_NEWS_EDITED"
+msgstr "Last edited: {0}"
+
+msgid "HOME_PREVIOUS_NEWS"
+msgstr "Previous"
+
+msgid "HOME_NEXT_NEWS"
+msgstr "Next"
+
+# ── Channel viewer ───────────────────────────────────────────────────────────
+
+msgid "VIEWER_PANEL_TITLE"
+msgstr "Server viewer"
+
+msgid "VIEWER_TITLE"
+msgstr "Server viewer"
+
+msgid "VIEWER_SHOW_EMPTY"
+msgstr "Show empty channels"
+
+msgid "VIEWER_HIDE_EMPTY"
+msgstr "Hide empty channels"
+
+msgid "VIEWER_TIP_ALERT"
+msgstr "Click on a channel to join it. Hover over a user to check their info"
+
+msgid "VIEWER_ERROR"
+msgstr "Viewer error"
+
+msgid "VIEWER_CONNECTION_CONFIRMATION"
+msgstr "Do you want to connect to this channel?"
+
+msgid "VIEWER_SERVER_ICON"
+msgstr "Server icon"
+
+msgid "VIEWER_DEFAULT_CHANNEL"
+msgstr "Default channel"
+
+msgid "VIEWER_CHANNEL_OCCUPIED"
+msgstr "Fully occupied"
+
+msgid "VIEWER_CHANNEL_PASSWORD"
+msgstr "Password-protected"
+
+msgid "VIEWER_CHANNEL_ICON"
+msgstr "Channel icon"
+
+msgid "VIEWER_CHANNEL_MODERATED"
+msgstr "Moderated"
+
+msgid "VIEWER_CHANNEL_MUSIC_CODED"
+msgstr "Music codec"
+
+msgid "VIEWER_CHANNEL_UNSUB1"
+msgstr ", unsubscribed"
+
+msgid "VIEWER_CHANNEL_UNSUB2"
+msgstr "Unsubscribed"
+
+msgid "VIEWER_CLIENT_TITLE"
+msgstr "Client info"
+
+msgid "VIEWER_CLIENT_LASTACTIVE"
+msgstr "Last active:"
+
+msgid "VIEWER_CLIENT_ONLINE"
+msgstr "Online time:"
+
+msgid "VIEWER_CLIENT_JOINED"
+msgstr "First joined:"
+
+msgid "VIEWER_CLIENT_AWAY"
+msgstr "Away"
+
+msgid "VIEWER_CLIENT_OUTPUT_DISABLED"
+msgstr "Sound disabled"
+
+msgid "VIEWER_CLIENT_OUTPUT_MUTED"
+msgstr "Deafened"
+
+msgid "VIEWER_CLIENT_MIC_DISABLED"
+msgstr "Microphone disabled"
+
+msgid "VIEWER_CLIENT_MIC_MUTED"
+msgstr "Muted"
+
+msgid "VIEWER_CLIENT_COMMANDER"
+msgstr "Channel commander"
+
+msgid "VIEWER_CLIENT_ICON"
+msgstr "Client icon"
+
+msgid "VIEWER_CLIENT_PRIORITY_SPEAKER"
+msgstr "Priority speaker"
+
+msgid "VIEWER_CLIENT_TALK_POWER_GRANTED"
+msgstr "Talk power granted"
+
+msgid "VIEWER_CLIENT_TALK_POWER_INSUFFICIENT"
+msgstr "Insufficient talk power"
+
+msgid "IMPRINT_TITLE"
+msgstr "Imprint"

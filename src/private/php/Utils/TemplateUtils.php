@@ -178,7 +178,7 @@ class TemplateUtils {
      *        integrity hash and add it along with crossorigin="anonymous" tag.
      */
     public static function includeResource(string $resourceType, string $url, $parameter = null): void {
-        $url = str_replace('{cdnjs}', 'https://cdnjs.cloudflare.com/ajax/libs', $url);
+        $url = str_replace('{cdnjs}', '/lib', $url);
         $attributes = "";
 
         if (is_bool($parameter)) {

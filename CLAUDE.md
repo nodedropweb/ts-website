@@ -87,6 +87,17 @@ if ($detected !== false && $detected !== 'UTF-8') {
 ```
 Nach `composer install` gehen diese Patches verloren — dann erneut anwenden.
 
+### 4b. TCP.php — fwrite(false) wenn TS-Server offline
+**Problem:** `stream_socket_client()` gibt `false` zurück wenn TS offline ist. `$this->stream` bleibt `false` (nicht `null`), deshalb überspringt `connect()` den Reconnect und `fwrite(false, ...)` knallt im Destruktor.  
+**Fix:** `Transport/TCP.php`
+```php
+// In connect(): vor jedem throw
+$this->stream = null;
+
+// In send(): nach connect()
+if (!is_resource($this->stream)) { return; }
+```
+
 ### 4. PHP Shutdown → 500-Fehler
 **Problem:** TS3-Destruktor schickt `QUIT` nach PHP-Shutdown → OOM in StringHelper → Cache-Korruption → alle folgenden Requests benötigen neue TS3-Verbindung → 12s Wartezeit.  
 **Fix:** `load.php` — `register_shutdown_function` der `Transport::disconnect()` aufruft (setzt `$stream = null`, Destruktor überspringt dann QUIT):

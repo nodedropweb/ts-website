@@ -1,0 +1,349 @@
+# TS-Website frontend translations — Czech
+# Domain: frontend
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: cs\n"
+
+msgid "ASSIGNER_NO_REQUIRED_GROUPS"
+msgstr "Nemáš žádnou z potřebných skupin. Nemůžeš použít přiřazování skupin."
+
+msgid "DATE_FORMAT"
+msgstr "d.m.Y"
+
+msgid "TIME_FORMAT"
+msgstr "H:i"
+
+msgid "BANS_HEADER_TARGET"
+msgstr "Ban"
+
+msgid "AUTHORS"
+msgstr "MiKE <mike@fungame.eu>\nOndřej Niesner <>"
+
+msgid "COOKIEALERT_MESSAGE"
+msgstr "<b>Tato stránka používá soubory cookies</b> &#x1F36A; Používáme cookies pro zajištění plynulé funkčnosti našich stránek  <a href=\"https://support.mozilla.org/cs/kb/cookies-informace-ktere-si-weby-ukladaji-do-vaseho\" target=\"_blank\">Zjistit více</a>"
+
+msgid "COOKIEALERT_AGREE"
+msgstr "Souhlasím"
+
+msgid "OUTDATED_DATA"
+msgstr "<b>Varování!</b> Některé informace momentálně nemohou být načteny. Zobrazuji neaktuální data z {0}."
+
+msgid "SHOW_PROBLEMS"
+msgstr "Zobrazit problémy"
+
+msgid "PROBLEMS_DESCRIPTION"
+msgstr "Vyskytl se problém při spojení s TeamSpeak serverem"
+
+msgid "NO_JAVASCRIPT_ENABLED"
+msgstr "Tato stránka nefunguje bez <a href=\"https://www.enable-javascript.com/\" target=\"_blank\">zapnutého JavaScriptu</a>."
+
+msgid "CANNOT_GET_DATA"
+msgstr "Nelze získat informace o \"{0}\"! Prosím kontaktujte správce stránky."
+
+msgid "NO_REASON_SET"
+msgstr "<b>(důvod neuveden)</b>"
+
+msgid "BANS_HEADER_REASON"
+msgstr "Důvod"
+
+msgid "BANS_HEADER_INVOKER"
+msgstr "Zabanoval"
+
+msgid "BANS_HEADER_BANDATE"
+msgstr "Datum banu"
+
+msgid "BANS_HEADER_EXPIRES"
+msgstr "Vyprší"
+
+msgid "DATATABLES_LANGUAGE_NAME"
+msgstr "Czech"
+
+msgid "BANS_NEVEREXPIRES"
+msgstr "Nikdy"
+
+msgid "STATUS_ADDRESS"
+msgstr "Adresa:"
+
+msgid "STATUS_CLIENTS_ONLINE"
+msgstr "Online:"
+
+msgid "STATUS_RESERVED_SLOTS"
+msgstr "{0} rezervovaných slotů"
+
+msgid "STATUS_TOP_ONLINE"
+msgstr "Nejvíce online:"
+
+msgid "STATUS_TOP_ONLINE_DESC"
+msgstr "Dosaženo {0}"
+
+msgid "STATUS_UPTIME"
+msgstr "Běží:"
+
+msgid "STATUS_VERSION"
+msgstr "Verze:"
+
+msgid "STATUS_VERSION_DESC"
+msgstr "{0} na {1}"
+
+msgid "STATUS_PING"
+msgstr "Ping"
+
+msgid "STATUS_PACKETLOSS"
+msgstr "Ztráta paketů"
+
+msgid "STATUS_ERROR"
+msgstr "Nelze zjistit stav serveru"
+
+msgid "STATUS_PANEL_TITLE"
+msgstr "Stav serveru"
+
+msgid "DAYJS_LANG"
+msgstr "cs"
+
+msgid "LOGIN_CONFIRMATION_CODE"
+msgstr "Zdravím, toto je váš potvrzovací kód pro přihlášení: [b]{0}[/b]"
+
+msgid "UNSUPPORTED_BROWSER"
+msgstr "Tento prohlížeč není podporován. Prosím použijte nejnovější verzi Chrome, Firefoxu, Safari nebo Edge pro zobrazení této stránky."
+
+msgid "DATATABLES_PLACEHOLDER_SEARCH"
+msgstr "Hledat..."
+
+msgid "WEBSITE_TITLE"
+msgstr " | TS-website Čeština"
+
+msgid "ADMIN_STATUS_ONLINE"
+msgstr "Online"
+
+msgid "ADMIN_STATUS_AWAY"
+msgstr "Pryč"
+
+msgid "ADMIN_STATUS_OFFLINE"
+msgstr "Offline"
+
+msgid "ADMIN_STATUS_EMPTY_GROUP"
+msgstr "Nic k zobrazení"
+
+msgid "ADMIN_STATUS_EMPTY_STATUS"
+msgstr "Stav adminů je prázdný"
+
+msgid "ASSIGNER_PANEL_TITLE"
+msgstr "Přiřazování skupin"
+
+msgid "ASSIGNER_TITLE"
+msgstr "Přiřazování skupin"
+
+msgid "BANS_EMPTY"
+msgstr "Seznam banů je prázdný"
+
+msgid "BANS_TITLE"
+msgstr "Seznam Banů"
+
+msgid "BANS_PANEL_TITLE"
+msgstr "Seznam Banů"
+
+msgid "BANS_BANNED_ALERT_TITLE"
+msgstr "Vaše IP byla zabanována za {0}"
+
+msgid "BANS_BANNED_ALERT_REASON"
+msgstr "Důvod: {0}"
+
+msgid "BANS_VIEW_MORE_TIP"
+msgstr "Klikněte na řádek pro zobrazení více informací o banu"
+
+msgid "RULES_TITLE"
+msgstr "Pravidla"
+
+msgid "RULES_PANEL_TITLE"
+msgstr "Pravidla"
+
+msgid "FAQ_COPY_LINK"
+msgstr "Zkopíruj odkaz do této odpovědi"
+
+msgid "FAQ_PANEL_TITLE"
+msgstr "FAQ"
+
+msgid "FAQ_TITLE"
+msgstr "FAQ"
+
+msgid "FAQ_COPY_LINK_SUCCESS"
+msgstr "Zkopírováno!"
+
+msgid "FAQ_COPY_LINK_ERROR"
+msgstr "Chyba!"
+
+msgid "HOME_TITLE"
+msgstr "Novinky"
+
+msgid "HOME_PANEL_TITLE"
+msgstr "Novinky"
+
+msgid "HOME_EMPTY"
+msgstr "Žádné dostupné novinky"
+
+msgid "HOME_INVALID_PAGE"
+msgstr "špatné číslo stránky"
+
+msgid "HOME_PREVIOUS_NEWS"
+msgstr "Předchozí"
+
+msgid "HOME_NEXT_NEWS"
+msgstr "Další"
+
+msgid "ADMIN_STATUS_PANEL_TITLE"
+msgstr "Stav adminů"
+
+msgid "ADMIN_STATUS_HIDE_OFFLINE_TIP"
+msgstr "Skrýt offline adminy"
+
+msgid "ADMIN_STATUS_SHOW_OFFLINE_TIP"
+msgstr "Zobrazit offline adminy"
+
+msgid "ADMIN_STATUS_ERROR"
+msgstr "Chyba stavu admina"
+
+msgid "NAV_TOGGLE"
+msgstr "Zobrazit navigaci"
+
+msgid "NAV_VIEWER"
+msgstr "Náhled serveru"
+
+msgid "NAV_ASSIGNER"
+msgstr "Skupiny"
+
+msgid "NAV_BANS"
+msgstr "Bany"
+
+msgid "NAV_RULES"
+msgstr "Pravidla"
+
+msgid "NAV_FAQ"
+msgstr "FAQ"
+
+msgid "NAV_ACCOUNT_LOGIN"
+msgstr "Přihlásit"
+
+msgid "NAV_ACCOUNT_LOGOUT"
+msgstr "Odhlásit"
+
+msgid "VIEWER_TITLE"
+msgstr "Náhled serveru"
+
+msgid "VIEWER_PANEL_TITLE"
+msgstr "Náhled serveru"
+
+msgid "VIEWER_SHOW_EMPTY"
+msgstr "Zobrazit prázdné místnosti"
+
+msgid "VIEWER_HIDE_EMPTY"
+msgstr "Skrýt prázdné místnosti"
+
+msgid "VIEWER_TIP_ALERT"
+msgstr "Klikněte na místnost pro připojení se do ní. Najeďte kurzorem myši na uživatele pro zobrazení informací o něm"
+
+msgid "ARIA_CLOSE"
+msgstr "Zavřít"
+
+msgid "VIEWER_ERROR"
+msgstr "Chyba náhledu"
+
+msgid "VIEWER_CONNECTION_CONFIRMATION"
+msgstr "Chcete se připojit do této místnosti?"
+
+msgid "VIEWER_CLIENT_LASTACTIVE"
+msgstr "Naposledy aktivní:"
+
+msgid "VIEWER_CLIENT_ONLINE"
+msgstr "Online čas:"
+
+msgid "VIEWER_CLIENT_JOINED"
+msgstr "Poprvé připojen:"
+
+msgid "VIEWER_CLIENT_TITLE"
+msgstr "Informace o klientovi"
+
+msgid "VIEWER_SERVER_ICON"
+msgstr "Ikona serveru"
+
+msgid "VIEWER_DEFAULT_CHANNEL"
+msgstr "Hlavní místnost"
+
+msgid "VIEWER_CHANNEL_UNSUB1"
+msgstr ", neodebíraný"
+
+msgid "VIEWER_CHANNEL_OCCUPIED"
+msgstr "Plně obsazen"
+
+msgid "VIEWER_CHANNEL_PASSWORD"
+msgstr "Chráněn heslem"
+
+msgid "VIEWER_CHANNEL_UNSUB2"
+msgstr "Neodebíraný"
+
+msgid "VIEWER_CHANNEL_ICON"
+msgstr "Ikona místnosti"
+
+msgid "VIEWER_CHANNEL_MODERATED"
+msgstr "Moderovaný"
+
+msgid "VIEWER_CHANNEL_MUSIC_CODED"
+msgstr "Hudební kodek"
+
+msgid "VIEWER_CLIENT_AWAY"
+msgstr "Pryč"
+
+msgid "VIEWER_CLIENT_OUTPUT_DISABLED"
+msgstr "Vypnutý zvuk"
+
+msgid "VIEWER_CLIENT_OUTPUT_MUTED"
+msgstr "Ohrožený"
+
+msgid "VIEWER_CLIENT_MIC_DISABLED"
+msgstr "Vypnutý mikrofon"
+
+msgid "VIEWER_CLIENT_MIC_MUTED"
+msgstr "Ztlumený"
+
+msgid "VIEWER_CLIENT_COMMANDER"
+msgstr "Channel commander"
+
+msgid "VIEWER_CLIENT_ICON"
+msgstr "Ikona klienta"
+
+msgid "VIEWER_CLIENT_PRIORITY_SPEAKER"
+msgstr "Priority speaker"
+
+msgid "VIEWER_CLIENT_TALK_POWER_GRANTED"
+msgstr "Právo mluvit přiděleno"
+
+msgid "VIEWER_CLIENT_TALK_POWER_INSUFFICIENT"
+msgstr "Nedostatečné právo mluvit"
+
+msgid "ASSIGNER_NOT_LOGGED_IN"
+msgstr "Pro použití přiřazování skupin se prosím přihlašte"
+
+msgid "ASSIGNER_LOGIN_BUTTON"
+msgstr "Přihlásit"
+
+msgid "ASSIGNER_SAVE_BUTTON"
+msgstr "Uložit"
+
+msgid "ASSIGNER_INVALID_GROUPS"
+msgstr "Špatné nastavení skupiny"
+
+msgid "ASSIGNER_NOT_CONFIGURED"
+msgstr "Přiřazování skupin není nakonfigurováno správcem stránky"
+
+msgid "ASSIGNER_SAVE_SUCCESS"
+msgstr "Vaše skupiny byly aktualizovány"
+
+msgid "ASSIGNER_SAVE_ERROR"
+msgstr "Chyba při změně skupiny"
+
+msgid "ASSIGNER_SAVE_NO_CHANGE"
+msgstr "Nebyly provedeny žádné změny"
+
+msgid "IMPRINT_TITLE"
+msgstr "Tiráž"

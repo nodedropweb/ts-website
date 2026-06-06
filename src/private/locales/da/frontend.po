@@ -1,0 +1,232 @@
+# TS-Website frontend translations — Danish
+# Domain: frontend
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: da\n"
+
+msgid "DATE_FORMAT"
+msgstr "d.m.Y"
+
+msgid "TIME_FORMAT"
+msgstr "H:i"
+
+msgid "AUTHORS"
+msgstr "Mikkel Lind <mikkel.linddk@gmail.com>"
+
+msgid "COOKIEALERT_MESSAGE"
+msgstr "<b>Kan du lide cookies?</b> &#x1F36A; Vi bruger cookies for at sikre, at du får den bedste oplevelse på vores hjemmeside. <a href=\"https://support.mozilla.org/da/kb/cookies-information-som-websteder-gemmer-paa-din-computer\" target=\"_blank\">Lær mere</a>"
+
+msgid "COOKIEALERT_AGREE"
+msgstr "Jeg er enig"
+
+msgid "OUTDATED_DATA"
+msgstr "<b>Advarsel!</b> Nogle oplysninger kan ikke opnås nu. Viser forældede data fra {0}."
+
+msgid "SHOW_PROBLEMS"
+msgstr "Vis problemer"
+
+msgid "PROBLEMS_DESCRIPTION"
+msgstr "Problemer opstår under forbindelse til TeamSpeak server"
+
+msgid "NO_JAVASCRIPT_ENABLED"
+msgstr "Denne hjemmeside vil ikke fungere uden <a href=\"https://www.enable-javascript.com/\" target=\"_blank\">JavaScript aktiveret</a>."
+
+msgid "CANNOT_GET_DATA"
+msgstr "Kan ikke få data til \"{0}\"! Kontakt venligst hjemmesiden's ejer."
+
+msgid "NO_REASON_SET"
+msgstr "<b>(Ingen begrundelse sat)</b>"
+
+msgid "BANS_HEADER_REASON"
+msgstr "Begrundelse"
+
+msgid "BANS_HEADER_INVOKER"
+msgstr "Banned af"
+
+msgid "BANS_HEADER_BANDATE"
+msgstr "Forbudsdato"
+
+msgid "BANS_HEADER_EXPIRES"
+msgstr "Udløber"
+
+msgid "DATATABLES_LANGUAGE_NAME"
+msgstr "Danish"
+
+msgid "BANS_NEVEREXPIRES"
+msgstr "Aldrig"
+
+msgid "STATUS_ADDRESS"
+msgstr "Adresse:"
+
+msgid "STATUS_CLIENTS_ONLINE"
+msgstr "Online:"
+
+msgid "STATUS_RESERVED_SLOTS"
+msgstr "{0} reserverede plads"
+
+msgid "STATUS_TOP_ONLINE"
+msgstr "Top online:"
+
+msgid "STATUS_TOP_ONLINE_DESC"
+msgstr "Opnået på {0}"
+
+msgid "STATUS_UPTIME"
+msgstr "Oppetid:"
+
+msgid "STATUS_VERSION"
+msgstr "Version:"
+
+msgid "STATUS_VERSION_DESC"
+msgstr "{0} på {1}"
+
+msgid "STATUS_PING"
+msgstr "Gennemsnitlig. ping:"
+
+msgid "STATUS_PACKETLOSS"
+msgstr "Gennemsnitlig. pakke tab:"
+
+msgid "STATUS_ERROR"
+msgstr "Kan ikke hente serverstatus"
+
+msgid "STATUS_PANEL_TITLE"
+msgstr "Server status"
+
+msgid "DAYJS_LANG"
+msgstr "da"
+
+msgid "LOGIN_CONFIRMATION_CODE"
+msgstr "Hej, her er din bekræftelseskode for at logge ind: [b]{0}[/b]"
+
+msgid "UNSUPPORTED_BROWSER"
+msgstr "Din browser understøttes ikke. Venligst skift til den nyeste version af Chrome, Firefox, Safari eller Edge for at bruge denne hjemmeside."
+
+msgid "DATATABLES_PLACEHOLDER_SEARCH"
+msgstr "Søg..."
+
+msgid "WEBSITE_TITLE"
+msgstr " | TS-website Dansk Sprog"
+
+msgid "ADMIN_STATUS_ONLINE"
+msgstr "Online"
+
+msgid "ADMIN_STATUS_AWAY"
+msgstr "Væk"
+
+msgid "ADMIN_STATUS_OFFLINE"
+msgstr "Offline"
+
+msgid "ADMIN_STATUS_EMPTY_GROUP"
+msgstr "Intet at vise"
+
+msgid "ADMIN_STATUS_EMPTY_STATUS"
+msgstr "Administrationsstatus er tom"
+
+msgid "ASSIGNER_PANEL_TITLE"
+msgstr "Gruppe tildele"
+
+msgid "ASSIGNER_TITLE"
+msgstr "Gruppe tildele"
+
+msgid "BANS_EMPTY"
+msgstr "Banlist er tom"
+
+msgid "BANS_TITLE"
+msgstr "Banlist"
+
+msgid "BANS_PANEL_TITLE"
+msgstr "Banlist"
+
+msgid "BANS_BANNED_ALERT_TITLE"
+msgstr "Din IP er blevet forbudt af {0}"
+
+msgid "BANS_BANNED_ALERT_REASON"
+msgstr "Begrundelse: {0}"
+
+msgid "BANS_VIEW_MORE_TIP"
+msgstr "Klik på en række for at se flere detaljer om et forbud"
+
+msgid "RULES_TITLE"
+msgstr "Regler"
+
+msgid "RULES_PANEL_TITLE"
+msgstr "Regler"
+
+msgid "FAQ_COPY_LINK"
+msgstr "Kopier link til dette svar"
+
+msgid "FAQ_PANEL_TITLE"
+msgstr "FAQ"
+
+msgid "FAQ_TITLE"
+msgstr "FAQ"
+
+msgid "FAQ_COPY_LINK_SUCCESS"
+msgstr "Kopieret!"
+
+msgid "FAQ_COPY_LINK_ERROR"
+msgstr "Fejl!"
+
+msgid "HOME_TITLE"
+msgstr "Nyheder"
+
+msgid "HOME_PANEL_TITLE"
+msgstr "Nyheder"
+
+msgid "HOME_EMPTY"
+msgstr "Der er ingen nyheder på nuværende tidspunkt"
+
+msgid "HOME_INVALID_PAGE"
+msgstr "Ugyldigt sidetal"
+
+msgid "HOME_PREVIOUS_NEWS"
+msgstr "Tidligere"
+
+msgid "HOME_NEXT_NEWS"
+msgstr "Næste"
+
+msgid "ADMIN_STATUS_PANEL_TITLE"
+msgstr "Admin status"
+
+msgid "ADMIN_STATUS_HIDE_OFFLINE_TIP"
+msgstr "Skjul offline admins"
+
+msgid "ADMIN_STATUS_SHOW_OFFLINE_TIP"
+msgstr "Vis offline admins"
+
+msgid "ADMIN_STATUS_ERROR"
+msgstr "Administrator status fejl"
+
+msgid "NAV_TOGGLE"
+msgstr "Skift navigation"
+
+msgid "NAV_VIEWER"
+msgstr "Fremviser"
+
+msgid "NAV_ASSIGNER"
+msgstr "Tildele"
+
+msgid "NAV_BANS"
+msgstr "Bans"
+
+msgid "NAV_RULES"
+msgstr "Regler"
+
+msgid "NAV_FAQ"
+msgstr "FAQ"
+
+msgid "NAV_ACCOUNT_LOGIN"
+msgstr "Logind"
+
+msgid "NAV_ACCOUNT_LOGOUT"
+msgstr "Log ud"
+
+msgid "VIEWER_TITLE"
+msgstr "Server visning"
+
+msgid "VIEWER_PANEL_TITLE"
+msgstr "Server visning"
+
+msgid "IMPRINT_TITLE"
+msgstr "Impressum"

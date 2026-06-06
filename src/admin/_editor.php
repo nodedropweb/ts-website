@@ -35,7 +35,9 @@ function renderEditor(string $fieldName, string $initialHtml = '', string $edito
 </div>
 <input type="hidden" name="<?= htmlspecialchars($fieldName) ?>" id="<?= $hiddenInputId ?>" value="<?= $safeHtml ?>">
 
+<?php if (!defined('LEXICAL_BUNDLE_LOADED')): define('LEXICAL_BUNDLE_LOADED', true); ?>
 <script src="js/editor.bundle.js"></script>
+<?php endif; ?>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     LexicalAdmin.init(

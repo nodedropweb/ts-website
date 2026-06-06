@@ -1,0 +1,46 @@
+# TS-Website installer translations — en-us
+# Domain: installer
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en-us\n"
+
+msgid "INSTALLER_NAV_BRAND"
+msgstr "TS-Website Installer"
+
+msgid "INSTALLER_STEP_WELCOME"
+msgstr "Welcome"
+
+msgid "INSTALLER_STEP_REQUIREMENTS"
+msgstr "Requirements"
+
+msgid "INSTALLER_STEP_DATABASE"
+msgstr "Database"
+
+msgid "INSTALLER_STEP_TEAMSPEAK"
+msgstr "TeamSpeak"
+
+msgid "INSTALLER_STEP_SECURITY"
+msgstr "Security"
+
+msgid "INSTALLER_STEP_CONFIGURATION"
+msgstr "Configuration"
+
+msgid "INSTALLER_STEP_DONE"
+msgstr "Done"
+
+msgid "INSTALLER_BTN_START"
+msgstr "Start"
+
+msgid "INSTALLER_BTN_RECHECK"
+msgstr "Re-check"
+
+msgid "INSTALLER_BTN_NEXT"
+msgstr "Next"
+
+msgid "INSTALLER_BTN_BACK"
+msgstr "Back"
+
+msgid "INSTALLER_BTN_SUBMIT"
+msgstr "Submit"

@@ -1,0 +1,169 @@
+# TS-Website installer translations — uk
+# Domain: installer
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: uk\n"
+
+msgid "INSTALLER_NAV_BRAND"
+msgstr "Інсталятор TS-Website"
+
+msgid "INSTALLER_STEP_WELCOME"
+msgstr "Ласкаво просимо"
+
+msgid "INSTALLER_STEP_REQUIREMENTS"
+msgstr "Вимоги"
+
+msgid "INSTALLER_STEP_DATABASE"
+msgstr "База даних"
+
+msgid "INSTALLER_STEP_TEAMSPEAK"
+msgstr "TeamSpeak"
+
+msgid "INSTALLER_STEP_SECURITY"
+msgstr "Безпека"
+
+msgid "INSTALLER_STEP_CONFIGURATION"
+msgstr "Конфігурація"
+
+msgid "INSTALLER_STEP_DONE"
+msgstr "Готово"
+
+msgid "INSTALLER_WELCOME_TITLE"
+msgstr "Ласкаво просимо до інсталятора TS-website!"
+
+msgid "INSTALLER_WELCOME_DESCRIPTION"
+msgstr "Цей майстер проведе вас через процес встановлення TS-website."
+
+msgid "INSTALLER_WELCOME_NO_JS"
+msgstr "Будь ласка, увімкніть Javascript перед продовженням!"
+
+msgid "INSTALLER_WELCOME_READY"
+msgstr "Перейдіть до наступного кроку, коли будете готові!"
+
+msgid "INSTALLER_WELCOME_METRICS_CHECKBOX"
+msgstr "Надіслати одноразову статистику для покращення TS-website"
+
+msgid "INSTALLER_BTN_START"
+msgstr "Почати"
+
+msgid "INSTALLER_REQ_TITLE"
+msgstr "Перевірка вимог"
+
+msgid "INSTALLER_REQ_SHOW_DETAILS"
+msgstr "Показати деталі"
+
+msgid "INSTALLER_REQ_SUCCESS"
+msgstr "<strong>Успіх!</strong> Ви можете запустити TS-website!"
+
+msgid "INSTALLER_BTN_RECHECK"
+msgstr "Перевірити знову"
+
+msgid "INSTALLER_BTN_NEXT"
+msgstr "Далі"
+
+msgid "INSTALLER_BTN_BACK"
+msgstr "Назад"
+
+msgid "INSTALLER_BTN_SUBMIT"
+msgstr "Надіслати"
+
+msgid "INSTALLER_DB_TITLE"
+msgstr "Налаштування бази даних"
+
+msgid "INSTALLER_DB_USE_MYSQL"
+msgstr "Використовувати MySQL / MariaDB"
+
+msgid "INSTALLER_DB_USE_SQLITE"
+msgstr "Використовувати SQLite"
+
+msgid "INSTALLER_DB_HOSTNAME"
+msgstr "Хост"
+
+msgid "INSTALLER_DB_HOSTNAME_TIP"
+msgstr "Використовуйте '127.0.0.1' для localhost"
+
+msgid "INSTALLER_DB_USERNAME"
+msgstr "Ім'я користувача"
+
+msgid "INSTALLER_DB_PASSWORD"
+msgstr "Пароль"
+
+msgid "INSTALLER_DB_NAME"
+msgstr "Назва бази даних"
+
+msgid "INSTALLER_DB_PREFIX"
+msgstr "Префікс таблиць (необов'язково)"
+
+msgid "INSTALLER_DB_PREFIX_TIP"
+msgstr "За замовчуванням 'tsw_'"
+
+msgid "INSTALLER_DB_ERR_FILL_IN"
+msgstr "Будь ласка, заповніть деталі бази даних"
+
+msgid "INSTALLER_TS_TITLE"
+msgstr "Налаштування Query"
+
+msgid "INSTALLER_TS_HOSTNAME"
+msgstr "Хост"
+
+msgid "INSTALLER_TS_QUERYPORT"
+msgstr "Порт ServerQuery"
+
+msgid "INSTALLER_TS_VOICEPORT"
+msgstr "Голосовий порт"
+
+msgid "INSTALLER_TS_QUERYUSERNAME"
+msgstr "Ім'я користувача Query"
+
+msgid "INSTALLER_TS_QUERYPASSWORD"
+msgstr "Пароль Query"
+
+msgid "INSTALLER_TS_DISPLAYIP"
+msgstr "Відображувана адреса"
+
+msgid "INSTALLER_TS_CACHING_ICONS"
+msgstr "Кешування іконок з сервера TS3, зачекайте..."
+
+msgid "INSTALLER_TS_ERR_CANNOT_GET_INFO"
+msgstr "Неможливо отримати інформацію про сервер"
+
+msgid "INSTALLER_SEC_TITLE"
+msgstr "Безпека: тека private/"
+
+msgid "INSTALLER_SEC_DIR_PROTECTED"
+msgstr "Тека захищена"
+
+msgid "INSTALLER_SEC_DIR_NOT_PROTECTED"
+msgstr "Тека НЕ захищена"
+
+msgid "INSTALLER_SEC_HTACCESS_PRESENT"
+msgstr ".htaccess присутній"
+
+msgid "INSTALLER_SEC_HTACCESS_MISSING"
+msgstr ".htaccess відсутній"
+
+msgid "INSTALLER_CONFIG_TITLE"
+msgstr "Налаштуйте свій сайт"
+
+msgid "INSTALLER_CONFIG_SITE_NAME_LABEL"
+msgstr "Назва / заголовок сайту"
+
+msgid "INSTALLER_CONFIG_TIMEZONE_LABEL"
+msgstr "Оберіть часовий пояс"
+
+msgid "INSTALLER_CONFIG_CLOUDFLARE_LABEL"
+msgstr "Я використовую Cloudflare"
+
+msgid "INSTALLER_DONE_TITLE"
+msgstr "TS-website {0} успішно встановлено! 👍"
+
+msgid "INSTALLER_DONE_REMOVE_DIR"
+msgstr "За бажанням можна видалити теку <code>installer</code>."
+
+msgid "INSTALLER_DONE_WHATNOW"
+msgstr "Що далі?"
+
+msgid "INSTALLER_DONE_VISIT_TITLE"
+msgstr "Відвідайте свій новий сайт"

@@ -1,0 +1,346 @@
+# TS-Website frontend translations — Ukrainian
+# Domain: frontend
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: uk\n"
+
+msgid "DATE_FORMAT"
+msgstr "d.m.Y"
+
+msgid "TIME_FORMAT"
+msgstr "H:i"
+
+msgid "BANS_HEADER_TARGET"
+msgstr "Бан"
+
+msgid "AUTHORS"
+msgstr "fyfywka <fyfywka@gmail.com>"
+
+msgid "COOKIEALERT_MESSAGE"
+msgstr "<b>Вам подобаються куки?</b>&#x1F36A; Ми використовуємо куки, щоб забезпечити найкращий досвід на нашому вебсайті. <a href=\"https://support.mozilla.org/ru/kb/kuki-informaciya-kotoruyu-veb-sajty-hranyat-na-vas\" target=\"_blank\">Дізнатися більше</a>"
+
+msgid "COOKIEALERT_AGREE"
+msgstr "Я згоден"
+
+msgid "OUTDATED_DATA"
+msgstr "<b>Увага!</b> Не вдалося отримати актуальну інформацію з сервера. Відображається інформація {0}"
+
+msgid "SHOW_PROBLEMS"
+msgstr "Показати проблеми"
+
+msgid "PROBLEMS_DESCRIPTION"
+msgstr "Під час підключення до сервера TeamSpeak сталася помилка"
+
+msgid "NO_JAVASCRIPT_ENABLED"
+msgstr "Даний сайт не буде працювати при відключеному <a href=\"https://www.enable-javascript.com/\" target=\"_blank\">JavaScript</a>"
+
+msgid "CANNOT_GET_DATA"
+msgstr "Не вдалося отримати дані для модуля \"{0}\"! Будь ласка, зв'яжіться з власником сайту."
+
+msgid "NO_REASON_SET"
+msgstr "<b>(причина не вказана)</b>"
+
+msgid "BANS_HEADER_REASON"
+msgstr "Причина"
+
+msgid "BANS_HEADER_INVOKER"
+msgstr "Забанив"
+
+msgid "BANS_HEADER_BANDATE"
+msgstr "Бан створений"
+
+msgid "BANS_HEADER_EXPIRES"
+msgstr "Закінчується"
+
+msgid "DATATABLES_LANGUAGE_NAME"
+msgstr "Ukrainian"
+
+msgid "BANS_NEVEREXPIRES"
+msgstr "Ніколи"
+
+msgid "STATUS_ADDRESS"
+msgstr "Адрес:"
+
+msgid "STATUS_CLIENTS_ONLINE"
+msgstr "Онлайн:"
+
+msgid "STATUS_RESERVED_SLOTS"
+msgstr "{0} зарезервовано"
+
+msgid "STATUS_TOP_ONLINE"
+msgstr "Макс. онлайн:"
+
+msgid "STATUS_TOP_ONLINE_DESC"
+msgstr "Досягнуто {0}"
+
+msgid "STATUS_UPTIME"
+msgstr "Аптайм:"
+
+msgid "STATUS_VERSION"
+msgstr "Версія:"
+
+msgid "STATUS_VERSION_DESC"
+msgstr "{0} на {1}"
+
+msgid "STATUS_PING"
+msgstr "Середн. пінг:"
+
+msgid "STATUS_PACKETLOSS"
+msgstr "Втрати пакетів:"
+
+msgid "STATUS_ERROR"
+msgstr "Неможливо отримати статус сервера"
+
+msgid "STATUS_PANEL_TITLE"
+msgstr "Статус сервера"
+
+msgid "DAYJS_LANG"
+msgstr "uk"
+
+msgid "LOGIN_CONFIRMATION_CODE"
+msgstr "Привіт! Ваш код підтвердження для авторизації: [b]{0}[/b]"
+
+msgid "UNSUPPORTED_BROWSER"
+msgstr "Ваш браузер не підтримується. Будь ласка, встановіть Chrome, Firefox, Safari або Edge."
+
+msgid "DATATABLES_PLACEHOLDER_SEARCH"
+msgstr "Пошук..."
+
+msgid "WEBSITE_TITLE"
+msgstr " | Українська мова TS-website"
+
+msgid "ADMIN_STATUS_ONLINE"
+msgstr "Онлайн"
+
+msgid "ADMIN_STATUS_AWAY"
+msgstr "Відійшов"
+
+msgid "ADMIN_STATUS_OFFLINE"
+msgstr "Оффлайн"
+
+msgid "ADMIN_STATUS_EMPTY_GROUP"
+msgstr "Нічого показувати"
+
+msgid "ADMIN_STATUS_EMPTY_STATUS"
+msgstr "Статус адміністратора відсутній"
+
+msgid "ASSIGNER_PANEL_TITLE"
+msgstr "Групи"
+
+msgid "ASSIGNER_TITLE"
+msgstr "Менеджер груп"
+
+msgid "BANS_EMPTY"
+msgstr "Список банів порожній"
+
+msgid "BANS_TITLE"
+msgstr "Бани"
+
+msgid "BANS_PANEL_TITLE"
+msgstr "Бани"
+
+msgid "BANS_BANNED_ALERT_TITLE"
+msgstr "Ваш IP забанений адміністратором {0}"
+
+msgid "BANS_BANNED_ALERT_REASON"
+msgstr "Причина: {0}"
+
+msgid "BANS_VIEW_MORE_TIP"
+msgstr "Натисніть на рядок для відображення деталей про баню"
+
+msgid "RULES_TITLE"
+msgstr "Правила"
+
+msgid "RULES_PANEL_TITLE"
+msgstr "Правила"
+
+msgid "FAQ_COPY_LINK"
+msgstr "Скопіювати посилання на цю відповідь"
+
+msgid "FAQ_PANEL_TITLE"
+msgstr "FAQ"
+
+msgid "FAQ_TITLE"
+msgstr "FAQ"
+
+msgid "FAQ_COPY_LINK_SUCCESS"
+msgstr "Скопійовано!"
+
+msgid "FAQ_COPY_LINK_ERROR"
+msgstr "Помилка!"
+
+msgid "HOME_TITLE"
+msgstr "Новини"
+
+msgid "HOME_PANEL_TITLE"
+msgstr "Новини"
+
+msgid "HOME_EMPTY"
+msgstr "На даний момент немає новин"
+
+msgid "HOME_INVALID_PAGE"
+msgstr "Неправильний номер сторінки"
+
+msgid "HOME_PREVIOUS_NEWS"
+msgstr "Назад"
+
+msgid "HOME_NEXT_NEWS"
+msgstr "Уперед"
+
+msgid "ADMIN_STATUS_PANEL_TITLE"
+msgstr "Статус адміністрації"
+
+msgid "ADMIN_STATUS_HIDE_OFFLINE_TIP"
+msgstr "Приховати відключених адміністраторів"
+
+msgid "ADMIN_STATUS_SHOW_OFFLINE_TIP"
+msgstr "Показати відключених адміністраторів"
+
+msgid "ADMIN_STATUS_ERROR"
+msgstr "Помилка статусу адміністратора"
+
+msgid "NAV_TOGGLE"
+msgstr "Переключити навігацію"
+
+msgid "NAV_VIEWER"
+msgstr "Огляд"
+
+msgid "NAV_ASSIGNER"
+msgstr "Групи"
+
+msgid "NAV_BANS"
+msgstr "Список банів"
+
+msgid "NAV_RULES"
+msgstr "Правила"
+
+msgid "NAV_FAQ"
+msgstr "FAQ"
+
+msgid "NAV_ACCOUNT_LOGIN"
+msgstr "Увійти"
+
+msgid "NAV_ACCOUNT_LOGOUT"
+msgstr "Вийти"
+
+msgid "VIEWER_TITLE"
+msgstr "Огляд сервера"
+
+msgid "VIEWER_PANEL_TITLE"
+msgstr "Огляд сервера"
+
+msgid "VIEWER_SHOW_EMPTY"
+msgstr "Показати порожні канали"
+
+msgid "VIEWER_HIDE_EMPTY"
+msgstr "Приховати порожні канали"
+
+msgid "VIEWER_TIP_ALERT"
+msgstr "Для входу в канал натисніть на нього. Наведіть курсор над користувачем для відображення інформації"
+
+msgid "ARIA_CLOSE"
+msgstr "Закрити"
+
+msgid "VIEWER_ERROR"
+msgstr "Помилка при огляді сервера"
+
+msgid "VIEWER_CONNECTION_CONFIRMATION"
+msgstr "Ви хочете увійти в цей канал?"
+
+msgid "VIEWER_CLIENT_LASTACTIVE"
+msgstr "Був активний:"
+
+msgid "VIEWER_CLIENT_ONLINE"
+msgstr "Час онлайн:"
+
+msgid "VIEWER_CLIENT_JOINED"
+msgstr "Перше підключення:"
+
+msgid "VIEWER_CLIENT_TITLE"
+msgstr "Інформація про клієнта"
+
+msgid "VIEWER_SERVER_ICON"
+msgstr "Іконка сервера"
+
+msgid "VIEWER_DEFAULT_CHANNEL"
+msgstr "Стандартний канал"
+
+msgid "VIEWER_CHANNEL_UNSUB1"
+msgstr ", не підписаний"
+
+msgid "VIEWER_CHANNEL_OCCUPIED"
+msgstr "Заповнений"
+
+msgid "VIEWER_CHANNEL_PASSWORD"
+msgstr "Захищений паролем"
+
+msgid "VIEWER_CHANNEL_UNSUB2"
+msgstr "Не підписаний"
+
+msgid "VIEWER_CHANNEL_ICON"
+msgstr "Іконка каналу"
+
+msgid "VIEWER_CHANNEL_MODERATED"
+msgstr "Модерований"
+
+msgid "VIEWER_CHANNEL_MUSIC_CODED"
+msgstr "Opus для музики"
+
+msgid "VIEWER_CLIENT_AWAY"
+msgstr "Відійшов"
+
+msgid "VIEWER_CLIENT_OUTPUT_DISABLED"
+msgstr "Звук відключений"
+
+msgid "VIEWER_CLIENT_OUTPUT_MUTED"
+msgstr "Приглушений"
+
+msgid "VIEWER_CLIENT_MIC_DISABLED"
+msgstr "Мікрофон відключений"
+
+msgid "VIEWER_CLIENT_MIC_MUTED"
+msgstr "Заглушений"
+
+msgid "VIEWER_CLIENT_COMMANDER"
+msgstr "Командир каналу"
+
+msgid "VIEWER_CLIENT_ICON"
+msgstr "Іконка клієнта"
+
+msgid "VIEWER_CLIENT_PRIORITY_SPEAKER"
+msgstr "Пріоритет голосу"
+
+msgid "VIEWER_CLIENT_TALK_POWER_GRANTED"
+msgstr "Право голосу отримано"
+
+msgid "VIEWER_CLIENT_TALK_POWER_INSUFFICIENT"
+msgstr "Недостатньо прав голосу"
+
+msgid "ASSIGNER_NOT_LOGGED_IN"
+msgstr "Авторизуйтесь перед використанням менеджера груп"
+
+msgid "ASSIGNER_LOGIN_BUTTON"
+msgstr "Увійти"
+
+msgid "ASSIGNER_SAVE_BUTTON"
+msgstr "Зберегти"
+
+msgid "ASSIGNER_INVALID_GROUPS"
+msgstr "Невірні налаштування груп"
+
+msgid "ASSIGNER_NOT_CONFIGURED"
+msgstr "Менеджер груп не був налаштований адміністратором сайту"
+
+msgid "ASSIGNER_SAVE_SUCCESS"
+msgstr "Ваші групи були оновлені"
+
+msgid "ASSIGNER_SAVE_ERROR"
+msgstr "Помилка при зміні групи"
+
+msgid "ASSIGNER_SAVE_NO_CHANGE"
+msgstr "Зміни не були збережені"
+
+msgid "IMPRINT_TITLE"
+msgstr "Вихідні дані"

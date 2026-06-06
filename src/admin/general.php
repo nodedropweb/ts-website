@@ -1,0 +1,93 @@
+<?php
+require_once __DIR__ . '/_auth.php';
+require_once __DIR__ . '/_layout.php';
+
+requireAdmin();
+
+use Wruczek\TSWebsite\Utils\CsrfUtils;
+use Wruczek\TSWebsite\Utils\DatabaseUtils;
+
+$flash     = $_GET['flash'] ?? null;
+$flashType = $_GET['type']  ?? 'success';
+
+$db = DatabaseUtils::i()->getDb();
+
+$fields = [
+    'website_title'   => ['label' => __a('ADMIN_GENERAL_FIELD_WEBSITE_TITLE_LABEL'), 'type' => 'string', 'hint' => __a('ADMIN_GENERAL_FIELD_WEBSITE_TITLE_HINT')],
+    'nav_brand'       => ['label' => __a('ADMIN_GENERAL_FIELD_NAV_BRAND_LABEL'),     'type' => 'string', 'hint' => __a('ADMIN_GENERAL_FIELD_NAV_BRAND_HINT')],
+    'baseurl'         => ['label' => __a('ADMIN_GENERAL_FIELD_BASEURL_LABEL'),       'type' => 'string', 'hint' => __a('ADMIN_GENERAL_FIELD_BASEURL_HINT')],
+    'loginpokeclient' => ['label' => __a('ADMIN_GENERAL_FIELD_LOGINPOKE_LABEL'),     'type' => 'bool',   'hint' => __a('ADMIN_GENERAL_FIELD_LOGINPOKE_HINT')],
+    'timezone'        => ['label' => __a('ADMIN_GENERAL_FIELD_TIMEZONE_LABEL'),      'type' => 'string', 'hint' => __a('ADMIN_GENERAL_FIELD_TIMEZONE_HINT')],
+    'usingcloudflare' => ['label' => __a('ADMIN_GENERAL_FIELD_CLOUDFLARE_LABEL'),    'type' => 'bool',   'hint' => __a('ADMIN_GENERAL_FIELD_CLOUDFLARE_HINT')],
+];
+
+$values = [];
+foreach (array_keys($fields) as $key) {
+    $values[$key] = (string)($db->get('config', 'value', ['identifier' => $key]) ?? '');
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    foreach ($fields as $key => $meta) {
+        $val = $meta['type'] === 'bool'
+            ? (isset($_POST[$key]) ? 'true' : 'false')
+            : trim($_POST[$key] ?? '');
+        $db->update('config', ['value' => $val], ['identifier' => $key]);
+    }
+    header('Location: general.php?flash=' . urlencode(__a('ADMIN_GENERAL_SAVED')) . '&type=success');
+    exit;
+}
+
+adminHeader(__a('ADMIN_GENERAL_TITLE'), 'config');
+?>
+
+<?php if ($flash): ?>
+<div class="alert alert-<?= htmlspecialchars($flashType) ?> alert-dismissible fade show">
+    <?= htmlspecialchars($flash) ?>
+    <button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>
+</div>
+<?php endif; ?>
+
+<div class="mb-3">
+    <a href="config.php" class="btn btn-sm btn-outline-secondary">
+        <i class="fas fa-arrow-left"></i> <?= htmlspecialchars(__a('ADMIN_BTN_BACK_TO_CONFIG')) ?>
+    </a>
+</div>
+
+<form method="post">
+    <input type="hidden" name="csrf-token" value="<?= htmlspecialchars(CsrfUtils::getToken()) ?>">
+
+    <div class="card mb-4">
+        <div class="card-header"><i class="fas fa-cog"></i> <?= htmlspecialchars(__a('ADMIN_GENERAL_TITLE')) ?></div>
+        <div class="card-body">
+            <?php foreach ($fields as $key => $meta): ?>
+            <div class="form-group row align-items-center">
+                <label class="col-sm-4 col-form-label" for="<?= $key ?>">
+                    <?= htmlspecialchars($meta['label']) ?>
+                </label>
+                <div class="col-sm-8">
+                    <?php if ($meta['type'] === 'bool'): ?>
+                    <div class="custom-control custom-switch mt-1">
+                        <input type="checkbox" class="custom-control-input" id="<?= $key ?>"
+                               name="<?= $key ?>" <?= $values[$key] === 'true' ? 'checked' : '' ?>>
+                        <label class="custom-control-label" for="<?= $key ?>"><?= htmlspecialchars(__a('ADMIN_ENABLED')) ?></label>
+                    </div>
+                    <?php else: ?>
+                    <input type="text" class="form-control form-control-sm" id="<?= $key ?>"
+                           name="<?= $key ?>" value="<?= htmlspecialchars($values[$key]) ?>">
+                    <?php endif; ?>
+                    <?php if ($meta['hint']): ?>
+                    <small class="form-text text-muted"><?= htmlspecialchars($meta['hint']) ?></small>
+                    <?php endif; ?>
+                </div>
+            </div>
+            <?php endforeach; ?>
+        </div>
+        <div class="card-footer text-right">
+            <button type="submit" class="btn btn-primary">
+                <i class="fas fa-save"></i> <?= htmlspecialchars(__a('ADMIN_BTN_SAVE')) ?>
+            </button>
+        </div>
+    </div>
+</form>
+
+<?php adminFooter(); ?>

@@ -1,0 +1,599 @@
+# TS-Website admin translations -- zh-cn
+# Domain: admin
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh-cn\n"
+
+msgid "ADMIN_NAV_BRAND"
+msgstr "TS-Website 管理"
+
+msgid "ADMIN_NAV_NEWS"
+msgstr "新闻"
+
+msgid "ADMIN_NAV_FAQ"
+msgstr "常见问题"
+
+msgid "ADMIN_NAV_RULES"
+msgstr "规则"
+
+msgid "ADMIN_NAV_ASSIGNER"
+msgstr "分配器"
+
+msgid "ADMIN_NAV_CONFIG"
+msgstr "配置"
+
+msgid "ADMIN_NAV_GOTO_WEBSITE"
+msgstr "前往网站"
+
+msgid "ADMIN_BTN_SAVE"
+msgstr "保存"
+
+msgid "ADMIN_BTN_SAVE_ALL"
+msgstr "保存所有设置"
+
+msgid "ADMIN_BTN_BACK"
+msgstr "返回"
+
+msgid "ADMIN_BTN_BACK_TO_CONFIG"
+msgstr "返回配置"
+
+msgid "ADMIN_BTN_CANCEL"
+msgstr "取消"
+
+msgid "ADMIN_BTN_ADD"
+msgstr "添加"
+
+msgid "ADMIN_BTN_REMOVE"
+msgstr "删除"
+
+msgid "ADMIN_ENABLED"
+msgstr "已启用"
+
+msgid "ADMIN_TABLE_ID"
+msgstr "ID"
+
+msgid "ADMIN_TABLE_TITLE"
+msgstr "标题"
+
+msgid "ADMIN_TABLE_CREATED"
+msgstr "创建时间"
+
+msgid "ADMIN_TABLE_EDITED"
+msgstr "编辑时间"
+
+msgid "ADMIN_TABLE_QUESTION"
+msgstr "问题"
+
+msgid "ADMIN_TABLE_LAST_MODIFIED"
+msgstr "最后修改"
+
+msgid "ADMIN_TABLE_ACTIONS"
+msgstr "操作"
+
+msgid "ADMIN_NO_GROUPS_AVAILABLE"
+msgstr "没有可用的服务器组。"
+
+msgid "ADMIN_403_TITLE"
+msgstr "访问被拒绝 — 管理员"
+
+msgid "ADMIN_403_TEXT"
+msgstr "无访问权限。您未被注册为管理员。"
+
+msgid "ADMIN_403_HINT"
+msgstr "请先通过 TeamSpeak 登录主页，然后请管理员将您的 cldbid 添加到 admin_cldbids。"
+
+msgid "ADMIN_403_BTN"
+msgstr "前往主页"
+
+msgid "ADMIN_SETUP_TITLE"
+msgstr "管理员面板 — 初始设置"
+
+msgid "ADMIN_SETUP_NO_ADMIN"
+msgstr "尚未注册任何管理员。请输入您的 cldbid 以访问管理员面板。"
+
+msgid "ADMIN_SETUP_CLDBID_LABEL"
+msgstr "您的 cldbid"
+
+msgid "ADMIN_SETUP_CLDBID_HINT"
+msgstr "在主页 TS3 登录后显示，或从下面的列表中选择。"
+
+msgid "ADMIN_SETUP_ONLINE_LABEL"
+msgstr "当前在线"
+
+msgid "ADMIN_SETUP_BTN_REGISTER"
+msgstr "注册为第一位管理员"
+
+msgid "ADMIN_SETUP_BTN_GOTO"
+msgstr "前往管理员面板"
+
+msgid "ADMIN_SETUP_SUCCESS"
+msgstr "cldbid {0} 已注册为第一位管理员。此页面现已锁定。"
+
+msgid "ADMIN_SETUP_ERR_INVALID"
+msgstr "请输入有效的 cldbid（正整数）。"
+
+msgid "ADMIN_NEWS_TITLE"
+msgstr "新闻"
+
+msgid "ADMIN_NEWS_NEW_BTN"
+msgstr "新建文章"
+
+msgid "ADMIN_NEWS_EMPTY"
+msgstr "暂无新闻。"
+
+msgid "ADMIN_NEWS_CONFIRM_DELETE"
+msgstr "删除此文章？"
+
+msgid "ADMIN_NEWS_EDIT_TITLE"
+msgstr "编辑新闻"
+
+msgid "ADMIN_NEWS_NEW_TITLE"
+msgstr "新建文章"
+
+msgid "ADMIN_NEWS_FORM_TITLE"
+msgstr "标题"
+
+msgid "ADMIN_NEWS_FORM_CONTENT"
+msgstr "内容"
+
+msgid "ADMIN_FAQ_TITLE"
+msgstr "常见问题"
+
+msgid "ADMIN_FAQ_NEW_BTN"
+msgstr "新建常见问题条目"
+
+msgid "ADMIN_FAQ_EMPTY"
+msgstr "暂无常见问题条目。"
+
+msgid "ADMIN_FAQ_CONFIRM_DELETE"
+msgstr "删除此常见问题条目？"
+
+msgid "ADMIN_FAQ_EDIT_TITLE"
+msgstr "编辑常见问题条目"
+
+msgid "ADMIN_FAQ_NEW_TITLE"
+msgstr "新建常见问题条目"
+
+msgid "ADMIN_FAQ_FORM_QUESTION"
+msgstr "问题"
+
+msgid "ADMIN_FAQ_FORM_ANSWER"
+msgstr "答案"
+
+msgid "ADMIN_RULES_TITLE"
+msgstr "服务器规则"
+
+msgid "ADMIN_RULES_FORM_CONTENT"
+msgstr "内容"
+
+msgid "ADMIN_IMPRINT_TITLE"
+msgstr "版权信息"
+
+msgid "ADMIN_ASSIGNER_TITLE"
+msgstr "分配器配置"
+
+msgid "ADMIN_ASSIGNER_NO_GROUPS_WARNING"
+msgstr "未找到服务器组。请确保 TS3 服务器已连接。"
+
+msgid "ADMIN_ASSIGNER_DESCRIPTION"
+msgstr "定义组分配类别。每个类别有名称、图标、最多可选组数和对应的服务器组。"
+
+msgid "ADMIN_ASSIGNER_GENERAL"
+msgstr "常规设置"
+
+msgid "ADMIN_ASSIGNER_COOLDOWN_LABEL"
+msgstr "冷却时间（秒）"
+
+msgid "ADMIN_ASSIGNER_COOLDOWN_HINT"
+msgstr "用户再次更换组前需等待的时间。0 = 无等待。"
+
+msgid "ADMIN_ASSIGNER_REQUIRED_GROUPS_LABEL"
+msgstr "必需的服务器组"
+
+msgid "ADMIN_ASSIGNER_REQUIRED_GROUPS_HINT"
+msgstr "只有这些组的成员才能使用分配器。留空 = 所有人。"
+
+msgid "ADMIN_ASSIGNER_ADD_CATEGORY"
+msgstr "添加类别"
+
+msgid "ADMIN_ASSIGNER_SAVED"
+msgstr "分配器配置已保存。"
+
+msgid "ADMIN_ASSIGNER_JS_MOVE_UP"
+msgstr "上移"
+
+msgid "ADMIN_ASSIGNER_JS_MOVE_DOWN"
+msgstr "下移"
+
+msgid "ADMIN_ASSIGNER_JS_NEW_CATEGORY"
+msgstr "新建类别"
+
+msgid "ADMIN_ASSIGNER_JS_NAME_LABEL"
+msgstr "名称"
+
+msgid "ADMIN_ASSIGNER_JS_NAME_PLACEHOLDER"
+msgstr "例如：国家、游戏、爱好"
+
+msgid "ADMIN_ASSIGNER_JS_MAX_LABEL"
+msgstr "最多选择"
+
+msgid "ADMIN_ASSIGNER_JS_ICON_LABEL"
+msgstr "图标"
+
+msgid "ADMIN_ASSIGNER_JS_GROUPS_LABEL"
+msgstr "此类别中的服务器组"
+
+msgid "ADMIN_ASSIGNER_JS_NO_GROUPS"
+msgstr "没有可用的服务器组。"
+
+msgid "ADMIN_ASSIGNER_JS_SAVE_ERROR"
+msgstr "保存时出错。"
+
+msgid "ADMIN_CONFIG_TITLE"
+msgstr "配置"
+
+msgid "ADMIN_CONFIG_SECTION_ADMINSTATUS"
+msgstr "管理员状态小部件"
+
+msgid "ADMIN_CONFIG_SECTION_ASSIGNER"
+msgstr "组分配"
+
+msgid "ADMIN_CONFIG_SECTION_CACHE"
+msgstr "缓存时间"
+
+msgid "ADMIN_CONFIG_SECTION_GENERAL"
+msgstr "常规"
+
+msgid "ADMIN_CONFIG_SECTION_IMPRINT"
+msgstr "版权信息"
+
+msgid "ADMIN_CONFIG_SECTION_ONLINERECORD"
+msgstr "在线记录"
+
+msgid "ADMIN_CONFIG_SECTION_VIEWER"
+msgstr "频道查看器"
+
+msgid "ADMIN_CONFIG_SECTION_QUERY"
+msgstr "TeamSpeak Query"
+
+msgid "ADMIN_CONFIG_SECTION_ADMIN"
+msgstr "管理员面板"
+
+msgid "ADMIN_CONFIG_BTN_ADMINSTATUS"
+msgstr "配置管理员状态小部件"
+
+msgid "ADMIN_CONFIG_BTN_ASSIGNER"
+msgstr "配置组分配"
+
+msgid "ADMIN_CONFIG_BTN_CACHE"
+msgstr "配置缓存时间"
+
+msgid "ADMIN_CONFIG_BTN_GENERAL"
+msgstr "编辑常规设置"
+
+msgid "ADMIN_CONFIG_BTN_IMPRINT"
+msgstr "编辑版权信息"
+
+msgid "ADMIN_CONFIG_BTN_ONLINERECORD"
+msgstr "编辑在线记录"
+
+msgid "ADMIN_CONFIG_BTN_VIEWER"
+msgstr "配置频道查看器"
+
+msgid "ADMIN_CONFIG_BTN_QUERY"
+msgstr "配置 TeamSpeak 连接"
+
+msgid "ADMIN_CONFIG_BTN_ADMINS"
+msgstr "管理管理员访问"
+
+msgid "ADMIN_CONFIG_EDIT_IN_ASSIGNER"
+msgstr "在分配器编辑器中编辑"
+
+msgid "ADMIN_CONFIG_MANAGED_IN_ASSIGNER"
+msgstr "在分配器编辑器中管理。"
+
+msgid "ADMIN_CONFIG_WHO_HAS_ACCESS"
+msgstr "谁可以访问此管理员面板？"
+
+msgid "ADMIN_GENERAL_TITLE"
+msgstr "常规设置"
+
+msgid "ADMIN_GENERAL_FIELD_WEBSITE_TITLE_LABEL"
+msgstr "TS 服务器名称（显示）"
+
+msgid "ADMIN_GENERAL_FIELD_WEBSITE_TITLE_HINT"
+msgstr "覆盖侧边栏和登录对话框中的 IP 地址。留空 = 显示 IP。"
+
+msgid "ADMIN_GENERAL_FIELD_NAV_BRAND_LABEL"
+msgstr "网站标题（导航栏）"
+
+msgid "ADMIN_GENERAL_FIELD_NAV_BRAND_HINT"
+msgstr "导航栏左上角徽标的文字。"
+
+msgid "ADMIN_GENERAL_FIELD_BASEURL_LABEL"
+msgstr "基础 URL"
+
+msgid "ADMIN_GENERAL_FIELD_BASEURL_HINT"
+msgstr "网站的完整 URL，例如 https://example.com"
+
+msgid "ADMIN_GENERAL_FIELD_LOGINPOKE_LABEL"
+msgstr "登录：向客户端发送 Poke"
+
+msgid "ADMIN_GENERAL_FIELD_LOGINPOKE_HINT"
+msgstr "登录尝试时向 TS 客户端发送 poke"
+
+msgid "ADMIN_GENERAL_FIELD_TIMEZONE_LABEL"
+msgstr "时区"
+
+msgid "ADMIN_GENERAL_FIELD_TIMEZONE_HINT"
+msgstr "PHP 时区，例如 Asia/Shanghai"
+
+msgid "ADMIN_GENERAL_FIELD_CLOUDFLARE_LABEL"
+msgstr "启用 Cloudflare"
+
+msgid "ADMIN_GENERAL_FIELD_CLOUDFLARE_HINT"
+msgstr "如果网站在 Cloudflare 后面，请启用"
+
+msgid "ADMIN_GENERAL_SAVED"
+msgstr "设置已保存。"
+
+msgid "ADMIN_ADMINS_TITLE"
+msgstr "管理员访问"
+
+msgid "ADMIN_ADMINS_CURRENT"
+msgstr "当前管理员"
+
+msgid "ADMIN_ADMINS_TABLE_CLDBID"
+msgstr "客户端数据库 ID"
+
+msgid "ADMIN_ADMINS_TABLE_ACTION"
+msgstr "操作"
+
+msgid "ADMIN_ADMINS_YOU_BADGE"
+msgstr "您"
+
+msgid "ADMIN_ADMINS_CONFIRM_REMOVE"
+msgstr "删除管理员？"
+
+msgid "ADMIN_ADMINS_CANNOT_REMOVE_SELF"
+msgstr "您无法删除自己。"
+
+msgid "ADMIN_ADMINS_ADD_TITLE"
+msgstr "添加管理员"
+
+msgid "ADMIN_ADMINS_CLDBID_LABEL"
+msgstr "客户端数据库 ID"
+
+msgid "ADMIN_ADMINS_ONLINE_LABEL"
+msgstr "当前在线（从列表中选择）"
+
+msgid "ADMIN_ADMINS_ADDED"
+msgstr "管理员已添加。"
+
+msgid "ADMIN_ADMINS_REMOVED"
+msgstr "管理员已删除。"
+
+msgid "ADMIN_ADMINSTATUS_TITLE"
+msgstr "管理员状态小部件"
+
+msgid "ADMIN_ADMINSTATUS_SECTION_GENERAL"
+msgstr "常规"
+
+msgid "ADMIN_ADMINSTATUS_WIDGET_ENABLED_LABEL"
+msgstr "小部件已启用"
+
+msgid "ADMIN_ADMINSTATUS_HIDE_OFFLINE_LABEL"
+msgstr "隐藏离线用户"
+
+msgid "ADMIN_ADMINSTATUS_HIDE_OFFLINE_HINT"
+msgstr "离线用户将完全隐藏。"
+
+msgid "ADMIN_ADMINSTATUS_OFFLINE_COLLAPSED_LABEL"
+msgstr "离线默认折叠"
+
+msgid "ADMIN_ADMINSTATUS_OFFLINE_COLLAPSED_HINT"
+msgstr "小部件中的离线条目仅在点击后显示。"
+
+msgid "ADMIN_ADMINSTATUS_DISPLAY_MODE_LABEL"
+msgstr "显示模式"
+
+msgid "ADMIN_ADMINSTATUS_MODE_1"
+msgstr "分组"
+
+msgid "ADMIN_ADMINSTATUS_MODE_2"
+msgstr "分组（隐藏空组）"
+
+msgid "ADMIN_ADMINSTATUS_MODE_3"
+msgstr "列表"
+
+msgid "ADMIN_ADMINSTATUS_MODE_4"
+msgstr "列表（在线优先）"
+
+msgid "ADMIN_ADMINSTATUS_SECTION_GROUPS"
+msgstr "要显示的服务器组"
+
+msgid "ADMIN_ADMINSTATUS_NO_GROUPS"
+msgstr "没有可用的服务器组 — 请检查 TS 连接。"
+
+msgid "ADMIN_ADMINSTATUS_SECTION_IGNORED"
+msgstr "被忽略的用户"
+
+msgid "ADMIN_ADMINSTATUS_IGNORED_HINT"
+msgstr "所选组的用户。勾选的不会显示在小部件中。"
+
+msgid "ADMIN_ADMINSTATUS_NO_GROUPS_SELECTED"
+msgstr "请先选择并保存服务器组。"
+
+msgid "ADMIN_ADMINSTATUS_NO_CACHE"
+msgstr "暂无缓存 — 请等待一分钟后刷新页面。"
+
+msgid "ADMIN_ADMINSTATUS_CURRENTLY_IGNORED"
+msgstr "当前被忽略的 DBID："
+
+msgid "ADMIN_ADMINSTATUS_SAVED"
+msgstr "管理员状态已保存。"
+
+msgid "ADMIN_CACHE_TITLE"
+msgstr "缓存时间"
+
+msgid "ADMIN_CACHE_HINT"
+msgstr "所有值以秒为单位。越低 = 数据越新，TS 服务器负载越高。"
+
+msgid "ADMIN_CACHE_SERVERINFO_LABEL"
+msgstr "服务器信息"
+
+msgid "ADMIN_CACHE_SERVERINFO_HINT"
+msgstr "TS 服务器的常规信息（名称、插槽等）"
+
+msgid "ADMIN_CACHE_CLIENTLIST_LABEL"
+msgstr "客户端列表"
+
+msgid "ADMIN_CACHE_CLIENTLIST_HINT"
+msgstr "在线玩家列表 — 保持低值以获取最新登录状态"
+
+msgid "ADMIN_CACHE_CHANNELLIST_LABEL"
+msgstr "频道列表"
+
+msgid "ADMIN_CACHE_CHANNELLIST_HINT"
+msgstr "频道查看器"
+
+msgid "ADMIN_CACHE_SERVERGROUPS_LABEL"
+msgstr "服务器组"
+
+msgid "ADMIN_CACHE_SERVERGROUPS_HINT"
+msgstr "所有服务器组的列表"
+
+msgid "ADMIN_CACHE_CHANNELGROUPS_LABEL"
+msgstr "频道组"
+
+msgid "ADMIN_CACHE_CHANNELGROUPS_HINT"
+msgstr "所有频道组的列表"
+
+msgid "ADMIN_CACHE_BANLIST_LABEL"
+msgstr "封禁列表"
+
+msgid "ADMIN_CACHE_BANLIST_HINT"
+msgstr "被封禁的用户"
+
+msgid "ADMIN_CACHE_ADMINSTATUS_LABEL"
+msgstr "管理员状态"
+
+msgid "ADMIN_CACHE_ADMINSTATUS_HINT"
+msgstr "状态小部件的管理员组成员"
+
+msgid "ADMIN_CACHE_SERVERICONS_LABEL"
+msgstr "服务器图标"
+
+msgid "ADMIN_CACHE_SERVERICONS_HINT"
+msgstr "来自 TS 服务器的图标数据"
+
+msgid "ADMIN_CACHE_LANGUAGES_LABEL"
+msgstr "语言"
+
+msgid "ADMIN_CACHE_LANGUAGES_HINT"
+msgstr "数据库中的语言文件"
+
+msgid "ADMIN_CACHE_LOGINCODE_LABEL"
+msgstr "登录代码"
+
+msgid "ADMIN_CACHE_LOGINCODE_HINT"
+msgstr "临时登录代码"
+
+msgid "ADMIN_CACHE_SAVED"
+msgstr "缓存时间已保存。"
+
+msgid "ADMIN_ONLINERECORD_TITLE"
+msgstr "在线记录"
+
+msgid "ADMIN_ONLINERECORD_VALUE_LABEL"
+msgstr "记录（玩家数量）"
+
+msgid "ADMIN_ONLINERECORD_DATE_LABEL"
+msgstr "日期和时间"
+
+msgid "ADMIN_ONLINERECORD_DATE_HINT"
+msgstr "当新记录被打破时自动覆盖。"
+
+msgid "ADMIN_ONLINERECORD_SAVED"
+msgstr "在线记录已保存。"
+
+msgid "ADMIN_VIEWER_TITLE"
+msgstr "频道查看器"
+
+msgid "ADMIN_VIEWER_SECTION"
+msgstr "隐藏的频道"
+
+msgid "ADMIN_VIEWER_HINT"
+msgstr "勾选 = 频道在网站上隐藏。有密码的频道会自动消失。"
+
+msgid "ADMIN_VIEWER_NO_CHANNELS"
+msgstr "没有可用的频道 — 请检查 TS 连接。"
+
+msgid "ADMIN_VIEWER_HIDDEN_BADGE"
+msgstr "隐藏"
+
+msgid "ADMIN_VIEWER_SAVED"
+msgstr "频道查看器已保存。"
+
+msgid "ADMIN_QUERY_TITLE"
+msgstr "TeamSpeak 连接"
+
+msgid "ADMIN_QUERY_WARNING_TITLE"
+msgstr "警告"
+
+msgid "ADMIN_QUERY_WARNING_TEXT"
+msgstr "您真的要编辑这些设置吗？如果您不知道自己在做什么，可能会断开与 TeamSpeak 服务器的连接。"
+
+msgid "ADMIN_QUERY_WARNING_CONFIRM"
+msgstr "是的，我知道我在做什么"
+
+msgid "ADMIN_QUERY_SECTION"
+msgstr "TeamSpeak 连接设置"
+
+msgid "ADMIN_QUERY_HOSTNAME_LABEL"
+msgstr "服务器地址"
+
+msgid "ADMIN_QUERY_HOSTNAME_HINT"
+msgstr "TeamSpeak 服务器的 IP 或主机名（例如 127.0.0.1）"
+
+msgid "ADMIN_QUERY_PORT_LABEL"
+msgstr "ServerQuery 端口"
+
+msgid "ADMIN_QUERY_PORT_HINT"
+msgstr "默认：10011"
+
+msgid "ADMIN_QUERY_USERNAME_LABEL"
+msgstr "ServerQuery 用户名"
+
+msgid "ADMIN_QUERY_USERNAME_HINT"
+msgstr "为网站创建的 query 账户"
+
+msgid "ADMIN_QUERY_PASSWORD_LABEL"
+msgstr "ServerQuery 密码"
+
+msgid "ADMIN_QUERY_PASSWORD_HINT"
+msgstr "query 账户的密码"
+
+msgid "ADMIN_QUERY_NICKNAME_LABEL"
+msgstr "Query 中的显示名称"
+
+msgid "ADMIN_QUERY_NICKNAME_HINT"
+msgstr "网站登录 query 时显示的名称"
+
+msgid "ADMIN_QUERY_DISPLAYIP_LABEL"
+msgstr "公共服务器 IP"
+
+msgid "ADMIN_QUERY_DISPLAYIP_HINT"
+msgstr "在频道查看器中用作 ts3server:// 链接的 IP"
+
+msgid "ADMIN_QUERY_VOICEPORT_LABEL"
+msgstr "TeamSpeak 语音端口"
+
+msgid "ADMIN_QUERY_VOICEPORT_HINT"
+msgstr "客户端连接的端口（默认：9987）"
+
+msgid "ADMIN_QUERY_SAVED"
+msgstr "连接设置已保存。"
+

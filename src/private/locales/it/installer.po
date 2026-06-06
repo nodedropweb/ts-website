@@ -1,0 +1,169 @@
+# TS-Website installer translations — it
+# Domain: installer
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: it\n"
+
+msgid "INSTALLER_NAV_BRAND"
+msgstr "Installatore TS-Website"
+
+msgid "INSTALLER_STEP_WELCOME"
+msgstr "Benvenuto"
+
+msgid "INSTALLER_STEP_REQUIREMENTS"
+msgstr "Requisiti"
+
+msgid "INSTALLER_STEP_DATABASE"
+msgstr "Database"
+
+msgid "INSTALLER_STEP_TEAMSPEAK"
+msgstr "TeamSpeak"
+
+msgid "INSTALLER_STEP_SECURITY"
+msgstr "Sicurezza"
+
+msgid "INSTALLER_STEP_CONFIGURATION"
+msgstr "Configurazione"
+
+msgid "INSTALLER_STEP_DONE"
+msgstr "Fatto"
+
+msgid "INSTALLER_WELCOME_TITLE"
+msgstr "Benvenuto nell'installatore di TS-website!"
+
+msgid "INSTALLER_WELCOME_DESCRIPTION"
+msgstr "Questa procedura guidata ti guiderà attraverso il processo di installazione di TS-website."
+
+msgid "INSTALLER_WELCOME_NO_JS"
+msgstr "Abilita Javascript prima di continuare!"
+
+msgid "INSTALLER_WELCOME_READY"
+msgstr "Vai al passo successivo quando sei pronto!"
+
+msgid "INSTALLER_WELCOME_METRICS_CHECKBOX"
+msgstr "Invia statistiche una tantum per migliorare TS-website"
+
+msgid "INSTALLER_BTN_START"
+msgstr "Inizia"
+
+msgid "INSTALLER_REQ_TITLE"
+msgstr "Verifica dei requisiti"
+
+msgid "INSTALLER_REQ_SHOW_DETAILS"
+msgstr "Mostra dettagli"
+
+msgid "INSTALLER_REQ_SUCCESS"
+msgstr "<strong>Successo!</strong> Puoi eseguire TS-website!"
+
+msgid "INSTALLER_BTN_RECHECK"
+msgstr "Ricontrolla"
+
+msgid "INSTALLER_BTN_NEXT"
+msgstr "Avanti"
+
+msgid "INSTALLER_BTN_BACK"
+msgstr "Indietro"
+
+msgid "INSTALLER_BTN_SUBMIT"
+msgstr "Invia"
+
+msgid "INSTALLER_DB_TITLE"
+msgstr "Dettagli database"
+
+msgid "INSTALLER_DB_USE_MYSQL"
+msgstr "Usa MySQL / MariaDB"
+
+msgid "INSTALLER_DB_USE_SQLITE"
+msgstr "Usa database SQLite"
+
+msgid "INSTALLER_DB_HOSTNAME"
+msgstr "Hostname"
+
+msgid "INSTALLER_DB_HOSTNAME_TIP"
+msgstr "Usa '127.0.0.1' per localhost"
+
+msgid "INSTALLER_DB_USERNAME"
+msgstr "Nome utente"
+
+msgid "INSTALLER_DB_PASSWORD"
+msgstr "Password"
+
+msgid "INSTALLER_DB_NAME"
+msgstr "Nome database"
+
+msgid "INSTALLER_DB_PREFIX"
+msgstr "Prefisso tabella (opzionale)"
+
+msgid "INSTALLER_DB_PREFIX_TIP"
+msgstr "Predefinito: 'tsw_'"
+
+msgid "INSTALLER_DB_ERR_FILL_IN"
+msgstr "Compila i dettagli del database"
+
+msgid "INSTALLER_TS_TITLE"
+msgstr "Dettagli Query"
+
+msgid "INSTALLER_TS_HOSTNAME"
+msgstr "Hostname"
+
+msgid "INSTALLER_TS_QUERYPORT"
+msgstr "Porta ServerQuery"
+
+msgid "INSTALLER_TS_VOICEPORT"
+msgstr "Porta vocale"
+
+msgid "INSTALLER_TS_QUERYUSERNAME"
+msgstr "Utente Query"
+
+msgid "INSTALLER_TS_QUERYPASSWORD"
+msgstr "Password Query"
+
+msgid "INSTALLER_TS_DISPLAYIP"
+msgstr "Indirizzo visualizzato"
+
+msgid "INSTALLER_TS_CACHING_ICONS"
+msgstr "Memorizzazione icone dal server TS3, attendere..."
+
+msgid "INSTALLER_TS_ERR_CANNOT_GET_INFO"
+msgstr "Impossibile recuperare le informazioni del server"
+
+msgid "INSTALLER_SEC_TITLE"
+msgstr "Sicurezza: directory private/"
+
+msgid "INSTALLER_SEC_DIR_PROTECTED"
+msgstr "La directory è protetta"
+
+msgid "INSTALLER_SEC_DIR_NOT_PROTECTED"
+msgstr "La directory NON è protetta"
+
+msgid "INSTALLER_SEC_HTACCESS_PRESENT"
+msgstr ".htaccess presente"
+
+msgid "INSTALLER_SEC_HTACCESS_MISSING"
+msgstr ".htaccess mancante"
+
+msgid "INSTALLER_CONFIG_TITLE"
+msgstr "Configura il tuo sito"
+
+msgid "INSTALLER_CONFIG_SITE_NAME_LABEL"
+msgstr "Nome / titolo del sito"
+
+msgid "INSTALLER_CONFIG_TIMEZONE_LABEL"
+msgstr "Scegli il tuo fuso orario"
+
+msgid "INSTALLER_CONFIG_CLOUDFLARE_LABEL"
+msgstr "Sto usando Cloudflare"
+
+msgid "INSTALLER_DONE_TITLE"
+msgstr "TS-website {0} è stato installato con successo! 👍"
+
+msgid "INSTALLER_DONE_REMOVE_DIR"
+msgstr "Puoi rimuovere la directory <code>installer</code>."
+
+msgid "INSTALLER_DONE_WHATNOW"
+msgstr "Cosa fare ora?"
+
+msgid "INSTALLER_DONE_VISIT_TITLE"
+msgstr "Visita il tuo nuovo sito"

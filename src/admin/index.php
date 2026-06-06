@@ -4,10 +4,12 @@ require_once __DIR__ . '/_layout.php';
 
 use Wruczek\TSWebsite\Auth;
 use Wruczek\TSWebsite\Config;
+use Wruczek\TSWebsite\Utils\DatabaseUtils;
 
 requireAdmin();
 
 $newsCount = (new \Wruczek\TSWebsite\News\DefaultNewsStore())->getNewsCount();
+$faqCount  = DatabaseUtils::i()->getDb()->count('faq');
 $siteTitle = Config::get('website_title', 'TS-Website');
 
 adminHeader('Dashboard', '');
@@ -29,7 +31,8 @@ adminHeader('Dashboard', '');
             <div class="card-body text-center">
                 <i class="fas fa-question-circle fa-2x mb-2 text-info"></i>
                 <h5 class="card-title">FAQ</h5>
-                <a href="faq.php" class="btn btn-info btn-sm mt-3">Verwalten</a>
+                <p class="display-4"><?= $faqCount ?></p>
+                <a href="faq.php" class="btn btn-info btn-sm">Verwalten</a>
             </div>
         </div>
     </div>

@@ -1,0 +1,355 @@
+# TS-Website frontend translations — Bulgarian
+# Domain: frontend
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: bg\n"
+
+msgid "ASSIGNER_COOLDOWN_MESSAGE"
+msgstr "Моля, изчакайте {0}, за да можете отново да промените вашите групи."
+
+msgid "ASSIGNER_NO_REQUIRED_GROUPS"
+msgstr "Нямате нито една от необходимите групи. Не можете да използвате добавяне на ранг."
+
+msgid "DATE_FORMAT"
+msgstr "d.m.Y"
+
+msgid "TIME_FORMAT"
+msgstr "H:i"
+
+msgid "BANS_HEADER_TARGET"
+msgstr "забрана"
+
+msgid "AUTHORS"
+msgstr "toster234 <contact@toster.dev>"
+
+msgid "COOKIEALERT_MESSAGE"
+msgstr "<b>Харесвате ли бисквитки?</b> &#x1F36A; Използваме „бисквитки“, за да гарантираме най-доброто преживяване на нашия уебсайт. <a href=\"https://bg.wikipedia.org/wiki/HTTP-%D0%B1%D0%B8%D1%81%D0%BA%D0%B2%D0%B8%D1%82%D0%BA%D0%B0\" target=\"_blank\">Научете повече</a>"
+
+msgid "COOKIEALERT_AGREE"
+msgstr "съгласен съм"
+
+msgid "OUTDATED_DATA"
+msgstr "<b>Внимание!</b> Някои данни не могат да бъдат получени сега. Показват се остарели данни от {0}."
+
+msgid "SHOW_PROBLEMS"
+msgstr "Показване на проблеми"
+
+msgid "PROBLEMS_DESCRIPTION"
+msgstr "Проблеми, възникнали при свързването със сървъра на TeamSpeak"
+
+msgid "NO_JAVASCRIPT_ENABLED"
+msgstr "Този уебсайт няма да работи без<a href=\"https://www.enable-javascript.com/\" target=\"_blank\">JavaScript активиран</a>."
+
+msgid "CANNOT_GET_DATA"
+msgstr "Данните за \"{0}\"! Моля, свържете се със собственика на уебсайта."
+
+msgid "NO_REASON_SET"
+msgstr "<b>(без определена причина)</b>"
+
+msgid "BANS_HEADER_REASON"
+msgstr "причина"
+
+msgid "BANS_HEADER_INVOKER"
+msgstr "Забранен от"
+
+msgid "BANS_HEADER_BANDATE"
+msgstr "Дата на забрана"
+
+msgid "BANS_HEADER_EXPIRES"
+msgstr "Изтича"
+
+msgid "DATATABLES_LANGUAGE_NAME"
+msgstr "Bulgarian"
+
+msgid "BANS_NEVEREXPIRES"
+msgstr "никога"
+
+msgid "STATUS_ADDRESS"
+msgstr "адрес:"
+
+msgid "STATUS_CLIENTS_ONLINE"
+msgstr "Онлайн:"
+
+msgid "STATUS_RESERVED_SLOTS"
+msgstr "{0} запазени слотове"
+
+msgid "STATUS_TOP_ONLINE"
+msgstr "Топ онлайн:"
+
+msgid "STATUS_TOP_ONLINE_DESC"
+msgstr "Постигнато на {0}"
+
+msgid "STATUS_UPTIME"
+msgstr "Uptime:"
+
+msgid "STATUS_VERSION"
+msgstr "версия:"
+
+msgid "STATUS_VERSION_DESC"
+msgstr "{0} за {1}"
+
+msgid "STATUS_PING"
+msgstr "Avg. ping:"
+
+msgid "STATUS_PACKETLOSS"
+msgstr "Avg. packet loss:"
+
+msgid "STATUS_ERROR"
+msgstr "Състоянието на сървъра не може да бъде извлечено"
+
+msgid "STATUS_PANEL_TITLE"
+msgstr "Състояние на сървъра"
+
+msgid "DAYJS_LANG"
+msgstr "bg"
+
+msgid "LOGIN_CONFIRMATION_CODE"
+msgstr "Здравейте, тук е кодът ви за потвърждение, с който да влезете: [b]{0}[/b]"
+
+msgid "UNSUPPORTED_BROWSER"
+msgstr "Вашият браузър не се поддържа. Моля, преминете към последната версия на Chrome, Firefox, Safari или Edge, за да използвате този уебсайт."
+
+msgid "DATATABLES_PLACEHOLDER_SEARCH"
+msgstr "Търсене..."
+
+msgid "WEBSITE_TITLE"
+msgstr " | TS-website Bulgarian Language"
+
+msgid "ADMIN_STATUS_ONLINE"
+msgstr "Онлайн"
+
+msgid "ADMIN_STATUS_AWAY"
+msgstr "далеч"
+
+msgid "ADMIN_STATUS_OFFLINE"
+msgstr "Извън линия"
+
+msgid "ADMIN_STATUS_EMPTY_GROUP"
+msgstr "Нищо за показване"
+
+msgid "ADMIN_STATUS_EMPTY_STATUS"
+msgstr "Състоянието на администратора е празно"
+
+msgid "ASSIGNER_PANEL_TITLE"
+msgstr "Възложител на група"
+
+msgid "ASSIGNER_TITLE"
+msgstr "Възложител на група"
+
+msgid "BANS_EMPTY"
+msgstr "списък с блокове е празен"
+
+msgid "BANS_TITLE"
+msgstr "списък с блокове"
+
+msgid "BANS_PANEL_TITLE"
+msgstr "списък с блокове"
+
+msgid "BANS_BANNED_ALERT_TITLE"
+msgstr "Вашият IP е забранен от {0}"
+
+msgid "BANS_BANNED_ALERT_REASON"
+msgstr "причина: {0}"
+
+msgid "BANS_VIEW_MORE_TIP"
+msgstr "Кликнете върху реда, за да видите повече подробности за забраната"
+
+msgid "RULES_TITLE"
+msgstr "правилник"
+
+msgid "RULES_PANEL_TITLE"
+msgstr "правилник"
+
+msgid "FAQ_COPY_LINK"
+msgstr "Копирайте връзката към този отговор"
+
+msgid "FAQ_PANEL_TITLE"
+msgstr "FAQ"
+
+msgid "FAQ_TITLE"
+msgstr "FAQ"
+
+msgid "FAQ_COPY_LINK_SUCCESS"
+msgstr "Копирани!"
+
+msgid "FAQ_COPY_LINK_ERROR"
+msgstr "Грешка!"
+
+msgid "HOME_TITLE"
+msgstr "Новини"
+
+msgid "HOME_PANEL_TITLE"
+msgstr "Новини"
+
+msgid "HOME_EMPTY"
+msgstr "Няма налични новини в този момент"
+
+msgid "HOME_INVALID_PAGE"
+msgstr "Невалиден номер на страница"
+
+msgid "HOME_NEWS_EDITED"
+msgstr "Последна редакция: {0}"
+
+msgid "HOME_PREVIOUS_NEWS"
+msgstr "предишен"
+
+msgid "HOME_NEXT_NEWS"
+msgstr "Следващия"
+
+msgid "ADMIN_STATUS_PANEL_TITLE"
+msgstr "Статус на администратор"
+
+msgid "ADMIN_STATUS_HIDE_OFFLINE_TIP"
+msgstr "Скриване на администраторите в офлайн режим"
+
+msgid "ADMIN_STATUS_SHOW_OFFLINE_TIP"
+msgstr "Показване на администратори в офлайн режим"
+
+msgid "ADMIN_STATUS_ERROR"
+msgstr "Грешка в състоянието на администратора"
+
+msgid "NAV_TOGGLE"
+msgstr "Превключване на навигацията"
+
+msgid "NAV_VIEWER"
+msgstr "Преглед"
+
+msgid "NAV_ASSIGNER"
+msgstr "Възложител"
+
+msgid "NAV_BANS"
+msgstr "Забраните"
+
+msgid "NAV_RULES"
+msgstr "правилник"
+
+msgid "NAV_FAQ"
+msgstr "FAQ"
+
+msgid "NAV_ACCOUNT_LOGIN"
+msgstr "Влизам"
+
+msgid "NAV_ACCOUNT_LOGOUT"
+msgstr "Излез от профила си"
+
+msgid "VIEWER_TITLE"
+msgstr "Преглед на сървъра"
+
+msgid "VIEWER_PANEL_TITLE"
+msgstr "Преглед на сървъра"
+
+msgid "VIEWER_SHOW_EMPTY"
+msgstr "Показване на празни канали"
+
+msgid "VIEWER_HIDE_EMPTY"
+msgstr "Скриване на празните канали"
+
+msgid "VIEWER_TIP_ALERT"
+msgstr "Кликнете върху канал, за да се присъедините към него. Задръжте курсора на мишката върху потребител, за да проверите информацията им"
+
+msgid "ARIA_CLOSE"
+msgstr "Близо"
+
+msgid "VIEWER_ERROR"
+msgstr "Грешка в браузъра"
+
+msgid "VIEWER_CONNECTION_CONFIRMATION"
+msgstr "Искате ли да се свържете с този канал?"
+
+msgid "VIEWER_CLIENT_LASTACTIVE"
+msgstr "Последна активна:"
+
+msgid "VIEWER_CLIENT_ONLINE"
+msgstr "Онлайн време:"
+
+msgid "VIEWER_CLIENT_JOINED"
+msgstr "Първо се присъединиха:"
+
+msgid "VIEWER_CLIENT_TITLE"
+msgstr "Информация за клиента"
+
+msgid "VIEWER_SERVER_ICON"
+msgstr "Икона на сървъра"
+
+msgid "VIEWER_DEFAULT_CHANNEL"
+msgstr "Канал по подразбиране"
+
+msgid "VIEWER_CHANNEL_UNSUB1"
+msgstr ", отписахте"
+
+msgid "VIEWER_CHANNEL_OCCUPIED"
+msgstr "Напълно зает"
+
+msgid "VIEWER_CHANNEL_PASSWORD"
+msgstr "Защитен с парола"
+
+msgid "VIEWER_CHANNEL_UNSUB2"
+msgstr "отписахте"
+
+msgid "VIEWER_CHANNEL_ICON"
+msgstr "Икона на канал"
+
+msgid "VIEWER_CHANNEL_MODERATED"
+msgstr "Модератор"
+
+msgid "VIEWER_CHANNEL_MUSIC_CODED"
+msgstr "Музикален кодек"
+
+msgid "VIEWER_CLIENT_AWAY"
+msgstr "далеч"
+
+msgid "VIEWER_CLIENT_OUTPUT_DISABLED"
+msgstr "Звукът е деактивиран"
+
+msgid "VIEWER_CLIENT_OUTPUT_MUTED"
+msgstr "оглуши"
+
+msgid "VIEWER_CLIENT_MIC_DISABLED"
+msgstr "Микрофонът е деактивиран"
+
+msgid "VIEWER_CLIENT_MIC_MUTED"
+msgstr "Спряно"
+
+msgid "VIEWER_CLIENT_COMMANDER"
+msgstr "Командир на канала"
+
+msgid "VIEWER_CLIENT_ICON"
+msgstr "Икона на клиента"
+
+msgid "VIEWER_CLIENT_PRIORITY_SPEAKER"
+msgstr "Говорител с приоритет"
+
+msgid "VIEWER_CLIENT_TALK_POWER_GRANTED"
+msgstr "Говори се за власт"
+
+msgid "VIEWER_CLIENT_TALK_POWER_INSUFFICIENT"
+msgstr "Недостатъчна мощност"
+
+msgid "ASSIGNER_NOT_LOGGED_IN"
+msgstr "Влезте в системата, преди да използвате групата"
+
+msgid "ASSIGNER_LOGIN_BUTTON"
+msgstr "Влизам"
+
+msgid "ASSIGNER_SAVE_BUTTON"
+msgstr "Запази"
+
+msgid "ASSIGNER_INVALID_GROUPS"
+msgstr "Невалидни настройки на групата"
+
+msgid "ASSIGNER_NOT_CONFIGURED"
+msgstr "Груповият разпоредител не се конфигурира от администратора на сайта"
+
+msgid "ASSIGNER_SAVE_SUCCESS"
+msgstr "Групите ви бяха актуализирани"
+
+msgid "ASSIGNER_SAVE_ERROR"
+msgstr "Грешка при промяна на групата"
+
+msgid "ASSIGNER_SAVE_NO_CHANGE"
+msgstr "Не са направени промени"
+
+msgid "IMPRINT_TITLE"
+msgstr "Импресум"

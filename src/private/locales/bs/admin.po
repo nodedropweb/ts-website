@@ -1,0 +1,599 @@
+# TS-Website admin translations -- bs
+# Domain: admin
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: bs\n"
+
+msgid "ADMIN_NAV_BRAND"
+msgstr "TS-Website Admin"
+
+msgid "ADMIN_NAV_NEWS"
+msgstr "Vijesti"
+
+msgid "ADMIN_NAV_FAQ"
+msgstr "FAQ"
+
+msgid "ADMIN_NAV_RULES"
+msgstr "Pravila"
+
+msgid "ADMIN_NAV_ASSIGNER"
+msgstr "Assigner"
+
+msgid "ADMIN_NAV_CONFIG"
+msgstr "Konfiguracija"
+
+msgid "ADMIN_NAV_GOTO_WEBSITE"
+msgstr "Idi na stranicu"
+
+msgid "ADMIN_BTN_SAVE"
+msgstr "Spremi"
+
+msgid "ADMIN_BTN_SAVE_ALL"
+msgstr "Spremi sve postavke"
+
+msgid "ADMIN_BTN_BACK"
+msgstr "Natrag"
+
+msgid "ADMIN_BTN_BACK_TO_CONFIG"
+msgstr "Natrag na konfiguraciju"
+
+msgid "ADMIN_BTN_CANCEL"
+msgstr "Otkaži"
+
+msgid "ADMIN_BTN_ADD"
+msgstr "Dodaj"
+
+msgid "ADMIN_BTN_REMOVE"
+msgstr "Ukloni"
+
+msgid "ADMIN_ENABLED"
+msgstr "Aktivirano"
+
+msgid "ADMIN_TABLE_ID"
+msgstr "ID"
+
+msgid "ADMIN_TABLE_TITLE"
+msgstr "Naslov"
+
+msgid "ADMIN_TABLE_CREATED"
+msgstr "Kreirano"
+
+msgid "ADMIN_TABLE_EDITED"
+msgstr "Uređeno"
+
+msgid "ADMIN_TABLE_QUESTION"
+msgstr "Pitanje"
+
+msgid "ADMIN_TABLE_LAST_MODIFIED"
+msgstr "Zadnja izmjena"
+
+msgid "ADMIN_TABLE_ACTIONS"
+msgstr "Radnje"
+
+msgid "ADMIN_NO_GROUPS_AVAILABLE"
+msgstr "Nema dostupnih serverskih grupa."
+
+msgid "ADMIN_403_TITLE"
+msgstr "Pristup odbijen — Admin"
+
+msgid "ADMIN_403_TEXT"
+msgstr "Nema pristupa. Niste registrirani kao administrator."
+
+msgid "ADMIN_403_HINT"
+msgstr "Molimo prvo se prijavite na glavnu stranicu putem TeamSpeaka, a zatim zamolite administratora da doda vaš cldbid u admin_cldbids."
+
+msgid "ADMIN_403_BTN"
+msgstr "Idi na glavnu stranicu"
+
+msgid "ADMIN_SETUP_TITLE"
+msgstr "Admin panel — Prvo postavljanje"
+
+msgid "ADMIN_SETUP_NO_ADMIN"
+msgstr "Još nema registriranih administratora. Unesite svoj cldbid za pristup admin panelu."
+
+msgid "ADMIN_SETUP_CLDBID_LABEL"
+msgstr "Vaš cldbid"
+
+msgid "ADMIN_SETUP_CLDBID_HINT"
+msgstr "Prikazuje se nakon TS3 prijave na početnoj stranici ili odaberite s liste ispod."
+
+msgid "ADMIN_SETUP_ONLINE_LABEL"
+msgstr "Trenutno online"
+
+msgid "ADMIN_SETUP_BTN_REGISTER"
+msgstr "Registriraj se kao prvi administrator"
+
+msgid "ADMIN_SETUP_BTN_GOTO"
+msgstr "Idi na admin panel"
+
+msgid "ADMIN_SETUP_SUCCESS"
+msgstr "cldbid {0} je registriran kao prvi administrator. Ova stranica je sada zaključana."
+
+msgid "ADMIN_SETUP_ERR_INVALID"
+msgstr "Molimo unesite važeći cldbid (pozitivan cijeli broj)."
+
+msgid "ADMIN_NEWS_TITLE"
+msgstr "Vijesti"
+
+msgid "ADMIN_NEWS_NEW_BTN"
+msgstr "Novi članak"
+
+msgid "ADMIN_NEWS_EMPTY"
+msgstr "Nema dostupnih vijesti."
+
+msgid "ADMIN_NEWS_CONFIRM_DELETE"
+msgstr "Obrisati ovaj članak?"
+
+msgid "ADMIN_NEWS_EDIT_TITLE"
+msgstr "Uredi vijest"
+
+msgid "ADMIN_NEWS_NEW_TITLE"
+msgstr "Novi članak"
+
+msgid "ADMIN_NEWS_FORM_TITLE"
+msgstr "Naslov"
+
+msgid "ADMIN_NEWS_FORM_CONTENT"
+msgstr "Sadržaj"
+
+msgid "ADMIN_FAQ_TITLE"
+msgstr "FAQ"
+
+msgid "ADMIN_FAQ_NEW_BTN"
+msgstr "Novi FAQ unos"
+
+msgid "ADMIN_FAQ_EMPTY"
+msgstr "Nema FAQ unosa."
+
+msgid "ADMIN_FAQ_CONFIRM_DELETE"
+msgstr "Obrisati ovaj FAQ unos?"
+
+msgid "ADMIN_FAQ_EDIT_TITLE"
+msgstr "Uredi FAQ unos"
+
+msgid "ADMIN_FAQ_NEW_TITLE"
+msgstr "Novi FAQ unos"
+
+msgid "ADMIN_FAQ_FORM_QUESTION"
+msgstr "Pitanje"
+
+msgid "ADMIN_FAQ_FORM_ANSWER"
+msgstr "Odgovor"
+
+msgid "ADMIN_RULES_TITLE"
+msgstr "Pravila servera"
+
+msgid "ADMIN_RULES_FORM_CONTENT"
+msgstr "Sadržaj"
+
+msgid "ADMIN_IMPRINT_TITLE"
+msgstr "Impresum"
+
+msgid "ADMIN_ASSIGNER_TITLE"
+msgstr "Konfiguracija Assignera"
+
+msgid "ADMIN_ASSIGNER_NO_GROUPS_WARNING"
+msgstr "Serverske grupe nisu pronađene. Provjerite je li TS3 server spojen."
+
+msgid "ADMIN_ASSIGNER_DESCRIPTION"
+msgstr "Definirajte kategorije dodjele grupa. Svaka kategorija ima naziv, ikonu, maks. odabirljivih grupa i odgovarajuće serverske grupe."
+
+msgid "ADMIN_ASSIGNER_GENERAL"
+msgstr "Opće postavke"
+
+msgid "ADMIN_ASSIGNER_COOLDOWN_LABEL"
+msgstr "Vrijeme čekanja (sekunde)"
+
+msgid "ADMIN_ASSIGNER_COOLDOWN_HINT"
+msgstr "Vrijeme koje korisnik mora čekati prije ponovne promjene grupe. 0 = bez čekanja."
+
+msgid "ADMIN_ASSIGNER_REQUIRED_GROUPS_LABEL"
+msgstr "Obavezne serverske grupe"
+
+msgid "ADMIN_ASSIGNER_REQUIRED_GROUPS_HINT"
+msgstr "Samo članovi ovih grupa mogu koristiti Assigner. Prazno = svi."
+
+msgid "ADMIN_ASSIGNER_ADD_CATEGORY"
+msgstr "Dodaj kategoriju"
+
+msgid "ADMIN_ASSIGNER_SAVED"
+msgstr "Konfiguracija Assignera je sačuvana."
+
+msgid "ADMIN_ASSIGNER_JS_MOVE_UP"
+msgstr "Pomjeri gore"
+
+msgid "ADMIN_ASSIGNER_JS_MOVE_DOWN"
+msgstr "Pomjeri dolje"
+
+msgid "ADMIN_ASSIGNER_JS_NEW_CATEGORY"
+msgstr "Nova kategorija"
+
+msgid "ADMIN_ASSIGNER_JS_NAME_LABEL"
+msgstr "Naziv"
+
+msgid "ADMIN_ASSIGNER_JS_NAME_PLACEHOLDER"
+msgstr "npr. Zemlja, Igra, Hobi"
+
+msgid "ADMIN_ASSIGNER_JS_MAX_LABEL"
+msgstr "Maks. odabir"
+
+msgid "ADMIN_ASSIGNER_JS_ICON_LABEL"
+msgstr "Ikona"
+
+msgid "ADMIN_ASSIGNER_JS_GROUPS_LABEL"
+msgstr "Serverske grupe u ovoj kategoriji"
+
+msgid "ADMIN_ASSIGNER_JS_NO_GROUPS"
+msgstr "Nema dostupnih serverskih grupa."
+
+msgid "ADMIN_ASSIGNER_JS_SAVE_ERROR"
+msgstr "Greška pri čuvanju."
+
+msgid "ADMIN_CONFIG_TITLE"
+msgstr "Konfiguracija"
+
+msgid "ADMIN_CONFIG_SECTION_ADMINSTATUS"
+msgstr "Admin status widget"
+
+msgid "ADMIN_CONFIG_SECTION_ASSIGNER"
+msgstr "Dodjela grupa"
+
+msgid "ADMIN_CONFIG_SECTION_CACHE"
+msgstr "Vremena keša"
+
+msgid "ADMIN_CONFIG_SECTION_GENERAL"
+msgstr "Opće"
+
+msgid "ADMIN_CONFIG_SECTION_IMPRINT"
+msgstr "Impresum"
+
+msgid "ADMIN_CONFIG_SECTION_ONLINERECORD"
+msgstr "Online rekord"
+
+msgid "ADMIN_CONFIG_SECTION_VIEWER"
+msgstr "Preglednik kanala"
+
+msgid "ADMIN_CONFIG_SECTION_QUERY"
+msgstr "TeamSpeak Query"
+
+msgid "ADMIN_CONFIG_SECTION_ADMIN"
+msgstr "Admin panel"
+
+msgid "ADMIN_CONFIG_BTN_ADMINSTATUS"
+msgstr "Konfiguriraj admin status widget"
+
+msgid "ADMIN_CONFIG_BTN_ASSIGNER"
+msgstr "Konfiguriraj dodjelu grupa"
+
+msgid "ADMIN_CONFIG_BTN_CACHE"
+msgstr "Konfiguriraj vremena keša"
+
+msgid "ADMIN_CONFIG_BTN_GENERAL"
+msgstr "Uredi opće postavke"
+
+msgid "ADMIN_CONFIG_BTN_IMPRINT"
+msgstr "Uredi impresum"
+
+msgid "ADMIN_CONFIG_BTN_ONLINERECORD"
+msgstr "Uredi online rekord"
+
+msgid "ADMIN_CONFIG_BTN_VIEWER"
+msgstr "Konfiguriraj preglednik kanala"
+
+msgid "ADMIN_CONFIG_BTN_QUERY"
+msgstr "Konfiguriraj TeamSpeak vezu"
+
+msgid "ADMIN_CONFIG_BTN_ADMINS"
+msgstr "Upravljaj pristupom administratora"
+
+msgid "ADMIN_CONFIG_EDIT_IN_ASSIGNER"
+msgstr "Uredi u Assigner editoru"
+
+msgid "ADMIN_CONFIG_MANAGED_IN_ASSIGNER"
+msgstr "Upravljano u Assigner editoru."
+
+msgid "ADMIN_CONFIG_WHO_HAS_ACCESS"
+msgstr "Ko ima pristup ovom admin panelu?"
+
+msgid "ADMIN_GENERAL_TITLE"
+msgstr "Opće postavke"
+
+msgid "ADMIN_GENERAL_FIELD_WEBSITE_TITLE_LABEL"
+msgstr "Naziv TS servera (prikaz)"
+
+msgid "ADMIN_GENERAL_FIELD_WEBSITE_TITLE_HINT"
+msgstr "Nadjačava IP adresu u bočnoj traci i dijalogu za prijavu. Prazno = prikazuje se IP."
+
+msgid "ADMIN_GENERAL_FIELD_NAV_BRAND_LABEL"
+msgstr "Naslov stranice (Navbar)"
+
+msgid "ADMIN_GENERAL_FIELD_NAV_BRAND_HINT"
+msgstr "Tekst logotipa u gornjem lijevom uglu navigacije."
+
+msgid "ADMIN_GENERAL_FIELD_BASEURL_LABEL"
+msgstr "Bazni URL"
+
+msgid "ADMIN_GENERAL_FIELD_BASEURL_HINT"
+msgstr "Puni URL stranice, npr. https://example.com"
+
+msgid "ADMIN_GENERAL_FIELD_LOGINPOKE_LABEL"
+msgstr "Prijava: Poke klijentu"
+
+msgid "ADMIN_GENERAL_FIELD_LOGINPOKE_HINT"
+msgstr "Pošalji poke TS klijentu pri pokušaju prijave"
+
+msgid "ADMIN_GENERAL_FIELD_TIMEZONE_LABEL"
+msgstr "Vremenska zona"
+
+msgid "ADMIN_GENERAL_FIELD_TIMEZONE_HINT"
+msgstr "PHP vremenska zona, npr. Europe/Sarajevo"
+
+msgid "ADMIN_GENERAL_FIELD_CLOUDFLARE_LABEL"
+msgstr "Cloudflare aktiviran"
+
+msgid "ADMIN_GENERAL_FIELD_CLOUDFLARE_HINT"
+msgstr "Aktiviraj ako je stranica iza Cloudflarea"
+
+msgid "ADMIN_GENERAL_SAVED"
+msgstr "Postavke su sačuvane."
+
+msgid "ADMIN_ADMINS_TITLE"
+msgstr "Pristup administratora"
+
+msgid "ADMIN_ADMINS_CURRENT"
+msgstr "Trenutni administratori"
+
+msgid "ADMIN_ADMINS_TABLE_CLDBID"
+msgstr "ID baze podataka klijenta"
+
+msgid "ADMIN_ADMINS_TABLE_ACTION"
+msgstr "Radnja"
+
+msgid "ADMIN_ADMINS_YOU_BADGE"
+msgstr "Vi"
+
+msgid "ADMIN_ADMINS_CONFIRM_REMOVE"
+msgstr "Ukloniti administratora?"
+
+msgid "ADMIN_ADMINS_CANNOT_REMOVE_SELF"
+msgstr "Ne možete ukloniti sebe."
+
+msgid "ADMIN_ADMINS_ADD_TITLE"
+msgstr "Dodaj administratora"
+
+msgid "ADMIN_ADMINS_CLDBID_LABEL"
+msgstr "ID baze podataka klijenta"
+
+msgid "ADMIN_ADMINS_ONLINE_LABEL"
+msgstr "Trenutno online (odaberite s liste)"
+
+msgid "ADMIN_ADMINS_ADDED"
+msgstr "Administrator dodan."
+
+msgid "ADMIN_ADMINS_REMOVED"
+msgstr "Administrator uklonjen."
+
+msgid "ADMIN_ADMINSTATUS_TITLE"
+msgstr "Admin status widget"
+
+msgid "ADMIN_ADMINSTATUS_SECTION_GENERAL"
+msgstr "Opće"
+
+msgid "ADMIN_ADMINSTATUS_WIDGET_ENABLED_LABEL"
+msgstr "Widget aktiviran"
+
+msgid "ADMIN_ADMINSTATUS_HIDE_OFFLINE_LABEL"
+msgstr "Sakrij offline korisnike"
+
+msgid "ADMIN_ADMINSTATUS_HIDE_OFFLINE_HINT"
+msgstr "Offline korisnici su potpuno skriveni."
+
+msgid "ADMIN_ADMINSTATUS_OFFLINE_COLLAPSED_LABEL"
+msgstr "Offline skupljeno po zadanom"
+
+msgid "ADMIN_ADMINSTATUS_OFFLINE_COLLAPSED_HINT"
+msgstr "Offline unosi u widgetu prikazuju se samo nakon klika."
+
+msgid "ADMIN_ADMINSTATUS_DISPLAY_MODE_LABEL"
+msgstr "Način prikaza"
+
+msgid "ADMIN_ADMINSTATUS_MODE_1"
+msgstr "Grupirano"
+
+msgid "ADMIN_ADMINSTATUS_MODE_2"
+msgstr "Grupirano (sakrij prazne grupe)"
+
+msgid "ADMIN_ADMINSTATUS_MODE_3"
+msgstr "Lista"
+
+msgid "ADMIN_ADMINSTATUS_MODE_4"
+msgstr "Lista (online prvi)"
+
+msgid "ADMIN_ADMINSTATUS_SECTION_GROUPS"
+msgstr "Serverske grupe za prikaz"
+
+msgid "ADMIN_ADMINSTATUS_NO_GROUPS"
+msgstr "Nema dostupnih serverskih grupa — provjerite TS vezu."
+
+msgid "ADMIN_ADMINSTATUS_SECTION_IGNORED"
+msgstr "Ignorirani korisnici"
+
+msgid "ADMIN_ADMINSTATUS_IGNORED_HINT"
+msgstr "Korisnici odabranih grupa. Označeni se ne prikazuju u widgetu."
+
+msgid "ADMIN_ADMINSTATUS_NO_GROUPS_SELECTED"
+msgstr "Prvo odaberite i sačuvajte serverske grupe."
+
+msgid "ADMIN_ADMINSTATUS_NO_CACHE"
+msgstr "Još nema keša — sačekajte minutu i osvježite stranicu."
+
+msgid "ADMIN_ADMINSTATUS_CURRENTLY_IGNORED"
+msgstr "Trenutno ignorirani DBID-evi:"
+
+msgid "ADMIN_ADMINSTATUS_SAVED"
+msgstr "Admin status je sačuvan."
+
+msgid "ADMIN_CACHE_TITLE"
+msgstr "Vremena keša"
+
+msgid "ADMIN_CACHE_HINT"
+msgstr "Sve vrijednosti u sekundama. Manje = aktualnije podatke, veće opterećenje na TS serveru."
+
+msgid "ADMIN_CACHE_SERVERINFO_LABEL"
+msgstr "Informacije o serveru"
+
+msgid "ADMIN_CACHE_SERVERINFO_HINT"
+msgstr "Opće informacije o TS serveru (naziv, slotovi, ...)"
+
+msgid "ADMIN_CACHE_CLIENTLIST_LABEL"
+msgstr "Lista klijenata"
+
+msgid "ADMIN_CACHE_CLIENTLIST_HINT"
+msgstr "Lista online igrača — držite nisko za ažurni status prijave"
+
+msgid "ADMIN_CACHE_CHANNELLIST_LABEL"
+msgstr "Lista kanala"
+
+msgid "ADMIN_CACHE_CHANNELLIST_HINT"
+msgstr "Preglednik kanala"
+
+msgid "ADMIN_CACHE_SERVERGROUPS_LABEL"
+msgstr "Serverske grupe"
+
+msgid "ADMIN_CACHE_SERVERGROUPS_HINT"
+msgstr "Lista svih serverskih grupa"
+
+msgid "ADMIN_CACHE_CHANNELGROUPS_LABEL"
+msgstr "Grupe kanala"
+
+msgid "ADMIN_CACHE_CHANNELGROUPS_HINT"
+msgstr "Lista svih grupa kanala"
+
+msgid "ADMIN_CACHE_BANLIST_LABEL"
+msgstr "Lista banova"
+
+msgid "ADMIN_CACHE_BANLIST_HINT"
+msgstr "Banovani korisnici"
+
+msgid "ADMIN_CACHE_ADMINSTATUS_LABEL"
+msgstr "Admin status"
+
+msgid "ADMIN_CACHE_ADMINSTATUS_HINT"
+msgstr "Članovi admin grupa za status widget"
+
+msgid "ADMIN_CACHE_SERVERICONS_LABEL"
+msgstr "Ikone servera"
+
+msgid "ADMIN_CACHE_SERVERICONS_HINT"
+msgstr "Podaci ikona s TS servera"
+
+msgid "ADMIN_CACHE_LANGUAGES_LABEL"
+msgstr "Jezici"
+
+msgid "ADMIN_CACHE_LANGUAGES_HINT"
+msgstr "Jezični fajlovi iz baze podataka"
+
+msgid "ADMIN_CACHE_LOGINCODE_LABEL"
+msgstr "Kod za prijavu"
+
+msgid "ADMIN_CACHE_LOGINCODE_HINT"
+msgstr "Privremeni kodovi za prijavu"
+
+msgid "ADMIN_CACHE_SAVED"
+msgstr "Vremena keša su sačuvana."
+
+msgid "ADMIN_ONLINERECORD_TITLE"
+msgstr "Online rekord"
+
+msgid "ADMIN_ONLINERECORD_VALUE_LABEL"
+msgstr "Rekord (broj igrača)"
+
+msgid "ADMIN_ONLINERECORD_DATE_LABEL"
+msgstr "Datum i vrijeme"
+
+msgid "ADMIN_ONLINERECORD_DATE_HINT"
+msgstr "Automatski se prepisuje kada se postavi novi rekord."
+
+msgid "ADMIN_ONLINERECORD_SAVED"
+msgstr "Online rekord je sačuvan."
+
+msgid "ADMIN_VIEWER_TITLE"
+msgstr "Preglednik kanala"
+
+msgid "ADMIN_VIEWER_SECTION"
+msgstr "Skriveni kanali"
+
+msgid "ADMIN_VIEWER_HINT"
+msgstr "Označeno = kanal je skriven na stranici. Kanali zaštićeni lozinkom nestaju automatski."
+
+msgid "ADMIN_VIEWER_NO_CHANNELS"
+msgstr "Nema dostupnih kanala — provjerite TS vezu."
+
+msgid "ADMIN_VIEWER_HIDDEN_BADGE"
+msgstr "skriveno"
+
+msgid "ADMIN_VIEWER_SAVED"
+msgstr "Preglednik kanala je sačuvan."
+
+msgid "ADMIN_QUERY_TITLE"
+msgstr "TeamSpeak veza"
+
+msgid "ADMIN_QUERY_WARNING_TITLE"
+msgstr "Upozorenje"
+
+msgid "ADMIN_QUERY_WARNING_TEXT"
+msgstr "Stvarno želite urediti ove postavke? Ako ne znate što radite, možete prekinuti vezu s TeamSpeak serverom."
+
+msgid "ADMIN_QUERY_WARNING_CONFIRM"
+msgstr "Da, znam što radim"
+
+msgid "ADMIN_QUERY_SECTION"
+msgstr "Postavke TeamSpeak veze"
+
+msgid "ADMIN_QUERY_HOSTNAME_LABEL"
+msgstr "Adresa servera"
+
+msgid "ADMIN_QUERY_HOSTNAME_HINT"
+msgstr "IP ili hostname TeamSpeak servera (npr. 127.0.0.1)"
+
+msgid "ADMIN_QUERY_PORT_LABEL"
+msgstr "ServerQuery port"
+
+msgid "ADMIN_QUERY_PORT_HINT"
+msgstr "Zadano: 10011"
+
+msgid "ADMIN_QUERY_USERNAME_LABEL"
+msgstr "ServerQuery korisničko ime"
+
+msgid "ADMIN_QUERY_USERNAME_HINT"
+msgstr "Query račun kreiran za stranicu"
+
+msgid "ADMIN_QUERY_PASSWORD_LABEL"
+msgstr "ServerQuery lozinka"
+
+msgid "ADMIN_QUERY_PASSWORD_HINT"
+msgstr "Lozinka query računa"
+
+msgid "ADMIN_QUERY_NICKNAME_LABEL"
+msgstr "Prikazano ime u Query"
+
+msgid "ADMIN_QUERY_NICKNAME_HINT"
+msgstr "Ime koje se prikazuje kada se stranica prijavi na query"
+
+msgid "ADMIN_QUERY_DISPLAYIP_LABEL"
+msgstr "Javni IP servera"
+
+msgid "ADMIN_QUERY_DISPLAYIP_HINT"
+msgstr "IP koji se koristi kao ts3server:// link u pregledniku kanala"
+
+msgid "ADMIN_QUERY_VOICEPORT_LABEL"
+msgstr "TeamSpeak glasovni port"
+
+msgid "ADMIN_QUERY_VOICEPORT_HINT"
+msgstr "Port na koji se klijenti spajaju (zadano: 9987)"
+
+msgid "ADMIN_QUERY_SAVED"
+msgstr "Postavke veze su sačuvane."
+

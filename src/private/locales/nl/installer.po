@@ -1,0 +1,169 @@
+# TS-Website installer translations — nl
+# Domain: installer
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
+
+msgid "INSTALLER_NAV_BRAND"
+msgstr "TS-Website Installatie"
+
+msgid "INSTALLER_STEP_WELCOME"
+msgstr "Welkom"
+
+msgid "INSTALLER_STEP_REQUIREMENTS"
+msgstr "Vereisten"
+
+msgid "INSTALLER_STEP_DATABASE"
+msgstr "Database"
+
+msgid "INSTALLER_STEP_TEAMSPEAK"
+msgstr "TeamSpeak"
+
+msgid "INSTALLER_STEP_SECURITY"
+msgstr "Beveiliging"
+
+msgid "INSTALLER_STEP_CONFIGURATION"
+msgstr "Configuratie"
+
+msgid "INSTALLER_STEP_DONE"
+msgstr "Klaar"
+
+msgid "INSTALLER_WELCOME_TITLE"
+msgstr "Welkom bij de TS-website Installatie!"
+
+msgid "INSTALLER_WELCOME_DESCRIPTION"
+msgstr "Deze wizard begeleidt je door het installatieproces van TS-website."
+
+msgid "INSTALLER_WELCOME_NO_JS"
+msgstr "Schakel Javascript in voordat je verdergaat!"
+
+msgid "INSTALLER_WELCOME_READY"
+msgstr "Ga naar de volgende stap wanneer je er klaar voor bent!"
+
+msgid "INSTALLER_WELCOME_METRICS_CHECKBOX"
+msgstr "Eenmalige statistieken versturen om TS-website te verbeteren"
+
+msgid "INSTALLER_BTN_START"
+msgstr "Starten"
+
+msgid "INSTALLER_REQ_TITLE"
+msgstr "Vereistencontrole"
+
+msgid "INSTALLER_REQ_SHOW_DETAILS"
+msgstr "Details tonen"
+
+msgid "INSTALLER_REQ_SUCCESS"
+msgstr "<strong>Succes!</strong> Je kunt TS-website uitvoeren!"
+
+msgid "INSTALLER_BTN_RECHECK"
+msgstr "Opnieuw controleren"
+
+msgid "INSTALLER_BTN_NEXT"
+msgstr "Volgende"
+
+msgid "INSTALLER_BTN_BACK"
+msgstr "Terug"
+
+msgid "INSTALLER_BTN_SUBMIT"
+msgstr "Verzenden"
+
+msgid "INSTALLER_DB_TITLE"
+msgstr "Database details"
+
+msgid "INSTALLER_DB_USE_MYSQL"
+msgstr "MySQL / MariaDB gebruiken"
+
+msgid "INSTALLER_DB_USE_SQLITE"
+msgstr "SQLite database gebruiken"
+
+msgid "INSTALLER_DB_HOSTNAME"
+msgstr "Hostname"
+
+msgid "INSTALLER_DB_HOSTNAME_TIP"
+msgstr "Gebruik '127.0.0.1' voor localhost"
+
+msgid "INSTALLER_DB_USERNAME"
+msgstr "Gebruikersnaam"
+
+msgid "INSTALLER_DB_PASSWORD"
+msgstr "Wachtwoord"
+
+msgid "INSTALLER_DB_NAME"
+msgstr "Databasenaam"
+
+msgid "INSTALLER_DB_PREFIX"
+msgstr "Tabelprefix (optioneel)"
+
+msgid "INSTALLER_DB_PREFIX_TIP"
+msgstr "Standaard 'tsw_'"
+
+msgid "INSTALLER_DB_ERR_FILL_IN"
+msgstr "Vul de databasegegevens in"
+
+msgid "INSTALLER_TS_TITLE"
+msgstr "Query details"
+
+msgid "INSTALLER_TS_HOSTNAME"
+msgstr "Hostname"
+
+msgid "INSTALLER_TS_QUERYPORT"
+msgstr "ServerQuery poort"
+
+msgid "INSTALLER_TS_VOICEPORT"
+msgstr "Voice poort"
+
+msgid "INSTALLER_TS_QUERYUSERNAME"
+msgstr "Query gebruikersnaam"
+
+msgid "INSTALLER_TS_QUERYPASSWORD"
+msgstr "Query wachtwoord"
+
+msgid "INSTALLER_TS_DISPLAYIP"
+msgstr "Weergegeven adres"
+
+msgid "INSTALLER_TS_CACHING_ICONS"
+msgstr "Iconen cachen van de TS3-server, even geduld..."
+
+msgid "INSTALLER_TS_ERR_CANNOT_GET_INFO"
+msgstr "Kan serverinformatie niet ophalen"
+
+msgid "INSTALLER_SEC_TITLE"
+msgstr "Beveiliging: map private/"
+
+msgid "INSTALLER_SEC_DIR_PROTECTED"
+msgstr "Map is beveiligd"
+
+msgid "INSTALLER_SEC_DIR_NOT_PROTECTED"
+msgstr "Map is NIET beveiligd"
+
+msgid "INSTALLER_SEC_HTACCESS_PRESENT"
+msgstr ".htaccess aanwezig"
+
+msgid "INSTALLER_SEC_HTACCESS_MISSING"
+msgstr ".htaccess ontbreekt"
+
+msgid "INSTALLER_CONFIG_TITLE"
+msgstr "Configureer je site"
+
+msgid "INSTALLER_CONFIG_SITE_NAME_LABEL"
+msgstr "Website naam / titel"
+
+msgid "INSTALLER_CONFIG_TIMEZONE_LABEL"
+msgstr "Kies je tijdzone"
+
+msgid "INSTALLER_CONFIG_CLOUDFLARE_LABEL"
+msgstr "Ik gebruik Cloudflare"
+
+msgid "INSTALLER_DONE_TITLE"
+msgstr "TS-website {0} is succesvol geïnstalleerd! 👍"
+
+msgid "INSTALLER_DONE_REMOVE_DIR"
+msgstr "Je kunt de map <code>installer</code> verwijderen."
+
+msgid "INSTALLER_DONE_WHATNOW"
+msgstr "Wat nu?"
+
+msgid "INSTALLER_DONE_VISIT_TITLE"
+msgstr "Bezoek je nieuwe website"

@@ -2,7 +2,7 @@
 
 namespace Wruczek\TSWebsite\Utils;
 
-use Wruczek\TSWebsite\Utils\Language\LanguageUtils;
+use Wruczek\TSWebsite\I18n;
 
 class DateUtils {
 
@@ -12,11 +12,7 @@ class DateUtils {
      * @return string date format
      */
     public static function getDateFormat(): string {
-        try {
-            return LanguageUtils::i()->translate("DATE_FORMAT");
-        } catch (\Exception $e) {
-            return "d.m.Y";
-        }
+        return I18n::t("DATE_FORMAT");
     }
 
     /**
@@ -25,11 +21,7 @@ class DateUtils {
      * @return string time format
      */
     public static function getTimeFormat(): string {
-        try {
-            return LanguageUtils::i()->translate("TIME_FORMAT");
-        } catch (\Exception $e) {
-            return "H:i:s";
-        }
+        return I18n::t("TIME_FORMAT");
     }
 
     /**

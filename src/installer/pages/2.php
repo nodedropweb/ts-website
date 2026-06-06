@@ -15,16 +15,15 @@ if(!empty($_POST["allow-metrics-checkbox"])) {
 
 <div class="card">
     <div class="card-body">
-        <h4 class="card-title text-center">Requirements check</h4>
+        <h4 class="card-title text-center"><?= htmlspecialchars(__t('INSTALLER_REQ_TITLE')) ?></h4>
 
         <div class="alert alert-dark text-center mb-3" id="filePermError" style="display: none">
-            Looks like you have failed file permission checks. Try running:<br>
-            <code>sudo chown -R www-data:www-data "<?= realpath(__BASE_DIR) ?>"</code>
+            <?= __t('INSTALLER_REQ_FILE_PERM_ERROR', [htmlspecialchars(realpath(__BASE_DIR))]) ?>
         </div>
 
         <div class="text-center mb-2">
             <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#requirementsTableCollapse">
-                Show details
+                <?= htmlspecialchars(__t('INSTALLER_REQ_SHOW_DETAILS')) ?>
             </button>
         </div>
 
@@ -41,9 +40,7 @@ if(!empty($_POST["allow-metrics-checkbox"])) {
         <?php if(defined("CANNOT_INSTALL")) { ?>
             <div class="col-md-10 offset-md-1">
                 <div class="alert alert-danger">
-                    <strong>Oh snap!</strong> Looks like your current web server configuration does not allow to run TS-website 2.0.
-                    Please fix the above problems and try again.<br>If you have any problems, please check
-                    <a href="https://github.com/Wruczek/ts-website/wiki" target="_blank">wiki</a> and follow the installation guide.
+                    <?= __t('INSTALLER_REQ_CANNOT_INSTALL') ?>
                 </div>
             </div>
             <script>
@@ -59,23 +56,23 @@ if(!empty($_POST["allow-metrics-checkbox"])) {
 
             <div class="text-center">
                 <div class="alert alert-success" style="display: inline-block">
-                    <strong>Success!</strong> Looks like you can run TS-website 2.0!
+                    <?= __t('INSTALLER_REQ_SUCCESS') ?>
                 </div>
             </div>
         <?php } ?>
     </div>
     <div class="card-footer text-right">
         <a href="?step=<?= $stepNumber - 1 ?>" class="btn btn-primary float-left">
-            <i class="fas fa-chevron-left"></i> Back
+            <i class="fas fa-chevron-left"></i> <?= htmlspecialchars(__t('INSTALLER_BTN_BACK')) ?>
         </a>
 
         <?php if(defined("CANNOT_INSTALL")) { ?>
             <a href="#" onclick="location = location; this.className += ' disabled'; return false" class="btn btn-warning float-right">
-                Re-check <i class="fas fa-sync"></i>
+                <?= htmlspecialchars(__t('INSTALLER_BTN_RECHECK')) ?> <i class="fas fa-sync"></i>
             </a>
         <?php } else { ?>
             <a href="?step=<?= $stepNumber + 1 ?>" class="btn btn-primary float-right">
-                Next <i class="fas fa-chevron-right"></i>
+                <?= htmlspecialchars(__t('INSTALLER_BTN_NEXT')) ?> <i class="fas fa-chevron-right"></i>
             </a>
         <?php } ?>
     </div>

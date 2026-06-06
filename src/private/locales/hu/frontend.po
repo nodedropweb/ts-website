@@ -1,0 +1,349 @@
+# TS-Website frontend translations — Hungarian
+# Domain: frontend
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: hu\n"
+
+msgid "ASSIGNER_NO_REQUIRED_GROUPS"
+msgstr "Neked nincsen a szükséges csoportok közül semelyik. Nem használhatod a csoport assignert."
+
+msgid "DATE_FORMAT"
+msgstr "Y.M.d"
+
+msgid "TIME_FORMAT"
+msgstr "H:i"
+
+msgid "BANS_HEADER_TARGET"
+msgstr "Ban"
+
+msgid "AUTHORS"
+msgstr "Wruczek <wruczekk@gmail.com>"
+
+msgid "COOKIEALERT_MESSAGE"
+msgstr "<b>Ez az oldal sütiket használ.</b> &#x1F36A; A sütiket annak érdekében használjuk, hogy a legjobb élményt biztosítsuk a weboldalunkon.<a href=\"https://support.mozilla.org/hu/kb/sutik-informacio-amelyet-weboldalak-tarolnak-szami\" target=\"_blank\">Tudj meg többet</a>"
+
+msgid "COOKIEALERT_AGREE"
+msgstr "Elfogadom"
+
+msgid "OUTDATED_DATA"
+msgstr "<b>Figyelem!</b> Néhány információ jelenleg nem érhető el. Elavult adatok megjelenítése {0}."
+
+msgid "SHOW_PROBLEMS"
+msgstr "A problémák megjelenítése"
+
+msgid "PROBLEMS_DESCRIPTION"
+msgstr "Problémák merültek fel a TeamSpeak szerverhez való csatlakozás során"
+
+msgid "NO_JAVASCRIPT_ENABLED"
+msgstr "Ez a weboldal nem fog működni  <a href=\"https://www.enable-javascript.com/\" target=\"_blank\">JavaScript engedélyezése</a>."
+
+msgid "CANNOT_GET_DATA"
+msgstr "Nem lehet adatokat kapni \"{0}\"! Kérjük, forduljon a webhely tulajdonosához."
+
+msgid "NO_REASON_SET"
+msgstr "<b>(nincs indok megadva)</b>"
+
+msgid "BANS_HEADER_REASON"
+msgstr "Indok"
+
+msgid "BANS_HEADER_INVOKER"
+msgstr "Bannolva általa"
+
+msgid "BANS_HEADER_BANDATE"
+msgstr "Ban dátum"
+
+msgid "BANS_HEADER_EXPIRES"
+msgstr "Lejárat"
+
+msgid "DATATABLES_LANGUAGE_NAME"
+msgstr "Hungarian"
+
+msgid "BANS_NEVEREXPIRES"
+msgstr "Soha"
+
+msgid "STATUS_ADDRESS"
+msgstr "IP Cím:"
+
+msgid "STATUS_CLIENTS_ONLINE"
+msgstr "Online"
+
+msgid "STATUS_RESERVED_SLOTS"
+msgstr "Fenntartott helyek: {0}"
+
+msgid "STATUS_TOP_ONLINE"
+msgstr "Rekord:"
+
+msgid "STATUS_TOP_ONLINE_DESC"
+msgstr "Kitűntetés elérve: {0}"
+
+msgid "STATUS_UPTIME"
+msgstr "Üzemidő:"
+
+msgid "STATUS_VERSION"
+msgstr "Verzió:"
+
+msgid "STATUS_VERSION_DESC"
+msgstr "{0} tovább {1}"
+
+msgid "STATUS_PING"
+msgstr "Átlagos Ping:"
+
+msgid "STATUS_PACKETLOSS"
+msgstr "Átlagos Csomagvesztés:"
+
+msgid "STATUS_ERROR"
+msgstr "Nem lehet letölteni a kiszolgáló állapotát"
+
+msgid "STATUS_PANEL_TITLE"
+msgstr "Szerver állapota"
+
+msgid "DAYJS_LANG"
+msgstr "hu"
+
+msgid "LOGIN_CONFIRMATION_CODE"
+msgstr "Üdvözöllek ez a bejelentkezési kódod az oldalra: [b]{0}[/b]"
+
+msgid "UNSUPPORTED_BROWSER"
+msgstr "A böngésződ nem támogatott. A weboldal használatához váltson a Chrome, a Firefox, a Safari vagy az Edge legújabb verziójára között."
+
+msgid "DATATABLES_PLACEHOLDER_SEARCH"
+msgstr "Keresés..."
+
+msgid "WEBSITE_TITLE"
+msgstr " | TS-weboldal Magyar nyelven"
+
+msgid "ADMIN_STATUS_ONLINE"
+msgstr "Elérhető"
+
+msgid "ADMIN_STATUS_AWAY"
+msgstr "Távol"
+
+msgid "ADMIN_STATUS_OFFLINE"
+msgstr "Nem elérhető"
+
+msgid "ADMIN_STATUS_EMPTY_GROUP"
+msgstr "Semmit sem mutat"
+
+msgid "ADMIN_STATUS_EMPTY_STATUS"
+msgstr "Az Admin állapot jelenleg üres"
+
+msgid "ASSIGNER_PANEL_TITLE"
+msgstr "Csoport hozzárendelő"
+
+msgid "ASSIGNER_TITLE"
+msgstr "Csoport hozzárendelő"
+
+msgid "BANS_EMPTY"
+msgstr "A banlista jelenleg üres"
+
+msgid "BANS_TITLE"
+msgstr "Banlista"
+
+msgid "BANS_PANEL_TITLE"
+msgstr "Banlista"
+
+msgid "BANS_BANNED_ALERT_TITLE"
+msgstr "A te IP címed bannolva van általa: {0}"
+
+msgid "BANS_BANNED_ALERT_REASON"
+msgstr "Indok: {0}"
+
+msgid "BANS_VIEW_MORE_TIP"
+msgstr "Kattints egy sorra, ha többet szeretnél megtudni a ban-ról"
+
+msgid "RULES_TITLE"
+msgstr "Szabályzat"
+
+msgid "RULES_PANEL_TITLE"
+msgstr "Szabályzat"
+
+msgid "FAQ_COPY_LINK"
+msgstr "Hivatkozás másolása erre a válaszra"
+
+msgid "FAQ_PANEL_TITLE"
+msgstr "GYIK"
+
+msgid "FAQ_TITLE"
+msgstr "GYIK"
+
+msgid "FAQ_COPY_LINK_SUCCESS"
+msgstr "Másolva!"
+
+msgid "FAQ_COPY_LINK_ERROR"
+msgstr "Hiba!"
+
+msgid "HOME_TITLE"
+msgstr "Hírek"
+
+msgid "HOME_PANEL_TITLE"
+msgstr "Hírek"
+
+msgid "HOME_EMPTY"
+msgstr "Nincsenek elérhető hírek"
+
+msgid "HOME_INVALID_PAGE"
+msgstr "Érvénytelen oldalszám"
+
+msgid "HOME_PREVIOUS_NEWS"
+msgstr "Előző"
+
+msgid "HOME_NEXT_NEWS"
+msgstr "Következő"
+
+msgid "ADMIN_STATUS_PANEL_TITLE"
+msgstr "Csapattagok"
+
+msgid "ADMIN_STATUS_HIDE_OFFLINE_TIP"
+msgstr "Az offline adminok elrejtése"
+
+msgid "ADMIN_STATUS_SHOW_OFFLINE_TIP"
+msgstr "Offline adminok megjelenítése"
+
+msgid "ADMIN_STATUS_ERROR"
+msgstr "Admin állapot hiba"
+
+msgid "NAV_TOGGLE"
+msgstr "Toggle navigation"
+
+msgid "NAV_VIEWER"
+msgstr "Néző"
+
+msgid "NAV_ASSIGNER"
+msgstr "Kijelölő"
+
+msgid "NAV_BANS"
+msgstr "Bannok"
+
+msgid "NAV_RULES"
+msgstr "Szabályok"
+
+msgid "NAV_FAQ"
+msgstr "GYIK"
+
+msgid "NAV_ACCOUNT_LOGIN"
+msgstr "Bejelentkezés"
+
+msgid "NAV_ACCOUNT_LOGOUT"
+msgstr "Kijelentkezés"
+
+msgid "VIEWER_TITLE"
+msgstr "Szerver Néző"
+
+msgid "VIEWER_PANEL_TITLE"
+msgstr "Szerver Néző"
+
+msgid "VIEWER_SHOW_EMPTY"
+msgstr "Üres szobák megjelenítése"
+
+msgid "VIEWER_HIDE_EMPTY"
+msgstr "Üres szobák elrejtése"
+
+msgid "VIEWER_TIP_ALERT"
+msgstr "Kattints egy szobára a csatlakozáshoz. Vidd rá az egeret egy névre az egyéb információért."
+
+msgid "ARIA_CLOSE"
+msgstr "Bezárás"
+
+msgid "VIEWER_ERROR"
+msgstr "Figyelői hiba"
+
+msgid "VIEWER_CONNECTION_CONFIRMATION"
+msgstr "Biztos szeretnél csatlakozni az adott szobához?"
+
+msgid "VIEWER_CLIENT_LASTACTIVE"
+msgstr "Utoljára aktív:"
+
+msgid "VIEWER_CLIENT_ONLINE"
+msgstr "Online idő:"
+
+msgid "VIEWER_CLIENT_JOINED"
+msgstr "Első csatlakozás:"
+
+msgid "VIEWER_CLIENT_TITLE"
+msgstr "Adatok"
+
+msgid "VIEWER_SERVER_ICON"
+msgstr "Szerver icon"
+
+msgid "VIEWER_DEFAULT_CHANNEL"
+msgstr "Alapértelmezett szoba"
+
+msgid "VIEWER_CHANNEL_UNSUB1"
+msgstr "leiratkozott"
+
+msgid "VIEWER_CHANNEL_OCCUPIED"
+msgstr "Limitált szoba"
+
+msgid "VIEWER_CHANNEL_PASSWORD"
+msgstr "Jelszóval-védett"
+
+msgid "VIEWER_CHANNEL_UNSUB2"
+msgstr "Leiratkozott"
+
+msgid "VIEWER_CHANNEL_ICON"
+msgstr "Szoba icon"
+
+msgid "VIEWER_CHANNEL_MODERATED"
+msgstr "Moderált"
+
+msgid "VIEWER_CHANNEL_MUSIC_CODED"
+msgstr "Zene codec"
+
+msgid "VIEWER_CLIENT_AWAY"
+msgstr "Távol van"
+
+msgid "VIEWER_CLIENT_OUTPUT_DISABLED"
+msgstr "Hang kikapcsolva"
+
+msgid "VIEWER_CLIENT_OUTPUT_MUTED"
+msgstr "Deafened"
+
+msgid "VIEWER_CLIENT_MIC_DISABLED"
+msgstr "Mikrofon kikapcsolva"
+
+msgid "VIEWER_CLIENT_MIC_MUTED"
+msgstr "Némítva"
+
+msgid "VIEWER_CLIENT_COMMANDER"
+msgstr "Channel commander"
+
+msgid "VIEWER_CLIENT_ICON"
+msgstr "Kliens ikon"
+
+msgid "VIEWER_CLIENT_PRIORITY_SPEAKER"
+msgstr "Elsődleges beszélő"
+
+msgid "VIEWER_CLIENT_TALK_POWER_GRANTED"
+msgstr "Beszéd jogot kapott"
+
+msgid "VIEWER_CLIENT_TALK_POWER_INSUFFICIENT"
+msgstr "Nincs elég beszéd joga"
+
+msgid "ASSIGNER_NOT_LOGGED_IN"
+msgstr "Jelentkezzen be a csoportos hozzárendelő használata előtt"
+
+msgid "ASSIGNER_LOGIN_BUTTON"
+msgstr "Bejelentkezés"
+
+msgid "ASSIGNER_SAVE_BUTTON"
+msgstr "Mentve"
+
+msgid "ASSIGNER_INVALID_GROUPS"
+msgstr "Érvénytelen csoportbeállítások"
+
+msgid "ASSIGNER_NOT_CONFIGURED"
+msgstr "A csoport-hozzárendelő nem lett bekonfigolva a oldal tulajdonosa által"
+
+msgid "ASSIGNER_SAVE_SUCCESS"
+msgstr "A te csoportod frissítve lett"
+
+msgid "ASSIGNER_SAVE_ERROR"
+msgstr "Csoportváltozási hiba"
+
+msgid "ASSIGNER_SAVE_NO_CHANGE"
+msgstr "Nem történt módosítás"
+
+msgid "IMPRINT_TITLE"
+msgstr "Impresszum"

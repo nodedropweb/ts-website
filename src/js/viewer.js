@@ -1,6 +1,3 @@
-/*
-refreshViewer()
-
 var intervalId = setInterval(function() {
     refreshViewer()
 }, 10 * 1000)
@@ -31,7 +28,6 @@ function refreshViewer() {
         }
     })
 }
-*/
 
 // show the viewer tip if no cookie present
 if (!Cookies.get("tswebsite_viewertip_hide")) {

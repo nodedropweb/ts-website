@@ -1,19 +1,63 @@
 <?php
 require_once __DIR__ . "/../private/php/constants.php";
+require_once __PRIVATE_DIR . "/php/I18n.php";
 
-// we need to check if the file has something in it, because its gonna be touched in
-// the requirements check step to make sure we have write permissions.
-// we only care about it after its filled with content in the last step of the installation process
+use Wruczek\TSWebsite\I18n;
+
+// Allow switching language via ?lang=xx
+if (!empty($_GET['lang'])) {
+    $requestedLang = preg_replace('/[^a-zA-Z0-9\-_]/', '', $_GET['lang']);
+    if ($requestedLang !== '') {
+        setcookie('tswebsite_language', $requestedLang, time() + 60 * 60 * 24 * 90, '/');
+        $_COOKIE['tswebsite_language'] = $requestedLang;
+    }
+}
+
+I18n::detectLocale();
+
+const INSTALLER_LANG_NAMES = [
+    'en'    => 'English',
+    'en-us' => 'English (US)',
+    'de'    => 'Deutsch',
+    'pl'    => 'Polski',
+    'ru'    => 'Русский',
+    'fr'    => 'Français',
+    'es'    => 'Español',
+    'it'    => 'Italiano',
+    'nl'    => 'Nederlands',
+    'cs'    => 'Čeština',
+    'hu'    => 'Magyar',
+    'pt-br' => 'Português (Brasil)',
+    'pt-pt' => 'Português (Portugal)',
+    'tr'    => 'Türkçe',
+    'sv'    => 'svenska',
+    'nb'    => 'norsk (bokmål)',
+    'da'    => 'Dansk',
+    'uk'    => 'Українська',
+    'be'    => 'Беларуская',
+    'bs'    => 'Босански',
+    'el'    => 'Ελληνικά',
+    'bg'    => 'български',
+    'zh-cn' => '简体中文',
+    'ar'    => 'العربية',
+];
+
+function __t(string $msgid, array $args = []): string {
+    return I18n::t($msgid, 'installer', $args);
+}
+
+function _e(string $msgid, array $args = []): void {
+    echo I18n::t($msgid, 'installer', $args);
+}
+
 if(file_exists(__INSTALLER_LOCK_FILE) && filesize(__INSTALLER_LOCK_FILE) > 1) {
-    die('File "private/INSTALLER_LOCK" exists. Please remove it if you wish to run the installer again.');
+    die('Installer is locked. Please remove the file "private/INSTALLER_LOCK" to run the installer again.');
 }
 
 if (!file_exists(__PRIVATE_DIR . "/vendor/autoload.php")) {
     die(
-        '<h2>Oops! We cannot find Composer\'s autoload file.</h2>' .
-        '<h2>Download TS-website from <a href="https://github.com/Wruczek/ts-website/releases">releases page</a>, not directly from GitHub.</h2>' .
-        'Or, if you know what you are doing, run <code>composer update</code> in the ' .
-        '<code>' . realpath(__BASE_DIR) . '</code> directory'
+        '<h2>Composer Autoload not found.</h2>' .
+        '<p>Please run <code>composer install</code> in the directory <code>' . realpath(__BASE_DIR) . '</code>.</p>'
     );
 }
 
@@ -24,65 +68,82 @@ set_time_limit(0);
 
 $stepNumber = empty($_GET["step"]) || !file_exists(__DIR__ . "/pages/" . (int)$_GET["step"] . ".php") ? 1 : (int) $_GET["step"];
 
+$steps = [
+    1 => __t('INSTALLER_STEP_WELCOME'),
+    2 => __t('INSTALLER_STEP_REQUIREMENTS'),
+    3 => __t('INSTALLER_STEP_DATABASE'),
+    4 => __t('INSTALLER_STEP_TEAMSPEAK'),
+    5 => __t('INSTALLER_STEP_SECURITY'),
+    6 => __t('INSTALLER_STEP_CONFIGURATION'),
+    7 => __t('INSTALLER_STEP_DONE'),
+];
+
+$availableLocales = I18n::availableLocales('installer');
+$currentLocale    = I18n::getLocale();
+
 ob_start();
 require __DIR__ . "/pages/$stepNumber.php";
 $pageContent = ob_get_clean();
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="<?= htmlspecialchars($currentLocale) ?>">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <title>Step <?= $stepNumber ?> | TS-website 2.0 Installer</title>
-
-    <!-- Bootswatch Lumen 4.5.2 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.5.2/lumen/bootstrap.min.css"
-          integrity="sha512-dp4Bf44EU9Q91+7N3SgcqZXhScQ+4T1vHwE1Uz5nPsr7Kl63wDa84/mN3LjwKthmK8GAw6rcJjeLq1Sp8dM3cg=="
-          crossorigin="anonymous">
-
-    <!-- Bootstrap nav wizard -->
-    <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/gh/acornejo/bootstrap-nav-wizard@fd0d42fe0c0826e2c753fb67ce7b50c9e7374d56/bootstrap-nav-wizard.min.css"
-          integrity="sha384-GKSXH8/4s0+zixsbqq0nRRjTCg0PT0t9vSofdQ15kK57B4AJIYjpHA6QQH2GdSoz"
-          crossorigin="anonymous">
-
-    <!-- FontAwesome (CSS) 5.2.0 -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-
-    <!-- Custom styles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Step <?= $stepNumber ?> — TS-Website Installer</title>
+    <link rel="stylesheet" href="../lib/bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../lib/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-
-    <!-- jQuery 3.3.1 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-
-    <!-- Bootstrap 4.5.2 JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.js"
-            integrity="sha512-VgXiNYfIwR3cDfXZNpuFfYfFGQG5x2kbcxemIWrNcRo/Z4zv1H1O+vBWuaG2cGLH9L66SRz7a/aHnwlpIlvUuQ=="
-            crossorigin="anonymous"></script>
+    <script src="../lib/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../lib/bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 
-<div class="container">
+<nav class="navbar installer-navbar">
+    <span class="navbar-brand">
+        <i class="fas fa-shield-alt"></i> <?= htmlspecialchars(__t('INSTALLER_NAV_BRAND')) ?>
+    </span>
 
-    <div class="text-center">
-        <h1 class="m-5">TS-website 2.0 Installer</h1>
+    <?php if (count($availableLocales) > 1): ?>
+    <div class="dropdown">
+        <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-language"></i>
+            <?= htmlspecialchars(INSTALLER_LANG_NAMES[$currentLocale] ?? strtoupper($currentLocale)) ?>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right">
+            <?php foreach ($availableLocales as $locale): ?>
+            <a class="dropdown-item<?= $locale === $currentLocale ? ' active' : '' ?>"
+               href="?step=<?= $stepNumber ?>&amp;lang=<?= urlencode($locale) ?>">
+                <?= htmlspecialchars(INSTALLER_LANG_NAMES[$locale] ?? strtoupper($locale)) ?>
+            </a>
+            <?php endforeach; ?>
+        </div>
     </div>
+    <?php endif; ?>
 
-    <div class="text-center">
-        <ul class="nav nav-wizard">
-            <li<?= $stepNumber == 1 ? ' class="active"' : "" ?>><a href="#">Introduction</a></li>
-            <li<?= $stepNumber == 2 ? ' class="active"' : "" ?>><a href="#">Requirements check</a></li>
-            <li<?= $stepNumber == 3 ? ' class="active"' : "" ?>><a href="#">Database details</a></li>
-            <li<?= $stepNumber == 4 ? ' class="active"' : "" ?>><a href="#">Query details</a></li>
-            <li<?= $stepNumber == 5 ? ' class="active"' : "" ?>><a href="#">Securing web server</a></li>
-            <li<?= $stepNumber == 6 ? ' class="active"' : "" ?>><a href="#">Configure your site</a></li>
-            <li<?= $stepNumber == 7 ? ' class="active"' : "" ?>><a href="#">Finish</a></li>
-        </ul>
+    <span class="text-muted small">Version <?= defined('__TSWEBSITE_VERSION') ? __TSWEBSITE_VERSION : '' ?></span>
+</nav>
+
+<div class="installer-steps">
+    <?php foreach ($steps as $num => $label):
+        $cls = $num === $stepNumber ? 'active' : ($num < $stepNumber ? 'done' : '');
+    ?>
+    <?php if ($num > 1): ?><div class="installer-step-sep"></div><?php endif; ?>
+    <div class="installer-step <?= $cls ?>">
+        <div class="step-badge">
+            <?php if ($num < $stepNumber): ?>
+                <i class="fas fa-check" style="font-size:.65rem"></i>
+            <?php else: ?>
+                <?= $num ?>
+            <?php endif; ?>
+        </div>
+        <?= htmlspecialchars($label) ?>
     </div>
+    <?php endforeach; ?>
+</div>
 
+<div class="installer-container">
     <?= $pageContent ?>
 </div>
 
@@ -91,6 +152,5 @@ $pageContent = ob_get_clean();
         $('[data-toggle="tooltip"]').tooltip({"html": true, "placement": "right"})
     })
 </script>
-
 </body>
 </html>

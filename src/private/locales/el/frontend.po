@@ -1,0 +1,352 @@
+# TS-Website frontend translations — Greek
+# Domain: frontend
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: el\n"
+
+msgid "ASSIGNER_NO_REQUIRED_GROUPS"
+msgstr "Δεν έχετε κανένα από τα απαιτούμενα γκρουπ. Δεν μπορείτε να χρησιμοποιήσετε την ανάθεση εικονιδίων."
+
+msgid "DATE_FORMAT"
+msgstr "d.m.Y"
+
+msgid "TIME_FORMAT"
+msgstr "H:i"
+
+msgid "BANS_HEADER_TARGET"
+msgstr "Αποκλεισμός"
+
+msgid "AUTHORS"
+msgstr "Alligatoras <contact@alligatoras.eu>"
+
+msgid "COOKIEALERT_MESSAGE"
+msgstr "<b>Σας αρέσουν τα cookies;</b> &#x1F36A; Χρησιμοποιούμε cookies για να εξασφαλίσουμε ότι έχετε την καλύτερη εμπειρία στον ιστότοπό μας. <a href=\"https://support.mozilla.org/el-gr/kb/cookies-information-websites-store-on-your-computer\" target=\"_blank\">Μάθετε περισσότερα</a>"
+
+msgid "COOKIEALERT_AGREE"
+msgstr "Συμφωνώ"
+
+msgid "OUTDATED_DATA"
+msgstr "<b>Προσοχή!</b> Ορισμένες πληροφορίες δεν μπορούν να ληφθούν τώρα. Εμφάνιση παρωχημένων δεδομένων από {0}."
+
+msgid "SHOW_PROBLEMS"
+msgstr "Εμφάνιση προβλημάτων"
+
+msgid "PROBLEMS_DESCRIPTION"
+msgstr "Παρουσιάστηκαν προβλήματα κατά τη σύνδεση με το διακομιστή TeamSpeak"
+
+msgid "NO_JAVASCRIPT_ENABLED"
+msgstr "Αυτός ο ιστότοπος δεν θα λειτουργήσει χωρίς <a href=\"https://www.enable-javascript.com/\" target=\"_blank\">ενεργοποιημένο JavaScript</a>."
+
+msgid "CANNOT_GET_DATA"
+msgstr "Δεν είναι δυνατή η λήψη δεδομένων για το \"{0}\"! Επικοινωνήστε με τον κάτοχο της ιστοσελίδας."
+
+msgid "NO_REASON_SET"
+msgstr "<b>(δεν υπάρχει αιτία)</b>"
+
+msgid "BANS_HEADER_REASON"
+msgstr "Αιτία"
+
+msgid "BANS_HEADER_INVOKER"
+msgstr "Αποκλείστηκε από"
+
+msgid "BANS_HEADER_BANDATE"
+msgstr "Ημερομηνία αποκλεισμού"
+
+msgid "BANS_HEADER_EXPIRES"
+msgstr "Λήγει"
+
+msgid "DATATABLES_LANGUAGE_NAME"
+msgstr "Greek"
+
+msgid "BANS_NEVEREXPIRES"
+msgstr "Ποτέ"
+
+msgid "STATUS_ADDRESS"
+msgstr "Διεύθυνση:"
+
+msgid "STATUS_CLIENTS_ONLINE"
+msgstr "Συνδεδεμένοι:"
+
+msgid "STATUS_RESERVED_SLOTS"
+msgstr "{0} δεσμευμένες θέσεις"
+
+msgid "STATUS_TOP_ONLINE"
+msgstr "Περισσότερες συνδέσεις:"
+
+msgid "STATUS_TOP_ONLINE_DESC"
+msgstr "Επιτεύχθηκε στις {0}"
+
+msgid "STATUS_UPTIME"
+msgstr "Λειτουργία:"
+
+msgid "STATUS_VERSION"
+msgstr "Έκδοση:"
+
+msgid "STATUS_VERSION_DESC"
+msgstr "{0} στα {1}"
+
+msgid "STATUS_PING"
+msgstr "Μ. όρος ping:"
+
+msgid "STATUS_PACKETLOSS"
+msgstr "Μ. όρος απώλειας:"
+
+msgid "STATUS_ERROR"
+msgstr "Δεν είναι δυνατή η ανάκτηση της κατάστασης του διακομιστή"
+
+msgid "STATUS_PANEL_TITLE"
+msgstr "Κατάσταση διακομιστή"
+
+msgid "DAYJS_LANG"
+msgstr "el"
+
+msgid "LOGIN_CONFIRMATION_CODE"
+msgstr "Γεια σας, αυτός είναι ο κωδικός επιβεβαίωσης για να συνδεθείτε: [b]{0}[/b]"
+
+msgid "UNSUPPORTED_BROWSER"
+msgstr "Ο περιηγητής σας δεν υποστηρίζεται. Μεταβείτε στην πιο πρόσφατη έκδοση του Chrome, Firefox, Safari ή Edge για να χρησιμοποιήσετε αυτόν τον ιστότοπο."
+
+msgid "DATATABLES_PLACEHOLDER_SEARCH"
+msgstr "Αναζήτηση..."
+
+msgid "WEBSITE_TITLE"
+msgstr " | TS-website Ελληνική Γλώσσα"
+
+msgid "ADMIN_STATUS_ONLINE"
+msgstr "Συνδεδεμένος"
+
+msgid "ADMIN_STATUS_AWAY"
+msgstr "Μακριά"
+
+msgid "ADMIN_STATUS_OFFLINE"
+msgstr "Αποσυνδεδεμένος"
+
+msgid "ADMIN_STATUS_EMPTY_GROUP"
+msgstr "Τίποτα προς εμφάνιση"
+
+msgid "ADMIN_STATUS_EMPTY_STATUS"
+msgstr "Η κατάσταση διαχειριστών είναι κενή"
+
+msgid "ASSIGNER_PANEL_TITLE"
+msgstr "Ανάθεση εικονιδίων"
+
+msgid "ASSIGNER_TITLE"
+msgstr "Ανάθεση εικονιδίων"
+
+msgid "BANS_EMPTY"
+msgstr "Η λίστα αποκλεισμών είναι κενή"
+
+msgid "BANS_TITLE"
+msgstr "Λίστα αποκλεισμών"
+
+msgid "BANS_PANEL_TITLE"
+msgstr "Λίστα αποκλεισμών"
+
+msgid "BANS_BANNED_ALERT_TITLE"
+msgstr "Η IP σας έχει αποκλειστεί από τον {0}"
+
+msgid "BANS_BANNED_ALERT_REASON"
+msgstr "Αιτία: {0}"
+
+msgid "BANS_VIEW_MORE_TIP"
+msgstr "Κάντε κλικ σε μια σειρά για να δείτε περισσότερες λεπτομέρειες σχετικά με τον αποκλεισμό"
+
+msgid "RULES_TITLE"
+msgstr "Κανόνες"
+
+msgid "RULES_PANEL_TITLE"
+msgstr "Κανόνες"
+
+msgid "FAQ_COPY_LINK"
+msgstr "Αντιγραφή συνδέσμου αυτής της απάντησης"
+
+msgid "FAQ_PANEL_TITLE"
+msgstr "Συχνές ερωτήσεις"
+
+msgid "FAQ_TITLE"
+msgstr "Συχνές ερωτήσεις"
+
+msgid "FAQ_COPY_LINK_SUCCESS"
+msgstr "Αντιγράφτηκε!"
+
+msgid "FAQ_COPY_LINK_ERROR"
+msgstr "Σφάλμα!"
+
+msgid "HOME_TITLE"
+msgstr "Νέα"
+
+msgid "HOME_PANEL_TITLE"
+msgstr "Νέα"
+
+msgid "HOME_EMPTY"
+msgstr "Δεν υπάρχουν διαθέσιμα νέα αυτή τη στιγμή"
+
+msgid "HOME_INVALID_PAGE"
+msgstr "Μη έγκυρος αριθμός σελίδας"
+
+msgid "HOME_NEWS_EDITED"
+msgstr "Τελευταία επεξεργασία: {0}"
+
+msgid "HOME_PREVIOUS_NEWS"
+msgstr "Προηγούμενο"
+
+msgid "HOME_NEXT_NEWS"
+msgstr "Επόμενο"
+
+msgid "ADMIN_STATUS_PANEL_TITLE"
+msgstr "Κατάσταση διαχειριστών"
+
+msgid "ADMIN_STATUS_HIDE_OFFLINE_TIP"
+msgstr "Απόκρυψη αποσυνδεδεμένων διαχειριστών"
+
+msgid "ADMIN_STATUS_SHOW_OFFLINE_TIP"
+msgstr "Εμφάνιση αποσυνδεδεμένων διαχειριστών"
+
+msgid "ADMIN_STATUS_ERROR"
+msgstr "Σφάλμα κατάστασης διαχειριστών"
+
+msgid "NAV_TOGGLE"
+msgstr "Εναλλαγή πλοήγησης"
+
+msgid "NAV_VIEWER"
+msgstr "Προβολή"
+
+msgid "NAV_ASSIGNER"
+msgstr "Ανάθεση"
+
+msgid "NAV_BANS"
+msgstr "Αποκλεισμοί"
+
+msgid "NAV_RULES"
+msgstr "Κανόνες"
+
+msgid "NAV_FAQ"
+msgstr "FAQ"
+
+msgid "NAV_ACCOUNT_LOGIN"
+msgstr "Σύνδεση"
+
+msgid "NAV_ACCOUNT_LOGOUT"
+msgstr "Αποσύνδεση"
+
+msgid "VIEWER_TITLE"
+msgstr "Προβολή διακομιστή"
+
+msgid "VIEWER_PANEL_TITLE"
+msgstr "Προβολή διακομιστή"
+
+msgid "VIEWER_SHOW_EMPTY"
+msgstr "Εμφάνιση άδειων καναλιών"
+
+msgid "VIEWER_HIDE_EMPTY"
+msgstr "Απόκρυψη άδειων καναλιών"
+
+msgid "VIEWER_TIP_ALERT"
+msgstr "Κάντε κλικ σε ένα κανάλι για να συνδεθείτε σε αυτό. Τοποθετήστε το δείκτη του ποντικιού πάνω από έναν χρήστη για να ελέγξετε τις πληροφορίες του"
+
+msgid "ARIA_CLOSE"
+msgstr "Κλείσιμο"
+
+msgid "VIEWER_ERROR"
+msgstr "Σφάλμα προβολής"
+
+msgid "VIEWER_CONNECTION_CONFIRMATION"
+msgstr "Θέλετε να συνδεθείτε σε αυτό το κανάλι;"
+
+msgid "VIEWER_CLIENT_LASTACTIVE"
+msgstr "Τελευταία σύνδεση:"
+
+msgid "VIEWER_CLIENT_ONLINE"
+msgstr "Χρόνος σύνδεσης:"
+
+msgid "VIEWER_CLIENT_JOINED"
+msgstr "Πρώτη σύνδεση:"
+
+msgid "VIEWER_CLIENT_TITLE"
+msgstr "Πληροφορίες χρήστη"
+
+msgid "VIEWER_SERVER_ICON"
+msgstr "Εικονίδιο διακομιστή"
+
+msgid "VIEWER_DEFAULT_CHANNEL"
+msgstr "Προεπιλεγμένο κανάλι"
+
+msgid "VIEWER_CHANNEL_UNSUB1"
+msgstr ", επιτυχής αναίρεση εγγραφής"
+
+msgid "VIEWER_CHANNEL_OCCUPIED"
+msgstr "Πλήρως κατειλημμένο"
+
+msgid "VIEWER_CHANNEL_PASSWORD"
+msgstr "Προστατεύεται με κωδικό"
+
+msgid "VIEWER_CHANNEL_UNSUB2"
+msgstr "Επιτυχής αναίρεση εγγραφής"
+
+msgid "VIEWER_CHANNEL_ICON"
+msgstr "Εικονίδιο καναλιού"
+
+msgid "VIEWER_CHANNEL_MODERATED"
+msgstr "Τροποποιημένο"
+
+msgid "VIEWER_CHANNEL_MUSIC_CODED"
+msgstr "Κωδικοποίηση μουσικής"
+
+msgid "VIEWER_CLIENT_AWAY"
+msgstr "Μακριά"
+
+msgid "VIEWER_CLIENT_OUTPUT_DISABLED"
+msgstr "Απενεργοποιημένος ήχος"
+
+msgid "VIEWER_CLIENT_OUTPUT_MUTED"
+msgstr "Κλειστός ήχος"
+
+msgid "VIEWER_CLIENT_MIC_DISABLED"
+msgstr "Απενεργοποιημένο μικρόφωνο"
+
+msgid "VIEWER_CLIENT_MIC_MUTED"
+msgstr "Κλειστό μικρόφωνο"
+
+msgid "VIEWER_CLIENT_COMMANDER"
+msgstr "Διαχειριστής καναλιού"
+
+msgid "VIEWER_CLIENT_ICON"
+msgstr "Εικονίδιο χρήστη"
+
+msgid "VIEWER_CLIENT_PRIORITY_SPEAKER"
+msgstr "Προτεραιότητα ομιλίας"
+
+msgid "VIEWER_CLIENT_TALK_POWER_GRANTED"
+msgstr "Εξουσιοδοτημένη ομιλία"
+
+msgid "VIEWER_CLIENT_TALK_POWER_INSUFFICIENT"
+msgstr "Ανεπαρκής δυνατότητα ομιλίας"
+
+msgid "ASSIGNER_NOT_LOGGED_IN"
+msgstr "Συνδεθείτε πριν χρησιμοποιήσετε την ανάθεση εικονιδίων"
+
+msgid "ASSIGNER_LOGIN_BUTTON"
+msgstr "Σύνδεση"
+
+msgid "ASSIGNER_SAVE_BUTTON"
+msgstr "Αποθήκευση"
+
+msgid "ASSIGNER_INVALID_GROUPS"
+msgstr "Μη έγκυρες ρυθμίσεις εικονιδίων"
+
+msgid "ASSIGNER_NOT_CONFIGURED"
+msgstr "Η ανάθεση εικονιδίων δεν έχει ρυθμιστεί από τον διαχειριστή του ιστότοπου"
+
+msgid "ASSIGNER_SAVE_SUCCESS"
+msgstr "Τα εικονίδια σας έχουν ενημερωθεί"
+
+msgid "ASSIGNER_SAVE_ERROR"
+msgstr "Σφάλμα αλλαγής εικονιδίων"
+
+msgid "ASSIGNER_SAVE_NO_CHANGE"
+msgstr "Δεν έχουν γίνει αλλαγές"
+
+msgid "IMPRINT_TITLE"
+msgstr "Αποτύπωμα"

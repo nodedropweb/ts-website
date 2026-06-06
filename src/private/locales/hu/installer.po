@@ -1,0 +1,169 @@
+# TS-Website installer translations — hu
+# Domain: installer
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: hu\n"
+
+msgid "INSTALLER_NAV_BRAND"
+msgstr "TS-Website Telepítő"
+
+msgid "INSTALLER_STEP_WELCOME"
+msgstr "Üdvözöljük"
+
+msgid "INSTALLER_STEP_REQUIREMENTS"
+msgstr "Követelmények"
+
+msgid "INSTALLER_STEP_DATABASE"
+msgstr "Adatbázis"
+
+msgid "INSTALLER_STEP_TEAMSPEAK"
+msgstr "TeamSpeak"
+
+msgid "INSTALLER_STEP_SECURITY"
+msgstr "Biztonság"
+
+msgid "INSTALLER_STEP_CONFIGURATION"
+msgstr "Konfiguráció"
+
+msgid "INSTALLER_STEP_DONE"
+msgstr "Kész"
+
+msgid "INSTALLER_WELCOME_TITLE"
+msgstr "Üdvözöljük a TS-website telepítőjében!"
+
+msgid "INSTALLER_WELCOME_DESCRIPTION"
+msgstr "Ez a varázsló végigvezeti a TS-website telepítési folyamatán."
+
+msgid "INSTALLER_WELCOME_NO_JS"
+msgstr "Kérjük, engedélyezze a Javascriptet a folytatás előtt!"
+
+msgid "INSTALLER_WELCOME_READY"
+msgstr "Folytassa a következő lépéssel, ha készen áll!"
+
+msgid "INSTALLER_WELCOME_METRICS_CHECKBOX"
+msgstr "Egyszeri statisztika küldése a TS-website fejlesztéséhez"
+
+msgid "INSTALLER_BTN_START"
+msgstr "Indítás"
+
+msgid "INSTALLER_REQ_TITLE"
+msgstr "Követelmények ellenőrzése"
+
+msgid "INSTALLER_REQ_SHOW_DETAILS"
+msgstr "Részletek megjelenítése"
+
+msgid "INSTALLER_REQ_SUCCESS"
+msgstr "<strong>Siker!</strong> Futtatható a TS-website!"
+
+msgid "INSTALLER_BTN_RECHECK"
+msgstr "Újraellenőrzés"
+
+msgid "INSTALLER_BTN_NEXT"
+msgstr "Következő"
+
+msgid "INSTALLER_BTN_BACK"
+msgstr "Vissza"
+
+msgid "INSTALLER_BTN_SUBMIT"
+msgstr "Küldés"
+
+msgid "INSTALLER_DB_TITLE"
+msgstr "Adatbázis adatok"
+
+msgid "INSTALLER_DB_USE_MYSQL"
+msgstr "MySQL / MariaDB használata"
+
+msgid "INSTALLER_DB_USE_SQLITE"
+msgstr "SQLite adatbázis használata"
+
+msgid "INSTALLER_DB_HOSTNAME"
+msgstr "Hosztnév"
+
+msgid "INSTALLER_DB_HOSTNAME_TIP"
+msgstr "Localhost esetén '127.0.0.1' használata"
+
+msgid "INSTALLER_DB_USERNAME"
+msgstr "Felhasználónév"
+
+msgid "INSTALLER_DB_PASSWORD"
+msgstr "Jelszó"
+
+msgid "INSTALLER_DB_NAME"
+msgstr "Adatbázis neve"
+
+msgid "INSTALLER_DB_PREFIX"
+msgstr "Tábla prefix (opcionális)"
+
+msgid "INSTALLER_DB_PREFIX_TIP"
+msgstr "Alapértelmezett: 'tsw_'"
+
+msgid "INSTALLER_DB_ERR_FILL_IN"
+msgstr "Kérjük, töltse ki az adatbázis adatait"
+
+msgid "INSTALLER_TS_TITLE"
+msgstr "Query adatok"
+
+msgid "INSTALLER_TS_HOSTNAME"
+msgstr "Hosztnév"
+
+msgid "INSTALLER_TS_QUERYPORT"
+msgstr "ServerQuery port"
+
+msgid "INSTALLER_TS_VOICEPORT"
+msgstr "Hangport"
+
+msgid "INSTALLER_TS_QUERYUSERNAME"
+msgstr "Query felhasználónév"
+
+msgid "INSTALLER_TS_QUERYPASSWORD"
+msgstr "Query jelszó"
+
+msgid "INSTALLER_TS_DISPLAYIP"
+msgstr "Megjelenített cím"
+
+msgid "INSTALLER_TS_CACHING_ICONS"
+msgstr "Ikonok gyorsítótárazása a TS3 szerverről, kérjük várjon..."
+
+msgid "INSTALLER_TS_ERR_CANNOT_GET_INFO"
+msgstr "Nem sikerült lekérni a szerver adatait"
+
+msgid "INSTALLER_SEC_TITLE"
+msgstr "Biztonság: private/ könyvtár"
+
+msgid "INSTALLER_SEC_DIR_PROTECTED"
+msgstr "A könyvtár védett"
+
+msgid "INSTALLER_SEC_DIR_NOT_PROTECTED"
+msgstr "A könyvtár NEM védett"
+
+msgid "INSTALLER_SEC_HTACCESS_PRESENT"
+msgstr ".htaccess jelen van"
+
+msgid "INSTALLER_SEC_HTACCESS_MISSING"
+msgstr ".htaccess hiányzik"
+
+msgid "INSTALLER_CONFIG_TITLE"
+msgstr "Az oldal beállítása"
+
+msgid "INSTALLER_CONFIG_SITE_NAME_LABEL"
+msgstr "Webhely neve / cím"
+
+msgid "INSTALLER_CONFIG_TIMEZONE_LABEL"
+msgstr "Válasszon időzónát"
+
+msgid "INSTALLER_CONFIG_CLOUDFLARE_LABEL"
+msgstr "Cloudflare-t használok"
+
+msgid "INSTALLER_DONE_TITLE"
+msgstr "A TS-website {0} sikeresen telepítve! 👍"
+
+msgid "INSTALLER_DONE_REMOVE_DIR"
+msgstr "Az <code>installer</code> könyvtár eltávolítható."
+
+msgid "INSTALLER_DONE_WHATNOW"
+msgstr "Mi következik?"
+
+msgid "INSTALLER_DONE_VISIT_TITLE"
+msgstr "Látogasd meg az új weboldaladat"

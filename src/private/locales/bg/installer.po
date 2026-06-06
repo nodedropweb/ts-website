@@ -1,0 +1,133 @@
+# TS-Website installer translations — bg
+# Domain: installer
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: bg\n"
+
+msgid "INSTALLER_NAV_BRAND"
+msgstr "Инсталатор на TS-Website"
+
+msgid "INSTALLER_STEP_WELCOME"
+msgstr "Добре дошли"
+
+msgid "INSTALLER_STEP_REQUIREMENTS"
+msgstr "Изисквания"
+
+msgid "INSTALLER_STEP_DATABASE"
+msgstr "База данни"
+
+msgid "INSTALLER_STEP_TEAMSPEAK"
+msgstr "TeamSpeak"
+
+msgid "INSTALLER_STEP_SECURITY"
+msgstr "Сигурност"
+
+msgid "INSTALLER_STEP_CONFIGURATION"
+msgstr "Конфигурация"
+
+msgid "INSTALLER_STEP_DONE"
+msgstr "Готово"
+
+msgid "INSTALLER_WELCOME_TITLE"
+msgstr "Добре дошли в инсталатора на TS-website!"
+
+msgid "INSTALLER_WELCOME_DESCRIPTION"
+msgstr "Този помощник ще ви преведе през процеса на инсталиране на TS-website."
+
+msgid "INSTALLER_WELCOME_NO_JS"
+msgstr "Моля, активирайте Javascript преди да продължите!"
+
+msgid "INSTALLER_WELCOME_READY"
+msgstr "Преминете към следващата стъпка, когато сте готови!"
+
+msgid "INSTALLER_BTN_START"
+msgstr "Старт"
+
+msgid "INSTALLER_BTN_RECHECK"
+msgstr "Провери отново"
+
+msgid "INSTALLER_BTN_NEXT"
+msgstr "Напред"
+
+msgid "INSTALLER_BTN_BACK"
+msgstr "Назад"
+
+msgid "INSTALLER_BTN_SUBMIT"
+msgstr "Изпрати"
+
+msgid "INSTALLER_DB_TITLE"
+msgstr "Детайли на базата данни"
+
+msgid "INSTALLER_DB_USE_MYSQL"
+msgstr "Използвай MySQL / MariaDB"
+
+msgid "INSTALLER_DB_USE_SQLITE"
+msgstr "Използвай SQLite база данни"
+
+msgid "INSTALLER_DB_HOSTNAME"
+msgstr "Hostname"
+
+msgid "INSTALLER_DB_USERNAME"
+msgstr "Потребителско име"
+
+msgid "INSTALLER_DB_PASSWORD"
+msgstr "Парола"
+
+msgid "INSTALLER_DB_NAME"
+msgstr "Име на базата данни"
+
+msgid "INSTALLER_DB_ERR_FILL_IN"
+msgstr "Моля, попълнете детайлите на базата данни"
+
+msgid "INSTALLER_TS_TITLE"
+msgstr "Детайли на Query"
+
+msgid "INSTALLER_TS_QUERYPORT"
+msgstr "Порт на ServerQuery"
+
+msgid "INSTALLER_TS_VOICEPORT"
+msgstr "Гласов порт"
+
+msgid "INSTALLER_TS_QUERYUSERNAME"
+msgstr "Потребител на Query"
+
+msgid "INSTALLER_TS_QUERYPASSWORD"
+msgstr "Парола на Query"
+
+msgid "INSTALLER_TS_DISPLAYIP"
+msgstr "Показван адрес"
+
+msgid "INSTALLER_TS_CACHING_ICONS"
+msgstr "Кеширане на икони от TS3 сървъра, моля изчакайте..."
+
+msgid "INSTALLER_TS_ERR_CANNOT_GET_INFO"
+msgstr "Неуспешно извличане на информация за сървъра"
+
+msgid "INSTALLER_SEC_TITLE"
+msgstr "Сигурност: директория private/"
+
+msgid "INSTALLER_SEC_DIR_PROTECTED"
+msgstr "Директорията е защитена"
+
+msgid "INSTALLER_SEC_DIR_NOT_PROTECTED"
+msgstr "Директорията НЕ е защитена"
+
+msgid "INSTALLER_CONFIG_TITLE"
+msgstr "Конфигурирайте сайта си"
+
+msgid "INSTALLER_CONFIG_SITE_NAME_LABEL"
+msgstr "Име / заглавие на сайта"
+
+msgid "INSTALLER_CONFIG_TIMEZONE_LABEL"
+msgstr "Изберете часова зона"
+
+msgid "INSTALLER_DONE_TITLE"
+msgstr "TS-website {0} беше инсталиран успешно! 👍"
+
+msgid "INSTALLER_DONE_WHATNOW"
+msgstr "Какво сега?"
+
+msgid "INSTALLER_DONE_VISIT_TITLE"
+msgstr "Посетете новия си сайт"

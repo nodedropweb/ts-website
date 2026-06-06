@@ -1,0 +1,349 @@
+# TS-Website frontend translations — Italian
+# Domain: frontend
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: it\n"
+
+msgid "ASSIGNER_NO_REQUIRED_GROUPS"
+msgstr "Non hai nessuno dei gruppi richiesti. Non è possibile utilizzare l'assegnatore di gruppo."
+
+msgid "DATE_FORMAT"
+msgstr "d.m.Y"
+
+msgid "TIME_FORMAT"
+msgstr "H:m"
+
+msgid "BANS_HEADER_TARGET"
+msgstr "Ban"
+
+msgid "AUTHORS"
+msgstr "alsoGAMER <nextgamer3152@gmail.com>"
+
+msgid "COOKIEALERT_MESSAGE"
+msgstr "<b>Ti piacciono i biscotti?</b> &#x1F36A; Noi usiamo i cookies per darti la migliore esperienza sul nostro sito. <a href=\"https://support.mozilla.org/it/kb/Gestione%20dei%20cookie#w_che-cosa-ae-un-cookie\" target=\"_blank\">Scopri di più</a>"
+
+msgid "COOKIEALERT_AGREE"
+msgstr "Accetto"
+
+msgid "OUTDATED_DATA"
+msgstr "<b>Attenzione!</b> Alcune informazioni non possono essere ottenute ora. Ti sto mostrando dati non aggiornati da {0}."
+
+msgid "SHOW_PROBLEMS"
+msgstr "Mostra problemi"
+
+msgid "PROBLEMS_DESCRIPTION"
+msgstr "Si sono riscontrati dei problemi durante la connessione al server TeamSpeak"
+
+msgid "NO_JAVASCRIPT_ENABLED"
+msgstr "Questo sito non funzionerà senza <a href=\"https://www.enable-javascript.com/it/\" target=\"_blank\">JavaScript abilitato</a>"
+
+msgid "CANNOT_GET_DATA"
+msgstr "Non riesco ad ottenere i dati per \"{0}\"! Perfavore contatta il proprietario del sito."
+
+msgid "NO_REASON_SET"
+msgstr "<b>(nessun motivo impostato)</b>"
+
+msgid "BANS_HEADER_REASON"
+msgstr "Motivo"
+
+msgid "BANS_HEADER_INVOKER"
+msgstr "Bannato da"
+
+msgid "BANS_HEADER_BANDATE"
+msgstr "Data del Ban"
+
+msgid "BANS_HEADER_EXPIRES"
+msgstr "Scadenza Ban"
+
+msgid "DATATABLES_LANGUAGE_NAME"
+msgstr "Italian"
+
+msgid "BANS_NEVEREXPIRES"
+msgstr "Mai"
+
+msgid "STATUS_ADDRESS"
+msgstr "Indirizzo:"
+
+msgid "STATUS_CLIENTS_ONLINE"
+msgstr "Online:"
+
+msgid "STATUS_RESERVED_SLOTS"
+msgstr "{0} slot(s) riservati"
+
+msgid "STATUS_TOP_ONLINE"
+msgstr "Top online:"
+
+msgid "STATUS_TOP_ONLINE_DESC"
+msgstr "Ottenuto il {0}"
+
+msgid "STATUS_UPTIME"
+msgstr "Uptime:"
+
+msgid "STATUS_VERSION"
+msgstr "Versione:"
+
+msgid "STATUS_VERSION_DESC"
+msgstr "{0} su {1}"
+
+msgid "STATUS_PING"
+msgstr "Ping medio:"
+
+msgid "STATUS_PACKETLOSS"
+msgstr "Pacchetti persi medi:"
+
+msgid "STATUS_ERROR"
+msgstr "Impossibile ottenere lo stato del server"
+
+msgid "STATUS_PANEL_TITLE"
+msgstr "Stato del server"
+
+msgid "DAYJS_LANG"
+msgstr "it"
+
+msgid "LOGIN_CONFIRMATION_CODE"
+msgstr "Ciao, ecco il tuo codice di conferma per accedere: [b]{0}[/b]"
+
+msgid "UNSUPPORTED_BROWSER"
+msgstr "Il tuo browser non è supportato. Passa alla versione più recente di Chrome, Firefox, Safari o Edge per utilizzare questo sito Web."
+
+msgid "DATATABLES_PLACEHOLDER_SEARCH"
+msgstr "Cerca..."
+
+msgid "WEBSITE_TITLE"
+msgstr " | Lingua Italiana di TS-website"
+
+msgid "ADMIN_STATUS_ONLINE"
+msgstr "Online"
+
+msgid "ADMIN_STATUS_AWAY"
+msgstr "AFK"
+
+msgid "ADMIN_STATUS_OFFLINE"
+msgstr "Offline"
+
+msgid "ADMIN_STATUS_EMPTY_GROUP"
+msgstr "Nulla da mostrare"
+
+msgid "ADMIN_STATUS_EMPTY_STATUS"
+msgstr "Lo stato di amministratore è vuoto"
+
+msgid "ASSIGNER_PANEL_TITLE"
+msgstr "Assegna un Gruppo"
+
+msgid "ASSIGNER_TITLE"
+msgstr "Assegna un Gruppo"
+
+msgid "BANS_EMPTY"
+msgstr "La lista ban è vuota"
+
+msgid "BANS_TITLE"
+msgstr "Lista ban"
+
+msgid "BANS_PANEL_TITLE"
+msgstr "Lista ban"
+
+msgid "BANS_BANNED_ALERT_TITLE"
+msgstr "Il tuo IP è stato bannato da {0}"
+
+msgid "BANS_BANNED_ALERT_REASON"
+msgstr "Motivo: {0}"
+
+msgid "BANS_VIEW_MORE_TIP"
+msgstr "Fai clic su una riga per visualizzare ulteriori dettagli sul Ban"
+
+msgid "RULES_TITLE"
+msgstr "Regole"
+
+msgid "RULES_PANEL_TITLE"
+msgstr "Regole"
+
+msgid "FAQ_COPY_LINK"
+msgstr "Copia link a quella risposta"
+
+msgid "FAQ_PANEL_TITLE"
+msgstr "FAQ"
+
+msgid "FAQ_TITLE"
+msgstr "FAQ"
+
+msgid "FAQ_COPY_LINK_SUCCESS"
+msgstr "Copiato!"
+
+msgid "FAQ_COPY_LINK_ERROR"
+msgstr "Errore!"
+
+msgid "HOME_TITLE"
+msgstr "Notizie"
+
+msgid "HOME_PANEL_TITLE"
+msgstr "Notizie"
+
+msgid "HOME_EMPTY"
+msgstr "Nessuna notizia disponibile in questo momento"
+
+msgid "HOME_INVALID_PAGE"
+msgstr "Numero di pagina non valido"
+
+msgid "HOME_PREVIOUS_NEWS"
+msgstr "Precedente"
+
+msgid "HOME_NEXT_NEWS"
+msgstr "Successivo"
+
+msgid "ADMIN_STATUS_PANEL_TITLE"
+msgstr "Stato amministratore"
+
+msgid "ADMIN_STATUS_HIDE_OFFLINE_TIP"
+msgstr "Nascondi amministratori offline"
+
+msgid "ADMIN_STATUS_SHOW_OFFLINE_TIP"
+msgstr "Mostra amministratori offline"
+
+msgid "ADMIN_STATUS_ERROR"
+msgstr "Errore di stato dell'amministratore"
+
+msgid "NAV_TOGGLE"
+msgstr "Attiva / disattiva la navigazione"
+
+msgid "NAV_VIEWER"
+msgstr "Spettatore"
+
+msgid "NAV_ASSIGNER"
+msgstr "Assegnatore"
+
+msgid "NAV_BANS"
+msgstr "Ban"
+
+msgid "NAV_RULES"
+msgstr "Regole"
+
+msgid "NAV_FAQ"
+msgstr "FAQ"
+
+msgid "NAV_ACCOUNT_LOGIN"
+msgstr "Accesso"
+
+msgid "NAV_ACCOUNT_LOGOUT"
+msgstr "Esci"
+
+msgid "VIEWER_TITLE"
+msgstr "Visualizzatore server"
+
+msgid "VIEWER_PANEL_TITLE"
+msgstr "Visualizzatore server"
+
+msgid "VIEWER_SHOW_EMPTY"
+msgstr "Mostra canali vuoti"
+
+msgid "VIEWER_HIDE_EMPTY"
+msgstr "Nascondi canali vuoti"
+
+msgid "VIEWER_TIP_ALERT"
+msgstr "Clicca su un canale per entrarci. Passa con il mouse sopra un utente per guardare le sue info"
+
+msgid "ARIA_CLOSE"
+msgstr "Vicino"
+
+msgid "VIEWER_ERROR"
+msgstr "Errore del visualizzatore"
+
+msgid "VIEWER_CONNECTION_CONFIRMATION"
+msgstr "Vuoi connetterti a questo canale?"
+
+msgid "VIEWER_CLIENT_LASTACTIVE"
+msgstr "Ultima attività:"
+
+msgid "VIEWER_CLIENT_ONLINE"
+msgstr "Tempo online:"
+
+msgid "VIEWER_CLIENT_JOINED"
+msgstr "Primo iscritto:"
+
+msgid "VIEWER_CLIENT_TITLE"
+msgstr "Informazioni utente"
+
+msgid "VIEWER_SERVER_ICON"
+msgstr "Icona del server"
+
+msgid "VIEWER_DEFAULT_CHANNEL"
+msgstr "Canale di default"
+
+msgid "VIEWER_CHANNEL_UNSUB1"
+msgstr ", non iscritto"
+
+msgid "VIEWER_CHANNEL_OCCUPIED"
+msgstr "Pieno"
+
+msgid "VIEWER_CHANNEL_PASSWORD"
+msgstr "Protetto da password"
+
+msgid "VIEWER_CHANNEL_UNSUB2"
+msgstr "Non iscritto"
+
+msgid "VIEWER_CHANNEL_ICON"
+msgstr "Icona del canale"
+
+msgid "VIEWER_CHANNEL_MODERATED"
+msgstr "Moderato"
+
+msgid "VIEWER_CHANNEL_MUSIC_CODED"
+msgstr "Codec musica"
+
+msgid "VIEWER_CLIENT_AWAY"
+msgstr "AFK"
+
+msgid "VIEWER_CLIENT_OUTPUT_DISABLED"
+msgstr "Audio disattivato"
+
+msgid "VIEWER_CLIENT_OUTPUT_MUTED"
+msgstr "Mutato"
+
+msgid "VIEWER_CLIENT_MIC_DISABLED"
+msgstr "Microfono disattivato"
+
+msgid "VIEWER_CLIENT_MIC_MUTED"
+msgstr "Mutato"
+
+msgid "VIEWER_CLIENT_COMMANDER"
+msgstr "Comandante canale"
+
+msgid "VIEWER_CLIENT_ICON"
+msgstr "Icona utente"
+
+msgid "VIEWER_CLIENT_PRIORITY_SPEAKER"
+msgstr "Speaker prioritario"
+
+msgid "VIEWER_CLIENT_TALK_POWER_GRANTED"
+msgstr "Permesso di parola concesso"
+
+msgid "VIEWER_CLIENT_TALK_POWER_INSUFFICIENT"
+msgstr "Permesso di parola insufficiente"
+
+msgid "ASSIGNER_NOT_LOGGED_IN"
+msgstr "Effettua l'accesso prima di usare l'assegnatore gruppi"
+
+msgid "ASSIGNER_LOGIN_BUTTON"
+msgstr "Accesso"
+
+msgid "ASSIGNER_SAVE_BUTTON"
+msgstr "Salva"
+
+msgid "ASSIGNER_INVALID_GROUPS"
+msgstr "Impostazioni gruppo invalide"
+
+msgid "ASSIGNER_NOT_CONFIGURED"
+msgstr "L'assegnatore gruppi non è stato configurato dall'amministratore del sito"
+
+msgid "ASSIGNER_SAVE_SUCCESS"
+msgstr "I tuoi gruppi sono stati modificati"
+
+msgid "ASSIGNER_SAVE_ERROR"
+msgstr "Errore durante il cambio del gruppo"
+
+msgid "ASSIGNER_SAVE_NO_CHANGE"
+msgstr "Nessuna modifica effettuata"
+
+msgid "IMPRINT_TITLE"
+msgstr "Impronta"

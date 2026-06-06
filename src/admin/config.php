@@ -24,26 +24,26 @@ foreach ($rows as $row) {
 ksort($sections);
 
 $sectionLabels = [
-    'adminstatus'  => 'Admin-Status Widget',
-    'assigner'     => 'Gruppen-Zuweisung',
-    'cache'        => 'Cache-Zeiten (Sekunden)',
-    'general'      => 'Allgemein',
-    'imprint'      => 'Impressum',
-    'nav'          => 'Navigation',
-    'onlinerecord' => 'Online-Rekord',
-    'query'        => 'TeamSpeak Query',
-    'viewer'       => 'Channel-Viewer',
-    'website'      => 'Website',
-    'admin'        => 'Admin-Panel',
-    'assignerconfig'=> 'Zuweisung-Config',
-    'baseurl'      => 'Allgemein',
-    'loginpokeclient'=> 'Allgemein',
-    'timezone'     => 'Allgemein',
-    'tsserver'     => 'TeamSpeak Server',
-    'usingcloudflare'=> 'Allgemein',
+    'adminstatus'    => __a('ADMIN_CONFIG_SECTION_ADMINSTATUS'),
+    'assigner'       => __a('ADMIN_CONFIG_SECTION_ASSIGNER'),
+    'cache'          => __a('ADMIN_CONFIG_SECTION_CACHE'),
+    'general'        => __a('ADMIN_CONFIG_SECTION_GENERAL'),
+    'imprint'        => __a('ADMIN_CONFIG_SECTION_IMPRINT'),
+    'nav'            => __a('ADMIN_NAV_CONFIG'),
+    'onlinerecord'   => __a('ADMIN_CONFIG_SECTION_ONLINERECORD'),
+    'query'          => __a('ADMIN_CONFIG_SECTION_QUERY'),
+    'viewer'         => __a('ADMIN_CONFIG_SECTION_VIEWER'),
+    'website'        => 'Website',
+    'admin'          => __a('ADMIN_CONFIG_SECTION_ADMIN'),
+    'assignerconfig' => __a('ADMIN_CONFIG_SECTION_ASSIGNER'),
+    'baseurl'        => __a('ADMIN_CONFIG_SECTION_GENERAL'),
+    'loginpokeclient'=> __a('ADMIN_CONFIG_SECTION_GENERAL'),
+    'timezone'       => __a('ADMIN_CONFIG_SECTION_GENERAL'),
+    'tsserver'       => 'TeamSpeak Server',
+    'usingcloudflare'=> __a('ADMIN_CONFIG_SECTION_GENERAL'),
 ];
 
-adminHeader('Konfiguration', 'config');
+adminHeader(__a('ADMIN_CONFIG_TITLE'), 'config');
 
 if ($flash): ?>
 <div class="alert alert-<?= htmlspecialchars($flashType) ?> alert-dismissible fade show">
@@ -56,13 +56,54 @@ if ($flash): ?>
     <input type="hidden" name="csrf-token" value="<?= htmlspecialchars(CsrfUtils::getToken()) ?>">
 
     <?php foreach ($sections as $section => $items): ?>
+    <?php if (in_array($section, ['nav', 'rules', 'tsserver', 'website'], true)) continue; ?>
     <div class="card mb-4">
         <div class="card-header">
             <?= htmlspecialchars($sectionLabels[$section] ?? ucfirst($section)) ?>
         </div>
         <div class="card-body">
+            <?php if ($section === 'adminstatus'): ?>
+            <a href="adminstatus.php" class="btn btn-info">
+                <i class="fas fa-shield-alt"></i> <?= htmlspecialchars(__a('ADMIN_CONFIG_BTN_ADMINSTATUS')) ?>
+            </a>
+            <?php elseif ($section === 'assigner'): ?>
+            <a href="assigner.php" class="btn btn-primary">
+                <i class="fas fa-gamepad"></i> <?= htmlspecialchars(__a('ADMIN_CONFIG_BTN_ASSIGNER')) ?>
+            </a>
+            <?php elseif ($section === 'cache'): ?>
+            <a href="cache.php" class="btn btn-secondary">
+                <i class="fas fa-clock"></i> <?= htmlspecialchars(__a('ADMIN_CONFIG_BTN_CACHE')) ?>
+            </a>
+            <?php elseif ($section === 'general'): ?>
+            <a href="general.php" class="btn btn-secondary">
+                <i class="fas fa-cog"></i> <?= htmlspecialchars(__a('ADMIN_CONFIG_BTN_GENERAL')) ?>
+            </a>
+            <?php elseif ($section === 'imprint'): ?>
+            <a href="imprint-edit.php" class="btn btn-secondary">
+                <i class="far fa-id-card"></i> <?= htmlspecialchars(__a('ADMIN_CONFIG_BTN_IMPRINT')) ?>
+            </a>
+            <?php elseif ($section === 'onlinerecord'): ?>
+            <a href="onlinerecord.php" class="btn btn-secondary">
+                <i class="fas fa-trophy"></i> <?= htmlspecialchars(__a('ADMIN_CONFIG_BTN_ONLINERECORD')) ?>
+            </a>
+            <?php elseif ($section === 'viewer'): ?>
+            <a href="viewer.php" class="btn btn-secondary">
+                <i class="fas fa-sitemap"></i> <?= htmlspecialchars(__a('ADMIN_CONFIG_BTN_VIEWER')) ?>
+            </a>
+            <?php elseif ($section === 'query'): ?>
+            <a href="query.php" class="btn btn-warning">
+                <i class="fas fa-plug"></i> <?= htmlspecialchars(__a('ADMIN_CONFIG_BTN_QUERY')) ?>
+            </a>
+            <?php elseif ($section === 'admin'): ?>
+            <a href="admins.php" class="btn btn-warning">
+                <i class="fas fa-shield-alt"></i> <?= htmlspecialchars(__a('ADMIN_CONFIG_BTN_ADMINS')) ?>
+            </a>
+            <?php elseif ($section === 'nav'): ?>
+            <?php /* nav_brand wurde in Allgemeine Einstellungen verschoben */ ?>
+            <?php else: ?>
             <?php foreach ($items as $row):
                 $key  = $row['identifier'];
+                if (in_array($key, ['assignerconfig', 'nav_brand'], true)) continue;
                 $type = strtolower($row['type']);
                 $val  = $row['value'];
                 $inputName = 'config[' . htmlspecialchars($key) . ']';
@@ -75,31 +116,20 @@ if ($flash): ?>
                 <div class="col-sm-8">
                 <?php if (in_array($key, ['assignerconfig', 'assigner_cooldown_seconds', 'assigner_required_sgids'], true)): ?>
                     <a href="assigner.php" class="btn btn-primary btn-sm">
-                        <i class="fas fa-gamepad"></i> Im Assigner-Editor bearbeiten
+                        <i class="fas fa-gamepad"></i> <?= htmlspecialchars(__a('ADMIN_CONFIG_EDIT_IN_ASSIGNER')) ?>
                     </a>
-                    <small class="form-text text-muted">Wird im Assigner-Editor verwaltet.</small>
-                <?php elseif ($key === 'assignerconfig'): // fallthrough guard - never reached
-                ?>
-                    <a href="assigner.php" class="btn btn-primary btn-sm">
-                        <i class="fas fa-gamepad"></i> Im Assigner-Editor bearbeiten
-                    </a>
-                    <small class="form-text text-muted">Kategorien, Gruppen und Icons visuell konfigurieren.</small>
-                <?php elseif ($key === 'adminstatus_groups'): ?>
-                    <a href="adminstatus.php" class="btn btn-info btn-sm">
-                        <i class="fas fa-users"></i> Admin-Status-Gruppen bearbeiten
-                    </a>
-                    <small class="form-text text-muted">Wähle welche Servergruppen im Admin-Status-Widget erscheinen.</small>
+                    <small class="form-text text-muted"><?= htmlspecialchars(__a('ADMIN_CONFIG_MANAGED_IN_ASSIGNER')) ?></small>
                 <?php elseif ($key === 'admin_cldbids'): ?>
                     <a href="admins.php" class="btn btn-warning btn-sm">
-                        <i class="fas fa-shield-alt"></i> Admin-Zugänge verwalten
+                        <i class="fas fa-shield-alt"></i> <?= htmlspecialchars(__a('ADMIN_CONFIG_BTN_ADMINS')) ?>
                     </a>
-                    <small class="form-text text-muted">Wer hat Zugriff auf dieses Admin-Panel?</small>
+                    <small class="form-text text-muted"><?= htmlspecialchars(__a('ADMIN_CONFIG_WHO_HAS_ACCESS')) ?></small>
                 <?php elseif ($type === 'bool'): ?>
                     <div class="custom-control custom-switch mt-2">
                         <input type="checkbox" class="custom-control-input"
                                id="cfg_<?= $key ?>" name="<?= $inputName ?>" value="true"
                                <?= $val === 'true' ? 'checked' : '' ?>>
-                        <label class="custom-control-label" for="cfg_<?= $key ?>">Aktiviert</label>
+                        <label class="custom-control-label" for="cfg_<?= $key ?>"><?= htmlspecialchars(__a('ADMIN_ENABLED')) ?></label>
                     </div>
                 <?php elseif ($type === 'int'): ?>
                     <input type="number" class="form-control form-control-sm"
@@ -108,7 +138,7 @@ if ($flash): ?>
                     <textarea class="form-control form-control-sm font-monospace"
                               name="<?= $inputName ?>" rows="3"
                               style="font-family:monospace"><?= htmlspecialchars($val) ?></textarea>
-                    <small class="form-text text-muted">JSON-Format, z.B. <code>[1, 42]</code> oder <code>{"key":"val"}</code></small>
+                    <small class="form-text text-muted"><?= __a('ADMIN_CONFIG_JSON_HINT') ?></small>
                 <?php else: /* STRING */ ?>
                     <input type="text" class="form-control form-control-sm"
                            name="<?= $inputName ?>" value="<?= htmlspecialchars($val) ?>">
@@ -116,13 +146,14 @@ if ($flash): ?>
                 </div>
             </div>
             <?php endforeach; ?>
+            <?php endif; ?>
         </div>
     </div>
     <?php endforeach; ?>
 
     <div class="text-right mb-4">
         <button type="submit" class="btn btn-primary btn-lg">
-            <i class="fas fa-save"></i> Alle Einstellungen speichern
+            <i class="fas fa-save"></i> <?= htmlspecialchars(__a('ADMIN_BTN_SAVE_ALL')) ?>
         </button>
     </div>
 </form>

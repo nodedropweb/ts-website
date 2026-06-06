@@ -2,8 +2,7 @@
 
 <?php if(file_exists(__CONFIG_FILE)) { ?>
     <div class="alert alert-danger text-center" role="alert">
-        dbconfig.php file found! TS-website might have already been installed.
-        If you proceed, you will lose data!
+        <?= __t('INSTALLER_WELCOME_ALREADY_INSTALLED') ?>
     </div>
 <?php } ?>
 
@@ -11,50 +10,25 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Welcome to the development version of TS-website 2!</h5>
+                <h5 class="modal-title">Welcome to ts-website 3.0!</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <p>
-                    <b>Development version</b> is great to test and explore TS-website.
-                    Remember, that this version is not finished and only intended for testing.
-                    <b>We strongly advise you to NOT use it in production.</b>
-                </p>
-
-                <p><b>Continue only if you:</b></p>
-
+                <p>This is the <strong>nodedropweb fork</strong> of ts-website &mdash; extended with a full admin panel and several improvements over the <a href="https://github.com/Wruczek/ts-website" target="_blank" rel="noopener">original</a>.</p>
+                <p><strong>New in this fork:</strong></p>
                 <ul>
-                    <li class="mb-2">
-                        <b>Want to try out development version of TS-website</b>
-                    </li>
-                    <li class="mb-2">
-                        <b>Understand how websites work</b> and will be able to fix common problems with PHP, your web server and your database
-                    </li>
+                    <li class="mb-2"><strong>Admin Panel</strong> &mdash; manage News, FAQ, Rules, Imprint, Group Assigner and site configuration through the browser</li>
+                    <li class="mb-2"><strong>tsw.phar CLI tool</strong> &mdash; install, update and maintain the site from the command line (English &amp; German)</li>
+                    <li class="mb-2"><strong>PHP 8.4 compatible</strong> &mdash; fully modernized codebase</li>
+                    <li class="mb-2"><strong>Local asset hosting</strong> &mdash; all CSS &amp; JS libraries served locally, no external CDN (GDPR compliant)</li>
+                    <li class="mb-2"><strong>Automatic Channel Viewer refresh</strong> &mdash; no more F5 needed</li>
                 </ul>
-
-                <p><b>Things that you might not like:</b></p>
-
-                <ul>
-                    <li class="mb-2">
-                        <b>There is NO admin panel</b><br>
-                        Configure it by modifying files and values in the database
-                    </li>
-                    <li class="mb-2">
-                        <b>You break it, you fix it</b><br>
-                        If something breaks, you need to read the error messages and fix the problem yourself.
-                    </li>
-                    <li>
-                        <b>You might find bugs and problems</b><br>
-                        If you do, please
-                        <a href="https://github.com/Wruczek/ts-website/issues" target="_blank">create an issue</a>
-                        on GitHub
-                    </li>
-                </ul>
+                <p class="text-muted small mb-0">You can select your language using the dropdown in the top-right corner after closing this dialog.</p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">I understand</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Let's go!</button>
             </div>
         </div>
     </div>
@@ -64,52 +38,26 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Metrics send by TS-website</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <h5 class="modal-title"><?= htmlspecialchars(__t('INSTALLER_METRICS_MODAL_TITLE')) ?></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="<?= htmlspecialchars(__t('ARIA_CLOSE')) ?>">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <p>
-                    You might allow TS-website to send one-time metrics during the installation process.
-                    The data sent contains only publicly known information, no private info is send.
-                    The collected data will be used only to learn more about our users and improve TS-website.
-                    We will never sell or share it to 3rd-parties. We might, however, publish some statistics
-                    collected via the metrics. The published data will always be fully anonymous.
-                </p>
-
-                <p>
-                    The data sent will be indexed with the sending server's IP address, to prevent abuse.
-                </p>
-
-                <p>
-                    You can check all of the data sent by looking at the source code:
-                    <code>installer/pages/7.php</code>
-                </p>
-
-                <p><b>Data sent by TS-website:</b></p>
-
+                <p><?= __t('INSTALLER_METRICS_MODAL_P1') ?></p>
+                <p><?= __t('INSTALLER_METRICS_MODAL_P2') ?></p>
+                <p><?= __t('INSTALLER_METRICS_MODAL_P3') ?></p>
+                <p><?= __t('INSTALLER_METRICS_MODAL_DATA_TITLE') ?></p>
                 <ul>
-                    <li class="mb-1">
-                        Version of TS-website and PHP
-                    </li>
-                    <li class="mb-1">
-                        List of loaded PHP extension names
-                    </li>
-                    <li class="mb-1">
-                        Server identification string (contains mainly web server name and version)
-                    </li>
-                    <li class="mb-1">
-                        Basic OS info (type, version, architecture)
-                    </li>
-                    <li class="mb-1">
-                        TeamSpeak server info (version, build number, host OS name, slot count,
-                        are you using serveradmin for query)
-                    </li>
+                    <li class="mb-1"><?= __t('INSTALLER_METRICS_MODAL_DATA_VERSION') ?></li>
+                    <li class="mb-1"><?= __t('INSTALLER_METRICS_MODAL_DATA_EXTENSIONS') ?></li>
+                    <li class="mb-1"><?= __t('INSTALLER_METRICS_MODAL_DATA_SERVER') ?></li>
+                    <li class="mb-1"><?= __t('INSTALLER_METRICS_MODAL_DATA_OS') ?></li>
+                    <li class="mb-1"><?= __t('INSTALLER_METRICS_MODAL_DATA_TS') ?></li>
                 </ul>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal"><?= htmlspecialchars(__t('INSTALLER_METRICS_MODAL_BTN_CLOSE')) ?></button>
             </div>
         </div>
     </div>
@@ -117,33 +65,30 @@
 
 <div class="card">
     <div class="card-body">
-        <h4 class="card-title text-center mb-0">Welcome to TS-website Installer!</h4>
+        <h4 class="card-title text-center mb-0"><?= htmlspecialchars(__t('INSTALLER_WELCOME_TITLE')) ?></h4>
 
         <p class="card-text text-center text-muted font-italic mb-5">
             Version <?= __TSWEBSITE_VERSION ?> (<?= __TSWEBSITE_COMMIT ?>)
         </p>
 
-        <p class="card-text">This wizard will guide you through the installation process of TS-website.</p>
-        <p class="card-text text-danger" id="hidejs">Please enable Javascript before continuing!</p>
-        <p class="card-text">
-            If you encounter any problems please make sure you check the
-            <a href="https://github.com/Wruczek/ts-website/wiki" target="_blank">wiki</a>.
-        </p>
-        <p class="card-text">Go to the next step whenever you are ready!</p>
+        <p class="card-text"><?= __t('INSTALLER_WELCOME_DESCRIPTION') ?></p>
+        <p class="card-text text-danger" id="hidejs"><?= __t('INSTALLER_WELCOME_NO_JS') ?></p>
+        <p class="card-text"><?= __t('INSTALLER_WELCOME_WIKI_HINT') ?></p>
+        <p class="card-text"><?= __t('INSTALLER_WELCOME_READY') ?></p>
 
         <form method="post" action="?step=<?= $stepNumber + 1 ?>">
             <div class="custom-control custom-checkbox">
                 <input type="checkbox" class="custom-control-input" id="allow-metrics-checkbox" name="allow-metrics-checkbox" checked>
                 <label class="custom-control-label" for="allow-metrics-checkbox">
-                    Send one-time statistics to help improve TS-website
-                    <a href="#" data-toggle="modal" data-target="#metrics-info">(learn more)</a>
+                    <?= __t('INSTALLER_WELCOME_METRICS_CHECKBOX') ?>
+                    <a href="#" data-toggle="modal" data-target="#metrics-info"><?= htmlspecialchars(__t('INSTALLER_WELCOME_METRICS_LEARN_MORE')) ?></a>
                 </label>
             </div>
 
             <div class="custom-control custom-checkbox">
                 <input type="checkbox" class="custom-control-input" id="accept-license-checkbox" name="accept-license-checkbox" required>
                 <label class="custom-control-label" for="accept-license-checkbox">
-                    I read and accept the <a href="https://github.com/Wruczek/ts-website/blob/2.0/LICENSE.txt" target="_blank">license</a>
+                    <?= __t('INSTALLER_WELCOME_LICENSE_CHECKBOX') ?>
                 </label>
             </div>
 
@@ -152,7 +97,7 @@
     </div>
     <div class="card-footer">
         <a id="nextbutton" href="#" class="btn btn-primary float-right disabled" style="display: none">
-            Start <i class="fas fa-chevron-right"></i>
+            <?= htmlspecialchars(__t('INSTALLER_BTN_START')) ?> <i class="fas fa-chevron-right"></i>
         </a>
     </div>
 </div>

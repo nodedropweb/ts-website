@@ -1,0 +1,343 @@
+# TS-Website frontend translations — Bosnian
+# Domain: frontend
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: bs\n"
+
+msgid "DATE_FORMAT"
+msgstr "d.m.Y"
+
+msgid "TIME_FORMAT"
+msgstr "H:i"
+
+msgid "AUTHORS"
+msgstr "R3TR0Piha <protony16@gmail.com>"
+
+msgid "COOKIEALERT_MESSAGE"
+msgstr "<b>Da li voliš kolačiće?</b> &#x1F36A; Ova stranica koristi kolačiće za najbolje doživljaje!. <a href=\"https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer\" target=\"_blank\">Pročitaj više</a>"
+
+msgid "COOKIEALERT_AGREE"
+msgstr "Prihvaćam"
+
+msgid "OUTDATED_DATA"
+msgstr "<b>Upozorenje!</b> Neke informacije su nedostupne. Prikazuju se zastarjeli podaci od {0}."
+
+msgid "SHOW_PROBLEMS"
+msgstr "Prikaži greške"
+
+msgid "PROBLEMS_DESCRIPTION"
+msgstr "Problemi na koje ste naišli tijekom povezivanja s TeamSpeak poslužiteljem"
+
+msgid "NO_JAVASCRIPT_ENABLED"
+msgstr "Ova stranica neće raditi bez <a href=\"https://www.enable-javascript.com/\" target=\"_blank\">JavaScript enabled</a>."
+
+msgid "CANNOT_GET_DATA"
+msgstr "Nije moguće dobiti podatke za \"{0}\"! Kontaktirajte vlasnika web-lokacije."
+
+msgid "NO_REASON_SET"
+msgstr "<b>(razlog nije postavljen)</b>"
+
+msgid "BANS_HEADER_REASON"
+msgstr "Razlog"
+
+msgid "BANS_HEADER_INVOKER"
+msgstr "Banan od"
+
+msgid "BANS_HEADER_BANDATE"
+msgstr "Datum bana"
+
+msgid "BANS_HEADER_EXPIRES"
+msgstr "Istječe"
+
+msgid "DATATABLES_LANGUAGE_NAME"
+msgstr "Croatian"
+
+msgid "BANS_NEVEREXPIRES"
+msgstr "Nikada"
+
+msgid "STATUS_ADDRESS"
+msgstr "Adresa:"
+
+msgid "STATUS_CLIENTS_ONLINE"
+msgstr "Na mreži:"
+
+msgid "STATUS_RESERVED_SLOTS"
+msgstr "{0} rezervirana mjesta"
+
+msgid "STATUS_TOP_ONLINE"
+msgstr "Najviše na mreži:"
+
+msgid "STATUS_TOP_ONLINE_DESC"
+msgstr "Postignuto na {0}"
+
+msgid "STATUS_UPTIME"
+msgstr "Uptime:"
+
+msgid "STATUS_VERSION"
+msgstr "Verzija:"
+
+msgid "STATUS_VERSION_DESC"
+msgstr "{0} na {1}"
+
+msgid "STATUS_PING"
+msgstr "Avg. ping:"
+
+msgid "STATUS_PACKETLOSS"
+msgstr "Avg. packet loss:"
+
+msgid "STATUS_ERROR"
+msgstr "Status servera nije moguće dohvatiti"
+
+msgid "STATUS_PANEL_TITLE"
+msgstr "Status servera"
+
+msgid "DAYJS_LANG"
+msgstr "hr"
+
+msgid "LOGIN_CONFIRMATION_CODE"
+msgstr "Pozdrav, ovdje je tvoj kod potvrde za prijavu: [b]{0}[/b]"
+
+msgid "UNSUPPORTED_BROWSER"
+msgstr "Vaš preglednik nije podržan. Prebacite se na najnoviju verziju preglednika Chrome, Firefox, Safari ili Edge da biste koristili ovu web-lokaciju."
+
+msgid "DATATABLES_PLACEHOLDER_SEARCH"
+msgstr "Traži..."
+
+msgid "WEBSITE_TITLE"
+msgstr "| TS-web stranica Bosanski jezik"
+
+msgid "ADMIN_STATUS_ONLINE"
+msgstr "Na mreži"
+
+msgid "ADMIN_STATUS_AWAY"
+msgstr "Otišao"
+
+msgid "ADMIN_STATUS_OFFLINE"
+msgstr "Offline"
+
+msgid "ADMIN_STATUS_EMPTY_GROUP"
+msgstr "Nema ništa za prikazati"
+
+msgid "ADMIN_STATUS_EMPTY_STATUS"
+msgstr "Status administratora je prazan"
+
+msgid "ASSIGNER_PANEL_TITLE"
+msgstr "Dodjeljivač grupe"
+
+msgid "ASSIGNER_TITLE"
+msgstr "Dodjeljivač grupe"
+
+msgid "BANS_EMPTY"
+msgstr "Ban lista je prazna"
+
+msgid "BANS_TITLE"
+msgstr "Ban lista"
+
+msgid "BANS_PANEL_TITLE"
+msgstr "Ban lista"
+
+msgid "BANS_BANNED_ALERT_TITLE"
+msgstr "Tvoj IP je banan od {0}"
+
+msgid "BANS_BANNED_ALERT_REASON"
+msgstr "Razlog: {0}"
+
+msgid "BANS_VIEW_MORE_TIP"
+msgstr "Kliknite na redak da biste vidjeli više pojedinosti o banu"
+
+msgid "RULES_TITLE"
+msgstr "Pravila"
+
+msgid "RULES_PANEL_TITLE"
+msgstr "Pravila"
+
+msgid "FAQ_COPY_LINK"
+msgstr "Kopirajte vezu na taj odgovor"
+
+msgid "FAQ_PANEL_TITLE"
+msgstr "FAQ"
+
+msgid "FAQ_TITLE"
+msgstr "FAQ"
+
+msgid "FAQ_COPY_LINK_SUCCESS"
+msgstr "Kopirano!"
+
+msgid "FAQ_COPY_LINK_ERROR"
+msgstr "Greška!"
+
+msgid "HOME_TITLE"
+msgstr "Novosti"
+
+msgid "HOME_PANEL_TITLE"
+msgstr "Novosti"
+
+msgid "HOME_EMPTY"
+msgstr "Vijesti trenutno nisu dostupne"
+
+msgid "HOME_INVALID_PAGE"
+msgstr "Nevažeći broj stranice"
+
+msgid "HOME_PREVIOUS_NEWS"
+msgstr "Prijašnja"
+
+msgid "HOME_NEXT_NEWS"
+msgstr "Sljedeća"
+
+msgid "ADMIN_STATUS_PANEL_TITLE"
+msgstr "Admin status\n"
+
+msgid "ADMIN_STATUS_HIDE_OFFLINE_TIP"
+msgstr "Sakrij offline admine"
+
+msgid "ADMIN_STATUS_SHOW_OFFLINE_TIP"
+msgstr "Prikaži  offline admine"
+
+msgid "ADMIN_STATUS_ERROR"
+msgstr "Pogreška statusa administratora"
+
+msgid "NAV_TOGGLE"
+msgstr "Uključi navigaciju"
+
+msgid "NAV_VIEWER"
+msgstr "Preglednik"
+
+msgid "NAV_ASSIGNER"
+msgstr "dodjeljivač"
+
+msgid "NAV_BANS"
+msgstr "Banovi"
+
+msgid "NAV_RULES"
+msgstr "Pravila"
+
+msgid "NAV_FAQ"
+msgstr "FAQ"
+
+msgid "NAV_ACCOUNT_LOGIN"
+msgstr "Prijava"
+
+msgid "NAV_ACCOUNT_LOGOUT"
+msgstr "Odjavi se"
+
+msgid "VIEWER_TITLE"
+msgstr "Pregled servera"
+
+msgid "VIEWER_PANEL_TITLE"
+msgstr "Pregled servera"
+
+msgid "VIEWER_SHOW_EMPTY"
+msgstr "Prikaži prazne kanale"
+
+msgid "VIEWER_HIDE_EMPTY"
+msgstr "Sakrij prazne kanale"
+
+msgid "VIEWER_TIP_ALERT"
+msgstr "Kliknite kanal da biste mu se pridružili. Zadržite pokazivač iznad korisnika da biste provjerili njihove informacije"
+
+msgid "ARIA_CLOSE"
+msgstr "Zatvori"
+
+msgid "VIEWER_ERROR"
+msgstr "Pogreška preglednika\n"
+
+msgid "VIEWER_CONNECTION_CONFIRMATION"
+msgstr "Želite li se povezati s ovim kanalom?"
+
+msgid "VIEWER_CLIENT_LASTACTIVE"
+msgstr "Posljednja aktivnost:"
+
+msgid "VIEWER_CLIENT_ONLINE"
+msgstr "Vrijeme na mreži:"
+
+msgid "VIEWER_CLIENT_JOINED"
+msgstr "Prvi se pridružio:"
+
+msgid "VIEWER_CLIENT_TITLE"
+msgstr "Informacije o klijentu"
+
+msgid "VIEWER_SERVER_ICON"
+msgstr "Ikona servera"
+
+msgid "VIEWER_DEFAULT_CHANNEL"
+msgstr "Početni kanal"
+
+msgid "VIEWER_CHANNEL_UNSUB1"
+msgstr ", odjavili ste se"
+
+msgid "VIEWER_CHANNEL_OCCUPIED"
+msgstr "Potpuno zauzeta"
+
+msgid "VIEWER_CHANNEL_PASSWORD"
+msgstr "Lozinka zaštićena"
+
+msgid "VIEWER_CHANNEL_UNSUB2"
+msgstr "poništili pretplatu\n"
+
+msgid "VIEWER_CHANNEL_ICON"
+msgstr "Ikona kanala"
+
+msgid "VIEWER_CHANNEL_MODERATED"
+msgstr "Moderirano"
+
+msgid "VIEWER_CHANNEL_MUSIC_CODED"
+msgstr "Glazbeni codec"
+
+msgid "VIEWER_CLIENT_AWAY"
+msgstr "Otišao"
+
+msgid "VIEWER_CLIENT_OUTPUT_DISABLED"
+msgstr "Isključen zvuk"
+
+msgid "VIEWER_CLIENT_OUTPUT_MUTED"
+msgstr "Zaglušena"
+
+msgid "VIEWER_CLIENT_MIC_DISABLED"
+msgstr "Isključen mikrofon"
+
+msgid "VIEWER_CLIENT_MIC_MUTED"
+msgstr "Ušutkan"
+
+msgid "VIEWER_CLIENT_COMMANDER"
+msgstr "Komander kanala"
+
+msgid "VIEWER_CLIENT_ICON"
+msgstr "Ikona korisnika"
+
+msgid "VIEWER_CLIENT_PRIORITY_SPEAKER"
+msgstr "Prioritetni zvučnik"
+
+msgid "VIEWER_CLIENT_TALK_POWER_GRANTED"
+msgstr "Dobio si snagu razgovaranja"
+
+msgid "VIEWER_CLIENT_TALK_POWER_INSUFFICIENT"
+msgstr "Nedovoljna snaga razgovora"
+
+msgid "ASSIGNER_NOT_LOGGED_IN"
+msgstr "Prijavi se prije korištenja dodjeljivača grupe"
+
+msgid "ASSIGNER_LOGIN_BUTTON"
+msgstr "Prijava"
+
+msgid "ASSIGNER_SAVE_BUTTON"
+msgstr "Spremi"
+
+msgid "ASSIGNER_INVALID_GROUPS"
+msgstr "Nevažeće postavke grupe\n"
+
+msgid "ASSIGNER_NOT_CONFIGURED"
+msgstr "Administrator web-lokacije ne konfigurira dodjeljivača grupe"
+
+msgid "ASSIGNER_SAVE_SUCCESS"
+msgstr "Vaše su grupe ažurirane"
+
+msgid "ASSIGNER_SAVE_ERROR"
+msgstr "Pogreška promjene grupe"
+
+msgid "ASSIGNER_SAVE_NO_CHANGE"
+msgstr "Nema promjena"
+
+msgid "IMPRINT_TITLE"
+msgstr "Impresum"

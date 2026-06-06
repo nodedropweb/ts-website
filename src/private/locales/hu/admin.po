@@ -1,0 +1,599 @@
+# TS-Website admin translations -- hu
+# Domain: admin
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: hu\n"
+
+msgid "ADMIN_NAV_BRAND"
+msgstr "TS-Website Admin"
+
+msgid "ADMIN_NAV_NEWS"
+msgstr "Hírek"
+
+msgid "ADMIN_NAV_FAQ"
+msgstr "GYIK"
+
+msgid "ADMIN_NAV_RULES"
+msgstr "Szabályok"
+
+msgid "ADMIN_NAV_ASSIGNER"
+msgstr "Assigner"
+
+msgid "ADMIN_NAV_CONFIG"
+msgstr "Konfiguráció"
+
+msgid "ADMIN_NAV_GOTO_WEBSITE"
+msgstr "Webhelyre lépés"
+
+msgid "ADMIN_BTN_SAVE"
+msgstr "Mentés"
+
+msgid "ADMIN_BTN_SAVE_ALL"
+msgstr "Összes beállítás mentése"
+
+msgid "ADMIN_BTN_BACK"
+msgstr "Vissza"
+
+msgid "ADMIN_BTN_BACK_TO_CONFIG"
+msgstr "Vissza a konfigurációhoz"
+
+msgid "ADMIN_BTN_CANCEL"
+msgstr "Mégsem"
+
+msgid "ADMIN_BTN_ADD"
+msgstr "Hozzáadás"
+
+msgid "ADMIN_BTN_REMOVE"
+msgstr "Eltávolítás"
+
+msgid "ADMIN_ENABLED"
+msgstr "Engedélyezve"
+
+msgid "ADMIN_TABLE_ID"
+msgstr "ID"
+
+msgid "ADMIN_TABLE_TITLE"
+msgstr "Cím"
+
+msgid "ADMIN_TABLE_CREATED"
+msgstr "Létrehozva"
+
+msgid "ADMIN_TABLE_EDITED"
+msgstr "Szerkesztve"
+
+msgid "ADMIN_TABLE_QUESTION"
+msgstr "Kérdés"
+
+msgid "ADMIN_TABLE_LAST_MODIFIED"
+msgstr "Utolsó módosítás"
+
+msgid "ADMIN_TABLE_ACTIONS"
+msgstr "Műveletek"
+
+msgid "ADMIN_NO_GROUPS_AVAILABLE"
+msgstr "Nincsenek elérhető szervercsoport."
+
+msgid "ADMIN_403_TITLE"
+msgstr "Hozzáférés megtagadva — Admin"
+
+msgid "ADMIN_403_TEXT"
+msgstr "Nincs hozzáférés. Nem vagy regisztrálva adminisztrátorként."
+
+msgid "ADMIN_403_HINT"
+msgstr "Először jelentkezz be a főwebhelyen TeamSpeak segítségével, majd kérj egy admint, hogy adja hozzá a cldbid-det az admin_cldbids-hoz."
+
+msgid "ADMIN_403_BTN"
+msgstr "Vissza a főoldalra"
+
+msgid "ADMIN_SETUP_TITLE"
+msgstr "Admin panel — Kezdeti beállítás"
+
+msgid "ADMIN_SETUP_NO_ADMIN"
+msgstr "Még nincs regisztrált adminisztrátor. Add meg a cldbid-det az admin panel eléréséhez."
+
+msgid "ADMIN_SETUP_CLDBID_LABEL"
+msgstr "A te cldbid-ed"
+
+msgid "ADMIN_SETUP_CLDBID_HINT"
+msgstr "Látható TS3 bejelentkezés után a főoldalon, vagy válassz az alábbi listából."
+
+msgid "ADMIN_SETUP_ONLINE_LABEL"
+msgstr "Jelenleg online"
+
+msgid "ADMIN_SETUP_BTN_REGISTER"
+msgstr "Regisztráció első adminisztrátorként"
+
+msgid "ADMIN_SETUP_BTN_GOTO"
+msgstr "Ugrás az admin panelre"
+
+msgid "ADMIN_SETUP_SUCCESS"
+msgstr "A cldbid {0} az első adminisztrátorként regisztrálva. Ez az oldal most zárolva van."
+
+msgid "ADMIN_SETUP_ERR_INVALID"
+msgstr "Kérjük, adj meg érvényes cldbid-t (pozitív egész szám)."
+
+msgid "ADMIN_NEWS_TITLE"
+msgstr "Hírek"
+
+msgid "ADMIN_NEWS_NEW_BTN"
+msgstr "Új cikk"
+
+msgid "ADMIN_NEWS_EMPTY"
+msgstr "Nincsenek elérhető hírek."
+
+msgid "ADMIN_NEWS_CONFIRM_DELETE"
+msgstr "Törli ezt a cikket?"
+
+msgid "ADMIN_NEWS_EDIT_TITLE"
+msgstr "Hír szerkesztése"
+
+msgid "ADMIN_NEWS_NEW_TITLE"
+msgstr "Új cikk"
+
+msgid "ADMIN_NEWS_FORM_TITLE"
+msgstr "Cím"
+
+msgid "ADMIN_NEWS_FORM_CONTENT"
+msgstr "Tartalom"
+
+msgid "ADMIN_FAQ_TITLE"
+msgstr "GYIK"
+
+msgid "ADMIN_FAQ_NEW_BTN"
+msgstr "Új GYIK-bejegyzés"
+
+msgid "ADMIN_FAQ_EMPTY"
+msgstr "Nincsenek GYIK-bejegyzések."
+
+msgid "ADMIN_FAQ_CONFIRM_DELETE"
+msgstr "Törli ezt a GYIK-bejegyzést?"
+
+msgid "ADMIN_FAQ_EDIT_TITLE"
+msgstr "GYIK-bejegyzés szerkesztése"
+
+msgid "ADMIN_FAQ_NEW_TITLE"
+msgstr "Új GYIK-bejegyzés"
+
+msgid "ADMIN_FAQ_FORM_QUESTION"
+msgstr "Kérdés"
+
+msgid "ADMIN_FAQ_FORM_ANSWER"
+msgstr "Válasz"
+
+msgid "ADMIN_RULES_TITLE"
+msgstr "Szerver szabályok"
+
+msgid "ADMIN_RULES_FORM_CONTENT"
+msgstr "Tartalom"
+
+msgid "ADMIN_IMPRINT_TITLE"
+msgstr "Impresszum"
+
+msgid "ADMIN_ASSIGNER_TITLE"
+msgstr "Assigner konfiguráció"
+
+msgid "ADMIN_ASSIGNER_NO_GROUPS_WARNING"
+msgstr "Nem találhatók szervercsoport. Győződj meg arról, hogy a TS3-szerver csatlakozva van."
+
+msgid "ADMIN_ASSIGNER_DESCRIPTION"
+msgstr "Határozz meg kategóriákat a csoportkiosztáshoz. Minden kategóriának van neve, ikonja, maximális választható csoportja és megfelelő szervercsoport."
+
+msgid "ADMIN_ASSIGNER_GENERAL"
+msgstr "Általános beállítások"
+
+msgid "ADMIN_ASSIGNER_COOLDOWN_LABEL"
+msgstr "Visszatöltési idő (másodperc)"
+
+msgid "ADMIN_ASSIGNER_COOLDOWN_HINT"
+msgstr "Mennyi ideig kell várnia a felhasználónak a csoportjának ismételt megváltoztatása előtt. 0 = nincs várakozás."
+
+msgid "ADMIN_ASSIGNER_REQUIRED_GROUPS_LABEL"
+msgstr "Szükséges szervercsoport"
+
+msgid "ADMIN_ASSIGNER_REQUIRED_GROUPS_HINT"
+msgstr "Csak ezen csoportok tagjai használhatják az Assignert. Üres = mindenki."
+
+msgid "ADMIN_ASSIGNER_ADD_CATEGORY"
+msgstr "Kategória hozzáadása"
+
+msgid "ADMIN_ASSIGNER_SAVED"
+msgstr "Assigner konfiguráció mentve."
+
+msgid "ADMIN_ASSIGNER_JS_MOVE_UP"
+msgstr "Fel"
+
+msgid "ADMIN_ASSIGNER_JS_MOVE_DOWN"
+msgstr "Le"
+
+msgid "ADMIN_ASSIGNER_JS_NEW_CATEGORY"
+msgstr "Új kategória"
+
+msgid "ADMIN_ASSIGNER_JS_NAME_LABEL"
+msgstr "Név"
+
+msgid "ADMIN_ASSIGNER_JS_NAME_PLACEHOLDER"
+msgstr "pl. Ország, Játék, Hobbi"
+
+msgid "ADMIN_ASSIGNER_JS_MAX_LABEL"
+msgstr "Max. kiválasztás"
+
+msgid "ADMIN_ASSIGNER_JS_ICON_LABEL"
+msgstr "Ikon"
+
+msgid "ADMIN_ASSIGNER_JS_GROUPS_LABEL"
+msgstr "Szervercsoport ebben a kategóriában"
+
+msgid "ADMIN_ASSIGNER_JS_NO_GROUPS"
+msgstr "Nincsenek elérhető szervercsoport."
+
+msgid "ADMIN_ASSIGNER_JS_SAVE_ERROR"
+msgstr "Mentési hiba."
+
+msgid "ADMIN_CONFIG_TITLE"
+msgstr "Konfiguráció"
+
+msgid "ADMIN_CONFIG_SECTION_ADMINSTATUS"
+msgstr "Admin státusz widget"
+
+msgid "ADMIN_CONFIG_SECTION_ASSIGNER"
+msgstr "Csoportkiosztás"
+
+msgid "ADMIN_CONFIG_SECTION_CACHE"
+msgstr "Gyorsítótár idők"
+
+msgid "ADMIN_CONFIG_SECTION_GENERAL"
+msgstr "Általános"
+
+msgid "ADMIN_CONFIG_SECTION_IMPRINT"
+msgstr "Impresszum"
+
+msgid "ADMIN_CONFIG_SECTION_ONLINERECORD"
+msgstr "Online rekord"
+
+msgid "ADMIN_CONFIG_SECTION_VIEWER"
+msgstr "Csatornakezelő"
+
+msgid "ADMIN_CONFIG_SECTION_QUERY"
+msgstr "TeamSpeak Query"
+
+msgid "ADMIN_CONFIG_SECTION_ADMIN"
+msgstr "Admin panel"
+
+msgid "ADMIN_CONFIG_BTN_ADMINSTATUS"
+msgstr "Admin státusz widget konfigurálása"
+
+msgid "ADMIN_CONFIG_BTN_ASSIGNER"
+msgstr "Csoportkiosztás konfigurálása"
+
+msgid "ADMIN_CONFIG_BTN_CACHE"
+msgstr "Gyorsítótár idők konfigurálása"
+
+msgid "ADMIN_CONFIG_BTN_GENERAL"
+msgstr "Általános beállítások szerkesztése"
+
+msgid "ADMIN_CONFIG_BTN_IMPRINT"
+msgstr "Impresszum szerkesztése"
+
+msgid "ADMIN_CONFIG_BTN_ONLINERECORD"
+msgstr "Online rekord szerkesztése"
+
+msgid "ADMIN_CONFIG_BTN_VIEWER"
+msgstr "Csatornakezelő konfigurálása"
+
+msgid "ADMIN_CONFIG_BTN_QUERY"
+msgstr "TeamSpeak kapcsolat konfigurálása"
+
+msgid "ADMIN_CONFIG_BTN_ADMINS"
+msgstr "Admin hozzáférés kezelése"
+
+msgid "ADMIN_CONFIG_EDIT_IN_ASSIGNER"
+msgstr "Szerkesztés az Assigner szerkesztőben"
+
+msgid "ADMIN_CONFIG_MANAGED_IN_ASSIGNER"
+msgstr "Az Assigner szerkesztőben kezelve."
+
+msgid "ADMIN_CONFIG_WHO_HAS_ACCESS"
+msgstr "Ki férhet hozzá ehhez az admin panelhez?"
+
+msgid "ADMIN_GENERAL_TITLE"
+msgstr "Általános beállítások"
+
+msgid "ADMIN_GENERAL_FIELD_WEBSITE_TITLE_LABEL"
+msgstr "TS-szerver neve (megjelenítés)"
+
+msgid "ADMIN_GENERAL_FIELD_WEBSITE_TITLE_HINT"
+msgstr "Felülírja az IP-címet az oldalsávban és a bejelentkezési párbeszédablakban. A böngészőlapon és a láblécben is megjelenik. Üres = IP jelenik meg."
+
+msgid "ADMIN_GENERAL_FIELD_NAV_BRAND_LABEL"
+msgstr "Webhely cím (Navbar)"
+
+msgid "ADMIN_GENERAL_FIELD_NAV_BRAND_HINT"
+msgstr "A navigáció bal felső sarkában lévő embléma szövege."
+
+msgid "ADMIN_GENERAL_FIELD_BASEURL_LABEL"
+msgstr "Alap URL"
+
+msgid "ADMIN_GENERAL_FIELD_BASEURL_HINT"
+msgstr "A webhely teljes URL-je, pl. https://example.com"
+
+msgid "ADMIN_GENERAL_FIELD_LOGINPOKE_LABEL"
+msgstr "Bejelentkezés: Poke kliens"
+
+msgid "ADMIN_GENERAL_FIELD_LOGINPOKE_HINT"
+msgstr "Poke küldése a TS-kliensnek bejelentkezési kísérlet során"
+
+msgid "ADMIN_GENERAL_FIELD_TIMEZONE_LABEL"
+msgstr "Időzóna"
+
+msgid "ADMIN_GENERAL_FIELD_TIMEZONE_HINT"
+msgstr "PHP időzóna, pl. Europe/Budapest"
+
+msgid "ADMIN_GENERAL_FIELD_CLOUDFLARE_LABEL"
+msgstr "Cloudflare aktív"
+
+msgid "ADMIN_GENERAL_FIELD_CLOUDFLARE_HINT"
+msgstr "Engedélyezd, ha a webhely Cloudflare mögött van"
+
+msgid "ADMIN_GENERAL_SAVED"
+msgstr "Beállítások mentve."
+
+msgid "ADMIN_ADMINS_TITLE"
+msgstr "Admin hozzáférés"
+
+msgid "ADMIN_ADMINS_CURRENT"
+msgstr "Jelenlegi adminok"
+
+msgid "ADMIN_ADMINS_TABLE_CLDBID"
+msgstr "Kliens adatbázis ID"
+
+msgid "ADMIN_ADMINS_TABLE_ACTION"
+msgstr "Művelet"
+
+msgid "ADMIN_ADMINS_YOU_BADGE"
+msgstr "Te"
+
+msgid "ADMIN_ADMINS_CONFIRM_REMOVE"
+msgstr "Eltávolítja az adminisztrátor?"
+
+msgid "ADMIN_ADMINS_CANNOT_REMOVE_SELF"
+msgstr "Nem távolíthatod el magadat."
+
+msgid "ADMIN_ADMINS_ADD_TITLE"
+msgstr "Admin hozzáadása"
+
+msgid "ADMIN_ADMINS_CLDBID_LABEL"
+msgstr "Kliens adatbázis ID"
+
+msgid "ADMIN_ADMINS_ONLINE_LABEL"
+msgstr "Jelenleg online (válassz a listából)"
+
+msgid "ADMIN_ADMINS_ADDED"
+msgstr "Admin hozzáadva."
+
+msgid "ADMIN_ADMINS_REMOVED"
+msgstr "Admin eltávolítva."
+
+msgid "ADMIN_ADMINSTATUS_TITLE"
+msgstr "Admin státusz widget"
+
+msgid "ADMIN_ADMINSTATUS_SECTION_GENERAL"
+msgstr "Általános"
+
+msgid "ADMIN_ADMINSTATUS_WIDGET_ENABLED_LABEL"
+msgstr "Widget engedélyezve"
+
+msgid "ADMIN_ADMINSTATUS_HIDE_OFFLINE_LABEL"
+msgstr "Offline felhasználók elrejtése"
+
+msgid "ADMIN_ADMINSTATUS_HIDE_OFFLINE_HINT"
+msgstr "Az offline felhasználók teljesen elrejtve."
+
+msgid "ADMIN_ADMINSTATUS_OFFLINE_COLLAPSED_LABEL"
+msgstr "Offline alapértelmezés szerint összecsukva"
+
+msgid "ADMIN_ADMINSTATUS_OFFLINE_COLLAPSED_HINT"
+msgstr "Az offline bejegyzések a widgetben csak kattintás után láthatók."
+
+msgid "ADMIN_ADMINSTATUS_DISPLAY_MODE_LABEL"
+msgstr "Megjelenítési mód"
+
+msgid "ADMIN_ADMINSTATUS_MODE_1"
+msgstr "Csoportosított"
+
+msgid "ADMIN_ADMINSTATUS_MODE_2"
+msgstr "Csoportosított (üres csoportok elrejtése)"
+
+msgid "ADMIN_ADMINSTATUS_MODE_3"
+msgstr "Lista"
+
+msgid "ADMIN_ADMINSTATUS_MODE_4"
+msgstr "Lista (online először)"
+
+msgid "ADMIN_ADMINSTATUS_SECTION_GROUPS"
+msgstr "Megjelenítendő szervercsoport"
+
+msgid "ADMIN_ADMINSTATUS_NO_GROUPS"
+msgstr "Nincsenek szervercsoport — ellenőrizd a TS-kapcsolatot."
+
+msgid "ADMIN_ADMINSTATUS_SECTION_IGNORED"
+msgstr "Figyelmen kívül hagyott felhasználók"
+
+msgid "ADMIN_ADMINSTATUS_IGNORED_HINT"
+msgstr "A kiválasztott csoportok felhasználói. A bejelöltek nem jelennek meg a widgetben."
+
+msgid "ADMIN_ADMINSTATUS_NO_GROUPS_SELECTED"
+msgstr "Először válassz szervercsoport és mentsd."
+
+msgid "ADMIN_ADMINSTATUS_NO_CACHE"
+msgstr "Még nincs gyorsítótár — várj egy pillanatot és töltsd újra az oldalt."
+
+msgid "ADMIN_ADMINSTATUS_CURRENTLY_IGNORED"
+msgstr "Jelenleg figyelmen kívül hagyott DBID-k:"
+
+msgid "ADMIN_ADMINSTATUS_SAVED"
+msgstr "Admin státusz mentve."
+
+msgid "ADMIN_CACHE_TITLE"
+msgstr "Gyorsítótár idők"
+
+msgid "ADMIN_CACHE_HINT"
+msgstr "Minden érték másodpercben. Alacsonyabb = aktuálisabb adatok, de nagyobb terhelés a TS-szerveren."
+
+msgid "ADMIN_CACHE_SERVERINFO_LABEL"
+msgstr "Szerver info"
+
+msgid "ADMIN_CACHE_SERVERINFO_HINT"
+msgstr "Általános TS-szerver információk (név, helyek, ...)"
+
+msgid "ADMIN_CACHE_CLIENTLIST_LABEL"
+msgstr "Kliensek listája"
+
+msgid "ADMIN_CACHE_CLIENTLIST_HINT"
+msgstr "Online játékosok listája — tartsd rövidre a bejelentkezési állapot naprakészen tartásához"
+
+msgid "ADMIN_CACHE_CHANNELLIST_LABEL"
+msgstr "Csatornák listája"
+
+msgid "ADMIN_CACHE_CHANNELLIST_HINT"
+msgstr "Csatornakezelő"
+
+msgid "ADMIN_CACHE_SERVERGROUPS_LABEL"
+msgstr "Szervercsoport"
+
+msgid "ADMIN_CACHE_SERVERGROUPS_HINT"
+msgstr "Az összes szervercsoport listája"
+
+msgid "ADMIN_CACHE_CHANNELGROUPS_LABEL"
+msgstr "Csatornacsoportok"
+
+msgid "ADMIN_CACHE_CHANNELGROUPS_HINT"
+msgstr "Az összes csatornacsoport listája"
+
+msgid "ADMIN_CACHE_BANLIST_LABEL"
+msgstr "Tiltólista"
+
+msgid "ADMIN_CACHE_BANLIST_HINT"
+msgstr "Tiltott felhasználók"
+
+msgid "ADMIN_CACHE_ADMINSTATUS_LABEL"
+msgstr "Admin státusz"
+
+msgid "ADMIN_CACHE_ADMINSTATUS_HINT"
+msgstr "Az admin csoportok tagjai a státusz widgethez"
+
+msgid "ADMIN_CACHE_SERVERICONS_LABEL"
+msgstr "Szerver ikonok"
+
+msgid "ADMIN_CACHE_SERVERICONS_HINT"
+msgstr "Ikon adatok a TS-szerverről"
+
+msgid "ADMIN_CACHE_LANGUAGES_LABEL"
+msgstr "Nyelvek"
+
+msgid "ADMIN_CACHE_LANGUAGES_HINT"
+msgstr "Nyelvfájlok az adatbázisból"
+
+msgid "ADMIN_CACHE_LOGINCODE_LABEL"
+msgstr "Bejelentkezési kód"
+
+msgid "ADMIN_CACHE_LOGINCODE_HINT"
+msgstr "Ideiglenes bejelentkezési kódok"
+
+msgid "ADMIN_CACHE_SAVED"
+msgstr "Gyorsítótár idők mentve."
+
+msgid "ADMIN_ONLINERECORD_TITLE"
+msgstr "Online rekord"
+
+msgid "ADMIN_ONLINERECORD_VALUE_LABEL"
+msgstr "Rekord (játékosok száma)"
+
+msgid "ADMIN_ONLINERECORD_DATE_LABEL"
+msgstr "Dátum és idő"
+
+msgid "ADMIN_ONLINERECORD_DATE_HINT"
+msgstr "Automatikusan felülírva, ha új rekord érkezik."
+
+msgid "ADMIN_ONLINERECORD_SAVED"
+msgstr "Online rekord mentve."
+
+msgid "ADMIN_VIEWER_TITLE"
+msgstr "Csatornakezelő"
+
+msgid "ADMIN_VIEWER_SECTION"
+msgstr "Rejtett csatornák"
+
+msgid "ADMIN_VIEWER_HINT"
+msgstr "Bejelölve = csatorna rejtett a webhelyen. A jelszóval védett csatornák automatikusan eltűnnek."
+
+msgid "ADMIN_VIEWER_NO_CHANNELS"
+msgstr "Nincsenek elérhető csatornák — ellenőrizd a TS-kapcsolatot."
+
+msgid "ADMIN_VIEWER_HIDDEN_BADGE"
+msgstr "rejtett"
+
+msgid "ADMIN_VIEWER_SAVED"
+msgstr "Csatornakezelő mentve."
+
+msgid "ADMIN_QUERY_TITLE"
+msgstr "TeamSpeak kapcsolat"
+
+msgid "ADMIN_QUERY_WARNING_TITLE"
+msgstr "Figyelmeztetés"
+
+msgid "ADMIN_QUERY_WARNING_TEXT"
+msgstr "Valóban szerkeszteni szeretnéd ezeket a beállításokat? Ha nem tudod mit csinálsz, megszakíthatod a TeamSpeak-szerverrel való kapcsolatot."
+
+msgid "ADMIN_QUERY_WARNING_CONFIRM"
+msgstr "Igen, tudom mit csinálok"
+
+msgid "ADMIN_QUERY_SECTION"
+msgstr "TeamSpeak kapcsolati beállítások"
+
+msgid "ADMIN_QUERY_HOSTNAME_LABEL"
+msgstr "Szerver cím"
+
+msgid "ADMIN_QUERY_HOSTNAME_HINT"
+msgstr "A TeamSpeak-szerver IP-je vagy hosztneve (pl. 127.0.0.1)"
+
+msgid "ADMIN_QUERY_PORT_LABEL"
+msgstr "ServerQuery port"
+
+msgid "ADMIN_QUERY_PORT_HINT"
+msgstr "Alapértelmezett: 10011"
+
+msgid "ADMIN_QUERY_USERNAME_LABEL"
+msgstr "ServerQuery felhasználónév"
+
+msgid "ADMIN_QUERY_USERNAME_HINT"
+msgstr "A webhelyhez létrehozott query fiók"
+
+msgid "ADMIN_QUERY_PASSWORD_LABEL"
+msgstr "ServerQuery jelszó"
+
+msgid "ADMIN_QUERY_PASSWORD_HINT"
+msgstr "A query fiók jelszava"
+
+msgid "ADMIN_QUERY_NICKNAME_LABEL"
+msgstr "Megjelenített név a Query-ban"
+
+msgid "ADMIN_QUERY_NICKNAME_HINT"
+msgstr "A webhely query-be való bejelentkezésekor megjelenített név"
+
+msgid "ADMIN_QUERY_DISPLAYIP_LABEL"
+msgstr "Nyilvános szerver IP"
+
+msgid "ADMIN_QUERY_DISPLAYIP_HINT"
+msgstr "IP ts3server:// linkként a csatornakezelőben"
+
+msgid "ADMIN_QUERY_VOICEPORT_LABEL"
+msgstr "TeamSpeak hangport"
+
+msgid "ADMIN_QUERY_VOICEPORT_HINT"
+msgstr "Port, amelyhez a kliensek csatlakoznak (alapértelmezett: 9987)"
+
+msgid "ADMIN_QUERY_SAVED"
+msgstr "Kapcsolati beállítások mentve."
+
