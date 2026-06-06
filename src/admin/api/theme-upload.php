@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../../_auth.php';
+require_once __DIR__ . '/../_auth.php';
 requireAdmin();
 
 header('Content-Type: application/json');
