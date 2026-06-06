@@ -62,7 +62,21 @@ Dieser Fork ([nodedropweb/ts-website](https://github.com/nodedropweb)) ändert d
 - **DSGVO-konformes Asset-Hosting** — alle JavaScript- und CSS-Bibliotheken werden lokal bereitgestellt; es werden keine externen CDN-Anfragen an Drittanbieter gesendet
 - **Zweisprachiges CLI** — das Einrichtungswerkzeug funktioniert auf Englisch und Deutsch
 
+Dieser Fork bringt außerdem eine **gepatchte Version des TeamSpeak-3-PHP-Frameworks** mit ([nodedropweb/ts3phpframework](https://github.com/nodedropweb/ts3phpframework)), geforkt von der [originalen PlanetTeamSpeak-Bibliothek](https://github.com/planetteamspeak/ts3-php-framework). Die Originalbibliothek hatte mehrere Probleme, die auf PHP 8.4 zu Abstürzen und Speicherüberlauffehlern führten — all das wurde in unserem Fork behoben (siehe unten).
+
 Wer das originale ts-website bereits kennt und liebt: Dieser Fork ist eine direkte Erweiterung davon. Alles, was vorher funktioniert hat, funktioniert weiterhin.
+
+#### PHP-8.4-Fixes im TeamSpeak-Framework-Fork
+
+Die originale `planetteamspeak/ts3-php-framework`-Bibliothek hatte sich im Laufe der Zeit mehrere PHP-8.x-Inkompatibilitäten angesammelt. Das sind die Änderungen im nodedropweb-Fork:
+
+| Problem | Fix |
+|---|---|
+| **Speicherüberlauf in `StringHelper::split()`** — die Methode verwendete die eigene Zeichenanzahl des Strings als `explode()`-Limit, was beim Verarbeiten binärer TeamSpeak-Protokolldaten riesige Array-Allokationen verursachte | Behoben: Limit wird nur übergeben, wenn es explizit angegeben wurde; sonst wird `explode()` ohne Limit aufgerufen |
+| **Speicherüberlauf in `StringHelper::toUtf8()`** — die Methode übergab alle 100+ Encodings aus `mb_list_encodings()` an `mb_convert_encoding()`, was PHP zwang, jedes Encoding der Reihe nach zu prüfen | Behoben: zuerst `mb_detect_encoding()` verwenden und nur konvertieren, wenn das erkannte Encoding nicht bereits UTF-8 ist |
+| **PHP-8.4-Deprecation-Fehler — implizit nullable Parameter** — Dutzende Methoden in `Uri.php`, `Server.php`, `Host.php` u. a. deklarierten `Type $param = null` ohne die erforderliche `?Type`-Syntax | Alle betroffenen Signaturen auf explizite Nullable-Typen (`?Type`) oder Union-Typen (`Type\|null`) aktualisiert |
+| **`TCP.php`-Absturz bei offline TeamSpeak-Server** — `stream_socket_client()` gibt `false` zurück, wenn der Server nicht erreichbar ist; der Code ließ `$this->stream` als `false` statt `null` stehen, was `fwrite(false, ...)` im Destruktor zum Absturz brachte | Behoben: `$this->stream = null` bei Verbindungsfehler setzen und `send()` gegen Nicht-Ressource-Streams absichern |
+| **Namespace-Migration** — die Originalbibliothek verwendete die alte `TeamSpeak3_*`-Klassenbenennungskonvention, inkompatibel mit PHP-8-Autoloading-Standards | Alle Klassen in den Namespace `PlanetTeamSpeak\TeamSpeak3Framework\*` migriert; abwärtskompatible Aliase vorhanden |
 
 ---
 
