@@ -9,7 +9,13 @@ use Wruczek\TSWebsite\Utils\TeamSpeakUtils;
 class Assigner {
 
     public static function getAssignerConfig(): array {
-        return Config::get("assignerconfig");
+        $val = Config::get("assignerconfig");
+        if (is_array($val)) return $val;
+        if (is_string($val) && $val !== '') {
+            $decoded = json_decode($val, true);
+            return is_array($decoded) ? $decoded : [];
+        }
+        return [];
     }
 
     public static function getAssignerArray(): array {
@@ -136,7 +142,13 @@ class Assigner {
     }
 
     public static function getRequiredSgids(): array {
-        return Config::get("assigner_required_sgids");
+        $val = Config::get("assigner_required_sgids");
+        if (is_array($val)) return $val;
+        if (is_string($val) && $val !== '') {
+            $decoded = json_decode($val, true);
+            return is_array($decoded) ? $decoded : [];
+        }
+        return [];
     }
 
     public static function canUseAssigner(): bool {
