@@ -4,10 +4,12 @@ requireAdmin();
 require_once __DIR__ . '/_layout.php';
 
 $themes = [
-    'acrylic'         => ['label' => 'Acrylic',         'color' => 'linear-gradient(135deg,#7c83f5,#a78bfa)'],
-    'acrylic-midnight'=> ['label' => 'Acrylic Midnight', 'color' => 'linear-gradient(135deg,#0d1b3e,#4fc3f7)'],
-    'acrylic-ember'   => ['label' => 'Acrylic Ember',    'color' => 'linear-gradient(135deg,#3a0800,#ff7043)'],
-    'acrylic-forest'  => ['label' => 'Acrylic Forest',   'color' => 'linear-gradient(135deg,#051a0e,#4caf78)'],
+    'dark'            => ['label' => 'Dark',             'color' => '#1e202f',                                 'fallback' => false],
+    'light'           => ['label' => 'Light',            'color' => 'linear-gradient(135deg,#e8edf5,#5c6bc0)', 'fallback' => true],
+    'acrylic'         => ['label' => 'Acrylic',          'color' => 'linear-gradient(135deg,#7c83f5,#a78bfa)', 'fallback' => true],
+    'acrylic-midnight'=> ['label' => 'Acrylic Midnight', 'color' => 'linear-gradient(135deg,#0d1b3e,#4fc3f7)', 'fallback' => true],
+    'acrylic-ember'   => ['label' => 'Acrylic Ember',    'color' => 'linear-gradient(135deg,#3a0800,#ff7043)', 'fallback' => true],
+    'acrylic-forest'  => ['label' => 'Acrylic Forest',   'color' => 'linear-gradient(135deg,#051a0e,#4caf78)', 'fallback' => true],
 ];
 
 $imgDir   = __DIR__ . '/../img/themes/';
@@ -26,8 +28,10 @@ adminHeader('Theme Backgrounds', 'themes');
             <strong><?= htmlspecialchars($meta['label']) ?></strong>
             <?php if ($hasImg): ?>
                 <span class="badge badge-success ml-auto">Custom image</span>
-            <?php else: ?>
+            <?php elseif ($meta['fallback']): ?>
                 <span class="badge badge-secondary ml-auto">Picsum fallback</span>
+            <?php else: ?>
+                <span class="badge badge-dark ml-auto">Custom only</span>
             <?php endif; ?>
         </div>
 
@@ -35,7 +39,7 @@ adminHeader('Theme Backgrounds', 'themes');
         <div class="card-img-top" style="height:160px;background:url('<?= htmlspecialchars($imgBase . 'bg-' . $key . '.jpg') ?>?v=<?= filemtime($imgFile) ?>') center/cover no-repeat;border-bottom:1px solid rgba(0,0,0,.1)"></div>
         <?php else: ?>
         <div class="card-img-top d-flex align-items-center justify-content-center" style="height:160px;background:#1a1a2a;color:#666;font-size:.85rem;border-bottom:1px solid rgba(0,0,0,.1)">
-            <i class="fas fa-image mr-2"></i> No custom image &mdash; using Picsum
+            <i class="fas fa-image mr-2"></i> <?= $meta['fallback'] ? 'No custom image &mdash; using Picsum' : 'No custom image &mdash; solid background' ?>
         </div>
         <?php endif; ?>
 

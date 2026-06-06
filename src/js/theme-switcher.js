@@ -1,6 +1,6 @@
 (function () {
     var THEMES = ['dark', 'light', 'acrylic', 'acrylic-midnight', 'acrylic-ember', 'acrylic-forest'];
-    var ACRYLIC_THEMES = ['acrylic', 'acrylic-midnight', 'acrylic-ember', 'acrylic-forest'];
+    var ACRYLIC_THEMES = ['dark', 'light', 'acrylic', 'acrylic-midnight', 'acrylic-ember', 'acrylic-forest'];
     var DEFAULT = 'dark';
     var COOKIE_KEY = 'tswebsite_theme';
 

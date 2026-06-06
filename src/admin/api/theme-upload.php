@@ -4,7 +4,7 @@ requireAdmin();
 
 header('Content-Type: application/json');
 
-$allowed = ['acrylic', 'acrylic-midnight', 'acrylic-ember', 'acrylic-forest'];
+$allowed = ['dark', 'light', 'acrylic', 'acrylic-midnight', 'acrylic-ember', 'acrylic-forest'];
 $theme = $_POST['theme'] ?? '';
 
 if (!in_array($theme, $allowed, true)) {

@@ -2,7 +2,7 @@
 header('Content-Type: application/json');
 header('Cache-Control: public, max-age=60');
 
-$themes = ['acrylic', 'acrylic-midnight', 'acrylic-ember', 'acrylic-forest'];
+$themes = ['dark', 'light', 'acrylic', 'acrylic-midnight', 'acrylic-ember', 'acrylic-forest'];
 $result = [];
 
 foreach ($themes as $theme) {
