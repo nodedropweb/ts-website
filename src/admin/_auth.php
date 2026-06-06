@@ -15,6 +15,16 @@ require_once __DIR__ . "/../private/php/load.php";
 
 use Wruczek\TSWebsite\Auth;
 use Wruczek\TSWebsite\Config;
+use Wruczek\TSWebsite\I18n;
+
+// __a() may not be available when _auth.php is included directly
+// by API endpoints that don't load _layout.php (e.g. theme-upload.php).
+// Define it here as a fallback so _403.php can always call it safely.
+if (!function_exists('__a')) {
+    function __a(string $msgid, array $args = []): string {
+        return I18n::t($msgid, 'admin', $args);
+    }
+}
 
 function isAdmin(): bool {
     if (!Auth::isLoggedIn()) {
