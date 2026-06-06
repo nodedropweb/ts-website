@@ -24,6 +24,7 @@
    - 4.5 [Group Assigner](#45-group-assigner)
    - 4.6 [Logging In](#46-logging-in)
    - 4.7 [Changing the Language](#47-changing-the-language)
+   - 4.8 [Switching the Theme](#48-switching-the-theme)
 5. [The Admin Panel](#5-the-admin-panel)
    - 5.1 [Accessing the Admin Panel](#51-accessing-the-admin-panel)
    - 5.2 [News](#52-news)
@@ -32,6 +33,7 @@
    - 5.5 [Group Assigner Settings](#55-group-assigner-settings)
    - 5.6 [Imprint / Legal Notice](#56-imprint--legal-notice)
    - 5.7 [Website Configuration](#57-website-configuration)
+   - 5.8 [Theme Background Images](#58-theme-background-images)
 6. [Troubleshooting](#6-troubleshooting)
 7. [Security Notes](#7-security-notes)
 
@@ -309,6 +311,31 @@ The website supports **24 languages**, including English, German, French, Spanis
 
 ---
 
+### 4.8 Switching the Theme
+
+ts-website ships with **six visual themes** that any visitor can switch between at any time. The chosen theme is saved in a cookie and persists across page reloads and browser restarts.
+
+**To change the theme:**
+
+1. Click the **palette icon** (🎨) in the navigation bar — it sits between the login button and the language selector
+2. A dropdown appears with all available themes
+3. Click any theme name to apply it instantly — no page reload required
+
+**Available themes:**
+
+| Theme | Description |
+|---|---|
+| **Dark** | The classic dark purple/pink look — the default |
+| **Light** | Clean light layout with indigo accents |
+| **Acrylic** | Frosted-glass panels over a Picsum background image — violet/purple tint |
+| **Acrylic Midnight** | Same frosted-glass effect — deep blue/cyan tint |
+| **Acrylic Ember** | Frosted glass — warm orange/amber tint |
+| **Acrylic Forest** | Frosted glass — cool green/emerald tint |
+
+The four **Acrylic** themes use a photographic background image (random landscape from [picsum.photos](https://picsum.photos)) with a semi-transparent blur on all panels. If a server admin has uploaded a custom background image for a theme (see [Section 5.8](#58-theme-background-images)), that image is used instead of the Picsum fallback.
+
+---
+
 ## 5. The Admin Panel
 
 ### 5.1 Accessing the Admin Panel
@@ -429,6 +456,34 @@ Common settings include:
 | **Cookie notice** | Enable or disable the GDPR cookie consent banner |
 
 After changing any setting, click **Save**. Most changes take effect immediately; if something does not update, try clearing the cache with `php tsw.phar clear-cache`.
+
+---
+
+### 5.8 Theme Background Images
+
+The four **Acrylic** themes each support a custom background image that replaces the default Picsum photo. This is managed in the **Themes** section of the admin panel.
+
+**To upload a custom background:**
+
+1. Open the admin panel and click **Themes** in the navigation bar
+2. You will see four cards — one for each Acrylic theme variant
+3. Each card shows the current background (or a placeholder if none has been uploaded yet)
+4. Click **Browse** (or **Choose image…**) on the card for the theme you want to update
+5. Select a JPEG, PNG, or WebP image from your computer (maximum 8 MB)
+6. Click **Upload**
+7. The image is automatically scaled to a maximum width of 1920 pixels and saved as JPEG on the server
+8. The page reloads and shows a preview of the uploaded image
+
+**Badge indicators:**
+
+- **Custom image** (green) — a custom image has been uploaded for this theme
+- **Picsum fallback** (grey) — no custom image exists; the theme uses a random Picsum photo
+
+**To remove a custom image:**
+
+Click the **Remove** button (red, trash icon) on the theme card. The theme will revert to the Picsum fallback immediately.
+
+> **Note:** Changes to background images take effect for all visitors as soon as the upload or removal is confirmed — there is no cache to clear.
 
 ---
 

@@ -47,6 +47,7 @@ function adminHeader(string $title, string $activeNav = ''): void {
         'rules'    => ['href' => 'rules-edit.php', 'label' => '<i class="fas fa-book"></i> '          . htmlspecialchars(__a('ADMIN_NAV_RULES'))],
         'assigner' => ['href' => 'assigner.php',  'label' => '<i class="fas fa-gamepad"></i> '       . htmlspecialchars(__a('ADMIN_NAV_ASSIGNER'))],
         'config'   => ['href' => 'config.php',    'label' => '<i class="fas fa-cog"></i> '           . htmlspecialchars(__a('ADMIN_NAV_CONFIG'))],
+        'themes'   => ['href' => 'themes.php',   'label' => '<i class="fas fa-palette"></i> Themes'],
     ];
     $version = defined('__TSWEBSITE_VERSION') ? __TSWEBSITE_VERSION : '';
     $lang = I18n::getLocale();

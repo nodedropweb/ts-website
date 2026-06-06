@@ -29,7 +29,7 @@
     {$tplutils::includeStylesheet("css/style.css", true)}
     {$tplutils::includeStylesheet("css/loader.css", true)}
     {$tplutils::includeStylesheet("css/cookiealert.css", true)}
-    {$tplutils::includeStylesheet("css/themes/dark.css", true)}
+    <link id="theme-stylesheet" rel="stylesheet" href="css/themes/dark.css">
 
     {if __DEV_MODE}
         <!-- Dev script - added when dev mode is on -->
@@ -98,6 +98,33 @@
                         <a class="nav-link" href="#" data-openLoginModal><i class="fas fa-sign-in-alt"></i>{_"NAV_ACCOUNT_LOGIN"}</a>
                     </li>
                 {/if}
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTheme" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Theme">
+                        <i class="fas fa-palette"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownTheme">
+                        <h6 class="dropdown-header">Theme</h6>
+                        <button class="dropdown-item" data-theme="dark">
+                            <span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:#f92552;margin-right:6px;vertical-align:middle;border:2px solid #1e202f"></span>Dark
+                        </button>
+                        <button class="dropdown-item" data-theme="light">
+                            <span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:#5c6bc0;margin-right:6px;vertical-align:middle;border:2px solid #e8eaf6"></span>Light
+                        </button>
+                        <button class="dropdown-item" data-theme="acrylic">
+                            <span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:linear-gradient(135deg,#7c83f5,#a78bfa);margin-right:6px;vertical-align:middle;border:2px solid rgba(255,255,255,.3)"></span>Acrylic
+                        </button>
+                        <button class="dropdown-item" data-theme="acrylic-midnight">
+                            <span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:linear-gradient(135deg,#0d1b3e,#4fc3f7);margin-right:6px;vertical-align:middle;border:2px solid rgba(79,195,247,.4)"></span>Acrylic Midnight
+                        </button>
+                        <button class="dropdown-item" data-theme="acrylic-ember">
+                            <span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:linear-gradient(135deg,#3a0800,#ff7043);margin-right:6px;vertical-align:middle;border:2px solid rgba(255,112,67,.4)"></span>Acrylic Ember
+                        </button>
+                        <button class="dropdown-item" data-theme="acrylic-forest">
+                            <span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:linear-gradient(135deg,#051a0e,#4caf78);margin-right:6px;vertical-align:middle;border:2px solid rgba(76,175,120,.4)"></span>Acrylic Forest
+                        </button>
+                    </div>
+                </li>
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLanguageChooser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -173,6 +200,9 @@
         return false // still run the default handler
     }
 </script>
+
+<!-- Theme switcher (must load before jQuery to prevent FOUC) -->
+{$tplutils::includeScript("js/theme-switcher.js", true)}
 
 <!-- jQuery 3.6.0 -->
 {$tplutils::includeScript("{cdnjs}/jquery/3.6.0/jquery.min.js", true)}

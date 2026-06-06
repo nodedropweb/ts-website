@@ -164,6 +164,31 @@ body.admin-body {
 .config-type-bool    { background: #3a2a1a; color: #e67e22; }
 .config-type-json    { background: #2a1a4a; color: #9b59b6; }
 
+/* Custom file input */
+.custom-file-label {
+    background: #1a1d23;
+    border-color: #3a3f50;
+    color: #adb5bd;
+}
+
+.custom-file-label::after {
+    background: #2e3340;
+    border-left-color: #3a3f50;
+    color: #e0e0e0;
+}
+
+.custom-file-input:focus ~ .custom-file-label {
+    border-color: #5b6ee1;
+    box-shadow: 0 0 0 .2rem rgba(91,110,225,.25);
+}
+
+/* Theme preview placeholder */
+.theme-bg-placeholder {
+    background: #1a1d23;
+    border-bottom: 1px solid #2e3340;
+    color: #6c757d;
+}
+
 /* Alerts */
 .alert { border-radius: 6px; }
 

@@ -24,6 +24,7 @@
    - 4.5 [Gruppen-Assigner](#45-gruppen-assigner)
    - 4.6 [Anmelden](#46-anmelden)
    - 4.7 [Sprache wechseln](#47-sprache-wechseln)
+   - 4.8 [Theme wechseln](#48-theme-wechseln)
 5. [Das Admin-Panel](#5-das-admin-panel)
    - 5.1 [Zugang zum Admin-Panel](#51-zugang-zum-admin-panel)
    - 5.2 [News](#52-news)
@@ -32,6 +33,7 @@
    - 5.5 [Gruppen-Assigner konfigurieren](#55-gruppen-assigner-konfigurieren)
    - 5.6 [Impressum / Rechtliche Hinweise](#56-impressum--rechtliche-hinweise)
    - 5.7 [Website-Konfiguration](#57-website-konfiguration)
+   - 5.8 [Theme-Hintergrundbilder](#58-theme-hintergrundbilder)
 6. [Fehlerbehebung](#6-fehlerbehebung)
 7. [Sicherheitshinweise](#7-sicherheitshinweise)
 
@@ -309,6 +311,31 @@ Die Website unterstützt **24 Sprachen**, darunter Deutsch, Englisch, Französis
 
 ---
 
+### 4.8 Theme wechseln
+
+ts-website enthält **sechs visuelle Themes**, zwischen denen jeder Besucher jederzeit wechseln kann. Das gewählte Theme wird in einem Cookie gespeichert und bleibt über Seitenreloads und Browser-Neustarts hinweg erhalten.
+
+**So wechselst du das Theme:**
+
+1. Klicke auf das **Palette-Symbol** (🎨) in der Navigationsleiste — es befindet sich zwischen dem Login-Button und der Sprachauswahl
+2. Ein Dropdown erscheint mit allen verfügbaren Themes
+3. Klicke auf einen Theme-Namen, um ihn sofort anzuwenden — kein Seitenreload erforderlich
+
+**Verfügbare Themes:**
+
+| Theme | Beschreibung |
+|---|---|
+| **Dark** | Das klassische dunkle Lila/Pink-Design — die Standardeinstellung |
+| **Light** | Aufgeräumtes helles Layout mit Indigo-Akzenten |
+| **Acrylic** | Mattglas-Panels über einem Picsum-Hintergrundbild — Violett/Lila-Tönung |
+| **Acrylic Midnight** | Gleicher Mattglas-Effekt — tiefblau/Cyan-Tönung |
+| **Acrylic Ember** | Mattglas — warme Orange/Bernstein-Tönung |
+| **Acrylic Forest** | Mattglas — kühle Grün/Smaragd-Tönung |
+
+Die vier **Acrylic**-Themes verwenden ein fotografisches Hintergrundbild (zufällige Landschaft von [picsum.photos](https://picsum.photos)) mit einem halbtransparenten Blur auf allen Panels. Wenn ein Server-Admin ein eigenes Hintergrundbild für ein Theme hochgeladen hat (siehe [Abschnitt 5.8](#58-theme-hintergrundbilder)), wird dieses statt des Picsum-Fallbacks verwendet.
+
+---
+
 ## 5. Das Admin-Panel
 
 ### 5.1 Zugang zum Admin-Panel
@@ -429,6 +456,34 @@ Häufige Einstellungen:
 | **Cookie-Hinweis** | DSGVO-Cookie-Hinweisbanner aktivieren oder deaktivieren |
 
 Nach dem Ändern einer Einstellung auf **Speichern** klicken. Die meisten Änderungen wirken sofort; falls sich etwas nicht aktualisiert, versuche den Cache zu leeren mit `php tsw.phar clear-cache`.
+
+---
+
+### 5.8 Theme-Hintergrundbilder
+
+Die vier **Acrylic**-Themes unterstützen jeweils ein eigenes Hintergrundbild, das das Standard-Picsum-Foto ersetzt. Die Verwaltung erfolgt im Bereich **Themes** des Admin-Panels.
+
+**So lädst du ein eigenes Hintergrundbild hoch:**
+
+1. Öffne das Admin-Panel und klicke auf **Themes** in der Navigationsleiste
+2. Du siehst vier Karten — eine für jede Acrylic-Theme-Variante
+3. Jede Karte zeigt das aktuelle Hintergrundbild (oder einen Platzhalter, wenn noch keines hochgeladen wurde)
+4. Klicke auf **Durchsuchen** (bzw. **Choose image…**) auf der Karte des gewünschten Themes
+5. Wähle eine JPEG-, PNG- oder WebP-Datei von deinem Computer aus (maximal 8 MB)
+6. Klicke auf **Upload**
+7. Das Bild wird automatisch auf maximal 1920 Pixel Breite skaliert und als JPEG auf dem Server gespeichert
+8. Die Seite lädt neu und zeigt eine Vorschau des hochgeladenen Bildes
+
+**Badge-Anzeigen:**
+
+- **Custom image** (grün) — für dieses Theme wurde ein eigenes Bild hochgeladen
+- **Picsum fallback** (grau) — kein eigenes Bild vorhanden; das Theme verwendet ein zufälliges Picsum-Foto
+
+**So entfernst du ein eigenes Bild:**
+
+Klicke auf den **Remove**-Button (rot, Papierkorb-Symbol) auf der Theme-Karte. Das Theme kehrt sofort zum Picsum-Fallback zurück.
+
+> **Hinweis:** Änderungen an Hintergrundbildern wirken sofort für alle Besucher — es muss kein Cache geleert werden.
 
 ---
 
