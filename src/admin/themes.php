@@ -88,7 +88,14 @@ document.querySelectorAll('.theme-upload-form').forEach(function (form) {
         feedback.innerHTML = '<span class="text-muted"><i class="fas fa-spinner fa-spin"></i> Uploading…</span>';
 
         fetch('api/theme-upload.php', { method: 'POST', body: fd })
-            .then(function (r) { return r.json(); })
+            .then(function (r) {
+                if (!r.ok) {
+                    return r.text().then(function (t) {
+                        throw new Error('HTTP ' + r.status + ': ' + t.slice(0, 200));
+                    });
+                }
+                return r.json();
+            })
             .then(function (d) {
                 if (d.success) {
                     feedback.innerHTML = '<span class="text-success"><i class="fas fa-check"></i> Uploaded — reload to see preview</span>';
@@ -97,8 +104,8 @@ document.querySelectorAll('.theme-upload-form').forEach(function (form) {
                     feedback.innerHTML = '<span class="text-danger"><i class="fas fa-times"></i> ' + (d.error || 'Unknown error') + '</span>';
                 }
             })
-            .catch(function () {
-                feedback.innerHTML = '<span class="text-danger"><i class="fas fa-times"></i> Network error</span>';
+            .catch(function (err) {
+                feedback.innerHTML = '<span class="text-danger"><i class="fas fa-times"></i> ' + (err.message || 'Network error') + '</span>';
             });
     });
 });
