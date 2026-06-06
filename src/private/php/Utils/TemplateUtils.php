@@ -5,6 +5,7 @@ namespace Wruczek\TSWebsite\Utils;
 use Latte\Engine;
 use Latte\Essential\TranslatorExtension;
 use Latte\Runtime\Html;
+use Wruczek\TSWebsite\Utils\MediaConsent;
 use Wruczek\TSWebsite\AdminStatus;
 use Wruczek\TSWebsite\Config;
 use Wruczek\TSWebsite\Utils\Language\LanguageUtils;
@@ -39,6 +40,10 @@ class TemplateUtils {
 
         $this->getLatte()->addFilter("translate", function ($s, ...$args) {
             return new Html(__get($s, $args));
+        });
+
+        $this->getLatte()->addFilter("mediaConsent", function ($s) {
+            return new Html(MediaConsent::rewrite((string) $s));
         });
 
         // Latte 3: {_"key"} requires TranslatorExtension

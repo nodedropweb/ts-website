@@ -8,7 +8,7 @@
             <i class="far fa-question-circle"></i>{_"FAQ_PANEL_TITLE"}
         </div>
         <div class="card-body">
-            {$additionaltext|noescape}
+            {$additionaltext|mediaConsent}
 
             <div class="accordion" id="faqaccordion">
                 {foreach $qa as $id => $value}
@@ -22,7 +22,7 @@
 
                         <div id="faqcollapse-{$id}" class="collapse" aria-labelledby="faqcollapse-heading-{$id}" data-parent="#faqaccordion">
                             <div class="card-body">
-                                {$value["answer"]|noescape}
+                                {$value["answer"]|mediaConsent}
                             </div>
                         </div>
                     </div>
