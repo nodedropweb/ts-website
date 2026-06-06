@@ -68,7 +68,7 @@
         <h4 class="card-title text-center mb-0"><?= htmlspecialchars(__t('INSTALLER_WELCOME_TITLE')) ?></h4>
 
         <p class="card-text text-center text-muted font-italic mb-5">
-            Version <?= __TSWEBSITE_VERSION ?> (<?= __TSWEBSITE_COMMIT ?>)
+            Version <?= __TSWEBSITE_VERSION ?>
         </p>
 
         <p class="card-text"><?= __t('INSTALLER_WELCOME_DESCRIPTION') ?></p>
