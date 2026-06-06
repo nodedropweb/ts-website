@@ -1,7 +1,9 @@
 # ts-website — Benutzer- und Administratordokumentation
 
-**Version:** 2.0 · **Sprache:** Deutsch  
-*Die englische Version findest du unter [README.en.md](README.en.md)*
+![ts-website Screenshot](ts-website.png)
+
+**Version:** 3.0 · **Sprache:** Deutsch  
+*🇬🇧 [English version](../README.md)*
 
 ---
 

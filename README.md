@@ -1,5 +1,7 @@
 # ts-website — User & Administrator Documentation
 
+![ts-website screenshot](docs/ts-website.png)
+
 **Version:** 3.0 · **Language:** English  
 *🇩🇪 [Deutsche Version](docs/README.de.md)*
 
