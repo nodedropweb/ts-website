@@ -17,6 +17,13 @@ register_shutdown_function(function () {
 });
 ob_start();
 
+// Check if POST was truncated due to post_max_size
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && empty($_POST) && ($_SERVER['CONTENT_LENGTH'] ?? 0) > 0) {
+    http_response_code(413);
+    echo json_encode(['error' => 'File too large for server configuration (post_max_size)']);
+    exit;
+}
+
 $allowed = ['dark', 'light', 'acrylic', 'acrylic-midnight', 'acrylic-ember', 'acrylic-forest'];
 $theme = $_POST['theme'] ?? '';
 
@@ -38,6 +45,14 @@ if ($action === 'delete') {
     if (file_exists($target)) {
         unlink($target);
     }
+    
+    // Clear template and data cache
+    if (file_exists(__DIR__ . '/../../private/php/load.php')) {
+        require_once __DIR__ . '/../../private/php/load.php';
+        foreach (glob(__CACHE_DIR . '/*.cache.php') as $f) @unlink($f);
+        foreach (glob(__CACHE_DIR . '/templates/*.php') as $f) @unlink($f);
+    }
+
     echo json_encode(['success' => true]);
     exit;
 }
@@ -68,10 +83,10 @@ if (!in_array($mime, $allowed_mimes, true)) {
     exit;
 }
 
-// Max 8 MB
-if ($file['size'] > 8 * 1024 * 1024) {
+// Max 10 MB
+if ($file['size'] > 10 * 1024 * 1024) {
     http_response_code(413);
-    echo json_encode(['error' => 'File too large (max 8 MB)']);
+    echo json_encode(['error' => 'File too large (max 10 MB)']);
     exit;
 }
 
@@ -122,6 +137,13 @@ if ($w > 1920) {
 
 imagejpeg($img, $target, 88);
 imagedestroy($img);
+
+// Clear template and data cache
+if (file_exists(__DIR__ . '/../../private/php/load.php')) {
+    require_once __DIR__ . '/../../private/php/load.php';
+    foreach (glob(__CACHE_DIR . '/*.cache.php') as $f) @unlink($f);
+    foreach (glob(__CACHE_DIR . '/templates/*.php') as $f) @unlink($f);
+}
 
 $json = json_encode([
     'success' => true,

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * TSW — TS-Website CLI Tool
  * Executed as phar://tsw.phar/main.php
@@ -113,11 +113,12 @@ function showHelp(bool $isError = false): void {
 
     echo bold(t("Commands:","Befehle:")) . "\n";
     $cmds = [
-        ["save",    t("Save connection data (DB + Query + Site) as a profile",  "Verbindungsdaten (DB + Query + Site) als Profil speichern")],
-        ["install", t("Full installation from profile — no browser needed",      "Komplettinstallation aus Profil — kein Browser noetig")],
-        ["reset",   t("Reset DB tables + delete installer lock",                 "DB-Tabellen zuruecksetzen + Installer-Lock loeschen")],
-        ["status",  t("Show current state (lock, profile, tables)",              "Aktuellen Zustand anzeigen (Lock, Profil, Tabellen)")],
-        ["help",    t("Show this help",                                          "Diese Hilfe anzeigen")],
+        ["save",        t("Save connection data (DB + Query + Site) as a profile",  "Verbindungsdaten (DB + Query + Site) als Profil speichern")],
+        ["install",     t("Full installation from profile — no browser needed",      "Komplettinstallation aus Profil — kein Browser noetig")],
+        ["reset",       t("Reset DB tables + delete installer lock",                 "DB-Tabellen zuruecksetzen + Installer-Lock loeschen")],
+        ["status",      t("Show current state (lock, profile, tables)",              "Aktuellen Zustand anzeigen (Lock, Profil, Tabellen)")],
+        ["clear-cache", t("Clear all cached pages and data",                         "Alle zwischengespeicherten Seiten und Daten loeschen")],
+        ["help",        t("Show this help",                                          "Diese Hilfe anzeigen")],
     ];
     foreach ($cmds as [$cmd, $desc]) {
         echo "  " . str_pad(green($cmd), 28) . gray($desc) . "\n";
@@ -195,10 +196,11 @@ if (function_exists('posix_getuid') && posix_getuid() !== 0
 }
 
 switch ($cmd) {
-    case 'save':    cmdSave();    break;
-    case 'install': cmdInstall(); break;
-    case 'reset':   cmdReset();   break;
-    case 'status':  cmdStatus();  break;
+    case 'save':        cmdSave();        break;
+    case 'install':     cmdInstall();     break;
+    case 'reset':       cmdReset();       break;
+    case 'status':      cmdStatus();      break;
+    case 'clear-cache': cmdClearCache();  break;
     default:
         echo yellow("  " . t("Unknown command: ","Unbekannter Befehl: ")) . bold($cmd) . "\n";
         echo gray("  " . t("Available commands: ","Verfuegbare Befehle: ") . "save, install, reset, status, help\n\n");
@@ -380,9 +382,7 @@ function cmdReset(): void {
     echo "\n";
 }
 
-// ════════════════════════════════════════════════════════════════════════════
-// STATUS
-// ════════════════════════════════════════════════════════════════════════════
+// ── Status ────────────────────────────────────────────────────────────────────
 function cmdStatus(): void {
     hdr(t('Current status', 'Aktueller Status'));
 
@@ -419,9 +419,14 @@ function cmdStatus(): void {
     echo "\n";
 }
 
-// ════════════════════════════════════════════════════════════════════════════
-// Helper functions
-// ════════════════════════════════════════════════════════════════════════════
+// ── Clear Cache ───────────────────────────────────────────────────────────────
+function cmdClearCache(): void {
+    hdr(t('Clear cache', 'Cache leeren'));
+    clearCacheFiles();
+    ok(t('Cache cleared successfully', 'Cache erfolgreich geleert'));
+}
+
+// ── Helper functions ──────────────────────────────────────────────────────────
 function loadProfile(): array {
     if (!file_exists(profile()))
         err(t('No profile found — run first: php tsw.phar save', 'Kein Profil — bitte zuerst: php tsw.phar save'));

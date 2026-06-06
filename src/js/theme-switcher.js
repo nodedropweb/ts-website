@@ -1,6 +1,5 @@
 (function () {
     var THEMES = ['dark', 'light', 'acrylic', 'acrylic-midnight', 'acrylic-ember', 'acrylic-forest'];
-    var ACRYLIC_THEMES = ['dark', 'light', 'acrylic', 'acrylic-midnight', 'acrylic-ember', 'acrylic-forest'];
     var DEFAULT = 'dark';
     var COOKIE_KEY = 'tswebsite_theme';
 
@@ -23,10 +22,12 @@
     }
 
     function applyBackground(name) {
-        if (customBackgrounds[name]) {
-            document.documentElement.style.setProperty('--theme-bg', 'url(\'' + customBackgrounds[name] + '\')');
-        } else {
-            document.documentElement.style.removeProperty('--theme-bg');
+        var url = customBackgrounds[name] ? 'url("' + customBackgrounds[name] + '")' : '';
+        
+        // Apply to both html and body to be absolutely sure
+        document.documentElement.style.setProperty('--theme-bg', url);
+        if (document.body) {
+            document.body.style.setProperty('--theme-bg', url);
         }
     }
 
@@ -34,20 +35,36 @@
         if (THEMES.indexOf(name) === -1) name = DEFAULT;
         var link = document.getElementById('theme-stylesheet');
         if (link) link.href = 'css/themes/' + name + '.css';
-        document.body.className = getLangClass() + ' theme-' + name;
+        
+        if (document.body) {
+            document.body.className = getLangClass() + ' theme-' + name;
+        }
+        
         applyBackground(name);
         setCookieTheme(name);
+        
         var els = document.querySelectorAll('[data-theme]');
         for (var i = 0; i < els.length; i++) {
             els[i].classList.toggle('active', els[i].getAttribute('data-theme') === name);
         }
     }
 
-    // Apply immediately (prevents FOUC)
+    // 1. Start fetching custom backgrounds immediately
+    if (window.fetch) {
+        fetch('api/theme-backgrounds.php')
+            .then(function (r) { return r.ok ? r.json() : {}; })
+            .then(function (data) {
+                customBackgrounds = data || {};
+                applyBackground(getCookieTheme() || DEFAULT);
+            })
+            .catch(function () {});
+    }
+
+    // 2. Apply theme immediately to prevent FOUC
     applyTheme(getCookieTheme() || DEFAULT);
 
+    // 3. Setup event listeners
     document.addEventListener('DOMContentLoaded', function () {
-        // Wire up dropdown buttons
         var els = document.querySelectorAll('[data-theme]');
         for (var i = 0; i < els.length; i++) {
             (function (el) {
@@ -57,21 +74,6 @@
                 });
             })(els[i]);
         }
-
-        // Fetch custom backgrounds and re-apply if we're on an acrylic theme
-        if (window.fetch) {
-            fetch('api/theme-backgrounds.php')
-                .then(function (r) { return r.ok ? r.json() : {}; })
-                .then(function (data) {
-                    customBackgrounds = data || {};
-                    var current = getCookieTheme() || DEFAULT;
-                    if (ACRYLIC_THEMES.indexOf(current) !== -1) {
-                        applyBackground(current);
-                    }
-                })
-                .catch(function () {});
-        }
-
         applyTheme(getCookieTheme() || DEFAULT);
     });
 })();

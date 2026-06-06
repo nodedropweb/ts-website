@@ -3,6 +3,8 @@ require_once __DIR__ . '/_auth.php';
 requireAdmin();
 require_once __DIR__ . '/_layout.php';
 
+use Wruczek\TSWebsite\Utils\CsrfUtils;
+
 $themes = [
     'dark'            => ['label' => 'Dark',             'color' => '#1e202f',                                 'fallback' => false],
     'light'           => ['label' => 'Light',            'color' => 'linear-gradient(135deg,#e8edf5,#5c6bc0)', 'fallback' => true],
@@ -45,6 +47,7 @@ adminHeader('Theme Backgrounds', 'themes');
 
         <div class="card-body">
             <form class="theme-upload-form" data-theme="<?= htmlspecialchars($key) ?>">
+                <input type="hidden" name="csrf-token" value="<?= htmlspecialchars(CsrfUtils::getToken()) ?>">
                 <div class="custom-file mb-2">
                     <input type="file" class="custom-file-input" id="file-<?= htmlspecialchars($key) ?>" accept="image/jpeg,image/png,image/webp" required>
                     <label class="custom-file-label" for="file-<?= htmlspecialchars($key) ?>">Choose image…</label>
@@ -72,6 +75,8 @@ document.querySelectorAll('.custom-file-input').forEach(function (input) {
     });
 });
 
+var csrfToken = "<?= CsrfUtils::getToken() ?>";
+
 document.querySelectorAll('.theme-upload-form').forEach(function (form) {
     var theme    = form.dataset.theme;
     var feedback = form.querySelector('.upload-feedback');
@@ -81,7 +86,7 @@ document.querySelectorAll('.theme-upload-form').forEach(function (form) {
         var fileInput = form.querySelector('input[type=file]');
         if (!fileInput.files[0]) return;
 
-        var fd = new FormData();
+        var fd = new FormData(form);
         fd.append('theme', theme);
         fd.append('image', fileInput.files[0]);
 
@@ -116,6 +121,7 @@ document.querySelectorAll('.btn-delete').forEach(function (btn) {
         var fd = new FormData();
         fd.append('theme', btn.dataset.theme);
         fd.append('action', 'delete');
+        fd.append('csrf-token', csrfToken);
 
         fetch('api/theme-upload.php', { method: 'POST', body: fd })
             .then(function (r) { return r.json(); })
