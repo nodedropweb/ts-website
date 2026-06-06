@@ -60,7 +60,7 @@ function adminHeader(string $title, string $activeNav = ''): void {
     <title><?= htmlspecialchars($title) ?> — Admin</title>
     <link rel="stylesheet" href="../lib/bootstrap/4.6.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="../lib/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/admin.css?v=<?= filemtime(__DIR__ . '/css/admin.css') ?>">
 </head>
 <body class="admin-body">
 

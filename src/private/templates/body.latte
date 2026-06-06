@@ -32,7 +32,7 @@
     <link id="theme-stylesheet" rel="stylesheet" href="css/themes/dark.css">
 
     <!-- Klaro consent manager -->
-    <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css">
+    {$tplutils::includeStylesheet("lib/klaro/0.7/klaro.min.css", true)}
     {$tplutils::includeScript("js/klaro-config.js", true)}
 
     {if __DEV_MODE}
@@ -245,7 +245,7 @@
 {block footerbottom}{/block}
 
 <!-- Klaro: load after DOM, after klaro-config.js is already parsed -->
-<script defer data-config="klaroConfig" src="https://cdn.kiprotect.com/klaro/v0.7/klaro.js"></script>
+<script defer data-config="klaroConfig" src="lib/klaro/0.7/klaro.js"></script>
 
 <!--
     TS-website {\__TSWEBSITE_VERSION} ({\__TSWEBSITE_COMMIT}) by Wruczek
