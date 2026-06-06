@@ -4,6 +4,19 @@ requireAdmin();
 
 header('Content-Type: application/json');
 
+// Catch fatal errors (e.g. missing GD extension) and return JSON instead of a blank 500
+register_shutdown_function(function () {
+    $err = error_get_last();
+    if ($err && in_array($err['type'], [E_ERROR, E_PARSE, E_CORE_ERROR, E_COMPILE_ERROR], true)) {
+        if (!headers_sent()) {
+            http_response_code(500);
+        }
+        // Only output if nothing was sent yet (output_buffering may be off)
+        echo json_encode(['error' => 'PHP fatal: ' . $err['message'] . ' in ' . basename($err['file']) . ':' . $err['line']]);
+    }
+});
+ob_start();
+
 $allowed = ['dark', 'light', 'acrylic', 'acrylic-midnight', 'acrylic-ember', 'acrylic-forest'];
 $theme = $_POST['theme'] ?? '';
 
@@ -62,6 +75,22 @@ if ($file['size'] > 8 * 1024 * 1024) {
     exit;
 }
 
+// Check GD is available
+if (!function_exists('imagecreatefromjpeg')) {
+    http_response_code(500);
+    ob_end_clean();
+    echo json_encode(['error' => 'GD extension is not enabled on this server']);
+    exit;
+}
+
+// Check upload dir is writable
+if (!is_writable($uploadDir)) {
+    http_response_code(500);
+    ob_end_clean();
+    echo json_encode(['error' => 'Upload directory is not writable: ' . $uploadDir]);
+    exit;
+}
+
 $target = $uploadDir . 'bg-' . $theme . '.jpg';
 
 // Convert to JPEG for uniform handling
@@ -74,7 +103,8 @@ $img = match($mime) {
 
 if (!$img) {
     http_response_code(500);
-    echo json_encode(['error' => 'Could not process image']);
+    ob_end_clean();
+    echo json_encode(['error' => 'Could not process image (corrupt or unsupported file)']);
     exit;
 }
 
@@ -93,7 +123,9 @@ if ($w > 1920) {
 imagejpeg($img, $target, 88);
 imagedestroy($img);
 
-echo json_encode([
+$json = json_encode([
     'success' => true,
     'url'     => 'img/themes/bg-' . $theme . '.jpg?v=' . time(),
 ]);
+ob_end_clean();
+echo $json;
