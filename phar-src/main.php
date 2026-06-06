@@ -56,6 +56,41 @@ function green(string $s): string  { return "\033[32m$s\033[0m"; }
 function gray(string $s): string   { return "\033[90m$s\033[0m"; }
 function yellow(string $s): string { return "\033[33m$s\033[0m"; }
 
+// Delete a file that may be owned by www-data (written by Apache/installer).
+// Strategy: unlink() → chmod(0666)+unlink() → shell sudo rm → hard error.
+function tryDelete(string $path): void {
+    if (!file_exists($path)) {
+        inf(t('Not present: ' . basename($path), 'Nicht vorhanden: ' . basename($path)));
+        return;
+    }
+    // 1. direct unlink
+    if (@unlink($path)) {
+        ok(t('Deleted: ' . basename($path), 'Geloescht: ' . basename($path)));
+        return;
+    }
+    // 2. loosen permissions first, then retry
+    @chmod($path, 0666);
+    if (@unlink($path)) {
+        ok(t('Deleted (after chmod): ' . basename($path), 'Geloescht (nach chmod): ' . basename($path)));
+        return;
+    }
+    // 3. try sudo rm -f (works if user has passwordless sudo or is already root)
+    $escaped = escapeshellarg($path);
+    exec("sudo rm -f $escaped 2>/dev/null", $out, $rc);
+    if ($rc === 0 && !file_exists($path)) {
+        ok(t('Deleted (via sudo): ' . basename($path), 'Geloescht (via sudo): ' . basename($path)));
+        return;
+    }
+    // 4. give up with a clear, actionable message
+    $info = function_exists('posix_getpwuid') && file_exists($path)
+        ? (posix_getpwuid((int) fileowner($path))['name'] ?? '?')
+        : 'www-data';
+    err(t(
+        'Cannot delete ' . basename($path) . " (owned by $info). Run as root:  sudo php tsw.phar reset --clean",
+        'Kann ' . basename($path) . " nicht loeschen (Eigentuemer: $info). Als root ausfuehren:  sudo php tsw.phar reset --clean"
+    ));
+}
+
 // ── Help screen ───────────────────────────────────────────────────────────────
 function showHelp(bool $isError = false): void {
     echo "\n";
@@ -319,19 +354,11 @@ function cmdReset(): void {
     ok(t('Connection and site settings restored', 'Verbindungs- und Site-Einstellungen wiederhergestellt'));
 
     act(t('Deleting installer lock...', 'Installer-Lock loeschen...'));
-    if (file_exists(lock())) {
-        unlink(lock()) ? ok(t('INSTALLER_LOCK deleted', 'INSTALLER_LOCK geloescht')) : err(t('Could not delete lock', 'Konnte Lock nicht loeschen'));
-    } else {
-        inf(t('Lock not present', 'Lock nicht vorhanden'));
-    }
+    tryDelete(lock());
 
     if ($clean) {
         act(t('Deleting dbconfig.php...', 'dbconfig.php loeschen...'));
-        if (file_exists(cfg())) {
-            @unlink(cfg()) ? ok(t('dbconfig.php deleted', 'dbconfig.php geloescht')) : err(t('Could not delete dbconfig.php', 'Konnte dbconfig.php nicht loeschen'));
-        } else {
-            inf(t('dbconfig.php not present', 'dbconfig.php nicht vorhanden'));
-        }
+        tryDelete(cfg());
     } else {
         act(t('Restoring dbconfig.php...', 'dbconfig.php wiederherstellen...'));
         writeDbConfig($db);
