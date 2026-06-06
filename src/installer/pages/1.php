@@ -23,6 +23,7 @@
                     <li class="mb-2"><strong>tsw.phar CLI tool</strong> &mdash; install, update and maintain the site from the command line (English &amp; German)</li>
                     <li class="mb-2"><strong>PHP 8.4 compatible</strong> &mdash; fully modernized codebase</li>
                     <li class="mb-2"><strong>Local asset hosting</strong> &mdash; all CSS &amp; JS libraries served locally, no external CDN (GDPR compliant)</li>
+                    <li class="mb-2"><strong>Localized in 24 languages</strong> &mdash; frontend, admin panel and installer all support Arabic, Chinese, Danish, Dutch, French, German, Greek, Italian, Norwegian, Polish, Portuguese, Russian, Spanish, Turkish, Ukrainian and more</li>
                 </ul>
                 <p class="text-muted small mb-0">You can select your language using the dropdown in the navigation bar after closing this dialog.</p>
             </div>
