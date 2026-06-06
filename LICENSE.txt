@@ -1,3 +1,31 @@
+ts-website — free website for your TeamSpeak 3 server
+Copyright (C) 2017–2025 Wruczek <https://github.com/Wruczek/ts-website>
+
+This is a modified version of ts-website by Wruczek.
+Modifications by nodedropweb <https://github.com/nodedropweb>, 2025.
+Copyright (C) 2025 nodedropweb. All modifications are released under GPL-3.0.
+
+Changes made in this fork include:
+- Full admin panel (News, FAQ, Rules, Imprint, Group Assigner, Config)
+- Command-line setup tool (tsw.phar), bilingual English/German
+- PHP 8.4 compatibility fixes
+- GDPR-compliant local asset hosting (no external CDN)
+- New i18n system (.po files) for frontend, admin and installer
+- Setup page locking (SETUP_LOCK) and Server Admin group detection
+- Patched TeamSpeak PHP framework fork (nodedropweb/ts3phpframework)
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+-------------------------------------------------------------------------------
+
                     GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
