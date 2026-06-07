@@ -407,13 +407,14 @@ The post will immediately appear on the website's front page.
 
 Click the edit icon (pencil) or delete icon (trash can) next to any existing post in the list.
 
-News posts support basic HTML formatting — you can use `<b>` for bold, `<i>` for italic, and so on.
+News posts use a modern Rich Text Editor (Lexical) that supports text formatting, image uploads, YouTube/Vimeo video embeds (with automatic privacy thumbnails), and a CodeMirror-powered HTML source code editor.
 
 ---
 
 ### 5.3 FAQ Management
 
 The **FAQ** section lets you manage a list of frequently asked questions that appear on the public FAQ page.
+It also contains the general FAQ settings (e.g., the Contact URL).
 
 **To add a new FAQ entry:**
 

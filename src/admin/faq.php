@@ -20,11 +20,34 @@ if ($flash): ?>
 </div>
 <?php endif; ?>
 
-<div class="mb-3">
+<div class="mb-3 d-flex justify-content-between align-items-end">
     <a href="faq-edit.php" class="btn btn-primary">
         <i class="fas fa-plus"></i> <?= htmlspecialchars(__a('ADMIN_FAQ_NEW_BTN')) ?>
     </a>
 </div>
+
+<form method="post" action="api/config.php" class="card mb-4">
+    <input type="hidden" name="csrf-token" value="<?= htmlspecialchars(CsrfUtils::getToken()) ?>">
+    <input type="hidden" name="return_to" value="../faq.php">
+    
+    <div class="card-header"><i class="fas fa-cog"></i> FAQ-Einstellungen</div>
+    <div class="card-body">
+        <div class="form-group row mb-0 align-items-center">
+            <label class="col-sm-3 col-form-label">
+                <code class="text-info">faq_contact_url</code>
+            </label>
+            <div class="col-sm-7">
+                <?php $faqContactUrl = $db->get('config', 'value', ['identifier' => 'faq_contact_url']) ?? ''; ?>
+                <input type="text" class="form-control form-control-sm" name="config[faq_contact_url]" value="<?= htmlspecialchars($faqContactUrl) ?>" placeholder="z. B. https://example.com/kontakt">
+            </div>
+            <div class="col-sm-2 text-right">
+                <button type="submit" class="btn btn-sm btn-primary">
+                    <i class="fas fa-save"></i> Speichern
+                </button>
+            </div>
+        </div>
+    </div>
+</form>
 
 <div class="card">
     <div class="card-body p-0">

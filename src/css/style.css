@@ -466,3 +466,15 @@ table.dataTable > tbody > tr.child td.child {
 #klaro .klaro .cm-link {
     color: var(--site-secondary-color) !important;
 }
+
+/* Klaro Context Notice Theme Adaptation */
+.klaro .context-notice {
+    background-color: var(--site-background, #fafafa) !important;
+    border-color: var(--site-secondary-color, #c8c8c8) !important;
+    color: var(--site-text, #333) !important;
+}
+.klaro .context-notice p, 
+.klaro .context-notice a {
+    color: var(--site-text, #333) !important;
+}
+

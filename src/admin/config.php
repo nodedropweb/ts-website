@@ -57,7 +57,7 @@ if ($flash): ?>
     <input type="hidden" name="csrf-token" value="<?= htmlspecialchars(CsrfUtils::getToken()) ?>">
 
     <?php foreach ($sections as $section => $items): ?>
-    <?php if (in_array($section, ['nav', 'rules', 'tsserver', 'website'], true)) continue; ?>
+    <?php if (in_array($section, ['nav', 'rules', 'tsserver', 'website', 'faq'], true)) continue; ?>
     <div class="card mb-4">
         <div class="card-header">
             <?= htmlspecialchars($sectionLabels[$section] ?? ucfirst($section)) ?>

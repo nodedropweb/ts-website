@@ -407,13 +407,14 @@ Der Beitrag erscheint sofort auf der Startseite der Website.
 
 Klicke auf das Bearbeitungs-Symbol (Stift) oder das Lösch-Symbol (Mülleimer) neben einem vorhandenen Beitrag in der Liste.
 
-News-Beiträge unterstützen grundlegende HTML-Formatierung — du kannst `<b>` für Fettschrift, `<i>` für Kursivschrift usw. verwenden.
+News-Beiträge nutzen einen modernen Rich-Text-Editor (Lexical) mit Textformatierung, Bild-Uploads, YouTube/Vimeo-Einbettungen (inkl. privatsphäre-freundlichen Thumbnails) sowie einem HTML-Quellcode-Modus (CodeMirror).
 
 ---
 
 ### 5.3 FAQ verwalten
 
 Der Bereich **FAQ** ermöglicht die Verwaltung einer Liste häufig gestellter Fragen, die auf der öffentlichen FAQ-Seite erscheinen.
+Dort findest du auch allgemeine FAQ-Einstellungen wie die Kontakt-URL.
 
 **Einen neuen FAQ-Eintrag hinzufügen:**
 

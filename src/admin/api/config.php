@@ -4,8 +4,14 @@ requireAdmin();
 
 use Wruczek\TSWebsite\Config;
 
+$returnTo = $_POST['return_to'] ?? '../config.php';
+if (!in_array($returnTo, ['../config.php', '../faq.php', '../general.php'], true)) {
+    $returnTo = '../config.php';
+}
+
 function redirect(string $msg, string $type = 'success'): void {
-    header('Location: ../config.php?flash=' . urlencode($msg) . '&type=' . $type);
+    global $returnTo;
+    header('Location: ' . $returnTo . '?flash=' . urlencode($msg) . '&type=' . $type);
     exit;
 }
 
