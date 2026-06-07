@@ -65,49 +65,114 @@ adminHeader(__a('ADMIN_VIEWER_TITLE'), 'config');
 <form method="post">
     <input type="hidden" name="csrf-token" value="<?= htmlspecialchars(CsrfUtils::getToken()) ?>">
 
-    <div class="card mb-4">
-        <div class="card-header"><i class="fas fa-sitemap"></i> <?= htmlspecialchars(__a('ADMIN_VIEWER_SECTION')) ?></div>
+    <div class="card mb-4 card-accent">
+        <div class="card-header">
+            <i class="fas fa-eye-slash"></i> <?= htmlspecialchars(__a('ADMIN_VIEWER_TITLE')) ?>
+            <div class="card-header-actions">
+                <button type="submit" class="btn btn-sm btn-primary">
+                    <i class="fas fa-save"></i> <?= htmlspecialchars(__a('ADMIN_BTN_SAVE')) ?>
+                </button>
+            </div>
+        </div>
         <div class="card-body">
-            <p class="text-muted small mb-3"><?= htmlspecialchars(__a('ADMIN_VIEWER_HINT')) ?></p>
+            <p class="text-muted mb-4">
+                <i class="fas fa-info-circle"></i> <?= htmlspecialchars(__a('ADMIN_VIEWER_HINT')) ?>
+            </p>
 
             <?php if (empty($channelTree)): ?>
-                <p class="text-muted mb-0"><?= htmlspecialchars(__a('ADMIN_VIEWER_NO_CHANNELS')) ?></p>
+                <div class="alert alert-warning mb-0">
+                    <i class="fas fa-exclamation-triangle"></i> <?= htmlspecialchars(__a('ADMIN_VIEWER_NO_CHANNELS')) ?>
+                </div>
             <?php else: ?>
-            <div class="list-group list-group-flush">
-                <?php foreach ($channelTree as $item):
-                    $cid   = $item['cid'];
-                    $name  = (string)($item['info']['channel_name'] ?? ('Kanal #' . $cid));
-                    $depth = $item['depth'];
-                    $isHidden = in_array($cid, $hidden, true);
-                ?>
-                <label class="list-group-item list-group-item-action d-flex align-items-center py-2"
-                       style="padding-left: <?= 1 + $depth * 1.5 ?>rem; cursor:pointer;">
-                    <div class="custom-control custom-checkbox mr-2">
-                        <input type="checkbox" class="custom-control-input"
-                               id="ch_<?= $cid ?>" name="hidden[]"
-                               value="<?= $cid ?>" <?= $isHidden ? 'checked' : '' ?>>
-                        <label class="custom-control-label" for="ch_<?= $cid ?>"></label>
-                    </div>
-                    <?php if ($depth > 0): ?>
-                        <span class="text-muted mr-1" style="font-size:.8em"><?= str_repeat('└ ', 1) ?></span>
-                    <?php endif; ?>
-                    <i class="fas fa-hashtag text-muted mr-2" style="font-size:.8em"></i>
-                    <?= htmlspecialchars($name) ?>
-                    <span class="text-muted small ml-2">(#<?= $cid ?>)</span>
-                    <?php if ($isHidden): ?>
-                        <span class="badge badge-secondary ml-auto"><?= htmlspecialchars(__a('ADMIN_VIEWER_HIDDEN_BADGE')) ?></span>
-                    <?php endif; ?>
-                </label>
-                <?php endforeach; ?>
+            <div class="table-responsive">
+                <table class="table table-hover table-outline mb-0">
+                    <thead class="thead-light">
+                        <tr>
+                            <th class="text-center" style="width: 50px;">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="toggle-all">
+                                    <label class="custom-control-label" for="toggle-all"></label>
+                                </div>
+                            </th>
+                            <th><?= htmlspecialchars(__a('ADMIN_VIEWER_SECTION')) ?></th>
+                            <th class="text-center" style="width: 100px;">ID</th>
+                            <th class="text-center" style="width: 150px;">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php foreach ($channelTree as $item):
+                            $cid   = $item['cid'];
+                            $name  = (string)($item['info']['channel_name'] ?? ('Kanal #' . $cid));
+                            $depth = $item['depth'];
+                            $isHidden = in_array($cid, $hidden, true);
+                        ?>
+                        <tr class="<?= $isHidden ? 'table-light' : '' ?>">
+                            <td class="text-center">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input channel-checkbox"
+                                           id="ch_<?= $cid ?>" name="hidden[]"
+                                           value="<?= $cid ?>" <?= $isHidden ? 'checked' : '' ?>>
+                                    <label class="custom-control-label" for="ch_<?= $cid ?>"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div style="padding-left: <?= $depth * 1.5 ?>rem;">
+                                    <?php if ($depth > 0): ?>
+                                        <span class="text-muted mr-1" style="opacity: 0.5;">└</span>
+                                    <?php endif; ?>
+                                    <i class="fas fa-hashtag text-muted mr-2 small"></i>
+                                    <label for="ch_<?= $cid ?>" class="mb-0" style="cursor: pointer;">
+                                        <?= htmlspecialchars($name) ?>
+                                    </label>
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <span class="badge badge-light">#<?= $cid ?></span>
+                            </td>
+                            <td class="text-center">
+                                <?php if ($isHidden): ?>
+                                    <span class="badge badge-danger">
+                                        <i class="fas fa-eye-slash"></i> <?= htmlspecialchars(__a('ADMIN_VIEWER_HIDDEN_BADGE')) ?>
+                                    </span>
+                                <?php else: ?>
+                                    <span class="badge badge-success">
+                                        <i class="fas fa-eye"></i> Sichtbar
+                                    </span>
+                                <?php endif; ?>
+                            </td>
+                        </tr>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
             </div>
             <?php endif; ?>
         </div>
-        <div class="card-footer text-right">
-            <button type="submit" class="btn btn-primary">
-                <i class="fas fa-save"></i> <?= htmlspecialchars(__a('ADMIN_BTN_SAVE')) ?>
-            </button>
+        <div class="card-footer">
+            <div class="d-flex justify-content-between align-items-center">
+                <span class="text-muted small">
+                    <i class="fas fa-info-circle"></i> Markierte Kanäle werden im öffentlichen Viewer nicht angezeigt.
+                </span>
+                <button type="submit" class="btn btn-primary btn-lg">
+                    <i class="fas fa-save"></i> <?= htmlspecialchars(__a('ADMIN_BTN_SAVE')) ?>
+                </button>
+            </div>
         </div>
     </div>
 </form>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleAll = document.getElementById('toggle-all');
+    const checkboxes = document.querySelectorAll('.channel-checkbox');
+
+    if (toggleAll) {
+        toggleAll.addEventListener('change', function() {
+            checkboxes.forEach(cb => {
+                cb.checked = toggleAll.checked;
+            });
+        });
+    }
+});
+</script>
 
 <?php adminFooter(); ?>
