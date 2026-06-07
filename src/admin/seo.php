@@ -91,7 +91,7 @@ adminHeader(__a('ADMIN_SEO_TITLE'), 'config');
                     <div class="mr-3 border rounded p-1 bg-light d-flex align-items-center justify-content-center" style="width: 150px; height: 80px; overflow: hidden;">
                         <?php 
                             $hasCustomOg = Config::get("seo_og_image_custom", false);
-                            $ogUrl = $hasCustomOg ? '../img/og-image.jpg?v='.time() : 'https://via.placeholder.com/1200x630.png?text=Preview+Image';
+                            $ogUrl = $hasCustomOg ? '../img/og.png?v='.time() : 'https://via.placeholder.com/1200x630.png?text=Preview+Image';
                         ?>
                         <img src="<?= $ogUrl ?>" id="preview-og" style="max-width: 100%; max-height: 100%; object-fit: cover;">
                     </div>

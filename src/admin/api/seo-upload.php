@@ -21,12 +21,11 @@ $uploadDir = __DIR__ . '/../../img/';
 $action = $_POST['action'] ?? 'upload';
 
 if ($action === 'delete') {
-    if (file_exists($uploadDir . 'og-image.jpg')) {
-        unlink($uploadDir . 'og-image.jpg');
-    }
+    if (file_exists($uploadDir . 'og.png')) unlink($uploadDir . 'og.png');
+    if (file_exists($uploadDir . 'og-image.jpg')) unlink($uploadDir . 'og-image.jpg');
+    
     Config::i()->setValue("seo_og_image_custom", false);
     
-    // Clear cache
     foreach (glob(__CACHE_DIR . '/*.cache.php') as $f) @unlink($f);
     foreach (glob(__CACHE_DIR . '/templates/*.php') as $f) @unlink($f);
 
@@ -73,10 +72,34 @@ if (!$img) {
     exit;
 }
 
-// OG Image usually 1200x630
-$target = $uploadDir . 'og-image.jpg';
-imagejpeg($img, $target, 90);
+// Resize to standard OG size: 1200x630 (Cover style)
+$targetW = 1200;
+$targetH = 630;
+$origW = imagesx($img);
+$origH = imagesy($img);
+
+$ratio = max($targetW / $origW, $targetH / $origH);
+$newW = (int) ($origW * $ratio);
+$newH = (int) ($origH * $ratio);
+
+$tmp = imagecreatetruecolor($targetW, $targetH);
+imagealphablending($tmp, false);
+imagesavealpha($tmp, true);
+
+// Center the image
+$offsetX = (int) (($newW - $targetW) / 2);
+$offsetY = (int) (($newH - $targetH) / 2);
+
+imagecopyresampled($tmp, $img, -$offsetX, -$offsetY, 0, 0, $newW, $newH, $origW, $origH);
+
+$target = $uploadDir . 'og.png';
+imagepng($tmp, $target, 8); // PNG for better quality, medium compression
+
 imagedestroy($img);
+imagedestroy($tmp);
+
+// Clean up old JPG if exists
+if (file_exists($uploadDir . 'og-image.jpg')) unlink($uploadDir . 'og-image.jpg');
 
 Config::i()->setValue("seo_og_image_custom", true);
 
@@ -85,7 +108,7 @@ foreach (glob(__CACHE_DIR . '/templates/*.php') as $f) @unlink($f);
 
 $json = json_encode([
     'success' => true,
-    'url'     => 'img/og-image.jpg?v=' . time(),
+    'url'     => 'img/og.png?v=' . time(),
 ]);
 ob_end_clean();
 echo $json;
