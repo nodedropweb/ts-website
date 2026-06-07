@@ -4,6 +4,7 @@ require_once __DIR__ . '/_layout.php';
 
 requireAdmin();
 
+use Wruczek\TSWebsite\Config;
 use Wruczek\TSWebsite\Utils\CsrfUtils;
 use Wruczek\TSWebsite\Utils\DatabaseUtils;
 
