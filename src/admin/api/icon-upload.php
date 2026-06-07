@@ -1,4 +1,7 @@
 <?php
+use Wruczek\TSWebsite\Utils\CsrfUtils;
+use Wruczek\TSWebsite\Config;
+
 require_once __DIR__ . '/../_auth.php';
 requireAdmin();
 
@@ -14,10 +17,8 @@ register_shutdown_function(function () {
         echo json_encode(['error' => 'PHP fatal: ' . $err['message'] . ' in ' . basename($err['file']) . ':' . $err['line']]);
     }
 });
-ob_start();
 
-use Wruczek\TSWebsite\Utils\CsrfUtils;
-use Wruczek\TSWebsite\Config;
+ob_start();
 
 if (!CsrfUtils::checkToken()) {
     http_response_code(403);
@@ -46,8 +47,8 @@ if ($action === 'delete') {
     Config::i()->setValue("website_" . $type . "_custom", false);
     
     // Clear template and data cache
-    foreach (glob(__CACHE_DIR . '/*.cache.php') as $f) @unlink($f);
-    foreach (glob(__CACHE_DIR . '/templates/*.php') as $f) @unlink($f);
+    foreach (glob(__CACHE_DIR__ . '/*.cache.php') as $f) @unlink($f);
+    foreach (glob(__CACHE_DIR__ . '/templates/*.php') as $f) @unlink($f);
 
     echo json_encode(['success' => true]);
     exit;
@@ -67,14 +68,15 @@ if ($file['error'] !== UPLOAD_ERR_OK) {
     exit;
 }
 
+// Validate image type
 $finfo = finfo_open(FILEINFO_MIME_TYPE);
 $mime  = finfo_file($finfo, $file['tmp_name']);
 finfo_close($finfo);
 
-$allowed_mimes = ['image/jpeg', 'image/png', 'image/webp', 'image/x-icon'];
+$allowed_mimes = ['image/jpeg', 'image/png', 'image/webp', 'image/x-icon', 'image/vnd.microsoft.icon'];
 if (!in_array($mime, $allowed_mimes, true)) {
     http_response_code(415);
-    echo json_encode(['error' => 'Only JPEG, PNG, WebP and ICO images are allowed']);
+    echo json_encode(['error' => 'Only JPEG, PNG, WebP and ICO images are allowed (MIME: ' . $mime . ')']);
     exit;
 }
 
@@ -89,14 +91,14 @@ $img = match($mime) {
     'image/jpeg'   => imagecreatefromjpeg($file['tmp_name']),
     'image/png'    => imagecreatefrompng($file['tmp_name']),
     'image/webp'   => imagecreatefromwebp($file['tmp_name']),
-    'image/x-icon' => imagecreatefrompng($file['tmp_name']), // ICO might need special handling, PNG is safer
+    'image/x-icon', 'image/vnd.microsoft.icon' => @imagecreatefrompng($file['tmp_name']) ?: @imagecreatefromjpeg($file['tmp_name']), 
     default        => null,
 };
 
 if (!$img) {
     http_response_code(500);
     ob_end_clean();
-    echo json_encode(['error' => 'Could not process image']);
+    echo json_encode(['error' => 'Could not process image (GD might not support this format)']);
     exit;
 }
 
@@ -144,8 +146,8 @@ imagedestroy($img);
 Config::i()->setValue("website_" . $type . "_custom", true);
 
 // Clear template and data cache
-foreach (glob(__CACHE_DIR . '/*.cache.php') as $f) @unlink($f);
-foreach (glob(__CACHE_DIR . '/templates/*.php') as $f) @unlink($f);
+foreach (glob(__CACHE_DIR__ . '/*.cache.php') as $f) @unlink($f);
+foreach (glob(__CACHE_DIR__ . '/templates/*.php') as $f) @unlink($f);
 
 $json = json_encode([
     'success' => true,
