@@ -10,7 +10,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="TS-website {\__TSWEBSITE_VERSION} by Wruczek / https://github.com/Wruczek/ts-website">
     <meta name="csrf-token" content="{$csrfToken}">
-    <link rel="shortcut icon" href="img/icons/defaulticon-16.png">
+    
+    {var $fav16 = "img/icons/favicon-16.png"}
+    {var $fav32 = "img/icons/favicon-32.png"}
+    {var $siteIcon = "img/icons/site-icon.png"}
+    
+    {if file_exists(__BASE_DIR . "/src/" . $fav16)}
+        <link rel="icon" type="image/png" sizes="16x16" href="{$fav16|noCheck}">
+    {else}
+        <link rel="icon" type="image/png" sizes="16x16" href="img/icons/defaulticon-16.png">
+    {/if}
+
+    {if file_exists(__BASE_DIR . "/src/" . $fav32)}
+        <link rel="icon" type="image/png" sizes="32x32" href="{$fav32|noCheck}">
+    {else}
+        <link rel="icon" type="image/png" sizes="32x32" href="img/icons/defaulticon-32.png">
+    {/if}
+
+    {if file_exists(__BASE_DIR . "/src/" . $siteIcon)}
+        <link rel="apple-touch-icon" href="{$siteIcon|noCheck}">
+    {else}
+        <link rel="apple-touch-icon" href="img/icons/defaulticon-256.png">
+    {/if}
 
     <!-- TODO make it use the language variable "WEBSITE_TITLE" after the ACP update -->
     <title>{$title} | {$config["website_title"]}</title>
