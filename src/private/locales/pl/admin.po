@@ -599,43 +599,43 @@ msgstr "Ustawienia połączenia zapisane."
 
 
 msgid "ADMIN_GENERAL_SYNC_ICONS_TITLE"
-msgstr "TeamSpeak Channel & Group Icons"
+msgstr "Ikony kanałów i grup TeamSpeak"
 
 msgid "ADMIN_GENERAL_SYNC_ICONS_BTN"
-msgstr "Synchronize icons from server"
+msgstr "Synchronizuj ikony z serwera"
 
 msgid "ADMIN_GENERAL_SYNC_ICONS_HINT"
-msgstr "Downloads all channel, group and client icons from the TeamSpeak server to the local cache."
+msgstr "Pobiera wszystkie ikony kanałów, grup i klientów z serwera TeamSpeak do lokalnej pamięci podręcznej."
 
 msgid "ADMIN_GENERAL_SYNC_ICONS_SUCCESS"
-msgstr "TeamSpeak icons have been successfully synchronized and are now available."
+msgstr "Ikony TeamSpeak zostały pomyślnie zsynchronizowane i są już dostępne."
 
 msgid "ADMIN_GENERAL_ICON_MANAGEMENT_TITLE"
-msgstr "Favicon & Site-Icon"
+msgstr "Favicon i ikona strony"
 
 msgid "ADMIN_GENERAL_FAVICON_LABEL"
 msgstr "Favicon (16x16 / 32x32)"
 
 msgid "ADMIN_GENERAL_FAVICON_HINT"
-msgstr "Displayed in the browser tab. Supports: PNG, JPEG, ICO, WebP."
+msgstr "Wyświetlane na karcie przeglądarki. Obsługuje: PNG, JPEG, ICO, WebP."
 
 msgid "ADMIN_GENERAL_SITEICON_LABEL"
-msgstr "Site-Icon (Apple Touch Icon / Logo)"
+msgstr "Ikona strony (Apple Touch Icon / Logo)"
 
 msgid "ADMIN_GENERAL_SITEICON_HINT"
-msgstr "Used when saving to the home screen or as an app icon."
+msgstr "Używane przy zapisywaniu na ekranie głównym lub jako ikona aplikacji."
 
 msgid "ADMIN_GENERAL_ICON_CHOOSE_BTN"
-msgstr "Choose image..."
+msgstr "Wybierz obraz..."
 
 msgid "ADMIN_GENERAL_ICON_DELETE_BTN"
-msgstr "Delete"
+msgstr "Usuń"
 
 msgid "ADMIN_GENERAL_ICON_DELETE_CONFIRM"
-msgstr "Really delete icon?"
+msgstr "Czy na pewno usunąć ikonę?"
 
 msgid "ADMIN_VIEWER_VISIBLE_BADGE"
-msgstr "Visible"
+msgstr "Widoczny"
 
 msgid "ADMIN_VIEWER_HIDDEN_HINT"
-msgstr "Selected channels will not be displayed in the public viewer."
+msgstr "Wybrane kanały nie będą wyświetlane w publicznym widoku."

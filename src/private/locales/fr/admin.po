@@ -599,43 +599,43 @@ msgstr "Paramètres de connexion enregistrés."
 
 
 msgid "ADMIN_GENERAL_SYNC_ICONS_TITLE"
-msgstr "TeamSpeak Channel & Group Icons"
+msgstr "Icônes de canal et de groupe TeamSpeak"
 
 msgid "ADMIN_GENERAL_SYNC_ICONS_BTN"
-msgstr "Synchronize icons from server"
+msgstr "Synchroniser les icônes depuis le serveur"
 
 msgid "ADMIN_GENERAL_SYNC_ICONS_HINT"
-msgstr "Downloads all channel, group and client icons from the TeamSpeak server to the local cache."
+msgstr "Télécharge toutes les icônes de canal, de groupe et de client du serveur TeamSpeak vers le cache local."
 
 msgid "ADMIN_GENERAL_SYNC_ICONS_SUCCESS"
-msgstr "TeamSpeak icons have been successfully synchronized and are now available."
+msgstr "Les icônes TeamSpeak ont été synchronisées avec succès et sont désormais disponibles."
 
 msgid "ADMIN_GENERAL_ICON_MANAGEMENT_TITLE"
-msgstr "Favicon & Site-Icon"
+msgstr "Favicon et icône du site"
 
 msgid "ADMIN_GENERAL_FAVICON_LABEL"
 msgstr "Favicon (16x16 / 32x32)"
 
 msgid "ADMIN_GENERAL_FAVICON_HINT"
-msgstr "Displayed in the browser tab. Supports: PNG, JPEG, ICO, WebP."
+msgstr "Affiché dans l'onglet du navigateur. Formats supportés : PNG, JPEG, ICO, WebP."
 
 msgid "ADMIN_GENERAL_SITEICON_LABEL"
-msgstr "Site-Icon (Apple Touch Icon / Logo)"
+msgstr "Icône du site (Apple Touch Icon / Logo)"
 
 msgid "ADMIN_GENERAL_SITEICON_HINT"
-msgstr "Used when saving to the home screen or as an app icon."
+msgstr "Utilisé lors de l'enregistrement sur l'écran d'accueil ou comme icône d'application."
 
 msgid "ADMIN_GENERAL_ICON_CHOOSE_BTN"
-msgstr "Choose image..."
+msgstr "Choisir une image..."
 
 msgid "ADMIN_GENERAL_ICON_DELETE_BTN"
-msgstr "Delete"
+msgstr "Supprimer"
 
 msgid "ADMIN_GENERAL_ICON_DELETE_CONFIRM"
-msgstr "Really delete icon?"
+msgstr "Voulez-vous vraiment supprimer l'icône ?"
 
 msgid "ADMIN_VIEWER_VISIBLE_BADGE"
 msgstr "Visible"
 
 msgid "ADMIN_VIEWER_HIDDEN_HINT"
-msgstr "Selected channels will not be displayed in the public viewer."
+msgstr "Les canaux sélectionnés ne seront pas affichés dans la visionneuse publique."
