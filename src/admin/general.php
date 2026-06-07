@@ -102,8 +102,8 @@ adminHeader(__a('ADMIN_GENERAL_TITLE'), 'config');
                     <div class="d-flex align-items-start">
                         <div class="mr-3 border rounded p-2 bg-light d-flex align-items-center justify-content-center" style="width: 64px; height: 64px;">
                             <?php 
-                                $favPath = __DIR__ . '/../img/icons/favicon-32.png';
-                                $favUrl  = file_exists($favPath) ? '../img/icons/favicon-32.png?v='.time() : '../img/icons/defaulticon-32.png';
+                                $hasCustomFav = Config::get("website_favicon_custom", false);
+                                $favUrl  = $hasCustomFav ? '../img/icons/favicon-32.png?v='.time() : '../img/icons/defaulticon-32.png';
                             ?>
                             <img src="<?= $favUrl ?>" id="preview-favicon" style="max-width: 32px; max-height: 32px;">
                         </div>
@@ -112,7 +112,7 @@ adminHeader(__a('ADMIN_GENERAL_TITLE'), 'config');
                                 <input type="file" class="custom-file-input icon-upload" id="file-favicon" data-type="favicon">
                                 <label class="custom-file-label" for="file-favicon"><?= htmlspecialchars(__a('ADMIN_GENERAL_ICON_CHOOSE_BTN')) ?></label>
                             </div>
-                            <button type="button" class="btn btn-sm btn-outline-danger btn-icon-delete" data-type="favicon" <?= !file_exists($favPath) ? 'disabled' : '' ?>>
+                            <button type="button" class="btn btn-sm btn-outline-danger btn-icon-delete" data-type="favicon" <?= !$hasCustomFav ? 'disabled' : '' ?>>
                                 <i class="fas fa-trash"></i> <?= htmlspecialchars(__a('ADMIN_GENERAL_ICON_DELETE_BTN')) ?>
                             </button>
                         </div>
@@ -127,8 +127,8 @@ adminHeader(__a('ADMIN_GENERAL_TITLE'), 'config');
                     <div class="d-flex align-items-start">
                         <div class="mr-3 border rounded p-2 bg-light d-flex align-items-center justify-content-center" style="width: 64px; height: 64px;">
                             <?php 
-                                $siteIconPath = __DIR__ . '/../img/icons/site-icon.png';
-                                $siteIconUrl  = file_exists($siteIconPath) ? '../img/icons/site-icon.png?v='.time() : '../img/icons/defaulticon-256.png';
+                                $hasCustomSite = Config::get("website_siteicon_custom", false);
+                                $siteIconUrl  = $hasCustomSite ? '../img/icons/site-icon.png?v='.time() : '../img/icons/defaulticon-256.png';
                             ?>
                             <img src="<?= $siteIconUrl ?>" id="preview-siteicon" style="max-width: 48px; max-height: 48px;">
                         </div>
@@ -137,7 +137,7 @@ adminHeader(__a('ADMIN_GENERAL_TITLE'), 'config');
                                 <input type="file" class="custom-file-input icon-upload" id="file-siteicon" data-type="siteicon">
                                 <label class="custom-file-label" for="file-siteicon"><?= htmlspecialchars(__a('ADMIN_GENERAL_ICON_CHOOSE_BTN')) ?></label>
                             </div>
-                            <button type="button" class="btn btn-sm btn-outline-danger btn-icon-delete" data-type="siteicon" <?= !file_exists($siteIconPath) ? 'disabled' : '' ?>>
+                            <button type="button" class="btn btn-sm btn-outline-danger btn-icon-delete" data-type="siteicon" <?= !$hasCustomSite ? 'disabled' : '' ?>>
                                 <i class="fas fa-trash"></i> <?= htmlspecialchars(__a('ADMIN_GENERAL_ICON_DELETE_BTN')) ?>
                             </button>
                         </div>

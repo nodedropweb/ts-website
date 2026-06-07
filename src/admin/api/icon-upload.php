@@ -42,11 +42,12 @@ if ($action === 'delete') {
         if (file_exists($uploadDir . $t)) unlink($uploadDir . $t);
     }
     
-    // Clear template cache
-    if (file_exists(__DIR__ . '/../../private/php/load.php')) {
-        require_once __DIR__ . '/../../private/php/load.php';
-        foreach (glob(__CACHE_DIR . '/templates/*.php') as $f) @unlink($f);
-    }
+    // Update config
+    Config::i()->setValue("website_" . $type . "_custom", false);
+    
+    // Clear template and data cache
+    foreach (glob(__CACHE_DIR . '/*.cache.php') as $f) @unlink($f);
+    foreach (glob(__CACHE_DIR . '/templates/*.php') as $f) @unlink($f);
 
     echo json_encode(['success' => true]);
     exit;
@@ -139,11 +140,12 @@ if ($type === 'favicon') {
 
 imagedestroy($img);
 
-// Clear template cache
-if (file_exists(__DIR__ . '/../../private/php/load.php')) {
-    require_once __DIR__ . '/../../private/php/load.php';
-    foreach (glob(__CACHE_DIR . '/templates/*.php') as $f) @unlink($f);
-}
+// Update config
+Config::i()->setValue("website_" . $type . "_custom", true);
+
+// Clear template and data cache
+foreach (glob(__CACHE_DIR . '/*.cache.php') as $f) @unlink($f);
+foreach (glob(__CACHE_DIR . '/templates/*.php') as $f) @unlink($f);
 
 $json = json_encode([
     'success' => true,

@@ -11,24 +11,19 @@
     <meta name="generator" content="TS-website {\__TSWEBSITE_VERSION} by Wruczek / https://github.com/Wruczek/ts-website">
     <meta name="csrf-token" content="{$csrfToken}">
     
-    {var $fav16 = "img/icons/favicon-16.png"}
-    {var $fav32 = "img/icons/favicon-32.png"}
-    {var $siteIcon = "img/icons/site-icon.png"}
+    {var $customFavicon = $config["website_favicon_custom"] ?? false}
+    {var $customSiteIcon = $config["website_siteicon_custom"] ?? false}
     
-    {if file_exists(__BASE_DIR . "/src/" . $fav16)}
-        <link rel="icon" type="image/png" sizes="16x16" href="{$fav16|noCheck}">
+    {if $customFavicon}
+        <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32.png">
     {else}
         <link rel="icon" type="image/png" sizes="16x16" href="img/icons/defaulticon-16.png">
-    {/if}
-
-    {if file_exists(__BASE_DIR . "/src/" . $fav32)}
-        <link rel="icon" type="image/png" sizes="32x32" href="{$fav32|noCheck}">
-    {else}
         <link rel="icon" type="image/png" sizes="32x32" href="img/icons/defaulticon-32.png">
     {/if}
 
-    {if file_exists(__BASE_DIR . "/src/" . $siteIcon)}
-        <link rel="apple-touch-icon" href="{$siteIcon|noCheck}">
+    {if $customSiteIcon}
+        <link rel="apple-touch-icon" href="img/icons/site-icon.png">
     {else}
         <link rel="apple-touch-icon" href="img/icons/defaulticon-256.png">
     {/if}
@@ -80,7 +75,8 @@
 <nav id="main-navbar" class="navbar navbar-expand-lg fixed-top nav-fix-scroll navbar-dark bg-primary">
     <div class="container">
         <a class="navbar-brand" href=".">
-            <img src="img/icons/defaulticon-64.png" width="32" height="32" class="d-inline-block align-top mr-1" alt="Brand image">
+            {var $logoUrl = $customSiteIcon ? "img/icons/site-icon.png" : "img/icons/defaulticon-64.png"}
+            <img src="{$logoUrl}" width="32" height="32" class="d-inline-block align-top mr-1" alt="Brand image">
             {$config["nav_brand"]}
         </a>
 
