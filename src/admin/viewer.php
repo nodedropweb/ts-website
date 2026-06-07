@@ -136,7 +136,7 @@ adminHeader(__a('ADMIN_VIEWER_TITLE'), 'config');
                                     </span>
                                 <?php else: ?>
                                     <span class="badge badge-success">
-                                        <i class="fas fa-eye"></i> Sichtbar
+                                        <i class="fas fa-eye"></i> <?= htmlspecialchars(__a('ADMIN_VIEWER_VISIBLE_BADGE')) ?>
                                     </span>
                                 <?php endif; ?>
                             </td>
@@ -150,7 +150,7 @@ adminHeader(__a('ADMIN_VIEWER_TITLE'), 'config');
         <div class="card-footer">
             <div class="d-flex justify-content-between align-items-center">
                 <span class="text-muted small">
-                    <i class="fas fa-info-circle"></i> Markierte Kanäle werden im öffentlichen Viewer nicht angezeigt.
+                    <i class="fas fa-info-circle"></i> <?= htmlspecialchars(__a('ADMIN_VIEWER_HIDDEN_HINT')) ?>
                 </span>
                 <button type="submit" class="btn btn-primary btn-lg">
                     <i class="fas fa-save"></i> <?= htmlspecialchars(__a('ADMIN_BTN_SAVE')) ?>

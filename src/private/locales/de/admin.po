@@ -615,3 +615,33 @@ msgstr "Lädt alle Kanal-, Gruppen- und Client-Icons vom TeamSpeak-Server in den
 
 msgid "ADMIN_GENERAL_SYNC_ICONS_SUCCESS"
 msgstr "TeamSpeak-Icons wurden erfolgreich synchronisiert und stehen nun zur Verfügung."
+
+msgid "ADMIN_GENERAL_ICON_MANAGEMENT_TITLE"
+msgstr "Favicon & Site-Icon"
+
+msgid "ADMIN_GENERAL_FAVICON_LABEL"
+msgstr "Favicon (16x16 / 32x32)"
+
+msgid "ADMIN_GENERAL_FAVICON_HINT"
+msgstr "Wird im Browser-Tab angezeigt. Unterstützt: PNG, JPEG, ICO, WebP."
+
+msgid "ADMIN_GENERAL_SITEICON_LABEL"
+msgstr "Site-Icon (Apple Touch Icon / Logo)"
+
+msgid "ADMIN_GENERAL_SITEICON_HINT"
+msgstr "Wird beim Speichern auf dem Homescreen oder als App-Icon verwendet."
+
+msgid "ADMIN_GENERAL_ICON_CHOOSE_BTN"
+msgstr "Bild wählen..."
+
+msgid "ADMIN_GENERAL_ICON_DELETE_BTN"
+msgstr "Löschen"
+
+msgid "ADMIN_GENERAL_ICON_DELETE_CONFIRM"
+msgstr "Icon wirklich löschen?"
+
+msgid "ADMIN_VIEWER_VISIBLE_BADGE"
+msgstr "Sichtbar"
+
+msgid "ADMIN_VIEWER_HIDDEN_HINT"
+msgstr "Markierte Kanäle werden im öffentlichen Viewer nicht angezeigt."

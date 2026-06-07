@@ -597,3 +597,45 @@ msgstr "المنفذ الذي يتصل به العملاء (الافتراضي: 
 msgid "ADMIN_QUERY_SAVED"
 msgstr "تم حفظ إعدادات الاتصال."
 
+
+msgid "ADMIN_GENERAL_SYNC_ICONS_TITLE"
+msgstr "TeamSpeak Channel & Group Icons"
+
+msgid "ADMIN_GENERAL_SYNC_ICONS_BTN"
+msgstr "Synchronize icons from server"
+
+msgid "ADMIN_GENERAL_SYNC_ICONS_HINT"
+msgstr "Downloads all channel, group and client icons from the TeamSpeak server to the local cache."
+
+msgid "ADMIN_GENERAL_SYNC_ICONS_SUCCESS"
+msgstr "TeamSpeak icons have been successfully synchronized and are now available."
+
+msgid "ADMIN_GENERAL_ICON_MANAGEMENT_TITLE"
+msgstr "Favicon & Site-Icon"
+
+msgid "ADMIN_GENERAL_FAVICON_LABEL"
+msgstr "Favicon (16x16 / 32x32)"
+
+msgid "ADMIN_GENERAL_FAVICON_HINT"
+msgstr "Displayed in the browser tab. Supports: PNG, JPEG, ICO, WebP."
+
+msgid "ADMIN_GENERAL_SITEICON_LABEL"
+msgstr "Site-Icon (Apple Touch Icon / Logo)"
+
+msgid "ADMIN_GENERAL_SITEICON_HINT"
+msgstr "Used when saving to the home screen or as an app icon."
+
+msgid "ADMIN_GENERAL_ICON_CHOOSE_BTN"
+msgstr "Choose image..."
+
+msgid "ADMIN_GENERAL_ICON_DELETE_BTN"
+msgstr "Delete"
+
+msgid "ADMIN_GENERAL_ICON_DELETE_CONFIRM"
+msgstr "Really delete icon?"
+
+msgid "ADMIN_VIEWER_VISIBLE_BADGE"
+msgstr "Visible"
+
+msgid "ADMIN_VIEWER_HIDDEN_HINT"
+msgstr "Selected channels will not be displayed in the public viewer."

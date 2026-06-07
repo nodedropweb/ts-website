@@ -91,13 +91,13 @@ adminHeader(__a('ADMIN_GENERAL_TITLE'), 'config');
 </form>
 
     <div class="card mb-4">
-        <div class="card-header"><i class="fas fa-image"></i> Favicon & Site-Icon</div>
+        <div class="card-header"><i class="fas fa-image"></i> <?= htmlspecialchars(__a('ADMIN_GENERAL_ICON_MANAGEMENT_TITLE')) ?></div>
         <div class="card-body">
             <div class="row">
                 <!-- Favicon -->
                 <div class="col-md-6 mb-4">
-                    <label class="font-weight-bold">Favicon (16x16 / 32x32)</label>
-                    <p class="text-muted small">Wird im Browser-Tab angezeigt. Unterstützt: PNG, JPEG, ICO, WebP.</p>
+                    <label class="font-weight-bold"><?= htmlspecialchars(__a('ADMIN_GENERAL_FAVICON_LABEL')) ?></label>
+                    <p class="text-muted small"><?= htmlspecialchars(__a('ADMIN_GENERAL_FAVICON_HINT')) ?></p>
                     
                     <div class="d-flex align-items-start">
                         <div class="mr-3 border rounded p-2 bg-light d-flex align-items-center justify-content-center" style="width: 64px; height: 64px;">
@@ -110,10 +110,10 @@ adminHeader(__a('ADMIN_GENERAL_TITLE'), 'config');
                         <div class="flex-grow-1">
                             <div class="custom-file mb-2">
                                 <input type="file" class="custom-file-input icon-upload" id="file-favicon" data-type="favicon">
-                                <label class="custom-file-label" for="file-favicon">Bild wählen...</label>
+                                <label class="custom-file-label" for="file-favicon"><?= htmlspecialchars(__a('ADMIN_GENERAL_ICON_CHOOSE_BTN')) ?></label>
                             </div>
                             <button type="button" class="btn btn-sm btn-outline-danger btn-icon-delete" data-type="favicon" <?= !file_exists($favPath) ? 'disabled' : '' ?>>
-                                <i class="fas fa-trash"></i> Löschen
+                                <i class="fas fa-trash"></i> <?= htmlspecialchars(__a('ADMIN_GENERAL_ICON_DELETE_BTN')) ?>
                             </button>
                         </div>
                     </div>
@@ -121,8 +121,8 @@ adminHeader(__a('ADMIN_GENERAL_TITLE'), 'config');
 
                 <!-- Site Icon -->
                 <div class="col-md-6 mb-4">
-                    <label class="font-weight-bold">Site-Icon (Apple Touch Icon / Logo)</label>
-                    <p class="text-muted small">Wird beim Speichern auf dem Homescreen oder als App-Icon verwendet.</p>
+                    <label class="font-weight-bold"><?= htmlspecialchars(__a('ADMIN_GENERAL_SITEICON_LABEL')) ?></label>
+                    <p class="text-muted small"><?= htmlspecialchars(__a('ADMIN_GENERAL_SITEICON_HINT')) ?></p>
                     
                     <div class="d-flex align-items-start">
                         <div class="mr-3 border rounded p-2 bg-light d-flex align-items-center justify-content-center" style="width: 64px; height: 64px;">
@@ -135,10 +135,10 @@ adminHeader(__a('ADMIN_GENERAL_TITLE'), 'config');
                         <div class="flex-grow-1">
                             <div class="custom-file mb-2">
                                 <input type="file" class="custom-file-input icon-upload" id="file-siteicon" data-type="siteicon">
-                                <label class="custom-file-label" for="file-siteicon">Bild wählen...</label>
+                                <label class="custom-file-label" for="file-siteicon"><?= htmlspecialchars(__a('ADMIN_GENERAL_ICON_CHOOSE_BTN')) ?></label>
                             </div>
                             <button type="button" class="btn btn-sm btn-outline-danger btn-icon-delete" data-type="siteicon" <?= !file_exists($siteIconPath) ? 'disabled' : '' ?>>
-                                <i class="fas fa-trash"></i> Löschen
+                                <i class="fas fa-trash"></i> <?= htmlspecialchars(__a('ADMIN_GENERAL_ICON_DELETE_BTN')) ?>
                             </button>
                         </div>
                     </div>
@@ -198,7 +198,7 @@ adminHeader(__a('ADMIN_GENERAL_TITLE'), 'config');
         const deleteBtns = document.querySelectorAll('.btn-icon-delete');
         deleteBtns.forEach(btn => {
             btn.addEventListener('click', function() {
-                if (!confirm('Icon wirklich löschen?')) return;
+                if (!confirm(<?= json_encode(__a('ADMIN_GENERAL_ICON_DELETE_CONFIRM')) ?>)) return;
                 
                 const type = this.dataset.type;
                 const formData = new FormData();
