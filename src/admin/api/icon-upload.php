@@ -20,13 +20,6 @@ register_shutdown_function(function () {
 
 ob_start();
 
-$token = $_SERVER['HTTP_X_CSRF_TOKEN'] ?? '';
-if (!CsrfUtils::validateToken($token)) {
-    http_response_code(403);
-    echo json_encode(['error' => 'Security error: CSRF token mismatch']);
-    exit;
-}
-
 $uploadDir = __DIR__ . '/../../img/icons/';
 if (!is_dir($uploadDir)) {
     mkdir($uploadDir, 0755, true);
@@ -48,8 +41,8 @@ if ($action === 'delete') {
     Config::i()->setValue("website_" . $type . "_custom", false);
     
     // Clear template and data cache
-    foreach (glob(__CACHE_DIR__ . '/*.cache.php') as $f) @unlink($f);
-    foreach (glob(__CACHE_DIR__ . '/templates/*.php') as $f) @unlink($f);
+    foreach (glob(__CACHE_DIR . '/*.cache.php') as $f) @unlink($f);
+    foreach (glob(__CACHE_DIR . '/templates/*.php') as $f) @unlink($f);
 
     echo json_encode(['success' => true]);
     exit;
