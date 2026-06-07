@@ -9,8 +9,25 @@ src/composer.lock
 src/private/dbconfig.php
 src/private/dev_mode
 src/private/INSTALLER_LOCK
+src/private/SETUP_LOCK
 
+# TSW CLI profiles and artifacts
+.reset-profile.json
+tsw.phar
+tsw.phar.bak
 
+# Debug and temporary scripts
+test_ts.php
+test_admin.php
+debug_members.php
+debug_widget.php
+dump_config.php
+apply_fixes.php
+test_write.txt
+
+# PHAR build source (optional, but requested to exclude build-related)
+# phar-src/
+# build-phar.php
 
 # Platform and IDE things
 # Created by https://www.gitignore.io/api/linux,macos,windows,visualstudiocode
