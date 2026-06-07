@@ -412,3 +412,57 @@ table.dataTable > tbody > tr.child td.child {
 .group-assigner .assigner-header .badge.badge-invalid {
     background-color: red !important
 }
+
+/* --- Klaro Consent Manager Theme Integration --- */
+
+#klaro .klaro .cookie-notice {
+    background-color: var(--acrylic-bg) !important;
+    backdrop-filter: var(--acrylic-blur);
+    -webkit-backdrop-filter: var(--acrylic-blur);
+    border: 1px solid var(--acrylic-border);
+    box-shadow: var(--acrylic-shadow);
+    color: var(--site-text) !important;
+    border-radius: 8px;
+}
+
+#klaro .klaro .cookie-modal .cm-app-container,
+#klaro .klaro .cookie-modal .cm-modal {
+    background-color: var(--acrylic-bg) !important;
+    backdrop-filter: var(--acrylic-blur);
+    -webkit-backdrop-filter: var(--acrylic-blur);
+    border: 1px solid var(--acrylic-border);
+    color: var(--site-text) !important;
+}
+
+#klaro .klaro .cookie-modal .cm-header,
+#klaro .klaro .cookie-modal .cm-footer {
+    background-color: rgba(255,255,255,0.05) !important;
+    border-color: var(--acrylic-border) !important;
+}
+
+#klaro .klaro .cookie-modal .cm-header .cm-title,
+#klaro .klaro .cookie-modal .cm-app-title,
+#klaro .klaro .cookie-modal .cm-section-title {
+    color: var(--site-text) !important;
+}
+
+#klaro .klaro .cn-buttons .cm-btn-success,
+#klaro .klaro .cm-buttons .cm-btn-success,
+#klaro .klaro .cm-buttons .cm-btn-info {
+    background-color: var(--site-secondary-color) !important;
+    border-color: var(--site-secondary-color) !important;
+    color: #fff !important;
+}
+
+#klaro .klaro .cn-buttons .cm-btn-success:hover,
+#klaro .klaro .cm-buttons .cm-btn-success:hover {
+    background-color: var(--site-accent-color) !important;
+}
+
+#klaro .klaro .cm-list-input:checked + .cm-list-label .slider {
+    background-color: var(--site-secondary-color) !important;
+}
+
+#klaro .klaro .cm-link {
+    color: var(--site-secondary-color) !important;
+}
