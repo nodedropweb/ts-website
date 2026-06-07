@@ -33,6 +33,7 @@ $sectionLabels = [
     'onlinerecord'   => __a('ADMIN_CONFIG_SECTION_ONLINERECORD'),
     'query'          => __a('ADMIN_CONFIG_SECTION_QUERY'),
     'viewer'         => __a('ADMIN_CONFIG_SECTION_VIEWER'),
+    'seo'            => __a('ADMIN_CONFIG_SECTION_SEO'),
     'website'        => 'Website',
     'admin'          => __a('ADMIN_CONFIG_SECTION_ADMIN'),
     'assignerconfig' => __a('ADMIN_CONFIG_SECTION_ASSIGNER'),
@@ -89,6 +90,10 @@ if ($flash): ?>
             <?php elseif ($section === 'viewer'): ?>
             <a href="viewer.php" class="btn btn-secondary">
                 <i class="fas fa-sitemap"></i> <?= htmlspecialchars(__a('ADMIN_CONFIG_BTN_VIEWER')) ?>
+            </a>
+            <?php elseif ($section === 'seo'): ?>
+            <a href="seo.php" class="btn btn-info">
+                <i class="fas fa-search"></i> <?= htmlspecialchars(__a('ADMIN_CONFIG_BTN_SEO')) ?>
             </a>
             <?php elseif ($section === 'query'): ?>
             <a href="query.php" class="btn btn-warning">

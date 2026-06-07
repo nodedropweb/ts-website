@@ -645,3 +645,33 @@ msgstr "Sichtbar"
 
 msgid "ADMIN_VIEWER_HIDDEN_HINT"
 msgstr "Markierte Kanäle werden im öffentlichen Viewer nicht angezeigt."
+
+msgid "ADMIN_CONFIG_SECTION_SEO"
+msgstr "SEO & Social Media"
+
+msgid "ADMIN_CONFIG_BTN_SEO"
+msgstr "SEO-Einstellungen verwalten"
+
+msgid "ADMIN_SEO_TITLE"
+msgstr "SEO & Social Media Einstellungen"
+
+msgid "ADMIN_SEO_HINT"
+msgstr "Konfiguriere, wie deine Website in Suchmaschinen und auf Social-Media-Plattformen (Discord, Facebook, etc.) angezeigt wird."
+
+msgid "ADMIN_SEO_FIELD_DESCRIPTION_LABEL"
+msgstr "Meta-Beschreibung"
+
+msgid "ADMIN_SEO_FIELD_DESCRIPTION_HINT"
+msgstr "Eine kurze Zusammenfassung deiner Community (empfohlen: 150-160 Zeichen)."
+
+msgid "ADMIN_SEO_FIELD_OG_TITLE_LABEL"
+msgstr "Social-Media Titel (OG:Title)"
+
+msgid "ADMIN_SEO_FIELD_OG_TITLE_HINT"
+msgstr "Der Titel, der beim Teilen auf Discord/Facebook angezeigt wird. Leer lassen, um den Website-Titel zu verwenden."
+
+msgid "ADMIN_SEO_FIELD_OG_IMAGE_LABEL"
+msgstr "Vorschaubild (OG:Image)"
+
+msgid "ADMIN_SEO_FIELD_OG_IMAGE_HINT"
+msgstr "Empfohlene Größe: 1200x630 px. Wird beim Teilen in sozialen Medien als Vorschau angezeigt."

@@ -9,6 +9,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="TS-website {\__TSWEBSITE_VERSION} by Wruczek / https://github.com/Wruczek/ts-website">
+    
+    {var $description = $config["website_description"] ?? "TeamSpeak 3 community website."}
+    {var $ogTitle = !empty($config["website_og_title"]) ? $config["website_og_title"] : ($title . " | " . $config["website_title"])}
+    {var $ogImage = ($config["website_og_image_custom"] ?? false) ? "img/og-image.jpg" : "img/icons/defaulticon-512.png"}
+    
+    <meta name="description" content="{$description}">
+    <meta property="og:title" content="{$ogTitle}">
+    <meta property="og:description" content="{$description}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{Wruczek\TSWebsite\Config::get('baseurl')}/{$_SERVER['PHP_SELF']|replace:'.php',''}">
+    <meta property="og:image" content="{$ogImage|noCheck}">
+
     <meta name="csrf-token" content="{$csrfToken}">
     
     {var $customFavicon = $config["website_favicon_custom"] ?? false}

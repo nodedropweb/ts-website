@@ -639,3 +639,33 @@ msgstr "Ορατό"
 
 msgid "ADMIN_VIEWER_HIDDEN_HINT"
 msgstr "Τα επιλεγμένα κανάλια δεν θα εμφανίζονται στη δημόσια προβολή."
+
+msgid "ADMIN_CONFIG_SECTION_SEO"
+msgstr "SEO & Social Media"
+
+msgid "ADMIN_CONFIG_BTN_SEO"
+msgstr "Manage SEO Settings"
+
+msgid "ADMIN_SEO_TITLE"
+msgstr "SEO & Social Media Settings"
+
+msgid "ADMIN_SEO_HINT"
+msgstr "Configure how your website appears on search engines and social media platforms (Discord, Facebook, etc.)."
+
+msgid "ADMIN_SEO_FIELD_DESCRIPTION_LABEL"
+msgstr "Meta Description"
+
+msgid "ADMIN_SEO_FIELD_DESCRIPTION_HINT"
+msgstr "A short summary of your community (recommended: 150-160 characters)."
+
+msgid "ADMIN_SEO_FIELD_OG_TITLE_LABEL"
+msgstr "Social Media Title (OG:Title)"
+
+msgid "ADMIN_SEO_FIELD_OG_TITLE_HINT"
+msgstr "The title shown when shared on Discord/Facebook. Leave empty to use the Website Title."
+
+msgid "ADMIN_SEO_FIELD_OG_IMAGE_LABEL"
+msgstr "Sharing Image (OG:Image)"
+
+msgid "ADMIN_SEO_FIELD_OG_IMAGE_HINT"
+msgstr "Recommended size: 1200x630 px. Shown as a preview when shared on social media."
