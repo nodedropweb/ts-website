@@ -61,9 +61,9 @@ CREATE TABLE `DBPREFIXfaq` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 INSERT INTO `DBPREFIXfaq` (`faqid`, `langid`, `question`, `answer`, `lastmodify`) VALUES
-(1, 1, 'What is the FAQ?', '<b>FAQ</b> section allows you to show frequently asked questions and answers to them.', '2018-12-26 13:10:32'),
-(2, 1, 'How can I configure the FAQ?', 'An administrator can add, edit and remove questions in <a href=\"admin\">admin panel</a>.', '2018-12-26 12:33:18'),
-(3, 1, 'Question 3', 'Answer 3 in <b>HTML</b>', '2018-12-26 13:10:32');
+(1, 1, 'Why does this fork of ts-website exist?', 'The original project by Wruczek was excellent but lacked a proper admin panel and modern PHP support. This fork by <b>nodedropweb</b> adds a full web-based administration interface, modernizes the code for PHP 8.4+, and ensures GDPR compliance by hosting all assets locally.', '2024-06-07 10:00:00'),
+(2, 1, 'What are the main new features in this version?', 'This version introduces a <b>complete Admin Panel</b> for managing News, FAQ, Rules, and settings. It also includes an enhanced CLI tool (<code>tsw.phar</code>) for easier maintenance, a modernized dark-themed administration UI, and a patched TeamSpeak 3 PHP framework for improved stability and performance.', '2024-06-07 10:00:00'),
+(3, 1, 'Is this version compatible with the original ts-website?', 'Yes! This is a drop-in extension. All existing features remain functional, but you now have much more control through the new administration interface without needing to edit the database manually.', '2024-06-07 10:00:00');
 
 DROP TABLE IF EXISTS `DBPREFIXnews`;
 CREATE TABLE `DBPREFIXnews` (
@@ -76,7 +76,7 @@ CREATE TABLE `DBPREFIXnews` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 INSERT INTO `DBPREFIXnews` (`newsid`, `title`, `langid`, `added`, `edited`, `content`) VALUES
-(1, 'Welcome to ts-website!', 1, '2018-12-26 03:10:32', NULL, '<b>Hi there!</b> If you are reading this, it means that TS-website has been installed successfully.<br>\r\n<!-- You can login to your <a href=\"admin\">ACP</a> to configure many parts of it.<br> -->\r\nNeed help? Join our <a href=\"https://t.me/tswebsite\" target=\"_blank\">Telegram group</a> for support.\r\nHave a good day!');
+(1, 'Welcome to ts-website 3.0!', 1, '2024-06-07 10:00:00', NULL, 'We are excited to present this modernized version of the popular TeamSpeak community website. This release brings a long-awaited <b>Admin Panel</b>, improved stability for modern PHP versions, and enhanced CLI tools for server operators. Check out the FAQ and Rules pages to see how easy it is to manage your community!');
 
 
 ALTER TABLE `DBPREFIXconfig`
