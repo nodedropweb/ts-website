@@ -113,6 +113,11 @@ class AdminStatus {
 
                     $onlineClient = CacheManager::i()->getClient($cldbid);
 
+                    // Skip ServerQuery clients (client_type 1)
+                    if ($onlineClient !== null && (int)($onlineClient["client_type"] ?? 0) === 1) {
+                        continue;
+                    }
+
                     if ($format === self::STATUS_STYLE_LIST_ONLINE_FIRST) {
                         // in list style, inside of data we have
                         // 2 additional arrays: online and offline
