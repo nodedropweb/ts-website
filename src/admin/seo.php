@@ -49,46 +49,14 @@ adminHeader(__a('ADMIN_SEO_TITLE'), 'config');
             <i class="fas fa-info-circle"></i> <?= htmlspecialchars(__a('ADMIN_SEO_HINT')) ?>
         </p>
 
-        <form method="post">
-            <input type="hidden" name="csrf-token" value="<?= htmlspecialchars(CsrfUtils::getToken()) ?>">
-
-            <div class="form-group row">
-                <label class="col-sm-4 col-form-label font-weight-bold" for="seo_description">
-                    <?= htmlspecialchars(__a('ADMIN_SEO_FIELD_DESCRIPTION_LABEL')) ?>
-                </label>
-                <div class="col-sm-8">
-                    <textarea class="form-control" id="seo_description" name="seo_description" rows="3"><?= htmlspecialchars(Config::get('seo_description')) ?></textarea>
-                    <small class="form-text text-muted"><?= htmlspecialchars(__a('ADMIN_SEO_FIELD_DESCRIPTION_HINT')) ?></small>
-                </div>
-            </div>
-
-            <div class="form-group row">
-                <label class="col-sm-4 col-form-label font-weight-bold" for="seo_og_title">
-                    <?= htmlspecialchars(__a('ADMIN_SEO_FIELD_OG_TITLE_LABEL')) ?>
-                </label>
-                <div class="col-sm-8">
-                    <input type="text" class="form-control" id="seo_og_title" name="seo_og_title" value="<?= htmlspecialchars(Config::get('seo_og_title')) ?>">
-                    <small class="form-text text-muted"><?= htmlspecialchars(__a('ADMIN_SEO_FIELD_OG_TITLE_HINT')) ?></small>
-                </div>
-            </div>
-
-            <div class="text-right">
-                <button type="submit" class="btn btn-primary">
-                    <i class="fas fa-save"></i> <?= htmlspecialchars(__a('ADMIN_BTN_SAVE')) ?>
-                </button>
-            </div>
-        </form>
-
-        <hr class="my-4">
-
-        <!-- OG Image Upload -->
-        <div class="row align-items-start">
+        <!-- OG Image Upload (FIRST) -->
+        <div class="row align-items-start mb-5">
             <label class="col-sm-4 font-weight-bold">
                 <?= htmlspecialchars(__a('ADMIN_SEO_FIELD_OG_IMAGE_LABEL')) ?>
             </label>
             <div class="col-sm-8">
                 <div class="d-flex align-items-start mb-3">
-                    <div class="mr-3 border rounded p-1 bg-light d-flex align-items-center justify-content-center" style="width: 150px; height: 80px; overflow: hidden;">
+                    <div class="mr-3 border rounded p-1 bg-light d-flex align-items-center justify-content-center" style="width: 200px; height: 105px; overflow: hidden;">
                         <?php 
                             $hasCustomOg = Config::get("seo_og_image_custom", false);
                             $ogUrl = $hasCustomOg ? '../img/og.png?v='.time() : 'https://via.placeholder.com/1200x630.png?text=Preview+Image';
@@ -108,6 +76,40 @@ adminHeader(__a('ADMIN_SEO_TITLE'), 'config');
                 <small class="form-text text-muted"><?= htmlspecialchars(__a('ADMIN_SEO_FIELD_OG_IMAGE_HINT')) ?></small>
             </div>
         </div>
+
+        <hr class="my-4">
+
+        <form method="post">
+            <input type="hidden" name="csrf-token" value="<?= htmlspecialchars(CsrfUtils::getToken()) ?>">
+
+            <!-- Social Media Title (SECOND) -->
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label font-weight-bold" for="seo_og_title">
+                    <?= htmlspecialchars(__a('ADMIN_SEO_FIELD_OG_TITLE_LABEL')) ?>
+                </label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="seo_og_title" name="seo_og_title" value="<?= htmlspecialchars(Config::get('seo_og_title')) ?>">
+                    <small class="form-text text-muted"><?= htmlspecialchars(__a('ADMIN_SEO_FIELD_OG_TITLE_HINT')) ?></small>
+                </div>
+            </div>
+
+            <!-- Meta Description (THIRD) -->
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label font-weight-bold" for="seo_description">
+                    <?= htmlspecialchars(__a('ADMIN_SEO_FIELD_DESCRIPTION_LABEL')) ?>
+                </label>
+                <div class="col-sm-8">
+                    <textarea class="form-control" id="seo_description" name="seo_description" rows="3"><?= htmlspecialchars(Config::get('seo_description')) ?></textarea>
+                    <small class="form-text text-muted"><?= htmlspecialchars(__a('ADMIN_SEO_FIELD_DESCRIPTION_HINT')) ?></small>
+                </div>
+            </div>
+
+            <div class="text-right">
+                <button type="submit" class="btn btn-primary btn-lg">
+                    <i class="fas fa-save"></i> <?= htmlspecialchars(__a('ADMIN_BTN_SAVE')) ?>
+                </button>
+            </div>
+        </form>
     </div>
 </div>
 
@@ -156,7 +158,8 @@ document.addEventListener('DOMContentLoaded', function() {
             if (data.success) {
                 preview.src = 'https://via.placeholder.com/1200x630.png?text=Preview+Image';
                 deleteBtn.disabled = true;
-                document.querySelector('label[for="file-og"]').textContent = <?= json_encode(__a('ADMIN_GENERAL_ICON_CHOOSE_BTN')) ?>;
+                const label = document.querySelector('label[for="file-og"]');
+                if (label) label.textContent = <?= json_encode(__a('ADMIN_GENERAL_ICON_CHOOSE_BTN')) ?>;
             }
         })
         .catch(err => alert('Delete failed: ' + err));
