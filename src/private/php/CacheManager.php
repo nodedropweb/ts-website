@@ -112,7 +112,7 @@ class CacheManager {
         }
 
         foreach ($clients as $client) {
-            if ($client["client_database_id"] === $cldbid) {
+            if ((int) $client["client_database_id"] === $cldbid) {
                 return $client;
             }
         }

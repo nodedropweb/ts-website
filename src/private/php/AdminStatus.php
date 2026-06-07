@@ -26,20 +26,23 @@ class AdminStatus {
     }
 
     public function getCachedAdminClients(array $adminGroups): ?array {
-        return $this->cache->refreshIfExpired("adminstatus", function () use ($adminGroups) {
+        $cacheKey = "adminstatus_" . md5(json_encode($adminGroups));
+
+        return $this->cache->refreshIfExpired($cacheKey, function () use ($adminGroups) {
             if(TeamSpeakUtils::i()->checkTSConnection()) {
-                try {
-                    $nodeServer = TeamSpeakUtils::i()->getTSNodeServer();
-                    $clients = [];
+                $nodeServer = TeamSpeakUtils::i()->getTSNodeServer();
+                $clients = [];
 
-                    foreach ($adminGroups as $groupId) {
+                foreach ($adminGroups as $groupId) {
+                    try {
                         $clients[$groupId] = $nodeServer->serverGroupClientList($groupId);
+                    } catch (TeamSpeak3_Exception $e) {
+                        TeamSpeakUtils::i()->addExceptionToExceptionsList($e);
+                        $clients[$groupId] = [];
                     }
-
-                    return $clients;
-                } catch (TeamSpeak3_Exception $e) {
-                    TeamSpeakUtils::i()->addExceptionToExceptionsList($e);
                 }
+
+                return $clients;
             }
             return null;
         }, Config::get("cache_adminstatus"));
@@ -75,10 +78,14 @@ class AdminStatus {
             }
 
             $groupClients = [];
-            $cachedClients = $adminStatus[$adminGroupId];
+            $cachedClients = $adminStatus[$adminGroupId] ?? [];
+
+            if (!is_array($cachedClients)) {
+                $cachedClients = [];
+            }
 
             foreach ($cachedClients as $client) {
-                $cldbid = $client["cldbid"];
+                $cldbid = (int) $client["cldbid"];
 
                 if (in_array($cldbid, $ignoredUsersDbids)) {
                     continue;
