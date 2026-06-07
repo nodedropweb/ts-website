@@ -25,7 +25,6 @@
     
     {var $customFavicon = $config["website_favicon_custom"] ?? false}
     {var $customSiteIcon = $config["website_siteicon_custom"] ?? false}
-    
     {if $customFavicon}
         <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16.png">
         <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32.png">
@@ -39,6 +38,8 @@
     {else}
         <link rel="apple-touch-icon" href="img/icons/defaulticon-256.png">
     {/if}
+
+    <meta property="og:image" content="{$ogImage}">
 
     <!-- TODO make it use the language variable "WEBSITE_TITLE" after the ACP update -->
     <title>{$title} | {$config["website_title"]}</title>
