@@ -20,7 +20,8 @@ register_shutdown_function(function () {
 
 ob_start();
 
-if (!CsrfUtils::validateToken()) {
+$token = $_SERVER['HTTP_X_CSRF_TOKEN'] ?? '';
+if (!CsrfUtils::validateToken($token)) {
     http_response_code(403);
     echo json_encode(['error' => 'Security error: CSRF token mismatch']);
     exit;
