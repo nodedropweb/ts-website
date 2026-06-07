@@ -85,8 +85,8 @@ adminHeader(__a('ADMIN_VIEWER_TITLE'), 'config');
                 </div>
             <?php else: ?>
             <div class="table-responsive">
-                <table class="table table-hover table-outline mb-0">
-                    <thead class="thead-light">
+                <table class="table table-hover mb-0">
+                    <thead>
                         <tr>
                             <th class="text-center" style="width: 50px;">
                                 <div class="custom-control custom-checkbox">
@@ -106,7 +106,7 @@ adminHeader(__a('ADMIN_VIEWER_TITLE'), 'config');
                             $depth = $item['depth'];
                             $isHidden = in_array($cid, $hidden, true);
                         ?>
-                        <tr class="<?= $isHidden ? 'table-light' : '' ?>">
+                        <tr class="<?= $isHidden ? 'opacity-75' : '' ?>">
                             <td class="text-center">
                                 <div class="custom-control custom-checkbox">
                                     <input type="checkbox" class="custom-control-input channel-checkbox"
