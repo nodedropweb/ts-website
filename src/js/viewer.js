@@ -35,13 +35,29 @@ function updateHooks() {
     var container = $(".viewer-container")
 
     // show-empty-channels toggle
-    container.find("[data-emptychannels]").off("click").on("click", function (e) {
-        var el = $(this)
-        var show = el.data("emptychannels") === "show"
-        container.find("[data-emptychannels]").show()
-        el.hide()
+    var buttons = $("[data-emptychannels]")
+    var applyEmptyChannelsState = function () {
+        var hideEmpty = Cookies.get("tswebsite_hide_empty_channels") === "true"
         var emptyChannels = container.find(".not-occupied")
-        show ? emptyChannels.show() : emptyChannels.hide()
+
+        if (hideEmpty) {
+            emptyChannels.hide()
+            buttons.filter('[data-emptychannels="hide"]').hide()
+            buttons.filter('[data-emptychannels="show"]').show()
+        } else {
+            emptyChannels.show()
+            buttons.filter('[data-emptychannels="hide"]').show()
+            buttons.filter('[data-emptychannels="show"]').hide()
+        }
+    }
+
+    applyEmptyChannelsState()
+
+    buttons.off("click").on("click", function (e) {
+        var el = $(this)
+        var hideEmpty = el.data("emptychannels") === "hide"
+        Cookies.set("tswebsite_hide_empty_channels", hideEmpty ? "true" : "false", {expires: 365})
+        applyEmptyChannelsState()
     })
 
     // ENTER key on focused channel

@@ -253,6 +253,7 @@ The **Viewer** (accessible via the "Viewer" link in the navigation bar) shows a 
 - Each channel shows the users currently inside it
 - User icons and group badges are displayed (e.g. "Server Admin", "VIP")
 - The viewer refreshes automatically — no need to reload the page
+- **Hide Empty Channels:** A button in the viewer allows you to hide channels that are currently empty. Your preference is saved in a cookie and persists across page refreshes and visits.
 
 This is useful for community members who want to see if their friends are online before launching TeamSpeak.
 

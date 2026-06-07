@@ -253,6 +253,7 @@ Der **Viewer** (über den Link „Viewer" in der Navigationsleiste erreichbar) z
 - Jeder Kanal zeigt die aktuell darin befindlichen Nutzer
 - Benutzer-Icons und Gruppen-Abzeichen werden angezeigt (z. B. „Server Admin", „VIP")
 - Der Viewer aktualisiert sich automatisch — kein manuelles Neuladen nötig
+- **Leere Kanäle ausblenden:** Ein Button im Viewer ermöglicht es, Kanäle ohne aktive Nutzer auszublenden. Diese Einstellung wird in einem Cookie gespeichert und bleibt auch beim Neuladen der Seite oder bei späteren Besuchen erhalten.
 
 Das ist praktisch für Community-Mitglieder, die sehen wollen, ob ihre Freunde online sind, bevor sie TeamSpeak öffnen.
 
