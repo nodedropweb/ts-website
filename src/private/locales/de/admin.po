@@ -342,6 +342,12 @@ msgstr "Cloudflare aktiv"
 msgid "ADMIN_GENERAL_FIELD_CLOUDFLARE_HINT"
 msgstr "Aktivieren, wenn die Website hinter Cloudflare läuft"
 
+msgid "ADMIN_GENERAL_FIELD_FAQ_CONTACT_URL_LABEL"
+msgstr "FAQ Kontakt-Link"
+
+msgid "ADMIN_GENERAL_FIELD_FAQ_CONTACT_URL_HINT"
+msgstr "Der Link für 'Kontaktieren Sie uns' auf der FAQ-Seite (z.B. mailto:admin@example.com oder eine URL)."
+
 msgid "ADMIN_GENERAL_SAVED"
 msgstr "Einstellungen gespeichert."
 

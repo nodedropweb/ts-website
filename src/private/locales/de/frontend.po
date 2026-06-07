@@ -177,6 +177,12 @@ msgstr "Kopiert!"
 msgid "FAQ_COPY_LINK_ERROR"
 msgstr "Fehler!"
 
+msgid "FAQ_CONTACT_TEXT"
+msgstr "Wenn Sie weitere Fragen haben, können Sie uns gerne"
+
+msgid "FAQ_CONTACT_LINK"
+msgstr "kontaktieren"
+
 msgid "HOME_TITLE"
 msgstr "Neuigkeiten"
 

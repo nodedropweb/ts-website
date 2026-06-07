@@ -1,0 +1,16 @@
+<?php
+/*
+ * TS-website database config file
+ * Generated at 06-06-2026 21:16:18 with TS-website 3.0.0 (no-commit)
+ */
+
+return [
+    'type' => 'mysql',
+    'host' => 'localhost',
+    'username' => 'ts3',
+    'password' => 'Candycrush12!',
+    'database' => 'ts3',
+    'prefix' => 'Wir sind keien Gilde',
+    'port' => '3306',
+    'charset' => 'utf8mb4'
+];

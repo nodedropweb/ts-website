@@ -20,6 +20,7 @@ $fields = [
     'loginpokeclient' => ['label' => __a('ADMIN_GENERAL_FIELD_LOGINPOKE_LABEL'),     'type' => 'bool',   'hint' => __a('ADMIN_GENERAL_FIELD_LOGINPOKE_HINT')],
     'timezone'        => ['label' => __a('ADMIN_GENERAL_FIELD_TIMEZONE_LABEL'),      'type' => 'string', 'hint' => __a('ADMIN_GENERAL_FIELD_TIMEZONE_HINT')],
     'usingcloudflare' => ['label' => __a('ADMIN_GENERAL_FIELD_CLOUDFLARE_LABEL'),    'type' => 'bool',   'hint' => __a('ADMIN_GENERAL_FIELD_CLOUDFLARE_HINT')],
+    'faq_contact_url' => ['label' => __a('ADMIN_GENERAL_FIELD_FAQ_CONTACT_URL_LABEL'),'type' => 'string', 'hint' => __a('ADMIN_GENERAL_FIELD_FAQ_CONTACT_URL_HINT')],
 ];
 
 $values = [];
@@ -30,9 +31,9 @@ foreach (array_keys($fields) as $key) {
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     foreach ($fields as $key => $meta) {
         $val = $meta['type'] === 'bool'
-            ? (isset($_POST[$key]) ? 'true' : 'false')
+            ? (isset($_POST[$key]) ? true : false)
             : trim($_POST[$key] ?? '');
-        $db->update('config', ['value' => $val], ['identifier' => $key]);
+        Config::i()->setValue($key, $val);
     }
     header('Location: general.php?flash=' . urlencode(__a('ADMIN_GENERAL_SAVED')) . '&type=success');
     exit;

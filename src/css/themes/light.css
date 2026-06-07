@@ -45,6 +45,11 @@ a:hover { color: var(--site-accent-color); text-decoration: none; }
     box-shadow: var(--acrylic-shadow);
 }
 
+#main-navbar .navbar-brand {
+    color: var(--site-text);
+    font-weight: 700;
+}
+
 #main-navbar .nav-item { padding: 0.5rem 0; transition: background-color 0.5s ease; }
 
 #main-navbar .navbar-nav .nav-link { color: rgba(46, 50, 80, 0.8); text-transform: uppercase; }

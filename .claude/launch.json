@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "ts-website",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": ["-c", "echo 'Apache already running'; sleep infinity"],
+      "port": 80
+    }
+  ]
+}

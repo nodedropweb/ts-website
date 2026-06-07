@@ -255,6 +255,12 @@ msgstr "Copied!"
 msgid "FAQ_COPY_LINK_ERROR"
 msgstr "Error!"
 
+msgid "FAQ_CONTACT_TEXT"
+msgstr "If you have any more questions feel free to"
+
+msgid "FAQ_CONTACT_LINK"
+msgstr "contact us"
+
 # ── News ─────────────────────────────────────────────────────────────────────
 
 msgid "HOME_PANEL_TITLE"

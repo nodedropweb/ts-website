@@ -48,6 +48,7 @@ INSERT INTO `DBPREFIXconfig` (`identifier`, `type`, `value`, `user_editable`) VA
 ('baseurl', 'STRING', 'http://localhost', 1),
 ('website_title', 'STRING', 'TS-Website', 1),
 ('nav_brand', 'STRING', 'TS-Website', 1),
+('faq_contact_url', 'STRING', '#', 1),
 ('timezone', 'STRING', 'UTC', 1),
 ('admin_cldbids', 'JSON', '[]', 0);
 
