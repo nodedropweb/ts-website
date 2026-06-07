@@ -16,6 +16,15 @@ register_shutdown_function(function () {
 });
 ob_start();
 
+use Wruczek\TSWebsite\Utils\CsrfUtils;
+use Wruczek\TSWebsite\Config;
+
+if (!CsrfUtils::checkToken()) {
+    http_response_code(403);
+    echo json_encode(['error' => 'Security error: CSRF token mismatch']);
+    exit;
+}
+
 $uploadDir = __DIR__ . '/../../img/icons/';
 if (!is_dir($uploadDir)) {
     mkdir($uploadDir, 0755, true);

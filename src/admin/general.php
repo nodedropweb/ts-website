@@ -198,9 +198,9 @@ adminHeader(__a('ADMIN_GENERAL_TITLE'), 'config');
         const deleteBtns = document.querySelectorAll('.btn-icon-delete');
         deleteBtns.forEach(btn => {
             btn.addEventListener('click', function() {
+                const type = btn.dataset.type;
                 if (!confirm(<?= json_encode(__a('ADMIN_GENERAL_ICON_DELETE_CONFIRM')) ?>)) return;
                 
-                const type = this.dataset.type;
                 const formData = new FormData();
                 formData.append('action', 'delete');
                 formData.append('type', type);
@@ -215,10 +215,18 @@ adminHeader(__a('ADMIN_GENERAL_TITLE'), 'config');
                     if (data.success) {
                         const defaultUrl = (type === 'favicon') ? '../img/icons/defaulticon-32.png' : '../img/icons/defaulticon-256.png';
                         document.getElementById('preview-' + type).src = defaultUrl;
-                        this.disabled = true;
+                        btn.disabled = true;
+                        // Reset file input label
+                        const label = document.querySelector('label[for="file-' + type + '"]');
+                        if (label) label.textContent = <?= json_encode(__a('ADMIN_GENERAL_ICON_CHOOSE_BTN')) ?>;
+                    } else {
+                        alert('Error: ' + data.error);
                     }
                 })
-                .catch(err => alert('Delete failed: ' + err));
+                .catch(err => {
+                    console.error(err);
+                    alert('Delete failed: ' + err);
+                });
             });
         });
 
