@@ -14,11 +14,11 @@ $flashType = $_GET['type']  ?? 'success';
 $db = DatabaseUtils::i()->getDb();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $description = trim($_POST['website_description'] ?? '');
-    $ogTitle     = trim($_POST['website_og_title'] ?? '');
+    $description = trim($_POST['seo_description'] ?? '');
+    $ogTitle     = trim($_POST['seo_og_title'] ?? '');
 
-    $db->update('config', ['value' => $description], ['identifier' => 'website_description']);
-    $db->update('config', ['value' => $ogTitle], ['identifier' => 'website_og_title']);
+    $db->update('config', ['value' => $description], ['identifier' => 'seo_description']);
+    $db->update('config', ['value' => $ogTitle], ['identifier' => 'seo_og_title']);
 
     header('Location: seo.php?flash=' . urlencode(__a('ADMIN_GENERAL_SAVED')) . '&type=success');
     exit;
@@ -53,21 +53,21 @@ adminHeader(__a('ADMIN_SEO_TITLE'), 'config');
             <input type="hidden" name="csrf-token" value="<?= htmlspecialchars(CsrfUtils::getToken()) ?>">
 
             <div class="form-group row">
-                <label class="col-sm-4 col-form-label font-weight-bold" for="website_description">
+                <label class="col-sm-4 col-form-label font-weight-bold" for="seo_description">
                     <?= htmlspecialchars(__a('ADMIN_SEO_FIELD_DESCRIPTION_LABEL')) ?>
                 </label>
                 <div class="col-sm-8">
-                    <textarea class="form-control" id="website_description" name="website_description" rows="3"><?= htmlspecialchars(Config::get('website_description')) ?></textarea>
+                    <textarea class="form-control" id="seo_description" name="seo_description" rows="3"><?= htmlspecialchars(Config::get('seo_description')) ?></textarea>
                     <small class="form-text text-muted"><?= htmlspecialchars(__a('ADMIN_SEO_FIELD_DESCRIPTION_HINT')) ?></small>
                 </div>
             </div>
 
             <div class="form-group row">
-                <label class="col-sm-4 col-form-label font-weight-bold" for="website_og_title">
+                <label class="col-sm-4 col-form-label font-weight-bold" for="seo_og_title">
                     <?= htmlspecialchars(__a('ADMIN_SEO_FIELD_OG_TITLE_LABEL')) ?>
                 </label>
                 <div class="col-sm-8">
-                    <input type="text" class="form-control" id="website_og_title" name="website_og_title" value="<?= htmlspecialchars(Config::get('website_og_title')) ?>">
+                    <input type="text" class="form-control" id="seo_og_title" name="seo_og_title" value="<?= htmlspecialchars(Config::get('seo_og_title')) ?>">
                     <small class="form-text text-muted"><?= htmlspecialchars(__a('ADMIN_SEO_FIELD_OG_TITLE_HINT')) ?></small>
                 </div>
             </div>
@@ -90,7 +90,7 @@ adminHeader(__a('ADMIN_SEO_TITLE'), 'config');
                 <div class="d-flex align-items-start mb-3">
                     <div class="mr-3 border rounded p-1 bg-light d-flex align-items-center justify-content-center" style="width: 150px; height: 80px; overflow: hidden;">
                         <?php 
-                            $hasCustomOg = Config::get("website_og_image_custom", false);
+                            $hasCustomOg = Config::get("seo_og_image_custom", false);
                             $ogUrl = $hasCustomOg ? '../img/og-image.jpg?v='.time() : 'https://via.placeholder.com/1200x630.png?text=Preview+Image';
                         ?>
                         <img src="<?= $ogUrl ?>" id="preview-og" style="max-width: 100%; max-height: 100%; object-fit: cover;">

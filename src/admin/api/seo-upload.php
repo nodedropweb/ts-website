@@ -24,7 +24,7 @@ if ($action === 'delete') {
     if (file_exists($uploadDir . 'og-image.jpg')) {
         unlink($uploadDir . 'og-image.jpg');
     }
-    Config::i()->setValue("website_og_image_custom", false);
+    Config::i()->setValue("seo_og_image_custom", false);
     
     // Clear cache
     foreach (glob(__CACHE_DIR . '/*.cache.php') as $f) @unlink($f);
@@ -78,7 +78,7 @@ $target = $uploadDir . 'og-image.jpg';
 imagejpeg($img, $target, 90);
 imagedestroy($img);
 
-Config::i()->setValue("website_og_image_custom", true);
+Config::i()->setValue("seo_og_image_custom", true);
 
 foreach (glob(__CACHE_DIR . '/*.cache.php') as $f) @unlink($f);
 foreach (glob(__CACHE_DIR . '/templates/*.php') as $f) @unlink($f);
