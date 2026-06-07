@@ -141,7 +141,7 @@ Config::i()->setValue("website_" . $type . "_custom", true);
 
 // Clear template and data cache
 foreach (glob(__CACHE_DIR . '/*.cache.php') as $f) @unlink($f);
-foreach (glob(__CACHE_DIR__ . '/templates/*.php') as $f) @unlink($f);
+foreach (glob(__CACHE_DIR . '/templates/*.php') as $f) @unlink($f);
 
 $json = json_encode([
     'success' => true,
