@@ -124,10 +124,11 @@ EOD;
     }
 
     public function getIcon($name, ?string $tooltip = null, $alt = "Icon"): string {
-        if (is_string($name)) {
-            $path = "{$this->imgPath}/$name";
+        $nameStr = (string) $name;
+        if (!is_numeric($nameStr)) {
+            $path = "{$this->imgPath}/$nameStr";
         } else {
-            $path = "api/geticon.php?iconid=" . (int)(string) $name;
+            $path = "api/geticon.php?iconid=" . (int)$nameStr;
         }
 
         $ttip = $tooltip ? ' data-toggle="tooltip" title="' . Utils::escape($tooltip) . '"' : "";

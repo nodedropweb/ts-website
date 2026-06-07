@@ -30,9 +30,8 @@ $iconIdUnsigned = ServerIconCache::unsignIcon($iconId);
 $iconData = ServerIconCache::getIconBytes($iconIdUnsigned);
 
 if ($iconData === null) {
-    http_response_code(404);
-    echo "404 icon not found";
-    exit;
+    header("Location: ../img/ts-icons/broken_image.svg");
+    return;
 }
 
 header("Content-Type: " . TeamSpeak3_Helper_Convert::imageMimeType($iconData));
