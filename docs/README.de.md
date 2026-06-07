@@ -589,3 +589,40 @@ Dadurch werden alle gecachten Seiten und Daten entfernt. Beim nächsten Seitenau
 ---
 
 *Dokumentation für ts-website v3.0. Originalsoftware von [Wruczek](https://github.com/Wruczek/ts-website), Fork und Erweiterungen von [nodedropweb](https://github.com/nodedropweb).*
+
+---
+
+### 5.9 Manuelle TeamSpeak-Icon-Synchronisation
+
+Wenn du Icons auf deinem TeamSpeak-Server hinzufügst oder änderst (z. B. für neue Servergruppen), zeigt die Website aufgrund des Cachings unter Umständen noch die alten oder gar keine Icons an. Du kannst eine Synchronisation manuell erzwingen, um den lokalen Icon-Cache zu aktualisieren:
+
+1. Navigiere im Admin-Bereich zu **Konfiguration -> Allgemeine Einstellungen**
+2. Scrolle nach unten zum Bereich **TeamSpeak Channel- & Gruppen-Icons**
+3. Klicke auf die Schaltfläche **Icons vom Server synchronisieren**
+
+Die Website lädt sofort alle fehlenden oder aktualisierten Icons vom TeamSpeak-Server herunter. Nach Abschluss des Vorgangs erscheint eine Erfolgsmeldung.
+
+---
+
+### 5.10 Favicon & Site-Icon Verwaltung
+
+Du kannst die Icons anpassen, die im Browser-Tab und auf mobilen Startbildschirmen angezeigt werden:
+
+1. Navigiere im Admin-Bereich zu **Konfiguration -> Allgemeine Einstellungen**
+2. Scrolle zum Bereich **Favicon & Site-Icon**
+3. **Favicon**: Lade ein Bild hoch (PNG, JPEG, WebP oder ICO). Das System generiert automatisch die erforderlichen Größen 16x16 und 32x32.
+4. **Site-Icon**: Lade ein größeres Logo hoch (Apple Touch Icon). Dieses Icon wird auch als **Hauptlogo in der Navigationsleiste** verwendet.
+5. Nutze die Schaltfläche **Löschen** neben jedem Icon, um jederzeit zu den Standard-TeamSpeak-Icons zurückzukehren.
+
+---
+
+### 5.11 SEO & Social Media Einstellungen
+
+Um zu verbessern, wie deine Website in Suchmaschinen und beim Teilen auf Plattformen wie Discord oder Facebook erscheint:
+
+1. Navigiere im Admin-Bereich zu **Konfiguration -> SEO & Social Media**
+2. **Meta-Beschreibung**: Gib eine prägnante Zusammenfassung deiner Community ein (empfohlen: 150-160 Zeichen). Dieser Text wird von Suchmaschinen verwendet.
+3. **Social-Media-Titel (OG:Title)**: Lege einen speziellen Titel für Social-Media-Freigaben fest. Wenn das Feld leer bleibt, wird der Standard-Websitename verwendet.
+4. **Vorschaubild (OG:Image)**: Lade ein hochwertiges Vorschaubild hoch. Das System wird es **automatisch auf das optimale Format von 1200x630 Pixeln zuschneiden und skalieren**.
+
+Die Änderungen treten sofort in Kraft. Du kannst das Erscheinungsbild mit Tools wie dem Facebook Sharing Debugger überprüfen.

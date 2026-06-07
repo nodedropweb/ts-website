@@ -589,3 +589,40 @@ This removes all cached pages and data. The next page load will fetch fresh data
 ---
 
 *Documentation for ts-website v3.0. Original software by [Wruczek](https://github.com/Wruczek/ts-website), fork and extensions by [nodedropweb](https://github.com/nodedropweb).*
+
+---
+
+### 5.9 Manual TeamSpeak Icon Synchronization
+
+If you add or change icons on your TeamSpeak server (e.g., for new server groups or client icons), the website may still show the old ones or none at all due to caching. You can manually force a synchronization to update the local icon cache:
+
+1. In the admin panel, navigate to **Config -> General Settings**
+2. Scroll down to the **TeamSpeak Channel & Group Icons** section
+3. Click the **Synchronize icons from server** button
+
+The website will immediately download all missing or updated icons from the TeamSpeak server. A success message will appear once the process is complete.
+
+---
+
+### 5.10 Favicon & Site-Icon Management
+
+You can customize the icons that appear in the browser tab and on mobile home screens:
+
+1. In the admin panel, navigate to **Config -> General Settings**
+2. Scroll to the **Favicon & Site-Icon** section
+3. **Favicon**: Upload an image (PNG, JPEG, WebP, or ICO). The system will automatically generate the required 16x16 and 32x32 sizes.
+4. **Site-Icon**: Upload a larger logo (Apple Touch Icon). This icon will also be used as the **main logo in the navigation bar**.
+5. Use the **Delete** button next to each icon to revert to the default TeamSpeak icons at any time.
+
+---
+
+### 5.11 SEO & Social Media Settings
+
+To improve how your website appears in search engines and when shared on platforms like Discord or Facebook:
+
+1. In the admin panel, navigate to **Config -> SEO & Social Media**
+2. **Meta Description**: Enter a concise summary of your community (recommended: 150-160 characters). This text is used by search engines.
+3. **Social Media Title (OG:Title)**: Set a specific title for social media shares. If left empty, the default Website Title will be used.
+4. **Sharing Image (OG:Image)**: Upload a high-quality preview image. The system will **automatically resize and crop** it to the optimal 1200x630 pixel format for social media platforms.
+
+Changes take effect immediately. You can verify the appearance using tools like the Facebook Sharing Debugger.
