@@ -20,7 +20,7 @@ register_shutdown_function(function () {
 
 ob_start();
 
-if (!CsrfUtils::checkToken()) {
+if (!CsrfUtils::validateToken()) {
     http_response_code(403);
     echo json_encode(['error' => 'Security error: CSRF token mismatch']);
     exit;
