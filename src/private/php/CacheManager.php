@@ -117,7 +117,14 @@ class CacheManager {
             $dbidMap = [];
             foreach ($clients as $client) {
                 if (isset($client["client_database_id"])) {
-                    $dbidMap[(int) $client["client_database_id"]] = $client;
+                    $id = (int) $client["client_database_id"];
+                    $type = (int) ($client["client_type"] ?? 0);
+
+                    // If multiple clients have the same DBID (e.g. human + query),
+                    // prioritize the human client (Type 0)
+                    if (!isset($dbidMap[$id]) || $type === 0) {
+                        $dbidMap[$id] = $client;
+                    }
                 }
             }
         }
