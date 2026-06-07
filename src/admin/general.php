@@ -90,4 +90,52 @@ adminHeader(__a('ADMIN_GENERAL_TITLE'), 'config');
     </div>
 </form>
 
+    <div class="card mb-4">
+        <div class="card-header"><i class="fas fa-sync"></i> <?= htmlspecialchars(__a('ADMIN_GENERAL_SYNC_ICONS_TITLE')) ?></div>
+        <div class="card-body">
+            <div class="row align-items-center">
+                <div class="col-sm-4"><?= htmlspecialchars(__a('ADMIN_GENERAL_SYNC_ICONS_TITLE')) ?></div>
+                <div class="col-sm-8">
+                    <button type="button" class="btn btn-info btn-sm" id="btn-sync-icons">
+                        <i class="fas fa-sync"></i> <?= htmlspecialchars(__a('ADMIN_GENERAL_SYNC_ICONS_BTN')) ?>
+                    </button>
+                    <small class="form-text text-muted"><?= htmlspecialchars(__a('ADMIN_GENERAL_SYNC_ICONS_HINT')) ?></small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const btn = document.getElementById('btn-sync-icons');
+        if (!btn) return;
+
+        btn.addEventListener('click', function() {
+            const icon = btn.querySelector('i');
+            btn.disabled = true;
+            icon.classList.add('fa-spin');
+
+            fetch('api/sync-icons.php', {
+                method: 'POST',
+                headers: {
+                    'X-CSRF-TOKEN': '<?= CsrfUtils::getToken() ?>'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert(<?= json_encode(__a('ADMIN_GENERAL_SYNC_ICONS_SUCCESS')) ?>);
+                } else {
+                    alert('Error: ' + data.message);
+                }
+            })
+            .catch(err => alert('Network error: ' + err))
+            .finally(() => {
+                btn.disabled = false;
+                icon.classList.remove('fa-spin');
+            });
+        });
+    });
+    </script>
+
 <?php adminFooter(); ?>

@@ -600,3 +600,15 @@ msgstr "Port clients connect to (default: 9987)"
 msgid "ADMIN_QUERY_SAVED"
 msgstr "Connection settings saved."
 
+
+msgid "ADMIN_GENERAL_SYNC_ICONS_TITLE"
+msgstr "TeamSpeak Icons"
+
+msgid "ADMIN_GENERAL_SYNC_ICONS_BTN"
+msgstr "Synchronize icons from server"
+
+msgid "ADMIN_GENERAL_SYNC_ICONS_HINT"
+msgstr "Downloads all group and client icons from the TeamSpeak server to the local cache."
+
+msgid "ADMIN_GENERAL_SYNC_ICONS_SUCCESS"
+msgstr "Icons successfully synchronized!"

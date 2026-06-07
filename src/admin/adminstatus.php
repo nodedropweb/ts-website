@@ -48,6 +48,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $db->update('config', ['value' => $val], ['identifier' => $key]);
     }
 
+    AdminStatus::i()->clearCache();
+
     header('Location: adminstatus.php?flash=' . urlencode(__a('ADMIN_ADMINSTATUS_SAVED')) . '&type=success');
     exit;
 }

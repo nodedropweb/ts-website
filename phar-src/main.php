@@ -242,7 +242,9 @@ function cmdSave(): void {
         $in   = implode("','", $queryKeys);
         $rows = $pdo->query("SELECT identifier, value FROM {$prefix}config WHERE identifier IN ('$in')")->fetchAll(PDO::FETCH_ASSOC);
         foreach ($rows as $r) $query[$r['identifier']] = $r['value'];
-        act(t('Query settings read from DB', 'Query-Einstellungen aus DB gelesen'));
+        if (count($query) > 0) {
+            act(t('Query settings read from DB', 'Query-Einstellungen aus DB gelesen'));
+        }
     } catch (\Exception $e) {
         inf(t('Query settings not readable: ', 'Query-Einstellungen nicht lesbar: ') . $e->getMessage());
     }
@@ -253,7 +255,7 @@ function cmdSave(): void {
         if (empty($query[$k])) $query[$k] = ask('TS ' . str_replace(['query_','_'], ['',''], $k), $d);
     }
 
-    $siteKeys = ['baseurl','website_title','nav_brand','timezone','usingcloudflare'];
+    $siteKeys = ['baseurl','website_title','nav_brand','timezone','usingcloudflare','admin_cldbids'];
     $site = [];
     try {
         $in   = implode("','", $siteKeys);
@@ -262,7 +264,7 @@ function cmdSave(): void {
     } catch (\Exception $e) {}
 
     $siteD = ['baseurl'=>'http://localhost','website_title'=>$query['query_displayip'] ?? 'TS-Website',
-              'nav_brand'=>$query['query_displayip'] ?? 'TS-Website','timezone'=>'Europe/Berlin','usingcloudflare'=>'false'];
+              'nav_brand'=>$query['query_displayip'] ?? 'TS-Website','timezone'=>'Europe/Berlin','usingcloudflare'=>'false', 'admin_cldbids' => '[]'];
     foreach ($siteD as $k => $d) {
         if (empty($site[$k])) $site[$k] = ask("Site $k", $d);
     }

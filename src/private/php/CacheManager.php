@@ -111,13 +111,18 @@ class CacheManager {
             return null;
         }
 
-        foreach ($clients as $client) {
-            if ((int) $client["client_database_id"] === $cldbid) {
-                return $client;
+        // Cache the DBID map for the current request
+        static $dbidMap = null;
+        if ($dbidMap === null) {
+            $dbidMap = [];
+            foreach ($clients as $client) {
+                if (isset($client["client_database_id"])) {
+                    $dbidMap[(int) $client["client_database_id"]] = $client;
+                }
             }
         }
 
-        return null;
+        return $dbidMap[$cldbid] ?? null;
     }
 
     public function getChannelList(bool $meta = false) {

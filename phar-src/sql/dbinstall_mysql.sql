@@ -38,7 +38,18 @@ INSERT INTO `DBPREFIXconfig` (`identifier`, `type`, `value`, `user_editable`) VA
 ('imprint_url', 'STRING', 'imprint.php', 1),
 ('assigner_cooldown_seconds', 'INT', '0', 1),
 ('assigner_required_sgids', 'JSON', '[]', 1),
-('viewer_hidden_channel_ids', 'JSON', '[]', 1);
+('viewer_hidden_channel_ids', 'JSON', '[]', 1),
+('query_hostname', 'STRING', '127.0.0.1', 1),
+('query_port', 'INT', '10011', 1),
+('query_username', 'STRING', '', 0),
+('query_password', 'STRING', '', 0),
+('query_displayip', 'STRING', '', 1),
+('tsserver_port', 'INT', '9987', 1),
+('baseurl', 'STRING', 'http://localhost', 1),
+('website_title', 'STRING', 'TS-Website', 1),
+('nav_brand', 'STRING', 'TS-Website', 1),
+('timezone', 'STRING', 'UTC', 1),
+('admin_cldbids', 'JSON', '[]', 0);
 
 DROP TABLE IF EXISTS `DBPREFIXfaq`;
 CREATE TABLE `DBPREFIXfaq` (
