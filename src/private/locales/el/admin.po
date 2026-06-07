@@ -599,43 +599,43 @@ msgstr "Οι ρυθμίσεις σύνδεσης αποθηκεύτηκαν."
 
 
 msgid "ADMIN_GENERAL_SYNC_ICONS_TITLE"
-msgstr "TeamSpeak Channel & Group Icons"
+msgstr "Εικονίδια καναλιών και ομάδων TeamSpeak"
 
 msgid "ADMIN_GENERAL_SYNC_ICONS_BTN"
-msgstr "Synchronize icons from server"
+msgstr "Συγχρονισμός εικονιδίων από τον διακομιστή"
 
 msgid "ADMIN_GENERAL_SYNC_ICONS_HINT"
-msgstr "Downloads all channel, group and client icons from the TeamSpeak server to the local cache."
+msgstr "Λήψη όλων των εικονιδίων καναλιών, ομάδων και χρηστών από τον διακομιστή TeamSpeak στην τοπική προσωρινή μνήμη."
 
 msgid "ADMIN_GENERAL_SYNC_ICONS_SUCCESS"
-msgstr "TeamSpeak icons have been successfully synchronized and are now available."
+msgstr "Τα εικονίδια TeamSpeak συγχρονίστηκαν με επιτυχία και είναι πλέον διαθέσιμα."
 
 msgid "ADMIN_GENERAL_ICON_MANAGEMENT_TITLE"
-msgstr "Favicon & Site-Icon"
+msgstr "Favicon & Εικονίδιο ιστότοπου"
 
 msgid "ADMIN_GENERAL_FAVICON_LABEL"
 msgstr "Favicon (16x16 / 32x32)"
 
 msgid "ADMIN_GENERAL_FAVICON_HINT"
-msgstr "Displayed in the browser tab. Supports: PNG, JPEG, ICO, WebP."
+msgstr "Εμφανίζεται στην καρτέλα του προγράμματος περιήγησης. Υποστηρίζει: PNG, JPEG, ICO, WebP."
 
 msgid "ADMIN_GENERAL_SITEICON_LABEL"
-msgstr "Site-Icon (Apple Touch Icon / Logo)"
+msgstr "Εικονίδιο ιστότοπου (Apple Touch Icon / Λογότυπο)"
 
 msgid "ADMIN_GENERAL_SITEICON_HINT"
-msgstr "Used when saving to the home screen or as an app icon."
+msgstr "Χρησιμοποιείται κατά την αποθήκευση στην αρχική οθόνη ή ως εικονίδιο εφαρμογής."
 
 msgid "ADMIN_GENERAL_ICON_CHOOSE_BTN"
-msgstr "Choose image..."
+msgstr "Επιλογή εικόνας..."
 
 msgid "ADMIN_GENERAL_ICON_DELETE_BTN"
-msgstr "Delete"
+msgstr "Διαγραφή"
 
 msgid "ADMIN_GENERAL_ICON_DELETE_CONFIRM"
-msgstr "Really delete icon?"
+msgstr "Θέλετε πραγματικά να διαγράψετε το εικονίδιο;"
 
 msgid "ADMIN_VIEWER_VISIBLE_BADGE"
-msgstr "Visible"
+msgstr "Ορατό"
 
 msgid "ADMIN_VIEWER_HIDDEN_HINT"
-msgstr "Selected channels will not be displayed in the public viewer."
+msgstr "Τα επιλεγμένα κανάλια δεν θα εμφανίζονται στη δημόσια προβολή."
