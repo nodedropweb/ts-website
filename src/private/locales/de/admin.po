@@ -605,13 +605,13 @@ msgstr "Verbindungseinstellungen gespeichert."
 
 
 msgid "ADMIN_GENERAL_SYNC_ICONS_TITLE"
-msgstr "TeamSpeak Icons"
+msgstr "TeamSpeak Channel- & Gruppen-Icons"
 
 msgid "ADMIN_GENERAL_SYNC_ICONS_BTN"
 msgstr "Icons vom Server synchronisieren"
 
 msgid "ADMIN_GENERAL_SYNC_ICONS_HINT"
-msgstr "Lädt alle Gruppen- und Client-Icons vom TeamSpeak-Server in den lokalen Cache."
+msgstr "Lädt alle Kanal-, Gruppen- und Client-Icons vom TeamSpeak-Server in den lokalen Cache."
 
 msgid "ADMIN_GENERAL_SYNC_ICONS_SUCCESS"
-msgstr "Icons erfolgreich synchronisiert!"
+msgstr "TeamSpeak-Icons wurden erfolgreich synchronisiert und stehen nun zur Verfügung."

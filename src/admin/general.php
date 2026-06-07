@@ -153,9 +153,10 @@ adminHeader(__a('ADMIN_GENERAL_TITLE'), 'config');
             <div class="row align-items-center">
                 <div class="col-sm-4"><?= htmlspecialchars(__a('ADMIN_GENERAL_SYNC_ICONS_TITLE')) ?></div>
                 <div class="col-sm-8">
-                    <button type="button" class="btn btn-info btn-sm" id="btn-sync-icons">
+                    <button type="button" class="btn btn-info btn-sm mb-2" id="btn-sync-icons">
                         <i class="fas fa-sync"></i> <?= htmlspecialchars(__a('ADMIN_GENERAL_SYNC_ICONS_BTN')) ?>
                     </button>
+                    <div id="sync-icons-status" class="mt-2" style="display: none;"></div>
                     <small class="form-text text-muted"><?= htmlspecialchars(__a('ADMIN_GENERAL_SYNC_ICONS_HINT')) ?></small>
                 </div>
             </div>
@@ -223,12 +224,14 @@ adminHeader(__a('ADMIN_GENERAL_TITLE'), 'config');
 
         // --- TeamSpeak Icon Sync ---
         const btnSync = document.getElementById('btn-sync-icons');
-        if (!btn) return;
+        const syncStatus = document.getElementById('sync-icons-status');
+        if (!btnSync) return;
 
-        btn.addEventListener('click', function() {
-            const icon = btn.querySelector('i');
-            btn.disabled = true;
+        btnSync.addEventListener('click', function() {
+            const icon = btnSync.querySelector('i');
+            btnSync.disabled = true;
             icon.classList.add('fa-spin');
+            syncStatus.style.display = 'none';
 
             fetch('api/sync-icons.php', {
                 method: 'POST',
@@ -238,18 +241,23 @@ adminHeader(__a('ADMIN_GENERAL_TITLE'), 'config');
             })
             .then(response => response.json())
             .then(data => {
+                syncStatus.style.display = 'block';
                 if (data.success) {
-                    alert(<?= json_encode(__a('ADMIN_GENERAL_SYNC_ICONS_SUCCESS')) ?>);
+                    syncStatus.innerHTML = '<div class="alert alert-success py-1 small mb-0"><i class="fas fa-check-circle"></i> ' + <?= json_encode(__a('ADMIN_GENERAL_SYNC_ICONS_SUCCESS')) ?> + '</div>';
                 } else {
-                    alert('Error: ' + data.message);
+                    syncStatus.innerHTML = '<div class="alert alert-danger py-1 small mb-0"><i class="fas fa-exclamation-circle"></i> Error: ' + data.message + '</div>';
                 }
             })
-            .catch(err => alert('Network error: ' + err))
+            .catch(err => {
+                syncStatus.style.display = 'block';
+                syncStatus.innerHTML = '<div class="alert alert-danger py-1 small mb-0"><i class="fas fa-exclamation-circle"></i> Network error: ' + err + '</div>';
+            })
             .finally(() => {
-                btn.disabled = false;
+                btnSync.disabled = false;
                 icon.classList.remove('fa-spin');
             });
         });
+
     });
     </script>
 
